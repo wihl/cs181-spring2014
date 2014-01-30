@@ -23,7 +23,7 @@ idx = zeros(size(X,1), 1);
 
 for i=1:size(X,1)
     for j = 1:K
-        dist = norm(X(i,:)-centroids(j,:));
+      dist = norm(double(X(i,:)-centroids(j,:)));
         if idx(i) == 0
            idx(i) = j;
            bestdist = dist;

@@ -1,17 +1,18 @@
 
-clear; close all; clc
+close all; clc
 
 K = 5;
-setSize = 10;
-X = [];
 
-% generate a random set X separated by 10
-for i = 0:(K-1)
-  X = cat(1, X, rand(setSize,2) + (i * 10));
-  i = i + 1;
-end
+if ~exist('X', 'var')
+% generate a random set X separated by 10's
+    X = [];
 
-%initial_centroids = [ 5 5; 15 15; 28 28; 38 38; 42 42];
+    for i = 0:(K-1)
+        X = cat(1, X, rand(setSize,2) + (i * 10));
+        i = i + 1;
+    end
+endif
+
 initial_centroids = kMeansInitCentroids(X, K);
 
 idx = findClosestCentroids(X, initial_centroids);
