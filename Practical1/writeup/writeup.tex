@@ -15,7 +15,8 @@
 \begin{document}
 \maketitle
 \section*{Warm-Up}
-%\subsection{}
+
+%\subsection*{Basic K-Means}
 
 \par Initially I used a K-Means implementation in Octave I had written for a previous course\footnote{Machine Learning, Coursera, Prof. Andrew Ng, Completed Jan 2014, \url{https://class.coursera.org/ml-004}}.  While this implementation was sufficient for the prior course's Dataset, when I tested it with five clusters of random data, K=5 and random initial centroids, one of the centroids would frequently not converge on any points.
 
@@ -33,6 +34,8 @@ I subsequently modified the code to use K-Medoids, choosing one of the sample da
 \caption{K-Medoids Converge After 4 Iterations}
 \end{figure}
 
+\subsection*{CIFAR-100 Image Data}
 
+I then attempted using K-Medoids with the CIFAR-100 Image Data, using the Matlab version with Octave. The training data consists of a 50000x3072 matrix of UInt8. Each row is a 32x32x3 (=3072) color image. There are 10 classes in the set (``airplane'', ``automobile'', etc.), so setting K=10 was a rational first step.
 
 \end{document}  
