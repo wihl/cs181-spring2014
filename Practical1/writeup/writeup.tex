@@ -7,7 +7,7 @@
 								% TeX will automatically convert eps --> pdf in pdflatex		
 \usepackage{amssymb}
 
-\title{CS-181 Spring 2014 Practical 1}
+\title{CSCI E-181 Spring 2014 Practical 1}
 \author{David Wihl}
 %\date{}							% Activate to display a given date or no date
 
@@ -16,26 +16,17 @@
 %\section{WarmUp}
 %\subsection{}
 
-Hi there
+\par Initially I used a KMeans implementation in Octave I had written for a previous course. While this implementation was sufficient for the prior course's Dataset, when I tested it with five random clusters of data, K=5 and random initial centroids, one of the centroids would frequently not converge on any points.
 
-Congratulations! You received a grade of 100\% on your latestexamination.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{randominitialClusters}
+\caption{Random Initial Centroids After 1 Iteration}
+\end{figure}
 
-You owe me \$10.00 and it's about time you sent it to me!
+I subsequently modified the code to use a variation of KMeans++, specifically choosing randomly one of the sample data points as an initial centroid. This worked much better.
 
 
-\par I like \TeX! Once you get the hang of it, TEX is really easy to use --- You just have tomaster the \TeX nical aspects... \bf or else \rm try something \tt else \rm \dots
 
-``No\"el''
-\par
-`Caban-\`a-sucre'
-\par
 
-$
-\alpha\theta
-$
-
-$
-x^2_2
-(1/m)\sum
-$
 \end{document}  

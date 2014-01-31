@@ -1,6 +1,8 @@
 
 close all; clc
 
+setSize = 10 % number of points per generated cluster
+
 K = 5;
 
 if ~exist('X', 'var')
@@ -13,7 +15,9 @@ if ~exist('X', 'var')
     end
 endif
 
-initial_centroids = kMeansInitCentroids(X, K);
+if ~exist('initial_centroids', 'var')
+    initial_centroids = kMeansInitCentroids(X, K);
+endif
 
 idx = findClosestCentroids(X, initial_centroids);
 
