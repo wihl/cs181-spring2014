@@ -3,7 +3,7 @@ close all; clc
 
 setSize = 10 % number of points per generated cluster
 
-K = 5;
+K = 10;
 
 if ~exist('X', 'var')
 % generate a random set X separated by 10's
@@ -33,4 +33,3 @@ max_iters = 10;
 [centroids, idx] = runkMeans(X, initial_centroids, max_iters, true);
 
 fprintf('Program paused. Press enter to continue.\n');
-pause;

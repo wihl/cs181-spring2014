@@ -34,8 +34,8 @@ I subsequently modified the code to use K-Medoids, choosing one of the sample da
 \caption{K-Medoids Converge After 4 Iterations}
 \end{figure}
 
-\subsection*{CIFAR-100 Image Data}
+\subsection*{CIFAR-10 Image Data}
 
-I then attempted using K-Medoids with the CIFAR-100 Image Data, using the Matlab version with Octave. The training data consists of a 50000x3072 matrix of UInt8. Each row is a 32x32x3 (=3072) color image. There are 10 classes in the set (``airplane'', ``automobile'', etc.), so setting K=10 was a rational first step.
+I then attempted using K-Medoids with the CIFAR-10 Image Data, using the Matlab version of the data with Octave. The training data consists of a 10000x3072 matrix of UInt8. Each row is a 32x32x3 (=3072) color image, consisting of 1024 red, 1024 green and 1024 blue elements. There are 10 classes in the set (``airplane'', ``automobile'', etc.), so setting K=10 was a rational first step.
 
 \end{document}  
