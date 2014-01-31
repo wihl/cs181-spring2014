@@ -1,5 +1,6 @@
 \documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
 \usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\usepackage{hyperref}
 \geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
 %\geometry{landscape}                		% Activate for for rotated page geometry
 %\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
@@ -16,7 +17,7 @@
 %\section{WarmUp}
 %\subsection{}
 
-\par Initially I used a KMeans implementation in Octave I had written for a previous course. While this implementation was sufficient for the prior course's Dataset, when I tested it with five random clusters of data, K=5 and random initial centroids, one of the centroids would frequently not converge on any points.
+\par Initially I used a K-Means implementation in Octave I had written for a previous course\footnote{Machine Learning, Coursera, Prof. Andrew Ng, Completed Jan 2014, \url{https://class.coursera.org/ml-004}}.  While this implementation was sufficient for the prior course's Dataset, when I tested it with five clusters of random data, K=5 and random initial centroids, one of the centroids would frequently not converge on any points.
 
 \begin{figure}[h!]
 \centering
@@ -24,7 +25,7 @@
 \caption{Random Initial Centroids After 1 Iteration}
 \end{figure}
 
-I subsequently modified the code to use a variation of KMeans++, specifically choosing randomly one of the sample data points as an initial centroid. This worked much better.
+I subsequently modified the code to use K-Medoids, specifically choosing one of the sample data points at random as an initial centroid. This worked much better.
 
 
 
