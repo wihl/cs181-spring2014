@@ -1,9 +1,9 @@
 
 close all; clc
 
-setSize = 10 % number of points per generated cluster
+setSize = 10; % number of points per generated cluster
 
-K = 10;
+K = 3;
 
 if ~exist('X', 'var')
 % generate a random set X separated by 10's
@@ -14,6 +14,9 @@ if ~exist('X', 'var')
         i = i + 1;
     end
 endif
+
+% normalize X
+X = double(X - mean(X)) ./ std(X)
 
 % Uncomment to use preset centroids
 % initial_centroids = [1,1;11,11;25,25;35,35;40,60]

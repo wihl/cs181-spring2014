@@ -9,7 +9,6 @@ function centroids = computeCentroids(X, idx, K)
 %   centroids, where each row of centroids is the mean of the data points
 %   assigned to it.
 %
-
 % Useful variables
 [m n] = size(X);
 
