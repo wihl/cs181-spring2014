@@ -45,6 +45,7 @@ for i=1:max_iters
     
     % Optionally, plot progress here
     if plot_progress
+        s = idxSum(idx,K)
         plotProgresskMeans(X, centroids, previous_centroids, idx, K, i);
         previous_centroids = centroids;
         fprintf('Press enter to continue.\n');
