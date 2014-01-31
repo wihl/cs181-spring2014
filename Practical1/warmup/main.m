@@ -1,9 +1,12 @@
-
+function [centroids, idx] = main(data, K)
 close all; clc
 
 setSize = 10; % number of points per generated cluster
 
-K = 3;
+if K < 1
+   % default to a sane number
+   K = 3;
+endif
 
 if ~exist('X', 'var')
 % generate a random set X separated by 10's
@@ -16,7 +19,7 @@ if ~exist('X', 'var')
 endif
 
 % normalize X
-X = double(X - mean(X)) ./ std(X)
+X = double(data - mean(data)) ./ std(data);
 
 % Uncomment to use preset centroids
 % initial_centroids = [1,1;11,11;25,25;35,35;40,60]
@@ -36,3 +39,4 @@ max_iters = 10;
 [centroids, idx] = runkMeans(X, initial_centroids, max_iters, true);
 
 fprintf('Program paused. Press enter to continue.\n');
+end
