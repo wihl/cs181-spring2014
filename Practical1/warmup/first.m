@@ -15,7 +15,12 @@ if ~exist('X', 'var')
     end
 endif
 
+% Uncomment to use preset centroids
+% initial_centroids = [1,1;11,11;25,25;35,35;40,60]
+
+
 if ~exist('initial_centroids', 'var')
+    % Use K-Medoids - select from X
     initial_centroids = kMeansInitCentroids(X, K);
 endif
 
