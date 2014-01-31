@@ -2,19 +2,19 @@
 \usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
 \usepackage{hyperref}
 \geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
-%\geometry{landscape}                		% Activate for for rotated page geometry
 %\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
 								% TeX will automatically convert eps --> pdf in pdflatex		
 \usepackage{amssymb}
 
 \title{CSCI E-181 Spring 2014 Practical 1}
-\author{David Wihl}
+\author{David Wihl\\
+     \texttt{davidwihl@gmail.com}}
 %\date{}							% Activate to display a given date or no date
 
 \begin{document}
 \maketitle
-%\section{WarmUp}
+\section*{Warm-Up}
 %\subsection{}
 
 \par Initially I used a K-Means implementation in Octave I had written for a previous course\footnote{Machine Learning, Coursera, Prof. Andrew Ng, Completed Jan 2014, \url{https://class.coursera.org/ml-004}}.  While this implementation was sufficient for the prior course's Dataset, when I tested it with five clusters of random data, K=5 and random initial centroids, one of the centroids would frequently not converge on any points.
@@ -25,8 +25,13 @@
 \caption{Random Initial Centroids After 1 Iteration}
 \end{figure}
 
-I subsequently modified the code to use K-Medoids, specifically choosing one of the sample data points at random as an initial centroid. This worked much better.
+I subsequently modified the code to use K-Medoids, choosing one of the sample data points at random as an initial centroid. This worked much better.
 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{K-Medoid}
+\caption{K-Medoids Converge After 4 Iterations}
+\end{figure}
 
 
 
