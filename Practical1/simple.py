@@ -1,10 +1,11 @@
 import numpy as np
 import util
 import recommendations as r
+import cofi as cofi
 
 pred_filename  = 'simple-pred.csv'
 train_filename = 'ratings-train.csv'
-test_filename  = 'ratings-test50.csv'
+test_filename  = 'ratings-test.csv'
 user_filename  = 'users.csv'
 
 training_data  = util.load_train(train_filename)
@@ -15,6 +16,8 @@ users = {}
 
 # TODO: account for user demographic
  
+cofi.buildRatingMatrix(training_data)
+
 for rating in training_data:
     user_id = rating['user']
     isbn    = rating['isbn']
@@ -23,6 +26,7 @@ for rating in training_data:
 
 pred_rating = {}
 c = 0
+'''
 for user in users:
     c += 1
     if c%50 == 0: print "%d / %d" % (c,len(users))
@@ -41,4 +45,4 @@ for query in test_queries:
 
 # Write the prediction file.
 util.write_predictions(test_queries, pred_filename)
-
+'''
