@@ -60,3 +60,4 @@ def buildTheta(user_list):
         # TODO: what do I do with the userId?
 
     return Theta
+
