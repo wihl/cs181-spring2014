@@ -60,9 +60,12 @@ def getRecommendations(prefs,person,similarity=sim_pearson):
         simSums[item]+=sim
 
   # Create the normalized list
-  rankings=[(total/simSums[item],item) for item,total in totals.items()]
+  rankings = {}
+  for item, total in totals.items():
+      rankings[item] = total/simSums[item]
+  #rankings=[(total/simSums[item],item) for item,total in totals.items()]
 
   # Return the sorted list
-  rankings.sort()
-  rankings.reverse()
+#  rankings.sort()
+#  rankings.reverse()
   return rankings
