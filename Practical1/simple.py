@@ -3,7 +3,7 @@ import util
 import recommendations as r
 
 pred_filename  = 'simple-pred.csv'
-train_filename = 'ratings-train50000.csv'
+train_filename = 'ratings-train.csv'
 test_filename  = 'ratings-test50.csv'
 user_filename  = 'users.csv'
 
@@ -22,7 +22,10 @@ for rating in training_data:
     users[user_id][isbn] =  rating['rating']
 
 pred_rating = {}
+c = 0
 for user in users:
+    c += 1
+    if c%50 == 0: print "%d / %d" % (c,len(users))
     pred_rating[user] = r.getRecommendations(users,user)
 
 

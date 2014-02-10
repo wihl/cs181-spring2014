@@ -1,10 +1,17 @@
+#
+# David Wihl CSCI-E181, Spring 2014
+#
+# sample recommender modified heavily from 
+# Programming Collective Intelligence by Toby Segaran. 
+# Copyright 2007 Toby Segaran, 978-0-596-52932-1
+
 from math import sqrt
 
-# sample recommender from Programming Collective Intelligence
-# by Toby Segaran. Copyright 2007 Toby Segaran, 978-0-596-52932-1
 
-# Returns the Pearson correlation coefficient for p1 and p2
 def sim_pearson(prefs,p1,p2):
+  '''
+  Returns the Pearson correlation coefficient for p1 and p2
+  '''
   # Get the list of mutually rated items
   si={}
   for item in prefs[p1]: 
@@ -36,9 +43,13 @@ def sim_pearson(prefs,p1,p2):
 
   return r
 
-# Gets recommendations for a person by using a weighted average
-# of every other user's rankings
+
+
 def getRecommendations(prefs,person,similarity=sim_pearson):
+  '''
+  Gets recommendations for a person by using a weighted average
+  of every other user's rankings
+  '''
   totals={}
   simSums={}
   for other in prefs:
@@ -48,8 +59,8 @@ def getRecommendations(prefs,person,similarity=sim_pearson):
 
     # ignore scores of zero or lower
     if sim<=0: continue
+  
     for item in prefs[other]:
-	    
       # only score movies I haven't seen yet
       if item not in prefs[person] or prefs[person][item]==0:
         # Similarity * Score
