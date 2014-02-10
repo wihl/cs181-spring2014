@@ -16,7 +16,7 @@ users = {}
 
 # TODO: account for user demographic
  
-cofi.buildRatingMatrix(training_data)
+Y, R = cofi.buildRatingMatrix(training_data)
 
 for rating in training_data:
     user_id = rating['user']
