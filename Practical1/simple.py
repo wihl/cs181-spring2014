@@ -29,14 +29,6 @@ for user in users:
     pred_rating[user] = r.getRecommendations(users,user)
 
 
-#for query in test_queries:
-#    user_id = query['user']
-#    if user_id in users: 
-#        user = query['user']
-#        pred_rating[user] = r.getRecommendations(users,user)
-#    else:
-#        pred_rating[user] = 4
-
 # TODO: handle predictions based on missing values
 
 for query in test_queries:
