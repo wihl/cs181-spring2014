@@ -18,6 +18,7 @@ def sim_pearson(prefs,p1,p2):
     if item in prefs[p2]: si[item]=1
 
   # if they are no ratings in common, return 0
+  print "len of si", len(si)
   if len(si)==0: return 0
 
   # Sum calculations

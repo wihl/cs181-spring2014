@@ -77,24 +77,21 @@ def main():
     training_data, test_queries, user_list = loadData()
     print "complete"
 
-    while True:
-        print "Please choose which algorithm to run:"
-        print " "
-        print "1: Pearson Correlation"
-        print "2: Collaborative Filtering"
-        print "x: Exit"
-        print " "
-        choice = raw_input("Please choose: ")
-        if choice == '1':
-            F1 = runPearson(training_data, test_queries)
-        elif choice == '2':
-            F1 = runCoFi(training_data, user_list)
-        elif choice.lower() == 'x':
-            break
-        print "Resulting F1 quality is",F1
-        
-    print "Thanks and good-bye!"
-            
+
+    print "Please choose which algorithm to run:"
+    print " "
+    print "1: Pearson Correlation"
+    print "2: Collaborative Filtering"
+    print "x: Exit"
+    print " "
+    choice = raw_input("Please choose: ")
+    if choice == '1':
+        F1 = runPearson(training_data, test_queries)
+    elif choice == '2':
+        F1 = runCoFi(training_data, user_list)
+    elif choice.lower() == 'x':
+        return
+    print "Resulting F1 quality is",F1
 
 if __name__ == "__main__":
     main()
