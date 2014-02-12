@@ -76,6 +76,9 @@ def runCosine(training_set,user_list, validation_set):
     # calculate cosine distance and find closest match
     cosine.topMatch(users)
 
+    # find mean rating per book
+    books = cosine.meanPerItem(users)
+
     total_error = 0.0
     sample_count  = 0
     print "prediction, actual"

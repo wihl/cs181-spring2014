@@ -36,7 +36,9 @@ def topMatch(users):
               users[user]['closest_user'], \
               users[user]['cosine']
 
-def predict(users,user,item):
+
+
+def predict(users,user,item, items, global_mean):
     # have the user already rated this item?
     if item in users[user]['ratings']:
         return users[user]['ratings'][item]
@@ -46,5 +48,33 @@ def predict(users,user,item):
     if item in users[closest]['ratings']:
         return users[closest]['ratings'][item]
 
-    # then guess
-    return 4
+    # then return the book's mean if it is non-zero
+    item_mean = items.get(item['mean'],0)
+    if item_mean != 0:
+        return item_mean
+
+    return global_mean
+
+def meanPerItem(users):
+    items = {}
+    for user in users:
+        for item in users[user]['ratings']:
+            if not item in items:
+                items[item] = { 'total': users[user]['ratings'][item], 'count':1 }
+            else:
+                items[item]['total'] += users[user]['ratings'][item]
+                items[item]['count'] += 1
+
+    global_total = 0.0
+    global_count = 0
+    for item in items:
+        item['mean'] = float(item['total']) / item['count']
+        global_total += item['total']
+        global_count += 1
+
+    if global_count > 0:
+        global_mean = float(global_total) / global_count
+    else:
+        global_mean = 0.0
+
+    return items, global_mean
