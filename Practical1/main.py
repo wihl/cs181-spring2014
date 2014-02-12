@@ -29,6 +29,9 @@ def runPearson(training_data):
 
 def runCoFi(training_data, user_list):
     print "CoFi picked"
+    #ratings, rating_exists = cofi.buildRatingMatrix(training_data)
+    #Theta = cofi.buildTheta(user_list)
+
     return 1.0
 
 #ratings, rating_exists = cofi.buildRatingMatrix(training_data)
