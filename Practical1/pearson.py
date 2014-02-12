@@ -18,26 +18,28 @@ def sim_pearson(prefs,p1,p2):
     if item in prefs[p2]: si[item]=1
 
   # if they are no ratings in common, return 0
-  print "len of si", len(si)
   if len(si)==0: return 0
 
   # Sum calculations
   n=len(si)
+  print "n:", n
   
   # Sums of all the preferences
   sum1=sum([prefs[p1][it] for it in si])
   sum2=sum([prefs[p2][it] for it in si])
-  
+  print "sum1, sum2",sum1,sum2
   # Sums of the squares
   sum1Sq=sum([pow(prefs[p1][it],2) for it in si])
   sum2Sq=sum([pow(prefs[p2][it],2) for it in si])	
-  
+  print "sum1sq, sum2sq",sum1Sq,sum2Sq  
   # Sum of the products
   pSum=sum([prefs[p1][it]*prefs[p2][it] for it in si])
-  
+  print "psum", pSum
   # Calculate r (Pearson score)
   num=pSum-(sum1*sum2/n)
+  print "num:", num
   den=sqrt((sum1Sq-pow(sum1,2)/n)*(sum2Sq-pow(sum2,2)/n))
+  print "den:", den
   if den==0: return 0
 
   r=num/den
