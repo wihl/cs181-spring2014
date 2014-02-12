@@ -62,30 +62,44 @@ def runPearson(training_data, test_queries):
     '''
     return 1.0
 
-def runCosine(training_data,user_list):
+def runCosine(training_set,user_list, validation_set):
     print "Cosine picked"
     users = {}
-    for rating in training_data:
-        user_id = rating['user']
-        isbn    = rating['isbn']
+    for row in training_set:
+        user_id = row['user']
+        isbn    = row['isbn']
         if not user_id in users: 
             users[user_id] = {}
             users[user_id]['ratings'] = {}
-        users[user_id]['ratings'][isbn] =  rating['rating']
+        users[user_id]['ratings'][isbn] =  row['rating']
 
     # calculate cosine distance and find closest match
     cosine.topMatch(users)
+
+    total_error = 0.0
+    sample_count  = 0
+    print "prediction, actual"
+    for row in validation_set:
+        user_id = row['user']
+        isbn    = row['isbn']
+        
+        prediction = cosine.predict(user_id,isbn)
+        print prediction, row['rating']
+        total_error += abs(prediction - row['rating'])
+        sample_count += 1
+
+    return total_error / sample_count
     
     #ratings, rating_exists = cofi.buildRatingMatrix(training_data)
     #Theta = cofi.buildTheta(user_list)
 
-    return 1.0
+    return users
 
 #ratings, rating_exists = cofi.buildRatingMatrix(training_data)
 #Theta = cofi.buildTheta(user_list)
 
 def main():
-    F1 = 0.0
+    error = 0.0
     print "Data loading...",
     training_data, test_queries, user_list = loadData()
     # split training_data into 80% training and 20% validation
@@ -103,12 +117,12 @@ def main():
     print " "
     choice = raw_input("Please choose: ")
     if choice == '1':
-        F1 = runPearson(training_set, test_queries)
+        error = runPearson(training_set, test_queries)
     elif choice == '2':
-        F1 = runCosine(training_set, user_list)
+        error = runCosine(training_set, user_list, validation_set)
     elif choice.lower() == 'x':
         return
-    print "Resulting F1 quality is",F1
+    print "Resulting error is",error
 
 if __name__ == "__main__":
     main()
