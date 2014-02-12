@@ -9,17 +9,18 @@ import argparse
 import numpy as np
 import util
 import pearson as pearson
+import cosine as cosine
 import cofi as cofi
 
 
 
 #pred_filename  = 'simple-pred.csv'
-#train_filename = 'ratings-train.csv'
+train_filename = 'ratings-train.csv'
 #test_filename  = 'ratings-test.csv'
 #user_filename  = 'users.csv'
 
 pred_filename  = 'small-pred.csv'
-train_filename = 'r-train100.csv'
+#train_filename = 'r-train100.csv'
 test_filename  = 'r-test100.csv'
 user_filename  = 'u100.csv'
 
@@ -61,8 +62,20 @@ def runPearson(training_data, test_queries):
     '''
     return 1.0
 
-def runCoFi(training_data, user_list):
-    print "CoFi picked"
+def runCosine(training_data,user_list):
+    print "Cosine picked"
+    users = {}
+    for rating in training_data:
+        user_id = rating['user']
+        isbn    = rating['isbn']
+        if not user_id in users: 
+            users[user_id] = {}
+            users[user_id]['ratings'] = {}
+        users[user_id]['ratings'][isbn] =  rating['rating']
+
+    # calculate cosine distance and find closest match
+    cosine.topMatch(users)
+    
     #ratings, rating_exists = cofi.buildRatingMatrix(training_data)
     #Theta = cofi.buildTheta(user_list)
 
@@ -81,14 +94,14 @@ def main():
     print "Please choose which algorithm to run:"
     print " "
     print "1: Pearson Correlation"
-    print "2: Collaborative Filtering"
+    print "2: Cosine"
     print "x: Exit"
     print " "
     choice = raw_input("Please choose: ")
     if choice == '1':
         F1 = runPearson(training_data, test_queries)
     elif choice == '2':
-        F1 = runCoFi(training_data, user_list)
+        F1 = runCosine(training_data, user_list)
     elif choice.lower() == 'x':
         return
     print "Resulting F1 quality is",F1
