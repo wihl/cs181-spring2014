@@ -77,7 +77,7 @@ def runCosine(training_set,user_list, validation_set):
     cosine.topMatch(users)
 
     # find mean rating per book
-    books = cosine.meanPerItem(users)
+    books, global_mean = cosine.meanPerItem(users)
 
     total_error = 0.0
     sample_count  = 0
@@ -86,7 +86,7 @@ def runCosine(training_set,user_list, validation_set):
         user_id = row['user']
         isbn    = row['isbn']
         
-        prediction = cosine.predict(user,user_id,isbn)
+        prediction = cosine.predict(users,user_id,books,isbn,global_mean)
         print prediction, row['rating']
         total_error += abs(prediction - row['rating'])
         sample_count += 1

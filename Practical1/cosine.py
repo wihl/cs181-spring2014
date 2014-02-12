@@ -38,20 +38,23 @@ def topMatch(users):
 
 
 
-def predict(users,user,item, items, global_mean):
-    # have the user already rated this item?
-    if item in users[user]['ratings']:
-        return users[user]['ratings'][item]
+def predict(users,user,items,item,global_mean):
+    # has the user already rated this item?
 
-    # has his closest buddy rated this?
-    closest = users[user]['closest_user']
-    if item in users[closest]['ratings']:
-        return users[closest]['ratings'][item]
+    if user in users:
+        if item in users[user]['ratings']:
+            return users[user]['ratings'][item]
+
+        # has his closest buddy rated this?
+        closest = users[user]['closest_user']
+        if item in users[closest]['ratings']:
+            return users[closest]['ratings'][item]
 
     # then return the book's mean if it is non-zero
-    item_mean = items.get(item['mean'],0)
-    if item_mean != 0:
-        return item_mean
+    if item in items:
+        item_mean = items.get(item['mean'],0)
+        if item_mean != 0:
+            return item_mean
 
     return global_mean
 
@@ -68,8 +71,8 @@ def meanPerItem(users):
     global_total = 0.0
     global_count = 0
     for item in items:
-        item['mean'] = float(item['total']) / item['count']
-        global_total += item['total']
+        items[item]['mean'] = float(items[item]['total']) / items[item]['count']
+        global_total += items[item]['total']
         global_count += 1
 
     if global_count > 0:
