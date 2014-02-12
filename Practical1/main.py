@@ -83,17 +83,12 @@ def runCosine(training_set,user_list, validation_set):
         user_id = row['user']
         isbn    = row['isbn']
         
-        prediction = cosine.predict(user_id,isbn)
+        prediction = cosine.predict(user,user_id,isbn)
         print prediction, row['rating']
         total_error += abs(prediction - row['rating'])
         sample_count += 1
 
     return total_error / sample_count
-    
-    #ratings, rating_exists = cofi.buildRatingMatrix(training_data)
-    #Theta = cofi.buildTheta(user_list)
-
-    return users
 
 #ratings, rating_exists = cofi.buildRatingMatrix(training_data)
 #Theta = cofi.buildTheta(user_list)
@@ -122,7 +117,7 @@ def main():
         error = runCosine(training_set, user_list, validation_set)
     elif choice.lower() == 'x':
         return
-    print "Resulting error is",error
+    print "Resulting average error is",error
 
 if __name__ == "__main__":
     main()

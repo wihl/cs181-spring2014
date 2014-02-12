@@ -36,5 +36,15 @@ def topMatch(users):
               users[user]['closest_user'], \
               users[user]['cosine']
 
-def predict(user,item):
+def predict(users,user,item):
+    # have the user already rated this item?
+    if item in users[user]['ratings']:
+        return users[user]['ratings'][item]
+
+    # has his closest buddy rated this?
+    closest = users[user]['closest_user']
+    if item in users[closest]['ratings']:
+        return users[closest]['ratings'][item]
+
+    # then guess
     return 4
