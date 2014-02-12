@@ -30,12 +30,13 @@ def topMatch(users):
                     users[user1]['cosine'] = cosine
                     users[user1]['closest_user'] = user2
 
+    '''
     print "user, rating count, vectorlen, closest user, cosine value"
     for user in users:
         print user, len(users[user]['ratings']), users[user]['vectorlen'], \
               users[user]['closest_user'], \
               users[user]['cosine']
-
+    '''
 
 
 def predict(users,user,items,item,global_mean):
@@ -72,12 +73,15 @@ def meanPerItem(users):
     global_count = 0
     for item in items:
         items[item]['mean'] = float(items[item]['total']) / items[item]['count']
-        global_total += items[item]['total']
+        print global_total, items[item]['mean']
+        global_total += items[item]['mean']
         global_count += 1
 
     if global_count > 0:
         global_mean = float(global_total) / global_count
     else:
         global_mean = 0.0
+
+    print "global mean: ", global_mean
 
     return items, global_mean

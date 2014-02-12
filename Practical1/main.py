@@ -15,12 +15,12 @@ import cofi as cofi
 
 
 #pred_filename  = 'simple-pred.csv'
-#train_filename = 'ratings-train.csv'
+train_filename = 'ratings-train.csv'
 #test_filename  = 'ratings-test.csv'
 #user_filename  = 'users.csv'
 
-pred_filename  = 'small-pred.csv'
-train_filename = 'r-train100.csv'
+pred_filename  = 'pred-full.csv'
+#train_filename = 'r-train100.csv'
 test_filename  = 'r-test100.csv'
 user_filename  = 'u100.csv'
 
@@ -62,7 +62,7 @@ def runPearson(training_data, test_queries):
     '''
     return 1.0
 
-def runCosine(training_set,user_list, validation_set):
+def runCosine(training_set,user_list, validation_set, test_queries):
     print "Cosine picked"
     users = {}
     for row in training_set:
@@ -81,16 +81,25 @@ def runCosine(training_set,user_list, validation_set):
 
     total_error = 0.0
     sample_count  = 0
-    print "prediction, actual"
+    # print "prediction, actual"
     for row in validation_set:
         user_id = row['user']
         isbn    = row['isbn']
         
         prediction = cosine.predict(users,user_id,books,isbn,global_mean)
-        print prediction, row['rating']
+        #print prediction, row['rating']
         total_error += abs(prediction - row['rating'])
         sample_count += 1
 
+    '''
+    for query in test_queries:
+        user_id = query['user']
+        isbn    = query['isbn']
+        query['rating'] = cosine.predict(users,user_id,books,isbn,global_mean)
+
+    # Write the prediction file.
+    util.write_predictions(test_queries, pred_filename)
+    '''
     return total_error / sample_count
 
 #ratings, rating_exists = cofi.buildRatingMatrix(training_data)
@@ -117,7 +126,7 @@ def main():
     if choice == '1':
         error = runPearson(training_set, test_queries)
     elif choice == '2':
-        error = runCosine(training_set, user_list, validation_set)
+        error = runCosine(training_set, user_list, validation_set, test_queries)
     elif choice.lower() == 'x':
         return
     print "Resulting average error is",error
