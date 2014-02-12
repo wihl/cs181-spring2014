@@ -11,10 +11,17 @@ import util
 import cofi as cofi
 
 
-pred_filename  = 'simple-pred.csv'
-train_filename = 'ratings-train.csv'
-test_filename  = 'ratings-test.csv'
-user_filename  = 'users.csv'
+
+#pred_filename  = 'simple-pred.csv'
+#train_filename = 'ratings-train.csv'
+#test_filename  = 'ratings-test.csv'
+#user_filename  = 'users.csv'
+
+pred_filename  = 'small-pred.csv'
+train_filename = 'r-train100.csv'
+test_filename  = 'r-test100.csv'
+user_filename  = 'u100.csv'
+
 
 def loadData():
     training_data  = util.load_train(train_filename)
