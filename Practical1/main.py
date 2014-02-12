@@ -14,15 +14,15 @@ import cofi as cofi
 
 
 
-#pred_filename  = 'simple-pred.csv'
-train_filename = 'ratings-train.csv'
-#test_filename  = 'ratings-test.csv'
-#user_filename  = 'users.csv'
-
 pred_filename  = 'pred-full.csv'
+train_filename = 'ratings-train.csv'
+test_filename  = 'ratings-test.csv'
+user_filename  = 'users.csv'
+
+#pred_filename  = 'simple-pred.csv'
 #train_filename = 'r-train100.csv'
-test_filename  = 'r-test100.csv'
-user_filename  = 'u100.csv'
+#test_filename  = 'r-test100.csv'
+#user_filename  = 'u100.csv'
 
 
 def loadData():
@@ -82,6 +82,7 @@ def runCosine(training_set,user_list, validation_set, test_queries):
     total_error = 0.0
     sample_count  = 0
     # print "prediction, actual"
+    '''
     for row in validation_set:
         user_id = row['user']
         isbn    = row['isbn']
@@ -90,8 +91,9 @@ def runCosine(training_set,user_list, validation_set, test_queries):
         #print prediction, row['rating']
         total_error += abs(prediction - row['rating'])
         sample_count += 1
-
+    return total_error / sample_count
     '''
+    
     for query in test_queries:
         user_id = query['user']
         isbn    = query['isbn']
@@ -99,8 +101,8 @@ def runCosine(training_set,user_list, validation_set, test_queries):
 
     # Write the prediction file.
     util.write_predictions(test_queries, pred_filename)
-    '''
-    return total_error / sample_count
+
+
 
 #ratings, rating_exists = cofi.buildRatingMatrix(training_data)
 #Theta = cofi.buildTheta(user_list)
@@ -126,7 +128,7 @@ def main():
     if choice == '1':
         error = runPearson(training_set, test_queries)
     elif choice == '2':
-        error = runCosine(training_set, user_list, validation_set, test_queries)
+        error = runCosine(training_data, user_list, validation_set, test_queries)
     elif choice.lower() == 'x':
         return
     print "Resulting average error is",error

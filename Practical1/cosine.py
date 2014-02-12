@@ -53,9 +53,10 @@ def predict(users,user,items,item,global_mean):
 
     # then return the book's mean if it is non-zero
     if item in items:
-        item_mean = items.get(item['mean'],0)
-        if item_mean != 0:
-            return item_mean
+        if 'mean' in item:
+            item_mean = items.get(item['mean'],0)
+            if item_mean != 0:
+                return item_mean
 
     return global_mean
 
@@ -73,7 +74,7 @@ def meanPerItem(users):
     global_count = 0
     for item in items:
         items[item]['mean'] = float(items[item]['total']) / items[item]['count']
-        print global_total, items[item]['mean']
+        #print global_total, items[item]['mean']
         global_total += items[item]['mean']
         global_count += 1
 
