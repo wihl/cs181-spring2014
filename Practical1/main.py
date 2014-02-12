@@ -8,6 +8,7 @@
 import argparse
 import numpy as np
 import util
+import pearson as pearson
 import cofi as cofi
 
 
@@ -30,8 +31,31 @@ def loadData():
     return training_data, test_queries, user_list
 
 
-def runPearson(training_data):
+def runPearson(training_data, test_queries):
     print "Pearson picked"
+    users = {}
+    for rating in training_data:
+        user_id = rating['user']
+        isbn    = rating['isbn']
+        if not user_id in users: users[user_id] = {}
+        users[user_id][isbn] =  rating['rating']
+
+    pred_rating = {}
+
+    for user in users:
+        pred_rating[user] = pearson.getRecommendations(users,user)
+
+    for query in test_queries:
+        user_id = query['user']
+        isbn    = query['isbn']
+        if user_id in pred_rating:
+            query['rating'] = pred_rating[user_id].get(isbn,4)
+        else:
+            query['rating'] = 4
+
+    # Write the prediction file.
+    util.write_predictions(test_queries, pred_filename)
+
     return 1.0
 
 def runCoFi(training_data, user_list):
@@ -59,7 +83,7 @@ def main():
         print " "
         choice = raw_input("Please choose: ")
         if choice == '1':
-            F1 = runPearson(training_data)
+            F1 = runPearson(training_data, test_queries)
         elif choice == '2':
             F1 = runCoFi(training_data, user_list)
         elif choice.lower() == 'x':
