@@ -15,12 +15,12 @@ import cofi as cofi
 
 
 #pred_filename  = 'simple-pred.csv'
-train_filename = 'ratings-train.csv'
+#train_filename = 'ratings-train.csv'
 #test_filename  = 'ratings-test.csv'
 #user_filename  = 'users.csv'
 
 pred_filename  = 'small-pred.csv'
-#train_filename = 'r-train100.csv'
+train_filename = 'r-train100.csv'
 test_filename  = 'r-test100.csv'
 user_filename  = 'u100.csv'
 
@@ -88,6 +88,10 @@ def main():
     F1 = 0.0
     print "Data loading...",
     training_data, test_queries, user_list = loadData()
+    # split training_data into 80% training and 20% validation
+    split = int(len(training_data) * 0.8)
+    training_set   = training_data[:split]
+    validation_set = training_data[split:]
     print "complete"
 
 
@@ -99,9 +103,9 @@ def main():
     print " "
     choice = raw_input("Please choose: ")
     if choice == '1':
-        F1 = runPearson(training_data, test_queries)
+        F1 = runPearson(training_set, test_queries)
     elif choice == '2':
-        F1 = runCosine(training_data, user_list)
+        F1 = runCosine(training_set, user_list)
     elif choice.lower() == 'x':
         return
     print "Resulting F1 quality is",F1

@@ -36,3 +36,5 @@ def topMatch(users):
               users[user]['closest_user'], \
               users[user]['cosine']
 
+def predict(user,item):
+    return 4
