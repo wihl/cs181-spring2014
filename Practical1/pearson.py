@@ -44,6 +44,16 @@ def sim_pearson(prefs,p1,p2):
   return r
 
 
+#Returns the best matches for person from the prefs dictionary
+#Number of the results and similiraty function are optional params.
+def topMatches(prefs,person,n=5,similarity=sim_pearson):
+    scores = [(similarity(prefs,person,other),other)
+                                for other in prefs if other != person]
+    scores.sort()
+    scores.reverse()
+    return scores[0:n]
+
+
 
 def getRecommendations(prefs,person,similarity=sim_pearson):
   '''

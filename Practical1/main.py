@@ -43,19 +43,22 @@ def runPearson(training_data, test_queries):
     pred_rating = {}
 
     for user in users:
-        pred_rating[user] = pearson.getRecommendations(users,user)
-
+        match = pearson.topMatches(users,user)
+        print user, match
+        #        pred_rating[user] = pearson.getRecommendations(users,user)
+    '''
     for query in test_queries:
         user_id = query['user']
         isbn    = query['isbn']
         if user_id in pred_rating:
             query['rating'] = pred_rating[user_id].get(isbn,4)
         else:
+            print user_id, "not found - defaulting"
             query['rating'] = 4
 
     # Write the prediction file.
     util.write_predictions(test_queries, pred_filename)
-
+    '''
     return 1.0
 
 def runCoFi(training_data, user_list):
