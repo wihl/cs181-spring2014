@@ -5,12 +5,12 @@
     Usage:
         python main.py
 '''
-import argparse
+
 import numpy as np
 import util
 import pearson as pearson
 import cosine as cosine
-import cofi as cofi
+
 
 
 
@@ -19,7 +19,6 @@ pred_filename  = 'pred-full.csv'
 
 def loadData(dataChoice):
     if dataChoice == 'sim':
-        pred_filename  = 'pred-sim.csv'
         train_filename = 'r-train100.csv'
         test_filename  = 'r-test100.csv'
         user_filename  = 'u100.csv'
@@ -35,7 +34,7 @@ def loadData(dataChoice):
 
     validation_set = {}
 
-    if dataChoice == 'validate':
+    if dataChoice != 'full':
         # split training_data into 80% training and 20% validation
         split = int(len(training_data) * 0.8)
         validation_set = training_data[split:]

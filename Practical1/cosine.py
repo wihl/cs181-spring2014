@@ -55,7 +55,6 @@ def topMatch(users):
 
 def predict(users,user,items,item,global_mean):
     # has the user already rated this item?
-
     if user in users:
         if item in users[user]['ratings']:
             return users[user]['ratings'][item]
@@ -66,7 +65,7 @@ def predict(users,user,items,item,global_mean):
             return users[closest]['ratings'][item]
 
     # does the user have a mean rating? If so, use that
-    
+    # TODO
 
 
     # then return the book's mean if it is non-zero
