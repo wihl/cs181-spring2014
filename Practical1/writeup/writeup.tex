@@ -101,4 +101,19 @@ This is more of a Test-Driven Development approach where most cases, both plausi
 
 To further improve the quality, I split the 200000 rows of training data into an 80/20 mixture of training and validation data. The validation set enabled me to check that the code would apply readily to the problem data as well verify the accuracy of the predictions. It also enabled me to find which patterns of data had the most error. Different algorithms could be applied depending on the pattern, a kind of simplified ensemble system.
 
+\subsection*{Cosine Distance}
+
+The next algorithm I attempted with a rather simple Cosine Distance \footnote{Guide to Data Mining, Chapter 2 http://guidetodatamining.com/chapter-2/}
+calculation.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{cosine}
+\caption{Cosine Distance}
+\end{figure}
+
+Since Cosine distance works well with sparse data, it significantly improved the results. This also exercised the synthetic data and testing environment. However I was still below the per-user mean, so the implementation had to increase in sophistication.
+
+
+
+
 \end{document}  
