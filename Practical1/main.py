@@ -11,11 +11,7 @@ import util
 import pearson as pearson
 import cosine as cosine
 
-
-
-
 pred_filename  = 'pred-full.csv'
-
 
 def loadData(dataChoice):
     if dataChoice == 'sim':
@@ -42,37 +38,6 @@ def loadData(dataChoice):
 
     return training_data, test_queries, user_list, validation_set
 
-
-def runPearson(training_data, test_queries):
-    print "Pearson picked"
-    users = {}
-    for rating in training_data:
-        user_id = rating['user']
-        isbn    = rating['isbn']
-        if not user_id in users: users[user_id] = {}
-        users[user_id][isbn] =  rating['rating']
-
-    pred_rating = {}
-
-    for user in users:
-        match = pearson.topMatches(users,user)
-        print user, match
-        #        pred_rating[user] = pearson.getRecommendations(users,user)
-    '''
-    for query in test_queries:
-        user_id = query['user']
-        isbn    = query['isbn']
-        if user_id in pred_rating:
-            query['rating'] = pred_rating[user_id].get(isbn,4)
-        else:
-            print user_id, "not found - defaulting"
-            query['rating'] = 4
-
-    # Write the prediction file.
-    util.write_predictions(test_queries, pred_filename)
-    '''
-    return 1.0
-
 def runCosine(training_set,user_list, validation_set, test_queries):
     users = {}
     for row in training_set:
@@ -92,7 +57,7 @@ def runCosine(training_set,user_list, validation_set, test_queries):
     total_error = 0.0
     sample_count  = 0
     # print "prediction, actual"
-    '''
+
     for row in validation_set:
         user_id = row['user']
         isbn    = row['isbn']
@@ -103,7 +68,7 @@ def runCosine(training_set,user_list, validation_set, test_queries):
         sample_count += 1
     return total_error / sample_count
     '''
-    
+    # TODO: parameterize validation vs. full
     for query in test_queries:
         user_id = query['user']
         isbn    = query['isbn']
@@ -111,11 +76,7 @@ def runCosine(training_set,user_list, validation_set, test_queries):
 
     # Write the prediction file.
     util.write_predictions(test_queries, pred_filename)
-
-
-
-#ratings, rating_exists = cofi.buildRatingMatrix(training_data)
-#Theta = cofi.buildTheta(user_list)
+    '''
 
 def main():
     error = 0.0
