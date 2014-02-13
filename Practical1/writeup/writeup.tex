@@ -39,8 +39,10 @@ I subsequently modified the code to use K-Medoids, choosing one of the sample da
 
 I then attempted to use K-Medoids with the CIFAR-10 Image Data, using the Matlab version of the data with Octave. The training data consists of a 10000x3072 matrix of UInt8. Each row is a 32x32x3 (total 3072 columns) color image, consisting of 1024 red, 1024 green and 1024 blue elements. There are 10 classes in the set (``airplane'', ``automobile'', etc.), so setting K=10 was a rational first step.
 
-Normalization of the Data had a dramatic effect.
+Normalization of the data had a dramatic effect, changing the largest cluster from 73\% to 26\% of all points.
 
+% commenting out data table because it looks ugly
+\iffalse
 \begin{center}
     \begin{tabular}{ | l | l | p{2cm} |}
     \hline
@@ -59,11 +61,12 @@ Normalization of the Data had a dramatic effect.
     \hline
     \end{tabular}
 \end{center}
+\fi
 
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.6]{normalvsunnormal}
-\caption{Cluster Distribution Percentage Normalized vs. Unnormalized}
+\caption{CIFAR-10 Cluster Distribution Percentage Normalized vs. Unnormalized}
 \end{figure}
 
 
@@ -119,11 +122,9 @@ To further improve the quality, I split the 200000 rows of training data into an
 
 The next algorithm I attempted with a rather simple Cosine Distance\footnote{Guide to Data Mining, Chapter 2 http://guidetodatamining.com/chapter-2/}
 calculation.
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.8]{cosine}
-\caption{Cosine Distance}
-\end{figure}
+\begin{equation}
+\cos(x,y) = \frac{x\cdot y}{|x|\times |y|}
+\end{equation}
 
 Since Cosine distance works well with sparse data, it significantly improved the results. This also exercised the synthetic data and testing environment. However, I was still below the per-user mean, so the implementation had to increase in sophistication.
 
