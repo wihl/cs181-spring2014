@@ -75,7 +75,7 @@ Unfortunately Pearson distance is not very effective with sparse data. Given tha
 
 \par In the previous Coursera course, I had to build a similar recommender system for movies. (The vectorized Octave implementation can be found in \texttt{cofiCostFunc.m}.) However that data was significantly differently with 1682 movies and 943 critics. The biggest difference was again the sparseness of this problem's data in comparison.
 
-An additional complexity was translating the existing Octave code to Python. While I had significant Python programming experience, I was less familiar with the \texttt{numpy} and \texttt{scipy} vector libraries. The Coursera / Ng class neatly packages the implementation so there were only a few lines of vectorized Octave to add. To do the equivalent in Python was rapidly taking significantly more code (like 20x!) to get equivalent functionality. 
+An additional complexity was translating the existing Octave code to Python. While I had significant Python programming experience, I was less familiar with the \texttt{numpy} and \texttt{scipy} vector libraries. The Coursera / Ng class neatly packages the implementation so there were only a few lines of vectorized Octave to add. To reimplement in Python was rapidly taking significantly more code (like 20x!) to get equivalent functionality. 
 
 While I could have adapted the prior Octave code to this problem, I decided not to as 1) I would not have learned as much, 2) I was skeptical that the algorithm would adapt well to the sparseness of the current data set. In my real world experience, data is more sparse and more noisy so it would be more interesting to tackle a new approach.
 
@@ -112,6 +112,10 @@ calculation.
 \end{figure}
 
 Since Cosine distance works well with sparse data, it significantly improved the results. This also exercised the synthetic data and testing environment. However I was still below the per-user mean, so the implementation had to increase in sophistication.
+
+\subsection*{Researching the Netflix Solutions}
+
+I read and review the winning Netflix solutions, specifically, Feature-Weighted Linear Stacking \footnote{Sill, et al. http://arxiv.org/pdf/0911.0460.pdf} and Matrix Factorization Techniques \footnote{Volinsky et al. http://www2.research.att.com/~volinsky/papers/ieeecomputer.pdf}. However, as a solo Extension school student without prior \texttt{numpy} experience, I felt I did not have sufficient time to build a reliable implementation of these more sophisticated algorithms. 
 
 \section*{Conclusion}
 
