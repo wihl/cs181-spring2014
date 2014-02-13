@@ -64,8 +64,9 @@ def predict(users,user,items,item,global_mean):
         if item in users[closest]['ratings']:
             return users[closest]['ratings'][item]
 
-    # does the user have a mean rating? If so, use that
-    # TODO
+        # does the user have a mean rating? If so, use that
+        if users[user].get('mean',0) != 0:
+            return users[user]['mean']
 
 
     # then return the book's mean if it is non-zero

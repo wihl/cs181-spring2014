@@ -56,14 +56,14 @@ def runCosine(training_set,user_list, validation_set, test_queries):
 
     total_error = 0.0
     sample_count  = 0
-    # print "prediction, actual"
+    print "user\tprediction\tactual"
 
     for row in validation_set:
-        user_id = row['user']
-        isbn    = row['isbn']
+        user = row['user']
+        isbn  = row['isbn']
         
-        prediction = cosine.predict(users,user_id,books,isbn,global_mean)
-        #print prediction, row['rating']
+        prediction = cosine.predict(users,user,books,isbn,global_mean)
+        print user,"\t",prediction,"\t\t",row['rating']
         total_error += abs(prediction - row['rating'])
         sample_count += 1
     return total_error / sample_count
@@ -92,8 +92,10 @@ def main():
     if choice == '1':
         training_data, test_queries, user_list, validation_set = loadData('sim')
     elif choice == '2':
+        print "Please wait ... could take up to 20 minutes"
         training_data, test_queries, user_list, validation_set = loadData('validate')
     elif choice == '3':
+        print "Please wait ... could take up to 20 minutes"
         training_data, test_queries, user_list, validation_set = loadData('full')
     elif choice.lower() == 'x':
         return
