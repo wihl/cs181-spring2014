@@ -13,14 +13,28 @@ def topMatch(users):
         vectorlen(users[user])
 
     for user1 in users:
+        # compute the user's mean rating
+        total = 0.0
+        count = 0
+        for r1 in users[user1]['ratings']:
+            count += 1
+            total += users[user1]['ratings'][r1]
+
+        if count > 0:
+            users[user1]['mean'] = float(total) / count
+        else:
+            users[user1]['mean'] = 0
+ 
+        # print "user mean", user1, users[user1]['mean']
+
         # find closet other user
         users[user1]['closest_user'] = 0
         users[user1]['cosine'] = -1.0
 
         for user2 in users:
             dotproduct = 0.0
-
             if user2 == user1: continue
+
             for r1 in users[user1]['ratings']:
                 if r1 in users[user2]['ratings']:
                     dotproduct += users[user1]['ratings'][r1] * users[user2]['ratings'][r1]
@@ -50,6 +64,10 @@ def predict(users,user,items,item,global_mean):
         closest = users[user]['closest_user']
         if item in users[closest]['ratings']:
             return users[closest]['ratings'][item]
+
+    # does the user have a mean rating? If so, use that
+    
+
 
     # then return the book's mean if it is non-zero
     if item in items:

@@ -15,21 +15,33 @@ import cofi as cofi
 
 
 pred_filename  = 'pred-full.csv'
-train_filename = 'ratings-train.csv'
-test_filename  = 'ratings-test.csv'
-user_filename  = 'users.csv'
-
-#pred_filename  = 'simple-pred.csv'
-#train_filename = 'r-train100.csv'
-#test_filename  = 'r-test100.csv'
-#user_filename  = 'u100.csv'
 
 
-def loadData():
+def loadData(dataChoice):
+    if dataChoice == 'sim':
+        pred_filename  = 'pred-sim.csv'
+        train_filename = 'r-train100.csv'
+        test_filename  = 'r-test100.csv'
+        user_filename  = 'u100.csv'
+    else:
+        # dataChoice == 'validate' or dataChoice == 'full'
+        train_filename = 'ratings-train.csv'
+        test_filename  = 'ratings-test.csv'
+        user_filename  = 'users.csv'
+
     training_data  = util.load_train(train_filename)
     test_queries   = util.load_test(test_filename)
     user_list      = util.load_users(user_filename)
-    return training_data, test_queries, user_list
+
+    validation_set = {}
+
+    if dataChoice == 'validate':
+        # split training_data into 80% training and 20% validation
+        split = int(len(training_data) * 0.8)
+        validation_set = training_data[split:]
+        training_data   = training_data[:split]
+
+    return training_data, test_queries, user_list, validation_set
 
 
 def runPearson(training_data, test_queries):
@@ -63,7 +75,6 @@ def runPearson(training_data, test_queries):
     return 1.0
 
 def runCosine(training_set,user_list, validation_set, test_queries):
-    print "Cosine picked"
     users = {}
     for row in training_set:
         user_id = row['user']
@@ -109,29 +120,26 @@ def runCosine(training_set,user_list, validation_set, test_queries):
 
 def main():
     error = 0.0
-    print "Data loading...",
-    training_data, test_queries, user_list = loadData()
-    # split training_data into 80% training and 20% validation
-    split = int(len(training_data) * 0.8)
-    training_set   = training_data[:split]
-    validation_set = training_data[split:]
-    print "complete"
 
-
-    print "Please choose which algorithm to run:"
+    print "Please choose:"
     print " "
-    print "1: Pearson Correlation"
-    print "2: Cosine"
+    print "1: Use simulated data"
+    print "2: Use validation data"
+    print "3: Use full data"
     print "x: Exit"
     print " "
     choice = raw_input("Please choose: ")
     if choice == '1':
-        error = runPearson(training_set, test_queries)
+        training_data, test_queries, user_list, validation_set = loadData('sim')
     elif choice == '2':
-        error = runCosine(training_data, user_list, validation_set, test_queries)
+        training_data, test_queries, user_list, validation_set = loadData('validate')
+    elif choice == '3':
+        training_data, test_queries, user_list, validation_set = loadData('full')
     elif choice.lower() == 'x':
         return
-    print "Resulting average error is",error
+
+    error = runCosine(training_data, user_list, validation_set, test_queries)
+    if error is not None: print "Resulting average error is",error
 
 if __name__ == "__main__":
     main()
