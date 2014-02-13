@@ -1,47 +1,66 @@
-README
-book_mean.py
-books.csv
-cf1
-cofi.py
-cofi.pyc
-cofi.py~
-cosine.py
-cosine.pyc
-cosine.py~
-error_log
-error_log~
-global_mean.py
-main.py
-main.pyc
-main.py~
+TODO:
+. clean up warmup directory
+. finish write up
+
+
+CSCI-E181 Spring 2014, David Wihl
+
+To execute my code, use
+
+   python main.py
+
+Three options will be presented:
+
+1: Use simulated data. 
+
+   This is a small manually created set of data to test and debug the Recommender algorithms
+
+2: Use validation data
+
+   This takes the course-supplied training data (ratings-train.csv) and splits in 80% 
+   training data and 20% validation data. The validation data is used check the 
+   accuracy of the predictions against known results in order to iterate quickly on 
+   the algorithms without using up a Kaggle submission.
+
+3: Use full data (and produce prediction file)
+
+   This takes the course-supplied training data (ratings-train.csv) and ratings-test.csv
+   in order to produce a Kaggle submission.
+
+
+Remaining contents of the directory:
+
+README 	  	      - this file
+book_mean.py 	      - course supplied
+books.csv 	      - course supplied
+cofi.py		      - partially completed implementation of non-normalized Collaborative
+		        filtering
+cosine.py	      - cosine distance implementation
+error_log	      - internal record keeping of score progress
+global_mean.py	      - course supplied
+main.py		      - main program
 pci
-pearson.py
-pearson.pyc
-practical1.pdf
-pred-full.csv
-pred-global-mean.csv
-pred-user-mean.csv
-r-test100.csv
-r-test100.csv~
-r-train100.csv
-r-train100.csv~
-ratings-sample.csv
-ratings-test.csv
-ratings-train.csv
-rc.py
-recommendations.pyc
-recommendations.py~
-s2.pyc
-s2.py~
-simple-pred.csv
-simple.pyc
-simple.py~
-small-pred.csv
-u100.csv
-u100.csv~
-user_mean.py
-users.csv
-util.py
-util.pyc
-warmup
-writeup
+pearson.py	      - partially complete Pearson implementation
+pred-full.csv	      - generated score results
+pred-global-mean.csv  - course supplied
+pred-user-mean.csv    - course supplied
+r-test100.csv	      - synthesized test data
+r-train100.csv	      - synthesized training data
+ratings-sample.csv    - course supplied
+ratings-test.csv      - course supplied
+ratings-train.csv     - course supplied
+u100.csv	      - synthesized test data
+user_mean.py	      - course supplied
+users.csv	      - course supplied
+util.py		      - course supplied
+
+
+warmup directory
+
+
+writeup directory:
+
+writeup.tex	      - source for writeup
+writeup.pdf	      - generated writeup
+
+

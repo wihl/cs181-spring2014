@@ -1,3 +1,8 @@
+'''
+   cosine.py
+   David Wihl, CSCI-E181, Spring 2014
+'''
+
 import numpy as py
 from math import sqrt 
 
