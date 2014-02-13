@@ -59,8 +59,8 @@ def topMatch(users):
 
 
 def predict(users,user,items,item,global_mean):
-    # has the user already rated this item?
     if user in users:
+        # has the user already rated this item?
         if item in users[user]['ratings']:
             return users[user]['ratings'][item]
 
@@ -81,6 +81,7 @@ def predict(users,user,items,item,global_mean):
             if item_mean != 0:
                 return item_mean
 
+    # no other alternatives - return the global mean
     return global_mean
 
 def meanPerItem(users):

@@ -16,7 +16,6 @@ dataChoice     = 'sim' # or 'validate' or 'full'
 
 def loadData():
     global dataChoice
-    print "dataChoice in loaddata", dataChoice
     if dataChoice == 'sim':
         train_filename = 'r-train100.csv'
         test_filename  = 'r-test100.csv'
@@ -43,7 +42,6 @@ def loadData():
 
 def runCosine(training_set,user_list, validation_set, test_queries):
     global dataChoice
-    print "dataChoice in runcosine", dataChoice
     users = {}
     for row in training_set:
         user_id = row['user']
