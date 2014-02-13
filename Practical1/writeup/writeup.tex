@@ -7,6 +7,7 @@
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
 								% TeX will automatically convert eps --> pdf in pdflatex		
 \usepackage{amssymb}
+\usepackage{relsize}
 
 \title{CSCI E-181 Spring 2014 Practical 1}
 \author{David Wihl\\
@@ -80,11 +81,13 @@ For the main part of the exercise, I investigated a series of increasing complex
 
 The first was using Pearson distance from \emph{Programming Collective Intelligence}.\footnote{Programming Collective Intelligence by Toby Segaran. \textsuperscript{\textcopyright} 2007 Toby Segaran, 978-0-596-52932-1.}
 
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.6]{pearson}
-\caption{Pearson Correlation Coefficient Approximation}
-\end{figure}
+\begin{equation}
+\mathlarger{\mathlarger{\mathlarger{
+r = \frac{\sum_{i=1}^n x_iy_i - \frac{\sum_{i=1}^n x_i \sum_{i=1}^n y_i} {n}} 
+     { \sqrt{\sum_{i=1}^n x_i^2 - \frac{(\sum_{i=1}^n x_i)^2}{n}} 
+        \sqrt{\sum_{i=1}^n y_i^2 - \frac{(\sum_{i=1}^n y_i)^2}{n}} }
+}}}
+\end{equation}
 
 Unfortunately Pearson distance is not very effective with sparse data. Given that the training consisted of only 200000 ratings for 131378 books x 12787 users, the ratings were sparse, so Pearson was not very effective at all.
 
