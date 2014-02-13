@@ -57,7 +57,7 @@ def runCosine(training_set,user_list, validation_set, test_queries):
     total_error = 0.0
     sample_count  = 0
     print "user\tprediction\tactual"
-
+    '''
     for row in validation_set:
         user = row['user']
         isbn  = row['isbn']
@@ -76,16 +76,16 @@ def runCosine(training_set,user_list, validation_set, test_queries):
 
     # Write the prediction file.
     util.write_predictions(test_queries, pred_filename)
-    '''
+    
 
 def main():
     error = 0.0
 
-    print "Please choose:"
+    print "Menu:"
     print " "
     print "1: Use simulated data"
     print "2: Use validation data"
-    print "3: Use full data"
+    print "3: Use full data (and produce prediction file)"
     print "x: Exit"
     print " "
     choice = raw_input("Please choose: ")

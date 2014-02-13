@@ -37,7 +37,7 @@ I subsequently modified the code to use K-Medoids, choosing one of the sample da
 
 \subsection*{CIFAR-10 Image Data}
 
-I then attempted using K-Medoids with the CIFAR-10 Image Data, using the Matlab version of the data with Octave. The training data consists of a 10000x3072 matrix of UInt8. Each row is a 32x32x3 (=3072) color image, consisting of 1024 red, 1024 green and 1024 blue elements. There are 10 classes in the set (``airplane'', ``automobile'', etc.), so setting K=10 was a rational first step.
+I then attempted using K-Medoids with the CIFAR-10 Image Data, using the Matlab version of the data with Octave. The training data consists of a 10000x3072 matrix of UInt8. Each row is a 32x32x3 (total 3072 columns) color image, consisting of 1024 red, 1024 green and 1024 blue elements. There are 10 classes in the set (``airplane'', ``automobile'', etc.), so setting K=10 was a rational first step.
 
 Percentage Distribution of K values after normalization and 10 iterations
 
@@ -52,11 +52,23 @@ Percentage Distribution of K values after normalization and 10 iterations
 03
 15
 
+TODO: fill this in
 	
 \section*{Recommender System}
 
-Using algorithm from \emph{Programming Collective Intelligence}.\footnote{Programming Collective Intelligence by Toby Segaran. \textsuperscript{\textcopyright} 2007 Toby Segaran, 978-0-596-52932-1.}
+For the main part of the exercise, I investigated a series of increasing complex algorithms. 
 
-Pearson distance
+\subsection*{Pearson Distance}
+
+The first was using Pearson distance from \emph{Programming Collective Intelligence}.\footnote{Programming Collective Intelligence by Toby Segaran. \textsuperscript{\textcopyright} 2007 Toby Segaran, 978-0-596-52932-1.}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{pearson}
+\caption{Pearson Correlation Coefficient Approximation}
+\end{figure}
+
+Unfortunately Pearson distance 
+
 
 \end{document}  
