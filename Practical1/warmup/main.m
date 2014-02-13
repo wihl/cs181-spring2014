@@ -1,3 +1,23 @@
+%
+% main.m
+% 
+% usage:
+%
+%    1. start Octave
+%    2. load the CIFAR-10 data
+%         octave> load ('cifar-10-matlab/data_batch_1')
+%    3. Set K
+%         octave> K=10
+%    4. Run this file
+%         octave> main(data,K)
+%
+% The results will show a relatively useless plot of the centroids. More usefully, it will display
+% the percentage of points in each cluster per iteration.
+%
+
+
+
+
 function [centroids, idx] = main(data, K)
 close all; clc
 
@@ -18,8 +38,10 @@ if ~exist('X', 'var')
     end
 endif
 
-% normalize X
+% normalize X. Comment out to leave unnormalized
 X = double(data - mean(data)) ./ std(data);
+
+% X = data;
 
 % Uncomment to use preset centroids
 % initial_centroids = [1,1;11,11;25,25;35,35;40,60]

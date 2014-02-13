@@ -39,20 +39,34 @@ I subsequently modified the code to use K-Medoids, choosing one of the sample da
 
 I then attempted to use K-Medoids with the CIFAR-10 Image Data, using the Matlab version of the data with Octave. The training data consists of a 10000x3072 matrix of UInt8. Each row is a 32x32x3 (total 3072 columns) color image, consisting of 1024 red, 1024 green and 1024 blue elements. There are 10 classes in the set (``airplane'', ``automobile'', etc.), so setting K=10 was a rational first step.
 
-Percentage Distribution of K values after normalization and 10 iterations
+Normalization of the Data had a dramatic effect.
 
-06
-05
-04
-26
-14
-13
-05
-04
-03
-15
+\begin{center}
+    \begin{tabular}{ | l | l | p{2cm} |}
+    \hline
+    \multicolumn{2}{|c|}{Percentage Distribution per Cluster} \\ \hline
+    Unnormalized & Normalized \\ \hline
+    0 & 6 \\ \hline
+    0 & 5 \\ \hline
+    0 & 4 \\ \hline
+    73 & 26 \\ \hline
+    16 & 14 \\ \hline
+    0 & 13 \\ \hline
+    0 & 5 \\ \hline
+    6 & 4 \\ \hline
+    3 & 3 \\ \hline
+    0 & 15 \\ \hline
+    \hline
+    \end{tabular}
+\end{center}
 
-TODO: fill this in
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{normalvsunnormal}
+\caption{Cluster Distribution Percentage Normalized vs. Unnormalized}
+\end{figure}
+
+
 \clearpage
 
 \section*{Recommender System}
