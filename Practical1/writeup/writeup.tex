@@ -38,7 +38,7 @@ I subsequently modified the code to use K-Medoids, choosing one of the sample da
 
 \subsection*{CIFAR-10 Image Data}
 
-I then attempted to use K-Medoids with the CIFAR-10 Image Data, using the Matlab version of the data with Octave. The training data consists of a 10000x3072 matrix of UInt8. Each row is a 32x32x3 (total 3072 columns) color image, consisting of 1024 red, 1024 green and 1024 blue elements. There are 10 classes in the set (``airplane'', ``automobile'', etc.), so setting K=10 was a rational first step.
+I then attempted to use K-Medoids with the CIFAR-10 Image Data, using the Matlab version of the data with Octave. The training data consists of a 10000$\times$3072 matrix of UInt8. Each row is a 32$\times$32$\times$3 (total 3072 columns) color image, consisting of 1024 red, 1024 green and 1024 blue elements. There are 10 classes in the set (``airplane'', ``automobile'', etc.), so setting $K=10$ was a rational first step.
 
 Normalization of the data had a dramatic effect, changing the largest cluster from 73\% to 26\% of all points.
 
@@ -89,7 +89,7 @@ r = \frac{\sum_{i=1}^n x_iy_i - \frac{\sum_{i=1}^n x_i \sum_{i=1}^n y_i} {n}}
 }}}
 \end{equation}
 
-Unfortunately Pearson distance is not very effective with sparse data. Given that the training consisted of only 200000 ratings for 131378 books x 12787 users, the ratings were sparse, so Pearson was not very effective at all.
+Unfortunately Pearson distance is not very effective with sparse data. Given that the training consisted of only 200000 ratings for 131378 books $\times$ 12787 users, the ratings were sparse, so Pearson was not very effective at all.
 
 \subsection*{Collaborative Filtering with Regularized Gradient}
 
