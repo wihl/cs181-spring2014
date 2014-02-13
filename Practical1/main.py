@@ -8,12 +8,15 @@
 
 import numpy as np
 import util
-import pearson as pearson
+import pearson as pearson # not currently used
 import cosine as cosine
 
 pred_filename  = 'pred-full.csv'
+dataChoice     = 'sim' # or 'validate' or 'full'
 
-def loadData(dataChoice):
+def loadData():
+    global dataChoice
+    print "dataChoice in loaddata", dataChoice
     if dataChoice == 'sim':
         train_filename = 'r-train100.csv'
         test_filename  = 'r-test100.csv'
@@ -39,6 +42,8 @@ def loadData(dataChoice):
     return training_data, test_queries, user_list, validation_set
 
 def runCosine(training_set,user_list, validation_set, test_queries):
+    global dataChoice
+    print "dataChoice in runcosine", dataChoice
     users = {}
     for row in training_set:
         user_id = row['user']
@@ -56,29 +61,32 @@ def runCosine(training_set,user_list, validation_set, test_queries):
 
     total_error = 0.0
     sample_count  = 0
-    print "user\tprediction\tactual"
-    '''
-    for row in validation_set:
-        user = row['user']
-        isbn  = row['isbn']
-        
-        prediction = cosine.predict(users,user,books,isbn,global_mean)
-        print user,"\t",prediction,"\t\t",row['rating']
-        total_error += abs(prediction - row['rating'])
-        sample_count += 1
-    return total_error / sample_count
-    '''
-    # TODO: parameterize validation vs. full
-    for query in test_queries:
-        user_id = query['user']
-        isbn    = query['isbn']
-        query['rating'] = cosine.predict(users,user_id,books,isbn,global_mean)
 
-    # Write the prediction file.
-    util.write_predictions(test_queries, pred_filename)
-    
+    if dataChoice == 'validate':
+        print "user\tprediction\tactual"
+
+        for row in validation_set:
+            user = row['user']
+            isbn  = row['isbn']
+        
+            prediction = cosine.predict(users,user,books,isbn,global_mean)
+            print user,"\t",prediction,"\t\t",row['rating']
+            total_error += abs(prediction - row['rating'])
+            sample_count += 1
+            return total_error / sample_count
+    else:
+        # dataChoice = 'full'
+        for query in test_queries:
+            user_id = query['user']
+            isbn    = query['isbn']
+            query['rating'] = cosine.predict(users,user_id,books,isbn,global_mean)
+
+        # Write the prediction file.
+        util.write_predictions(test_queries, pred_filename)
+
 
 def main():
+    global dataChoice
     error = 0.0
 
     print "Menu:"
@@ -90,13 +98,16 @@ def main():
     print " "
     choice = raw_input("Please choose: ")
     if choice == '1':
-        training_data, test_queries, user_list, validation_set = loadData('sim')
+        dataChoice = 'sim'
+        training_data, test_queries, user_list, validation_set = loadData()
     elif choice == '2':
+        dataChoice = 'validate'
         print "Please wait ... could take up to 20 minutes"
-        training_data, test_queries, user_list, validation_set = loadData('validate')
+        training_data, test_queries, user_list, validation_set = loadData()
     elif choice == '3':
+        dataChoice = 'full'
         print "Please wait ... could take up to 20 minutes"
-        training_data, test_queries, user_list, validation_set = loadData('full')
+        training_data, test_queries, user_list, validation_set = loadData()
     elif choice.lower() == 'x':
         return
 
