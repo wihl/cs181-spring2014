@@ -70,7 +70,42 @@ The first was using Pearson distance from \emph{Programming Collective Intellige
 
 Unfortunately Pearson distance is not very effective with sparse data. Given that the training consisted of only 200000 ratings for 131378 books x 12787 users, the ratings were sparse, so Pearson was not very effective at all.
 
+\subsection*{Collaborative Filtering with Regularized Gradient}
 
+In the previous Coursera course, I had to build a similar recommender system for movies. (The vectorized Octave implementation can be found in \texttt{./warmup/cofiCostFunc.m}.) However that data was significantly differently with 1682 movies and 943 critics. The biggest difference was again the sparseness of this problem's data in comparison.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{regularizedGradient}
+\caption{Regularized Gradient Cost Function}
+\end{figure}
+
+
+An additional complexity was translating the existing Octave code to Python. While I had significant Python programming experience, I was less familiar with the \texttt{numpy} and \texttt{scipy} vector libraries. The Coursera / Ng class neatly packages the implementation so there were only a few lines of vectorized Octave to add. To do the equivalent in Python was rapidly taking 20x lines of Python to get equivalent functionality. 
+
+While I could have adapted the prior Octave code to this problem, I decided not to as 1) I would not have learned as much, 2) I was skeptical that the algorithm would adapt well to the sparseness of the current data set. In my real world experience, data is more sparse and more noisy so it would be more interesting to tackle a new approach.
+
+\subsection*{A More Systematic Approach}
+
+Given the limit of four Kaggle submissions per day, I could not simply attempt a wide variety of different methods. While Kaggle would provide an overall score quality, it did provide enough fine-grained feedback as which cases were lowering the score. Also, each execution was taking up to 20 minutes on my laptop. So I chose a more systematic approach. First, I created a very simple set of training data. This synthetic training data allowed me to exercise a variety of different permutations and edge cases.
+
+Normal cases:
+\begin{itemize}
+  \item two very similar users
+  \item two very similar books
+  \item two or more mostly similar users
+\end{itemize}
+
+Pathological cases:
+\begin{itemize}
+  \item an outlier user (e.g. single review)
+  \item a book without any reviews
+  \item a user without any reviews
+\end{itemize}
+
+This is more of a Test-Driven Development approach where most cases, both plausible and implausible, are defined prior to implementation.
+
+To further improve the quality, I split the 200000 rows of training data into an 80/20 mixture of training and validation data. The validation set enabled me to check that the code would apply readily to the problem data as well verify the accuracy of the predictions before using up a Kaggle submission.
 
 
 \end{document}  
