@@ -19,9 +19,9 @@
 
 %\subsection*{Basic K-Means}
 
-\par As a warmup, I synthesized five clusters of data.  I then used a K-Means implementation in Octave I had written for a previous course.\footnote{Machine Learning, Coursera, Prof. Andrew Ng, Completed Jan 2014, \url{https://class.coursera.org/ml-004}} While this implementation was sufficient for the prior course's provided dataset, when I tested it the synthesized data set, K=5 and random initial centroids, one of the centroids would frequently not converge on any points.
+\par As a warmup, I synthesized five clusters of data.  I then used a K-Means implementation in Octave I had written for a previous course.\footnote{Machine Learning, Coursera, Prof. Andrew Ng, Completed Jan 2014, \url{https://class.coursera.org/ml-004}} While this implementation was sufficient for the prior course's provided dataset, when I tested it with the synthesized data set, K=5 and random initial centroids, one of the centroids would frequently not converge on any points.
 
-\begin{figure}[h!] % consider removing ! to  improve formatting and put back in subsection
+\begin{figure}[h!] 
 \centering
 \includegraphics[scale=0.6]{randominitialClusters}
 \caption{Random Initial Centroids After 1 Iteration}
@@ -53,7 +53,8 @@ Percentage Distribution of K values after normalization and 10 iterations
 15
 
 TODO: fill this in
-	
+\clearpage
+
 \section*{Recommender System}
 
 For the main part of the exercise, I investigated a series of increasing complex algorithms. 
@@ -72,16 +73,9 @@ Unfortunately Pearson distance is not very effective with sparse data. Given tha
 
 \subsection*{Collaborative Filtering with Regularized Gradient}
 
-In the previous Coursera course, I had to build a similar recommender system for movies. (The vectorized Octave implementation can be found in \texttt{./warmup/cofiCostFunc.m}.) However that data was significantly differently with 1682 movies and 943 critics. The biggest difference was again the sparseness of this problem's data in comparison.
+\par In the previous Coursera course, I had to build a similar recommender system for movies. (The vectorized Octave implementation can be found in \texttt{./warmup/cofiCostFunc.m}.) However that data was significantly differently with 1682 movies and 943 critics. The biggest difference was again the sparseness of this problem's data in comparison.
 
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.6]{regularizedGradient}
-\caption{Regularized Gradient Cost Function}
-\end{figure}
-
-
-An additional complexity was translating the existing Octave code to Python. While I had significant Python programming experience, I was less familiar with the \texttt{numpy} and \texttt{scipy} vector libraries. The Coursera / Ng class neatly packages the implementation so there were only a few lines of vectorized Octave to add. To do the equivalent in Python was rapidly taking 20x lines of Python to get equivalent functionality. 
+An additional complexity was translating the existing Octave code to Python. While I had significant Python programming experience, I was less familiar with the \texttt{numpy} and \texttt{scipy} vector libraries. The Coursera / Ng class neatly packages the implementation so there were only a few lines of vectorized Octave to add. To do the equivalent in Python was rapidly taking significantly more code (like 20x!) to get equivalent functionality. 
 
 While I could have adapted the prior Octave code to this problem, I decided not to as 1) I would not have learned as much, 2) I was skeptical that the algorithm would adapt well to the sparseness of the current data set. In my real world experience, data is more sparse and more noisy so it would be more interesting to tackle a new approach.
 
@@ -103,9 +97,8 @@ Pathological cases:
   \item a user without any reviews
 \end{itemize}
 
-This is more of a Test-Driven Development approach where most cases, both plausible and implausible, are defined prior to implementation.
+This is more of a Test-Driven Development approach where most cases, both plausible and implausible, are defined prior to implementation. \emph{The most limiting factor in this exercise is the number of Kaggle submissions, not the data or the algorithms.} I needed a means to improve the quality of the implementation quickly without using up a Kaggle submission unnecessarily. 
 
-To further improve the quality, I split the 200000 rows of training data into an 80/20 mixture of training and validation data. The validation set enabled me to check that the code would apply readily to the problem data as well verify the accuracy of the predictions before using up a Kaggle submission.
-
+To further improve the quality, I split the 200000 rows of training data into an 80/20 mixture of training and validation data. The validation set enabled me to check that the code would apply readily to the problem data as well verify the accuracy of the predictions. It also enabled me to find which patterns of data had the most error. Different algorithms could be applied depending on the pattern, a kind of simplified ensemble system.
 
 \end{document}  
