@@ -31,37 +31,31 @@ Three options will be presented:
    in order to produce a Kaggle submission.
 
 
-Remaining contents of the directory:
+Relevant remaining contents of the directory:
 
 README 	  	      - this file
-book_mean.py 	      - course supplied
-books.csv 	      - course supplied
 cofi.py		      - partially completed implementation of non-normalized Collaborative
-		        filtering
+		        filtering translated from Octave
 cosine.py	      - cosine distance implementation
 error_log	      - internal record keeping of score progress
-global_mean.py	      - course supplied
 main.py		      - main program
 pearson.py	      - partially complete Pearson implementation
 pred-full.csv	      - generated score results
-pred-global-mean.csv  - course supplied
-pred-user-mean.csv    - course supplied
 r-test100.csv	      - synthesized test data
 r-train100.csv	      - synthesized training data
-ratings-sample.csv    - course supplied
-ratings-test.csv      - course supplied
-ratings-train.csv     - course supplied
 u100.csv	      - synthesized test data
-user_mean.py	      - course supplied
-users.csv	      - course supplied
-util.py		      - course supplied
 
 
-warmup directory
+./warmup directory
+main.m		       - main Octave program
+findClosestCentroids.m - non-vectorized implementation of finding closest centroids (Octave)
+computeCentroids.m     - non-vectorized implementation of moving centroids (Octave)
+runkMeans.m	       - iterate and generate plots (Octave)
+cofiCostFunction.m     - vectorized Collaborative Filtering with Gradient Descent and regularization 
+		         from my prior Coursera class (Octave)
 
 
-writeup directory:
-
+./writeup directory:
 writeup.tex	      - source for writeup
 writeup.pdf	      - generated writeup
 
