@@ -34,19 +34,7 @@ theta = gradientDescent(X_bias, Y, theta, alpha, iterations);
 
 fprintf('Final gradient descent cost is %f\n', computeCost(X_bias, Y, X_bias*theta));
 
-
-% Plot the linear fit
-figure;
-
-plot(X,Y,'o');
-
-hold on;
-plot(X, X_bias*theta, '-', 'color','r')
-legend('Training data', 'Linear regression')
-xlabel('time since impact(ms)');
-ylabel('force on head (g)');
-title('Linear Regression');
-hold off;
+plotRegression(X,Y,X_bias*theta,'Linear Regression')
 
 %
 % Part 2 - Calculate and plot via polyfit
@@ -67,11 +55,5 @@ for i = 1:12
   endif
 
 end
-  
-figure
-plot(X,Y,'o',X,f,'-','color','r')
-legend('Training data', 'Polyfit')
-title('Polyfit');
-xlabel('time since impact(ms)');
-ylabel('force on head (g)');
-fprintf('polyerror = %f, polynomial = %d\n',bestJ, bestp);
+
+plotRegression(X,Y,f,'Polyfit')
