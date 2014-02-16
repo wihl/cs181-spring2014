@@ -15,45 +15,38 @@ Y = input(:,2);
 m = length(Y); % number of training examples
 
 %
-% Part 0 - Plot initial data
-%
-
-fprintf('Plotting Data...\n')
-figure(1)
-plot(X,Y,'o');
-xlabel('time since impact (ms)')
-ylabel('g-force on head')
-title('Initial Data')
-
-%
 % Part 1 - Calculate and plot via gradient descent
 %
 
+fprintf('Press enter to calculate and plot gradient descent.\n');
+pause;
+
 % compute via gradient descent
-X = [ones(m, 1), input(:,1)]; % Add a column of ones to x
+X_bias = [ones(m, 1), input(:,1)]; % Add a column of ones to x
 theta = zeros(2, 1); % initialize fitting parameters
 
 % Some gradient descent settings
 iterations = 50;
 alpha = 0.001;
 
-% compute initial cost
-J = computeCostTheta(X, Y, theta);
-
-fprintf('Press enter calculate and plot gradient descent.\n');
-pause;
-
 % run gradient descent
-theta = gradientDescent(X, Y, theta, alpha, iterations);
+theta = gradientDescent(X_bias, Y, theta, alpha, iterations);
 
-fprintf('Final gradient descent cost is %f\n', computeCostTheta(X, Y, theta));
+fprintf('Final gradient descent cost is %f\n', computeCost(X_bias, Y, X_bias*theta));
+
 
 % Plot the linear fit
-hold on; % keep previous plot visible
-plot(X(:,2), X*theta, '-', 'color','r')
+figure;
+
+plot(X,Y,'o');
+
+hold on;
+plot(X, X_bias*theta, '-', 'color','r')
 legend('Training data', 'Linear regression')
+xlabel('time since impact(ms)');
+ylabel('force on head (g)');
 title('Linear Regression');
-hold off % don't overlay any more plots on this figure
+hold off;
 
 %
 % Part 2 - Calculate and plot via polyfit
@@ -61,18 +54,24 @@ hold off % don't overlay any more plots on this figure
 fprintf('Press enter to calculate polycost.\n');
 pause;
 
-% reset X to remove bias column
-X = input(:,1);
+% find the best polynomial fit, up to 12
+bestp = 1;
+bestJ = Inf;
+for i = 1:12
+  p = polyfit(X,Y,i);
+  f = polyval(p,X);
+  J = computeCost(X,Y,f);
+  if J < bestJ
+     bestJ = J;
+     bestp = i;
+  endif
 
-p = polyfit(X,Y,9);
-f = polyval(p,X);
-
-figure(2)
+end
+  
+figure
 plot(X,Y,'o',X,f,'-','color','r')
 legend('Training data', 'Polyfit')
 title('Polyfit');
-
-sqrErrors = (f-Y).^2;
-J = 1/(2*m) * sum(sqrErrors);
-
-fprintf('polyerror = %f\n',J);
+xlabel('time since impact(ms)');
+ylabel('force on head (g)');
+fprintf('polyerror = %f, polynomial = %d\n',bestJ, bestp);
