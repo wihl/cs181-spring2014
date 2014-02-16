@@ -26,14 +26,14 @@ X_bias = [ones(m, 1), input(:,1)]; % Add a column of ones to x
 theta = zeros(2, 1); % initialize fitting parameters
 
 % Some gradient descent settings
-iterations = 50;
+iterations = 1500;
 alpha = 0.001;
 
 % run gradient descent
 theta = gradientDescent(X_bias, Y, theta, alpha, iterations);
 
 fprintf('Final gradient descent cost is %f\n', computeCost(X_bias, Y, X_bias*theta));
-
+hold on;
 plotRegression(X,Y,X_bias*theta,'Linear Regression')
 
 %
@@ -56,4 +56,5 @@ for i = 1:12
 
 end
 
+fprintf('Final polynomial cost is %f\n', bestJ);
 plotRegression(X,Y,f,'Polyfit')
