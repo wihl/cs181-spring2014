@@ -58,3 +58,14 @@ end
 
 fprintf('Final polynomial cost is %f\n', bestJ);
 plotRegression(X,Y,f,'Polyfit')
+
+%
+% Part 3 - closed form
+%
+
+theta = pinv(X_bias'*X_bias)*X_bias'*Y
+
+J = computeCost(X,Y,X_bias*theta);
+fprintf('Cost via closed form %f\n',J);
+
+plotRegression(X,Y,X_bias*theta,'Closed form');

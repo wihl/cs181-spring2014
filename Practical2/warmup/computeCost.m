@@ -1,7 +1,13 @@
-function J = computeCost(X, Y, f)
+function J = computeCost(X, T, y)
 %COMPUTECOST Compute cost for linear regression
-m = length(Y); % number of training examples
+% use sum of squares.
+% Inputs:
+%   X - the input vector
+%   T - the target values
+%   y - the output function
 
-J = 1/(2*m) * sum( (f - Y) .^ 2);
+m = length(T); % number of training examples
+
+J = 1/(2*m) * sum( (y - T) .^ 2);
 
 end
