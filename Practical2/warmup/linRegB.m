@@ -20,17 +20,17 @@ ytrain = Y;
 model = struct('mu', 0, 'Sigma', noiseSD);
 noise = gaussSample(model, trainingPoints);
 
-iter = 10;
+iter = 30;
 
-subplot2(iter+2,2,1,2);
+%subplot2(iter+2,2,1,2);
 priorMean = [0;0];
 priorSigma = eye(2)./priorPrecision; %Covariance Matrix
 priorPDF = @(W)gaussProb(W,priorMean',priorSigma);
 %contourPlot(priorPDF,[]);
 
 % Plot sample lines whose parameters are drawn from the prior distribution.
-subplot2(iter+2,2,1,3);
-plotSampleLines(priorMean',priorSigma,6,[])
+%subplot2(iter+2,2,1,3);
+%plotSampleLines(priorMean',priorSigma,6,input)
 
 % For each iteration plot the likelihood of the ith data point, the
 % posterior over the first i data points and sample lines whose
@@ -48,7 +48,13 @@ for i=1:iter
   [postW,mu,sigma] = update([1,xtrain(i)],ytrain(i),likelihoodPrecision,mu,sigma);
   %contourPlot(postW,[a0,a1]);
   
-  subplot2(2+iter,2,i+1,3);
-  plotSampleLines(mu,sigma,6,[xtrain(1:i),ytrain(1:i)]);  
+  %subplot2(2+iter,2,i+1,3);
+  %plotSampleLines(mu,sigma,6,[xtrain(1:i),ytrain(1:i)]);  
+
+  % plot every tenth iteration
+  if mod(i,10) == 0
+     subplot(3,1,floor(i/10));
+     plotSampleLines(mu, sigma, 20, input);
+  endif
 end
 

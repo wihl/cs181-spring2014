@@ -7,14 +7,14 @@ for i = 1:numberOfLines
     model = struct('mu', mu, 'Sigma', sigma);
     w = gaussSample(model);
     func = @(x) w(1) + w(2)*x;
-    fplot(func,[-1,1,-1,1],'r');
+    fplot(func,[0,60],'r');
     hold on;
 end
 axis square;
-set(gca,'XTick',[-1,0,1]);
-set(gca,'YTick',[-1,0,1]);
-xlabel(' x ');
-ylabel(' y ','Rotation',0);
+%set(gca,'XTick',[-1,0,1]);
+%set(gca,'YTick',[-1,0,1]);
+%xlabel(' x ');
+%ylabel(' y ','Rotation',0);
 if(size(dataPoints,2) == 2)
     hold on;
     plot(dataPoints(:,1),dataPoints(:,2),'ob');    
