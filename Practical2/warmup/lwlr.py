@@ -61,8 +61,8 @@ def rssError(yArr,yHatArr): #yArr and yHatArr both need to be arrays
     return ((yArr-yHatArr)**2).sum()
 
 def main():
-    xArr,yArr=reg.loadDataSet('motorcycle.csv')
-    yHat = reg.lwlrTest(xArr, xArr, yArr, 1.0)
+    xArr,yArr=loadDataSet('motorcycle.csv')
+    yHat = lwlrTest(xArr, xArr, yArr, 1.0)
     xMat = mat(xArr)
     strInd = xMat[:,1].argsort(0)
     xSort = xMat[strInd][:,0,:]

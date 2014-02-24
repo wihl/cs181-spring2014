@@ -108,9 +108,6 @@ priorMean = [0;0];
 priorSigma = eye(2)./priorPrecision; %Covariance Matrix
 priorPDF = @(W)gaussProb(W,priorMean',priorSigma);
 
-% For each iteration plot the likelihood of the ith data point, the
-% posterior over the first i data points and sample lines whose
-% parameters are drawn from the corresponding posterior. 
 mu = priorMean;
 sigma = priorSigma;
 
