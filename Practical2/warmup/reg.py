@@ -1,9 +1,16 @@
 '''
+CSCI-E181, Practical 2
 
+ Locally weighted Linear Regression.
+
+Modified from "Machine Learning in Action", Peter Harrington, ISBN 9781617290183
 '''
 from numpy import *
 
-def loadDataSet(fileName):      #general function to parse tab -delimited floats
+def loadDataSet(fileName): 
+    '''
+    general function to parse comma-delimited floats
+    '''
     dataMat = []; labelMat = []
     fr = open(fileName)
     numFeat = len(fr.readline().split(',')) - 1 #get number of fields from header row
