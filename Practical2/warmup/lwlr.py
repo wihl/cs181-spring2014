@@ -57,8 +57,9 @@ def lwlrTestPlot(xArr,yArr,k=1.0):  #same thing as lwlrTest except it sorts X fi
         yHat[i] = lwlr(xCopy[i],xArr,yArr,k)
     return yHat,xCopy
 
-def rssError(yArr,yHatArr): #yArr and yHatArr both need to be arrays
-    return ((yArr-yHatArr)**2).sum()
+def computeCost(yArr,yHatArr): #yArr and yHatArr both need to be arrays
+    m = float(len(yArr))
+    return (1.0/(2.0*m)) * ((yArr-yHatArr)**2).sum()
 
 def main():
     xArr,yArr=loadDataSet('motorcycle.csv')
@@ -66,6 +67,7 @@ def main():
     xMat = mat(xArr)
     strInd = xMat[:,1].argsort(0)
     xSort = xMat[strInd][:,0,:]
+    print "Final cost of LWLR is ",computeCost(yArr,yHat) 
     fig = plt.figure()
     ax = fig.add_subplot(111)
     ax.plot(xSort[:,1],yHat[strInd])
