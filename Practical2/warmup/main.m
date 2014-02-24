@@ -1,6 +1,5 @@
 %
 % CSCI-E181, Spring 2014, Practical 2, Warmup
-% David Wihl
 % 
 % Usage:
 %     Start Octave or Matlab
