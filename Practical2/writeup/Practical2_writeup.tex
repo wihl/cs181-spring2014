@@ -29,33 +29,18 @@
 %helmet tests on g forces http://www.smf.org/docs/articles/hic/Various_helmets_stds.pdf
 
 
-\subsection*{CIFAR-10 Image Data}
+\subsection*{Maximum Likelihood Estimation}
 
-I then attempted to use K-Medoids with the CIFAR-10 Image Data, using the Matlab version of the data with Octave. The training data consists of a 10000$\times$3072 matrix of UInt8. Each row is a 32$\times$32$\times$3 (total 3072 columns) color image, consisting of 1024 red, 1024 green and 1024 blue elements. There are 10 classes in the set (``airplane'', ``automobile'', etc.), so setting $K=10$ was a rational first step.
+Max likelihood
 
-Normalization of the data had a dramatic effect, changing the largest cluster from 73\% to 26\% of all points.
+\subsection*{Bayesian Linear}
 
-% commenting out data table because it looks ugly
-\iffalse
-\begin{center}
-    \begin{tabular}{ | l | l | p{2cm} |}
-    \hline
-    \multicolumn{2}{|c|}{Percentage Distribution per Cluster} \\ \hline
-    Unnormalized & Normalized \\ \hline
-    0 & 6 \\ \hline
-    0 & 5 \\ \hline
-    0 & 4 \\ \hline
-    73 & 26 \\ \hline
-    16 & 14 \\ \hline
-    0 & 13 \\ \hline
-    0 & 5 \\ \hline
-    6 & 4 \\ \hline
-    3 & 3 \\ \hline
-    0 & 15 \\ \hline
-    \hline
-    \end{tabular}
-\end{center}
-\fi
+Bayesian linear
+
+\subsection*{Locally Weighted Linear Regression}
+
+Locally weighted linear regression
+
 
 \section*{Recommender System}
 
