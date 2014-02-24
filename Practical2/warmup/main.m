@@ -42,7 +42,9 @@ plotRegression(X,Y,X_bias*theta,'Linear Regression')
 fprintf('Press enter to calculate polycost.\n');
 pause;
 
+
 % find the best polynomial fit, up to 12
+% clearly overfitting, bien sur
 bestp = 1;
 bestJ = Inf;
 for i = 1:12
@@ -62,10 +64,64 @@ plotRegression(X,Y,f,'Polyfit')
 %
 % Part 3 - closed form
 %
+fprintf('Press enter to use closed form.\n');
+pause;
 
-theta = pinv(X_bias'*X_bias)*X_bias'*Y
+
+theta = pinv(X_bias'*X_bias)*X_bias'*Y;
 
 J = computeCost(X,Y,X_bias*theta);
 fprintf('Cost via closed form %f\n',J);
 
 plotRegression(X,Y,X_bias*theta,'Closed form');
+
+%
+% Part 4 - 
+% Modified from "Machine Learning, a Probablistic Perspective"
+% by Kevin Murphy. Original code can be found at 
+% https://github.com/probml/pmtk3
+%
+fprintf('Press enter to use Gaussian noise.\n');
+pause;
+
+trainingPoints = length(Y);
+
+a0 = -0.3; %Parameters of the actual underlying model that we wish to recover
+a1 = 0.5;  %We will estimate these values with w0 and w1 respectively. 
+
+noiseSD = 0.2;
+
+priorPrecision = 2.0;
+
+likelihoodSD = noiseSD;
+likelihoodPrecision = 1/(likelihoodSD)^2;
+
+xtrain = X;
+ytrain = Y;
+
+model = struct('mu', 0, 'Sigma', noiseSD);
+noise = gaussSample(model, trainingPoints);
+
+iter = 30;
+
+priorMean = [0;0];
+priorSigma = eye(2)./priorPrecision; %Covariance Matrix
+priorPDF = @(W)gaussProb(W,priorMean',priorSigma);
+
+% For each iteration plot the likelihood of the ith data point, the
+% posterior over the first i data points and sample lines whose
+% parameters are drawn from the corresponding posterior. 
+mu = priorMean;
+sigma = priorSigma;
+
+for i=1:iter
+  likelihood = @(W) uniGaussPdf(xtrain(i),W*[1;xtrain(i)],likelihoodSD.^2);
+
+  [postW,mu,sigma] = update([1,xtrain(i)],ytrain(i),likelihoodPrecision,mu,sigma);
+
+end
+
+%J = computeCost(X,Y,X_bias*theta);
+%fprintf('Cost via closed form %f\n',J);
+
+%plotRegression(X,Y,X_bias*theta,'Closed form');
