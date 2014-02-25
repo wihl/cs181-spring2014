@@ -185,9 +185,10 @@ def metadata_feats(md):
     """
     d = {}
     for k,v in md.__dict__.iteritems():
-        if k in util.MovieData.implicit_list_atts or k in util.MovieData.reviewers:
+        if k in util.MovieData.implicit_list_atts  or k in util.MovieData.reviewers:
             continue
-        if k == "target":
+        # filter these fields
+        if k == 'target':
             continue
         if isinstance(v, list):
             d.update([(k+"-"+val,1) for val in v])
@@ -275,7 +276,7 @@ def main():
     outputfile = "mypredictions2.csv"  # feel free to change this or take it as an argument
     
     # TODO put the names of the feature functions you've defined above in this list
-    ffs = [metadata_feats, unigram_feats, squared_terms, threshold_terms]
+    ffs = [metadata_feats] #, unigram_feats,  squared_terms] #threshold_terms,
 
     
     # extract features
