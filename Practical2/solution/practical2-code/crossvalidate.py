@@ -2,6 +2,10 @@ import numpy as np
 from scipy import sparse
 from scipy.sparse import linalg as splinalg
 
+from sklearn.linear_model import Lasso
+
+
+
 NUM_FOLDS = 10
 
 def calcError(trainx, testx, trainy, Y, start, f):
@@ -24,7 +28,7 @@ def getScore(X,Y,f):
     f is the function to generate predictions
     '''
     m = len(Y)
-    print X.shape, m
+    print "X shape:", X.shape
     if m < NUM_FOLDS:
         num_folds = 2
         fold_size = m / 2
@@ -41,11 +45,41 @@ def getScore(X,Y,f):
     trainy = Y[fold_size:]
     mean_error.append(calcError(trainx, testx, trainy, Y, 0, f))
 
+    alpha = 100.0
+    lasso = Lasso(alpha = alpha, normalize=False, positive=True, precompute='auto', max_iter=5000)
+
+    y_pred_lasso = lasso.fit(trainx, trainy).predict(testx)
+
+    error = 0.0
+
+    # test
+    for i in range (len(y_pred_lasso)):
+        error += abs(y_pred_lasso[i] - Y[i])
+        #print i, y_pred_lasso[i], Y[i]
+    
+    print error / float(len(y_pred_lasso))
+
+
+
     # rerun at the last fold
     trainx = X[0:train_size]
     testx  = X[train_size:]
     trainy = Y[0:train_size]
     mean_error.append(calcError(trainx, testx, trainy, Y, train_size, f))
+
+    lasso = Lasso(alpha = alpha, normalize=False, positive=True, precompute='auto', max_iter=1500)
+
+    y_pred_lasso = lasso.fit(trainx, trainy).predict(testx)
+
+    error = 0.0
+
+    # test
+    for i in range (len(y_pred_lasso)):
+        error += abs(y_pred_lasso[i] - Y[train_size + i])
+        #print i, y_pred_lasso[i], Y[train_size + i]
+    
+    print error / float(len(y_pred_lasso))
+
 
     return mean_error
 
