@@ -69,7 +69,8 @@ def main():
     xSort = xMat[strInd][:,0,:]
     print "Final cost of LWLR is ",computeCost(yArr,yHat) 
     fig = plt.figure()
-    #plt.errorbar(xSort[:,1], yHat[strInd], )
+    yErr = yArr - yHat
+    #plt.errorbar(xSort[:,1], yHat[strInd], yErr )
     ax = fig.add_subplot(111)
     ax.plot(xSort[:,1],yHat[strInd])
     ax.scatter(xMat[:,1].flatten().A[0], mat(yArr).T.flatten().A[0], s=2, c='red')
