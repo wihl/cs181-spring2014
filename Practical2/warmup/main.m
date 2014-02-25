@@ -32,7 +32,7 @@ alpha = 0.001;
 theta = gradientDescent(X_bias, Y, theta, alpha, iterations);
 
 fprintf('Final linear basis cost is %f\n', computeCost(X_bias, Y, X_bias*theta));
-hold on;
+
 plotRegression(X,Y,X_bias*theta,'Linear Basis')
 
 %

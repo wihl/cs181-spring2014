@@ -32,8 +32,8 @@
 
 \begin{figure}[h!] 
   \centering
-  \includegraphics[scale=0.6]{gradient_descent}
-  \caption{Warmup: Linear Basis\label{gradientdescent}}
+  \scalebox{0.5}{{\large \input{linear.tex}}}
+  \caption{Warmup: Linear Basis}
 \end{figure}
 
 As a baseline, we first created a simple linear gradient descent with a flat slope and intercept. 
@@ -42,7 +42,7 @@ We also used a polynomial basis, iterating with polynomials from $n^2$ up to $n^
 
 \begin{figure}[h!] 
   \centering
-  \includegraphics[scale=0.6]{polyfit}
+  \scalebox{0.5}{{\large \input{poly.tex}}}
   \caption{Warmup: Polynomial Basis $n^{12}$}
 \end{figure}
 
@@ -56,9 +56,9 @@ W_{ML} = (\Phi^T\Phi)^{-1}\Phi^Tt
 This was simple to implement, especially in Octave/Matlab. However, without normalization the error rate was close to the baseline linear basis and significantly worse than the polynomial.
 
 \begin{figure}[h!] 
-\centering
-\includegraphics[scale=0.6]{closed_form}
-\caption{Warmup: Gaussian}
+  \centering
+  \scalebox{0.5}{{\large \input{gauss.tex}}}
+  \caption{Warmup: Gaussian}
 \end{figure}
 
 
