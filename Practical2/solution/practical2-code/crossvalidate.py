@@ -19,10 +19,12 @@ def getScore(X,Y,f):
         fold_size = m / num_folds
 
     train_size = m - fold_size
+    mean_error = []
 
-    trainx = X[0:train_size]
-    testx  = X[train_size:]
-    trainy = Y[0:train_size]
+    # start at the first fold
+    trainx = X[fold_size:]
+    testx  = X[0:fold_size]
+    trainy = Y[fold_size:]
 
     # train
     w = f(trainx,trainy)[0]
@@ -34,7 +36,27 @@ def getScore(X,Y,f):
         error += abs(pred[i] - Y[train_size + i])
         print i, pred[i], Y[train_size + i]
 
-    mean_error = error / float(fold_size)
+    mean_error.append(error / float(fold_size))
+
+
+    # rerun at the last fold
+    trainx = X[0:train_size]
+    testx  = X[train_size:]
+    trainy = Y[0:train_size]
+
+
+    # train
+    w = f(trainx,trainy)[0]
+    pred = trainx.dot(w)
+    error = 0.0
+    
+    # test
+    for i in range (fold_size):
+        error += abs(pred[i] - Y[train_size + i])
+        print i, pred[i], Y[train_size + i]
+
+    mean_error.append(error / float(fold_size))
+
     return mean_error
 
 
