@@ -9,14 +9,15 @@
 \usepackage{amssymb}
 \usepackage{relsize}
 
-\title{CSCI 181 / E-181 Spring 2014 Practical 2}
-
+\title{CSCI 181 / E-181 Spring 2014 Practical 2 \\ 
+{\large Kaggle Team "No Comment"}
+}
 \author{
   David Wihl\\
   \texttt{davidwihl@gmail.com}
   \and
   Zack Hendlin\\
-  \texttt{zgh@mit.edu}
+  \texttt{zgh@mit.edu} 
 }
 %\date{}							% Activate to display a given date or no date
 
@@ -64,7 +65,10 @@ This was simple to implement, especially in Octave/Matlab. However, without norm
 
 \subsection*{Locally Weighted Linear Regression}
 
-Locally Weighted Linear Regression\footnote{\emph{Machine Learning in Action} by Peter Harrington. \textsuperscript{\textcopyright} 2012 ISBN 978-1617290183} provided the lowest cost overall and a smooth fit to the data without overfitting given the profile of this dataset. A variety of $K$ values were attempted. 0.001 never converged. Values from 0.5, 1.0, 5.0 and 10.0 did converge with 1.0 seemingly providing the best balance between fit and smoothness.
+Locally Weighted Linear Regression (LWLR)\footnote{\emph{Machine Learning in Action} by Peter Harrington. \textsuperscript{\textcopyright} 2012 ISBN 978-1617290183} provided the lowest cost overall and a smooth fit to the data without overfitting given the profile of this dataset. A variety of $K$ values were attempted. 0.001 never converged. Values from 0.5, 1.0, 5.0 and 10.0 did converge with 1.0 seemingly providing the best balance between fit and smoothness.
+
+LWLR is an expensive operation. Since the dataset here was small and did not match a typical straight line or polynomial pattern, it was appropriate to attempt LWLR.
+
 
 
 
