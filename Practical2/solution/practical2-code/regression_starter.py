@@ -53,6 +53,7 @@ except ImportError:
 import numpy as np
 from scipy import sparse
 from scipy.sparse import linalg as splinalg
+import argparse
 
 import util
 
@@ -256,6 +257,10 @@ def threshold_terms(md):
 
 ## The following function does the feature extraction, learning, and prediction
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-c', '--cross_validate',help='Run cross-validation (instead of of output)', action='store_true')
+    args = parser.parse_args()
+
     trainfile = "train.xml"
     testfile = "testcases.xml"
     outputfile = "mypredictions2.csv"  # feel free to change this or take it as an argument
@@ -275,25 +280,33 @@ def main():
     learned_w = splinalg.lsqr(X_train,y_train)[0]
     print "done learning"
     print
+
+
+    if args.cross_validate:
+        print "running cross-validation tests..."
+        print "done cross-validation"
+    else:
+
+        # write out predictions on test data
+
+        # get rid of training data and load test data
+        del X_train
+        del y_train
+        del train_ids
+        print "extracting test features..."
+        X_test,_,y_ignore,test_ids = extract_feats(ffs, testfile, global_feat_dict=global_feat_dict)
+        print "done extracting test features"
+        print
+        
+        # TODO make predictions on text data and write them out
+        print "making predictions..."
+        preds = X_test.dot(learned_w)
+        print "done making predictions"
+        print
     
-    # get rid of training data and load test data
-    del X_train
-    del y_train
-    del train_ids
-    print "extracting test features..."
-    X_test,_,y_ignore,test_ids = extract_feats(ffs, testfile, global_feat_dict=global_feat_dict)
-    print "done extracting test features"
-    print
-    
-    # TODO make predictions on text data and write them out
-    print "making predictions..."
-    preds = X_test.dot(learned_w)
-    print "done making predictions"
-    print
-    
-    print "writing predictions..."
-    util.write_predictions(preds, test_ids, outputfile)
-    print "done!"
+        print "writing predictions..."
+        util.write_predictions(preds, test_ids, outputfile)
+        print "done!"
 
 if __name__ == "__main__":
     main()
