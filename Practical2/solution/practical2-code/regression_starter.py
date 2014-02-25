@@ -56,7 +56,7 @@ from scipy.sparse import linalg as splinalg
 import argparse
 
 import util
-
+import crossvalidate
 
 def extract_feats(ffs, datafile="train.xml", global_feat_dict=None):
     """
@@ -113,6 +113,11 @@ def extract_feats(ffs, datafile="train.xml", global_feat_dict=None):
                 curr_inst.append(line)
 
     X,feat_dict = make_design_mat(fds,global_feat_dict)
+    #print "type X", type(X), "type feat_dict", type(feat_dict), "type targets", type(targets), "type ids", type(ids)
+    #print "x[0]", X[0]
+    #print "feat dict",feat_dict
+    #print "targets:", targets
+    #print "ids:", ids
     return X, feat_dict, np.array(targets), ids
 
 
@@ -259,9 +264,13 @@ def threshold_terms(md):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-c', '--cross_validate',help='Run cross-validation (instead of of output)', action='store_true')
+    parser.add_argument('-t', '--train_file', nargs=1, help='Training file')
     args = parser.parse_args()
 
-    trainfile = "train.xml"
+    if args.train_file:
+        trainfile = args.train_file[0]
+    else:
+        trainfile = "train.xml"
     testfile = "testcases.xml"
     outputfile = "mypredictions2.csv"  # feel free to change this or take it as an argument
     
@@ -284,6 +293,8 @@ def main():
 
     if args.cross_validate:
         print "running cross-validation tests..."
+        score = crossvalidate.getScore(X_train,y_train, splinalg.lsqr)
+        print "MAE cross validation score:",score
         print "done cross-validation"
     else:
 
