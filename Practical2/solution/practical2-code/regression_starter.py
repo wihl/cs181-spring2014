@@ -284,12 +284,6 @@ def main():
     print "done extracting training features"
     print
     
-    # TODO train here, and return regression parameters
-    print "learning..."
-    learned_w = splinalg.lsqr(X_train,y_train)[0]
-    print "done learning"
-    print
-
 
     if args.cross_validate:
         print "running cross-validation tests..."
@@ -299,6 +293,12 @@ def main():
     else:
 
         # write out predictions on test data
+
+        # TODO train here, and return regression parameters
+        print "learning..."
+        learned_w = splinalg.lsqr(X_train,y_train)[0]
+        print "done learning"
+        print
 
         # get rid of training data and load test data
         del X_train
