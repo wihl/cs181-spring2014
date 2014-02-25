@@ -76,6 +76,10 @@ Locally Weighted Linear Regression\footnote{\emph{Machine Learning in Action} by
 \end{figure}
 
 \subsection*{Warmup Summary}
+Across all basis functions, overall error rate was calculated by sum-of-squares:
+\begin{equation}
+J = \frac{1}{2N}\sum_{i=1}^N(y_i-t_i)^2
+\end{equation}
 
 The following table summarizes our results. LWLR was reasonably simple to implement and provided the lowest cost. For this particular data set, it would be our basis function of choice.
 
