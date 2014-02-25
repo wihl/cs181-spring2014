@@ -181,6 +181,8 @@ def metadata_feats(md):
     for k,v in md.__dict__.iteritems():
         if k in util.MovieData.implicit_list_atts or k in util.MovieData.reviewers:
             continue
+        if k == "target":
+            continue
         if isinstance(v, list):
             d.update([(k+"-"+val,1) for val in v])
         elif isinstance(v, float):
@@ -210,15 +212,57 @@ def unigram_feats(md):
                           if util.non_numeric(token)])
     return c
 
+##Created squared terms for numeric fields
+def squared_terms(md):
+    # d = {}
+    # for k,v in md.__dict__.iteritems():
+    #     if k == 'number of screens':
+    #         d.update([(k+"-"+val,1) for val in v])
+    # return d
+    d = {}
+    for k,v in md.__dict__.iteritems():
+        if k in ['running_time', 'production_budget', 'number_of_screens']:
+            if isinstance(v, float):
+                d[k] = v**2
+            elif isinstance(v, bool):
+                d[k] = float(v**2)
+            else:
+                d[k]=0
+
+    return d
+
+##captures if numbers are above a particular treshold (e.g. non linear 'jump' in values)
+def threshold_terms(md):
+    # d = {}
+    # for k,v in md.__dict__.iteritems():
+    #     if k == 'number of screens':
+    #         d.update([(k+"-"+val,1) for val in v])
+    # return d
+    d = {}
+    for k,v in md.__dict__.iteritems():
+        if k in ['production_budget']:
+            if isinstance(v, float):
+                d[k] = float(v>50000000)
+            else:
+                d[k]=0
+        if k in ['number_of_screens']:
+            if isinstance(v, float):
+                d[k] = float(v>100)
+            else:
+                d[k]=0
+    return d
+
+
 
 ## The following function does the feature extraction, learning, and prediction
 def main():
     trainfile = "train.xml"
     testfile = "testcases.xml"
-    outputfile = "mypredictions.csv"  # feel free to change this or take it as an argument
+    outputfile = "mypredictions2.csv"  # feel free to change this or take it as an argument
     
     # TODO put the names of the feature functions you've defined above in this list
-    ffs = [metadata_feats, unigram_feats]
+    ffs = [metadata_feats, unigram_feats, squared_terms, threshold_terms]
+
     
     # extract features
     print "extracting training features..."
