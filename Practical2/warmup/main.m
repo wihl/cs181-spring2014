@@ -33,12 +33,12 @@ theta = gradientDescent(X_bias, Y, theta, alpha, iterations);
 
 fprintf('Final gradient descent cost is %f\n', computeCost(X_bias, Y, X_bias*theta));
 hold on;
-plotRegression(X,Y,X_bias*theta,'Linear Regression')
+plotRegression(X,Y,X_bias*theta,'Linear Basis')
 
 %
 % Part 2 - Calculate and plot via polyfit
 %
-fprintf('Press enter to calculate polycost.\n');
+fprintf('Press enter to calculate polynomial basis.\n');
 pause;
 
 
@@ -46,7 +46,7 @@ pause;
 % clearly overfitting, bien sur
 bestp = 1;
 bestJ = Inf;
-for i = 1:12
+for i = 2:12
   p = polyfit(X,Y,i);
   f = polyval(p,X);
   J = computeCost(X,Y,f);
@@ -58,21 +58,21 @@ for i = 1:12
 end
 
 fprintf('Final polynomial cost is %f\n', bestJ);
-plotRegression(X,Y,f,'Polyfit')
+plotRegression(X,Y,f,'Polynomial Basis')
 
 %
 % Part 3 - closed form
 %
-fprintf('Press enter to use closed form.\n');
+fprintf('Press enter to use Gaussian.\n');
 pause;
 
 
 theta = pinv(X_bias'*X_bias)*X_bias'*Y;
 
 J = computeCost(X,Y,X_bias*theta);
-fprintf('Cost via closed form %f\n',J);
+fprintf('Cost via Gaussian%f\n',J);
 
-plotRegression(X,Y,X_bias*theta,'Closed form');
+plotRegression(X,Y,X_bias*theta,'Gaussian / Moore Penrose');
 
 %
 % Part 4 - 

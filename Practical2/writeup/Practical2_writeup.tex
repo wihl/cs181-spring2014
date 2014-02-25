@@ -28,46 +28,43 @@
 
 %helmet tests on g forces http://www.smf.org/docs/articles/hic/Various_helmets_stds.pdf
 
-
-\subsection*{Maximum Likelihood Estimation}
+\subsection*{Baseline}
 
 \begin{figure}[h!] 
   \centering
   \includegraphics[scale=0.6]{gradient_descent}
-  \caption{Warmup: Gradient Descent \label{gradientdescent}}
+  \caption{Warmup: Linear Basis\label{gradientdescent}}
 \end{figure}
 
-As a baseline, we first a simple gradient descent. We also did a clearly overfit polynomial (using up to $n^12$).
+As a baseline, we first created a simple linear gradient descent with a flat slope and intercept. 
+
+We also used a polynomial basis, iterating with polynomials from $n^2$ up to $n^{12}$ and selecting the lowest error. Unsurprisingly, $n^{12}$ had the lowest error rate, but is likely highly overfit.
 
 \begin{figure}[h!] 
   \centering
   \includegraphics[scale=0.6]{polyfit}
-  \caption{Warmup: Polynomial Fit $n^{12}$}
+  \caption{Warmup: Polynomial Basis $n^{12}$}
 \end{figure}
-
-
 
 \subsection*{Bayesian Linear Regression}
 
-Using Moore Penrose, we solved for w.
+Using Gaussian Likelihood and Prior, we solved for $W$ using Moore Penrose.
+\begin{equation}
+W_{ML} = (\Phi^T\Phi)^{-1}\Phi^Tt
+\end{equation}
 
-\begin{figure}[h!] 
-\centering
-\includegraphics[scale=0.6]{moore_penrose}
-\caption{Warmup: Moore Penrose (closed form)}
-\end{figure}
- 
+This was simple to implement, especially in Octave/Matlab. However, without normalization the error rate was close to the baseline linear basis and significantly worse than the polynomial.
 
 \begin{figure}[h!] 
 \centering
 \includegraphics[scale=0.6]{closed_form}
-\caption{Warmup: Gaussian (closed form)}
+\caption{Warmup: Gaussian}
 \end{figure}
 
 
 \subsection*{Locally Weighted Linear Regression}
 
-Locally weighted Linear Regression\footnote{Machine Learning in Action by Peter Harrington. \textsuperscript{\textcopyright} 2012 ISBN 978-1617290183} provided the lowest cost overall and a smooth fit to the data without overfitting given the profile of this dataset. A variety of $K$ values were attempted. 0.001 never converged. Values from 0.5, 1.0, 5.0 and 10.0 did converge with 1.0 seemingly providing the best balance between fit and smoothness.
+Locally Weighted Linear Regression\footnote{\emph{Machine Learning in Action} by Peter Harrington. \textsuperscript{\textcopyright} 2012 ISBN 978-1617290183} provided the lowest cost overall and a smooth fit to the data without overfitting given the profile of this dataset. A variety of $K$ values were attempted. 0.001 never converged. Values from 0.5, 1.0, 5.0 and 10.0 did converge with 1.0 seemingly providing the best balance between fit and smoothness.
 
 
 
@@ -75,17 +72,21 @@ Locally weighted Linear Regression\footnote{Machine Learning in Action by Peter 
 \begin{figure}[h!] 
 \centering
 \includegraphics[scale=0.6]{lwlr}
-\caption{Warmup: Locally Weighted Linear Regression}
+\caption{Warmup: Locally Weighted Linear Regression $K=1$}
 \end{figure}
+
+\subsection*{Warmup Summary}
+
+The following table summarizes our results. LWLR was reasonably simple to implement and provided the lowest cost. For this particular data set, it would be our basis function of choice.
 
 \begin{center}
     \begin{tabular}{| l | l |}
     \hline
-    Method & Lowest Error \\ \hline
-    Gradient Descent & 1293.0 \\
-    Gaussian & 1187.7 \\
-    Polynomial & 211.9 \\
-    LWLR & 185.6 \\
+    Basis & Lowest Error \\ \hline
+    Linear Basis & \hfill 1293.0 \\
+    Gaussian Basis & \hfill 1187.7 \\
+    Polynomial Basis & \hfill 211.9 \\
+    LWLR Basis & \hfill 185.6 \\
     \hline
     \end{tabular}
 \end{center}
