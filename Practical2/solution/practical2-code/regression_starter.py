@@ -54,6 +54,7 @@ import numpy as np
 from scipy import sparse
 from scipy.sparse import linalg as splinalg
 import argparse
+from dateutil import parser
 
 import util
 import crossvalidate
@@ -185,9 +186,16 @@ def metadata_feats(md):
     """
     d = {}
     for k,v in md.__dict__.iteritems():
+        #print k
         if k in util.MovieData.implicit_list_atts  or k in util.MovieData.reviewers:
             continue
         # filter these fields
+        if k in ['id','directors','actors','authors', 'origins', 'company', 'name']:
+            continue
+        if k == 'release_date':
+            # convert release date into just a month
+            d[k] = parser.parse(v).month
+            continue
         if k == 'target':
             continue
         if isinstance(v, list):
@@ -282,6 +290,8 @@ def main():
     # extract features
     print "extracting training features..."
     X_train,global_feat_dict,y_train,train_ids = extract_feats(ffs, trainfile)
+    print global_feat_dict
+    print X_train[0], X_train[1]
     print "done extracting training features"
     print
     
