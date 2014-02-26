@@ -116,11 +116,6 @@ def extract_feats(ffs, datafile="train.xml", global_feat_dict=None):
                 curr_inst.append(line)
 
     X,feat_dict = make_design_mat(fds,global_feat_dict)
-    #print "type X", type(X), "type feat_dict", type(feat_dict), "type targets", type(targets), "type ids", type(ids)
-    #print "x[0]", X[0]
-    #print "feat dict",feat_dict
-    #print "targets:", targets
-    #print "ids:", ids
     return X, feat_dict, np.array(targets), ids
 
 
@@ -177,7 +172,6 @@ def make_design_mat(fds, global_feat_dict=None):
 
 ## Here are two example feature-functions. They each take in a util.MovieData
 ## object, and return a dictionary mapping feature-names to numeric values.
-## TODO: modify these functions, and/or add new ones.
 def metadata_feats(md):
     """
     arguments:
@@ -229,13 +223,11 @@ def squared_terms(md):
                 d[k] = float(v**2)
             else:
                 d[k]=0
-
     return d
 
 
 ##captures review data
 def review_terms(md):
-    
     d = {}
     rev_count = 0
     for rev in util.MovieData.reviewers:
@@ -275,7 +267,7 @@ def main():
     testfile = "testcases.xml"
     outputfile = "mypredictions2.csv"  # feel free to change this or take it as an argument
     
-    # TODO put the names of the feature functions you've defined above in this list
+    # put the names of the feature functions you've defined above in this list
     ffs = [metadata_feats] #, squared_terms] #, review_terms] #, unigram_feats, threshold_terms]
 
     
@@ -284,11 +276,7 @@ def main():
     X_train,global_feat_dict,y_train,train_ids = extract_feats(ffs, trainfile)
     global_feat_dict_sorted = sorted(global_feat_dict.iteritems(), key=operator.itemgetter(1))
     print global_feat_dict_sorted
-    sum_xtrain = X_train.sum(axis=0)
-    #print '\n'.join(['%i: %8.2f %s' % 
-    #                     (n, sum_xtrain[0][n], global_feat_dict_sorted[n][0]) for n in xrange(len(global_feat_dict_sorted))])
-
-    print sum_xtrain
+    #print X_train.sum(axis=0)
     #print "1:",X_train[0]
     #print "2:",X_train[1]
     #print "3:",X_train[2]
@@ -306,10 +294,10 @@ def main():
 
         # write out predictions on test data
 
-        # TODO train here, and return regression parameters
+        # train here, and return regression parameters
         print "learning..."
         learned_w = splinalg.lsqr(X_train,y_train)[0]
-        print '\n'.join(['%i: %8.2f %s' % 
+        print '\n'.join(['%i: %8.8f %s' % 
                          (n, learned_w[n], global_feat_dict_sorted[n][0]) for n in xrange(len(learned_w))])
         print "done learning"
         print
@@ -323,7 +311,7 @@ def main():
         print "done extracting test features"
         print
         
-        # TODO make predictions on text data and write them out
+        # make predictions on text data and write them out
         print "making predictions..."
         preds = np.absolute(X_test.dot(learned_w))
         print "done making predictions"
