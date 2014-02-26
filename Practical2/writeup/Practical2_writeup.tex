@@ -107,7 +107,11 @@ The following table summarizes our results. LWLR was reasonably simple to implem
 
 The training set consists of movie metadata and textual movie reviews. From the sample code provided in the problem, the initial set of features has a classic problem of too many dimensions (105403) for too little data (1147).  This is mostly due to the unigrams converting each word of each movie review and description into a different dimension. Eliminating the unigrams as a first step significantly improved classification results and reduced dimensionality to only(!) 11276.
 
-\subsection*{Subsection 2}
+\subsection*{Using Cross-validation}
+
+To quickly evaluate the regression algorithms, we build a simple cross validation set, using 10\% of the data and two folds. This enabled us to track $J_{cv}$ vs $J_{train}$. By measuring the learning curve,\footnote{\emph{The Elements of Statistical Learning} by Hastie, et al. \textsuperscript{\textcopyright} 2009 ISBN 978-0-387848587} we could see our algorithms' progression.
+
+\subsection*{Subsection}
 
 \section*{Conclusion}
 
