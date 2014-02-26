@@ -55,6 +55,8 @@ from scipy import sparse
 from scipy.sparse import linalg as splinalg
 import argparse
 from dateutil import parser
+from sklearn.preprocessing import normalize
+import operator
 
 import util
 import crossvalidate
@@ -187,12 +189,14 @@ def metadata_feats(md):
     d = {}
     for k,v in md.__dict__.iteritems():
         #print k
+        #if k in util.MovieData.reviewers:
         if k in util.MovieData.implicit_list_atts  or k in util.MovieData.reviewers:
             continue
         # filter these fields
-        if k in ['id','directors','actors','authors', 'origins', 'company', 'name']:
+        if k in ['id','directors','actors','authors', 'origins', 'company', 'name', 'running_time']:
             continue
         if k == 'release_date':
+            continue
             # convert release date into just a month
             d[k] = parser.parse(v).month
             continue
@@ -236,7 +240,7 @@ def squared_terms(md):
     # return d
     d = {}
     for k,v in md.__dict__.iteritems():
-        if k in ['running_time', 'production_budget', 'number_of_screens']:
+        if k in ['number_of_screens']:
             if isinstance(v, float):
                 d[k] = v**2
             elif isinstance(v, bool):
@@ -284,14 +288,18 @@ def main():
     outputfile = "mypredictions2.csv"  # feel free to change this or take it as an argument
     
     # TODO put the names of the feature functions you've defined above in this list
-    ffs = [metadata_feats] #, unigram_feats,  squared_terms, threshold_terms]
+    ffs = [metadata_feats, squared_terms] #, unigram_feats,  squared_terms, threshold_terms]
 
     
     # extract features
     print "extracting training features..."
     X_train,global_feat_dict,y_train,train_ids = extract_feats(ffs, trainfile)
-    print global_feat_dict
-    print X_train[0], X_train[1]
+    global_feat_dict_sorted = sorted(global_feat_dict.iteritems(), key=operator.itemgetter(1))
+    print global_feat_dict_sorted
+    #print "1:",X_train[0]
+    #print "2:",X_train[1]
+    #print "3:",X_train[2]
+
     print "done extracting training features"
     print
     
@@ -308,6 +316,8 @@ def main():
         # TODO train here, and return regression parameters
         print "learning..."
         learned_w = splinalg.lsqr(X_train,y_train)[0]
+        print '\n'.join(['%i: %8.2f %s' % 
+                         (n, learned_w[n], global_feat_dict_sorted[n][0]) for n in xrange(len(learned_w))])
         print "done learning"
         print
 
@@ -322,7 +332,7 @@ def main():
         
         # TODO make predictions on text data and write them out
         print "making predictions..."
-        preds = X_test.dot(learned_w)
+        preds = np.absolute(X_test.dot(learned_w))
         print "done making predictions"
         print
     

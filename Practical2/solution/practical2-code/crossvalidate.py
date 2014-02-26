@@ -1,6 +1,9 @@
 import numpy as np
 from scipy import sparse
+from scipy.sparse import csr_matrix
 from scipy.sparse import linalg as splinalg
+
+from sklearn import linear_model
 
 import stageWise as sw
 
@@ -42,7 +45,21 @@ def getScore(X,Y,f):
     testx  = X[0:fold_size]
     trainy = Y[fold_size:]
     mean_error.append(calcError(trainx, testx, trainy, Y, 0, f))
+
+    '''
+    clf = linear_model.BayesianRidge()
+
+    y_pred_lasso = clf.fit(trainx.toarray(), trainy.toarray()).predict(testx)
+
+    error = 0.0
+
+    # test
+    for i in range (len(y_pred_lasso)):
+        error += abs(y_pred_lasso[i] - Y[i])
+        #print i, y_pred_lasso[i], Y[i]
     
+    print error / float(len(y_pred_lasso))
+    '''
     # rerun at the last fold
     trainx = X[0:train_size]
     testx  = X[train_size:]
