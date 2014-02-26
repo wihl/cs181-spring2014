@@ -276,7 +276,7 @@ def main():
     outputfile = "mypredictions2.csv"  # feel free to change this or take it as an argument
     
     # TODO put the names of the feature functions you've defined above in this list
-    ffs = [metadata_feats, unigram_feats,  squared_terms, threshold_terms]
+    ffs = [metadata_feats] #, unigram_feats,  squared_terms, threshold_terms]
 
     
     # extract features

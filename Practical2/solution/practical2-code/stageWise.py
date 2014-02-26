@@ -1,5 +1,12 @@
 from numpy import *
 
+def regularize(xMat):#regularize by columns
+    inMat = xMat.copy()
+    inMeans = mean(inMat,0)   #calc mean then subtract it off
+    print "inMat shape:", inMat.shape
+    inVar = var(inMat,0)      #calc variance of Xi then divide by it
+    inMat = (inMat - inMeans)/inVar
+    return inMat
 
 def stageWise(xArr,yArr,eps=0.01,numIt=100):
     xMat = mat(xArr); yMat=mat(yArr).T
@@ -22,5 +29,5 @@ def stageWise(xArr,yArr,eps=0.01,numIt=100):
                     lowestError = rssE
                     wsMax = wsTest
         ws = wsMax.copy()
-        #returnMat[i,:]=ws.T
-    #return returnMat
+        returnMat[i,:]=ws.T
+    return returnMat
