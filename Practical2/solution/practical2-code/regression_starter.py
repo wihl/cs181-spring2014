@@ -55,8 +55,8 @@ from scipy import sparse
 from scipy.sparse import linalg as splinalg
 import argparse
 from dateutil import parser
-from sklearn.preprocessing import normalize
 import operator
+import math
 
 import util
 import crossvalidate
@@ -188,28 +188,10 @@ def metadata_feats(md):
     """
     d = {}
     for k,v in md.__dict__.iteritems():
-        #print k
-        #if k in util.MovieData.reviewers:
-        if k in util.MovieData.implicit_list_atts  or k in util.MovieData.reviewers:
-            continue
-        # filter these fields
-        if k in ['id','directors','actors','authors', 'origins', 'company', 'name', 'running_time']:
-            continue
-        if k == 'release_date':
-            continue
-            # convert release date into just a month
-            d[k] = parser.parse(v).month
-            continue
-        if k == 'target':
-            continue
-        if isinstance(v, list):
-            d.update([(k+"-"+val,1) for val in v])
-        elif isinstance(v, float):
+        if k == 'production_budget':
             d[k] = v
-        elif isinstance(v, bool):
-            d[k] = float(v)
-        else:
-            d[k+"-"+v] = 1
+        if k == 'number_of_screens':
+            d[k] = pow(v,4)
     return d
 
 def unigram_feats(md):
@@ -240,9 +222,9 @@ def squared_terms(md):
     # return d
     d = {}
     for k,v in md.__dict__.iteritems():
-        if k in ['number_of_screens']:
+        if k == 'number_of_screens':
             if isinstance(v, float):
-                d[k] = v**2
+                d[k] = v**3
             elif isinstance(v, bool):
                 d[k] = float(v**2)
             else:
@@ -294,7 +276,7 @@ def main():
     outputfile = "mypredictions2.csv"  # feel free to change this or take it as an argument
     
     # TODO put the names of the feature functions you've defined above in this list
-    ffs = [metadata_feats, squared_terms, review_terms] #, unigram_feats,  squared_terms, threshold_terms]
+    ffs = [metadata_feats] #, squared_terms] #, review_terms] #, unigram_feats, threshold_terms]
 
     
     # extract features
