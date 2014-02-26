@@ -250,13 +250,20 @@ def squared_terms(md):
 
     return d
 
+
+##captures review data
+def review_terms(md):
+    
+    d = {}
+    rev_count = 0
+    for rev in util.MovieData.reviewers:
+        if hasattr(md,rev):
+            d['Review-'+rev] = 1
+    return d
+
+
 ##captures if numbers are above a particular treshold (e.g. non linear 'jump' in values)
 def threshold_terms(md):
-    # d = {}
-    # for k,v in md.__dict__.iteritems():
-    #     if k == 'number of screens':
-    #         d.update([(k+"-"+val,1) for val in v])
-    # return d
     d = {}
     for k,v in md.__dict__.iteritems():
         if k in ['production_budget']:
@@ -270,7 +277,6 @@ def threshold_terms(md):
             else:
                 d[k]=0
     return d
-
 
 
 ## The following function does the feature extraction, learning, and prediction
@@ -288,7 +294,7 @@ def main():
     outputfile = "mypredictions2.csv"  # feel free to change this or take it as an argument
     
     # TODO put the names of the feature functions you've defined above in this list
-    ffs = [metadata_feats, squared_terms] #, unigram_feats,  squared_terms, threshold_terms]
+    ffs = [metadata_feats, squared_terms, review_terms] #, unigram_feats,  squared_terms, threshold_terms]
 
     
     # extract features
@@ -296,6 +302,11 @@ def main():
     X_train,global_feat_dict,y_train,train_ids = extract_feats(ffs, trainfile)
     global_feat_dict_sorted = sorted(global_feat_dict.iteritems(), key=operator.itemgetter(1))
     print global_feat_dict_sorted
+    sum_xtrain = X_train.sum(axis=0)
+    #print '\n'.join(['%i: %8.2f %s' % 
+    #                     (n, sum_xtrain[0][n], global_feat_dict_sorted[n][0]) for n in xrange(len(global_feat_dict_sorted))])
+
+    print sum_xtrain
     #print "1:",X_train[0]
     #print "2:",X_train[1]
     #print "3:",X_train[2]
