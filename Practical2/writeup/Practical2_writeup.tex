@@ -114,6 +114,7 @@ To quickly evaluate the regression algorithms, we build a simple cross validatio
 TODO: expand to full CV
 
 \subsection*{Subsection}
+NOTES follow:
 
 Attempts made:
 lasso, ridge, normalizing data
@@ -123,11 +124,12 @@ polynomial values
 removing extra features, like words, dates
 examining w to see which features were unusual or had significant weighting
 came down to two: number of screens, and production budget. We tried various polynomials of numbers of screens, with 4th power yielding minimum error
-
+production budgets > \$50,000,000 were deemed a "blockbuster" type as they had the largest errors, and therefore the largest penalties. Upon detailed analysis in Excel of the training data, we needed to apply a correction of 0.85 to this different category of movie. Given the large production budget, a studio can produce only a few blockbusters per year so by definition they are outliers compared to the majority of the movies. While our correction for large budget films decreased the overall error rate somewhat, it did not have as dramatic as effect as we'd hoped. Given most of the big budget films had lower openings relative to smaller budget films, we assume the studios were generally also disappointed.
 
 \section*{Conclusion}
 
 Exercise in feature engineering - to quickly weed out which features are relevant and which are noise. More sophisticated algorithms like ridge and lasso are not necessarily better as they involve tweaking normalizing values.
+
 
 
 \end{document}  
