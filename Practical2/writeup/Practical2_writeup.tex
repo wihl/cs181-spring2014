@@ -98,7 +98,7 @@ The following table summarizes our results. LWLR was reasonably simple to implem
     \hline
     \end{tabular}
 \end{center}
-
+\clearpage
 
 \section*{Predicting Movie Opening Weekend Revenues}
 
@@ -158,7 +158,7 @@ We evaluated (1) ordinary least squares linear regression, (2) lasso regression 
 
 By Feature Engineering, we were able to pare the dataset down to a very manageable $1146 \times 2$, well within the bounds of a simple tool like Excel.
 
-The largest errors were on the most successful movies. Production budgets $> \$50,000,000$ were deemed a "blockbuster" type. Upon detailed analysis of the training data, we needed to apply a correction of 0.85 to this different category of movie. Given the large production budget, a studio can produce only a few blockbusters per year so by definition they are outliers compared to the majority of the movies. While our correction for large budget films decreased the overall error rate somewhat, it did not have as dramatic as effect as we'd hoped. Given most of the big budget films had lower openings relative to smaller budget films, we assume the studios were generally also disappointed.
+The largest errors were on the most successful movies. Production budgets $>$ {\$50,000,000} were deemed a "blockbuster" type. Upon detailed analysis of the training data, we needed to apply a correction of 0.85 to this different category of movie. Given the large production budget, a studio can produce only a few blockbusters per year so by definition they are outliers compared to the majority of the movies. While our correction for large budget films decreased the overall error rate somewhat, it did not have as dramatic as effect as we'd hoped. Given most of the big budget films had lower openings relative to smaller budget films, we assume the studios were generally also disappointed.
 
 \section*{Conclusion}
 The key learning from this practical is that even relatively simple techniques (such as linear regression) can be extremely powerful if appropriate features are selected. 
