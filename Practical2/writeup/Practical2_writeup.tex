@@ -105,15 +105,17 @@ The following table summarizes our results. LWLR was reasonably simple to implem
 
 \subsection*{Preliminary Data Analysis}
 
-The training set consists of movie metadata and textual movie reviews. From the sample code provided in the problem, the initial set of features has a classic problem of too many dimensions (105403) for too little data (1147).  This is mostly due to the unigrams converting each word of each movie review and description into a different dimension.
+The training set consists of movie metadata and textual movie reviews. From the sample code provided in the problem, the initial set of features has a classic $P > N$ problem of too many dimensions (105403) for too little data (1147).  This is mostly due to the unigrams converting each word of each movie review and description into a different dimension.
 
-Eliminating the unigrams as a first step significantly improved classification results and reduced dimensionality to only(!) 11276 TODO update down just 2!
+Eliminating the unigrams as a first step significantly improved classification results and reduced dimensionality to only(!) 11276 dimensions. By turning dates into month of year and other obvious changes, we were able to reduce dimensionality to just 46 dimensions.
 
 \subsection*{Using Cross-validation}
 
-To quickly evaluate the regression algorithms, we build a simple cross validation set, using 10\% of the data and two folds. This enabled us to track $J_{cv}$ vs $J_{train}$. By measuring the learning curve,\footnote{\emph{The Elements of Statistical Learning} by Hastie, et al. \textsuperscript{\textcopyright} 2009 ISBN 978-0-387848587} we could see our algorithms' progression.
+To quickly evaluate the regression algorithms, we build a simple cross validation set, using 10\% of the data and ten folds. This enabled us to track $J_{cv}$ vs $J_{train}$. By measuring the learning curve,\footnote{\emph{The Elements of Statistical Learning} by Hastie, et al. \textsuperscript{\textcopyright} 2009 ISBN 978-0-387848587} we could see our algorithms' progression.
 
-TODO: expand to full CV
+Using multiple test runs, examining error rates and looking at the resulting weighting values, we were able to which dimensions had value.
+
+
 
 \section*{Approaches considered}
 We considered two approaches: 
@@ -124,28 +126,35 @@ We tested a number of approaches to both add features, and to remove features wh
 
 (1) Exclusion of unigrams which used actually hurt model performance
 
-(2) Testing of positive and negative wording in reviews. We recognized that while all words in a review may cause overfitting and result in statistically insignificant weight for an individual word (due to the small N in the data), some words in reviews could contain particularly high information content. As such we tested two features:
-	(A) a 'good' list: ["good", "great", "excellent", "seeing", "superb", "must-see", "fantastic", "credible", "best"]
-	(B) a 'bad' list: ["bad", "slow", "boring", "horrible", "waste", "poor", "lazy","worst"]
+(2) Further reduction in dimensionality. For example, in the original sample code, every date (including year) was a new feature. We transformed this into month of the year, but there was no change in weighting.
+
+(3) Testing of positive and negative wording in reviews. We recognized that while all words in a review may cause overfitting and result in statistically insignificant weight for an individual word (due to the small N in the data), some words in reviews could contain particularly high information content. As such we tested two features:
+\begin{description}
+  \item[a `good' list]: [``good'', ``great", ``excellent", ``seeing", ``superb", ``must-see", ``fantastic", ``credible", ``best"]
+  \item[a `bad' list]: [``bad", ``slow", ``boring", ``horrible", ``waste", ``poor", ``lazy",``worst"]
+\end{description}
 Unfortunately, that didn't improve our model's performance.
 
-(3) Creation of squared values for all quantitative variables. This did not help model performance but did lead us understand that "number of screens" a movie shown on was quite predictive. We then tuned the parameter for the exponent of "number of screens" (from 2.0 to 5.0) and found 4.3 to maximize our performance on two holdout samples -- this helped our performance gains in the model significantly.
+(4) Creation of squared values for all quantitative variables. This did not help model performance but did lead us understand that "number of screens" a movie shown on was quite predictive. We then tuned the parameter for the exponent of "number of screens" (from 2.0 to 5.0) and found 4.3 to maximize our performance on two holdout samples -- this helped our performance gains in the model significantly.
 
-(4) Creation of logs for all quantitative variables on the basis that large numbers (e.g. budgets) may have non-linear impacts on the revenues of a movie. This did not help the model's performance.
+(5) Creation of logs for all quantitative variables on the basis that large numbers (e.g. budgets) may have non-linear impacts on the revenues of a movie. This did not help the model's performance.
 
-(5) Threshold values as binary 1/0 values for if a film's budget was above a particular value, and if the number of threaters a movie shown in was above a particular value. We ran sensitivities to various values on the logic that there can be 'step functions' insofar as a movie with a very low budget may not be sufficiently high quality, but anything about X may be sufficient). This did not help the model's performance.
+(6) Threshold values as binary 1/0 values for if a film's budget was above a particular value, and if the number of theaters a movie shown in was above a particular value. We ran sensitivities to various values on the logic that there can be 'step functions' insofar as a movie with a very low budget may not be sufficiently high quality, but anything about X may be sufficient). This did not help the model's performance.
+
+
+After these attempts, we concluded that only two dimensions had any significant value: \emph{number of screens} and to a lessor extent \emph{production budget}.
+
+\begin{figure}[h!] 
+\centering
+\includegraphics[scale=0.55]{numberOfTheatres}
+\caption{Actual vs Predicted by Number of Screens}
+\end{figure}
+
 
 \subsection*{Selection of fitting technique}
 
 We evaluated (1) ordinary least squares linear regression, (2) lasso regression (which penalizes the absolute value of regression coefficients), and (3) ridge regression (which penalizes the size of the regression coefficients). Lasso and ridge were considered to help with variable selection issues which occur with a extremely large set of potential variables for inclusion, as was the case with unigrams.
 
-
-NOTES follow:
-
-Attempts made:
-evaluating features
-removing extra features, like words, dates
-examining w to see which features were unusual or had significant weighting
 came down to two: number of screens, and production budget. We tried various polynomials of numbers of screens, with 4th power yielding minimum error
 production budgets > \$50,000,000 were deemed a "blockbuster" type as they had the largest errors, and therefore the largest penalties. Upon detailed analysis in Excel of the training data, we needed to apply a correction of 0.85 to this different category of movie. Given the large production budget, a studio can produce only a few blockbusters per year so by definition they are outliers compared to the majority of the movies. While our correction for large budget films decreased the overall error rate somewhat, it did not have as dramatic as effect as we'd hoped. Given most of the big budget films had lower openings relative to smaller budget films, we assume the studios were generally also disappointed.
 
