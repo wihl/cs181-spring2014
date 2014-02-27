@@ -53,6 +53,7 @@ except ImportError:
 import numpy as np
 from scipy import sparse
 from scipy.sparse import linalg as splinalg
+import matplotlib.pyplot as plt
 import argparse
 from dateutil import parser
 import operator
@@ -213,20 +214,43 @@ def unigram_feats(md):
 
 ##Created squared terms for numeric fields
 def squared_terms(md):
-    # d = {}
-    # for k,v in md.__dict__.iteritems():
-    #     if k == 'number of screens':
-    #         d.update([(k+"-"+val,1) for val in v])
-    # return d
     d = {}
+    # for k,v in md.__dict__.iteritems():
+    #     d.update([(k+"-"+val,1) for val in v])
+    # return d
+    #d = {}
     for k,v in md.__dict__.iteritems():
         if k == 'number_of_screens':
             if isinstance(v, float):
-                d[k] = v**3
+                d[k] = v**4.3
             elif isinstance(v, bool):
                 d[k] = float(v**2)
             else:
                 d[k]=0
+        # if k == 'number_of_screens':
+        #     if isinstance(v, float):
+        #         d['num_scr_mod'] = v**2
+        #     elif isinstance(v, bool):
+        #         d['num_scr_mod'] = float(v**2)
+        #     else:
+        #         d['num_scr_mod']=0
+
+    return d
+
+def prod_company(md):
+    d = {}
+    # for k,v in md.__dict__.iteritems():
+    #     d.update([(k+"-"+val,1) for val in v])
+    # return d
+    #d = {}
+    for k,v in md.__dict__.iteritems():
+        c = Counter()
+        if k != 'company':
+            d['company'] = 0
+        elif k=='company':
+            d['company'+str(v)]=1
+        else:
+            pass
     return d
 
 
@@ -239,21 +263,54 @@ def review_terms(md):
             d['Review-'+rev] = 1
     return d
 
+# global_list=[]
+# global_screens=[]
 
 ##captures if numbers are above a particular treshold (e.g. non linear 'jump' in values)
 def threshold_terms(md):
+    # global global_list
+    # global global_screens
     d = {}
     for k,v in md.__dict__.iteritems():
         if k in ['production_budget']:
             if isinstance(v, float):
-                d[k] = float(v>50000000)
+                d[k] = float(v>8000000)
+                # global_list.append(v)
             else:
                 d[k]=0
         if k in ['number_of_screens']:
             if isinstance(v, float):
-                d[k] = float(v>100)
+                d[k] = float(v>300)
+                # global_screens.append(v)
             else:
                 d[k]=0
+    return d
+
+# print global_list
+# print global_screens
+
+# plt.hist(np.array(global_list))
+# plt.show()
+
+# plt.hist(np.array(global_screens))
+# plt.show()
+
+
+##captures review data
+def review_score(md):
+    d = {"review_pos":0, "review_neg":0}
+    rev_count = 0
+    for rev in util.MovieData.reviewers:
+        if hasattr(md,rev):
+            for review in md.__dict__[rev].strip().lower().split():
+                #print review
+                for word_pos in ["good", "great", "excellent", "seeing", "superb", "must-see", "fantastic", "credible", "best"]:
+                    if review.find(word_pos)>-1:
+                        d["review_pos"]=1
+ 
+                for word_neg in ["bad", "slow", "boring", "horrible", "waste", "poor", "lazy","worst"]:
+                    if review.find(word_neg)>-1:
+                        d["review_neg"]=1
     return d
 
 
@@ -272,7 +329,7 @@ def main():
     outputfile = "mypredictions2.csv"  # feel free to change this or take it as an argument
     
     # put the names of the feature functions you've defined above in this list
-    ffs = [metadata_feats] #, squared_terms] #, review_terms] #, unigram_feats, threshold_terms]
+    ffs = [metadata_feats, squared_terms]#, prod_company, review_score] #, review_terms] #, unigram_feats, threshold_terms]
 
     
     # extract features
