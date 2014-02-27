@@ -53,9 +53,14 @@ except ImportError:
 import numpy as np
 from scipy import sparse
 from scipy.sparse import linalg as splinalg
+import argparse
+from dateutil import parser
+import operator
+import math
+import csv
 
 import util
-
+import crossvalidate
 
 def extract_feats(ffs, datafile="train.xml", global_feat_dict=None):
     """
@@ -84,6 +89,7 @@ def extract_feats(ffs, datafile="train.xml", global_feat_dict=None):
         # get rid of first two lines
         _ = f.readline()
         _ = f.readline()
+        row = 0
         for line in f:
             if begin_tag in line:
                 if in_instance: 
@@ -105,6 +111,8 @@ def extract_feats(ffs, datafile="train.xml", global_feat_dict=None):
                 targets.append(movie_data.target)
                 # keep track of the movie id's for later
                 ids.append(movie_data.id)
+                #print row, movie_data.id
+                row += 1
                 # reset
                 curr_inst = []
                 in_instance = False
@@ -168,7 +176,6 @@ def make_design_mat(fds, global_feat_dict=None):
 
 ## Here are two example feature-functions. They each take in a util.MovieData
 ## object, and return a dictionary mapping feature-names to numeric values.
-## TODO: modify these functions, and/or add new ones.
 def metadata_feats(md):
     """
     arguments:
@@ -179,18 +186,10 @@ def metadata_feats(md):
     """
     d = {}
     for k,v in md.__dict__.iteritems():
-        if k in util.MovieData.implicit_list_atts or k in util.MovieData.reviewers:
-            continue
-        if k == "target":
-            continue
-        if isinstance(v, list):
-            d.update([(k+"-"+val,1) for val in v])
-        elif isinstance(v, float):
+        if k == 'production_budget':
             d[k] = v
-        elif isinstance(v, bool):
-            d[k] = float(v)
-        else:
-            d[k+"-"+v] = 1
+        if k == 'number_of_screens':
+            d[k] = pow(v,4)
     return d
 
 def unigram_feats(md):
@@ -221,23 +220,28 @@ def squared_terms(md):
     # return d
     d = {}
     for k,v in md.__dict__.iteritems():
-        if k in ['running_time', 'production_budget', 'number_of_screens']:
+        if k == 'number_of_screens':
             if isinstance(v, float):
-                d[k] = v**2
+                d[k] = v**3
             elif isinstance(v, bool):
                 d[k] = float(v**2)
             else:
                 d[k]=0
-
     return d
+
+
+##captures review data
+def review_terms(md):
+    d = {}
+    rev_count = 0
+    for rev in util.MovieData.reviewers:
+        if hasattr(md,rev):
+            d['Review-'+rev] = 1
+    return d
+
 
 ##captures if numbers are above a particular treshold (e.g. non linear 'jump' in values)
 def threshold_terms(md):
-    # d = {}
-    # for k,v in md.__dict__.iteritems():
-    #     if k == 'number of screens':
-    #         d.update([(k+"-"+val,1) for val in v])
-    # return d
     d = {}
     for k,v in md.__dict__.iteritems():
         if k in ['production_budget']:
@@ -253,47 +257,84 @@ def threshold_terms(md):
     return d
 
 
-
 ## The following function does the feature extraction, learning, and prediction
 def main():
-    trainfile = "train.xml"
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-c', '--cross_validate',help='Run cross-validation (instead of of output)', action='store_true')
+    parser.add_argument('-t', '--train_file', nargs=1, help='Training file')
+    args = parser.parse_args()
+
+    if args.train_file:
+        trainfile = args.train_file[0]
+    else:
+        trainfile = "train.xml"
     testfile = "testcases.xml"
     outputfile = "mypredictions2.csv"  # feel free to change this or take it as an argument
     
-    # TODO put the names of the feature functions you've defined above in this list
-    ffs = [metadata_feats, unigram_feats, squared_terms, threshold_terms]
+    # put the names of the feature functions you've defined above in this list
+    ffs = [metadata_feats] #, squared_terms] #, review_terms] #, unigram_feats, threshold_terms]
 
     
     # extract features
     print "extracting training features..."
     X_train,global_feat_dict,y_train,train_ids = extract_feats(ffs, trainfile)
+    global_feat_dict_sorted = sorted(global_feat_dict.iteritems(), key=operator.itemgetter(1))
+    print global_feat_dict_sorted
+    #print X_train.sum(axis=0)
+    #print "1:",X_train[0]
+    #print "2:",X_train[1]
+    #print "3:",X_train[2]
+
     print "done extracting training features"
     print
     
-    # TODO train here, and return regression parameters
-    print "learning..."
-    learned_w = splinalg.lsqr(X_train,y_train)[0]
-    print "done learning"
-    print
+
+    if args.cross_validate:
+        print "running cross-validation tests..."
+        score = crossvalidate.getScore(X_train,y_train, splinalg.lsqr)
+        print "MAE cross validation score:",score
+        print "done cross-validation"
+    else:
+
+        # write out predictions on test data
+
+        # train here, and return regression parameters
+        print "learning..."
+        learned_w = splinalg.lsqr(X_train,y_train)[0]
+        print '\n'.join(['%i: %8.8f %s' % 
+                         (n, learned_w[n], global_feat_dict_sorted[n][0]) for n in xrange(len(learned_w))])
+        '''
+        preds = np.absolute(X_train.dot(learned_w))
+        myfile = open('bb.txt','wb')
+        wr = csv.writer(myfile, dialect='excel')
+        for i in range(len(preds)):
+            wr.writerow([i,X_train[i,0],X_train[i,1], y_train[i], preds[i]])
+        '''
+        print "done learning"
+        print
+
+        # get rid of training data and load test data
+        del X_train
+        del y_train
+        del train_ids
+        print "extracting test features..."
+        X_test,_,y_ignore,test_ids = extract_feats(ffs, testfile, global_feat_dict=global_feat_dict)
+        print "done extracting test features"
+        print
+        
+        # make predictions on text data and write them out
+        print "making predictions..."
+        preds = np.absolute(X_test.dot(learned_w))
+        # blockbuster correction factor
+        for i in range(len(preds)):
+            if X_test[i,1] > 50000000.0:
+                preds[i] *= 0.85
+        print "done making predictions"
+        print
     
-    # get rid of training data and load test data
-    del X_train
-    del y_train
-    del train_ids
-    print "extracting test features..."
-    X_test,_,y_ignore,test_ids = extract_feats(ffs, testfile, global_feat_dict=global_feat_dict)
-    print "done extracting test features"
-    print
-    
-    # TODO make predictions on text data and write them out
-    print "making predictions..."
-    preds = X_test.dot(learned_w)
-    print "done making predictions"
-    print
-    
-    print "writing predictions..."
-    util.write_predictions(preds, test_ids, outputfile)
-    print "done!"
+        print "writing predictions..."
+        util.write_predictions(preds, test_ids, outputfile)
+        print "done!"
 
 if __name__ == "__main__":
     main()
