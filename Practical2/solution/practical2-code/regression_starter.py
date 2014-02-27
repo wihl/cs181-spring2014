@@ -57,6 +57,7 @@ import argparse
 from dateutil import parser
 import operator
 import math
+import csv
 
 import util
 import crossvalidate
@@ -88,6 +89,7 @@ def extract_feats(ffs, datafile="train.xml", global_feat_dict=None):
         # get rid of first two lines
         _ = f.readline()
         _ = f.readline()
+        row = 0
         for line in f:
             if begin_tag in line:
                 if in_instance: 
@@ -109,6 +111,8 @@ def extract_feats(ffs, datafile="train.xml", global_feat_dict=None):
                 targets.append(movie_data.target)
                 # keep track of the movie id's for later
                 ids.append(movie_data.id)
+                #print row, movie_data.id
+                row += 1
                 # reset
                 curr_inst = []
                 in_instance = False
@@ -299,6 +303,13 @@ def main():
         learned_w = splinalg.lsqr(X_train,y_train)[0]
         print '\n'.join(['%i: %8.8f %s' % 
                          (n, learned_w[n], global_feat_dict_sorted[n][0]) for n in xrange(len(learned_w))])
+        '''
+        preds = np.absolute(X_train.dot(learned_w))
+        myfile = open('bb.txt','wb')
+        wr = csv.writer(myfile, dialect='excel')
+        for i in range(len(preds)):
+            wr.writerow([i,X_train[i,0],X_train[i,1], y_train[i], preds[i]])
+        '''
         print "done learning"
         print
 
@@ -314,6 +325,10 @@ def main():
         # make predictions on text data and write them out
         print "making predictions..."
         preds = np.absolute(X_test.dot(learned_w))
+        # blockbuster correction factor
+        for i in range(len(preds)):
+            if X_test[i,1] > 50000000.0:
+                preds[i] *= 0.85
         print "done making predictions"
         print
     
