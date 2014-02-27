@@ -85,7 +85,7 @@ Across all basis functions, overall error rate was calculated by sum-of-squares:
 J = \frac{1}{2N}\sum_{i=1}^N(y_i-t_i)^2
 \end{equation}
 
-The following table summarizes our results. LWLR was reasonably simple to implement and provided the lowest cost. For this particular data set, it would be our basis function of choice.
+The following table summarizes our results. LWLR was reasonably simple to implement and provided the lowest cost. For this particular dataset, it would be our basis function of choice.
 
 \begin{center}
     \begin{tabular}{| l | l |}
@@ -110,9 +110,9 @@ The training set consists of movie metadata and textual movie reviews. From the 
 Eliminating the unigrams as a first step significantly improved classification results and reduced dimensionality to only(!) 11276 dimensions. 
 \subsection*{Using Cross-validation}
 
-To quickly evaluate the regression algorithms, we build a simple cross validation set, using 10\% of the data and ten folds. This enabled us to track $J_{cv}$ vs $J_{train}$. By measuring the learning curve,\footnote{\emph{The Elements of Statistical Learning} by Hastie, et al. \textsuperscript{\textcopyright} 2009 ISBN 978-0-387848587} we could see our algorithms' progression.
+To quickly evaluate the regression algorithms, we built a simple cross validation set, using 10\% of the data and ten folds. This enabled us to track $J_{cv}$ vs $J_{train}$. By measuring the learning curve,\footnote{\emph{The Elements of Statistical Learning} by Hastie, et al. \textsuperscript{\textcopyright} 2009 ISBN 978-0-387848587} we could see our algorithms' progression.
 
-Using multiple test runs, examining error rates and looking at the resulting weighting values, we were able to which dimensions had value.
+Using multiple test runs, examining error rates and looking at the resulting weighting values, we were able to see which dimensions had value.
 
 
 
@@ -127,20 +127,20 @@ We tested a number of approaches to both add features, and to remove features wh
 
 (2) Further reduction in dimensionality by examination of generated weights. For example, in the original sample code, every date (including year) was a new feature. We transformed this into month of the year, but there was no change in weighting or error rates. So this feature was eliminated.
 
-(3) Testing of positive and negative wording in reviews. We recognized that while all words in a review may cause overfitting and result in statistically insignificant weight for an individual word (due to the small N in the data), some words in reviews could contain particularly high information content. As such we tested two features:
+(3) Testing of positive and negative wording in reviews. We recognized that while all words in a review may cause overfitting and result in statistically insignificant weight for an individual word (due to the small N in the data), some words in reviews could contain particularly high information content. As such, we tested two features:
 \begin{description}
   \item[a `good' list]: [``good'', ``great", ``excellent", ``seeing", ``superb", ``must-see", ``fantastic", ``credible", ``best"]
   \item[a `bad' list]: [``bad", ``slow", ``boring", ``horrible", ``waste", ``poor", ``lazy",``worst"]
 \end{description}
 Unfortunately, that didn't improve our model's performance.
 
-(4) Creation of squared values for all quantitative variables. This did not help model performance but did lead us understand that ``number of screens'' a movie shown on was quite predictive. We then tuned the parameter for the exponent of ``number of screens'' (from 2.0 to 5.0) and found 4.3 to maximize our performance on two holdout samples -- this helped our performance gains in the model significantly.
+(4) Creation of squared values for all quantitative variables. This did not help model performance but did lead us to understand that the ``number of screens'' a movie was shown on was quite predictive. We then tuned the parameter for the exponent of ``number of screens'' (from 2.0 to 5.0) and found 4.3 to maximize our performance on two holdout samples -- this helped our performance gains in the model significantly.
 
 (5) Creation of logs for all quantitative variables on the basis that large numbers (e.g. budgets) may have non-linear impacts on the revenues of a movie. This did not help the model's performance.
 
 (6) Threshold values as binary 1/0 values for if a film's budget was above a particular value, and if the number of theaters a movie shown in was above a particular value. We ran sensitivities to various values on the logic that there can be 'step functions' insofar as a movie with a very low budget may not be sufficiently high quality, but anything about X may be sufficient). This did not help the model's performance.
 
-By examining weighting values, error values including outliers, cross-validation rates, we concluded that only two dimensions had any significant value: \emph{number of screens} and to a lessor extent \emph{production budget}.
+By examining weighting values, error values including outliers, cross-validation rates, we concluded that only two dimensions had any significant value: \emph{number of screens} and, to a lesser extent, \emph{production budget}.
 
 
 \begin{figure}[h!] 
@@ -152,22 +152,22 @@ By examining weighting values, error values including outliers, cross-validation
 
 \subsection*{Selection of fitting technique}
 
-We evaluated (1) ordinary least squares linear regression, (2) lasso regression (which penalizes the absolute value of regression coefficients), and (3) ridge regression (which penalizes the size of the regression coefficients). Lasso and ridge were considered to help with variable selection issues which occur with a extremely large set of potential variables for inclusion, as was the case with unigrams.
+We evaluated (1) ordinary least squares linear regression, (2) lasso regression (which penalizes the absolute value of regression coefficients), and (3) ridge regression (which penalizes the size of the regression coefficients). Lasso and ridge were considered to help with variable selection issues, which occur with an extremely large set of potential variables for inclusion, as was the case with unigrams.
 
 \subsection*{Exploratory Data Analysis}
 
 By Feature Engineering, we were able to pare the dataset down to a very manageable $1146 \times 2$, well within the bounds of a simple tool like Excel.
 
-The largest errors were on the most successful movies. Production budgets $>$ {\$50,000,000} were deemed a "blockbuster" type. Upon detailed analysis of the training data, we needed to apply a correction of 0.85 to this different category of movie. Given the large production budget, a studio can produce only a few blockbusters per year so by definition they are outliers compared to the majority of the movies. While our correction for large budget films decreased the overall error rate somewhat, it did not have as dramatic as effect as we'd hoped. Given most of the big budget films had lower openings relative to smaller budget films, we assume the studios were generally also disappointed.
+The largest errors were on the most successful movies. Production budgets $>$ {\$50,000,000} were deemed a "blockbuster" type. Upon detailed analysis of the training data, we needed to apply a correction of 0.85 to this different category of movie. Given the large production budget, a studio can produce only a few blockbusters per year, so by definition they are outliers compared to the majority of the movies. While our correction for large budget films decreased the overall error rate somewhat, it did not have as dramatic of an effect as we'd hoped. Given most of the big budget films had lower openings relative to smaller budget films, we assume the studios were generally also disappointed.
 
 \section*{Conclusion}
 The key learning from this practical is that even relatively simple techniques (such as linear regression) can be extremely powerful if appropriate features are selected. 
 
-\emph{Feature engineering} ended up being key to getting reasonable results from the linear regression. For instance, introducing polynomials of numeric information was important to capturing trends in the data. We also had to grapple with how to avoid overfitting (alas, unigrams on such a small training dataset let to significant over-fitting and had poor-out-of-sample performance), and how to represent text in a meaningful way quantitatively (something which , despite trying NLTK and `good' / `bad' lists for the text of reviews, we never quite got much signal from).
+\emph{Feature Engineering} ended up being key to getting reasonable results from the linear regression. For instance, introducing polynomials of numeric information was important to capturing trends in the data. We also had to grapple with how to avoid overfitting (alas, unigrams on such a small training dataset led to significant over-fitting and had poor-out-of-sample performance), and how to represent text in a meaningful way quantitatively (something which , despite trying NLTK and `good' / `bad' lists for the text of reviews, we never quite got much signal from).
 
-We found that what we excluded was just as important as the features we included. Poor features radically overfit and gave poor out-of-sample performance. Poor features also lacked a reasonable interpretation (e.g. what does the count of the non stopword unigrams in a movie review really mean?). Another key learning was that more sophisticated algorithms like ridge and lasso are not necessarily better as they involve tweaking normalizing values.
+We found that what we excluded was just as important as the features we included. Poor features radically overfit and gave poor out-of-sample performance. Poor features also lacked a reasonable interpretation (e.g. what does the count of the non-stopword unigrams in a movie review really mean?). Another key learning was that more sophisticated algorithms like ridge and lasso are not necessarily better as they involve tweaking normalizing values.
 
-Interestingly, feature engineering consequently required us to be more thoughtful about the problem as we sought other ways to get signal from our data. 
+Interestingly, Feature Engineering consequently required us to be more thoughtful about the problem as we sought other ways to get signal from our data. 
 
 
 \end{document}  
