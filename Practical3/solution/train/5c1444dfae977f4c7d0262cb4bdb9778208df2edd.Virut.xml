@@ -1,0 +1,1272 @@
+<?xml version="1.0"?>
+<processes>
+<process index="1" pid="2668" filename="c:\dfd4d1666eb593b65b0cce0746775aca.EX" filename_hash="hash_error" filesize="214016" md5="dfd4d1666eb593b65b0cce0746775aca" sha1="5c1444dfae97f4c7d0262cb4bdb9778208df2edd" username="Administrator" parentindex="0" starttime="00:01.625" terminationtime="00:14.015" startreason="AnalysisTarget" terminationreason="NormalTermination" executionstatus="OK" applicationtype="Win32Application">
+<thread tid="2672">
+<all_section>
+<load_image filename="c:\dfd4d1666eb593b65b0cce0746775aca.EX" successful="1" address="&#x24;1000000" end_address="&#x24;1038000" size="229376" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\MSVCP60.dll" successful="1" address="&#x24;76020000" end_address="&#x24;76085000" size="413696" filename_hash="97f12347bd168fa577527824f71897aff886c999"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\System32\Wbem\wbemcomn.dll" successful="1" address="&#x24;75210000" end_address="&#x24;75247000" size="225280" filename_hash="787787ce23bc188aec19cd26e30ee5c19d5cdf45"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\OLEAUT32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\loadperf.dll" successful="1" address="&#x24;72ED0000" end_address="&#x24;72EEC000" size="114688" filename_hash="4be15d4b30ab97cd411499434dc8335788cc7f2c"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM" value="ADAPPerflibMaxSizeBlobCollect"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM" value="ProcessID"/>
+<create_mutex name="Global\ADAP_WMI_ENTRY" owned="0"/>
+<com_create_instance inprocserver32="C:\WINDOWS\system32\wbem\wbemprox.dll" clsid="&#x7B;4590F811-1D3A-11D0-891F-00AA004B2E24&#x7D;" interfaceid="&#x7B;DC12A687-737F-11CF-884D-00AA004B2E24&#x7D;"/>
+<get_system_directory/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\Registration" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\Registration\R000000000007.clb" srcfile_hash="99fde804817f1de99c87653fda604fc37510f3da" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<com_create_instance clsid="&#x7B;8BC3F05E-D86B-11D0-A075-00C04FB68820&#x7D;" interfaceid="&#x7B;F309AD18-D86A-11D0-A075-00C04FB68820&#x7D;"/>
+<get_computer_name/>
+<create_thread targetpid="2668" threadid="2756" address="&#x24;77E56C7D" parameteraddress="&#x24;0008F008"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<create_thread targetpid="2668" threadid="2760" address="&#x24;774CE43B" parameteraddress="&#x24;0009B428"/>
+<com_create_instance clsid="&#x7B;00000339-0000-0000-C000-000000000046&#x7D;" interfaceid="&#x7B;00000003-0000-0000-C000-000000000046&#x7D;"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_computer_name/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM" value="ProcessID"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM" value="EnablePrivateObjectHeap"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM" value="ContextLimit"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM" value="ObjectLimit"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM" value="IdentifierLimit"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;5980808D" address="&#x24;59808000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;5980808D" address="&#x24;59808000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;59804604" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;59804604" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;598049E5" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;598049E5" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;59804808" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;59804808" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;597DACC9" address="&#x24;597DA000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;597DACC9" address="&#x24;597DA000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;597E0F78" address="&#x24;597E0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;597E0F78" address="&#x24;597E0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;597D9115" address="&#x24;597D9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;597D9115" address="&#x24;597D9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;59813AE9" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;59813AE9" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;597E1048" address="&#x24;597E1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;597E1048" address="&#x24;597E1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;59813A01" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;59813A01" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<com_get_class_object inprocserver32="C:\WINDOWS\system32\wbem\wbemsvc.dll" clsid="&#x7B;7C857801-7381-11CF-884D-00AA004B2E24&#x7D;" interfaceid="&#x7B;D5F569D0-593B-101A-B569-08002B2DBF7A&#x7D;"/>
+<com_create_instance inprocserver32="C:\WINDOWS\system32\wbem\fastprox.dll" clsid="&#x7B;4590F812-1D3A-11D0-891F-00AA004B2E24&#x7D;" interfaceid="&#x7B;00000003-0000-0000-C000-000000000046&#x7D;"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM" value="EnableObjectValidation"/>
+<get_system_time apifunction="GetLocalTime"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Perflib"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM" value="ProcessID"/>
+<create_thread targetpid="2668" threadid="2764" address="&#x24;77C0A341" parameteraddress="&#x24;00277648"/>
+<com_create_instance inprocserver32="C:\WINDOWS\system32\wbem\wbemprox.dll" clsid="&#x7B;4590F811-1D3A-11D0-891F-00AA004B2E24&#x7D;" interfaceid="&#x7B;DC12A687-737F-11CF-884D-00AA004B2E24&#x7D;"/>
+<com_create_instance clsid="&#x7B;8BC3F05E-D86B-11D0-A075-00C04FB68820&#x7D;" interfaceid="&#x7B;F309AD18-D86A-11D0-A075-00C04FB68820&#x7D;"/>
+<com_create_instance clsid="&#x7B;00000339-0000-0000-C000-000000000046&#x7D;" interfaceid="&#x7B;00000003-0000-0000-C000-000000000046&#x7D;"/>
+<get_computer_name/>
+<com_get_class_object inprocserver32="C:\WINDOWS\system32\wbem\wbemsvc.dll" clsid="&#x7B;7C857801-7381-11CF-884D-00AA004B2E24&#x7D;" interfaceid="&#x7B;D5F569D0-593B-101A-B569-08002B2DBF7A&#x7D;"/>
+<com_create_instance inprocserver32="C:\WINDOWS\system32\wbem\fastprox.dll" clsid="&#x7B;4590F812-1D3A-11D0-891F-00AA004B2E24&#x7D;" interfaceid="&#x7B;00000003-0000-0000-C000-000000000046&#x7D;"/>
+<query_value value="Counter"/>
+<query_value value="Help"/>
+<com_create_instance inprocserver32="C:\WINDOWS\system32\wbem\wbemprox.dll" clsid="&#x7B;4590F811-1D3A-11D0-891F-00AA004B2E24&#x7D;" interfaceid="&#x7B;DC12A687-737F-11CF-884D-00AA004B2E24&#x7D;"/>
+<com_create_instance clsid="&#x7B;8BC3F05E-D86B-11D0-A075-00C04FB68820&#x7D;" interfaceid="&#x7B;F309AD18-D86A-11D0-A075-00C04FB68820&#x7D;"/>
+<com_create_instance clsid="&#x7B;00000339-0000-0000-C000-000000000046&#x7D;" interfaceid="&#x7B;00000003-0000-0000-C000-000000000046&#x7D;"/>
+<get_computer_name/>
+<com_get_class_object inprocserver32="C:\WINDOWS\system32\wbem\wbemsvc.dll" clsid="&#x7B;7C857801-7381-11CF-884D-00AA004B2E24&#x7D;" interfaceid="&#x7B;D5F569D0-593B-101A-B569-08002B2DBF7A&#x7D;"/>
+<com_create_instance inprocserver32="C:\WINDOWS\system32\wbem\fastprox.dll" clsid="&#x7B;4590F812-1D3A-11D0-891F-00AA004B2E24&#x7D;" interfaceid="&#x7B;00000003-0000-0000-C000-000000000046&#x7D;"/>
+<query_value value="Counter"/>
+<query_value value="Help"/>
+<com_create_instance inprocserver32="C:\WINDOWS\system32\wbem\wbemprox.dll" clsid="&#x7B;4590F811-1D3A-11D0-891F-00AA004B2E24&#x7D;" interfaceid="&#x7B;DC12A687-737F-11CF-884D-00AA004B2E24&#x7D;"/>
+<com_create_instance clsid="&#x7B;8BC3F05E-D86B-11D0-A075-00C04FB68820&#x7D;" interfaceid="&#x7B;F309AD18-D86A-11D0-A075-00C04FB68820&#x7D;"/>
+<com_create_instance clsid="&#x7B;00000339-0000-0000-C000-000000000046&#x7D;" interfaceid="&#x7B;00000003-0000-0000-C000-000000000046&#x7D;"/>
+<get_computer_name/>
+<com_get_class_object inprocserver32="C:\WINDOWS\system32\wbem\wbemsvc.dll" clsid="&#x7B;7C857801-7381-11CF-884D-00AA004B2E24&#x7D;" interfaceid="&#x7B;D5F569D0-593B-101A-B569-08002B2DBF7A&#x7D;"/>
+<com_create_instance inprocserver32="C:\WINDOWS\system32\wbem\fastprox.dll" clsid="&#x7B;4590F812-1D3A-11D0-891F-00AA004B2E24&#x7D;" interfaceid="&#x7B;00000003-0000-0000-C000-000000000046&#x7D;"/>
+<query_value value="Counter"/>
+<query_value value="Help"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM" value="KnownSvcs"/>
+<com_get_class_object inprocserver32="C:\WINDOWS\system32\wbem\wbemsvc.dll" clsid="&#x7B;7C857801-7381-11CF-884D-00AA004B2E24&#x7D;" interfaceid="&#x7B;D5F569D0-593B-101A-B569-08002B2DBF7A&#x7D;"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services"/>
+<enum_keys key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\.NET CLR Data\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Data\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Data\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Data\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Data\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Data\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Data\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Data\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\.NET CLR Data\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Data\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Data\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Data\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\netfxperf.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\netfxperf.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Data\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Data\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\.NET CLR Data\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Data\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Data\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\.NET CLR Networking\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Networking\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Networking\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Networking\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Networking\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Networking\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Networking\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Networking\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\.NET CLR Networking\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Networking\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Networking\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Networking\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\netfxperf.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\netfxperf.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Networking\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Networking\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\.NET CLR Networking\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Networking\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET CLR Networking\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\.NET Data Provider for Oracle\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for Oracle\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for Oracle\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for Oracle\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for Oracle\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for Oracle\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for Oracle\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for Oracle\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\.NET Data Provider for Oracle\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for Oracle\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for Oracle\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for Oracle\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\netfxperf.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\netfxperf.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for Oracle\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for Oracle\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\.NET Data Provider for Oracle\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for Oracle\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for Oracle\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\.NET Data Provider for SqlServer\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for SqlServer\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for SqlServer\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for SqlServer\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for SqlServer\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for SqlServer\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for SqlServer\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for SqlServer\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\.NET Data Provider for SqlServer\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for SqlServer\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for SqlServer\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for SqlServer\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\netfxperf.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\netfxperf.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for SqlServer\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for SqlServer\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\.NET Data Provider for SqlServer\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for SqlServer\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NET Data Provider for SqlServer\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\.NETFramework\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\.NETFramework\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\mscoree.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\mscoree.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\.NETFramework\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Abiosdsk\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\abp480n5\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ACPI\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ACPIEC\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\adpu160m\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AFD\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\agp440\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Aha154x\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\aic78u2\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\aic78xx\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Alerter\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ALG\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AliIde\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\amsint\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppMgmt\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Arp1394\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\asc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\asc3350p\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\asc3550\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ASP.NET\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ASP.NET\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\aspnet_perf.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\aspnet_perf.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ASP.NET\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ASP.NET_2.0.50727\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET_2.0.50727\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET_2.0.50727\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET_2.0.50727\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET_2.0.50727\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET_2.0.50727\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET_2.0.50727\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET_2.0.50727\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ASP.NET_2.0.50727\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET_2.0.50727\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET_2.0.50727\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET_2.0.50727\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\aspnet_perf.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\aspnet_perf.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET_2.0.50727\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET_2.0.50727\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ASP.NET_2.0.50727\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET_2.0.50727\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ASP.NET_2.0.50727\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\aspnet_state\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_state\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_state\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_state\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_state\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_state\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_state\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_state\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\aspnet_state\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_state\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_state\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_state\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\aspnet_perf.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\aspnet_perf.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_state\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_state\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\aspnet_state\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_state\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\aspnet_state\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AsyncMac\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\atapi\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Atdisk\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Atmarpc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AudioSrv\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\audstub\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BattC\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Beep\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BITS\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Browser\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\cbidf2k\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\cd20xrnt\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cdaudio\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cdfs\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cdrom\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Changer\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CiSvc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ClipSrv\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\clr_optimization_v2.0.50727_32\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CmdIde\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\COMSysApp\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ContentFilter\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentFilter\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentFilter\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentFilter\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentFilter\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentFilter\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentFilter\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentFilter\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ContentFilter\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentFilter\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentFilter\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentFilter\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\System32\query.dll" srcfile_hash="cfc5110996ce661f99c43d2247ec52e974c898ed" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\System32\query.dll" srcfile_hash="cfc5110996ce661f99c43d2247ec52e974c898ed" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentFilter\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentFilter\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ContentFilter\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentFilter\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentFilter\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ContentIndex\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentIndex\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentIndex\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentIndex\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentIndex\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentIndex\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentIndex\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentIndex\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ContentIndex\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentIndex\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentIndex\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentIndex\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\System32\query.dll" srcfile_hash="cfc5110996ce661f99c43d2247ec52e974c898ed" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\System32\query.dll" srcfile_hash="cfc5110996ce661f99c43d2247ec52e974c898ed" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentIndex\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentIndex\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ContentIndex\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentIndex\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ContentIndex\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cpqarray\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CryptSvc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dac2w2k\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dac960nt\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DcomLaunch\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dhcp\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Disk\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmadmin\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmboot\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmio\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmload\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmserver\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dot3svc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dpti2o\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\E100B\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EapHost\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ERSvc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventSystem\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Fastfat\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FastUserSwitchingCompatibility\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Fdc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Fips\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Flpydisk\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FltMgr\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FontCache3.0.0.0\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Fs_Rec\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Ftdisk\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Gpc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\helpsvc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HidServ\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\hidusb\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\hkmsvc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\hpn\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HTTP\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HTTPFilter\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i2omgmt\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i2omp\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\idsvc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Imapi\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ImapiService\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\inetaccs\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ini910u\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Inport\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IntelIde\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\intelppm\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Ip6Fw\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IpFilterDriver\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IpInIp\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IpNat\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPSec\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IRENUM\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ISAPISearch\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ISAPISearch\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ISAPISearch\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ISAPISearch\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ISAPISearch\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ISAPISearch\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ISAPISearch\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ISAPISearch\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ISAPISearch\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ISAPISearch\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ISAPISearch\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ISAPISearch\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\System32\query.dll" srcfile_hash="cfc5110996ce661f99c43d2247ec52e974c898ed" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\System32\query.dll" srcfile_hash="cfc5110996ce661f99c43d2247ec52e974c898ed" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ISAPISearch\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ISAPISearch\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ISAPISearch\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ISAPISearch\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ISAPISearch\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\isapnp\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Kbdclass\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdhid\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\KSecDD\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lanmanworkstation\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lbrtfdc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ldap\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LicenseService\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LmHosts\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Messenger\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mnmdd\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mnmsrvc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Modem\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Mouclass\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouhid\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MountMgr\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mraid35x\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MRxDAV\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MRxSmb\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\msdtcuiu.DLL" srcfile_hash="8eaaa90f72e763612c8210b4c5e0756f031d26cc" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\msdtcuiu.DLL" srcfile_hash="8eaaa90f72e763612c8210b4c5e0756f031d26cc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\msdtcuiu.DLL" srcfile_hash="8eaaa90f72e763612c8210b4c5e0756f031d26cc" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\msdtcuiu.DLL" srcfile_hash="8eaaa90f72e763612c8210b4c5e0756f031d26cc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC\Performance"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="WbemAdapFileSignature" data="[REG_BINARY, size: 16 bytes]"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="WbemAdapFileTime" data="[REG_BINARY, size: 8 bytes]"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="WbemAdapFileSize" data="[REG_DWORD, value: 00027800]"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<get_system_directory/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A8ADBE" address="&#x24;71A8A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A8ADBE" address="&#x24;71A8A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A897A5" address="&#x24;71A89000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A897A5" address="&#x24;71A89000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A84AC4" address="&#x24;71A84000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A84AC4" address="&#x24;71A84000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A850D4" address="&#x24;71A85000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A850D4" address="&#x24;71A85000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A8B835" address="&#x24;71A8B000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A8B835" address="&#x24;71A8B000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A89859" address="&#x24;71A89000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A89859" address="&#x24;71A89000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A8AE39" address="&#x24;71A8A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A8AE39" address="&#x24;71A8A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A8928F" address="&#x24;71A89000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A8928F" address="&#x24;71A89000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A84DC2" address="&#x24;71A84000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A84DC2" address="&#x24;71A84000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A84989" address="&#x24;71A84000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A84989" address="&#x24;71A84000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A8B200" address="&#x24;71A8B000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A8B200" address="&#x24;71A8B000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A83910" address="&#x24;71A83000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;71A83910" address="&#x24;71A83000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2668" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<load_dll filename="C:\WINDOWS\system32\MFC42LOC.DLL" successful="1" address="&#x24;1400000" end_address="&#x24;140E000" size="57344" filename_hash="hash_error"/>
+<get_computer_name/>
+<load_dll filename="C:\WINDOWS\system32\CLUSAPI.DLL" successful="1" address="&#x24;76D60000" end_address="&#x24;76D72000" size="73728" filename_hash="86c52208e983f9e8c9ee69eed8fbac111696a822"/>
+<load_dll filename="C:\WINDOWS\system32\RESUTILS.DLL" successful="1" address="&#x24;75030000" end_address="&#x24;75042000" size="73728" filename_hash="72b3940d66f245b158582bd54b882313c0b5e7d8"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="DtcEnableLRM"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="RpcQosCapabilities"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="RpcQosIdentity"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="RpcAuthnSvc"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="RpcAuthnLevel"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="TraceCMErr"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="NumCCcimHistoryEntries"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc" value="DebugTracingLevel"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc" value="DisableTracing"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc" value="DebugTracingLevel"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc" value="DisableTracing"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="DTCMemAlloc"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="MemBufferSize"/>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="CmCancelRpcAfter"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="CmMaxNumberBindRetries"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="CmMaxIdlePings"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="CmPingFreqSecs"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="CmVerbose"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="DoNotGoIdle"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="AllowOnlySecureRpcCalls"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="DisableSinglePhase"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="UseTipOnly"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="CreateResourceManagerTimeout"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="OverrideTipHostname"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\XAIncptr\TWO_PIPE_TRACE"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc" value="DebugTracingLevel"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc" value="DisableTracing"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc" value="DebugTracingLevel"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\MSDTC\Misc" value="DisableTracing"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="DTCMemAlloc"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="MemBufferSize"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDTC" value="MaxLogSize"/>
+<load_dll filename="C:\WINDOWS\system32\msdtcuiu.DLL" successful="1" address="&#x24;1240000" end_address="&#x24;126B000" size="176128" filename_hash="8eaaa90f72e763612c8210b4c5e0756f031d26cc"/>
+<create_mutex name="Global\MSDTC_Perf_Library_Lock_PID_a6c" owned="0"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM" value="ADAPPerflibTimeout"/>
+<create_thread targetpid="2668" threadid="3088" address="&#x24;77C0A341" parameteraddress="&#x24;00277648"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC Bridge 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC Bridge 3.0.0.0\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC Bridge 3.0.0.0\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC Bridge 3.0.0.0\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC Bridge 3.0.0.0\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC Bridge 3.0.0.0\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC Bridge 3.0.0.0\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC Bridge 3.0.0.0\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC Bridge 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC Bridge 3.0.0.0\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC Bridge 3.0.0.0\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC Bridge 3.0.0.0\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\NETFXPerf.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\NETFXPerf.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC Bridge 3.0.0.0\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC Bridge 3.0.0.0\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC Bridge 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC Bridge 3.0.0.0\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC Bridge 3.0.0.0\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Msfs\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSIServer\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSSCNTRS\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSSCNTRS\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSSCNTRS\Performance" value="Object List"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\WBEM\Logs\wmiadap.log" srcfile_hash="3b2abaa34eaf31c6cd711e5b1307bd806833d541" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_DELETE FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL FILE_ATTRIBUTE_NOT_CONTENT_INDEXED SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSSCNTRS\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSSCNTRS\Performance" value="WbemAdapStatus"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mssmbios\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Mup\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\napagent\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NDIS\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NdisTapi\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Ndisuio\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NdisWan\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NDProxy\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NetBIOS\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NetBT\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NetDDE\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NetDDEdsdm\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netlogon\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netman\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NetTcpPortSharing\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NIC1394\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Nla\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nm\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NPF\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Npfs\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Ntfs\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NtLmSsp\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NtmsSvc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Null\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nv\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NwlnkFlt\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NwlnkFwd\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ohci1394\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Parport\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PartMgr\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ParVdm\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PCI\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PCIDump\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PCIIde\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Pcmcia\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PDCOMP\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PDFRAME\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PDRELI\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PDRFRAME\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\perc2\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\perc2hib\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfDisk\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfDisk\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfDisk\Performance" value="Object List"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfDisk\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfDisk\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfDisk\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfDisk\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfDisk\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfDisk\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfDisk\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfDisk\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfDisk\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\perfdisk.dll" srcfile_hash="0c18f274bc5df869d6674c9116600ac93e05fb38" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\perfdisk.dll" srcfile_hash="0c18f274bc5df869d6674c9116600ac93e05fb38" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfDisk\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfDisk\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfDisk\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfDisk\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfDisk\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfNet\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfNet\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfNet\Performance" value="Object List"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfNet\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfNet\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfNet\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfNet\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfNet\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfNet\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfNet\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfNet\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfNet\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\perfnet.dll" srcfile_hash="72f13df9dbcf8e709f8abb024c9f45c850d97f6a" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\perfnet.dll" srcfile_hash="72f13df9dbcf8e709f8abb024c9f45c850d97f6a" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfNet\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfNet\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfNet\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfNet\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfNet\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfOS\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfOS\Performance" value="Object List"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfOS\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfOS\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfOS\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfOS\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfOS\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfOS\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfOS\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfOS\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\perfos.dll" srcfile_hash="2a81b74e85e47b0a7550b770691ce1e0545c2a37" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\perfos.dll" srcfile_hash="2a81b74e85e47b0a7550b770691ce1e0545c2a37" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfOS\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfOS\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfOS\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfOS\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="Object List"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\perfproc.dll" srcfile_hash="41bf32dc450293e0c4b921f1083b4d59f8de2eec" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\perfproc.dll" srcfile_hash="41bf32dc450293e0c4b921f1083b4d59f8de2eec" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PlugPlay\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PolicyAgent\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PptpMiniport\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ProtectedStorage\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PSched\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PSched\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\pschdprf.dll" srcfile_hash="500058d767cb960162f102a843941432ab45e1ff" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\pschdprf.dll" srcfile_hash="500058d767cb960162f102a843941432ab45e1ff" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PSched\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Ptilink\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ql1080\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Ql10wnt\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ql12160\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ql1240\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ql1280\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasAcd\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasAuto\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Rasl2tp\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasPppoe\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Raspti\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Rdbss\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RDPCDD\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RDPDD\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\rdpdr\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RDPNP\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RDPWD\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RDSessMgr\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\redbook\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteAccess\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteAccess\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\System32\rasctrs.dll" srcfile_hash="e68137f31092c17dddbe7b5c9c29ef89139cd395" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\System32\rasctrs.dll" srcfile_hash="e68137f31092c17dddbe7b5c9c29ef89139cd395" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteAccess\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteRegistry\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\rpcapd\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RpcLocator\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RpcSs\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RSVP\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RSVP\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\System32\rsvpperf.dll" srcfile_hash="3db8ca55c215cf68ce57173c3b697ba822826bae" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\System32\rsvpperf.dll" srcfile_hash="3db8ca55c215cf68ce57173c3b697ba822826bae" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RSVP\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SamSs\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SCardSvr\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Schedule\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Secdrv\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\seclogon\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SENS\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\serenum\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Serial\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelEndpoint 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelEndpoint 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\NETFXPerf.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\NETFXPerf.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelEndpoint 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelOperation 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelOperation 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\NETFXPerf.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\NETFXPerf.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelOperation 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelService 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelService 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\NETFXPerf.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\NETFXPerf.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelService 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sfloppy\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ShellHWDetection\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Simbad\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SMSvcHost 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SMSvcHost 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\NETFXPerf.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\NETFXPerf.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SMSvcHost 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sparrow\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Spooler\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Spooler\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Spooler\Performance" value="Object List"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Spooler\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Spooler\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Spooler\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Spooler\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Spooler\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Spooler\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Spooler\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Spooler\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Spooler\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\winspool.drv" srcfile_hash="e413855355ea0c254b38ba85451a843e1fa526c5" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\winspool.drv" srcfile_hash="e413855355ea0c254b38ba85451a843e1fa526c5" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Spooler\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Spooler\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Spooler\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Spooler\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Spooler\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sr\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\srservice\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Srv\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SSDPSRV\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\stisvc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\swenum\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SwPrv\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\symc810\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\symc8xx\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\sym_hi\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\sym_u3\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SysmonLog\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TapiSrv\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TapiSrv\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TapiSrv\Performance" value="Object List"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TapiSrv\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TapiSrv\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TapiSrv\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TapiSrv\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TapiSrv\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TapiSrv\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TapiSrv\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TapiSrv\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TapiSrv\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\tapiperf.dll" srcfile_hash="240eb208e762db6ef7851c23e8a99e6c53e55529" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\tapiperf.dll" srcfile_hash="240eb208e762db6ef7851c23e8a99e6c53e55529" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TapiSrv\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TapiSrv\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TapiSrv\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TapiSrv\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TapiSrv\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Performance" value="Object List"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\Perfctrs.dll" srcfile_hash="e3e044e077bf9a2474435acc51ff6a179b75a8e5" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\Perfctrs.dll" srcfile_hash="e3e044e077bf9a2474435acc51ff6a179b75a8e5" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TDPIPE\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TDTCP\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermDD\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermService\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermService\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\perfts.dll" srcfile_hash="ffd953adce9f2be2d7a7cf085c1c4b698d782ed9" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\perfts.dll" srcfile_hash="ffd953adce9f2be2d7a7cf085c1c4b698d782ed9" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermService\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Themes\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TlntSvr\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TosIde\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TrkWks\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TSDDD\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Udfs\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UGatherer\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGatherer\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGatherer\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGatherer\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGatherer\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGatherer\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGatherer\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGatherer\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UGatherer\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGatherer\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGatherer\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGatherer\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\msscntrs.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\msscntrs.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGatherer\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGatherer\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UGatherer\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGatherer\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGatherer\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UGTHRSVC\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGTHRSVC\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGTHRSVC\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGTHRSVC\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGTHRSVC\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGTHRSVC\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGTHRSVC\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGTHRSVC\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UGTHRSVC\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGTHRSVC\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGTHRSVC\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGTHRSVC\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\msscntrs.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\msscntrs.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGTHRSVC\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGTHRSVC\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UGTHRSVC\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGTHRSVC\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UGTHRSVC\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ultra\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Update\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\upnphost\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UPS\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\usbccgp\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\usbehci\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\usbhub\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USBSTOR\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\usbuhci\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VgaSave\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ViaIde\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VolSnap\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VSS\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wanarp\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WDICA\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Workflow Foundation 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Workflow Foundation 3.0.0.0\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Workflow Foundation 3.0.0.0\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Workflow Foundation 3.0.0.0\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Workflow Foundation 3.0.0.0\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Workflow Foundation 3.0.0.0\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Workflow Foundation 3.0.0.0\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Workflow Foundation 3.0.0.0\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Workflow Foundation 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Workflow Foundation 3.0.0.0\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Workflow Foundation 3.0.0.0\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Workflow Foundation 3.0.0.0\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\NETFXPerf.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\NETFXPerf.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Workflow Foundation 3.0.0.0\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Workflow Foundation 3.0.0.0\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Windows Workflow Foundation 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Workflow Foundation 3.0.0.0\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Windows Workflow Foundation 3.0.0.0\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\winmgmt\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Winsock\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinSock2\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinTrust\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WmdmPmSN\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wmi\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WmiApRpl\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WmiApSrv\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WMPNetworkSvc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WS2IFSL\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wscsvc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WSearch\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WSearchIdxPi\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearchIdxPi\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearchIdxPi\Performance" value="Last Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearchIdxPi\Performance" value="Disable Performance Counters"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearchIdxPi\Performance" value="Library"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearchIdxPi\Performance" value="Open"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearchIdxPi\Performance" value="Collect"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearchIdxPi\Performance" value="Close"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WSearchIdxPi\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearchIdxPi\Performance" value="WbemAdapFileSignature"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearchIdxPi\Performance" value="WbemAdapFileTime"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearchIdxPi\Performance" value="WbemAdapFileSize"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\tquery.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\tquery.dll" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearchIdxPi\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearchIdxPi\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WSearchIdxPi\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearchIdxPi\Performance" value="WbemAdapStatus"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WSearchIdxPi\Performance" value="WbemAdapStatus" data="[REG_DWORD, value: 00000000]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wuauserv\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WudfPf\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WudfRd\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WudfSvc\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WZCSVC\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\xmlprov\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\&#x7B;1BE68DBD-1099-491C-9BCE-62B99CC6D22C&#x7D;\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\&#x7B;5D19E473-BE30-416B-B5C7-D8A091C41D2F&#x7D;\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\&#x7B;8C4ACC8C-8348-4D0D-BAEB-1039D63BB471&#x7D;\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\&#x7B;8D047F39-5A84-4B8E-A69E-F887C476EEE6&#x7D;\Performance"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermService\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="Object List"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelOperation 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="Object List"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PSched\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="Object List"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="Last Counter"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelService 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="Object List"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermService\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="Object List"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PSched\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="Object List"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="Last Counter"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SMSvcHost 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="Object List"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelEndpoint 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="Object List"/>
+<com_create_instance inprocserver32="C:\WINDOWS\system32\wbem\fastprox.dll" clsid="&#x7B;4590F812-1D3A-11D0-891F-00AA004B2E24&#x7D;" interfaceid="&#x7B;00000003-0000-0000-C000-000000000046&#x7D;"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelOperation 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelOperation 3.0.0.0\Performance" value="Object List"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PSched\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="Object List"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="Last Counter"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PSched\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="Object List"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="Last Counter"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SMSvcHost 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SMSvcHost 3.0.0.0\Performance" value="Object List"/>
+<com_create_instance inprocserver32="C:\WINDOWS\system32\wbem\fastprox.dll" clsid="&#x7B;4590F812-1D3A-11D0-891F-00AA004B2E24&#x7D;" interfaceid="&#x7B;00000003-0000-0000-C000-000000000046&#x7D;"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermService\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="Object List"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelEndpoint 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelEndpoint 3.0.0.0\Performance" value="Object List"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelService 3.0.0.0\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ServiceModelService 3.0.0.0\Performance" value="Object List"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermService\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService\Performance" value="Object List"/>
+<get_system_time apifunction="GetLocalTime"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM" value="KnownSvcs" data="[REG_MULTI_SZ, value: &#x22;MSDTC,PerfDisk,PerfNet,PerfOS,PerfProc,PSched,RSVP,ServiceModelEndpoint 3.0.0.0,ServiceModelOperation 3.0.0.0,ServiceModelService 3.0.0.0,SMSvcHost 3.0.0.0,Spooler,TapiSrv,Tcpip,TermService&#x22;, size: 382 bytes]"/>
+<sleep milliseconds="0"/>
+<kill_process targetpid="2668" apifunction="NtTerminateProcess"/>
+</all_section>
+</thread>
+<thread tid="2760">
+<all_section>
+<sleep milliseconds="60000"/>
+</all_section>
+</thread>
+<thread tid="2764">
+<all_section>
+<open_process targetpid="1108" desiredaccess="PROCESS_QUERY_INFORMATION SYNCHRONIZE" apifunction="NtOpenProcess" successful="1"/>
+</all_section>
+</thread>
+<thread tid="3088">
+<all_section>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Linkage"/>
+<create_mutex name="Global\MSDTC_STATS_EVENT" owned="0"/>
+<open_scmanager servicename="SCM" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_service servicename="MSDTC" desiredaccess="SERVICE_ALL_ACCESS"/>
+<get_computer_name/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID"/>
+<enum_keys key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\28db4779-fa00-4f54-8d1c-5eab09f8f76a"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\28db4779-fa00-4f54-8d1c-5eab09f8f76a\Description"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\28db4779-fa00-4f54-8d1c-5eab09f8f76a\Description"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\6938fd61-db16-4e6c-940e-e631aa348377"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\6938fd61-db16-4e6c-940e-e631aa348377\Description"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\6938fd61-db16-4e6c-940e-e631aa348377\Description"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\70a278c3-c9a3-48bf-8e54-d004c2faeb09"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\70a278c3-c9a3-48bf-8e54-d004c2faeb09\Description"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\70a278c3-c9a3-48bf-8e54-d004c2faeb09\Description"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Description"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Description"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Svcid"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Svcid"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SVCID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SVCID\488091f0-bff6-11ce-9de8-00aa00a3f464"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Description"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Description"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Host"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Host"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Clsid"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Clsid"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Svcid"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Svcid"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SVCID\488091f0-bff6-11ce-9de8-00aa00a3f464\DefaultProvider"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SVCID\488091f0-bff6-11ce-9de8-00aa00a3f464\DefaultProvider"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Protocol"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Protocol"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Endpoint"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Endpoint"/>
+<get_computer_name/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Svcid"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\Svcid"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SVCID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SVCID\488091f0-bff6-11ce-9de8-00aa00a3f464"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\CustomProperties"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\CustomProperties\LOG"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\CustomProperties\LOG\Path"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CID\9b88eecb-facd-41ae-9558-70d4ad91117f\CustomProperties\LOG\Path"/>
+<open_mutex name="Global\MSDTC_STATS_FILE" owned="1"/>
+<open_mutex name="Global\MSDTC_STATS_EVENT" owned="1"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC\Performance" value="First Help"/>
+</all_section>
+</thread>
+</process>
+<process index="2" pid="944" filename="C:\WINDOWS\system32\svchost.exe" filename_hash="49083ae3725a0488e0a8fbbe1335c745f70c4667" filesize="14336" md5="4fbc75b74479c7a6f829e0ca19df3366" sha1="97c7c354c12b89c797740b35ed81879be58f3deb" username="SYSTEM" parentindex="0" starttime="00:03.859" terminationtime="00:18.062" startreason="DCOMService" terminationreason="Timeout" executionstatus="OK">
+<thread tid="2736">
+<all_section>
+<load_image filename="C:\WINDOWS\system32\svchost.exe" successful="1" address="&#x24;1000000" end_address="&#x24;1006000" size="24576" filename_hash="49083ae3725a0488e0a8fbbe1335c745f70c4667"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\ShimEng.dll" successful="1" address="&#x24;5CF00000" end_address="&#x24;5CF26000" size="155648" filename_hash="2ab219118ae324684eb7aaaf72eb4d9360ade81f"/>
+<load_dll filename="C:\WINDOWS\AppPatch\AcGenral.DLL" successful="1" address="&#x24;6FD90000" end_address="&#x24;6FF5A000" size="1875968" filename_hash="d28c378f459fafa7367649554b729a80b3924aad"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\WINMM.dll" successful="1" address="&#x24;76AF0000" end_address="&#x24;76B1E000" size="188416" filename_hash="51f42782acdc790e4cabf402d71ef0fe24f9ad1b"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\OLEAUT32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\MSACM32.dll" successful="1" address="&#x24;77BB0000" end_address="&#x24;77BC5000" size="86016" filename_hash="9be8c8a0ce2316feff5783efbe259bb1f6334a63"/>
+<load_dll filename="C:\WINDOWS\system32\VERSION.dll" successful="1" address="&#x24;77BD0000" end_address="&#x24;77BD8000" size="32768" filename_hash="adf263b658136ccb3cde72d0e6dd634c5a5e5143"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<load_dll filename="C:\WINDOWS\system32\USERENV.dll" successful="1" address="&#x24;76620000" end_address="&#x24;766D6000" size="745472" filename_hash="c7264e1fe77ea0e6d615077dd7cc6cc06aaa02cd"/>
+<load_dll filename="C:\WINDOWS\system32\UxTheme.dll" successful="1" address="&#x24;5B0F0000" end_address="&#x24;5B128000" size="229376" filename_hash="16c4d24a172bfbc67f488d6b4086b9e10f8eaf4b"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\comctl32.dll" successful="1" address="&#x24;5D450000" end_address="&#x24;5D4EA000" size="630784" filename_hash="ba126572bcb4ac594a3c37e2ac86db40b173878d"/>
+<load_dll filename="C:\WINDOWS\system32\NTMARTA.DLL" successful="1" address="&#x24;77660000" end_address="&#x24;77681000" size="135168" filename_hash="7e2ea4d88645138e5edb646157fd702c347bb53a"/>
+<load_dll filename="C:\WINDOWS\system32\SAMLIB.dll" successful="1" address="&#x24;71B70000" end_address="&#x24;71B83000" size="77824" filename_hash="a1d75237cedc30a45117ba1c2040ddfd9f7bb667"/>
+<load_dll filename="C:\WINDOWS\system32\WLDAP32.dll" successful="1" address="&#x24;76F20000" end_address="&#x24;76F4D000" size="184320" filename_hash="03269df70bc4ff939f87ef528f8a5fcf2a708624"/>
+<load_dll filename="c:\windows\system32\rpcss.dll" successful="1" address="&#x24;76A30000" end_address="&#x24;76A94000" size="409600" filename_hash="7391155a9976797c2072e013fa3c38197b268de7"/>
+<load_dll filename="c:\windows\system32\WS2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<load_dll filename="c:\windows\system32\WS2HELP.dll" successful="1" address="&#x24;71A00000" end_address="&#x24;71A08000" size="32768" filename_hash="317cc14a94fcf3d10749efbcab330b97f516fffb"/>
+<load_dll filename="C:\WINDOWS\system32\xpsp2res.dll" successful="1" address="&#x24;630000" end_address="&#x24;909000" size="2985984" filename_hash="55401355585fac03b5d6991af85abf8db8fc9042"/>
+<load_dll filename="C:\WINDOWS\system32\CLBCATQ.DLL" successful="1" address="&#x24;76F90000" end_address="&#x24;7700F000" size="520192" filename_hash="bd0f1633a7d858f27d3fa2bad744b766a1533490"/>
+<load_dll filename="C:\WINDOWS\system32\COMRes.dll" successful="1" address="&#x24;77010000" end_address="&#x24;770E3000" size="864256" filename_hash="eda8c030913d048cda82aeb6066be39e005ce0f1"/>
+<load_dll filename="c:\windows\system32\termsrv.dll" successful="1" address="&#x24;761D0000" end_address="&#x24;76224000" size="344064" filename_hash="86773aed393573d4bd59481185910bbaaf85790f"/>
+<load_dll filename="c:\windows\system32\ICAAPI.dll" successful="1" address="&#x24;74EF0000" end_address="&#x24;74EF6000" size="24576" filename_hash="166e7e5c0064c63fb4516303b879d1c83b69cf2a"/>
+<load_dll filename="c:\windows\system32\SETUPAPI.dll" successful="1" address="&#x24;778F0000" end_address="&#x24;779E4000" size="999424" filename_hash="8109df4e050264532bb5757e9da4ae12e29b800f"/>
+<load_dll filename="C:\WINDOWS\system32\WINTRUST.dll" successful="1" address="&#x24;76BF0000" end_address="&#x24;76C1E000" size="188416" filename_hash="7bda19c92848a811077f780f569c0593d14b2a92"/>
+<load_dll filename="C:\WINDOWS\system32\CRYPT32.dll" successful="1" address="&#x24;77A50000" end_address="&#x24;77AE6000" size="614400" filename_hash="3127dbe44b75c673c24f9ad63675ff91cd9c6321"/>
+<load_dll filename="C:\WINDOWS\system32\MSASN1.dll" successful="1" address="&#x24;77AF0000" end_address="&#x24;77B02000" size="73728" filename_hash="e3b7e1519f060e76b7e5579c1974e6260bcdb324"/>
+<load_dll filename="C:\WINDOWS\system32\IMAGEHLP.dll" successful="1" address="&#x24;76C50000" end_address="&#x24;76C78000" size="163840" filename_hash="2eaa144578f2beb69da027ca0e15445c98a95607"/>
+<load_dll filename="c:\windows\system32\AUTHZ.dll" successful="1" address="&#x24;77690000" end_address="&#x24;776A2000" size="73728" filename_hash="36977fd1a696a3c3b974d2147d23425f7b0e6bec"/>
+<load_dll filename="c:\windows\system32\mstlsapi.dll" successful="1" address="&#x24;75090000" end_address="&#x24;750AF000" size="126976" filename_hash="a88f24cb797bb85aba9ea841103faae3677188a7"/>
+<load_dll filename="c:\windows\system32\ACTIVEDS.dll" successful="1" address="&#x24;77C90000" end_address="&#x24;77CC2000" size="204800" filename_hash="71dde7dea4019ab631fe85a31149a494363b7bdc"/>
+<load_dll filename="c:\windows\system32\adsldpc.dll" successful="1" address="&#x24;76DD0000" end_address="&#x24;76DF5000" size="151552" filename_hash="1e272578a29b1c2ed7a013266ca50343a560fa2d"/>
+<load_dll filename="C:\WINDOWS\system32\NETAPI32.dll" successful="1" address="&#x24;597D0000" end_address="&#x24;59825000" size="348160" filename_hash="5e935f90226ff224936edf449f925b647b535917"/>
+<load_dll filename="c:\windows\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<load_dll filename="C:\WINDOWS\system32\REGAPI.dll" successful="1" address="&#x24;76B70000" end_address="&#x24;76B7F000" size="61440" filename_hash="0b43cc40011a36366d3490973e82bcd162bb93da"/>
+<load_dll filename="C:\WINDOWS\system32\rsaenh.dll" successful="1" address="&#x24;68000000" end_address="&#x24;68036000" size="221184" filename_hash="8e8dd9db03ed502d915dee9e4f9fd3f10593e27c"/>
+<load_dll filename="C:\WINDOWS\system32\Apphelp.dll" successful="1" address="&#x24;77B10000" end_address="&#x24;77B32000" size="139264" filename_hash="016ea16586e3c27f4bd43341ba906187a416afe0"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+</all_section>
+</thread>
+</process>
+<process index="3" pid="756" filename="C:\WINDOWS\system32\services.exe" filename_hash="de3701d2c03d9ae29b2d87eccafbbcadf1bfb7e3" filesize="111104" md5="a3edbe9053889fb24ab22492472b39dc" sha1="7153d4d113c47379fb57aad4918a2f2a64f0c9ee" username="SYSTEM" parentindex="0" starttime="00:11.375" terminationtime="00:17.890" startreason="SCM" terminationreason="Timeout" executionstatus="OK">
+</process>
+</processes>

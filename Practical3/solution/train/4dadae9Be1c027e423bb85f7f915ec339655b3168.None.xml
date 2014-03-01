@@ -1,0 +1,1032 @@
+<?xml version="1.0"?>
+<processes>
+<process index="1" pid="2588" filename="c:\2f7ac6fceccd97a344b8bfc3118bb371.EX" filename_hash="hash_error" filesize="389120" md5="2f7ac6fceccd97a344b8bfc3118bb371" sha1="4dadae9e1c027e423bb85f7f915ec339655b3168" username="Administrator" parentindex="0" starttime="00:01.687" terminationtime="02:02.125" startreason="AnalysisTarget" terminationreason="Timeout" executionstatus="OK" applicationtype="Win32Application">
+<thread tid="2592">
+<all_section>
+<load_image filename="c:\2f7ac6fceccd97a344b8bfc3118bb371.EX" successful="1" address="&#x24;400000" end_address="&#x24;461000" size="397312" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<open_key key="HKEY_CURRENT_USER\Software\Expertcity\ConnectionInfo"/>
+<open_key key="HKEY_CURRENT_USER\Software\Expertcity\AuthInfoS_DTS"/>
+<open_key key="HKEY_CURRENT_USER\Software\Expertcity\AuthInfo"/>
+<create_mutex name="GOTOASSIST_CUSTOMER_680006315" owned="0"/>
+<delete_file filetype="file" srcfile="c:\copilotCE.log" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<delete_file filetype="file" srcfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<create_directory filetype="file" srcfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp" srcfile_hash="hash_error"/>
+<get_file_attributes filetype="file" srcfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_hook.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<create_file filetype="file" srcfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_hook.dll" srcfile_hash="hash_error" creationdistribution="CREATE_ALWAYS" desiredaccess="FILE_ANY_ACCESS" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_resource.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<create_file filetype="file" srcfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_resource.dll" srcfile_hash="hash_error" creationdistribution="CREATE_ALWAYS" desiredaccess="FILE_ANY_ACCESS" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_customer.exe" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<create_file filetype="file" srcfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_customer.exe" srcfile_hash="hash_error" creationdistribution="CREATE_ALWAYS" desiredaccess="FILE_ANY_ACCESS" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_file filetype="file" srcfile="c:\G2ARestartParams.txt" srcfile_hash="hash_error" creationdistribution="CREATE_NEW" desiredaccess="FILE_ANY_ACCESS" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\AppPatch\sysmain.sdb" srcfile_hash="73a4cd369412da6a51064c776a3a0175daea5b82" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS FILE_READ_ATTRIBUTES" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\AppPatch\systest.sdb" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS FILE_READ_ATTRIBUTES" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\WPA\TabletPC"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\WPA\MediaCenter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\WPA\MediaCenter" value="Installed"/>
+<open_file filetype="file" srcfile="\Device\NamedPipe\ShimViewer" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE FILE_ADD_SUBDIRECTORY FILE_APPEND_DATA FILE_CREATE_PIPE_INSTANCE FILE_WRITE_EA FILE_WRITE_ATTRIBUTES" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_customer.exe" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Custom\g2a_customer.exe"/>
+<create_process commandline="&#x22;C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_customer.exe&#x22; &#x22;&#x26;Plugin=CustomerAgent&#x26;Path=g2a_customer.exe&#x26;ProxyHost=64.74.80.35,216.115.217.35,66.151.115.165,216.115.&#x26;ProxyPort=8200,80,443         &#x26;TunnelPort=     &#x26;SessionId=680006315           &#x26;ServerId=5892" targetpid="2620" showwindow="SW_HIDE" apifunction="CreateProcessA" successful="1"/>
+</all_section>
+</thread>
+</process>
+<process index="2" pid="2620" filename="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_customer.exe &#x26;Plugin=CustomerAgent&#x26;Path=g2a_customer.exe&#x26;ProxyHost=64.74.80.35,216.115.217.35,66.151.115.165,216.115.&#x26;ProxyPort=8200,80,443         &#x26;TunnelPort=     &#x26;SessionId=680006315           &#x26;ServerId=5892" filename_hash="hash_error" filesize="-1" username="Administrator" parentindex="1" starttime="00:03.562" terminationtime="02:02.109" startreason="CreateProcess" terminationreason="Timeout" executionstatus="OK">
+<thread tid="2624">
+<all_section>
+<load_image filename="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_customer.exe" successful="1" address="&#x24;400000" end_address="&#x24;4E4000" size="933888" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\COMCTL32.dll" successful="1" address="&#x24;5D450000" end_address="&#x24;5D4EA000" size="630784" filename_hash="ba126572bcb4ac594a3c37e2ac86db40b173878d"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\comdlg32.dll" successful="1" address="&#x24;76350000" end_address="&#x24;7639A000" size="303104" filename_hash="097776790214f0f3489f749be018c84f2dc929d2"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<load_dll filename="C:\WINDOWS\system32\MPR.dll" successful="1" address="&#x24;71A80000" end_address="&#x24;71A92000" size="73728" filename_hash="0affd0a48f5f137169158083c61cf46454689055"/>
+<load_dll filename="C:\WINDOWS\system32\NETAPI32.dll" successful="1" address="&#x24;597D0000" end_address="&#x24;59825000" size="348160" filename_hash="5e935f90226ff224936edf449f925b647b535917"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\OLEAUT32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\SETUPAPI.dll" successful="1" address="&#x24;778F0000" end_address="&#x24;779E4000" size="999424" filename_hash="8109df4e050264532bb5757e9da4ae12e29b800f"/>
+<load_dll filename="C:\WINDOWS\system32\VERSION.dll" successful="1" address="&#x24;77BD0000" end_address="&#x24;77BD8000" size="32768" filename_hash="adf263b658136ccb3cde72d0e6dd634c5a5e5143"/>
+<load_dll filename="C:\WINDOWS\system32\WINMM.dll" successful="1" address="&#x24;76AF0000" end_address="&#x24;76B1E000" size="188416" filename_hash="51f42782acdc790e4cabf402d71ef0fe24f9ad1b"/>
+<load_dll filename="C:\WINDOWS\system32\WSOCK32.dll" successful="1" address="&#x24;71A30000" end_address="&#x24;71A3A000" size="40960" filename_hash="42e1c04ce06976a15d87a8b9c8c8f2475ff90c2b"/>
+<load_dll filename="C:\WINDOWS\system32\WS2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<load_dll filename="C:\WINDOWS\system32\WS2HELP.dll" successful="1" address="&#x24;71A00000" end_address="&#x24;71A08000" size="32768" filename_hash="317cc14a94fcf3d10749efbcab330b97f516fffb"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\COMCTL32.dll" successful="1" address="&#x24;5D450000" end_address="&#x24;5D4EA000" size="630784" filename_hash="ba126572bcb4ac594a3c37e2ac86db40b173878d"/>
+<load_dll filename="C:\WINDOWS\system32\comdlg32.dll" successful="1" address="&#x24;76350000" end_address="&#x24;7639A000" size="303104" filename_hash="097776790214f0f3489f749be018c84f2dc929d2"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\MPR.dll" successful="1" address="&#x24;71A80000" end_address="&#x24;71A92000" size="73728" filename_hash="0affd0a48f5f137169158083c61cf46454689055"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\NETAPI32.dll" successful="1" address="&#x24;597D0000" end_address="&#x24;59825000" size="348160" filename_hash="5e935f90226ff224936edf449f925b647b535917"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\OLEAUT32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\SETUPAPI.dll" successful="1" address="&#x24;778F0000" end_address="&#x24;779E4000" size="999424" filename_hash="8109df4e050264532bb5757e9da4ae12e29b800f"/>
+<load_dll filename="C:\WINDOWS\system32\VERSION.dll" successful="1" address="&#x24;77BD0000" end_address="&#x24;77BD8000" size="32768" filename_hash="adf263b658136ccb3cde72d0e6dd634c5a5e5143"/>
+<load_dll filename="C:\WINDOWS\system32\WINMM.dll" successful="1" address="&#x24;76AF0000" end_address="&#x24;76B1E000" size="188416" filename_hash="51f42782acdc790e4cabf402d71ef0fe24f9ad1b"/>
+<load_dll filename="C:\WINDOWS\system32\WSOCK32.dll" successful="1" address="&#x24;71A30000" end_address="&#x24;71A3A000" size="40960" filename_hash="42e1c04ce06976a15d87a8b9c8c8f2475ff90c2b"/>
+<create_thread targetpid="2620" threadid="2644" address="&#x24;77C0A341" parameteraddress="&#x24;00944430"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<find_window classname="Progman"/>
+<open_process targetpid="1704" desiredaccess="PROCESS_QUERY_INFORMATION PROCESS_VM_READ" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<impersonate_user user="Administrator" tokenhandle="1480"/>
+<open_key key="HKEY_USERS\S-1-5-21-583907252-1708537768-842925246-500"/>
+<open_key key="HKEY_CURRENT_USER\Software"/>
+<get_username tokenhandle="0"/>
+<revert_to_self tokenhandle="0"/>
+<create_file filetype="file" srcfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2.log" srcfile_hash="hash_error" creationdistribution="CREATE_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_ARCHIVE FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_thread targetpid="2620" threadid="2648" address="&#x24;77C0A341" parameteraddress="&#x24;00944CD8"/>
+<load_dll filename="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_resource.dll" successful="1" address="&#x24;10000000" end_address="&#x24;10016000" size="90112" filename_hash="hash_error"/>
+<create_mutex name="CUSTOMER_CHAT_680006315" owned="0"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<create_thread targetpid="2620" threadid="2652" address="&#x24;77C0A341" parameteraddress="&#x24;009494E8"/>
+<delete_file filetype="file" srcfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_customer-last.log" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<move_file filetype="file" srcfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_customer.log" srcfile_hash="hash_error" dstfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_customer-last.log" dstfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS"/>
+<move_file filetype="file" srcfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2.log" srcfile_hash="hash_error" dstfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_customer.log" dstfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS"/>
+<open_file filetype="file" srcfile="C:\DOKUME&#x7E;1\ADMINI&#x7E;1\LOKALE&#x7E;1\Temp\&#x7E;CL1.tmp\g2a_customer.log" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_ARCHIVE FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_thread targetpid="2620" threadid="2656" address="&#x24;77C0A341" parameteraddress="&#x24;009494E8"/>
+<create_thread targetpid="2620" threadid="2660" address="&#x24;77C0A341" parameteraddress="&#x24;009467A0"/>
+<create_thread targetpid="2620" threadid="2664" address="&#x24;77C0A341" parameteraddress="&#x24;0094A288"/>
+<create_thread targetpid="2620" threadid="2668" address="&#x24;77C0A341" parameteraddress="&#x24;0094A948"/>
+<create_thread targetpid="2620" threadid="2816" address="&#x24;77C0A341" parameteraddress="&#x24;0094A288"/>
+</all_section>
+</thread>
+<thread tid="2644">
+<all_section>
+<find_window classname="Progman"/>
+<open_process targetpid="1704" desiredaccess="PROCESS_QUERY_INFORMATION PROCESS_VM_READ" apifunction="NtOpenProcess" successful="1"/>
+<impersonate_user user="Administrator" tokenhandle="1520"/>
+<get_username tokenhandle="0"/>
+<revert_to_self tokenhandle="0"/>
+<find_window classname="Progman"/>
+<open_process targetpid="1704" desiredaccess="PROCESS_QUERY_INFORMATION PROCESS_VM_READ" apifunction="NtOpenProcess" successful="1"/>
+<impersonate_user user="Administrator" tokenhandle="1916"/>
+<create_thread targetpid="2620" threadid="2728" address="&#x24;77DC848A" parameteraddress="&#x24;00000000"/>
+<vm_protect targetpid="2620" wantedaddress="&#x24;44200BCA" address="&#x24;44200000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetOpenUrlA"/>
+<vm_protect targetpid="2620" wantedaddress="&#x24;44200BCA" address="&#x24;44200000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetOpenUrlA"/>
+<vm_protect targetpid="2620" wantedaddress="&#x24;4424AF69" address="&#x24;4424A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetOpenUrlW"/>
+<vm_protect targetpid="2620" wantedaddress="&#x24;4424AF69" address="&#x24;4424A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetOpenUrlW"/>
+<vm_protect targetpid="2620" wantedaddress="&#x24;441F4321" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.HttpOpenRequestA"/>
+<vm_protect targetpid="2620" wantedaddress="&#x24;441F4321" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.HttpOpenRequestA"/>
+<vm_protect targetpid="2620" wantedaddress="&#x24;441F5D42" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.HttpOpenRequestW"/>
+<vm_protect targetpid="2620" wantedaddress="&#x24;441F5D42" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.HttpOpenRequestW"/>
+<vm_protect targetpid="2620" wantedaddress="&#x24;441F497A" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetConnectA"/>
+<vm_protect targetpid="2620" wantedaddress="&#x24;441F497A" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetConnectA"/>
+<vm_protect targetpid="2620" wantedaddress="&#x24;441F5B68" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetConnectW"/>
+<vm_protect targetpid="2620" wantedaddress="&#x24;441F5B68" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetConnectW"/>
+<load_dll filename="C:\WINDOWS\system32\wininet.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<load_dll filename="C:\WINDOWS\system32\USERENV.dll" successful="1" address="&#x24;76620000" end_address="&#x24;766D6000" size="745472" filename_hash="c7264e1fe77ea0e6d615077dd7cc6cc06aaa02cd"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="2004"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\NETAPI32.dll" successful="1" address="&#x24;597D0000" end_address="&#x24;59825000" size="348160" filename_hash="5e935f90226ff224936edf449f925b647b535917"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="2004"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="2004"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\wininet.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<create_thread targetpid="2620" threadid="2772" address="&#x24;7C937EDB" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2620" threadid="2776" address="&#x24;7C920250" parameteraddress="&#x24;00000000"/>
+<load_dll filename="C:\WINDOWS\system32\rtutils.dll" successful="1" address="&#x24;76E40000" end_address="&#x24;76E4E000" size="57344" filename_hash="1878db387ed7e53ffd7b8150c26ddaf51560c447"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="2140"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\All Users\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_directory/>
+<find_file filetype="file" srcfile="C:\WINDOWS\system32\Ras\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="2140"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_scmanager servicename="SCM" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\All Users\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_directory/>
+<find_file filetype="file" srcfile="C:\WINDOWS\system32\Ras\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="2200"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<revert_to_self tokenhandle="0"/>
+<find_window classname="Progman"/>
+<open_process targetpid="1704" desiredaccess="PROCESS_QUERY_INFORMATION PROCESS_VM_READ" apifunction="NtOpenProcess" successful="1"/>
+<impersonate_user user="Administrator" tokenhandle="2244"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="2244"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\Mozilla\registry.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_windows_directory/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\nsreg.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Netscape\Netscape Navigator\Users"/>
+<revert_to_self tokenhandle="0"/>
+<open_key key="HKEY_CURRENT_USER\Software\Citrix\GoToAssist"/>
+<open_key key="HKEY_CURRENT_USER\Software\Expertcity"/>
+</all_section>
+</thread>
+<thread tid="2648">
+<all_section>
+<set_windows_hook hookid="WH_GETMESSAGE" threadid="2648" hook_address="&#x24;0049019D" hook_module="&#x24;00000000"/>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\Compatibility\g2a_customer.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared" value="CUAS"/>
+<create_mutex name="CTF.LBES.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Compart.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Asm.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Layouts.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.TMD.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<open_key key="HKEY_CURRENT_USER\Keyboard Layout\Toggle"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Language Hotkey"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Layout Hotkey"/>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF" value="EnableAnchorContext"/>
+</all_section>
+</thread>
+<thread tid="2656">
+<all_section>
+<get_computer_name/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Citrix\GoToAssist\ConnectionInfo\Manual"/>
+<create_thread targetpid="2620" threadid="2672" address="&#x24;77C0A341" parameteraddress="&#x24;0094AC00"/>
+<create_thread targetpid="2620" threadid="2676" address="&#x24;77C0A341" parameteraddress="&#x24;0094AC00"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="216.115." successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Citrix\GoToAssist\ConnectionInfo\Manual"/>
+<create_thread targetpid="2620" threadid="2804" address="&#x24;77C0A341" parameteraddress="&#x24;0094F3B8"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="216.115." successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<check_for_debugger apifunction="IsDebuggerPresent"/>
+<load_dll filename="C:\WINDOWS\system32\uxtheme.dll" successful="1" address="&#x24;5B0F0000" end_address="&#x24;5B128000" size="229376" filename_hash="16c4d24a172bfbc67f488d6b4086b9e10f8eaf4b"/>
+<create_mutex name="CTF.TimListCache.FMPDefaultS-1-5-21-583907252-1708537768-842925246-500MUTEX.DefaultS-1-5-21-583907252" owned="0"/>
+<set_windows_hook hookid="WH_KEYBOARD" threadid="2656" hook_address="&#x24;746B07C3" hook_module="&#x24;746A0000"/>
+<set_windows_hook hookid="WH_MOUSE" threadid="2656" hook_address="&#x24;746B04CD" hook_module="&#x24;746A0000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\IMM"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\IMM" value="Ime File"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\msctfime.ime" successful="1" address="&#x24;2190001" end_address="&#x24;2190001" size="0" filename_hash="434c43fc87679a37aa054c0c18e190ccb39a4439"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\msctfime.ime" successful="1" address="&#x24;75250000" end_address="&#x24;7527E000" size="188416" filename_hash="434c43fc87679a37aa054c0c18e190ccb39a4439"/>
+<get_system_directory/>
+<create_window hwnd="&#x24;00020116" classname="IME" windowname="Default IME" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF"/>
+<query_value key="HKEY_CURRENT_USER\Software\Microsoft\CTF" value="Disable Thread Input Manager"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\SystemShared"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared" value="CUAS"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\msctfime.ime" successful="1" address="&#x24;75250000" end_address="&#x24;7527E000" size="188416" filename_hash="434c43fc87679a37aa054c0c18e190ccb39a4439"/>
+<create_window hwnd="&#x24;00020128" classname="nativeChatClass" windowname="GoToAssist" height="300" width="350" top="100" left="0" style="WS_BORDER WS_CAPTION WS_CLIPCHILDREN WS_DLGFRAME WS_GROUP WS_MAXIMIZEBOX WS_MINIMIZEBOX WS_OVERLAPPED WS_OVERLAPPEDWINDOW WS_SIZEBOX WS_SYSMENU WS_TABSTOP WS_THICKFRAME WS_TILED WS_TILEDWINDOW" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR WS_EX_TOPMOST WS_EX_WINDOWEDGE"/>
+<create_window hwnd="&#x24;0002014E" classname="MSCTFIME UI" windowname="M" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<get_system_directory/>
+<enum_window/>
+<load_dll filename="C:\WINDOWS\system32\RICHED20.DLL" successful="1" address="&#x24;74DB0000" end_address="&#x24;74E1D000" size="446464" filename_hash="a9a7d69448d44bf2bbcb61514bdee9658d12b0e4"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="windows" value="ScrollInset"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="windows" value="DragDelay"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="windows" value="DragMinDist"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="windows" value="ScrollDelay"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="windows" value="ScrollInterval"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="richedit30" value="flags"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<create_window hwnd="&#x24;00040192" classname="OleMainThreadWndClass" windowname="OleMainThreadWndName" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<create_window hwnd="&#x24;0002016C" classname="CLIPBRDWNDCLASS" height="0" width="0" top="0" left="0" style="WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<create_thread targetpid="2620" threadid="2812" address="&#x24;77C0A341" parameteraddress="&#x24;0094F3B8"/>
+<sleep milliseconds="200"/>
+<find_window classname="Shell_TrayWnd"/>
+<enum_window/>
+<create_window hwnd="&#x24;00020178" classname="CicMarshalWndClass" windowname="CicMarshalWndAGK" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<open_key key="HKEY_CURRENT_USER\Keyboard Layout\Toggle"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Language Hotkey"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Layout Hotkey"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF\LangBarAddIn"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\LangBarAddIn"/>
+<create_mutex name="MSCTF.Shared.MUTEX.ABH" owned="0"/>
+<get_system_directory/>
+</all_section>
+</thread>
+<thread tid="2776">
+<all_section>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\RASAPI32.dll" successful="1" address="&#x24;76EA0000" end_address="&#x24;76EDC000" size="245760" filename_hash="2b764e033d62d37765392a55774c44d8d6e9414f"/>
+<create_mutex name="RasPbFile" owned="0"/>
+<open_mutex name="RasPbFile" owned="1"/>
+<load_dll filename="C:\WINDOWS\system32\rtutils.dll" successful="1" address="&#x24;76E40000" end_address="&#x24;76E4E000" size="57344" filename_hash="1878db387ed7e53ffd7b8150c26ddaf51560c447"/>
+<load_dll filename="C:\WINDOWS\system32\rasman.dll" successful="1" address="&#x24;76E50000" end_address="&#x24;76E62000" size="73728" filename_hash="ab8ead1ea84aec88420d0536d67c522080baf1c5"/>
+<open_scmanager servicename="SCM" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_service servicename="RASMAN" desiredaccess="SERVICE_ALL_ACCESS"/>
+<get_computer_name/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\ROUTER" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\SecurityService"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\SecurityService" value="10"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SecurityProviders" value="SecurityProviders"/>
+<get_computer_name/>
+<load_dll filename="C:\WINDOWS\system32\msapsspc.dll" successful="1" address="&#x24;71DD0000" end_address="&#x24;71DE5000" size="86016" filename_hash="6ae0e3be35e8101001344cc216761c8a05ed4058"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\crypt32\Performance"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\msasn1"/>
+<load_dll filename="C:\WINDOWS\system32\schannel.dll" successful="1" address="&#x24;767A0000" end_address="&#x24;767C7000" size="159744" filename_hash="5e77ce8bddeabb1da0cf071c5d89cffa20dca320"/>
+<load_dll filename="C:\WINDOWS\system32\digest.dll" successful="1" address="&#x24;76230000" end_address="&#x24;76245000" size="86016" filename_hash="57c470b423ac9d8db9ad8e3a28c45cf8f86f329e"/>
+<get_computer_name/>
+<load_dll filename="C:\WINDOWS\system32\msnsspc.dll" successful="1" address="&#x24;74D60000" end_address="&#x24;74DA7000" size="290816" filename_hash="0f40373b80077964654f1cc826106fdd2ede0e58"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\SspiCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Comment"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Capabilities"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="RpcId"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Version"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Type"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="TokenSize"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\SspiCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Comment"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Capabilities"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="RpcId"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Version"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Type"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="TokenSize"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\SspiCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Comment"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Capabilities"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="RpcId"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Version"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Type"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="TokenSize"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SaslProfiles"/>
+<enum_values key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SecurityProviders\SaslProfiles"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Ip" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Ip" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="\\.\Ip" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\msv1_0.dll" successful="1" address="&#x24;77C40000" end_address="&#x24;77C64000" size="147456" filename_hash="96324d866a5f6e83112f9a2f7af8830502c2279c"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\ROUTER" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\MSCTF.dll" successful="1" address="&#x24;746A0000" end_address="&#x24;746EC000" size="311296" filename_hash="3c5a241879c49efae60e7d20c81195c0008fc317"/>
+</all_section>
+</thread>
+<thread tid="2664">
+<all_section>
+<sleep milliseconds="100"/>
+<create_socket socket="2568" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2568" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2568" buffer_len="99">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 31 26 73 65 73 73 69 6F 6E 3D 36 38 30 " ascii="he=1&#x26;session=680"/>
+<dump_line offset="&#x24;0040" dump="30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 38 " ascii="006315&#x26;server=58"/>
+<dump_line offset="&#x24;0050" dump="39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 0D " ascii="928700 HTTP/1.0."/>
+<dump_line offset="&#x24;0060" dump="0A 0D 0A                                        " ascii="..."/>
+</send_socket>
+<recv_socket socket="2568" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2564" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2564" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2564" buffer_len="99">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 32 26 73 65 73 73 69 6F 6E 3D 36 38 30 " ascii="he=2&#x26;session=680"/>
+<dump_line offset="&#x24;0040" dump="30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 38 " ascii="006315&#x26;server=58"/>
+<dump_line offset="&#x24;0050" dump="39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 0D " ascii="928700 HTTP/1.0."/>
+<dump_line offset="&#x24;0060" dump="0A 0D 0A                                        " ascii="..."/>
+</send_socket>
+<recv_socket socket="2564" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2160" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2160" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2160" buffer_len="99">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 33 26 73 65 73 73 69 6F 6E 3D 36 38 30 " ascii="he=3&#x26;session=680"/>
+<dump_line offset="&#x24;0040" dump="30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 38 " ascii="006315&#x26;server=58"/>
+<dump_line offset="&#x24;0050" dump="39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 0D " ascii="928700 HTTP/1.0."/>
+<dump_line offset="&#x24;0060" dump="0A 0D 0A                                        " ascii="..."/>
+</send_socket>
+<recv_socket socket="2160" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2568" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2568" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2568" buffer_len="99">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 34 26 73 65 73 73 69 6F 6E 3D 36 38 30 " ascii="he=4&#x26;session=680"/>
+<dump_line offset="&#x24;0040" dump="30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 38 " ascii="006315&#x26;server=58"/>
+<dump_line offset="&#x24;0050" dump="39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 0D " ascii="928700 HTTP/1.0."/>
+<dump_line offset="&#x24;0060" dump="0A 0D 0A                                        " ascii="..."/>
+</send_socket>
+<recv_socket socket="2568" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2156" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2156" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2156" buffer_len="99">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 35 26 73 65 73 73 69 6F 6E 3D 36 38 30 " ascii="he=5&#x26;session=680"/>
+<dump_line offset="&#x24;0040" dump="30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 38 " ascii="006315&#x26;server=58"/>
+<dump_line offset="&#x24;0050" dump="39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 0D " ascii="928700 HTTP/1.0."/>
+<dump_line offset="&#x24;0060" dump="0A 0D 0A                                        " ascii="..."/>
+</send_socket>
+<recv_socket socket="2156" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2564" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2564" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2564" buffer_len="99">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 36 26 73 65 73 73 69 6F 6E 3D 36 38 30 " ascii="he=6&#x26;session=680"/>
+<dump_line offset="&#x24;0040" dump="30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 38 " ascii="006315&#x26;server=58"/>
+<dump_line offset="&#x24;0050" dump="39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 0D " ascii="928700 HTTP/1.0."/>
+<dump_line offset="&#x24;0060" dump="0A 0D 0A                                        " ascii="..."/>
+</send_socket>
+<recv_socket socket="2564" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2160" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2160" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2160" buffer_len="99">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 37 26 73 65 73 73 69 6F 6E 3D 36 38 30 " ascii="he=7&#x26;session=680"/>
+<dump_line offset="&#x24;0040" dump="30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 38 " ascii="006315&#x26;server=58"/>
+<dump_line offset="&#x24;0050" dump="39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 0D " ascii="928700 HTTP/1.0."/>
+<dump_line offset="&#x24;0060" dump="0A 0D 0A                                        " ascii="..."/>
+</send_socket>
+<recv_socket socket="2160" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2568" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2568" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2568" buffer_len="99">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 38 26 73 65 73 73 69 6F 6E 3D 36 38 30 " ascii="he=8&#x26;session=680"/>
+<dump_line offset="&#x24;0040" dump="30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 38 " ascii="006315&#x26;server=58"/>
+<dump_line offset="&#x24;0050" dump="39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 0D " ascii="928700 HTTP/1.0."/>
+<dump_line offset="&#x24;0060" dump="0A 0D 0A                                        " ascii="..."/>
+</send_socket>
+<recv_socket socket="2568" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2156" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2156" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2156" buffer_len="99">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 39 26 73 65 73 73 69 6F 6E 3D 36 38 30 " ascii="he=9&#x26;session=680"/>
+<dump_line offset="&#x24;0040" dump="30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 38 " ascii="006315&#x26;server=58"/>
+<dump_line offset="&#x24;0050" dump="39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 0D " ascii="928700 HTTP/1.0."/>
+<dump_line offset="&#x24;0060" dump="0A 0D 0A                                        " ascii="..."/>
+</send_socket>
+<recv_socket socket="2156" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2564" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2564" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2564" buffer_len="100">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 31 30 26 73 65 73 73 69 6F 6E 3D 36 38 " ascii="he=10&#x26;session=68"/>
+<dump_line offset="&#x24;0040" dump="30 30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 " ascii="0006315&#x26;server=5"/>
+<dump_line offset="&#x24;0050" dump="38 39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 " ascii="8928700 HTTP/1.0"/>
+<dump_line offset="&#x24;0060" dump="0D 0A 0D 0A                                     " ascii="...."/>
+</send_socket>
+<recv_socket socket="2564" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2160" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2160" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2160" buffer_len="100">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 31 31 26 73 65 73 73 69 6F 6E 3D 36 38 " ascii="he=11&#x26;session=68"/>
+<dump_line offset="&#x24;0040" dump="30 30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 " ascii="0006315&#x26;server=5"/>
+<dump_line offset="&#x24;0050" dump="38 39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 " ascii="8928700 HTTP/1.0"/>
+<dump_line offset="&#x24;0060" dump="0D 0A 0D 0A                                     " ascii="...."/>
+</send_socket>
+<recv_socket socket="2160" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2568" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2568" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2568" buffer_len="100">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 31 32 26 73 65 73 73 69 6F 6E 3D 36 38 " ascii="he=12&#x26;session=68"/>
+<dump_line offset="&#x24;0040" dump="30 30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 " ascii="0006315&#x26;server=5"/>
+<dump_line offset="&#x24;0050" dump="38 39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 " ascii="8928700 HTTP/1.0"/>
+<dump_line offset="&#x24;0060" dump="0D 0A 0D 0A                                     " ascii="...."/>
+</send_socket>
+<recv_socket socket="2568" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2156" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2156" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2156" buffer_len="100">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 31 33 26 73 65 73 73 69 6F 6E 3D 36 38 " ascii="he=13&#x26;session=68"/>
+<dump_line offset="&#x24;0040" dump="30 30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 " ascii="0006315&#x26;server=5"/>
+<dump_line offset="&#x24;0050" dump="38 39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 " ascii="8928700 HTTP/1.0"/>
+<dump_line offset="&#x24;0060" dump="0D 0A 0D 0A                                     " ascii="...."/>
+</send_socket>
+<recv_socket socket="2156" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2564" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2564" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2564" buffer_len="100">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 31 34 26 73 65 73 73 69 6F 6E 3D 36 38 " ascii="he=14&#x26;session=68"/>
+<dump_line offset="&#x24;0040" dump="30 30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 " ascii="0006315&#x26;server=5"/>
+<dump_line offset="&#x24;0050" dump="38 39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 " ascii="8928700 HTTP/1.0"/>
+<dump_line offset="&#x24;0060" dump="0D 0A 0D 0A                                     " ascii="...."/>
+</send_socket>
+<recv_socket socket="2564" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2160" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2160" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2160" buffer_len="100">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 31 35 26 73 65 73 73 69 6F 6E 3D 36 38 " ascii="he=15&#x26;session=68"/>
+<dump_line offset="&#x24;0040" dump="30 30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 " ascii="0006315&#x26;server=5"/>
+<dump_line offset="&#x24;0050" dump="38 39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 " ascii="8928700 HTTP/1.0"/>
+<dump_line offset="&#x24;0060" dump="0D 0A 0D 0A                                     " ascii="...."/>
+</send_socket>
+<recv_socket socket="2160" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2568" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2568" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2568" buffer_len="100">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 31 36 26 73 65 73 73 69 6F 6E 3D 36 38 " ascii="he=16&#x26;session=68"/>
+<dump_line offset="&#x24;0040" dump="30 30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 " ascii="0006315&#x26;server=5"/>
+<dump_line offset="&#x24;0050" dump="38 39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 " ascii="8928700 HTTP/1.0"/>
+<dump_line offset="&#x24;0060" dump="0D 0A 0D 0A                                     " ascii="...."/>
+</send_socket>
+<recv_socket socket="2568" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2156" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2156" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2156" buffer_len="100">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 31 37 26 73 65 73 73 69 6F 6E 3D 36 38 " ascii="he=17&#x26;session=68"/>
+<dump_line offset="&#x24;0040" dump="30 30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 " ascii="0006315&#x26;server=5"/>
+<dump_line offset="&#x24;0050" dump="38 39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 " ascii="8928700 HTTP/1.0"/>
+<dump_line offset="&#x24;0060" dump="0D 0A 0D 0A                                     " ascii="...."/>
+</send_socket>
+<recv_socket socket="2156" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2564" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2564" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2564" buffer_len="100">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 31 38 26 73 65 73 73 69 6F 6E 3D 36 38 " ascii="he=18&#x26;session=68"/>
+<dump_line offset="&#x24;0040" dump="30 30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 " ascii="0006315&#x26;server=5"/>
+<dump_line offset="&#x24;0050" dump="38 39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 " ascii="8928700 HTTP/1.0"/>
+<dump_line offset="&#x24;0060" dump="0D 0A 0D 0A                                     " ascii="...."/>
+</send_socket>
+<recv_socket socket="2564" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+<create_socket socket="2160" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2160" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2160" buffer_len="100">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 6A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 68 65 6C 6C 6F 26 6A 65 64 69 3D 31 30 30 " ascii="t=hello&#x26;jedi=100"/>
+<dump_line offset="&#x24;0020" dump="26 63 6C 63 74 5F 6F 6B 3D 31 26 6E 6F 63 61 63 " ascii="&#x26;clct_ok=1&#x26;nocac"/>
+<dump_line offset="&#x24;0030" dump="68 65 3D 31 39 26 73 65 73 73 69 6F 6E 3D 36 38 " ascii="he=19&#x26;session=68"/>
+<dump_line offset="&#x24;0040" dump="30 30 30 36 33 31 35 26 73 65 72 76 65 72 3D 35 " ascii="0006315&#x26;server=5"/>
+<dump_line offset="&#x24;0050" dump="38 39 32 38 37 30 30 20 48 54 54 50 2F 31 2E 30 " ascii="8928700 HTTP/1.0"/>
+<dump_line offset="&#x24;0060" dump="0D 0A 0D 0A                                     " ascii="...."/>
+</send_socket>
+<recv_socket socket="2160" buffer_len="102" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 34 30 34 20 4E 6F 74 " ascii="HTTP/1.0 404 Not"/>
+<dump_line offset="&#x24;0010" dump="20 46 6F 75 6E 64 0D 0A 43 6F 6E 74 65 6E 74 2D " ascii=" Found..Content-"/>
+<dump_line offset="&#x24;0020" dump="4C 65 6E 67 74 68 3A 20 39 0D 0A 43 6F 6E 74 65 " ascii="Length: 9..Conte"/>
+<dump_line offset="&#x24;0030" dump="6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 70 6C " ascii="nt-Type: text/pl"/>
+<dump_line offset="&#x24;0040" dump="61 69 6E 0D 0A 50 72 61 67 6D 61 3A 20 6E 6F 2D " ascii="ain..Pragma: no-"/>
+<dump_line offset="&#x24;0050" dump="63 61 63 68 65 0D 0A 0D 0A 4E 6F 74 20 46 6F 75 " ascii="cache....Not Fou"/>
+<dump_line offset="&#x24;0060" dump="6E 64 0D 0A 0D 0A                               " ascii="nd...."/>
+</recv_socket>
+</all_section>
+</thread>
+<thread tid="2804">
+<all_section>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Citrix\GoToAssist\ConnectionInfo\Manual"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Citrix\GoToAssist\ConnectionInfo\LastGood"/>
+<sleep milliseconds="100"/>
+<find_window classname="Progman"/>
+<open_process targetpid="1704" desiredaccess="PROCESS_QUERY_INFORMATION PROCESS_VM_READ" apifunction="NtOpenProcess" successful="1"/>
+<impersonate_user user="Administrator" tokenhandle="2432"/>
+<load_dll filename="C:\WINDOWS\system32\wininet.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<revert_to_self tokenhandle="0"/>
+<sleep milliseconds="100"/>
+<find_window classname="Progman"/>
+<open_process targetpid="1704" desiredaccess="PROCESS_QUERY_INFORMATION PROCESS_VM_READ" apifunction="NtOpenProcess" successful="1"/>
+<impersonate_user user="Administrator" tokenhandle="2464"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="2464"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\Mozilla\registry.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_windows_directory/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\nsreg.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Netscape\Netscape Navigator\Users"/>
+<revert_to_self tokenhandle="0"/>
+<sleep milliseconds="100"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Citrix\GoToAssist"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Expertcity"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\SecurityService"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\SecurityService" value="DefaultAuthLevel"/>
+<create_socket socket="2432" socket_type="SOCK_STREAM" successful="1"/>
+<create_thread targetpid="2620" threadid="2836" address="&#x24;719BD2C6" parameteraddress="&#x24;0015FDD0"/>
+<connect_socket socket="2432" remote_addr="64.74.80.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<create_socket socket="2496" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2496" remote_addr="64.74.80.35" remote_port="80" successful="0" winsock_result="10035"/>
+<create_socket socket="2504" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2504" remote_addr="64.74.80.35" remote_port="443" successful="0" winsock_result="10035"/>
+<sleep milliseconds="100"/>
+<find_window classname="Progman"/>
+<open_process targetpid="1704" desiredaccess="PROCESS_QUERY_INFORMATION PROCESS_VM_READ" apifunction="NtOpenProcess" successful="1"/>
+<impersonate_user user="Administrator" tokenhandle="2504"/>
+<load_dll filename="C:\WINDOWS\system32\wininet.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<revert_to_self tokenhandle="0"/>
+<sleep milliseconds="100"/>
+<find_window classname="Progman"/>
+<open_process targetpid="1704" desiredaccess="PROCESS_QUERY_INFORMATION PROCESS_VM_READ" apifunction="NtOpenProcess" successful="1"/>
+<impersonate_user user="Administrator" tokenhandle="2496"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="2496"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\Mozilla\registry.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_windows_directory/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\nsreg.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Netscape\Netscape Navigator\Users"/>
+<revert_to_self tokenhandle="0"/>
+<sleep milliseconds="100"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Citrix\GoToAssist"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Expertcity"/>
+<sleep milliseconds="100"/>
+<find_window classname="Progman"/>
+<open_process targetpid="1704" desiredaccess="PROCESS_QUERY_INFORMATION PROCESS_VM_READ" apifunction="NtOpenProcess" successful="1"/>
+<impersonate_user user="Administrator" tokenhandle="2504"/>
+<open_key key="HKEY_USERS\S-1-5-21-583907252-1708537768-842925246-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings"/>
+<query_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings" value="AutoConfigURL"/>
+<revert_to_self tokenhandle="0"/>
+<sleep milliseconds="100"/>
+<find_window classname="Progman"/>
+<open_process targetpid="1704" desiredaccess="PROCESS_QUERY_INFORMATION PROCESS_VM_READ" apifunction="NtOpenProcess" successful="1"/>
+<impersonate_user user="Administrator" tokenhandle="2496"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="2496"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\Mozilla\registry.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_windows_directory/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\nsreg.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Netscape\Netscape Navigator\Users"/>
+<revert_to_self tokenhandle="0"/>
+<create_socket socket="2496" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2496" remote_addr="64.74.80.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<create_socket socket="2504" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2504" remote_addr="64.74.80.35" remote_port="80" successful="0" winsock_result="10035"/>
+<create_socket socket="2476" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2476" remote_addr="64.74.80.35" remote_port="443" successful="0" winsock_result="10035"/>
+<sleep milliseconds="100"/>
+<find_window classname="Progman"/>
+<open_process targetpid="1704" desiredaccess="PROCESS_QUERY_INFORMATION PROCESS_VM_READ" apifunction="NtOpenProcess" successful="1"/>
+<impersonate_user user="Administrator" tokenhandle="2476"/>
+<load_dll filename="C:\WINDOWS\system32\wininet.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<revert_to_self tokenhandle="0"/>
+<sleep milliseconds="100"/>
+<find_window classname="Progman"/>
+<open_process targetpid="1704" desiredaccess="PROCESS_QUERY_INFORMATION PROCESS_VM_READ" apifunction="NtOpenProcess" successful="1"/>
+<impersonate_user user="Administrator" tokenhandle="2504"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="2504"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\Mozilla\registry.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_windows_directory/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\nsreg.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Netscape\Netscape Navigator\Users"/>
+<revert_to_self tokenhandle="0"/>
+<sleep milliseconds="100"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Citrix\GoToAssist"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Expertcity"/>
+<sleep milliseconds="100"/>
+<create_socket socket="2568" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2568" remote_addr="64.74.80.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<create_socket socket="2572" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2572" remote_addr="64.74.80.35" remote_port="80" successful="0" winsock_result="10035"/>
+<create_socket socket="2580" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2580" remote_addr="64.74.80.35" remote_port="443" successful="0" winsock_result="10035"/>
+<sleep milliseconds="100"/>
+<find_window classname="Progman"/>
+<open_process targetpid="1704" desiredaccess="PROCESS_QUERY_INFORMATION PROCESS_VM_READ" apifunction="NtOpenProcess" successful="1"/>
+<impersonate_user user="Administrator" tokenhandle="2584"/>
+<load_dll filename="C:\WINDOWS\system32\wininet.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<revert_to_self tokenhandle="0"/>
+<sleep milliseconds="100"/>
+<find_window classname="Progman"/>
+<open_process targetpid="1704" desiredaccess="PROCESS_QUERY_INFORMATION PROCESS_VM_READ" apifunction="NtOpenProcess" successful="1"/>
+<impersonate_user user="Administrator" tokenhandle="2576"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="2576"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\Mozilla\registry.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_windows_directory/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\nsreg.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Netscape\Netscape Navigator\Users"/>
+<revert_to_self tokenhandle="0"/>
+<sleep milliseconds="100"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Citrix\GoToAssist"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Expertcity"/>
+<create_socket socket="2484" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2484" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<create_socket socket="2580" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2580" remote_addr="216.115.217.35" remote_port="80" successful="0" winsock_result="10035"/>
+<create_socket socket="2568" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2568" remote_addr="216.115.217.35" remote_port="443" successful="0" winsock_result="10035"/>
+<sleep milliseconds="100"/>
+<send_socket socket="2484" buffer_len="44">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 4A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /Jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 70 69 6E 67 26 6A 65 64 69 3D 31 30 30 20 " ascii="t=ping&#x26;jedi=100 "/>
+<dump_line offset="&#x24;0020" dump="48 54 54 50 2F 31 2E 30 0D 0A 0D 0A             " ascii="HTTP/1.0...."/>
+</send_socket>
+<send_socket socket="2580" buffer_len="44">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 4A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /Jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 70 69 6E 67 26 6A 65 64 69 3D 31 30 30 20 " ascii="t=ping&#x26;jedi=100 "/>
+<dump_line offset="&#x24;0020" dump="48 54 54 50 2F 31 2E 30 0D 0A 0D 0A             " ascii="HTTP/1.0...."/>
+</send_socket>
+<send_socket socket="2568" buffer_len="44">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 4A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /Jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 70 69 6E 67 26 6A 65 64 69 3D 31 30 30 20 " ascii="t=ping&#x26;jedi=100 "/>
+<dump_line offset="&#x24;0020" dump="48 54 54 50 2F 31 2E 30 0D 0A 0D 0A             " ascii="HTTP/1.0...."/>
+</send_socket>
+<sleep milliseconds="100"/>
+<recv_socket socket="2484" buffer_len="117" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 32 30 30 20 4F 4B 0D " ascii="HTTP/1.0 200 OK."/>
+<dump_line offset="&#x24;0010" dump="0A 43 6F 6E 74 65 6E 74 2D 4C 65 6E 67 74 68 3A " ascii=".Content-Length:"/>
+<dump_line offset="&#x24;0020" dump="20 33 30 0D 0A 43 6F 6E 74 65 6E 74 2D 54 79 70 " ascii=" 30..Content-Typ"/>
+<dump_line offset="&#x24;0030" dump="65 3A 20 74 65 78 74 2F 70 6C 61 69 6E 0D 0A 50 " ascii="e: text/plain..P"/>
+<dump_line offset="&#x24;0040" dump="72 61 67 6D 61 3A 20 6E 6F 2D 63 61 63 68 65 0D " ascii="ragma: no-cache."/>
+<dump_line offset="&#x24;0050" dump="0A 0D 0A 73 65 71 75 65 6E 63 65 3D 30 26 72 65 " ascii="...sequence=0&#x26;re"/>
+<dump_line offset="&#x24;0060" dump="73 70 6F 6E 73 65 3D 30 26 70 72 6F 78 79 3D 31 " ascii="sponse=0&#x26;proxy=1"/>
+<dump_line offset="&#x24;0070" dump="34 0D 0A 0D 0A                                  " ascii="4...."/>
+</recv_socket>
+<recv_socket socket="2580" buffer_len="117" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 32 30 30 20 4F 4B 0D " ascii="HTTP/1.0 200 OK."/>
+<dump_line offset="&#x24;0010" dump="0A 43 6F 6E 74 65 6E 74 2D 4C 65 6E 67 74 68 3A " ascii=".Content-Length:"/>
+<dump_line offset="&#x24;0020" dump="20 33 30 0D 0A 43 6F 6E 74 65 6E 74 2D 54 79 70 " ascii=" 30..Content-Typ"/>
+<dump_line offset="&#x24;0030" dump="65 3A 20 74 65 78 74 2F 70 6C 61 69 6E 0D 0A 50 " ascii="e: text/plain..P"/>
+<dump_line offset="&#x24;0040" dump="72 61 67 6D 61 3A 20 6E 6F 2D 63 61 63 68 65 0D " ascii="ragma: no-cache."/>
+<dump_line offset="&#x24;0050" dump="0A 0D 0A 73 65 71 75 65 6E 63 65 3D 30 26 72 65 " ascii="...sequence=0&#x26;re"/>
+<dump_line offset="&#x24;0060" dump="73 70 6F 6E 73 65 3D 30 26 70 72 6F 78 79 3D 31 " ascii="sponse=0&#x26;proxy=1"/>
+<dump_line offset="&#x24;0070" dump="34 0D 0A 0D 0A                                  " ascii="4...."/>
+</recv_socket>
+<recv_socket socket="2568" buffer_len="117" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 32 30 30 20 4F 4B 0D " ascii="HTTP/1.0 200 OK."/>
+<dump_line offset="&#x24;0010" dump="0A 43 6F 6E 74 65 6E 74 2D 4C 65 6E 67 74 68 3A " ascii=".Content-Length:"/>
+<dump_line offset="&#x24;0020" dump="20 33 30 0D 0A 43 6F 6E 74 65 6E 74 2D 54 79 70 " ascii=" 30..Content-Typ"/>
+<dump_line offset="&#x24;0030" dump="65 3A 20 74 65 78 74 2F 70 6C 61 69 6E 0D 0A 50 " ascii="e: text/plain..P"/>
+<dump_line offset="&#x24;0040" dump="72 61 67 6D 61 3A 20 6E 6F 2D 63 61 63 68 65 0D " ascii="ragma: no-cache."/>
+<dump_line offset="&#x24;0050" dump="0A 0D 0A 73 65 71 75 65 6E 63 65 3D 30 26 72 65 " ascii="...sequence=0&#x26;re"/>
+<dump_line offset="&#x24;0060" dump="73 70 6F 6E 73 65 3D 30 26 70 72 6F 78 79 3D 31 " ascii="sponse=0&#x26;proxy=1"/>
+<dump_line offset="&#x24;0070" dump="34 0D 0A 0D 0A                                  " ascii="4...."/>
+</recv_socket>
+<sleep milliseconds="100"/>
+<create_socket socket="2580" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2580" remote_addr="216.115.217.35" remote_port="8200" successful="0" winsock_result="10035"/>
+<send_socket socket="2580" buffer_len="44">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 4A 65 64 69 3F 72 65 71 75 65 73 " ascii="GET /Jedi&#x3F;reques"/>
+<dump_line offset="&#x24;0010" dump="74 3D 70 69 6E 67 26 6A 65 64 69 3D 31 30 30 20 " ascii="t=ping&#x26;jedi=100 "/>
+<dump_line offset="&#x24;0020" dump="48 54 54 50 2F 31 2E 30 0D 0A 0D 0A             " ascii="HTTP/1.0...."/>
+</send_socket>
+<recv_socket socket="2580" buffer_len="117" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 30 20 32 30 30 20 4F 4B 0D " ascii="HTTP/1.0 200 OK."/>
+<dump_line offset="&#x24;0010" dump="0A 43 6F 6E 74 65 6E 74 2D 4C 65 6E 67 74 68 3A " ascii=".Content-Length:"/>
+<dump_line offset="&#x24;0020" dump="20 33 30 0D 0A 43 6F 6E 74 65 6E 74 2D 54 79 70 " ascii=" 30..Content-Typ"/>
+<dump_line offset="&#x24;0030" dump="65 3A 20 74 65 78 74 2F 70 6C 61 69 6E 0D 0A 50 " ascii="e: text/plain..P"/>
+<dump_line offset="&#x24;0040" dump="72 61 67 6D 61 3A 20 6E 6F 2D 63 61 63 68 65 0D " ascii="ragma: no-cache."/>
+<dump_line offset="&#x24;0050" dump="0A 0D 0A 73 65 71 75 65 6E 63 65 3D 30 26 72 65 " ascii="...sequence=0&#x26;re"/>
+<dump_line offset="&#x24;0060" dump="73 70 6F 6E 73 65 3D 30 26 70 72 6F 78 79 3D 31 " ascii="sponse=0&#x26;proxy=1"/>
+<dump_line offset="&#x24;0070" dump="34 0D 0A 0D 0A                                  " ascii="4...."/>
+</recv_socket>
+</all_section>
+</thread>
+<thread tid="2676">
+<all_section>
+<sleep milliseconds="100"/>
+<load_dll filename="C:\WINDOWS\system32\wininet.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\NetBT_Tcpip_&#x7B;5D19E473-BE30-416B-B5C7-D8A091C41D2F&#x7D;" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="\\.\Ip6" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\crypt32\Performance"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\msasn1"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappcfg"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappcfg" value="LogSessionName" data="[REG_EXPAND_SZ, value: stdout]"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappcfg" value="Active" data="[REG_DWORD, value: 00000001]"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappcfg" value="ControlFlags" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappcfg\traceIdentifier"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappcfg\traceIdentifier" value="Guid" data="5f31090b-d990-4e91-b16d-46121d0255aa"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappcfg\traceIdentifier" value="BitNames" data=" Error Unusual Info Debug"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappprxy"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappprxy" value="LogSessionName" data="[REG_EXPAND_SZ, value: stdout]"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappprxy" value="Active" data="[REG_DWORD, value: 00000001]"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappprxy" value="ControlFlags" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappprxy\traceIdentifier"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappprxy\traceIdentifier" value="Guid" data="5f31090b-d990-4e91-b16d-46121d0255aa"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappprxy\traceIdentifier" value="BitNames" data=" Error Unusual Info Debug"/>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\QUtil"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\QUtil" value="LogSessionName" data="[REG_EXPAND_SZ, value: stdout]"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\QUtil" value="Active" data="[REG_DWORD, value: 00000001]"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\QUtil" value="ControlFlags" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\QUtil\traceIdentifier"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\QUtil\traceIdentifier" value="Guid" data="8aefce96-4618-42ff-a057-3536aa78233e"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\QUtil\traceIdentifier" value="BitNames" data=" Error Unusual Info Debug"/>
+<sleep milliseconds="50"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\g2a_customer\DEBUG"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process"/>
+<create_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\g2a_customer"/>
+<create_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\g2a_customer\DEBUG"/>
+<delete_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\g2a_customer\DEBUG" value="Trace Level"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Process\g2a_customer\DEBUG" value="Trace Level"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Global\DEBUG"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ESENT\Global\DEBUG" value="Trace Level"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Application\ESENT"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\ESENT" value="EventMessageFile" data="[REG_EXPAND_SZ, value: C:\WINDOWS\system32\ESENT.dll]"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\ESENT" value="CategoryMessageFile" data="[REG_EXPAND_SZ, value: C:\WINDOWS\system32\ESENT.dll]"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\ESENT" value="CategoryCount" data="[REG_DWORD, value: 00000010]"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\ESENT" value="TypesSupported" data="[REG_DWORD, value: 00000007]"/>
+<sleep milliseconds="50"/>
+<load_dll filename="C:\WINDOWS\system32\netman.dll" successful="1" address="&#x24;77CD0000" end_address="&#x24;77D03000" size="208896" filename_hash="33f8c80cbc4a8b5afd12b74e8999ba5d448c9c19"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Network\&#x7B;4D36E972-E325-11CE-BFC1-08002BE10318&#x7D;\&#x7B;5D19E473-BE30-416B-B5C7-D8A091C41D2F&#x7D;\Connection"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\&#x7B;4D36E972-E325-11CE-BFC1-08002BE10318&#x7D;\&#x7B;5D19E473-BE30-416B-B5C7-D8A091C41D2F&#x7D;\Connection" value="Name"/>
+<get_host_by_name socket="0" remote_addr="10.1.8.1" hostname="10.1.8.1" buffer_len="4" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Network\&#x7B;4D36E972-E325-11CE-BFC1-08002BE10318&#x7D;\&#x7B;00000000-0000-0000-0000-000000000000&#x7D;\Connection"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="\\.\Ip6" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\NetBT_Tcpip_&#x7B;5D19E473-BE30-416B-B5C7-D8A091C41D2F&#x7D;" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="\\.\Ip6" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Network\&#x7B;4D36E972-E325-11CE-BFC1-08002BE10318&#x7D;\&#x7B;5D19E473-BE30-416B-B5C7-D8A091C41D2F&#x7D;\Connection"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Network\&#x7B;4D36E972-E325-11CE-BFC1-08002BE10318&#x7D;\&#x7B;5D19E473-BE30-416B-B5C7-D8A091C41D2F&#x7D;\Connection" value="Name"/>
+<get_host_by_name socket="0" remote_addr="10.1.8.1" hostname="10.1.8.1" buffer_len="4" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Network\&#x7B;4D36E972-E325-11CE-BFC1-08002BE10318&#x7D;\&#x7B;00000000-0000-0000-0000-000000000000&#x7D;\Connection"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="\\.\Ip6" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_socket socket="4294967295" socket_type="SOCK_DGRAM" successful="0"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="wpad" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<sleep milliseconds="100"/>
+</all_section>
+</thread>
+</process>
+<process index="3" pid="792" filename="C:\WINDOWS\system32\services.exe" filename_hash="de3701d2c03d9ae29b2d87eccafbbcadf1bfb7e3" filesize="111104" md5="a3edbe9053889fb24ab22492472b39dc" sha1="7153d4d113c47379fb57aad4918a2f2a64f0c9ee" username="SYSTEM" parentindex="0" starttime="00:06.000" terminationtime="02:01.921" startreason="SCM" terminationreason="Timeout" executionstatus="OK">
+</process>
+</processes>

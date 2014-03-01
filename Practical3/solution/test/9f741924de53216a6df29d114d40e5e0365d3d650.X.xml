@@ -1,0 +1,1179 @@
+<?xml version="1.0"?>
+<processes>
+<process index="1" pid="2628" filename="c:\084829867e027e0e53a2fde5bb8e4b18" filename_hash="hash_error" filesize="89600" md5="084829867e027e0e53a2fde5bb8e4b18" sha1="9f741924de53216a6df29d114d40e50365d3d650" username="Administrator" parentindex="0" starttime="00:01.562" terminationtime="00:05.875" startreason="AnalysisTarget" terminationreason="NormalTermination" executionstatus="OK" applicationtype="Win32Application">
+<thread tid="2632">
+<all_section>
+<load_image filename="c:\084829867e027e0e53a2fde5bb8e4b18" successful="1" address="&#x24;400000" end_address="&#x24;425000" size="151552" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\advapi32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\advapi32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<sleep milliseconds="500"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\SpyNet"/>
+<delete_value value="StartPersist"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<get_system_directory/>
+<create_mutex name="syst" owned="0"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion" value="ProductId"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer" value="Version"/>
+<create_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<set_value key="HKEY_CURRENT_USER\Software\net01" value="IE7" data="[REG_EXPAND_SZ, value: TRUE]"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<set_value key="HKEY_CURRENT_USER\Software\net01" value="FileNameAtual" data="[REG_EXPAND_SZ, value: c:\084829867e027e0e53a2fde5bb8e4b18]"/>
+<enum_processes apifunction="Process32First"/>
+<open_key key="HKEY_CLASSES_ROOT\http\shell\open\command"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\HTTP\shell\open\command"/>
+<create_process commandline="C:\Programme\Internet Explorer\iexplore.exe" targetpid="2748" creationflags="CREATE_SUSPENDED" showwindow="SW_HIDE" apifunction="CreateProcessA" successful="1"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;10410000" address="&#x24;10410000" wantedsize="221184" size="221184" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00140000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00140000" address="&#x24;00140000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00140000" address="&#x24;00140000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00140000" size="13" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00150000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00150000" address="&#x24;00150000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00150000" address="&#x24;00150000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00150000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00160000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00160000" address="&#x24;00160000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00160000" address="&#x24;00160000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00160000" size="210" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00170000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;0026B000" address="&#x24;0026B000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;0026B000" address="&#x24;0026B000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2764" address="&#x24;00160000" parameteraddress="&#x24;00150000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00270000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00270000" address="&#x24;00270000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00270000" address="&#x24;00270000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00270000" size="13" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;003D0000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;003D0000" address="&#x24;003D0000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;003D0000" address="&#x24;003D0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;003D0000" size="13" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;003E0000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;003E0000" address="&#x24;003E0000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;003E0000" address="&#x24;003E0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;003E0000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01270000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01270000" address="&#x24;01270000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01270000" address="&#x24;01270000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01270000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01280000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;0137B000" address="&#x24;0137B000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;0137B000" address="&#x24;0137B000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2768" address="&#x24;01270000" parameteraddress="&#x24;003E0000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00AA0000" wantedsize="15" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00AA0000" address="&#x24;00AA0000" wantedsize="15" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00AA0000" address="&#x24;00AA0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00AA0000" size="15" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00AB0000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00AB0000" address="&#x24;00AB0000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00AB0000" address="&#x24;00AB0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00AB0000" size="13" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00AC0000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00AC0000" address="&#x24;00AC0000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00AC0000" address="&#x24;00AC0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00AC0000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00AD0000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00AD0000" address="&#x24;00AD0000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00AD0000" address="&#x24;00AD0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00AD0000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00FE0000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;010DB000" address="&#x24;010DB000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;010DB000" address="&#x24;010DB000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2780" address="&#x24;00AD0000" parameteraddress="&#x24;00AC0000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00AE0000" wantedsize="15" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00AE0000" address="&#x24;00AE0000" wantedsize="15" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00AE0000" address="&#x24;00AE0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00AE0000" size="15" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00AF0000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00AF0000" address="&#x24;00AF0000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00AF0000" address="&#x24;00AF0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00AF0000" size="13" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00B00000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00B00000" address="&#x24;00B00000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00B00000" address="&#x24;00B00000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00B00000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00D20000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D20000" address="&#x24;00D20000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D20000" address="&#x24;00D20000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00D20000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00FE0000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;010DB000" address="&#x24;010DB000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;010DB000" address="&#x24;010DB000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2784" address="&#x24;00D20000" parameteraddress="&#x24;00B00000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00D30000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D30000" address="&#x24;00D30000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D30000" address="&#x24;00D30000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00D30000" size="13" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00D40000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D40000" address="&#x24;00D40000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D40000" address="&#x24;00D40000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00D40000" size="13" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00D50000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D50000" address="&#x24;00D50000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D50000" address="&#x24;00D50000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00D50000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00D60000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D60000" address="&#x24;00D60000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D60000" address="&#x24;00D60000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00D60000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00FE0000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;010DB000" address="&#x24;010DB000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;010DB000" address="&#x24;010DB000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2788" address="&#x24;00D60000" parameteraddress="&#x24;00D50000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00D70000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D70000" address="&#x24;00D70000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D70000" address="&#x24;00D70000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00D70000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00D80000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D80000" address="&#x24;00D80000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D80000" address="&#x24;00D80000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00D80000" size="13" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00D90000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D90000" address="&#x24;00D90000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00D90000" address="&#x24;00D90000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00D90000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00DA0000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00DA0000" address="&#x24;00DA0000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00DA0000" address="&#x24;00DA0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00DA0000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00FE0000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;010DB000" address="&#x24;010DB000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;010DB000" address="&#x24;010DB000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2792" address="&#x24;00DA0000" parameteraddress="&#x24;00D90000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00DB0000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00DB0000" address="&#x24;00DB0000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00DB0000" address="&#x24;00DB0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00DB0000" size="13" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00DC0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00DC0000" address="&#x24;00DC0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00DC0000" address="&#x24;00DC0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00DC0000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00DD0000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00DD0000" address="&#x24;00DD0000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;00DD0000" address="&#x24;00DD0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;00DD0000" size="210" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;00FE0000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;010DB000" address="&#x24;010DB000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;010DB000" address="&#x24;010DB000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2796" address="&#x24;00DD0000" parameteraddress="&#x24;00DC0000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;010E0000" wantedsize="9" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;010E0000" address="&#x24;010E0000" wantedsize="9" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;010E0000" address="&#x24;010E0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;010E0000" size="9" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;010F0000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;010F0000" address="&#x24;010F0000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;010F0000" address="&#x24;010F0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;010F0000" size="13" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01100000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01100000" address="&#x24;01100000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01100000" address="&#x24;01100000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01100000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01110000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01110000" address="&#x24;01110000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01110000" address="&#x24;01110000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01110000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01120000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;0121B000" address="&#x24;0121B000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;0121B000" address="&#x24;0121B000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2800" address="&#x24;01110000" parameteraddress="&#x24;01100000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01120000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01120000" address="&#x24;01120000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01120000" address="&#x24;01120000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01120000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01130000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01130000" address="&#x24;01130000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01130000" address="&#x24;01130000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01130000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01140000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01140000" address="&#x24;01140000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01140000" address="&#x24;01140000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01140000" size="210" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01150000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;0124B000" address="&#x24;0124B000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;0124B000" address="&#x24;0124B000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2804" address="&#x24;01140000" parameteraddress="&#x24;01130000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01250000" wantedsize="19" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01250000" address="&#x24;01250000" wantedsize="19" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01250000" address="&#x24;01250000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01250000" size="19" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01260000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01260000" address="&#x24;01260000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01260000" address="&#x24;01260000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01260000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01280000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01280000" address="&#x24;01280000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01280000" address="&#x24;01280000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01280000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01290000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01290000" address="&#x24;01290000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01290000" address="&#x24;01290000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01290000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01390000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;0148B000" address="&#x24;0148B000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;0148B000" address="&#x24;0148B000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2808" address="&#x24;01290000" parameteraddress="&#x24;01280000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;012A0000" wantedsize="10" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;012A0000" address="&#x24;012A0000" wantedsize="10" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;012A0000" address="&#x24;012A0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;012A0000" size="10" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;012B0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;012B0000" address="&#x24;012B0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;012B0000" address="&#x24;012B0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;012B0000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;012C0000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;012C0000" address="&#x24;012C0000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;012C0000" address="&#x24;012C0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;012C0000" size="210" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01390000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;0148B000" address="&#x24;0148B000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;0148B000" address="&#x24;0148B000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2812" address="&#x24;012C0000" parameteraddress="&#x24;012B0000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;012D0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;012D0000" address="&#x24;012D0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;012D0000" address="&#x24;012D0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;012D0000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;012E0000" wantedsize="10" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;012E0000" address="&#x24;012E0000" wantedsize="10" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;012E0000" address="&#x24;012E0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;012E0000" size="10" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;012F0000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;012F0000" address="&#x24;012F0000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;012F0000" address="&#x24;012F0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;012F0000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01300000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01300000" address="&#x24;01300000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01300000" address="&#x24;01300000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01300000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01490000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;0158B000" address="&#x24;0158B000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;0158B000" address="&#x24;0158B000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2816" address="&#x24;01300000" parameteraddress="&#x24;012F0000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01310000" wantedsize="10" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01310000" address="&#x24;01310000" wantedsize="10" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01310000" address="&#x24;01310000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01310000" size="10" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01320000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01320000" address="&#x24;01320000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01320000" address="&#x24;01320000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01320000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01330000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01330000" address="&#x24;01330000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01330000" address="&#x24;01330000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01330000" size="210" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01490000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;0158B000" address="&#x24;0158B000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;0158B000" address="&#x24;0158B000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2820" address="&#x24;01330000" parameteraddress="&#x24;01320000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01340000" wantedsize="24" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01340000" address="&#x24;01340000" wantedsize="24" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01340000" address="&#x24;01340000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01340000" size="24" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01350000" wantedsize="10" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01350000" address="&#x24;01350000" wantedsize="10" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01350000" address="&#x24;01350000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01350000" size="10" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01360000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01360000" address="&#x24;01360000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01360000" address="&#x24;01360000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01360000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01370000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01370000" address="&#x24;01370000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01370000" address="&#x24;01370000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01370000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01590000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;0168B000" address="&#x24;0168B000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;0168B000" address="&#x24;0168B000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2824" address="&#x24;01370000" parameteraddress="&#x24;01360000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01590000" wantedsize="10" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01590000" address="&#x24;01590000" wantedsize="10" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01590000" address="&#x24;01590000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01590000" size="10" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;015A0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;015A0000" address="&#x24;015A0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;015A0000" address="&#x24;015A0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;015A0000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;015B0000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;015B0000" address="&#x24;015B0000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;015B0000" address="&#x24;015B0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;015B0000" size="210" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;015C0000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;016BB000" address="&#x24;016BB000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;016BB000" address="&#x24;016BB000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2828" address="&#x24;015B0000" parameteraddress="&#x24;015A0000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;016C0000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;016C0000" address="&#x24;016C0000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;016C0000" address="&#x24;016C0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;016C0000" size="13" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;016D0000" wantedsize="10" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;016D0000" address="&#x24;016D0000" wantedsize="10" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;016D0000" address="&#x24;016D0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;016D0000" size="10" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;016E0000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;016E0000" address="&#x24;016E0000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;016E0000" address="&#x24;016E0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;016E0000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;016F0000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;016F0000" address="&#x24;016F0000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;016F0000" address="&#x24;016F0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;016F0000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01700000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;017FB000" address="&#x24;017FB000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;017FB000" address="&#x24;017FB000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2832" address="&#x24;016F0000" parameteraddress="&#x24;016E0000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01700000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01700000" address="&#x24;01700000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01700000" address="&#x24;01700000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01700000" size="13" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01710000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01710000" address="&#x24;01710000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01710000" address="&#x24;01710000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01710000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01720000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01720000" address="&#x24;01720000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01720000" address="&#x24;01720000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01720000" size="210" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01730000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;0182B000" address="&#x24;0182B000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;0182B000" address="&#x24;0182B000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2836" address="&#x24;01720000" parameteraddress="&#x24;01710000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01830000" wantedsize="14" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01830000" address="&#x24;01830000" wantedsize="14" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01830000" address="&#x24;01830000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01830000" size="14" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01840000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01840000" address="&#x24;01840000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01840000" address="&#x24;01840000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01840000" size="13" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01850000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01850000" address="&#x24;01850000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01850000" address="&#x24;01850000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01850000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01860000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01860000" address="&#x24;01860000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01860000" address="&#x24;01860000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01860000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01870000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;0196B000" address="&#x24;0196B000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;0196B000" address="&#x24;0196B000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2840" address="&#x24;01860000" parameteraddress="&#x24;01850000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01870000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01870000" address="&#x24;01870000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01870000" address="&#x24;01870000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01870000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01880000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01880000" address="&#x24;01880000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01880000" address="&#x24;01880000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01880000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01890000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01890000" address="&#x24;01890000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01890000" address="&#x24;01890000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01890000" size="210" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;018A0000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;0199B000" address="&#x24;0199B000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;0199B000" address="&#x24;0199B000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2844" address="&#x24;01890000" parameteraddress="&#x24;01880000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;019A0000" wantedsize="21" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;019A0000" address="&#x24;019A0000" wantedsize="21" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;019A0000" address="&#x24;019A0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;019A0000" size="21" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;019B0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;019B0000" address="&#x24;019B0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;019B0000" address="&#x24;019B0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;019B0000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;019C0000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;019C0000" address="&#x24;019C0000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;019C0000" address="&#x24;019C0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;019C0000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;019D0000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;019D0000" address="&#x24;019D0000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;019D0000" address="&#x24;019D0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;019D0000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;019E0000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;01ADB000" address="&#x24;01ADB000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01ADB000" address="&#x24;01ADB000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2848" address="&#x24;019D0000" parameteraddress="&#x24;019C0000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;019E0000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;019E0000" address="&#x24;019E0000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;019E0000" address="&#x24;019E0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;019E0000" size="13" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;019F0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;019F0000" address="&#x24;019F0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;019F0000" address="&#x24;019F0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;019F0000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01A00000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01A00000" address="&#x24;01A00000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01A00000" address="&#x24;01A00000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01A00000" size="210" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01A10000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;01B0B000" address="&#x24;01B0B000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01B0B000" address="&#x24;01B0B000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2852" address="&#x24;01A00000" parameteraddress="&#x24;019F0000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01B10000" wantedsize="16" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01B10000" address="&#x24;01B10000" wantedsize="16" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01B10000" address="&#x24;01B10000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01B10000" size="16" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01B20000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01B20000" address="&#x24;01B20000" wantedsize="13" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01B20000" address="&#x24;01B20000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01B20000" size="13" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01B30000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01B30000" address="&#x24;01B30000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01B30000" address="&#x24;01B30000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01B30000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01B40000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01B40000" address="&#x24;01B40000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01B40000" address="&#x24;01B40000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01B40000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01B50000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;01C4B000" address="&#x24;01C4B000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01C4B000" address="&#x24;01C4B000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2856" address="&#x24;01B40000" parameteraddress="&#x24;01B30000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01B50000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01B50000" address="&#x24;01B50000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01B50000" address="&#x24;01B50000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01B50000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01BC0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01BC0000" address="&#x24;01BC0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01BC0000" address="&#x24;01BC0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01BC0000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01BD0000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01BD0000" address="&#x24;01BD0000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01BD0000" address="&#x24;01BD0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01BD0000" size="210" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01CD0000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;01DCB000" address="&#x24;01DCB000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01DCB000" address="&#x24;01DCB000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2860" address="&#x24;01BD0000" parameteraddress="&#x24;01BC0000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01BE0000" wantedsize="24" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01BE0000" address="&#x24;01BE0000" wantedsize="24" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01BE0000" address="&#x24;01BE0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01BE0000" size="24" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01BF0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01BF0000" address="&#x24;01BF0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01BF0000" address="&#x24;01BF0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01BF0000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01C20000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01C20000" address="&#x24;01C20000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01C20000" address="&#x24;01C20000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01C20000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01C00000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01C00000" address="&#x24;01C00000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01C00000" address="&#x24;01C00000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01C00000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01DD0000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;01ECB000" address="&#x24;01ECB000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01ECB000" address="&#x24;01ECB000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2864" address="&#x24;01C00000" parameteraddress="&#x24;01C20000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01C10000" wantedsize="11" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01C10000" address="&#x24;01C10000" wantedsize="11" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01C10000" address="&#x24;01C10000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01C10000" size="11" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01C30000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01C30000" address="&#x24;01C30000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01C30000" address="&#x24;01C30000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01C30000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01C40000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01C40000" address="&#x24;01C40000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01C40000" address="&#x24;01C40000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01C40000" size="210" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01DD0000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;01ECB000" address="&#x24;01ECB000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01ECB000" address="&#x24;01ECB000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2868" address="&#x24;01C40000" parameteraddress="&#x24;01C30000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01C90000" wantedsize="6" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01C90000" address="&#x24;01C90000" wantedsize="6" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01C90000" address="&#x24;01C90000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01C90000" size="6" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01CA0000" wantedsize="11" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01CA0000" address="&#x24;01CA0000" wantedsize="11" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01CA0000" address="&#x24;01CA0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01CA0000" size="11" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01CB0000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01CB0000" address="&#x24;01CB0000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01CB0000" address="&#x24;01CB0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01CB0000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01ED0000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01ED0000" address="&#x24;01ED0000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01ED0000" address="&#x24;01ED0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01ED0000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01EE0000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;01FDB000" address="&#x24;01FDB000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01FDB000" address="&#x24;01FDB000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2872" address="&#x24;01ED0000" parameteraddress="&#x24;01CB0000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01EE0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01EE0000" address="&#x24;01EE0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01EE0000" address="&#x24;01EE0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01EE0000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01EF0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01EF0000" address="&#x24;01EF0000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01EF0000" address="&#x24;01EF0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01EF0000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01F20000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01F20000" address="&#x24;01F20000" wantedsize="210" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01F20000" address="&#x24;01F20000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01F20000" size="210" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01F30000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;0202B000" address="&#x24;0202B000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;0202B000" address="&#x24;0202B000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2876" address="&#x24;01F20000" parameteraddress="&#x24;01EF0000" creationflags="CREATE_SUSPENDED"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01F00000" wantedsize="5" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01F00000" address="&#x24;01F00000" wantedsize="5" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01F00000" address="&#x24;01F00000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01F00000" size="5" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01F10000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01F10000" address="&#x24;01F10000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01F10000" address="&#x24;01F10000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01F10000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;02030000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;02030000" address="&#x24;02030000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;02030000" address="&#x24;02030000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;02030000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;020B0000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;020B0000" address="&#x24;020B0000" wantedsize="142" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;020B0000" address="&#x24;020B0000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;020B0000" size="142" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;020C0000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;021BB000" address="&#x24;021BB000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;021BB000" address="&#x24;021BB000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2880" address="&#x24;020B0000" parameteraddress="&#x24;02030000" creationflags="CREATE_SUSPENDED"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;10410000" address="&#x24;10410000" wantedsize="221184" size="221184" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;10410000" size="221184" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01B90000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01B90000" address="&#x24;01B90000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01B90000" address="&#x24;01B90000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01B90000" size="8" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;01B80000" wantedsize="313" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01B80000" address="&#x24;01B80000" wantedsize="313" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;01B80000" address="&#x24;01B80000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_write targetpid="2748" address="&#x24;01B80000" size="313" behavior="Normal"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;00000000" address="&#x24;020C0000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="2748" wantedaddress="&#x24;021BB000" address="&#x24;021BB000" wantedsize="20480" size="20480" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;021BB000" address="&#x24;021BB000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="2748" threadid="2884" address="&#x24;01B80000" parameteraddress="&#x24;01B90000" creationflags="CREATE_SUSPENDED"/>
+<kill_process targetpid="2628" apifunction="NtTerminateProcess"/>
+</all_section>
+</thread>
+</process>
+<process index="2" pid="2748" filename="C:\Programme\Internet Explorer\iexplore.exe" filename_hash="hash_error" filesize="636072" md5="a251068640ddb69fd7805b57d89d7ff7" sha1="c7c97a64d3c27eb942b1ee359ee0743cba31031a" username="Administrator" parentindex="1" starttime="00:03.906" terminationtime="02:02.156" startreason="CreateProcess" terminationreason="Timeout" executionstatus="OK">
+<thread tid="2764">
+<all_section>
+<load_image filename="C:\Programme\Internet Explorer\iexplore.exe" successful="1" address="&#x24;400000" end_address="&#x24;49C000" size="638976" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\urlmon.dll" successful="1" address="&#x24;452E0000" end_address="&#x24;45407000" size="1208320" filename_hash="d1fe6e0c349d546f931a4654415e648f30ed91cb"/>
+<load_dll filename="C:\WINDOWS\system32\OLEAUT32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\iertutil.dll" successful="1" address="&#x24;43F60000" end_address="&#x24;43FA5000" size="282624" filename_hash="962fdf7a8839794fdb71eb6d15ae0824a89db8d7"/>
+<load_dll filename="C:\WINDOWS\system32\VERSION.dll" successful="1" address="&#x24;77BD0000" end_address="&#x24;77BD8000" size="32768" filename_hash="adf263b658136ccb3cde72d0e6dd634c5a5e5143"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\comctl32.dll" successful="1" address="&#x24;5D450000" end_address="&#x24;5D4EA000" size="630784" filename_hash="ba126572bcb4ac594a3c37e2ac86db40b173878d"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<sleep milliseconds="4294967295"/>
+</all_section>
+</thread>
+<thread tid="2796">
+<all_section>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<sleep milliseconds="4294967295"/>
+</all_section>
+</thread>
+<thread tid="2804">
+<all_section>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\crypt32\Performance"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\msasn1"/>
+<load_dll filename="C:\WINDOWS\system32\crypt32.dll" successful="1" address="&#x24;77A50000" end_address="&#x24;77AE6000" size="614400" filename_hash="3127dbe44b75c673c24f9ad63675ff91cd9c6321"/>
+<sleep milliseconds="4294967295"/>
+</all_section>
+</thread>
+<thread tid="2812">
+<all_section>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<sleep milliseconds="4294967295"/>
+</all_section>
+</thread>
+<thread tid="2820">
+<all_section>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<sleep milliseconds="4294967295"/>
+</all_section>
+</thread>
+<thread tid="2828">
+<all_section>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<sleep milliseconds="4294967295"/>
+</all_section>
+</thread>
+<thread tid="2836">
+<all_section>
+<load_dll filename="C:\WINDOWS\system32\OLEAUT32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<sleep milliseconds="4294967295"/>
+</all_section>
+</thread>
+<thread tid="2844">
+<all_section>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<sleep milliseconds="4294967295"/>
+</all_section>
+</thread>
+<thread tid="2852">
+<all_section>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\rasapi32.dll" successful="1" address="&#x24;76EA0000" end_address="&#x24;76EDC000" size="245760" filename_hash="2b764e033d62d37765392a55774c44d8d6e9414f"/>
+<create_mutex name="RasPbFile" owned="0"/>
+<open_mutex name="RasPbFile" owned="1"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;5980808D" address="&#x24;59808000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;5980808D" address="&#x24;59808000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;59804604" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;59804604" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;598049E5" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;598049E5" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;59804808" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;59804808" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;597DACC9" address="&#x24;597DA000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;597DACC9" address="&#x24;597DA000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;597E0F78" address="&#x24;597E0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;597E0F78" address="&#x24;597E0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;597D9115" address="&#x24;597D9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;597D9115" address="&#x24;597D9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;59813AE9" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;59813AE9" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;597E1048" address="&#x24;597E1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;597E1048" address="&#x24;597E1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;59813A01" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;59813A01" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A16A55" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A16A55" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A14211" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A14211" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A14480" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A14480" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A21040" address="&#x24;71A21000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A21040" address="&#x24;71A21000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A14A07" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A14A07" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20C81" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20C81" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1676F" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1676F" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20AAD" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20AAD" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A15355" address="&#x24;71A15000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A15355" address="&#x24;71A15000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1E491" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1E491" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1EA43" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1EA43" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A12899" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A12899" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<load_dll filename="C:\WINDOWS\system32\rasapi32.dll" successful="1" address="&#x24;76EA0000" end_address="&#x24;76EDC000" size="245760" filename_hash="2b764e033d62d37765392a55774c44d8d6e9414f"/>
+<sleep milliseconds="4294967295"/>
+</all_section>
+</thread>
+<thread tid="2860">
+<all_section>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<sleep milliseconds="4294967295"/>
+</all_section>
+</thread>
+<thread tid="2868">
+<all_section>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<sleep milliseconds="4294967295"/>
+</all_section>
+</thread>
+<thread tid="2876">
+<all_section>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A13FED" address="&#x24;71A13000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A13FED" address="&#x24;71A13000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A18B6A" address="&#x24;71A18000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A18B6A" address="&#x24;71A18000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1404E" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1404E" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A18CD3" address="&#x24;71A18000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A18CD3" address="&#x24;71A18000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20DC1" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20DC1" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20C81" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20C81" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A14CB5" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A14CB5" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A12FF7" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A12FF7" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1F66A" address="&#x24;71A1F000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1F66A" address="&#x24;71A1F000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A14C27" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A14C27" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A168FA" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A168FA" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A12F51" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A12F51" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20AAD" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20AAD" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20AAD" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20AAD" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A15355" address="&#x24;71A15000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A15355" address="&#x24;71A15000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A15355" address="&#x24;71A15000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A15355" address="&#x24;71A15000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1E491" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1E491" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1E491" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1E491" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1EA43" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1EA43" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1EA43" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1EA43" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A12899" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A12899" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A12899" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A12899" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<check_for_debugger apifunction="IsDebuggerPresent"/>
+<load_dll filename="C:\WINDOWS\system32\uxtheme.dll" successful="1" address="&#x24;5B0F0000" end_address="&#x24;5B128000" size="229376" filename_hash="16c4d24a172bfbc67f488d6b4086b9e10f8eaf4b"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20C81" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20C81" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1676F" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1676F" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1676F" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1676F" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20AAD" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20AAD" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20AAD" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A20AAD" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A15355" address="&#x24;71A15000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A15355" address="&#x24;71A15000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A15355" address="&#x24;71A15000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A15355" address="&#x24;71A15000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1E491" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1E491" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1E491" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1E491" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1EA43" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1EA43" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1EA43" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A1EA43" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A12899" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A12899" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A12899" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2748" wantedaddress="&#x24;71A12899" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<load_dll filename="C:\WINDOWS\system32\wsock32.dll" successful="1" address="&#x24;71A30000" end_address="&#x24;71A3A000" size="40960" filename_hash="42e1c04ce06976a15d87a8b9c8c8f2475ff90c2b"/>
+<sleep milliseconds="4294967295"/>
+</all_section>
+</thread>
+<thread tid="2884">
+<all_section>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\crypt32.dll" successful="1" address="&#x24;77A50000" end_address="&#x24;77AE6000" size="614400" filename_hash="3127dbe44b75c673c24f9ad63675ff91cd9c6321"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\OLEAUT32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\rasapi32.dll" successful="1" address="&#x24;76EA0000" end_address="&#x24;76EDC000" size="245760" filename_hash="2b764e033d62d37765392a55774c44d8d6e9414f"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\wsock32.dll" successful="1" address="&#x24;71A30000" end_address="&#x24;71A3A000" size="40960" filename_hash="42e1c04ce06976a15d87a8b9c8c8f2475ff90c2b"/>
+<get_system_time apifunction="GetLocalTime"/>
+<sleep milliseconds="1000"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\SpyNet"/>
+<find_file filetype="file" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<query_value key="HKEY_CURRENT_USER\Software\net01" value="Identification"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<get_system_directory/>
+<create_mutex name="syst" owned="0"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<query_value key="HKEY_CURRENT_USER\Software\net01" value="FirstExecution"/>
+<get_system_time apifunction="GetLocalTime"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<set_value key="HKEY_CURRENT_USER\Software\net01" value="FirstExecution" data="[REG_EXPAND_SZ, value: 20/07/2009 -- 14:31]"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<query_value key="HKEY_CURRENT_USER\Software\net01" value="ByPersist"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<query_value key="HKEY_CURRENT_USER\Software\net01" value="FileNameAtual"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/>
+<query_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders" value="AppData"/>
+<get_system_time apifunction="GetSystemTime"/>
+<create_directory filetype="file" srcfile="C:\WINDOWS\system32\syst\" srcfile_hash="hash_error"/>
+<find_file filetype="file" srcfile="C:\WINDOWS\system32\syst\syst.exe" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<copy_file filetype="file" srcfile="c:\084829867e027e0e53a2fde5bb8e4b18" srcfile_hash="hash_error" dstfile="C:\WINDOWS\system32\syst\syst.exe" dstfile_hash="hash_error" creationdistribution="CREATE_ALWAYS" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<query_value key="HKEY_CURRENT_USER\Software\net01" value="FileName"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<query_value key="HKEY_CURRENT_USER\Software\net01" value="HKLM"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<query_value key="HKEY_CURRENT_USER\Software\net01" value="HKCU"/>
+<find_file filetype="file" srcfile="\&#x2A;.&#x2A;" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="syst"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="syst" data="[REG_EXPAND_SZ, value: C:\WINDOWS\system32\syst\syst.exe]"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run"/>
+<query_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="syst"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="syst" data="[REG_EXPAND_SZ, value: C:\WINDOWS\system32\syst\syst.exe]"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run"/>
+<create_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="syst" data="[REG_EXPAND_SZ, value: C:\WINDOWS\system32\syst\syst.exe]"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run"/>
+<create_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="syst" data="[REG_EXPAND_SZ, value: C:\WINDOWS\system32\syst\syst.exe]"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<set_value key="HKEY_CURRENT_USER\Software\net01" value="ByPersist" data="[REG_EXPAND_SZ, value: C:\WINDOWS\system32\syst\syst.exe&#x7C;syst&#x7C;syst&#x7C;]"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;T5TBB77L-4678-0MKC-421Q-14416031DYU6&#x7D;"/>
+<create_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;T5TBB77L-4678-0MKC-421Q-14416031DYU6&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;T5TBB77L-4678-0MKC-421Q-14416031DYU6&#x7D;" value="StubPath" data="C:\WINDOWS\system32\syst\syst.exe Restart"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<query_value key="HKEY_CURRENT_USER\Software\net01" value="FileNameAtual"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<query_value key="HKEY_CURRENT_USER\Software\net01" value="FileName"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<query_value key="HKEY_CURRENT_USER\Software\net01" value="HKLM"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<query_value key="HKEY_CURRENT_USER\Software\net01" value="HKCU"/>
+<find_file filetype="file" srcfile="\&#x2A;.&#x2A;" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;T5TBB77L-4678-0MKC-421Q-14416031DYU6&#x7D;"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;T5TBB77L-4678-0MKC-421Q-14416031DYU6&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;T5TBB77L-4678-0MKC-421Q-14416031DYU6&#x7D;" value="StubPath" data="C:\WINDOWS\system32\syst\syst.exe Restart"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<delete_value key="HKEY_CURRENT_USER\Software\net01" value="FileNameAtual"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<delete_value key="HKEY_CURRENT_USER\Software\net01" value="ByPersist"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<set_value key="HKEY_CURRENT_USER\Software\net01" value="FileName" data="[REG_EXPAND_SZ, value: Dlzcs1JtFiFdifAOxfQDRfRiNiFSreZzdqWQfjWeGF9k]"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\WINDOWS\system32\syst\plugin.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\WINDOWS\system32\syst\logs.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<create_file filetype="file" srcfile="C:\WINDOWS\system32\syst\logs.dat" srcfile_hash="hash_error" creationdistribution="CREATE_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\syst\logs.dat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<set_file_time filetype="file" srcfile="C:\WINDOWS\system32\syst\logs.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<set_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\syst\logs.dat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="FILE_ATTRIBUTE_HIDDEN SECURITY_ANONYMOUS"/>
+<create_thread targetpid="2748" threadid="2888" address="&#x24;10420BC0" parameteraddress="&#x24;00000000"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<set_value key="HKEY_CURRENT_USER\Software\net01" value="HKLM" data="[REG_EXPAND_SZ, value: zxnPXD]"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\net01"/>
+<set_value key="HKEY_CURRENT_USER\Software\net01" value="HKCU" data="[REG_EXPAND_SZ, value: zxnPXD]"/>
+<create_thread targetpid="2748" threadid="2892" address="&#x24;10425344" parameteraddress="&#x24;00000000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\SecurityService"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\SecurityService" value="DefaultAuthLevel"/>
+<create_socket socket="1536" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1536" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1536" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Qossp"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\System32\mswsock.dll" successful="1" address="&#x24;719B0000" end_address="&#x24;719F0000" size="262144" filename_hash="e7ec9dec28db732bd344f4bde6f60975175a4e7c"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\SecurityService"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\SecurityService" value="DefaultAuthLevel"/>
+<load_dll filename="C:\WINDOWS\System32\mswsock.dll" successful="1" address="&#x24;719B0000" end_address="&#x24;719F0000" size="262144" filename_hash="e7ec9dec28db732bd344f4bde6f60975175a4e7c"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\SecurityService"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\SecurityService" value="DefaultAuthLevel"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\SecurityService"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\SecurityService" value="DefaultAuthLevel"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="&#x9C;" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.99.224.180" hostname="dynhack01.dyndns.org" buffer_len="4" successful="1"/>
+<create_socket socket="1508" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1508" remote_addr="91.99.224.180" remote_port="9100" successful="0" winsock_result="10061"/>
+<send_socket socket="1508" buffer_len="15">
+<dump_line offset="&#x24;0000" dump="34 74 30 68 44 72 69 2F 49 32 57 6D 39 44 0A    " ascii="4t0hDri/I2Wm9D."/>
+</send_socket>
+<sleep milliseconds="500"/>
+<create_mutex name="syst_Sair" owned="0"/>
+<sleep milliseconds="2000"/>
+</all_section>
+</thread>
+<thread tid="2888">
+<all_section>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\Compatibility\iexplore.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared" value="CUAS"/>
+<create_mutex name="CTF.LBES.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Compart.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Asm.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Layouts.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.TMD.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<open_key key="HKEY_CURRENT_USER\Keyboard Layout\Toggle"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Language Hotkey"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Layout Hotkey"/>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF" value="EnableAnchorContext"/>
+</all_section>
+</thread>
+<thread tid="2892">
+<all_section>
+<sleep milliseconds="5000"/>
+</all_section>
+</thread>
+</process>
+</processes>

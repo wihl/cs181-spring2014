@@ -1,0 +1,1053 @@
+<?xml version="1.0"?>
+<processes>
+<process index="1" pid="172" filename="c:\bc90209588e7d746f6e2fdec4eae3db8.EX" filename_hash="hash_error" filesize="26624" md5="bc90209588e7d746f6e2fdec4eae3db8" sha1="8ae7cb2e7759706237c76e68e5a65d8f9d6fe80c" username="Administrator" parentindex="0" starttime="00:02.968" terminationtime="02:00.531" startreason="AnalysisTarget" terminationreason="Timeout" executionstatus="OK" applicationtype="Win32Application">
+<thread tid="176">
+<all_section>
+<load_image filename="c:\bc90209588e7d746f6e2fdec4eae3db8.EX" successful="1" address="&#x24;400000" end_address="&#x24;453000" size="339968" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\user32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\ws2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<load_dll filename="C:\WINDOWS\system32\WS2HELP.dll" successful="1" address="&#x24;71A00000" end_address="&#x24;71A08000" size="32768" filename_hash="317cc14a94fcf3d10749efbcab330b97f516fffb"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<load_dll filename="C:\WINDOWS\system32\user32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\ws2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<create_thread targetpid="172" threadid="428" address="&#x24;77DC848A" parameteraddress="&#x24;00000000"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;44200BCA" address="&#x24;44200000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetOpenUrlA"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;44200BCA" address="&#x24;44200000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetOpenUrlA"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;4424AF69" address="&#x24;4424A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetOpenUrlW"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;4424AF69" address="&#x24;4424A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetOpenUrlW"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;441F4321" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.HttpOpenRequestA"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;441F4321" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.HttpOpenRequestA"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;441F5D42" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.HttpOpenRequestW"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;441F5D42" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.HttpOpenRequestW"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;441F497A" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetConnectA"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;441F497A" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetConnectA"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;441F5B68" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetConnectW"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;441F5B68" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetConnectW"/>
+<load_dll filename="C:\WINDOWS\system32\wininet.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<load_dll filename="C:\WINDOWS\system32\netapi32.dll" successful="1" address="&#x24;597D0000" end_address="&#x24;59825000" size="348160" filename_hash="5e935f90226ff224936edf449f925b647b535917"/>
+<load_dll filename="lld.ipasnd" successful="0" filename_hash="hash_error"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Ip" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Ip" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="\\.\Ip" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\iphlpapi.dll" successful="1" address="&#x24;76D20000" end_address="&#x24;76D39000" size="102400" filename_hash="d1b9eede5a4650dc577abc73d81b948a45a36830"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A8ADBE" address="&#x24;71A8A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="MPR.dll.WNetAddConnectionA"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A8ADBE" address="&#x24;71A8A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="MPR.dll.WNetAddConnectionA"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A897A5" address="&#x24;71A89000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="MPR.dll.WNetAddConnectionW"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A897A5" address="&#x24;71A89000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="MPR.dll.WNetAddConnectionW"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A84AC4" address="&#x24;71A84000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="MPR.dll.WNetAddConnection2A"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A84AC4" address="&#x24;71A84000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="MPR.dll.WNetAddConnection2A"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A850D4" address="&#x24;71A85000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="MPR.dll.WNetAddConnection2W"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A850D4" address="&#x24;71A85000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="MPR.dll.WNetAddConnection2W"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A8B835" address="&#x24;71A8B000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="MPR.dll.WNetAddConnection3A"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A8B835" address="&#x24;71A8B000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="MPR.dll.WNetAddConnection3A"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A89859" address="&#x24;71A89000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="MPR.dll.WNetAddConnection3W"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A89859" address="&#x24;71A89000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="MPR.dll.WNetAddConnection3W"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A8AE39" address="&#x24;71A8A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="MPR.dll.WNetCancelConnectionA"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A8AE39" address="&#x24;71A8A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="MPR.dll.WNetCancelConnectionA"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A8928F" address="&#x24;71A89000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="MPR.dll.WNetCancelConnectionW"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A8928F" address="&#x24;71A89000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="MPR.dll.WNetCancelConnectionW"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A84DC2" address="&#x24;71A84000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="MPR.dll.WNetCancelConnection2A"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A84DC2" address="&#x24;71A84000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="MPR.dll.WNetCancelConnection2A"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A84989" address="&#x24;71A84000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="MPR.dll.WNetCancelConnection2W"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A84989" address="&#x24;71A84000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="MPR.dll.WNetCancelConnection2W"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A8B200" address="&#x24;71A8B000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="MPR.dll.WNetOpenEnumA"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A8B200" address="&#x24;71A8B000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="MPR.dll.WNetOpenEnumA"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A83910" address="&#x24;71A83000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="MPR.dll.WNetOpenEnumW"/>
+<vm_protect targetpid="172" wantedaddress="&#x24;71A83910" address="&#x24;71A83000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="MPR.dll.WNetOpenEnumW"/>
+<load_dll filename="C:\WINDOWS\system32\mpr.dll" successful="1" address="&#x24;71A80000" end_address="&#x24;71A92000" size="73728" filename_hash="0affd0a48f5f137169158083c61cf46454689055"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\odbcint.dll" successful="1" address="&#x24;1F840000" end_address="&#x24;1F859000" size="102400" filename_hash="9cf815158ff84a7153ed6140e37cf42c906a0de0"/>
+<load_dll filename="C:\WINDOWS\system32\odbc32.dll" successful="1" address="&#x24;745D0000" end_address="&#x24;7460D000" size="249856" filename_hash="a98e4be7f72f32b0ce5da60e59d2f6256d78bf04"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<create_thread targetpid="172" threadid="264" address="&#x24;77E0E9AD" parameteraddress="&#x24;00000000"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\mscoree.dll.local" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="InstallRoot"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="CLRLoadLogDir"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="OnlyUseLatestCLR"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<open_file filetype="file" srcfile="c:\bc90209588e7d746f6e2fdec4eae3db8.EX.config" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\bc90209588e7d746f6e2fdec4eae3db8.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework\Policy\AppPatch"/>
+<enum_keys key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\AppPatch"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="InstallRoot"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\AppPatch\v2.0.50727.00000"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\AppPatch\v2.0.50727.00000\bc90209588e7d746f6e2fdec4eae3db8.EX"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework\Policy"/>
+<enum_keys key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\v2.0"/>
+<enum_values key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\v2.0"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="InstallRoot"/>
+<find_file filetype="file" srcfile="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\mscorwks.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\CorperfmonExt.dll" successful="1" address="&#x24;12B0000" end_address="&#x24;12C9000" size="102400" filename_hash="hash_error"/>
+<open_key key="HKEY_LOCAL_MACHINE\system\CurrentControlSet\Services\.NETFramework\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="First Help"/>
+<load_dll filename="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\CorperfmonExt.dll" successful="1" address="&#x24;12B0000" end_address="&#x24;12C9000" size="102400" filename_hash="hash_error"/>
+<create_thread targetpid="172" threadid="520" address="&#x24;012BE8DA" parameteraddress="&#x24;012C4364"/>
+<enum_processes apifunction="Process32FirstW"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="4" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="4" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="676" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="676" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="724" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="724" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="748" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="748" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="792" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="792" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="804" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="804" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="980" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="980" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1048" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1048" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1144" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1144" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1232" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1232" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1308" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1308" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1488" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1488" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1660" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1660" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1684" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1684" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1696" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1696" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1896" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1896" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1988" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1988" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="296" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="296" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="628" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="628" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="2036" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="2036" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1968" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1968" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="432" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="432" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Search\PerformanceCounters"/>
+<enum_values key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Search\PerformanceCounters"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib" value="EventLogLevel"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib" value="TotalInstanceName"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="DisplayHeapPerfObject"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="ProcessNameFormat"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="ThreadNameFormat"/>
+<enum_processes apifunction="NtQuerySystemInformation"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<create_open_file filetype="file" srcfile="\Device\Gpc" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PSched\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="First Help"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\TRAFFIC.dll" successful="1" address="&#x24;73500000" end_address="&#x24;7350B000" size="45056" filename_hash="67b66a1fe2ef93bd64994e50c08f22f1d4eb525a"/>
+<create_thread targetpid="172" threadid="252" address="&#x24;73506937" parameteraddress="&#x24;00000000"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib" value="EventLogLevel"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\EVENTLOG" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\rasman.dll" successful="1" address="&#x24;76E50000" end_address="&#x24;76E62000" size="73728" filename_hash="ab8ead1ea84aec88420d0536d67c522080baf1c5"/>
+<open_scmanager servicename="SCM" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_service servicename="RASMAN" desiredaccess="SERVICE_ALL_ACCESS"/>
+<get_computer_name/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\ROUTER" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\SecurityService"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\SecurityService" value="10"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SecurityProviders" value="SecurityProviders"/>
+<get_computer_name/>
+<load_dll filename="C:\WINDOWS\system32\msapsspc.dll" successful="1" address="&#x24;71DD0000" end_address="&#x24;71DE5000" size="86016" filename_hash="6ae0e3be35e8101001344cc216761c8a05ed4058"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\crypt32\Performance"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\msasn1"/>
+<load_dll filename="C:\WINDOWS\system32\schannel.dll" successful="1" address="&#x24;767A0000" end_address="&#x24;767C7000" size="159744" filename_hash="5e77ce8bddeabb1da0cf071c5d89cffa20dca320"/>
+<load_dll filename="C:\WINDOWS\system32\digest.dll" successful="1" address="&#x24;76230000" end_address="&#x24;76245000" size="86016" filename_hash="57c470b423ac9d8db9ad8e3a28c45cf8f86f329e"/>
+<get_computer_name/>
+<load_dll filename="C:\WINDOWS\system32\msnsspc.dll" successful="1" address="&#x24;74D60000" end_address="&#x24;74DA7000" size="290816" filename_hash="0f40373b80077964654f1cc826106fdd2ede0e58"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\SspiCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Comment"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Capabilities"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="RpcId"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Version"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Type"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="TokenSize"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\SspiCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Comment"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Capabilities"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="RpcId"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Version"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Type"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="TokenSize"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\SspiCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Comment"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Capabilities"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="RpcId"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Version"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Type"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="TokenSize"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SaslProfiles"/>
+<enum_values key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SecurityProviders\SaslProfiles"/>
+<load_dll filename="C:\WINDOWS\system32\msv1_0.dll" successful="1" address="&#x24;77C40000" end_address="&#x24;77C64000" size="147456" filename_hash="96324d866a5f6e83112f9a2f7af8830502c2279c"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\ROUTER" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RSVP\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="First Help"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Telephony"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Telephony" value="Perf1"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Telephony" value="Perf2"/>
+<query_value key="HKEY_PERFORMANCE_DATA" value="230 784"/>
+<create_thread targetpid="172" threadid="1924" address="&#x24;77E0E9AD" parameteraddress="&#x24;00000000"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\mscoree.dll.local" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="InstallRoot"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="CLRLoadLogDir"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="OnlyUseLatestCLR"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<open_file filetype="file" srcfile="c:\bc90209588e7d746f6e2fdec4eae3db8.EX.config" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\bc90209588e7d746f6e2fdec4eae3db8.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework\Policy\AppPatch"/>
+<enum_keys key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\AppPatch"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="InstallRoot"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\AppPatch\v2.0.50727.00000"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\AppPatch\v2.0.50727.00000\bc90209588e7d746f6e2fdec4eae3db8.EX"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework\Policy"/>
+<enum_keys key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\v2.0"/>
+<enum_values key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\v2.0"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="InstallRoot"/>
+<find_file filetype="file" srcfile="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\mscorwks.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\CorperfmonExt.dll" successful="1" address="&#x24;12F0000" end_address="&#x24;1309000" size="102400" filename_hash="hash_error"/>
+<open_key key="HKEY_LOCAL_MACHINE\system\CurrentControlSet\Services\.NETFramework\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="First Help"/>
+<load_dll filename="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\CorperfmonExt.dll" successful="1" address="&#x24;12F0000" end_address="&#x24;1309000" size="102400" filename_hash="hash_error"/>
+<create_thread targetpid="172" threadid="1920" address="&#x24;012FE8DA" parameteraddress="&#x24;01304364"/>
+<enum_processes apifunction="Process32FirstW"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="4" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="4" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="676" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="676" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="724" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="724" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="748" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="748" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="792" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="792" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="804" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="804" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="980" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="980" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1048" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1048" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1144" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1144" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1232" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1232" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1308" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1308" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1488" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1488" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1660" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1660" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1684" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1684" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1696" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1696" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1896" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1896" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1988" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1988" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="296" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="296" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="628" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="628" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="2036" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="2036" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1968" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1968" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="432" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="432" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Search\PerformanceCounters"/>
+<enum_values key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Search\PerformanceCounters"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib" value="EventLogLevel"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib" value="TotalInstanceName"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="DisplayHeapPerfObject"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="ProcessNameFormat"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="ThreadNameFormat"/>
+<enum_processes apifunction="NtQuerySystemInformation"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<create_open_file filetype="file" srcfile="\Device\Gpc" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PSched\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="First Help"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\TRAFFIC.dll" successful="1" address="&#x24;73500000" end_address="&#x24;7350B000" size="45056" filename_hash="67b66a1fe2ef93bd64994e50c08f22f1d4eb525a"/>
+<create_thread targetpid="172" threadid="1084" address="&#x24;73506937" parameteraddress="&#x24;00000000"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib" value="EventLogLevel"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\EVENTLOG" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\rasman.dll" successful="1" address="&#x24;76E50000" end_address="&#x24;76E62000" size="73728" filename_hash="ab8ead1ea84aec88420d0536d67c522080baf1c5"/>
+<open_scmanager servicename="SCM" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_service servicename="RASMAN" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RSVP\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="First Help"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Telephony"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Telephony" value="Perf1"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Telephony" value="Perf2"/>
+<query_value key="HKEY_PERFORMANCE_DATA" value="230 784"/>
+<create_thread targetpid="172" threadid="1032" address="&#x24;77E0E9AD" parameteraddress="&#x24;00000000"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\mscoree.dll.local" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="InstallRoot"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="CLRLoadLogDir"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="OnlyUseLatestCLR"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<open_file filetype="file" srcfile="c:\bc90209588e7d746f6e2fdec4eae3db8.EX.config" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\bc90209588e7d746f6e2fdec4eae3db8.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework\Policy\AppPatch"/>
+<enum_keys key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\AppPatch"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="InstallRoot"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\AppPatch\v2.0.50727.00000"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\AppPatch\v2.0.50727.00000\bc90209588e7d746f6e2fdec4eae3db8.EX"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework\Policy"/>
+<enum_keys key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\v2.0"/>
+<enum_values key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\v2.0"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="InstallRoot"/>
+<find_file filetype="file" srcfile="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\mscorwks.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\CorperfmonExt.dll" successful="1" address="&#x24;1330000" end_address="&#x24;1349000" size="102400" filename_hash="hash_error"/>
+<open_key key="HKEY_LOCAL_MACHINE\system\CurrentControlSet\Services\.NETFramework\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="First Help"/>
+<load_dll filename="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\CorperfmonExt.dll" successful="1" address="&#x24;1330000" end_address="&#x24;1349000" size="102400" filename_hash="hash_error"/>
+<create_thread targetpid="172" threadid="988" address="&#x24;0133E8DA" parameteraddress="&#x24;01344364"/>
+<enum_processes apifunction="Process32FirstW"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="4" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="4" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="676" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="676" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="724" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="724" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="748" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="748" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="792" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="792" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="804" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="804" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="980" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="980" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1048" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1048" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1144" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1144" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1232" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1232" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1308" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1308" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1488" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1488" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1660" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1660" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1684" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="0"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1684" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="0"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1696" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1696" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1896" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1896" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1988" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1988" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="296" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="296" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="628" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="628" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="2036" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="2036" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1968" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1968" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="432" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="432" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Search\PerformanceCounters"/>
+<enum_values key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Search\PerformanceCounters"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib" value="EventLogLevel"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib" value="TotalInstanceName"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="DisplayHeapPerfObject"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="ProcessNameFormat"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="ThreadNameFormat"/>
+<enum_processes apifunction="NtQuerySystemInformation"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<create_open_file filetype="file" srcfile="\Device\Gpc" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PSched\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="First Help"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\TRAFFIC.dll" successful="1" address="&#x24;73500000" end_address="&#x24;7350B000" size="45056" filename_hash="67b66a1fe2ef93bd64994e50c08f22f1d4eb525a"/>
+<create_thread targetpid="172" threadid="1100" address="&#x24;73506937" parameteraddress="&#x24;00000000"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib" value="EventLogLevel"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\EVENTLOG" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\rasman.dll" successful="1" address="&#x24;76E50000" end_address="&#x24;76E62000" size="73728" filename_hash="ab8ead1ea84aec88420d0536d67c522080baf1c5"/>
+<open_scmanager servicename="SCM" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_service servicename="RASMAN" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RSVP\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="First Help"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Telephony"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Telephony" value="Perf1"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Telephony" value="Perf2"/>
+<query_value key="HKEY_PERFORMANCE_DATA" value="230 784"/>
+<create_thread targetpid="172" threadid="1124" address="&#x24;77E0E9AD" parameteraddress="&#x24;00000000"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\system32\mscoree.dll.local" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="InstallRoot"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="CLRLoadLogDir"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="OnlyUseLatestCLR"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<open_file filetype="file" srcfile="c:\bc90209588e7d746f6e2fdec4eae3db8.EX.config" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\bc90209588e7d746f6e2fdec4eae3db8.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework\Policy\AppPatch"/>
+<enum_keys key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\AppPatch"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="InstallRoot"/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\AppPatch\v2.0.50727.00000"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\AppPatch\v2.0.50727.00000\bc90209588e7d746f6e2fdec4eae3db8.EX"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework\Policy"/>
+<enum_keys key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\v2.0"/>
+<enum_values key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Policy\v2.0"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework" value="InstallRoot"/>
+<find_file filetype="file" srcfile="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\mscorwks.dll" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\CorperfmonExt.dll" successful="1" address="&#x24;1370000" end_address="&#x24;1389000" size="102400" filename_hash="hash_error"/>
+<open_key key="HKEY_LOCAL_MACHINE\system\CurrentControlSet\Services\.NETFramework\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\.NETFramework\Performance" value="First Help"/>
+<load_dll filename="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\CorperfmonExt.dll" successful="1" address="&#x24;1370000" end_address="&#x24;1389000" size="102400" filename_hash="hash_error"/>
+<create_thread targetpid="172" threadid="1288" address="&#x24;0137E8DA" parameteraddress="&#x24;01384364"/>
+<enum_processes apifunction="Process32FirstW"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="4" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="4" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="676" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="676" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="724" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="724" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="748" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="748" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="792" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="792" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="804" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="804" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="980" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="980" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1048" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1048" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1144" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1144" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1232" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1232" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1308" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1308" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1488" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1488" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1696" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1696" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1896" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1896" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1988" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1988" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="296" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="296" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="628" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="628" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="2036" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="2036" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1968" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="1968" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="432" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_process targetpid="432" desiredaccess="PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Search\PerformanceCounters"/>
+<enum_values key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Search\PerformanceCounters"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib" value="EventLogLevel"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib" value="TotalInstanceName"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="DisplayHeapPerfObject"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="ProcessNameFormat"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PerfProc\Performance" value="ThreadNameFormat"/>
+<enum_processes apifunction="NtQuerySystemInformation"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<create_open_file filetype="file" srcfile="\Device\Gpc" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PSched\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PSched\Performance" value="First Help"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp6" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\TRAFFIC.dll" successful="1" address="&#x24;73500000" end_address="&#x24;7350B000" size="45056" filename_hash="67b66a1fe2ef93bd64994e50c08f22f1d4eb525a"/>
+<create_thread targetpid="172" threadid="876" address="&#x24;73506937" parameteraddress="&#x24;00000000"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib" value="EventLogLevel"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\EVENTLOG" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\rasman.dll" successful="1" address="&#x24;76E50000" end_address="&#x24;76E62000" size="73728" filename_hash="ab8ead1ea84aec88420d0536d67c522080baf1c5"/>
+<open_scmanager servicename="SCM" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_service servicename="RASMAN" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RSVP\Performance"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="First Counter"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RSVP\Performance" value="First Help"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Telephony"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Telephony" value="Perf1"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Telephony" value="Perf2"/>
+<query_value key="HKEY_PERFORMANCE_DATA" value="230 784"/>
+<get_username tokenhandle="0"/>
+<check_for_debugger apifunction="NtQueryInformationProcess"/>
+<load_dll filename="C:\WINDOWS\system32\user32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<check_for_debugger apifunction="IsDebuggerPresent"/>
+<load_dll filename="C:\WINDOWS\system32\uxtheme.dll" successful="1" address="&#x24;5B0F0000" end_address="&#x24;5B128000" size="229376" filename_hash="16c4d24a172bfbc67f488d6b4086b9e10f8eaf4b"/>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\Compatibility\bc90209588e7d746f6e2fdec4eae3db8.EX"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared" value="CUAS"/>
+<create_mutex name="CTF.LBES.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Compart.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Asm.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Layouts.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.TMD.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<open_key key="HKEY_CURRENT_USER\Keyboard Layout\Toggle"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Language Hotkey"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Layout Hotkey"/>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF" value="EnableAnchorContext"/>
+<create_mutex name="CTF.TimListCache.FMPDefaultS-1-5-21-583907252-1708537768-842925246-500MUTEX.DefaultS-1-5-21-583907252" owned="0"/>
+<set_windows_hook hookid="WH_KEYBOARD" threadid="176" hook_address="&#x24;746B07C3" hook_module="&#x24;746A0000"/>
+<set_windows_hook hookid="WH_MOUSE" threadid="176" hook_address="&#x24;746B04CD" hook_module="&#x24;746A0000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\IMM"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\IMM" value="Ime File"/>
+<load_dll filename="C:\WINDOWS\system32\version.dll" successful="1" address="&#x24;77BD0000" end_address="&#x24;77BD8000" size="32768" filename_hash="adf263b658136ccb3cde72d0e6dd634c5a5e5143"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\msctfime.ime" successful="1" address="&#x24;1300001" end_address="&#x24;1300001" size="0" filename_hash="434c43fc87679a37aa054c0c18e190ccb39a4439"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\msctfime.ime" successful="1" address="&#x24;75250000" end_address="&#x24;7527E000" size="188416" filename_hash="434c43fc87679a37aa054c0c18e190ccb39a4439"/>
+<get_system_directory/>
+<create_window hwnd="&#x24;000A00F4" classname="IME" windowname="Default IME" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF"/>
+<query_value key="HKEY_CURRENT_USER\Software\Microsoft\CTF" value="Disable Thread Input Manager"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\SystemShared"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared" value="CUAS"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\msctfime.ime" successful="1" address="&#x24;75250000" end_address="&#x24;7527E000" size="188416" filename_hash="434c43fc87679a37aa054c0c18e190ccb39a4439"/>
+<create_window hwnd="&#x24;0003011E" classname="&#x23;32770" windowname="http://www.alm3refh.com/vb" height="107" width="224" top="488" left="531" style="WS_BORDER WS_CAPTION WS_DLGFRAME WS_OVERLAPPED WS_POPUP WS_POPUPWINDOW WS_SYSMENU WS_TILED" exstyle="WS_EX_CONTROLPARENT WS_EX_DLGMODALFRAME WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR WS_EX_WINDOWEDGE"/>
+<create_window hwnd="&#x24;0005015E" classname="MSCTFIME UI" windowname="M" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<find_window classname="Shell_TrayWnd"/>
+<enum_window/>
+<create_window hwnd="&#x24;00020170" classname="CicMarshalWndClass" windowname="CicMarshalWndAL" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<show_window hwnd="&#x24;0003011E" snapshotfile="proc_1\hwnd_3011E.jpg"/>
+<enum_window/>
+<show_window hwnd="&#x24;0003011E" snapshotfile="proc_1\hwnd_3011E.jpg"/>
+<open_key key="HKEY_CURRENT_USER\Keyboard Layout\Toggle"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Language Hotkey"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Layout Hotkey"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF\LangBarAddIn"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\LangBarAddIn"/>
+<create_mutex name="MSCTF.Shared.MUTEX.ANG" owned="0"/>
+<get_system_directory/>
+<enum_window/>
+<create_thread targetpid="172" threadid="1820" address="&#x24;00405BBD" parameteraddress="&#x24;0012FE5C"/>
+<create_thread targetpid="172" threadid="1852" address="&#x24;00402AA9" parameteraddress="&#x24;00000000"/>
+</all_section>
+</thread>
+<thread tid="428">
+<all_section>
+<sleep milliseconds="250"/>
+</all_section>
+</thread>
+<thread tid="1820">
+<all_section>
+<set_windows_hook hookid="WH_KEYBOARD" threadid="1820" hook_address="&#x24;746B07C3" hook_module="&#x24;746A0000"/>
+<set_windows_hook hookid="WH_MOUSE" threadid="1820" hook_address="&#x24;746B04CD" hook_module="&#x24;746A0000"/>
+<create_window hwnd="&#x24;0009005E" classname="IME" windowname="Default IME" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF"/>
+<query_value key="HKEY_CURRENT_USER\Software\Microsoft\CTF" value="Disable Thread Input Manager"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\SystemShared"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared" value="CUAS"/>
+<create_window hwnd="&#x24;0004011E" classname="&#x23;32770" windowname="http://www.alm3refh.com/vb" height="107" width="224" top="488" left="531" style="WS_BORDER WS_CAPTION WS_DLGFRAME WS_OVERLAPPED WS_POPUP WS_POPUPWINDOW WS_SYSMENU WS_TILED" exstyle="WS_EX_CONTROLPARENT WS_EX_DLGMODALFRAME WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR WS_EX_WINDOWEDGE"/>
+<create_window hwnd="&#x24;0006015E" classname="MSCTFIME UI" windowname="M" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<show_window hwnd="&#x24;0004011E" snapshotfile="proc_1\hwnd_4011E.jpg"/>
+<enum_window/>
+<show_window hwnd="&#x24;0004011E" snapshotfile="proc_1\hwnd_4011E.jpg"/>
+<create_window hwnd="&#x24;000600AC" classname="CicMarshalWndClass" windowname="CicMarshalWndMBH" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<enum_window/>
+<open_key key="HKEY_CURRENT_USER\Keyboard Layout\Toggle"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Language Hotkey"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Layout Hotkey"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF\LangBarAddIn"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\LangBarAddIn"/>
+<create_mutex name="MSCTF.Shared.MUTEX.ANG" owned="0"/>
+<get_system_directory/>
+<enum_window/>
+<sleep milliseconds="12000"/>
+</all_section>
+</thread>
+<thread tid="1852">
+<all_section>
+<create_mutex name="joD0ukav" owned="0"/>
+<create_mutex name="joD0ukav" owned="1"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="10.1.8.2" hostname="dell-d3e62f7e26" buffer_len="4" successful="1"/>
+<get_computer_name/>
+<find_window classname="_Oscar_StatusNotify"/>
+<find_window classname="YahooBuddyMain"/>
+<find_window classname="MSNHiddenWindowClass"/>
+<find_window classname="TskMultiChatForm.UnicodeClass"/>
+<find_window classname="Message Session"/>
+<load_dll filename="C:\WINDOWS\system32\wininet.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<create_thread targetpid="172" threadid="1844" address="&#x24;7C937EDB" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="172" threadid="1624" address="&#x24;7C920250" parameteraddress="&#x24;00000000"/>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\RASAPI32.dll" successful="1" address="&#x24;76EA0000" end_address="&#x24;76EDC000" size="245760" filename_hash="2b764e033d62d37765392a55774c44d8d6e9414f"/>
+<create_mutex name="RasPbFile" owned="0"/>
+<open_mutex name="RasPbFile" owned="1"/>
+<load_dll filename="C:\WINDOWS\system32\rtutils.dll" successful="1" address="&#x24;76E40000" end_address="&#x24;76E4E000" size="57344" filename_hash="1878db387ed7e53ffd7b8150c26ddaf51560c447"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\USERENV.dll" successful="1" address="&#x24;76620000" end_address="&#x24;766D6000" size="745472" filename_hash="c7264e1fe77ea0e6d615077dd7cc6cc06aaa02cd"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="1900"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\netapi32.dll" successful="1" address="&#x24;597D0000" end_address="&#x24;59825000" size="348160" filename_hash="5e935f90226ff224936edf449f925b647b535917"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\All Users\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_directory/>
+<find_file filetype="file" srcfile="C:\WINDOWS\system32\Ras\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="1900"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_scmanager servicename="SCM" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\All Users\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_directory/>
+<find_file filetype="file" srcfile="C:\WINDOWS\system32\Ras\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="1648"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\SecurityService"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\SecurityService" value="DefaultAuthLevel"/>
+<create_socket socket="1980" socket_type="SOCK_STREAM" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="127.0.0.1" hostname="127.0.0.1" buffer_len="4" successful="1"/>
+<connect_socket socket="1980" remote_addr="127.0.0.1" remote_port="31648" successful="0" winsock_result="10061"/>
+<sleep milliseconds="7000"/>
+<get_computer_name/>
+<find_window classname="_Oscar_StatusNotify"/>
+<find_window classname="YahooBuddyMain"/>
+<find_window classname="MSNHiddenWindowClass"/>
+<find_window classname="TskMultiChatForm.UnicodeClass"/>
+<find_window classname="Message Session"/>
+<create_socket socket="1784" socket_type="SOCK_STREAM" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="127.0.0.1" hostname="127.0.0.1" buffer_len="4" successful="1"/>
+<connect_socket socket="1784" remote_addr="127.0.0.1" remote_port="31648" successful="0" winsock_result="10061"/>
+<sleep milliseconds="7000"/>
+<get_computer_name/>
+<find_window classname="_Oscar_StatusNotify"/>
+<find_window classname="YahooBuddyMain"/>
+<find_window classname="MSNHiddenWindowClass"/>
+<find_window classname="TskMultiChatForm.UnicodeClass"/>
+<find_window classname="Message Session"/>
+<create_socket socket="1784" socket_type="SOCK_STREAM" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="127.0.0.1" hostname="127.0.0.1" buffer_len="4" successful="1"/>
+<connect_socket socket="1784" remote_addr="127.0.0.1" remote_port="31648" successful="0" winsock_result="10061"/>
+<sleep milliseconds="7000"/>
+<get_computer_name/>
+<find_window classname="_Oscar_StatusNotify"/>
+<find_window classname="YahooBuddyMain"/>
+<find_window classname="MSNHiddenWindowClass"/>
+<find_window classname="TskMultiChatForm.UnicodeClass"/>
+<find_window classname="Message Session"/>
+<create_socket socket="1784" socket_type="SOCK_STREAM" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="127.0.0.1" hostname="127.0.0.1" buffer_len="4" successful="1"/>
+<connect_socket socket="1784" remote_addr="127.0.0.1" remote_port="31648" successful="0" winsock_result="10061"/>
+<sleep milliseconds="7000"/>
+<get_computer_name/>
+<find_window classname="_Oscar_StatusNotify"/>
+<find_window classname="YahooBuddyMain"/>
+<find_window classname="MSNHiddenWindowClass"/>
+<find_window classname="TskMultiChatForm.UnicodeClass"/>
+<find_window classname="Message Session"/>
+<create_socket socket="1784" socket_type="SOCK_STREAM" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="127.0.0.1" hostname="127.0.0.1" buffer_len="4" successful="1"/>
+<connect_socket socket="1784" remote_addr="127.0.0.1" remote_port="31648" successful="0" winsock_result="10061"/>
+<sleep milliseconds="7000"/>
+<get_computer_name/>
+<find_window classname="_Oscar_StatusNotify"/>
+<find_window classname="YahooBuddyMain"/>
+<find_window classname="MSNHiddenWindowClass"/>
+<find_window classname="TskMultiChatForm.UnicodeClass"/>
+<find_window classname="Message Session"/>
+<create_socket socket="1784" socket_type="SOCK_STREAM" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="127.0.0.1" hostname="127.0.0.1" buffer_len="4" successful="1"/>
+<connect_socket socket="1784" remote_addr="127.0.0.1" remote_port="31648" successful="0" winsock_result="10061"/>
+<sleep milliseconds="7000"/>
+<get_computer_name/>
+<find_window classname="_Oscar_StatusNotify"/>
+<find_window classname="YahooBuddyMain"/>
+<find_window classname="MSNHiddenWindowClass"/>
+<find_window classname="TskMultiChatForm.UnicodeClass"/>
+<find_window classname="Message Session"/>
+<create_socket socket="1784" socket_type="SOCK_STREAM" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="127.0.0.1" hostname="127.0.0.1" buffer_len="4" successful="1"/>
+<connect_socket socket="1784" remote_addr="127.0.0.1" remote_port="31648" successful="0" winsock_result="10061"/>
+<sleep milliseconds="7000"/>
+<get_computer_name/>
+<find_window classname="_Oscar_StatusNotify"/>
+<find_window classname="YahooBuddyMain"/>
+<find_window classname="MSNHiddenWindowClass"/>
+<find_window classname="TskMultiChatForm.UnicodeClass"/>
+<find_window classname="Message Session"/>
+<create_socket socket="1784" socket_type="SOCK_STREAM" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="127.0.0.1" hostname="127.0.0.1" buffer_len="4" successful="1"/>
+<connect_socket socket="1784" remote_addr="127.0.0.1" remote_port="31648" successful="0" winsock_result="10061"/>
+<sleep milliseconds="7000"/>
+<get_computer_name/>
+<find_window classname="_Oscar_StatusNotify"/>
+<find_window classname="YahooBuddyMain"/>
+<find_window classname="MSNHiddenWindowClass"/>
+<find_window classname="TskMultiChatForm.UnicodeClass"/>
+<find_window classname="Message Session"/>
+<create_socket socket="1784" socket_type="SOCK_STREAM" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="127.0.0.1" hostname="127.0.0.1" buffer_len="4" successful="1"/>
+<connect_socket socket="1784" remote_addr="127.0.0.1" remote_port="31648" successful="0" winsock_result="10061"/>
+<sleep milliseconds="7000"/>
+<get_computer_name/>
+<find_window classname="_Oscar_StatusNotify"/>
+<find_window classname="YahooBuddyMain"/>
+<find_window classname="MSNHiddenWindowClass"/>
+<find_window classname="TskMultiChatForm.UnicodeClass"/>
+<find_window classname="Message Session"/>
+<create_socket socket="1784" socket_type="SOCK_STREAM" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="127.0.0.1" hostname="127.0.0.1" buffer_len="4" successful="1"/>
+<connect_socket socket="1784" remote_addr="127.0.0.1" remote_port="31648" successful="0" winsock_result="10061"/>
+<sleep milliseconds="7000"/>
+<get_computer_name/>
+<find_window classname="_Oscar_StatusNotify"/>
+<find_window classname="YahooBuddyMain"/>
+<find_window classname="MSNHiddenWindowClass"/>
+<find_window classname="TskMultiChatForm.UnicodeClass"/>
+<find_window classname="Message Session"/>
+<create_socket socket="1784" socket_type="SOCK_STREAM" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="127.0.0.1" hostname="127.0.0.1" buffer_len="4" successful="1"/>
+<connect_socket socket="1784" remote_addr="127.0.0.1" remote_port="31648" successful="0" winsock_result="10061"/>
+<sleep milliseconds="7000"/>
+<get_computer_name/>
+<find_window classname="_Oscar_StatusNotify"/>
+<find_window classname="YahooBuddyMain"/>
+<find_window classname="MSNHiddenWindowClass"/>
+<find_window classname="TskMultiChatForm.UnicodeClass"/>
+<find_window classname="Message Session"/>
+<create_socket socket="1784" socket_type="SOCK_STREAM" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="127.0.0.1" hostname="127.0.0.1" buffer_len="4" successful="1"/>
+<connect_socket socket="1784" remote_addr="127.0.0.1" remote_port="31648" successful="0" winsock_result="10061"/>
+<sleep milliseconds="7000"/>
+<get_computer_name/>
+<find_window classname="_Oscar_StatusNotify"/>
+<find_window classname="YahooBuddyMain"/>
+<find_window classname="MSNHiddenWindowClass"/>
+<find_window classname="TskMultiChatForm.UnicodeClass"/>
+<find_window classname="Message Session"/>
+<create_socket socket="1784" socket_type="SOCK_STREAM" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="127.0.0.1" hostname="127.0.0.1" buffer_len="4" successful="1"/>
+<connect_socket socket="1784" remote_addr="127.0.0.1" remote_port="31648" successful="0" winsock_result="10061"/>
+<sleep milliseconds="7000"/>
+<get_computer_name/>
+<find_window classname="_Oscar_StatusNotify"/>
+<find_window classname="YahooBuddyMain"/>
+<find_window classname="MSNHiddenWindowClass"/>
+<find_window classname="TskMultiChatForm.UnicodeClass"/>
+<find_window classname="Message Session"/>
+<create_socket socket="1784" socket_type="SOCK_STREAM" successful="1"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="127.0.0.1" hostname="127.0.0.1" buffer_len="4" successful="1"/>
+<connect_socket socket="1784" remote_addr="127.0.0.1" remote_port="31648" successful="0" winsock_result="10061"/>
+<sleep milliseconds="7000"/>
+</all_section>
+</thread>
+<thread tid="1624">
+<all_section>
+<load_dll filename="C:\WINDOWS\system32\rtutils.dll" successful="1" address="&#x24;76E40000" end_address="&#x24;76E4E000" size="57344" filename_hash="1878db387ed7e53ffd7b8150c26ddaf51560c447"/>
+<load_dll filename="C:\WINDOWS\system32\rasman.dll" successful="1" address="&#x24;76E50000" end_address="&#x24;76E62000" size="73728" filename_hash="ab8ead1ea84aec88420d0536d67c522080baf1c5"/>
+<open_scmanager servicename="SCM" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_service servicename="RASMAN" desiredaccess="SERVICE_ALL_ACCESS"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\MSCTF.dll" successful="1" address="&#x24;746A0000" end_address="&#x24;746EC000" size="311296" filename_hash="3c5a241879c49efae60e7d20c81195c0008fc317"/>
+</all_section>
+</thread>
+</process>
+<process index="2" pid="792" filename="C:\WINDOWS\system32\services.exe" filename_hash="de3701d2c03d9ae29b2d87eccafbbcadf1bfb7e3" filesize="111104" md5="a3edbe9053889fb24ab22492472b39dc" sha1="7153d4d113c47379fb57aad4918a2f2a64f0c9ee" username="SYSTEM" parentindex="0" starttime="00:06.734" terminationtime="02:00.484" startreason="SCM" terminationreason="Timeout" executionstatus="OK">
+</process>
+</processes>

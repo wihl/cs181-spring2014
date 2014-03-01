@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<processes>
+<process index="1" pid="2480" filename="c:\dc4217aa2f67d1b8760a7c6ac4f4b8b0.EX" filename_hash="hash_error" filesize="9728" md5="dc4217aa2f67d1b8760a7c6ac4f4b8b0" sha1="59dc1f92a06b5663f618e6606a72c873302aad5a" username="Administrator" parentindex="0" starttime="00:01.375" terminationtime="00:21.234" startreason="AnalysisTarget" terminationreason="NormalTermination" executionstatus="OK" applicationtype="Win32Application">
+<thread tid="2484">
+<all_section>
+<load_image filename="c:\dc4217aa2f67d1b8760a7c6ac4f4b8b0.EX" successful="1" address="&#x24;400000" end_address="&#x24;402600" size="9728" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\WS2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\WS2HELP.dll" successful="1" address="&#x24;71A00000" end_address="&#x24;71A08000" size="32768" filename_hash="317cc14a94fcf3d10749efbcab330b97f516fffb"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<create_mutex name="fdos" owned="0"/>
+<create_thread targetpid="2480" threadid="2880" address="&#x24;00400EB0" parameteraddress="&#x24;00000000"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="61.164.126.228" hostname="www.sowogame.cn" buffer_len="4" successful="1"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\SecurityService"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\SecurityService" value="DefaultAuthLevel"/>
+<create_socket socket="1300" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1300" remote_addr="61.164.126.228" remote_port="1777" successful="1"/>
+<send_socket socket="1300" buffer_len="56">
+<dump_line offset="&#x24;0000" dump="01 00 77 77 77 2E 73 6F 77 6F 67 61 6D 65 2E 00 " ascii="..www.sowogame.."/>
+<dump_line offset="&#x24;0010" dump="64 65 6C 6C 2D 64 33 65 36 32 66 37 65 32 36 00 " ascii="dell-d3e62f7e26."/>
+<dump_line offset="&#x24;0020" dump="00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 " ascii="................"/>
+<dump_line offset="&#x24;0030" dump="02 00 FE 03 B8 0B 00 00                         " ascii="........"/>
+</send_socket>
+<recv_socket socket="1300" buffer_len="80" successful="1">
+<dump_line offset="&#x24;0000" dump="02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 " ascii="................"/>
+<dump_line offset="&#x24;0010" dump="01 00 32 00 32 00 32 00 50 00 77 77 77 2E 61 6F " ascii="..2.2.2.P.www.ao"/>
+<dump_line offset="&#x24;0020" dump="74 77 6F 77 2E 63 6F 6D 2F 69 6E 64 65 78 2E 68 " ascii="twow.com/index.h"/>
+<dump_line offset="&#x24;0030" dump="74 6D 00 00 00 00 00 00 00 00 00 00 00 00 00 00 " ascii="tm.............."/>
+<dump_line offset="&#x24;0050" dump="00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 " ascii="................"/>
+</recv_socket>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="121.12.109.142" hostname="www.aotwow.com" buffer_len="4" successful="1"/>
+<create_thread targetpid="2480" threadid="2888" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2892" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2896" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2900" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2904" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2908" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2912" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2916" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2920" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2924" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2928" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2932" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2936" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2940" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2944" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2948" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2952" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2956" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2960" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2964" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2968" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2972" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2976" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2980" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2984" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2988" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2992" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="2996" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3000" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3004" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3008" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3012" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3016" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3020" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3024" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3028" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3032" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3036" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3040" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3044" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3048" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3052" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3056" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3060" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3064" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3068" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3072" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3076" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3080" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="2480" threadid="3084" address="&#x24;00400F00" parameteraddress="&#x24;00000000"/>
+</all_section>
+</thread>
+<thread tid="2880">
+<all_section>
+<sleep milliseconds="300000"/>
+</all_section>
+</thread>
+<thread tid="2888">
+<all_section>
+<create_socket socket="1324" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2892">
+<all_section>
+<create_socket socket="1344" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2896">
+<all_section>
+<create_socket socket="1360" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2900">
+<all_section>
+<create_socket socket="1380" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2904">
+<all_section>
+<create_socket socket="1400" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2908">
+<all_section>
+<create_socket socket="1416" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2912">
+<all_section>
+<create_socket socket="1440" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2916">
+<all_section>
+<create_socket socket="1460" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2920">
+<all_section>
+<create_socket socket="1476" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2924">
+<all_section>
+<create_socket socket="1504" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2932">
+<all_section>
+<create_socket socket="1576" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2936">
+<all_section>
+<create_socket socket="1580" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2928">
+<all_section>
+<create_socket socket="1584" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2940">
+<all_section>
+<create_socket socket="1588" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2944">
+<all_section>
+<create_socket socket="1600" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2948">
+<all_section>
+<create_socket socket="1616" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2952">
+<all_section>
+<create_socket socket="1632" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2956">
+<all_section>
+<create_socket socket="1652" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+<thread tid="2960">
+<all_section>
+<create_socket socket="1684" socket_type="SOCK_STREAM" successful="1"/>
+</all_section>
+</thread>
+</process>
+</processes>

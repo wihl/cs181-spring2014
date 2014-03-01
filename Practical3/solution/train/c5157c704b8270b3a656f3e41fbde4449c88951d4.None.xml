@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<processes>
+<process index="1" pid="2068" filename="c:\dd15c9cde53937d4f37465a5284845d7.EX" filename_hash="hash_error" filesize="273920" md5="dd15c9cde53937d4f37465a5284845d7" sha1="c5157c704b8270b3a656f3e41fbde4449c8951d4" username="Administrator" parentindex="0" starttime="00:02.234" terminationtime="02:01.594" startreason="AnalysisTarget" terminationreason="Timeout" executionstatus="OK" applicationtype="Win32Application">
+<thread tid="2072">
+<all_section>
+<load_image filename="c:\dd15c9cde53937d4f37465a5284845d7.EX" successful="1" address="&#x24;400000" end_address="&#x24;5FB000" size="2076672" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\user32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\advapi32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\user32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<check_for_debugger apifunction="IsDebuggerPresent"/>
+<load_dll filename="C:\WINDOWS\system32\CRTDLL.dll" successful="1" address="&#x24;73D00000" end_address="&#x24;73D27000" size="159744" filename_hash="c432bd1921cbbe0eb91663fe4a80d17378230a1a"/>
+<get_system_time apifunction="GetLocalTime"/>
+<open_file filetype="file" srcfile="CONIN&#x24;" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="CONOUT&#x24;" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\CRTDLL.dll" successful="1" address="&#x24;73D00000" end_address="&#x24;73D27000" size="159744" filename_hash="c432bd1921cbbe0eb91663fe4a80d17378230a1a"/>
+<load_dll filename="C:\WINDOWS\system32\WINMM.dll" successful="1" address="&#x24;76AF0000" end_address="&#x24;76B1E000" size="188416" filename_hash="51f42782acdc790e4cabf402d71ef0fe24f9ad1b"/>
+<vm_protect targetpid="2068" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="2068" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="2068" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="2068" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="2068" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="2068" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="2068" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<vm_protect targetpid="2068" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<vm_protect targetpid="2068" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<vm_protect targetpid="2068" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.DLL" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\user32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<check_for_debugger apifunction="IsDebuggerPresent"/>
+<load_dll filename="C:\WINDOWS\system32\uxtheme.dll" successful="1" address="&#x24;5B0F0000" end_address="&#x24;5B128000" size="229376" filename_hash="16c4d24a172bfbc67f488d6b4086b9e10f8eaf4b"/>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\Compatibility\dd15c9cde53937d4f37465a5284845d7.EX"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared" value="CUAS"/>
+<create_mutex name="CTF.LBES.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Compart.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Asm.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.Layouts.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<create_mutex name="CTF.TMD.MutexDefaultS-1-5-21-583907252-1708537768-842925246-500" owned="0"/>
+<open_key key="HKEY_CURRENT_USER\Keyboard Layout\Toggle"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Language Hotkey"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Layout Hotkey"/>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF" value="EnableAnchorContext"/>
+<create_mutex name="CTF.TimListCache.FMPDefaultS-1-5-21-583907252-1708537768-842925246-500MUTEX.DefaultS-1-5-21-583907252" owned="0"/>
+<set_windows_hook hookid="WH_KEYBOARD" threadid="2072" hook_address="&#x24;746B07C3" hook_module="&#x24;746A0000"/>
+<set_windows_hook hookid="WH_MOUSE" threadid="2072" hook_address="&#x24;746B04CD" hook_module="&#x24;746A0000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\IMM"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\IMM" value="Ime File"/>
+<load_dll filename="C:\WINDOWS\system32\version.dll" successful="1" address="&#x24;77BD0000" end_address="&#x24;77BD8000" size="32768" filename_hash="adf263b658136ccb3cde72d0e6dd634c5a5e5143"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\msctfime.ime" successful="1" address="&#x24;1010001" end_address="&#x24;1010001" size="0" filename_hash="434c43fc87679a37aa054c0c18e190ccb39a4439"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\msctfime.ime" successful="1" address="&#x24;75250000" end_address="&#x24;7527E000" size="188416" filename_hash="434c43fc87679a37aa054c0c18e190ccb39a4439"/>
+<get_system_directory/>
+<create_window hwnd="&#x24;000500A6" classname="IME" windowname="Default IME" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF"/>
+<query_value key="HKEY_CURRENT_USER\Software\Microsoft\CTF" value="Disable Thread Input Manager"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\SystemShared"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared" value="CUAS"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\msctfime.ime" successful="1" address="&#x24;75250000" end_address="&#x24;7527E000" size="188416" filename_hash="434c43fc87679a37aa054c0c18e190ccb39a4439"/>
+<create_window hwnd="&#x24;00030146" classname="MultimediaBase Class" height="1" width="1" top="0" left="0" style="WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<set_windows_hook threadid="0" hook_address="&#x24;7221AEAA" hook_module="&#x24;72210000"/>
+<load_dll filename="C:\WINDOWS\system32\DINPUT.DLL" successful="1" address="&#x24;72210000" end_address="&#x24;7223B000" size="176128" filename_hash="41fe59769b78811c769565db35c9cb2cc3f0b780"/>
+<create_mutex name="DirectInput.&#x7B;89521361-AA8A-11CF-BFC7-444553540000&#x7D;" owned="1"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\DirectInput"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectInput" value="Emulation"/>
+<load_dll filename="C:\WINDOWS\system32\HID.DLL" successful="1" address="&#x24;68D90000" end_address="&#x24;68D99000" size="36864" filename_hash="8a2c21be5502f065ae5f806e1534149bc1269962"/>
+<get_system_directory/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\SETUPAPI.DLL" successful="1" address="&#x24;778F0000" end_address="&#x24;779E4000" size="999424" filename_hash="8109df4e050264532bb5757e9da4ae12e29b800f"/>
+<load_dll filename="C:\WINDOWS\system32\user32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<create_mutex name="DirectInput.&#x7B;5944E682-C92E-11CF-BFC7-444553540000&#x7D;" owned="0"/>
+<get_system_time apifunction="GetLocalTime"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_system_time apifunction="GetLocalTime"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\DirectInput"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08"/>
+<create_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration"/>
+<create_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\0"/>
+<create_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\0"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\0" value="GUID"/>
+<get_system_time apifunction="GetLocalTime"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\0" value="GUID" data="[REG_BINARY, size: 16 bytes]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\DeviceInstances"/>
+<create_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\DeviceInstances"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\DeviceInstances" value="7&#x26;12B9A84&#x26;0&#x26;0000"/>
+<open_file filetype="file" srcfile="\\&#x3F;\hid&#x23;vid_10d5&#x26;pid_5b08&#x26;mi_00&#x23;7&#x26;12b9a84&#x26;0&#x26;0000&#x23;&#x7B;4d1e55b2-f16f-11cf-88cb-001111000030&#x7D;" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\0" value="Joystick Id"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\DirectInput"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\0"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\0" value="GUID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\DeviceInstances"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\DeviceInstances" value="7&#x26;2502D846&#x26;0&#x26;0000"/>
+<open_file filetype="file" srcfile="\\&#x3F;\hid&#x23;vid_10d5&#x26;pid_5b08&#x26;mi_01&#x26;col01&#x23;7&#x26;2502d846&#x26;0&#x26;0000&#x23;&#x7B;4d1e55b2-f16f-11cf-88cb-001111000030&#x7D;" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\0" value="Joystick Id"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\DirectInput"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\0"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\0" value="GUID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\DeviceInstances"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\DeviceInstances" value="7&#x26;2502D846&#x26;0&#x26;0001"/>
+<open_file filetype="file" srcfile="\\&#x3F;\hid&#x23;vid_10d5&#x26;pid_5b08&#x26;mi_01&#x26;col02&#x23;7&#x26;2502d846&#x26;0&#x26;0001&#x23;&#x7B;4d1e55b2-f16f-11cf-88cb-001111000030&#x7D;" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\DirectInput"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\0"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\0" value="GUID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\DeviceInstances"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\DeviceInstances" value="7&#x26;2502D846&#x26;0&#x26;0001" data="[REG_BINARY, size: 1 bytes]"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\0" value="Joystick Id"/>
+<get_system_time apifunction="GetLocalTime"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\crypt32\Performance"/>
+<load_dll filename="C:\WINDOWS\system32\advapi32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\advapi32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\msasn1"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\WINTRUST.dll" successful="1" address="&#x24;76BF0000" end_address="&#x24;76C1E000" size="188416" filename_hash="7bda19c92848a811077f780f569c0593d14b2a92"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\DirectInput"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\0"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\0" value="GUID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\DeviceInstances"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\DeviceInstances" value="7&#x26;2502D846&#x26;0&#x26;0002"/>
+<open_file filetype="file" srcfile="\\&#x3F;\hid&#x23;vid_10d5&#x26;pid_5b08&#x26;mi_01&#x26;col03&#x23;7&#x26;2502d846&#x26;0&#x26;0002&#x23;&#x7B;4d1e55b2-f16f-11cf-88cb-001111000030&#x7D;" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\DirectInput"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\1"/>
+<create_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\1"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\1" value="GUID"/>
+<get_system_time apifunction="GetLocalTime"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\1" value="GUID" data="[REG_BINARY, size: 16 bytes]"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\DeviceInstances"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\DeviceInstances" value="7&#x26;2502D846&#x26;0&#x26;0002" data="[REG_BINARY, size: 1 bytes]"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaProperties\PrivateProperties\DirectInput\VID_10D5&#x26;PID_5B08\Calibration\1" value="Joystick Id"/>
+<get_system_time apifunction="GetLocalTime"/>
+<open_file filetype="file" srcfile="c:\dd15c9cde53937d4f37465a5284845d7.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\DirectInput\MostRecentApplication"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\DirectInput\MostRecentApplication" value="Version" data="[REG_BINARY, size: 4 bytes]"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\DirectInput\MostRecentApplication" value="Name" data="DD15C9CDE53937D4F37465A5284845D7.EX"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\DirectInput\MostRecentApplication" value="Id" data="DD15C9CDE53937D4F37465A5284845D7.EX43CE01E500042E00"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\DirectInput\MostRecentApplication" value="MostRecentStart" data="[REG_BINARY, size: 8 bytes]"/>
+<open_file filetype="file" srcfile="c:\dd15c9cde53937d4f37465a5284845d7.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\DirectInput\Compatibility"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectInput\Compatibility\DD15C9CDE53937D4F37465A5284845D7.EX43CE01E500042E00"/>
+<create_mutex name="DDrawWindowListMutex" owned="0"/>
+<create_mutex name="DDrawDriverObjectListMutex" owned="0"/>
+<create_mutex name="__DDrawExclMode__" owned="0"/>
+<create_mutex name="__DDrawCheckExclMode__" owned="0"/>
+<load_dll filename="C:\WINDOWS\system32\DDRAW.DLL" successful="1" address="&#x24;736D0000" end_address="&#x24;7371B000" size="307200" filename_hash="55b268ae2aea99a0d233d77841aaa6fa250a4719"/>
+<read_value file="WIN.INI" file_hash="hash_error" section="DirectDraw" value="reloadreg"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\DirectDraw\Compatibility"/>
+<enum_keys key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Bug!"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Bug!" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Bug!" value="Flags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Bug!" value="ID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\DemolitionDerby2"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\DemolitionDerby2" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\DemolitionDerby2" value="Flags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\DemolitionDerby2" value="ID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\MortalKombat3"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\MortalKombat3" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\MortalKombat3" value="Flags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\MortalKombat3" value="ID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\MsGolf98"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\MsGolf98" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\MsGolf98" value="Flags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\MsGolf98" value="ID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\NHLPowerPlay"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\NHLPowerPlay" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\NHLPowerPlay" value="Flags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\NHLPowerPlay" value="ID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\NortonSystemInfo"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\NortonSystemInfo" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\NortonSystemInfo" value="Flags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\NortonSystemInfo" value="ID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Rogue Squadron"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Rogue Squadron" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Rogue Squadron" value="Flags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Rogue Squadron" value="ID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Savage"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Savage" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Savage" value="Flags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Savage" value="ID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ScorchedPlanet"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ScorchedPlanet" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ScorchedPlanet" value="Flags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ScorchedPlanet" value="ID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\SilentThunder"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\SilentThunder" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\SilentThunder" value="Flags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\SilentThunder" value="ID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Terracide"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Terracide" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Terracide" value="Flags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\Terracide" value="ID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ThirdDimension"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ThirdDimension" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ThirdDimension" value="Flags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ThirdDimension" value="ID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ZiffDavisQualityBenchmark"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ZiffDavisQualityBenchmark" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ZiffDavisQualityBenchmark" value="Flags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ZiffDavisQualityBenchmark" value="ID"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ZiffDavisWinMarkBenchmark"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ZiffDavisWinMarkBenchmark" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ZiffDavisWinMarkBenchmark" value="Flags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\ZiffDavisWinMarkBenchmark" value="ID"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\DirectDraw\GammaCalibrator"/>
+<open_file filetype="file" srcfile="c:\dd15c9cde53937d4f37465a5284845d7.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\DirectDraw\MostRecentApplication"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\MostRecentApplication" value="Name" data="dd15c9cde53937d4f37465a5284845d7.EX"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\MostRecentApplication" value="ID" data="[REG_DWORD, value: 43CE01E5]"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\DirectDraw"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw" value="ModeXOnly"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw" value="EmulationOnly"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw" value="ShowFrameRate"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw" value="EnablePrintScreen"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw" value="ForceAGPSupport"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw" value="DisableAGPSupport"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw" value="DisableMMX"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw" value="DisableDDSCAPSInDDSD"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw" value="DisableWiderSurfaces"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw" value="UseNonLocalVidMem"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw" value="ForceRefreshRate"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Direct3D"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Direct3D" value="FlipNoVsync"/>
+<create_window hwnd="&#x24;00020108" classname="WindowClass_0" windowname="UNBAiSEDGOATS" height="300" width="400" top="362" left="440" style="WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<load_dll filename="C:\WINDOWS\system32\Wtsapi32.dll" successful="1" address="&#x24;76F10000" end_address="&#x24;76F18000" size="32768" filename_hash="61732c75b38443875c53c6019771aaef31791478"/>
+<create_window hwnd="&#x24;00030116" classname="MSCTFIME UI" windowname="M" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\advapi32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Audio"/>
+<query_value key="HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Audio" value="SystemFormats"/>
+<read_value file="SYSTEM.INI" file_hash="hash_error" section="DRIVERS32"/>
+<read_value file="SYSTEM.INI" file_hash="hash_error" section="DRIVERS32" value="msacm.imaadpcm"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.imaadpcm"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.imaadpcm" value="fdwSupport"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.imaadpcm" value="cFormatTags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.imaadpcm" value="aFormatTagCache"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.imaadpcm" value="cFilterTags"/>
+<read_value file="SYSTEM.INI" file_hash="hash_error" section="DRIVERS32" value="msacm.msadpcm"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msadpcm"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msadpcm" value="fdwSupport"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msadpcm" value="cFormatTags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msadpcm" value="aFormatTagCache"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msadpcm" value="cFilterTags"/>
+<read_value file="SYSTEM.INI" file_hash="hash_error" section="DRIVERS32" value="msacm.msg711"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msg711"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msg711" value="fdwSupport"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msg711" value="cFormatTags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msg711" value="aFormatTagCache"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msg711" value="cFilterTags"/>
+<read_value file="SYSTEM.INI" file_hash="hash_error" section="DRIVERS32" value="msacm.msgsm610"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msgsm610"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msgsm610" value="fdwSupport"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msgsm610" value="cFormatTags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msgsm610" value="aFormatTagCache"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msgsm610" value="cFilterTags"/>
+<read_value file="SYSTEM.INI" file_hash="hash_error" section="DRIVERS32" value="msacm.trspch"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.trspch"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.trspch" value="fdwSupport"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.trspch" value="cFormatTags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.trspch" value="aFormatTagCache"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.trspch" value="cFilterTags"/>
+<read_value file="SYSTEM.INI" file_hash="hash_error" section="DRIVERS32" value="msacm.msg723"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msg723"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msg723" value="fdwSupport"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msg723" value="cFormatTags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msg723" value="aFormatTagCache"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msg723" value="cFilterTags"/>
+<read_value file="SYSTEM.INI" file_hash="hash_error" section="DRIVERS32" value="msacm.msaudio1"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msaudio1"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msaudio1" value="fdwSupport"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msaudio1" value="cFormatTags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msaudio1" value="aFormatTagCache"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.msaudio1" value="cFilterTags"/>
+<read_value file="SYSTEM.INI" file_hash="hash_error" section="DRIVERS32" value="msacm.sl_anet"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.sl_anet"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.sl_anet" value="fdwSupport"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.sl_anet" value="cFormatTags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.sl_anet" value="aFormatTagCache"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.sl_anet" value="cFilterTags"/>
+<read_value file="SYSTEM.INI" file_hash="hash_error" section="DRIVERS32" value="msacm.iac2"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.iac2"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.iac2" value="fdwSupport"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.iac2" value="cFormatTags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.iac2" value="aFormatTagCache"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.iac2" value="cFilterTags"/>
+<read_value file="SYSTEM.INI" file_hash="hash_error" section="DRIVERS32" value="msacm.l3acm"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.l3acm"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.l3acm" value="fdwSupport"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.l3acm" value="cFormatTags"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.l3acm" value="aFormatTagCache"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AudioCompressionManager\DriverCache\msacm.l3acm" value="cFilterTags"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Audio Compression Manager"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Audio Compression Manager\MSACM"/>
+<query_value key="HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Audio Compression Manager\MSACM" value="NoPCMConverter"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Audio Compression Manager"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Audio Compression Manager\Priority v4.00"/>
+<query_value key="HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Audio Compression Manager\Priority v4.00" value="Priority1"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaResources\acm"/>
+<enum_keys/>
+<load_dll filename="C:\WINDOWS\system32\MSACM32.dll" successful="1" address="&#x24;77BB0000" end_address="&#x24;77BC5000" size="86016" filename_hash="9be8c8a0ce2316feff5783efbe259bb1f6334a63"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\user32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\WINMM.dll" successful="1" address="&#x24;76AF0000" end_address="&#x24;76B1E000" size="188416" filename_hash="51f42782acdc790e4cabf402d71ef0fe24f9ad1b"/>
+<load_dll filename="C:\WINDOWS\system32\WSOCK32.dll" successful="1" address="&#x24;71A30000" end_address="&#x24;71A3A000" size="40960" filename_hash="42e1c04ce06976a15d87a8b9c8c8f2475ff90c2b"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<open_scmanager servicename="SCM" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_service servicename="AudioSrv" desiredaccess="SERVICE_ALL_ACCESS"/>
+<create_mutex name="DirectSound DllMain mutex &#x28;0x00000814&#x29;" owned="0"/>
+<load_dll filename="C:\WINDOWS\system32\dsound.dll" successful="1" address="&#x24;73E70000" end_address="&#x24;73ECC000" size="376832" filename_hash="360ac8659b7662ce958bb45639d6380fccea6fef"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectX"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectX" value="GlitchInstrumentation"/>
+<load_dll filename="C:\WINDOWS\system32\dsound.dll" successful="1" address="&#x24;73E70000" end_address="&#x24;73ECC000" size="376832" filename_hash="360ac8659b7662ce958bb45639d6380fccea6fef"/>
+<get_system_directory/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\d3d9.dll" srcfile_hash="e8d9606f19c855df00ba878e151f985e9d2b9117" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\dd15c9cde53937d4f37465a5284845d7.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaResources\DirectSound\Application Compatibility\DD15C9CDE53937D4F37465A5284845D7.EX43CE01E500042E00"/>
+<load_dll filename="C:\WINDOWS\system32\SETUPAPI.DLL" successful="1" address="&#x24;778F0000" end_address="&#x24;779E4000" size="999424" filename_hash="8109df4e050264532bb5757e9da4ae12e29b800f"/>
+<get_system_time apifunction="GetLocalTime"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Sound Mapper"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaResources"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\DirectSound"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\DirectSound\Device Presence"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\DirectSound\Device Presence" value="WDM"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaResources"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\DirectSound"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\DirectSound\Device Presence"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\DirectSound\Device Presence" value="VxD"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaResources"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\DirectSound"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\DirectSound\Device Presence"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\MediaResources\DirectSound\Device Presence" value="Emulated"/>
+<create_window hwnd="&#x24;00010178" classname="OleMainThreadWndClass" windowname="OleMainThreadWndName" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<create_mutex name="DirectSound Administrator shared thread array &#x28;lock&#x29;" owned="0"/>
+<open_file filetype="file" srcfile="c:\dd15c9cde53937d4f37465a5284845d7.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaResources\DirectSound\Application Compatibility\DD15C9CDE53937D4F37465A5284845D7.EX43CE01E500042E00"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Sound Mapper"/>
+<find_window classname="Shell_TrayWnd"/>
+<enum_window/>
+<show_window hwnd="&#x24;00020108" snapshotfile="proc_1\hwnd_20108.jpg"/>
+<sleep milliseconds="1"/>
+<create_window hwnd="&#x24;00080066" classname="CicMarshalWndClass" windowname="CicMarshalWndIBI" height="0" width="0" top="0" left="0" style="WS_DISABLED WS_OVERLAPPED WS_POPUP WS_TILED" exstyle="WS_EX_LEFT WS_EX_LTRREADING WS_EX_RIGHTSCROLLBAR"/>
+<get_system_directory/>
+<sleep milliseconds="1"/>
+<open_key key="HKEY_CURRENT_USER\Keyboard Layout\Toggle"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Language Hotkey"/>
+<query_value key="HKEY_CURRENT_USER\Keyboard Layout\Toggle" value="Layout Hotkey"/>
+<open_key key="HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF\LangBarAddIn"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\LangBarAddIn"/>
+<sleep milliseconds="1"/>
+<create_mutex name="MSCTF.Shared.MUTEX.MOG" owned="0"/>
+<sleep milliseconds="1"/>
+<get_system_directory/>
+<sleep milliseconds="1"/>
+<get_system_directory/>
+<sleep milliseconds="1"/>
+<find_window classname="CicLoaderWndClass"/>
+<open_process targetpid="1868" desiredaccess="PROCESS_ALL_ACCESS PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE PROCESS_SET_SESSIONID PROCESS_SET_QUOTA SYNCHRONIZE" apifunction="NtOpenProcess" successful="1"/>
+<create_mutex name="MSCTF.Shared.MUTEX.IBI" owned="0"/>
+<sleep milliseconds="1"/>
+</all_section>
+</thread>
+</process>
+<process index="2" pid="756" filename="C:\WINDOWS\system32\services.exe" filename_hash="de3701d2c03d9ae29b2d87eccafbbcadf1bfb7e3" filesize="111104" md5="a3edbe9053889fb24ab22492472b39dc" sha1="7153d4d113c47379fb57aad4918a2f2a64f0c9ee" username="SYSTEM" parentindex="0" starttime="00:06.344" terminationtime="02:01.594" startreason="SCM" terminationreason="Timeout" executionstatus="OK">
+</process>
+</processes>

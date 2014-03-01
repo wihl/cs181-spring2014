@@ -1,0 +1,1620 @@
+<?xml version="1.0"?>
+<processes>
+<process index="1" pid="3768" filename="c:\cd432d6ab83eae23406378a4f530d28b.EX" filename_hash="hash_error" filesize="31232" md5="cd432d6ab83eae23406378a4f530d28b" sha1="5c805f5528288441dae0281e8599683cf976da57" username="Administrator" parentindex="0" starttime="00:00.172" terminationtime="02:00.688" startreason="AnalysisTarget" terminationreason="Timeout" executionstatus="OK" applicationtype="Win32Application">
+<thread tid="3772">
+<all_section>
+<load_image filename="c:\cd432d6ab83eae23406378a4f530d28b.EX" successful="1" address="&#x24;400000" end_address="&#x24;41B000" size="110592" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.DLL" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<create_thread targetpid="3768" threadid="3796" address="&#x24;77DC848A" parameteraddress="&#x24;00000000"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;44200BCA" address="&#x24;44200000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetOpenUrlA"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;44200BCA" address="&#x24;44200000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetOpenUrlA"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;4424AF69" address="&#x24;4424A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetOpenUrlW"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;4424AF69" address="&#x24;4424A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetOpenUrlW"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;441F4321" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.HttpOpenRequestA"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;441F4321" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.HttpOpenRequestA"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;441F5D42" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.HttpOpenRequestW"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;441F5D42" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.HttpOpenRequestW"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;441F497A" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetConnectA"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;441F497A" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetConnectA"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;441F5B68" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetConnectW"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;441F5B68" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetConnectW"/>
+<load_dll filename="C:\WINDOWS\system32\WININET.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<load_dll filename="C:\WINDOWS\system32\PSAPI.DLL" successful="1" address="&#x24;76BB0000" end_address="&#x24;76BBB000" size="45056" filename_hash="b31a80d13c4e9dc5409f43c1b146ed2ff6df3f1b"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<get_system_directory/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;76BB3A76" address="&#x24;76BB3000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="PSAPI.DLL.EnumProcesses"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;76BB3A76" address="&#x24;76BB3000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="PSAPI.DLL.EnumProcesses"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;76BB1EF4" address="&#x24;76BB1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="PSAPI.DLL.EnumProcessModules"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;76BB1EF4" address="&#x24;76BB1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="PSAPI.DLL.EnumProcessModules"/>
+<load_dll filename="C:\WINDOWS\system32\ws2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<load_dll filename="C:\WINDOWS\system32\dnsapi.dll" successful="1" address="&#x24;76EE0000" end_address="&#x24;76F07000" size="159744" filename_hash="3eaf6478c6f14794b05a612d845c1725757beb0b"/>
+<create_open_file filetype="file" srcfile="_id.dat" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_ARCHIVE SECURITY_ANONYMOUS"/>
+<create_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\services"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\services" value="del"/>
+<delete_file filetype="file" srcfile="&#xF8;_CHAR(0x0C)_&#x87;" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<create_thread targetpid="3768" threadid="3868" address="&#x24;004020CE" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="3768" threadid="3872" address="&#x24;0040323C" parameteraddress="&#x24;00000000"/>
+<sleep milliseconds="5000"/>
+<open_process targetpid="3116" desiredaccess="PROCESS_QUERY_INFORMATION PROCESS_TERMINATE" apifunction="NtOpenProcess" successful="0"/>
+<get_system_directory/>
+<delete_file filetype="file" srcfile="C:\WINDOWS\system32\servises.exe" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<create_file filetype="file" srcfile="C:\WINDOWS\system32\servises.exe" srcfile_hash="hash_error" creationdistribution="CREATE_NEW" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_ARCHIVE SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\cd432d6ab83eae23406378a4f530d28b.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_ARCHIVE SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\services"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\services" value="del" data="c:\cd432d6ab83eae23406378a4f530d28b.EX"/>
+<sleep milliseconds="5000"/>
+</all_section>
+</thread>
+<thread tid="3868">
+<all_section>
+<get_system_directory/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\services"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\services" value="del"/>
+<delete_file filetype="file" srcfile="0&#xA4;_CHAR(0x04)_ _CHAR(0x11)_&#x2A;" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<create_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<create_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run"/>
+<set_value key="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" value="servises" data="C:\WINDOWS\system32\servises.exe"/>
+<sleep milliseconds="10"/>
+</all_section>
+</thread>
+<thread tid="3872">
+<all_section>
+<sleep milliseconds="5000"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<connect server="91.207.4.58" port="80" service="INTERNET_SERVICE_HTTP" successful="1" apifunction="InternetConnectA"/>
+<open_url server="91.207.4.58" url="/spm/get_id.php" httpverb="GET" flags="INTERNET_FLAG_RELOAD INTERNET_FLAG_NO_CACHE_WRITE INTERNET_FLAG_DONT_CACHE INTERNET_FLAG_KEEP_CONNECTION" successful="1" apifunction="HttpOpenRequestA"/>
+<load_dll filename="C:\WINDOWS\system32\WININET.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<create_thread targetpid="3768" threadid="3904" address="&#x24;7C937EDB" parameteraddress="&#x24;00000000"/>
+<create_thread targetpid="3768" threadid="3908" address="&#x24;7C920250" parameteraddress="&#x24;00000000"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;5980808D" address="&#x24;59808000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetScheduleJobAdd"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;5980808D" address="&#x24;59808000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetScheduleJobAdd"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;59804604" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetUserAdd"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;59804604" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetUserAdd"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;598049E5" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetUserEnum"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;598049E5" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetUserEnum"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;59804808" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetUserDel"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;59804808" address="&#x24;59804000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetUserDel"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;59813AE9" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetShareEnumSticky"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;59813AE9" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetShareEnumSticky"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;597E1048" address="&#x24;597E1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetShareDel"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;597E1048" address="&#x24;597E1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetShareDel"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;59813A01" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetShareDelSticky"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;59813A01" address="&#x24;59813000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetShareDelSticky"/>
+<load_dll filename="C:\WINDOWS\system32\rtutils.dll" successful="1" address="&#x24;76E40000" end_address="&#x24;76E4E000" size="57344" filename_hash="1878db387ed7e53ffd7b8150c26ddaf51560c447"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\USERENV.dll" successful="1" address="&#x24;76620000" end_address="&#x24;766D6000" size="745472" filename_hash="c7264e1fe77ea0e6d615077dd7cc6cc06aaa02cd"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="1372"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\NETAPI32.dll" successful="1" address="&#x24;597D0000" end_address="&#x24;59825000" size="348160" filename_hash="5e935f90226ff224936edf449f925b647b535917"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\All Users\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_directory/>
+<find_file filetype="file" srcfile="C:\WINDOWS\system32\Ras\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="1672"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_scmanager servicename="SCM" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\All Users\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_system_directory/>
+<find_file filetype="file" srcfile="C:\WINDOWS\system32\Ras\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<get_computer_name/>
+<impersonate_user user="Administrator" tokenhandle="1632"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_file_attributes filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="c:\autoexec.bat" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<find_file filetype="file" srcfile="C:\Dokumente und Einstellungen\Administrator\Anwendungsdaten\Microsoft\Network\Connections\Pbk\&#x2A;.pbk" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;453678F5" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;453678F5" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;45367B4B" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;45367B4B" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;453677AA" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;453677AA" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;45367A07" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;45367A07" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;4530776D" address="&#x24;45307000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;4530776D" address="&#x24;45307000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;453149DD" address="&#x24;45314000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;453149DD" address="&#x24;45314000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;45367BF5" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;45367BF5" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;45367810" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;45367810" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;4536785A" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;4536785A" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;45367760" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;45367760" address="&#x24;45367000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.207.4.58" hostname="91.207.4.58" buffer_len="4" successful="1"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\SecurityService"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\SecurityService" value="DefaultAuthLevel"/>
+<create_socket socket="1880" socket_type="SOCK_STREAM" successful="1"/>
+<bind_socket socket="1880" successful="1"/>
+<create_thread targetpid="3768" threadid="3940" address="&#x24;719BD2C6" parameteraddress="&#x24;00160658"/>
+<connect_socket socket="1880" remote_addr="91.207.4.58" remote_port="80" successful="0" winsock_result="10035"/>
+<send_socket socket="1880" buffer_len="164">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 73 70 6D 2F 67 65 74 5F 69 64 2E " ascii="GET /spm/get_id."/>
+<dump_line offset="&#x24;0010" dump="70 68 70 20 48 54 54 50 2F 31 2E 31 0D 0A 55 73 " ascii="php HTTP/1.1..Us"/>
+<dump_line offset="&#x24;0020" dump="65 72 2D 41 67 65 6E 74 3A 20 4D 6F 7A 69 6C 6C " ascii="er-Agent: Mozill"/>
+<dump_line offset="&#x24;0030" dump="61 2F 34 2E 30 20 28 63 6F 6D 70 61 74 69 62 6C " ascii="a/4.0 &#x28;compatibl"/>
+<dump_line offset="&#x24;0040" dump="65 3B 20 4D 53 49 45 20 36 2E 30 3B 20 57 69 6E " ascii="e; MSIE 6.0; Win"/>
+<dump_line offset="&#x24;0050" dump="64 6F 77 73 20 4E 54 20 35 2E 31 29 0D 0A 48 6F " ascii="dows NT 5.1&#x29;..Ho"/>
+<dump_line offset="&#x24;0060" dump="73 74 3A 20 39 31 2E 32 30 37 2E 34 2E 35 38 0D " ascii="st: 91.207.4.58."/>
+<dump_line offset="&#x24;0070" dump="0A 43 6F 6E 6E 65 63 74 69 6F 6E 3A 20 4B 65 65 " ascii=".Connection: Kee"/>
+<dump_line offset="&#x24;0080" dump="70 2D 41 6C 69 76 65 0D 0A 43 61 63 68 65 2D 43 " ascii="p-Alive..Cache-C"/>
+<dump_line offset="&#x24;0090" dump="6F 6E 74 72 6F 6C 3A 20 6E 6F 2D 63 61 63 68 65 " ascii="ontrol: no-cache"/>
+<dump_line offset="&#x24;00A0" dump="0D 0A 0D 0A                                     " ascii="...."/>
+</send_socket>
+<recv_socket socket="1880" buffer_len="177" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 31 20 32 30 30 20 4F 4B 0D " ascii="HTTP/1.1 200 OK."/>
+<dump_line offset="&#x24;0010" dump="0A 53 65 72 76 65 72 3A 20 6E 67 69 6E 78 2F 30 " ascii=".Server: nginx/0"/>
+<dump_line offset="&#x24;0020" dump="2E 36 2E 33 34 0D 0A 44 61 74 65 3A 20 54 75 65 " ascii=".6.34..Date: Tue"/>
+<dump_line offset="&#x24;0030" dump="2C 20 31 31 20 41 75 67 20 32 30 30 39 20 31 36 " ascii=", 11 Aug 2009 16"/>
+<dump_line offset="&#x24;0040" dump="3A 33 38 3A 34 32 20 47 4D 54 0D 0A 43 6F 6E 74 " ascii=":38:42 GMT..Cont"/>
+<dump_line offset="&#x24;0050" dump="65 6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 68 " ascii="ent-Type: text/h"/>
+<dump_line offset="&#x24;0060" dump="74 6D 6C 0D 0A 43 6F 6E 6E 65 63 74 69 6F 6E 3A " ascii="tml..Connection:"/>
+<dump_line offset="&#x24;0070" dump="20 6B 65 65 70 2D 61 6C 69 76 65 0D 0A 58 2D 50 " ascii=" keep-alive..X-P"/>
+<dump_line offset="&#x24;0080" dump="6F 77 65 72 65 64 2D 42 79 3A 20 50 48 50 2F 35 " ascii="owered-By: PHP/5"/>
+<dump_line offset="&#x24;0090" dump="2E 32 2E 38 0D 0A 43 6F 6E 74 65 6E 74 2D 4C 65 " ascii=".2.8..Content-Le"/>
+<dump_line offset="&#x24;00A0" dump="6E 67 74 68 3A 20 36 0D 0A 0D 0A 32 33 39 30 32 " ascii="ngth: 6....23902"/>
+<dump_line offset="&#x24;00B0" dump="33                                              " ascii="3"/>
+</recv_socket>
+<create_open_file filetype="file" srcfile="_id.dat" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_ARCHIVE SECURITY_ANONYMOUS"/>
+<connect server="91.207.4.58" port="80" service="INTERNET_SERVICE_HTTP" successful="1" apifunction="InternetConnectA"/>
+<open_url server="91.207.4.58" url="/spm/page.php&#x3F;id=239023&#x26;tick=90187&#x26;ver=100&#x26;smtp=ok&#x26;task=0" httpverb="GET" flags="INTERNET_FLAG_RELOAD INTERNET_FLAG_NO_CACHE_WRITE INTERNET_FLAG_DONT_CACHE INTERNET_FLAG_KEEP_CONNECTION" successful="1" apifunction="HttpOpenRequestA"/>
+<send_socket socket="1880" buffer_len="206">
+<dump_line offset="&#x24;0000" dump="47 45 54 20 2F 73 70 6D 2F 70 61 67 65 2E 70 68 " ascii="GET /spm/page.ph"/>
+<dump_line offset="&#x24;0010" dump="70 3F 69 64 3D 32 33 39 30 32 33 26 74 69 63 6B " ascii="p&#x3F;id=239023&#x26;tick"/>
+<dump_line offset="&#x24;0020" dump="3D 39 30 31 38 37 26 76 65 72 3D 31 30 30 26 73 " ascii="=90187&#x26;ver=100&#x26;s"/>
+<dump_line offset="&#x24;0030" dump="6D 74 70 3D 6F 6B 26 74 61 73 6B 3D 30 20 48 54 " ascii="mtp=ok&#x26;task=0 HT"/>
+<dump_line offset="&#x24;0040" dump="54 50 2F 31 2E 31 0D 0A 55 73 65 72 2D 41 67 65 " ascii="TP/1.1..User-Age"/>
+<dump_line offset="&#x24;0050" dump="6E 74 3A 20 4D 6F 7A 69 6C 6C 61 2F 34 2E 30 20 " ascii="nt: Mozilla/4.0 "/>
+<dump_line offset="&#x24;0060" dump="28 63 6F 6D 70 61 74 69 62 6C 65 3B 20 4D 53 49 " ascii="&#x28;compatible; MSI"/>
+<dump_line offset="&#x24;0070" dump="45 20 36 2E 30 3B 20 57 69 6E 64 6F 77 73 20 4E " ascii="E 6.0; Windows N"/>
+<dump_line offset="&#x24;0080" dump="54 20 35 2E 31 29 0D 0A 48 6F 73 74 3A 20 39 31 " ascii="T 5.1&#x29;..Host: 91"/>
+<dump_line offset="&#x24;0090" dump="2E 32 30 37 2E 34 2E 35 38 0D 0A 43 6F 6E 6E 65 " ascii=".207.4.58..Conne"/>
+<dump_line offset="&#x24;00A0" dump="63 74 69 6F 6E 3A 20 4B 65 65 70 2D 41 6C 69 76 " ascii="ction: Keep-Aliv"/>
+<dump_line offset="&#x24;00B0" dump="65 0D 0A 43 61 63 68 65 2D 43 6F 6E 74 72 6F 6C " ascii="e..Cache-Control"/>
+<dump_line offset="&#x24;00C0" dump="3A 20 6E 6F 2D 63 61 63 68 65 0D 0A 0D 0A       " ascii=": no-cache...."/>
+</send_socket>
+<recv_socket socket="1880" buffer_len="1024" successful="1">
+<dump_line offset="&#x24;0000" dump="48 54 54 50 2F 31 2E 31 20 32 30 30 20 4F 4B 0D " ascii="HTTP/1.1 200 OK."/>
+<dump_line offset="&#x24;0010" dump="0A 53 65 72 76 65 72 3A 20 6E 67 69 6E 78 2F 30 " ascii=".Server: nginx/0"/>
+<dump_line offset="&#x24;0020" dump="2E 36 2E 33 34 0D 0A 44 61 74 65 3A 20 54 75 65 " ascii=".6.34..Date: Tue"/>
+<dump_line offset="&#x24;0030" dump="2C 20 31 31 20 41 75 67 20 32 30 30 39 20 31 36 " ascii=", 11 Aug 2009 16"/>
+<dump_line offset="&#x24;0040" dump="3A 33 38 3A 35 37 20 47 4D 54 0D 0A 43 6F 6E 74 " ascii=":38:57 GMT..Cont"/>
+<dump_line offset="&#x24;0050" dump="65 6E 74 2D 54 79 70 65 3A 20 74 65 78 74 2F 68 " ascii="ent-Type: text/h"/>
+<dump_line offset="&#x24;0060" dump="74 6D 6C 0D 0A 54 72 61 6E 73 66 65 72 2D 45 6E " ascii="tml..Transfer-En"/>
+<dump_line offset="&#x24;0070" dump="63 6F 64 69 6E 67 3A 20 63 68 75 6E 6B 65 64 0D " ascii="coding: chunked."/>
+<dump_line offset="&#x24;0080" dump="0A 43 6F 6E 6E 65 63 74 69 6F 6E 3A 20 6B 65 65 " ascii=".Connection: kee"/>
+<dump_line offset="&#x24;0090" dump="70 2D 61 6C 69 76 65 0D 0A 58 2D 50 6F 77 65 72 " ascii="p-alive..X-Power"/>
+<dump_line offset="&#x24;00A0" dump="65 64 2D 42 79 3A 20 50 48 50 2F 35 2E 32 2E 38 " ascii="ed-By: PHP/5.2.8"/>
+<dump_line offset="&#x24;00B0" dump="0D 0A 0D 0A 32 31 61 61 0D 0A 36 45 33 30 33 36 " ascii="....21aa..6E3036"/>
+<dump_line offset="&#x24;00C0" dump="33 45 33 34 33 41 33 35 36 44 35 34 35 41 36 45 " ascii="3E343A356D545A6E"/>
+<dump_line offset="&#x24;00D0" dump="37 43 33 31 33 43 33 37 33 36 33 42 33 34 36 43 " ascii="7C313C37363B346C"/>
+<dump_line offset="&#x24;00E0" dump="35 45 35 33 36 43 33 42 33 44 33 34 33 43 36 37 " ascii="5E536C3B3D343C67"/>
+<dump_line offset="&#x24;00F0" dump="35 44 35 38 32 37 33 33 32 30 33 32 33 39 33 36 " ascii="5D58273320323936"/>
+<trimmed_bytes count="768"/>
+</recv_socket>
+<recv_socket socket="1880" buffer_len="436" successful="1">
+<dump_line offset="&#x24;0000" dump="33 36 37 43 33 30 33 36 33 44 35 38 33 38 33 44 " ascii="367C30363D58383D"/>
+<dump_line offset="&#x24;0010" dump="33 45 32 39 32 32 31 32 33 32 33 36 33 32 33 34 " ascii="3E29221232363234"/>
+<dump_line offset="&#x24;0020" dump="37 45 33 39 33 41 33 37 32 35 37 37 32 35 33 33 " ascii="7E393A3725772533"/>
+<dump_line offset="&#x24;0030" dump="35 39 33 39 33 43 33 34 32 30 32 30 31 33 33 33 " ascii="59393C3420201333"/>
+<dump_line offset="&#x24;0040" dump="33 41 32 42 33 36 33 45 33 32 32 31 33 42 37 37 " ascii="3A2B363E32213B77"/>
+<dump_line offset="&#x24;0050" dump="33 33 33 44 33 45 35 38 33 38 33 36 33 44 32 32 " ascii="333D3E5838363D22"/>
+<dump_line offset="&#x24;0060" dump="32 31 31 32 33 32 33 35 33 45 33 33 32 31 37 43 " ascii="211232353E33217C"/>
+<dump_line offset="&#x24;0070" dump="33 44 33 43 32 34 35 38 33 38 33 44 33 45 32 39 " ascii="3D3C2458383D3E29"/>
+<dump_line offset="&#x24;0080" dump="32 32 31 32 33 31 33 33 33 31 32 43 33 42 33 42 " ascii="22123133312C3B3B"/>
+<dump_line offset="&#x24;0090" dump="37 44 33 42 33 44 33 46 33 46 35 38 33 38 33 44 " ascii="7D3B3D3F3F58383D"/>
+<dump_line offset="&#x24;00A0" dump="33 45 32 39 32 32 31 32 33 31 33 42 33 31 33 30 " ascii="3E292212313B3130"/>
+<dump_line offset="&#x24;00B0" dump="33 42 33 33 37 44 32 30 32 36 35 33 33 42 33 44 " ascii="3B337D2026533B3D"/>
+<dump_line offset="&#x24;00C0" dump="33 45 32 32 32 31 31 39 33 32 33 42 33 34 33 46 " ascii="3E222119323B343F"/>
+<dump_line offset="&#x24;00D0" dump="33 41 32 42 37 45 33 43 33 36 32 36 35 39 33 32 " ascii="3A2B7E3C36265932"/>
+<dump_line offset="&#x24;00E0" dump="33 46 33 46 32 33 32 30 31 33 33 41 33 31 33 46 " ascii="3F3F2320133A313F"/>
+<dump_line offset="&#x24;00F0" dump="32 33 32 30 33 41 33 34 32 32 33 44 33 30 33 39 " ascii="23203A34223D3039"/>
+<trimmed_bytes count="180"/>
+</recv_socket>
+<recv_socket socket="1880" buffer_len="7351" successful="1">
+<dump_line offset="&#x24;0000" dump="32 37 33 38 37 45 33 31 33 43 33 46 35 39 33 32 " ascii="27387E313C3F5932"/>
+<dump_line offset="&#x24;0010" dump="33 46 33 46 32 33 32 30 31 33 33 43 33 31 32 31 " ascii="3F3F2320133C3121"/>
+<dump_line offset="&#x24;0020" dump="32 37 33 37 33 30 37 37 33 33 33 44 33 45 35 38 " ascii="27373077333D3E58"/>
+<dump_line offset="&#x24;0030" dump="33 38 33 36 33 44 32 32 32 31 31 32 33 36 33 34 " ascii="38363D2221123634"/>
+<dump_line offset="&#x24;0040" dump="33 31 33 42 33 46 37 43 33 37 32 39 37 45 32 37 " ascii="313B3F7C37297E27"/>
+<dump_line offset="&#x24;0050" dump="33 32 35 38 33 38 33 36 33 44 32 32 32 31 31 32 " ascii="325838363D222112"/>
+<dump_line offset="&#x24;0060" dump="33 34 33 38 32 41 37 46 33 41 32 31 37 44 32 41 " ascii="34382A7F3A217D2A"/>
+<dump_line offset="&#x24;0070" dump="32 30 33 30 37 44 32 30 32 36 35 33 33 42 33 44 " ascii="20307D2026533B3D"/>
+<dump_line offset="&#x24;0080" dump="33 45 32 32 32 31 31 39 33 37 32 30 33 32 33 43 " ascii="3E2221193720323C"/>
+<dump_line offset="&#x24;0090" dump="33 41 32 44 33 35 33 46 33 36 33 46 33 43 32 42 " ascii="3A2D353F363F3C2B"/>
+<dump_line offset="&#x24;00A0" dump="33 39 33 33 33 46 32 31 37 44 33 41 33 46 33 46 " ascii="39333F217D3A3F3F"/>
+<dump_line offset="&#x24;00B0" dump="35 39 33 39 33 43 33 34 32 30 32 30 31 33 33 42 " ascii="59393C342020133B"/>
+<dump_line offset="&#x24;00C0" dump="32 42 32 39 32 32 33 37 32 30 37 43 33 30 33 36 " ascii="2B292237207C3036"/>
+<dump_line offset="&#x24;00D0" dump="33 44 35 38 33 38 33 44 33 45 32 39 32 32 31 32 " ascii="3D58383D3E292212"/>
+<dump_line offset="&#x24;00E0" dump="33 38 33 44 32 30 37 34 33 46 33 30 33 46 37 43 " ascii="383D20743F303F7C"/>
+<dump_line offset="&#x24;00F0" dump="33 38 33 34 32 34 33 43 37 44 32 30 32 36 35 33 " ascii="3834243C7D202653"/>
+<trimmed_bytes count="7095"/>
+</recv_socket>
+<create_thread targetpid="3768" threadid="4024" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<create_thread targetpid="3768" threadid="4028" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<create_thread targetpid="3768" threadid="4032" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<create_thread targetpid="3768" threadid="4036" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<create_thread targetpid="3768" threadid="4040" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="172" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<create_thread targetpid="3768" threadid="164" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<create_thread targetpid="3768" threadid="196" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<create_thread targetpid="3768" threadid="220" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<create_thread targetpid="3768" threadid="224" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="424" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<create_thread targetpid="3768" threadid="436" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<create_thread targetpid="3768" threadid="440" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<create_thread targetpid="3768" threadid="380" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<create_thread targetpid="3768" threadid="444" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1084" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<create_thread targetpid="3768" threadid="832" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<create_thread targetpid="3768" threadid="1128" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<create_thread targetpid="3768" threadid="1884" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<create_thread targetpid="3768" threadid="1124" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1880" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="432" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<create_thread targetpid="3768" threadid="428" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<create_thread targetpid="3768" threadid="1384" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<create_thread targetpid="3768" threadid="1412" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<create_thread targetpid="3768" threadid="1408" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1564" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<create_thread targetpid="3768" threadid="1580" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<create_thread targetpid="3768" threadid="1572" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<create_thread targetpid="3768" threadid="1592" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<create_thread targetpid="3768" threadid="1596" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1608" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1612" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<create_thread targetpid="3768" threadid="1620" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1528" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<create_thread targetpid="3768" threadid="1728" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<create_thread targetpid="3768" threadid="1732" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1740" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<create_thread targetpid="3768" threadid="1780" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1788" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1812" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<create_thread targetpid="3768" threadid="1816" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<create_thread targetpid="3768" threadid="1808" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<create_thread targetpid="3768" threadid="1804" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1392" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1348" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<create_thread targetpid="3768" threadid="1344" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<create_thread targetpid="3768" threadid="1340" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1832" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<create_thread targetpid="3768" threadid="1824" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="896" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<create_thread targetpid="3768" threadid="1900" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1920" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<create_thread targetpid="3768" threadid="1936" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1940" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<create_thread targetpid="3768" threadid="1952" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1956" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1928" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<create_thread targetpid="3768" threadid="1996" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="1992" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="2052" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<create_thread targetpid="3768" threadid="2056" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="2060" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="2068" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="2072" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<create_thread targetpid="3768" threadid="2076" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<create_thread targetpid="3768" threadid="2080" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="2084" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="2092" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="2096" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<create_thread targetpid="3768" threadid="2100" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="2108" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<create_thread targetpid="3768" threadid="2112" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<create_thread targetpid="3768" threadid="2116" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<create_thread targetpid="3768" threadid="2120" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="2128" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="2140" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<create_thread targetpid="3768" threadid="2144" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<create_thread targetpid="3768" threadid="2148" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<create_thread targetpid="3768" threadid="2152" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="2156" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="2164" address="&#x24;004026C1" parameteraddress="&#x24;004057C0"/>
+<create_thread targetpid="3768" threadid="2168" address="&#x24;004026C1" parameteraddress="&#x24;004057E8"/>
+<create_thread targetpid="3768" threadid="1904" address="&#x24;004026C1" parameteraddress="&#x24;004057FC"/>
+<create_thread targetpid="3768" threadid="2172" address="&#x24;004026C1" parameteraddress="&#x24;00405810"/>
+<sleep milliseconds="10"/>
+<sleep milliseconds="100"/>
+<create_thread targetpid="3768" threadid="2176" address="&#x24;004026C1" parameteraddress="&#x24;004057D4"/>
+<sleep milliseconds="10"/>
+</all_section>
+</thread>
+<thread tid="3908">
+<all_section>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\RASAPI32.dll" successful="1" address="&#x24;76EA0000" end_address="&#x24;76EDC000" size="245760" filename_hash="2b764e033d62d37765392a55774c44d8d6e9414f"/>
+<create_mutex name="RasPbFile" owned="0"/>
+<open_mutex name="RasPbFile" owned="1"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;597DACC9" address="&#x24;597DA000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetUserGetInfo"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;597DACC9" address="&#x24;597DA000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetUserGetInfo"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;597E0F78" address="&#x24;597E0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetShareAdd"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;597E0F78" address="&#x24;597E0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetShareAdd"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;597D9115" address="&#x24;597D9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="NETAPI32.dll.NetShareEnum"/>
+<vm_protect targetpid="3768" wantedaddress="&#x24;597D9115" address="&#x24;597D9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="NETAPI32.dll.NetShareEnum"/>
+<load_dll filename="C:\WINDOWS\system32\rtutils.dll" successful="1" address="&#x24;76E40000" end_address="&#x24;76E4E000" size="57344" filename_hash="1878db387ed7e53ffd7b8150c26ddaf51560c447"/>
+<load_dll filename="C:\WINDOWS\system32\rasman.dll" successful="1" address="&#x24;76E50000" end_address="&#x24;76E62000" size="73728" filename_hash="ab8ead1ea84aec88420d0536d67c522080baf1c5"/>
+<open_scmanager servicename="SCM" desiredaccess="SERVICE_ALL_ACCESS"/>
+<open_service servicename="RASMAN" desiredaccess="SERVICE_ALL_ACCESS"/>
+<get_computer_name/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\ROUTER" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\SecurityService"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\SecurityService" value="10"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SecurityProviders" value="SecurityProviders"/>
+<get_computer_name/>
+<load_dll filename="C:\WINDOWS\system32\msapsspc.dll" successful="1" address="&#x24;71DD0000" end_address="&#x24;71DE5000" size="86016" filename_hash="6ae0e3be35e8101001344cc216761c8a05ed4058"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\crypt32\Performance"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\msasn1"/>
+<load_dll filename="C:\WINDOWS\system32\schannel.dll" successful="1" address="&#x24;767A0000" end_address="&#x24;767C7000" size="159744" filename_hash="5e77ce8bddeabb1da0cf071c5d89cffa20dca320"/>
+<load_dll filename="C:\WINDOWS\system32\digest.dll" successful="1" address="&#x24;76230000" end_address="&#x24;76245000" size="86016" filename_hash="57c470b423ac9d8db9ad8e3a28c45cf8f86f329e"/>
+<get_computer_name/>
+<load_dll filename="C:\WINDOWS\system32\msnsspc.dll" successful="1" address="&#x24;74D60000" end_address="&#x24;74DA7000" size="290816" filename_hash="0f40373b80077964654f1cc826106fdd2ede0e58"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\SspiCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Comment"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Capabilities"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="RpcId"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Version"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="Type"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msapsspc.dll" value="TokenSize"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\SspiCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Comment"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Capabilities"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="RpcId"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Version"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="Type"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\digest.dll" value="TokenSize"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\SspiCache"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Name"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Comment"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Capabilities"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="RpcId"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Version"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="Type"/>
+<query_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa\SspiCache\msnsspc.dll" value="TokenSize"/>
+<open_key key="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SaslProfiles"/>
+<enum_values key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SecurityProviders\SaslProfiles"/>
+<create_open_file filetype="file" srcfile="\Device\Tcp" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Ip" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="\Device\Ip" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<open_file filetype="file" srcfile="\\.\Ip" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\msv1_0.dll" successful="1" address="&#x24;77C40000" end_address="&#x24;77C64000" size="147456" filename_hash="96324d866a5f6e83112f9a2f7af8830502c2279c"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\ROUTER" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+</all_section>
+</thread>
+<thread tid="4024">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="63.101.151.1" hostname="dalexmm.acs-inc.com" buffer_len="4" successful="1"/>
+<create_socket socket="2020" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2020" remote_addr="63.101.151.1" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="4032">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_socket socket="2036" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2036" remote_addr="208.84.64.203" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="4028">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="213.186.33.73" hostname="mx3.ovh.net" buffer_len="4" successful="1"/>
+<create_socket socket="2060" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2060" remote_addr="213.186.33.73" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="4040">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="204.10.64.148" hostname="mx3.hostasaurus.com" buffer_len="4" successful="1"/>
+<create_socket socket="2044" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2044" remote_addr="204.10.64.148" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="4036">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="64.235.217.55" hostname="mail.proaxia.com" buffer_len="4" successful="1"/>
+<create_socket socket="1944" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1944" remote_addr="64.235.217.55" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="172">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="65.55.88.22" hostname="mail.messaging.microsoft.com" buffer_len="4" successful="1"/>
+<create_socket socket="2024" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2024" remote_addr="65.55.88.22" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="164">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="199.228.142.74" hostname="bv-mxd.mail.eds.net" buffer_len="12" successful="1"/>
+<create_socket socket="2040" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2040" remote_addr="199.228.142.74" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="196">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="203.179.35.73" hostname="web8.csk.com" buffer_len="4" successful="1"/>
+<create_socket socket="1924" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1924" remote_addr="203.179.35.73" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="220">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="72.32.252.82" hostname="server534.appriver.com" buffer_len="4" successful="1"/>
+<create_socket socket="1972" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1972" remote_addr="72.32.252.82" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="224">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="64.18.6.14" hostname="cattledog.com.s7a1.psmtp.com" buffer_len="4" successful="1"/>
+<create_socket socket="2056" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2056" remote_addr="64.18.6.14" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="424">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="174.120.9.58" hostname="aero-lite.com" buffer_len="4" successful="1"/>
+<create_socket socket="2040" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2040" remote_addr="174.120.9.58" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="436">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="208.65.144.3" hostname="simplexnet.com.inbound10.mxlogic.net" buffer_len="12" successful="1"/>
+<create_socket socket="2036" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2036" remote_addr="208.65.144.3" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="440">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="217.16.16.81" hostname="mx1.masterhost.ru" buffer_len="4" successful="1"/>
+<create_socket socket="2056" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2056" remote_addr="217.16.16.81" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="380">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="213.199.154.22" hostname="mail.global.frontbridge.com" buffer_len="4" successful="1"/>
+<create_socket socket="1932" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1932" remote_addr="213.199.154.22" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="444">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="212.26.133.146" hostname="relay1.adamant.net" buffer_len="4" successful="1"/>
+<create_socket socket="2028" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2028" remote_addr="212.26.133.146" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1084">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="208.84.64.201" hostname="mx.airflash.com" buffer_len="4" successful="1"/>
+<create_socket socket="1932" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1932" remote_addr="208.84.64.201" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="832">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="72.9.252.245" hostname="alnar.net" buffer_len="4" successful="1"/>
+<create_socket socket="2052" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2052" remote_addr="72.9.252.245" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1128">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+</all_section>
+</thread>
+<thread tid="1884">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="89.223.7.138" hostname="roman.ninsis.ru" buffer_len="4" successful="1"/>
+<create_socket socket="1476" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1476" remote_addr="89.223.7.138" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1124">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="72.14.221.114" hostname="ASPMX.L.GOOGLE.com" buffer_len="4" successful="1"/>
+<create_socket socket="1920" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1920" remote_addr="72.14.221.114" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1880">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="74.40.209.254" hostname="office.camprimrock.com" buffer_len="4" successful="1"/>
+<create_socket socket="1952" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1952" remote_addr="74.40.209.254" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="432">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="216.33.127.20" hostname="ib1.charter.net" buffer_len="4" successful="1"/>
+<create_socket socket="1992" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1992" remote_addr="216.33.127.20" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="428">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="195.34.32.101" hostname="mx.comstar.ru" buffer_len="4" successful="1"/>
+<create_socket socket="1620" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1620" remote_addr="195.34.32.101" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1384">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="207.228.252.51" hostname="cromwellbooks.com" buffer_len="4" successful="1"/>
+<create_socket socket="1948" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1948" remote_addr="207.228.252.51" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1412">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="174.37.11.85" hostname="mail.curinfo.com" buffer_len="4" successful="1"/>
+<create_socket socket="2024" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2024" remote_addr="174.37.11.85" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1408">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="205.174.22.48" hostname="smtp4.delta.com" buffer_len="4" successful="1"/>
+<create_socket socket="2040" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2040" remote_addr="205.174.22.48" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1564">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="209.50.183.153" hostname="mail.eastec.com" buffer_len="4" successful="1"/>
+<create_socket socket="1932" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1932" remote_addr="209.50.183.153" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1580">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="195.24.128.66" hostname="relay.trifle.net" buffer_len="4" successful="1"/>
+<create_socket socket="1476" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1476" remote_addr="195.24.128.66" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1592">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+</all_section>
+</thread>
+<thread tid="1572">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="81.211.126.3" hostname="mail.gaz-is.ru" buffer_len="4" successful="1"/>
+<create_socket socket="1984" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1984" remote_addr="81.211.126.3" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1596">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="206.71.160.249" hostname="mail.ixpres.com" buffer_len="4" successful="1"/>
+<create_socket socket="1996" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1996" remote_addr="206.71.160.249" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1608">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="194.220.28.18" hostname="kos-obl.kmtn.ru" buffer_len="4" successful="1"/>
+<create_socket socket="1976" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1976" remote_addr="194.220.28.18" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1612">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="89.218.40.150" hostname="relay.online.kz" buffer_len="4" successful="1"/>
+<create_socket socket="2040" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2040" remote_addr="89.218.40.150" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1620">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="194.85.243.38" hostname="mx.kzn.ru" buffer_len="4" successful="1"/>
+<create_socket socket="1924" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1924" remote_addr="194.85.243.38" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1528">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="89.163.95.12" hostname="mail1.pabs.sozvezdie.biz" buffer_len="4" successful="1"/>
+<create_socket socket="1624" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1624" remote_addr="89.163.95.12" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1728">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="195.114.128.25" hostname="relay25.paco.net" buffer_len="4" successful="1"/>
+<create_socket socket="1976" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1976" remote_addr="195.114.128.25" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1732">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="213.75.3.30" hostname="mailin.planet.nl" buffer_len="4" successful="1"/>
+<create_socket socket="1516" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1516" remote_addr="213.75.3.30" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1740">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="smtp5.cs.kiev.ua" successful="0" winsock_result="WSANO_DATA"/>
+</all_section>
+</thread>
+<thread tid="1780">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="80.254.2.74" hostname="mail.reis.zp.ua" buffer_len="4" successful="1"/>
+<create_socket socket="1620" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1620" remote_addr="80.254.2.74" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1788">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+</all_section>
+</thread>
+<thread tid="1812">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="85.17.53.242" hostname="mail.slutsk.net" buffer_len="4" successful="1"/>
+<create_socket socket="2040" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2040" remote_addr="85.17.53.242" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1816">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="128.119.101.42" hostname="race.oit.umass.edu" buffer_len="4" successful="1"/>
+<create_socket socket="1960" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1960" remote_addr="128.119.101.42" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1808">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="195.38.16.2" hostname="relay.3logic.net" buffer_len="4" successful="1"/>
+<create_socket socket="1976" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1976" remote_addr="195.38.16.2" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1804">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="72.14.221.114" hostname="ASPMX.L.GOOGLE.com" buffer_len="4" successful="1"/>
+<create_socket socket="2012" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2012" remote_addr="72.14.221.114" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1392">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="91.198.36.11" hostname="mx1.ua.fm" buffer_len="4" successful="1"/>
+<create_socket socket="1620" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1620" remote_addr="91.198.36.11" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1348">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+</all_section>
+</thread>
+<thread tid="1344">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="193.239.68.117" hostname="vmx.ukrbiz.net" buffer_len="8" successful="1"/>
+<create_socket socket="1948" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1948" remote_addr="193.239.68.117" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1340">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="212.26.133.146" hostname="relay1.adamant.net" buffer_len="4" successful="1"/>
+<create_socket socket="2044" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2044" remote_addr="212.26.133.146" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1832">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+</all_section>
+</thread>
+<thread tid="1824">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="195.5.46.29" hostname="mail.ukrpost.ua" buffer_len="28" successful="1"/>
+<create_socket socket="2012" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2012" remote_addr="195.5.46.29" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="896">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="124.108.116.72" hostname="mx1.mail.sg1.yahoo.com" buffer_len="4" successful="1"/>
+<create_socket socket="1952" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1952" remote_addr="124.108.116.72" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1900">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="194.30.193.16" hostname="mailin15mx.hol.gr" buffer_len="28" successful="1"/>
+<create_socket socket="1984" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1984" remote_addr="194.30.193.16" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1920">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="68.142.202.247" hostname="d.mx.mail.yahoo.com" buffer_len="8" successful="1"/>
+<create_socket socket="1948" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1948" remote_addr="68.142.202.247" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1936">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="194.30.193.16" hostname="mailin15mx.hol.gr" buffer_len="28" successful="1"/>
+<create_socket socket="1476" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1476" remote_addr="194.30.193.16" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1940">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="205.188.156.248" hostname="mailin-01.mx.aol.com" buffer_len="16" successful="1"/>
+<create_socket socket="2052" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2052" remote_addr="205.188.156.248" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1952">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="62.183.109.36" hostname="mail.astranet.ru" buffer_len="4" successful="1"/>
+<create_socket socket="1984" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1984" remote_addr="62.183.109.36" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1956">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="212.74.77.73" hostname="mx.colt.net" buffer_len="4" successful="1"/>
+<create_socket socket="1952" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1952" remote_addr="212.74.77.73" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1928">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="82.135.241.177" hostname="compidea.lt" buffer_len="4" successful="1"/>
+<create_socket socket="1976" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1976" remote_addr="82.135.241.177" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1996">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+</all_section>
+</thread>
+<thread tid="1992">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="58.181.150.45" hostname="mail.forest.go.th" buffer_len="4" successful="1"/>
+<create_socket socket="2056" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2056" remote_addr="58.181.150.45" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2052">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="72.14.221.114" hostname="ASPMX.L.GOOGLE.COM" buffer_len="4" successful="1"/>
+<create_socket socket="1992" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1992" remote_addr="72.14.221.114" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2056">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="82.96.115.122" hostname="mail.ligamail.com" buffer_len="4" successful="1"/>
+<create_socket socket="2012" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2012" remote_addr="82.96.115.122" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2060">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="93.158.134.89" hostname="mx2.yandex.ru" buffer_len="4" successful="1"/>
+<create_socket socket="1952" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1952" remote_addr="93.158.134.89" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2068">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="213.241.70.9" hostname="av.dc.sint.pl" buffer_len="4" successful="1"/>
+<create_socket socket="1976" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1976" remote_addr="213.241.70.9" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2072">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="212.122.94.171" hostname="mx1.skynet.lt" buffer_len="4" successful="1"/>
+<create_socket socket="1476" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1476" remote_addr="212.122.94.171" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2076">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="213.180.147.147" hostname="poczta.onet.pl" buffer_len="4" successful="1"/>
+<create_socket socket="1992" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1992" remote_addr="213.180.147.147" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2080">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="194.85.88.229" hostname="MX02.NICMAIL.ru" buffer_len="4" successful="1"/>
+<create_socket socket="2024" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2024" remote_addr="194.85.88.229" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2084">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="24.71.223.11" hostname="idcmail.shaw.ca" buffer_len="8" successful="1"/>
+<create_socket socket="1952" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1952" remote_addr="24.71.223.11" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2092">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="194.25.134.73" hostname="mx03.t-online.de" buffer_len="4" successful="1"/>
+<create_socket socket="1976" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1976" remote_addr="194.25.134.73" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2096">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+</all_section>
+</thread>
+<thread tid="2100">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+</all_section>
+</thread>
+<thread tid="2108">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="213.180.204.89" hostname="mx3.yandex.ru" buffer_len="4" successful="1"/>
+<create_socket socket="1960" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1960" remote_addr="213.180.204.89" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2112">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="213.180.138.18" hostname="mx.poczta.onet.pl" buffer_len="4" successful="1"/>
+<create_socket socket="2036" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2036" remote_addr="213.180.138.18" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2116">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="81.169.145.100" hostname="mailin.rzone.de" buffer_len="16" successful="1"/>
+<create_socket socket="2064" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2064" remote_addr="81.169.145.100" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2120">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="217.74.64.36" hostname="mx.strefa.interia.pl" buffer_len="4" successful="1"/>
+<create_socket socket="1516" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1516" remote_addr="217.74.64.36" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2128">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="213.218.124.65" hostname="mail.komprachcice.pl" buffer_len="4" successful="1"/>
+<create_socket socket="1964" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1964" remote_addr="213.218.124.65" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2140">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="213.218.124.65" hostname="mail.komprachcice.pl" buffer_len="4" successful="1"/>
+<create_socket socket="2024" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2024" remote_addr="213.218.124.65" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2144">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="212.77.101.4" hostname="mx.wp.pl" buffer_len="4" successful="1"/>
+<create_socket socket="2000" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2000" remote_addr="212.77.101.4" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2148">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="193.239.44.65" hostname="mx01.agnat.pl" buffer_len="8" successful="1"/>
+<create_socket socket="1984" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1984" remote_addr="193.239.44.65" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2152">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="72.14.221.27" hostname="gmail-smtp-in.l.google.com" buffer_len="4" successful="1"/>
+<create_socket socket="1476" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1476" remote_addr="72.14.221.27" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2156">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="72.249.31.29" hostname="atrialis.com" buffer_len="4" successful="1"/>
+<create_socket socket="1964" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1964" remote_addr="72.249.31.29" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2164">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="216.163.188.58" hostname="eforwardct.name-services.com" buffer_len="4" successful="1"/>
+<create_socket socket="1988" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1988" remote_addr="216.163.188.58" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2168">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="81.169.145.100" hostname="mailin.rzone.de" buffer_len="16" successful="1"/>
+<create_socket socket="2056" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2056" remote_addr="81.169.145.100" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="1904">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="12.28.203.9" hostname="mail.cleanseal.com" buffer_len="4" successful="1"/>
+<create_socket socket="2040" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="2040" remote_addr="12.28.203.9" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2172">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="195.5.46.29" hostname="mail.ukrpost.ua" buffer_len="28" successful="1"/>
+<create_socket socket="1932" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1932" remote_addr="195.5.46.29" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+<thread tid="2176">
+<all_section>
+<get_system_time apifunction="GetLocalTime"/>
+<get_system_time apifunction="GetSystemTime"/>
+<get_system_time apifunction="GetLocalTime"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="66.196.82.7" hostname="b.mx.mail.yahoo.com" buffer_len="8" successful="1"/>
+<create_socket socket="1976" socket_type="SOCK_STREAM" successful="1"/>
+<connect_socket socket="1976" remote_addr="66.196.82.7" remote_port="25" successful="0" winsock_result="10035"/>
+</all_section>
+</thread>
+</process>
+<process index="2" pid="756" filename="C:\WINDOWS\system32\services.exe" filename_hash="de3701d2c03d9ae29b2d87eccafbbcadf1bfb7e3" filesize="111104" md5="a3edbe9053889fb24ab22492472b39dc" sha1="7153d4d113c47379fb57aad4918a2f2a64f0c9ee" username="SYSTEM" parentindex="0" starttime="00:08.125" terminationtime="02:01.016" startreason="SCM" terminationreason="Timeout" executionstatus="OK">
+</process>
+</processes>

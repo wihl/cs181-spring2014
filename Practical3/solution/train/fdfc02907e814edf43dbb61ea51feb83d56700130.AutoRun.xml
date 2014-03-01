@@ -1,0 +1,827 @@
+<?xml version="1.0"?>
+<processes>
+<process index="1" pid="2468" filename="c:\ef321636dfa22aa3f31d5505efbd25d2.EX" filename_hash="hash_error" filesize="17920" md5="ef321636dfa22aa3f31d5505efbd25d2" sha1="ffc02907e814edf43dbb61ea51feb83d56700130" username="Administrator" parentindex="0" starttime="00:01.343" terminationtime="00:03.859" startreason="AnalysisTarget" terminationreason="NormalTermination" executionstatus="OK" applicationtype="Win32Application">
+<thread tid="2472">
+<all_section>
+<load_image filename="c:\ef321636dfa22aa3f31d5505efbd25d2.EX" successful="1" address="&#x24;400000" end_address="&#x24;408000" size="32768" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\MSVCRT.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\user32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<load_dll filename="c:\vmcheck.dll" successful="0" filename_hash="hash_error"/>
+<sleep milliseconds="11"/>
+<open_mutex name="78SUGV--&#x26;HSA6X" owned="1"/>
+<create_mutex name="78SUGV--&#x26;HSA6X" owned="0"/>
+<sleep milliseconds="6"/>
+<get_username tokenhandle="0"/>
+<sleep milliseconds="1"/>
+<sleep milliseconds="14"/>
+<sleep milliseconds="20"/>
+<create_process commandline="c:\ef321636dfa22aa3f31d5505efbd25d2.EX" targetpid="2528" creationflags="CREATE_SUSPENDED" showwindow="SW_HIDE" apifunction="CreateProcessA" successful="1"/>
+<sleep milliseconds="20"/>
+<vm_allocate targetpid="2528" wantedaddress="&#x24;00400000" address="&#x24;00400000" wantedsize="20480" size="20480" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_RESERVE"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;00400000" address="&#x24;00400000" wantedsize="1024" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="c:\ef321636dfa22aa3f31d5505efbd25d2.ex.&#x24;0"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;00400000" address="&#x24;00400000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="c:\ef321636dfa22aa3f31d5505efbd25d2.ex.&#x24;0"/>
+<vm_write targetpid="2528" address="&#x24;00400000" size="1024" behavior="Normal"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;00401000" address="&#x24;00401000" wantedsize="8192" size="8192" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="c:\ef321636dfa22aa3f31d5505efbd25d2.ex.&#x24;1000"/>
+<vm_write targetpid="2528" address="&#x24;00401000" size="8192" behavior="Normal"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;00403000" address="&#x24;00403000" wantedsize="512" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="c:\ef321636dfa22aa3f31d5505efbd25d2.ex.&#x24;3000"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;00403000" address="&#x24;00403000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="c:\ef321636dfa22aa3f31d5505efbd25d2.ex.&#x24;3000"/>
+<vm_write targetpid="2528" address="&#x24;00403000" size="512" behavior="Normal"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;00404000" address="&#x24;00404000" wantedsize="3072" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="c:\ef321636dfa22aa3f31d5505efbd25d2.ex.&#x24;4000"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;00404000" address="&#x24;00404000" wantedsize="4096" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="c:\ef321636dfa22aa3f31d5505efbd25d2.ex.&#x24;4000"/>
+<vm_write targetpid="2528" address="&#x24;00404000" size="3072" behavior="Normal"/>
+<set_thread_context targetpid="2528" threadid="2532" address="&#x24;7C810705"/>
+<kill_process targetpid="2468" apifunction="NtTerminateProcess"/>
+</all_section>
+</thread>
+</process>
+<process index="2" pid="2528" filename="c:\ef321636dfa22aa3f31d5505efbd25d2.EX" filename_hash="hash_error" filesize="17920" md5="ef321636dfa22aa3f31d5505efbd25d2" sha1="ffc02907e814edf43dbb61ea51feb83d56700130" username="Administrator" parentindex="1" starttime="00:03.500" terminationtime="00:08.890" startreason="CreateProcess" terminationreason="NormalTermination" executionstatus="OK">
+<thread tid="2532">
+<all_section>
+<load_image filename="c:\ef321636dfa22aa3f31d5505efbd25d2.EX" successful="1" address="&#x24;400000" end_address="&#x24;405000" size="20480" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\user32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<open_file filetype="namedpipe" srcfile="\\.\PIPE\lsarpc" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="SECURITY_ANONYMOUS"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<enum_modules targetpid="2528" apifunction="RtlQueryProcessDebugInformation"/>
+<enum_processes apifunction="Process32First"/>
+<open_process targetpid="1660" desiredaccess="PROCESS_CREATE_THREAD PROCESS_QUERY_INFORMATION PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE" apifunction="NtOpenProcess" successful="1"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;029B0000" wantedsize="4" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;029B0000" size="4" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;029C0000" wantedsize="10" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;029C0000" size="10" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;029D0000" wantedsize="14" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;029D0000" size="14" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;029E0000" wantedsize="38" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;029E0000" size="38" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;029F0000" wantedsize="34" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;029F0000" size="34" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02A00000" wantedsize="1" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02A00000" size="1" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02A10000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02A10000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02A20000" wantedsize="5" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02A20000" size="5" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02A30000" wantedsize="5" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02A30000" size="5" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02A40000" wantedsize="5" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02A40000" size="5" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02A50000" wantedsize="5" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02A50000" size="5" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02A60000" wantedsize="1" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02A60000" size="1" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02A70000" wantedsize="1" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02A70000" size="1" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02A80000" wantedsize="1" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02A80000" size="1" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02A90000" wantedsize="1" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02A90000" size="1" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02AA0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02AA0000" size="8" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02AB0000" wantedsize="6" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02AB0000" size="6" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02AC0000" wantedsize="1" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02AC0000" size="1" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02AD0000" wantedsize="1" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02AD0000" size="1" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02AE0000" wantedsize="5" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02AE0000" size="5" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02AF0000" wantedsize="5" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02AF0000" size="5" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02B00000" wantedsize="5" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02B00000" size="5" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02B10000" wantedsize="5" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02B10000" size="5" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02B20000" wantedsize="3" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02B20000" size="3" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02B30000" wantedsize="4" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02B30000" size="4" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02B40000" wantedsize="4" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02B40000" size="4" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02B50000" wantedsize="5" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02B50000" size="5" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02B60000" wantedsize="5" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02B60000" size="5" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02B70000" wantedsize="5" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02B70000" size="5" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02B80000" wantedsize="7" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02B80000" size="7" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02B90000" wantedsize="3" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02B90000" size="3" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02BA0000" wantedsize="3" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02BA0000" size="3" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02BB0000" wantedsize="2" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02BB0000" size="2" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02BC0000" wantedsize="2" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02BC0000" size="2" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02BD0000" wantedsize="1" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02BD0000" size="1" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02BE0000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02BE0000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02BF0000" wantedsize="7" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02BF0000" size="7" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02C00000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02C00000" size="8" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02C10000" wantedsize="7" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02C10000" size="7" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02C20000" wantedsize="9" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02C20000" size="9" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02C30000" wantedsize="46" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02C30000" size="46" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02C40000" wantedsize="62" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02C40000" size="62" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02C50000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02C50000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02C60000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02C60000" size="12" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02C70000" wantedsize="56" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02C70000" size="56" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02C80000" wantedsize="75" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02C80000" size="75" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02C90000" wantedsize="21" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02C90000" size="21" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02CA0000" wantedsize="2" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02CA0000" size="2" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02CB0000" wantedsize="1" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02CB0000" size="1" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02CC0000" wantedsize="52" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02CC0000" size="52" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02CD0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02CD0000" size="8" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02CE0000" wantedsize="45" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02CE0000" size="45" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02CF0000" wantedsize="25" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02CF0000" size="25" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02D00000" wantedsize="1" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02D00000" size="1" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02D10000" wantedsize="1" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02D10000" size="1" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02D20000" wantedsize="20" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02D20000" size="20" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02D30000" wantedsize="19" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02D30000" size="19" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02D40000" wantedsize="3" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02D40000" size="3" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02D50000" wantedsize="3" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02D50000" size="3" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02D60000" wantedsize="5" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02D60000" size="5" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02D70000" wantedsize="18" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02D70000" size="18" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02D80000" wantedsize="2385" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02D80000" size="2385" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02D90000" wantedsize="4565" size="8192" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02D90000" size="4565" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02DA0000" wantedsize="3990" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02DA0000" size="3990" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02DB0000" wantedsize="2891" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02DB0000" size="2891" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02DC0000" wantedsize="7945" size="8192" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02DC0000" size="7945" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02DD0000" wantedsize="16" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02DD0000" size="16" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02DE0000" wantedsize="488" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02DE0000" size="488" behavior="Normal"/>
+<load_dll filename="C:\WINDOWS\system32\ws2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<create_thread targetpid="2528" threadid="2560" address="&#x24;77DC848A" parameteraddress="&#x24;00000000"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;44200BCA" address="&#x24;44200000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetOpenUrlA"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;44200BCA" address="&#x24;44200000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetOpenUrlA"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;4424AF69" address="&#x24;4424A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetOpenUrlW"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;4424AF69" address="&#x24;4424A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetOpenUrlW"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;441F4321" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.HttpOpenRequestA"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;441F4321" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.HttpOpenRequestA"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;441F5D42" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.HttpOpenRequestW"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;441F5D42" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.HttpOpenRequestW"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;441F497A" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetConnectA"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;441F497A" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetConnectA"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;441F5B68" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetConnectW"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;441F5B68" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetConnectW"/>
+<load_dll filename="C:\WINDOWS\system32\wininet.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<vm_protect targetpid="2528" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<load_dll filename="C:\WINDOWS\system32\shell32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02DF0000" wantedsize="180" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02DF0000" size="180" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02E00000" wantedsize="16" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02E00000" size="16" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02E10000" wantedsize="960" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_write targetpid="1660" address="&#x24;02E10000" size="960" behavior="Normal"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;00000000" address="&#x24;02E20000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="1660" wantedaddress="&#x24;02F1E000" address="&#x24;02F1E000" wantedsize="8192" size="8192" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<vm_protect targetpid="1660" wantedaddress="&#x24;02F1E000" address="&#x24;02F1E000" wantedsize="4096" size="4096" protect="PAGE_READWRITE PAGE_GUARD" behavior="Normal"/>
+<create_thread_remote targetpid="1660" threadid="2656" address="&#x24;02DC0000" parameteraddress="&#x24;02E10000" creationflags="CREATE_SUSPENDED"/>
+<open_key key="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\AuthorizedApplications\List"/>
+<set_value key="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\AuthorizedApplications\List" value="C:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe" data="C:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe:&#x2A;:Enabled:&#x40;xpsp2res.dll,-22019"/>
+<kill_process targetpid="2528" apifunction="NtTerminateProcess"/>
+</all_section>
+</thread>
+</process>
+<process index="3" pid="1660" filename="C:\WINDOWS\Explorer.EXE" filename_hash="9d2bf84874abc5b6e9a2744b7865c193c08d362f" filesize="1036800" md5="418045a93cd87a352098ab7dabe1b53e" sha1="98b9ad668e0727be888b861f49aac0f72725e634" username="Administrator" parentindex="2" starttime="00:06.953" terminationtime="02:01.500" startreason="InjectedCode" terminationreason="Timeout" executionstatus="OK">
+<thread tid="2668">
+<all_section>
+<load_image filename="C:\WINDOWS\Explorer.EXE" successful="1" address="&#x24;1000000" end_address="&#x24;10FF000" size="1044480" filename_hash="9d2bf84874abc5b6e9a2744b7865c193c08d362f"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\BROWSEUI.dll" successful="1" address="&#x24;75F20000" end_address="&#x24;7601D000" size="1036288" filename_hash="031921b707e9622ecefb5cd6e1941119c411d4c9"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<load_dll filename="C:\WINDOWS\system32\OLEAUT32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\SHDOCVW.dll" successful="1" address="&#x24;7E1E0000" end_address="&#x24;7E351000" size="1511424" filename_hash="89ae970134a7abbb63e83bb60d468ae016421929"/>
+<load_dll filename="C:\WINDOWS\system32\CRYPT32.dll" successful="1" address="&#x24;77A50000" end_address="&#x24;77AE6000" size="614400" filename_hash="3127dbe44b75c673c24f9ad63675ff91cd9c6321"/>
+<load_dll filename="C:\WINDOWS\system32\MSASN1.dll" successful="1" address="&#x24;77AF0000" end_address="&#x24;77B02000" size="73728" filename_hash="e3b7e1519f060e76b7e5579c1974e6260bcdb324"/>
+<load_dll filename="C:\WINDOWS\system32\CRYPTUI.dll" successful="1" address="&#x24;76880000" end_address="&#x24;76905000" size="544768" filename_hash="8d72e84d63a0b44bca596c5f370fa0e4b595ac3c"/>
+<load_dll filename="C:\WINDOWS\system32\NETAPI32.dll" successful="1" address="&#x24;597D0000" end_address="&#x24;59825000" size="348160" filename_hash="5e935f90226ff224936edf449f925b647b535917"/>
+<load_dll filename="C:\WINDOWS\system32\VERSION.dll" successful="1" address="&#x24;77BD0000" end_address="&#x24;77BD8000" size="32768" filename_hash="adf263b658136ccb3cde72d0e6dd634c5a5e5143"/>
+<load_dll filename="C:\WINDOWS\system32\WININET.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<load_dll filename="C:\WINDOWS\system32\Normaliz.dll" successful="1" address="&#x24;400000" end_address="&#x24;409000" size="36864" filename_hash="ecd1fc4ebcd524aefac77061a8c0b5e4a2a01a8d"/>
+<load_dll filename="C:\WINDOWS\system32\iertutil.dll" successful="1" address="&#x24;43F60000" end_address="&#x24;43FA5000" size="282624" filename_hash="962fdf7a8839794fdb71eb6d15ae0824a89db8d7"/>
+<load_dll filename="C:\WINDOWS\system32\WINTRUST.dll" successful="1" address="&#x24;76BF0000" end_address="&#x24;76C1E000" size="188416" filename_hash="7bda19c92848a811077f780f569c0593d14b2a92"/>
+<load_dll filename="C:\WINDOWS\system32\IMAGEHLP.dll" successful="1" address="&#x24;76C50000" end_address="&#x24;76C78000" size="163840" filename_hash="2eaa144578f2beb69da027ca0e15445c98a95607"/>
+<load_dll filename="C:\WINDOWS\system32\WLDAP32.dll" successful="1" address="&#x24;76F20000" end_address="&#x24;76F4D000" size="184320" filename_hash="03269df70bc4ff939f87ef528f8a5fcf2a708624"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\UxTheme.dll" successful="1" address="&#x24;5B0F0000" end_address="&#x24;5B128000" size="229376" filename_hash="16c4d24a172bfbc67f488d6b4086b9e10f8eaf4b"/>
+<load_dll filename="C:\WINDOWS\system32\ShimEng.dll" successful="1" address="&#x24;5CF00000" end_address="&#x24;5CF26000" size="155648" filename_hash="2ab219118ae324684eb7aaaf72eb4d9360ade81f"/>
+<load_dll filename="C:\WINDOWS\AppPatch\AcGenral.DLL" successful="1" address="&#x24;6FD90000" end_address="&#x24;6FF5A000" size="1875968" filename_hash="d28c378f459fafa7367649554b729a80b3924aad"/>
+<load_dll filename="C:\WINDOWS\system32\WINMM.dll" successful="1" address="&#x24;76AF0000" end_address="&#x24;76B1E000" size="188416" filename_hash="51f42782acdc790e4cabf402d71ef0fe24f9ad1b"/>
+<load_dll filename="C:\WINDOWS\system32\MSACM32.dll" successful="1" address="&#x24;77BB0000" end_address="&#x24;77BC5000" size="86016" filename_hash="9be8c8a0ce2316feff5783efbe259bb1f6334a63"/>
+<load_dll filename="C:\WINDOWS\system32\USERENV.dll" successful="1" address="&#x24;76620000" end_address="&#x24;766D6000" size="745472" filename_hash="c7264e1fe77ea0e6d615077dd7cc6cc06aaa02cd"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\comctl32.dll" successful="1" address="&#x24;5D450000" end_address="&#x24;5D4EA000" size="630784" filename_hash="ba126572bcb4ac594a3c37e2ac86db40b173878d"/>
+<load_dll filename="C:\WINDOWS\system32\msctfime.ime" successful="1" address="&#x24;75250000" end_address="&#x24;7527E000" size="188416" filename_hash="434c43fc87679a37aa054c0c18e190ccb39a4439"/>
+<load_dll filename="C:\WINDOWS\system32\appHelp.dll" successful="1" address="&#x24;77B10000" end_address="&#x24;77B32000" size="139264" filename_hash="016ea16586e3c27f4bd43341ba906187a416afe0"/>
+<load_dll filename="C:\WINDOWS\system32\CLBCATQ.DLL" successful="1" address="&#x24;76F90000" end_address="&#x24;7700F000" size="520192" filename_hash="bd0f1633a7d858f27d3fa2bad744b766a1533490"/>
+<load_dll filename="C:\WINDOWS\system32\COMRes.dll" successful="1" address="&#x24;77010000" end_address="&#x24;770E3000" size="864256" filename_hash="eda8c030913d048cda82aeb6066be39e005ce0f1"/>
+<load_dll filename="C:\WINDOWS\System32\cscui.dll" successful="1" address="&#x24;779F0000" end_address="&#x24;77A46000" size="352256" filename_hash="5208f129aa4974e2d7976d5a36e09b9f38869348"/>
+<load_dll filename="C:\WINDOWS\System32\CSCDLL.dll" successful="1" address="&#x24;765A0000" end_address="&#x24;765BD000" size="118784" filename_hash="ef8c7dcf9a12b43bcd2c19a2ad366d65db16e2d5"/>
+<load_dll filename="C:\WINDOWS\system32\themeui.dll" successful="1" address="&#x24;5B9B0000" end_address="&#x24;5BA22000" size="466944" filename_hash="0b9c56f1184de6e775ae176d0d82102d62c721b5"/>
+<load_dll filename="C:\WINDOWS\system32\MSIMG32.dll" successful="1" address="&#x24;76320000" end_address="&#x24;76325000" size="20480" filename_hash="fe7c3659d785b40c1888f9bcf8317b02e925be8e"/>
+<load_dll filename="C:\WINDOWS\system32\xpsp2res.dll" successful="1" address="&#x24;1100000" end_address="&#x24;13D9000" size="2985984" filename_hash="55401355585fac03b5d6991af85abf8db8fc9042"/>
+<load_dll filename="C:\WINDOWS\system32\ACTXPRXY.DLL" successful="1" address="&#x24;71CC0000" end_address="&#x24;71CDB000" size="110592" filename_hash="ec1f4ed9d76d99a9c1d3073a8e351fe0efe03fb5"/>
+<load_dll filename="C:\WINDOWS\system32\msutb.dll" successful="1" address="&#x24;60010000" end_address="&#x24;60043000" size="208896" filename_hash="c0b75de05a02c0cc94b0d1ef5dfee3ae79e212c0"/>
+<load_dll filename="C:\WINDOWS\system32\MSCTF.dll" successful="1" address="&#x24;746A0000" end_address="&#x24;746EC000" size="311296" filename_hash="3c5a241879c49efae60e7d20c81195c0008fc317"/>
+<load_dll filename="C:\WINDOWS\system32\SAMLIB.dll" successful="1" address="&#x24;71B70000" end_address="&#x24;71B83000" size="77824" filename_hash="a1d75237cedc30a45117ba1c2040ddfd9f7bb667"/>
+<load_dll filename="C:\WINDOWS\system32\ieframe.dll" successful="1" address="&#x24;444C0000" end_address="&#x24;44A8D000" size="6082560" filename_hash="4425a987f6efbdd7ba266d0b1475924d6dc08d0b"/>
+<load_dll filename="C:\WINDOWS\system32\PSAPI.DLL" successful="1" address="&#x24;76BB0000" end_address="&#x24;76BBB000" size="45056" filename_hash="b31a80d13c4e9dc5409f43c1b146ed2ff6df3f1b"/>
+<load_dll filename="C:\WINDOWS\system32\urlmon.dll" successful="1" address="&#x24;452E0000" end_address="&#x24;45407000" size="1208320" filename_hash="d1fe6e0c349d546f931a4654415e648f30ed91cb"/>
+<load_dll filename="C:\WINDOWS\system32\LINKINFO.dll" successful="1" address="&#x24;76930000" end_address="&#x24;76938000" size="32768" filename_hash="abbc2b1dc026422d1ae58456a11075e4cf672338"/>
+<load_dll filename="C:\WINDOWS\system32\ntshrui.dll" successful="1" address="&#x24;76940000" end_address="&#x24;76966000" size="155648" filename_hash="590ef8248dce2107930917b15541ed91ba84e185"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<load_dll filename="C:\WINDOWS\system32\mshtml.dll" successful="1" address="&#x24;41BE0000" end_address="&#x24;41F54000" size="3620864" filename_hash="887b3b1e0d2e074d682dd0bd1d8f74d26cd85b82"/>
+<load_dll filename="C:\WINDOWS\system32\msls31.dll" successful="1" address="&#x24;14E0000" end_address="&#x24;1509000" size="167936" filename_hash="b0d2a2897a2fb6a98207be16d0abc06118022eec"/>
+<load_dll filename="C:\WINDOWS\system32\SETUPAPI.dll" successful="1" address="&#x24;778F0000" end_address="&#x24;779E4000" size="999424" filename_hash="8109df4e050264532bb5757e9da4ae12e29b800f"/>
+<load_dll filename="C:\WINDOWS\system32\ws2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<load_dll filename="C:\WINDOWS\system32\WS2HELP.dll" successful="1" address="&#x24;71A00000" end_address="&#x24;71A08000" size="32768" filename_hash="317cc14a94fcf3d10749efbcab330b97f516fffb"/>
+<load_dll filename="C:\WINDOWS\system32\RASAPI32.dll" successful="1" address="&#x24;76EA0000" end_address="&#x24;76EDC000" size="245760" filename_hash="2b764e033d62d37765392a55774c44d8d6e9414f"/>
+<load_dll filename="C:\WINDOWS\system32\rasman.dll" successful="1" address="&#x24;76E50000" end_address="&#x24;76E62000" size="73728" filename_hash="ab8ead1ea84aec88420d0536d67c522080baf1c5"/>
+<load_dll filename="C:\WINDOWS\system32\TAPI32.dll" successful="1" address="&#x24;76E70000" end_address="&#x24;76E9F000" size="192512" filename_hash="dcc43381656ecec8ca33d202a078ed766dce9cbf"/>
+<load_dll filename="C:\WINDOWS\system32\rtutils.dll" successful="1" address="&#x24;76E40000" end_address="&#x24;76E4E000" size="57344" filename_hash="1878db387ed7e53ffd7b8150c26ddaf51560c447"/>
+<load_dll filename="C:\WINDOWS\system32\NETSHELL.dll" successful="1" address="&#x24;763A0000" end_address="&#x24;7654A000" size="1744896" filename_hash="93a40e968c9ff4bbae8397f55db8b291d9e4e0a0"/>
+<load_dll filename="C:\WINDOWS\system32\credui.dll" successful="1" address="&#x24;76BC0000" end_address="&#x24;76BEF000" size="192512" filename_hash="baf29803401d1afd910d365b9f400daf7fe86dd4"/>
+<load_dll filename="C:\WINDOWS\system32\dot3api.dll" successful="1" address="&#x24;5F8F0000" end_address="&#x24;5F8FA000" size="40960" filename_hash="50ad68b8a3450c8bd652a039b6f94045975e4b65"/>
+<load_dll filename="C:\WINDOWS\system32\dot3dlg.dll" successful="1" address="&#x24;71260000" end_address="&#x24;71266000" size="24576" filename_hash="1fab45cb9bcec525d36a32055a0e70f0e0ac94cf"/>
+<load_dll filename="C:\WINDOWS\system32\OneX.DLL" successful="1" address="&#x24;72760000" end_address="&#x24;72788000" size="163840" filename_hash="b2dcff6f357a68abff957dad6444aa43310c533e"/>
+<load_dll filename="C:\WINDOWS\system32\WTSAPI32.dll" successful="1" address="&#x24;76F10000" end_address="&#x24;76F18000" size="32768" filename_hash="61732c75b38443875c53c6019771aaef31791478"/>
+<load_dll filename="C:\WINDOWS\system32\WINSTA.dll" successful="1" address="&#x24;76300000" end_address="&#x24;76310000" size="65536" filename_hash="9bbcf260e84b31f633490d5624e828afaa8d3ff1"/>
+<load_dll filename="C:\WINDOWS\system32\eappcfg.dll" successful="1" address="&#x24;6DB40000" end_address="&#x24;6DB62000" size="139264" filename_hash="16c7ef237d2962d8d6b7e1599651e9df487a0bd0"/>
+<load_dll filename="C:\WINDOWS\system32\MSVCP60.dll" successful="1" address="&#x24;76020000" end_address="&#x24;76085000" size="413696" filename_hash="97f12347bd168fa577527824f71897aff886c999"/>
+<load_dll filename="C:\WINDOWS\system32\eappprxy.dll" successful="1" address="&#x24;47700000" end_address="&#x24;4770E000" size="57344" filename_hash="da67818dfc9999ac37d1d37ab76481ecd58f7c89"/>
+<load_dll filename="C:\WINDOWS\system32\iphlpapi.dll" successful="1" address="&#x24;76D20000" end_address="&#x24;76D39000" size="102400" filename_hash="d1b9eede5a4650dc577abc73d81b948a45a36830"/>
+<load_dll filename="C:\WINDOWS\system32\rsaenh.dll" successful="1" address="&#x24;68000000" end_address="&#x24;68036000" size="221184" filename_hash="8e8dd9db03ed502d915dee9e4f9fd3f10593e27c"/>
+<load_dll filename="C:\WINDOWS\system32\MSISIP.DLL" successful="1" address="&#x24;609F0000" end_address="&#x24;609F7000" size="28672" filename_hash="f2c16fa4c24acb329a27d2eb3da70b290d1d4310"/>
+<load_dll filename="C:\WINDOWS\system32\wshext.dll" successful="1" address="&#x24;7DFD0000" end_address="&#x24;7DFE6000" size="90112" filename_hash="114529da2b634798071b44d31360973f6892a512"/>
+<load_dll filename="C:\WINDOWS\system32\msimtf.dll" successful="1" address="&#x24;74670000" end_address="&#x24;7469A000" size="172032" filename_hash="a2eb2b4a82a5ff168ef7a84e43b9aeadff9ed590"/>
+<load_dll filename="C:\WINDOWS\system32\webcheck.dll" successful="1" address="&#x24;44410000" end_address="&#x24;4444C000" size="245760" filename_hash="6283b477513ef3d3018d6a56a181096ec07e9e33"/>
+<load_dll filename="C:\WINDOWS\system32\stobject.dll" successful="1" address="&#x24;765C0000" end_address="&#x24;765E1000" size="135168" filename_hash="28ab6fcb581d93488b826473ec57b9d9c485efcb"/>
+<load_dll filename="C:\WINDOWS\system32\BatMeter.dll" successful="1" address="&#x24;74A70000" end_address="&#x24;74A7A000" size="40960" filename_hash="187ec7abc2bf87e51681ed5a7f9467e9f55c6029"/>
+<load_dll filename="C:\WINDOWS\system32\POWRPROF.dll" successful="1" address="&#x24;74A50000" end_address="&#x24;74A58000" size="32768" filename_hash="a7d14f0da81b0f10c748936af8c3e93566f92ae5"/>
+<load_dll filename="C:\WINDOWS\system32\WPDShServiceObj.dll" successful="1" address="&#x24;164A0000" end_address="&#x24;164C3000" size="143360" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\WINHTTP.dll" successful="1" address="&#x24;4D5C0000" end_address="&#x24;4D619000" size="364544" filename_hash="6f8b48b950b52b0e9bb3116a9805637c0af9adc3"/>
+<load_dll filename="C:\WINDOWS\system32\mydocs.dll" successful="1" address="&#x24;723A0000" end_address="&#x24;723BA000" size="106496" filename_hash="03de584b1601b98c897768717e4f629a19f87662"/>
+<load_dll filename="C:\WINDOWS\system32\PortableDeviceTypes.dll" successful="1" address="&#x24;109C0000" end_address="&#x24;109EC000" size="180224" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\PortableDeviceApi.dll" successful="1" address="&#x24;10930000" end_address="&#x24;10979000" size="299008" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\msv1_0.dll" successful="1" address="&#x24;77C40000" end_address="&#x24;77C64000" size="147456" filename_hash="96324d866a5f6e83112f9a2f7af8830502c2279c"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+</all_section>
+</thread>
+<thread tid="2656">
+<all_section>
+<create_mutex name="uya-1&#x2B;841ESP__" owned="0"/>
+<create_directory filetype="file" srcfile="c:\RECYCLER" srcfile_hash="hash_error"/>
+<set_file_attributes filetype="file" srcfile="c:\RECYCLER" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="FILE_ATTRIBUTE_HIDDEN FILE_ATTRIBUTE_READONLY FILE_ATTRIBUTE_SYSTEM SECURITY_ANONYMOUS"/>
+<create_directory filetype="file" srcfile="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350" srcfile_hash="hash_error"/>
+<set_file_attributes filetype="file" srcfile="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="FILE_ATTRIBUTE_HIDDEN FILE_ATTRIBUTE_READONLY FILE_ATTRIBUTE_SYSTEM SECURITY_ANONYMOUS"/>
+<create_file filetype="file" srcfile="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\Desktop.ini" srcfile_hash="hash_error" creationdistribution="CREATE_ALWAYS" desiredaccess="FILE_ANY_ACCESS" flags="FILE_ATTRIBUTE_HIDDEN FILE_ATTRIBUTE_SYSTEM SECURITY_ANONYMOUS"/>
+<set_file_attributes filetype="file" srcfile="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<delete_file filetype="file" srcfile="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<copy_file filetype="file" srcfile="c:\ef321636dfa22aa3f31d5505efbd25d2.EX" srcfile_hash="hash_error" dstfile="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe" dstfile_hash="hash_error" creationdistribution="CREATE_ALWAYS" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<create_open_file filetype="file" srcfile="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<sleep milliseconds="10000"/>
+<create_thread targetpid="1660" threadid="2944" address="&#x24;02DB0000" parameteraddress="&#x24;02E10000"/>
+<create_thread targetpid="1660" threadid="2948" address="&#x24;02DA0000" parameteraddress="&#x24;02E10000"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="ircespana.laweb.es" buffer_len="4" successful="1"/>
+<send_socket socket="4294967295" buffer_len="12">
+<dump_line offset="&#x24;0000" dump="50 41 53 53 20 6C 6F 6C 30 6E 0D 0A             " ascii="PASS lol0n.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="13">
+<dump_line offset="&#x24;0000" dump="4E 49 43 4B 20 68 67 76 72 6A 64 0D 0A          " ascii="NICK hgvrjd.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="30">
+<dump_line offset="&#x24;0000" dump="55 53 45 52 20 71 70 74 6C 70 61 20 22 22 20 22 " ascii="USER qptlpa &#x22;&#x22; &#x22;"/>
+<dump_line offset="&#x24;0010" dump="72 71 7A 22 20 3A 71 70 74 6C 70 61 0D 0A       " ascii="rqz&#x22; :qptlpa.."/>
+</send_socket>
+<sleep milliseconds="10000"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="ircespana.laweb.es" buffer_len="4" successful="1"/>
+<send_socket socket="4294967295" buffer_len="12">
+<dump_line offset="&#x24;0000" dump="50 41 53 53 20 6C 6F 6C 30 6E 0D 0A             " ascii="PASS lol0n.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="13">
+<dump_line offset="&#x24;0000" dump="4E 49 43 4B 20 6B 69 66 65 66 76 0D 0A          " ascii="NICK kifefv.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="30">
+<dump_line offset="&#x24;0000" dump="55 53 45 52 20 79 78 73 6A 77 78 20 22 22 20 22 " ascii="USER yxsjwx &#x22;&#x22; &#x22;"/>
+<dump_line offset="&#x24;0010" dump="64 6A 61 22 20 3A 79 78 73 6A 77 78 0D 0A       " ascii="dja&#x22; :yxsjwx.."/>
+</send_socket>
+<sleep milliseconds="10000"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="ircespana.laweb.es" buffer_len="4" successful="1"/>
+<send_socket socket="4294967295" buffer_len="12">
+<dump_line offset="&#x24;0000" dump="50 41 53 53 20 6C 6F 6C 30 6E 0D 0A             " ascii="PASS lol0n.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="13">
+<dump_line offset="&#x24;0000" dump="4E 49 43 4B 20 6C 70 66 79 69 61 0D 0A          " ascii="NICK lpfyia.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="30">
+<dump_line offset="&#x24;0000" dump="55 53 45 52 20 6B 74 75 62 63 68 20 22 22 20 22 " ascii="USER ktubch &#x22;&#x22; &#x22;"/>
+<dump_line offset="&#x24;0010" dump="75 74 74 22 20 3A 6B 74 75 62 63 68 0D 0A       " ascii="utt&#x22; :ktubch.."/>
+</send_socket>
+<sleep milliseconds="10000"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="ircespana.laweb.es" buffer_len="4" successful="1"/>
+<send_socket socket="4294967295" buffer_len="12">
+<dump_line offset="&#x24;0000" dump="50 41 53 53 20 6C 6F 6C 30 6E 0D 0A             " ascii="PASS lol0n.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="13">
+<dump_line offset="&#x24;0000" dump="4E 49 43 4B 20 6E 73 71 77 6A 7A 0D 0A          " ascii="NICK nsqwjz.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="30">
+<dump_line offset="&#x24;0000" dump="55 53 45 52 20 64 7A 72 6F 78 76 20 22 22 20 22 " ascii="USER dzroxv &#x22;&#x22; &#x22;"/>
+<dump_line offset="&#x24;0010" dump="6D 78 66 22 20 3A 64 7A 72 6F 78 76 0D 0A       " ascii="mxf&#x22; :dzroxv.."/>
+</send_socket>
+<sleep milliseconds="10000"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="ircespana.laweb.es" buffer_len="4" successful="1"/>
+<send_socket socket="4294967295" buffer_len="12">
+<dump_line offset="&#x24;0000" dump="50 41 53 53 20 6C 6F 6C 30 6E 0D 0A             " ascii="PASS lol0n.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="13">
+<dump_line offset="&#x24;0000" dump="4E 49 43 4B 20 6E 70 79 6B 78 7A 0D 0A          " ascii="NICK npykxz.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="30">
+<dump_line offset="&#x24;0000" dump="55 53 45 52 20 67 64 6B 67 61 6A 20 22 22 20 22 " ascii="USER gdkgaj &#x22;&#x22; &#x22;"/>
+<dump_line offset="&#x24;0010" dump="6C 62 71 22 20 3A 67 64 6B 67 61 6A 0D 0A       " ascii="lbq&#x22; :gdkgaj.."/>
+</send_socket>
+<sleep milliseconds="10000"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="ircespana.laweb.es" buffer_len="4" successful="1"/>
+<send_socket socket="4294967295" buffer_len="12">
+<dump_line offset="&#x24;0000" dump="50 41 53 53 20 6C 6F 6C 30 6E 0D 0A             " ascii="PASS lol0n.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="13">
+<dump_line offset="&#x24;0000" dump="4E 49 43 4B 20 75 63 6E 71 79 74 0D 0A          " ascii="NICK ucnqyt.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="30">
+<dump_line offset="&#x24;0000" dump="55 53 45 52 20 62 70 6B 73 77 64 20 22 22 20 22 " ascii="USER bpkswd &#x22;&#x22; &#x22;"/>
+<dump_line offset="&#x24;0010" dump="63 77 7A 22 20 3A 62 70 6B 73 77 64 0D 0A       " ascii="cwz&#x22; :bpkswd.."/>
+</send_socket>
+<sleep milliseconds="10000"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="ircespana.laweb.es" buffer_len="4" successful="1"/>
+<send_socket socket="4294967295" buffer_len="12">
+<dump_line offset="&#x24;0000" dump="50 41 53 53 20 6C 6F 6C 30 6E 0D 0A             " ascii="PASS lol0n.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="13">
+<dump_line offset="&#x24;0000" dump="4E 49 43 4B 20 71 78 6B 6C 7A 64 0D 0A          " ascii="NICK qxklzd.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="30">
+<dump_line offset="&#x24;0000" dump="55 53 45 52 20 62 76 6C 61 6B 71 20 22 22 20 22 " ascii="USER bvlakq &#x22;&#x22; &#x22;"/>
+<dump_line offset="&#x24;0010" dump="71 72 68 22 20 3A 62 76 6C 61 6B 71 0D 0A       " ascii="qrh&#x22; :bvlakq.."/>
+</send_socket>
+<sleep milliseconds="10000"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="ircespana.laweb.es" buffer_len="4" successful="1"/>
+<send_socket socket="4294967295" buffer_len="12">
+<dump_line offset="&#x24;0000" dump="50 41 53 53 20 6C 6F 6C 30 6E 0D 0A             " ascii="PASS lol0n.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="13">
+<dump_line offset="&#x24;0000" dump="4E 49 43 4B 20 76 74 68 73 67 66 0D 0A          " ascii="NICK vthsgf.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="30">
+<dump_line offset="&#x24;0000" dump="55 53 45 52 20 77 75 64 78 78 6E 20 22 22 20 22 " ascii="USER wudxxn &#x22;&#x22; &#x22;"/>
+<dump_line offset="&#x24;0010" dump="64 79 64 22 20 3A 77 75 64 78 78 6E 0D 0A       " ascii="dyd&#x22; :wudxxn.."/>
+</send_socket>
+<sleep milliseconds="10000"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="ircespana.laweb.es" buffer_len="4" successful="1"/>
+<send_socket socket="4294967295" buffer_len="12">
+<dump_line offset="&#x24;0000" dump="50 41 53 53 20 6C 6F 6C 30 6E 0D 0A             " ascii="PASS lol0n.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="13">
+<dump_line offset="&#x24;0000" dump="4E 49 43 4B 20 6E 65 68 68 65 65 0D 0A          " ascii="NICK nehhee.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="30">
+<dump_line offset="&#x24;0000" dump="55 53 45 52 20 6C 78 78 71 62 75 20 22 22 20 22 " ascii="USER lxxqbu &#x22;&#x22; &#x22;"/>
+<dump_line offset="&#x24;0010" dump="78 74 62 22 20 3A 6C 78 78 71 62 75 0D 0A       " ascii="xtb&#x22; :lxxqbu.."/>
+</send_socket>
+<sleep milliseconds="10000"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="ircespana.laweb.es" buffer_len="4" successful="1"/>
+<send_socket socket="4294967295" buffer_len="12">
+<dump_line offset="&#x24;0000" dump="50 41 53 53 20 6C 6F 6C 30 6E 0D 0A             " ascii="PASS lol0n.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="13">
+<dump_line offset="&#x24;0000" dump="4E 49 43 4B 20 75 6F 6B 71 75 7A 0D 0A          " ascii="NICK uokquz.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="30">
+<dump_line offset="&#x24;0000" dump="55 53 45 52 20 6B 6D 6E 6D 79 61 20 22 22 20 22 " ascii="USER kmnmya &#x22;&#x22; &#x22;"/>
+<dump_line offset="&#x24;0010" dump="74 73 6E 22 20 3A 6B 6D 6E 6D 79 61 0D 0A       " ascii="tsn&#x22; :kmnmya.."/>
+</send_socket>
+<sleep milliseconds="10000"/>
+<create_open_file filetype="file" srcfile="\Device\RasAcd" srcfile_hash="hash_error" creationdistribution="OPEN_ALWAYS" desiredaccess="FILE_ANY_ACCESS FILE_READ_ACCESS FILE_READ_DATA FILE_LIST_DIRECTORY FILE_WRITE_ACCESS FILE_WRITE_DATA FILE_ADD_FILE" shareaccess="FILE_SHARE_READ FILE_SHARE_WRITE" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<get_host_by_name socket="0" remote_addr="0.0.0.0" hostname="ircespana.laweb.es" buffer_len="4" successful="1"/>
+<send_socket socket="4294967295" buffer_len="12">
+<dump_line offset="&#x24;0000" dump="50 41 53 53 20 6C 6F 6C 30 6E 0D 0A             " ascii="PASS lol0n.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="13">
+<dump_line offset="&#x24;0000" dump="4E 49 43 4B 20 6D 6A 72 73 6C 66 0D 0A          " ascii="NICK mjrslf.."/>
+</send_socket>
+<send_socket socket="4294967295" buffer_len="30">
+<dump_line offset="&#x24;0000" dump="55 53 45 52 20 61 6F 63 6F 79 68 20 22 22 20 22 " ascii="USER aocoyh &#x22;&#x22; &#x22;"/>
+<dump_line offset="&#x24;0010" dump="78 6C 69 22 20 3A 61 6F 63 6F 79 68 0D 0A       " ascii="xli&#x22; :aocoyh.."/>
+</send_socket>
+<sleep milliseconds="10000"/>
+</all_section>
+</thread>
+<thread tid="2944">
+<all_section>
+<create_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<set_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;" value="StubPath" data="c:\RECYCLER\S-1-5-21-1254416572-1263425100-317347820-0350\system.exe"/>
+<open_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components"/>
+<delete_key key="HKEY_CURRENT_USER\Software\Microsoft\Active Setup\Installed Components\&#x7B;99ESP9C2-4FED-15CF-AAE5-62CB5F2X4512&#x7D;"/>
+<sleep milliseconds="2000"/>
+</all_section>
+</thread>
+<thread tid="2948">
+<all_section>
+<sleep milliseconds="10000"/>
+</all_section>
+</thread>
+</process>
+<process index="4" pid="944" filename="C:\WINDOWS\system32\svchost.exe" filename_hash="49083ae3725a0488e0a8fbbe1335c745f70c4667" filesize="14336" md5="4fbc75b74479c7a6f829e0ca19df3366" sha1="97c7c354c12b89c797740b35ed81879be58f3deb" username="SYSTEM" parentindex="0" starttime="00:08.562" terminationtime="02:01.796" startreason="DCOMService" terminationreason="Timeout" executionstatus="OK">
+<thread tid="2924">
+<all_section>
+<load_image filename="C:\WINDOWS\system32\svchost.exe" successful="1" address="&#x24;1000000" end_address="&#x24;1006000" size="24576" filename_hash="49083ae3725a0488e0a8fbbe1335c745f70c4667"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\ShimEng.dll" successful="1" address="&#x24;5CF00000" end_address="&#x24;5CF26000" size="155648" filename_hash="2ab219118ae324684eb7aaaf72eb4d9360ade81f"/>
+<load_dll filename="C:\WINDOWS\AppPatch\AcGenral.DLL" successful="1" address="&#x24;6FD90000" end_address="&#x24;6FF5A000" size="1875968" filename_hash="d28c378f459fafa7367649554b729a80b3924aad"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\WINMM.dll" successful="1" address="&#x24;76AF0000" end_address="&#x24;76B1E000" size="188416" filename_hash="51f42782acdc790e4cabf402d71ef0fe24f9ad1b"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\OLEAUT32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\MSACM32.dll" successful="1" address="&#x24;77BB0000" end_address="&#x24;77BC5000" size="86016" filename_hash="9be8c8a0ce2316feff5783efbe259bb1f6334a63"/>
+<load_dll filename="C:\WINDOWS\system32\VERSION.dll" successful="1" address="&#x24;77BD0000" end_address="&#x24;77BD8000" size="32768" filename_hash="adf263b658136ccb3cde72d0e6dd634c5a5e5143"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<load_dll filename="C:\WINDOWS\system32\USERENV.dll" successful="1" address="&#x24;76620000" end_address="&#x24;766D6000" size="745472" filename_hash="c7264e1fe77ea0e6d615077dd7cc6cc06aaa02cd"/>
+<load_dll filename="C:\WINDOWS\system32\UxTheme.dll" successful="1" address="&#x24;5B0F0000" end_address="&#x24;5B128000" size="229376" filename_hash="16c4d24a172bfbc67f488d6b4086b9e10f8eaf4b"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\" successful="1" address="&#x24;773A0000" end_address="&#x24;774A3000" size="1060864" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\comctl32.dll" successful="1" address="&#x24;5D450000" end_address="&#x24;5D4EA000" size="630784" filename_hash="ba126572bcb4ac594a3c37e2ac86db40b173878d"/>
+<load_dll filename="C:\WINDOWS\system32\NTMARTA.DLL" successful="1" address="&#x24;77660000" end_address="&#x24;77681000" size="135168" filename_hash="7e2ea4d88645138e5edb646157fd702c347bb53a"/>
+<load_dll filename="C:\WINDOWS\system32\SAMLIB.dll" successful="1" address="&#x24;71B70000" end_address="&#x24;71B83000" size="77824" filename_hash="a1d75237cedc30a45117ba1c2040ddfd9f7bb667"/>
+<load_dll filename="C:\WINDOWS\system32\WLDAP32.dll" successful="1" address="&#x24;76F20000" end_address="&#x24;76F4D000" size="184320" filename_hash="03269df70bc4ff939f87ef528f8a5fcf2a708624"/>
+<load_dll filename="c:\windows\system32\rpcss.dll" successful="1" address="&#x24;76A30000" end_address="&#x24;76A94000" size="409600" filename_hash="7391155a9976797c2072e013fa3c38197b268de7"/>
+<load_dll filename="c:\windows\system32\WS2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<load_dll filename="c:\windows\system32\WS2HELP.dll" successful="1" address="&#x24;71A00000" end_address="&#x24;71A08000" size="32768" filename_hash="317cc14a94fcf3d10749efbcab330b97f516fffb"/>
+<load_dll filename="C:\WINDOWS\system32\xpsp2res.dll" successful="1" address="&#x24;630000" end_address="&#x24;909000" size="2985984" filename_hash="55401355585fac03b5d6991af85abf8db8fc9042"/>
+<load_dll filename="C:\WINDOWS\system32\CLBCATQ.DLL" successful="1" address="&#x24;76F90000" end_address="&#x24;7700F000" size="520192" filename_hash="bd0f1633a7d858f27d3fa2bad744b766a1533490"/>
+<load_dll filename="C:\WINDOWS\system32\COMRes.dll" successful="1" address="&#x24;77010000" end_address="&#x24;770E3000" size="864256" filename_hash="eda8c030913d048cda82aeb6066be39e005ce0f1"/>
+<load_dll filename="c:\windows\system32\termsrv.dll" successful="1" address="&#x24;761D0000" end_address="&#x24;76224000" size="344064" filename_hash="86773aed393573d4bd59481185910bbaaf85790f"/>
+<load_dll filename="c:\windows\system32\ICAAPI.dll" successful="1" address="&#x24;74EF0000" end_address="&#x24;74EF6000" size="24576" filename_hash="166e7e5c0064c63fb4516303b879d1c83b69cf2a"/>
+<load_dll filename="c:\windows\system32\SETUPAPI.dll" successful="1" address="&#x24;778F0000" end_address="&#x24;779E4000" size="999424" filename_hash="8109df4e050264532bb5757e9da4ae12e29b800f"/>
+<load_dll filename="C:\WINDOWS\system32\WINTRUST.dll" successful="1" address="&#x24;76BF0000" end_address="&#x24;76C1E000" size="188416" filename_hash="7bda19c92848a811077f780f569c0593d14b2a92"/>
+<load_dll filename="C:\WINDOWS\system32\CRYPT32.dll" successful="1" address="&#x24;77A50000" end_address="&#x24;77AE6000" size="614400" filename_hash="3127dbe44b75c673c24f9ad63675ff91cd9c6321"/>
+<load_dll filename="C:\WINDOWS\system32\MSASN1.dll" successful="1" address="&#x24;77AF0000" end_address="&#x24;77B02000" size="73728" filename_hash="e3b7e1519f060e76b7e5579c1974e6260bcdb324"/>
+<load_dll filename="C:\WINDOWS\system32\IMAGEHLP.dll" successful="1" address="&#x24;76C50000" end_address="&#x24;76C78000" size="163840" filename_hash="2eaa144578f2beb69da027ca0e15445c98a95607"/>
+<load_dll filename="c:\windows\system32\AUTHZ.dll" successful="1" address="&#x24;77690000" end_address="&#x24;776A2000" size="73728" filename_hash="36977fd1a696a3c3b974d2147d23425f7b0e6bec"/>
+<load_dll filename="c:\windows\system32\mstlsapi.dll" successful="1" address="&#x24;75090000" end_address="&#x24;750AF000" size="126976" filename_hash="a88f24cb797bb85aba9ea841103faae3677188a7"/>
+<load_dll filename="c:\windows\system32\ACTIVEDS.dll" successful="1" address="&#x24;77C90000" end_address="&#x24;77CC2000" size="204800" filename_hash="71dde7dea4019ab631fe85a31149a494363b7bdc"/>
+<load_dll filename="c:\windows\system32\adsldpc.dll" successful="1" address="&#x24;76DD0000" end_address="&#x24;76DF5000" size="151552" filename_hash="1e272578a29b1c2ed7a013266ca50343a560fa2d"/>
+<load_dll filename="C:\WINDOWS\system32\NETAPI32.dll" successful="1" address="&#x24;597D0000" end_address="&#x24;59825000" size="348160" filename_hash="5e935f90226ff224936edf449f925b647b535917"/>
+<load_dll filename="c:\windows\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<load_dll filename="C:\WINDOWS\system32\REGAPI.dll" successful="1" address="&#x24;76B70000" end_address="&#x24;76B7F000" size="61440" filename_hash="0b43cc40011a36366d3490973e82bcd162bb93da"/>
+<load_dll filename="C:\WINDOWS\system32\rsaenh.dll" successful="1" address="&#x24;68000000" end_address="&#x24;68036000" size="221184" filename_hash="8e8dd9db03ed502d915dee9e4f9fd3f10593e27c"/>
+<load_dll filename="C:\WINDOWS\system32\Apphelp.dll" successful="1" address="&#x24;77B10000" end_address="&#x24;77B32000" size="139264" filename_hash="016ea16586e3c27f4bd43341ba906187a416afe0"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+</all_section>
+</thread>
+</process>
+<process index="5" pid="756" filename="C:\WINDOWS\system32\services.exe" filename_hash="de3701d2c03d9ae29b2d87eccafbbcadf1bfb7e3" filesize="111104" md5="a3edbe9053889fb24ab22492472b39dc" sha1="7153d4d113c47379fb57aad4918a2f2a64f0c9ee" username="SYSTEM" parentindex="0" starttime="00:41.250" terminationtime="02:01.781" startreason="SCM" terminationreason="Timeout" executionstatus="OK">
+</process>
+</processes>

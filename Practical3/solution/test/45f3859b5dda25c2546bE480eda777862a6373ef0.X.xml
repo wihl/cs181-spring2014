@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<processes>
+<process index="1" pid="164" filename="c:\7f113bc62d32ed8e7584118145bb7993.EX" filename_hash="hash_error" filesize="57725" md5="7f113bc62d32ed8e7584118145bb7993" sha1="45f3859b5dda25c2546b480eda777862a6373ef0" username="Administrator" parentindex="0" starttime="00:01.984" terminationtime="00:04.391" startreason="AnalysisTarget" terminationreason="NormalTermination" executionstatus="OK" applicationtype="Win32Application">
+<thread tid="184">
+<all_section>
+<load_image filename="c:\7f113bc62d32ed8e7584118145bb7993.EX" successful="1" address="&#x24;400000" end_address="&#x24;40E000" size="57344" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\MSVCRT.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\MSVCP60.dll" successful="1" address="&#x24;76020000" end_address="&#x24;76085000" size="413696" filename_hash="97f12347bd168fa577527824f71897aff886c999"/>
+<load_dll filename="C:\WINDOWS\system32\user32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\advapi32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<load_dll filename="C:\WINDOWS\system32\advapi32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<open_mutex name="kernel32.dll" owned="1"/>
+<create_mutex name="kernel32.dll" owned="0"/>
+<create_process commandline="c:\7f113bc62d32ed8e7584118145bb7993.EX" targetpid="1252" creationflags="CREATE_SUSPENDED" showwindow="SW_HIDE" apifunction="CreateProcessA" successful="1"/>
+<vm_read targetpid="1252" address="&#x24;7FFD4008" size="4"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;00400000" address="&#x24;00400000" wantedsize="57344" size="57344" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="c:\7f113bc62d32ed8e7584118145bb7993.ex.&#x24;0"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7FFD4008" address="&#x24;7FFD4000" wantedsize="4" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7FFD4000" address="&#x24;7FFD4000" wantedsize="4096" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="PEB"/>
+<vm_write targetpid="1252" address="&#x24;7FFD4008" size="4" behavior="Normal"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;00400000" address="&#x24;00400000" wantedsize="36864" size="36864" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="c:\7f113bc62d32ed8e7584118145bb7993.ex.&#x24;0"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;00400000" address="&#x24;00400000" wantedsize="36864" size="36864" protect="PAGE_EXECUTE_WRITECOPY" behavior="Normal" target="c:\7f113bc62d32ed8e7584118145bb7993.ex.&#x24;0"/>
+<vm_write targetpid="1252" address="&#x24;00400000" size="36864" behavior="Normal"/>
+<set_thread_context targetpid="1252" threadid="1528" address="&#x24;7C810705"/>
+<kill_process targetpid="164" apifunction="NtTerminateProcess"/>
+</all_section>
+</thread>
+</process>
+<process index="2" pid="1252" filename="c:\7f113bc62d32ed8e7584118145bb7993.EX" filename_hash="hash_error" filesize="57725" md5="7f113bc62d32ed8e7584118145bb7993" sha1="45f3859b5dda25c2546b480eda777862a6373ef0" username="Administrator" parentindex="1" starttime="00:03.953" terminationtime="00:11.844" startreason="CreateProcess" terminationreason="NormalTermination" executionstatus="OK">
+<thread tid="1528">
+<all_section>
+<load_image filename="c:\7f113bc62d32ed8e7584118145bb7993.EX" successful="1" address="&#x24;400000" end_address="&#x24;409000" size="36864" filename_hash="hash_error"/>
+<load_dll filename="C:\WINDOWS\system32\ntdll.dll" successful="1" address="&#x24;7C910000" end_address="&#x24;7C9C9000" size="757760" filename_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\RPCRT4.dll" successful="1" address="&#x24;77E50000" end_address="&#x24;77EE2000" size="598016" filename_hash="f3bb6474ec18ee9cccc02ef44510a78b42058a41"/>
+<load_dll filename="C:\WINDOWS\system32\Secur32.dll" successful="1" address="&#x24;77FC0000" end_address="&#x24;77FD1000" size="69632" filename_hash="31166d1e35a911a082149f5efac2dac228109615"/>
+<load_dll filename="C:\WINDOWS\system32\oleaut32.dll" successful="1" address="&#x24;770F0000" end_address="&#x24;7717B000" size="569344" filename_hash="3168a173d177f470928b468db777640861dcb32e"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\ole32.dll" successful="1" address="&#x24;774B0000" end_address="&#x24;775ED000" size="1298432" filename_hash="c7753525d5276ab92a01a8a3c39cfb5269da7f98"/>
+<load_dll filename="C:\WINDOWS\system32\pstorec.dll" successful="1" address="&#x24;5E490000" end_address="&#x24;5E49D000" size="53248" filename_hash="8ae378a352c4a13516bf1fe5a8615d8893d2ff2d"/>
+<load_dll filename="C:\WINDOWS\system32\ATL.DLL" successful="1" address="&#x24;76AD0000" end_address="&#x24;76AE1000" size="69632" filename_hash="59cb82f432d529da3e81b030b2365c22a95fd35a"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7E6F11E0" address="&#x24;7E6F1000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteA"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7E765D48" address="&#x24;7E765000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteW"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7E6B996B" address="&#x24;7E6B9000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteExW"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7E6F0EB5" address="&#x24;7E6F0000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.ShellExecuteEx"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7E77410F" address="&#x24;7E774000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="SHELL32.dll.SHLoadInProc"/>
+<load_dll filename="C:\WINDOWS\system32\IMM32.DLL" successful="1" address="&#x24;76330000" end_address="&#x24;7634D000" size="118784" filename_hash="f9be7678080084bc3cb48d0cb64bba9ba98800f1"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<create_thread targetpid="1252" threadid="840" address="&#x24;77DC848A" parameteraddress="&#x24;00000000"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;44200BCA" address="&#x24;44200000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetOpenUrlA"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;44200BCA" address="&#x24;44200000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetOpenUrlA"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;4424AF69" address="&#x24;4424A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetOpenUrlW"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;4424AF69" address="&#x24;4424A000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetOpenUrlW"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;441F4321" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.HttpOpenRequestA"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;441F4321" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.HttpOpenRequestA"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;441F5D42" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.HttpOpenRequestW"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;441F5D42" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.HttpOpenRequestW"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;441F497A" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetConnectA"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;441F497A" address="&#x24;441F4000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetConnectA"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;441F5B68" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READWRITE" behavior="Normal" target="WININET.dll.InternetConnectW"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;441F5B68" address="&#x24;441F5000" wantedsize="8" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="WININET.dll.InternetConnectW"/>
+<load_dll filename="C:\WINDOWS\system32\WININET.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<load_dll filename="C:\WINDOWS\system32\WS2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<load_dll filename="C:\WINDOWS\system32\kernel32.dll" successful="1" address="&#x24;7C800000" end_address="&#x24;7C908000" size="1081344" filename_hash="c88d57cc99f75cd928b47b6e444231f26670138f"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<load_dll filename="C:\WINDOWS\system32\GDI32.dll" successful="1" address="&#x24;77EF0000" end_address="&#x24;77F39000" size="299008" filename_hash="0f37018f672c7635691f7317ade3c5a63904ec96"/>
+<load_dll filename="C:\WINDOWS\system32\msvcrt.dll" successful="1" address="&#x24;77BE0000" end_address="&#x24;77C38000" size="360448" filename_hash="70d5f97088cc9348bb9d10098af0738a696b96de"/>
+<load_dll filename="C:\WINDOWS\system32\SHELL32.dll" successful="1" address="&#x24;7E670000" end_address="&#x24;7EE91000" size="8523776" filename_hash="bbe9d57955e5d348e664b72faf331a7b9d722d0c"/>
+<load_dll filename="C:\WINDOWS\system32\SHLWAPI.dll" successful="1" address="&#x24;77F40000" end_address="&#x24;77FB6000" size="483328" filename_hash="a9245beec2e139b31cd3b65e0f0e4804c030e639"/>
+<load_dll filename="C:\WINDOWS\system32\USER32.dll" successful="1" address="&#x24;7E360000" end_address="&#x24;7E3F1000" size="593920" filename_hash="08fe9ff1fe9b8fd237adedb10d65fb0447b91fe5"/>
+<load_dll filename="C:\WINDOWS\system32\WININET.dll" successful="1" address="&#x24;441E0000" end_address="&#x24;442B0000" size="851968" filename_hash="b076c231d541b2dd6665f7040a4695bf12d54e7e"/>
+<load_dll filename="C:\WINDOWS\system32\WS2_32.dll" successful="1" address="&#x24;71A10000" end_address="&#x24;71A27000" size="94208" filename_hash="7cf3366c68e402eb3678046fe97651a586044560"/>
+<get_system_directory/>
+<get_file_attributes filetype="file" srcfile="C:\WINDOWS\" srcfile_hash="hash_error" desiredaccess="FILE_ANY_ACCESS" flags="SECURITY_ANONYMOUS"/>
+<open_key key="HKEY_LOCAL_MACHINE\Software\Microsoft\Advanced INF Setup"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Advanced INF Setup" value="AdvpackLogFile"/>
+<load_dll filename="C:\WINDOWS\system32\advpack.dll" successful="1" address="&#x24;44490000" end_address="&#x24;444BE000" size="188416" filename_hash="1e151fc79b6ea30bb405e159a398f5df7d7c86de"/>
+<load_dll filename="C:\WINDOWS\system32\ADVAPI32.dll" successful="1" address="&#x24;77DA0000" end_address="&#x24;77E4A000" size="696320" filename_hash="ea2e9bac1789b53d7efcd675a63f4a2b44898439"/>
+<open_file filetype="file" srcfile="c:\7f113bc62d32ed8e7584118145bb7993.EX" srcfile_hash="hash_error" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="FILE_ATTRIBUTE_NORMAL SECURITY_ANONYMOUS"/>
+<enum_processes apifunction="Process32First"/>
+<get_system_directory/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\kernel32.dll" srcfile_hash="c88d57cc99f75cd928b47b6e444231f26670138f" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C809B12" address="&#x24;7C809000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="KERNEL32.dll.VirtualAllocEx"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C809B12" address="&#x24;7C809000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="KERNEL32.dll.VirtualAllocEx"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C801A61" address="&#x24;7C801000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="KERNEL32.dll.VirtualProtectEx"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C801A61" address="&#x24;7C801000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="KERNEL32.dll.VirtualProtectEx"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C801AD4" address="&#x24;7C801000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="KERNEL32.dll.VirtualProtect"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C801AD4" address="&#x24;7C801000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="KERNEL32.dll.VirtualProtect"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C802213" address="&#x24;7C802000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="KERNEL32.dll.WriteProcessMemory"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C802213" address="&#x24;7C802000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="KERNEL32.dll.WriteProcessMemory"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C8104CC" address="&#x24;7C810000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="KERNEL32.dll.CreateRemoteThread"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C8104CC" address="&#x24;7C810000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="KERNEL32.dll.CreateRemoteThread"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C802336" address="&#x24;7C802000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="KERNEL32.dll.CreateProcessW"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C802336" address="&#x24;7C802000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="KERNEL32.dll.CreateProcessW"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C80236B" address="&#x24;7C802000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="KERNEL32.dll.CreateProcessA"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C80236B" address="&#x24;7C802000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="KERNEL32.dll.CreateProcessA"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C81CB12" address="&#x24;7C81C000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="KERNEL32.dll.ExitProcess"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C81CB12" address="&#x24;7C81C000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="KERNEL32.dll.ExitProcess"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C80AE40" address="&#x24;7C80A000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="KERNEL32.dll.GetProcAddress"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C80AE40" address="&#x24;7C80A000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="KERNEL32.dll.GetProcAddress"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C801AF5" address="&#x24;7C801000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="KERNEL32.dll.LoadLibraryExW"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C801AF5" address="&#x24;7C801000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="KERNEL32.dll.LoadLibraryExW"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C801D53" address="&#x24;7C801000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="KERNEL32.dll.LoadLibraryExA"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C801D53" address="&#x24;7C801000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="KERNEL32.dll.LoadLibraryExA"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C80AEEB" address="&#x24;7C80A000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="KERNEL32.dll.LoadLibraryW"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C80AEEB" address="&#x24;7C80A000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="KERNEL32.dll.LoadLibraryW"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C801D7B" address="&#x24;7C801000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="KERNEL32.dll.LoadLibraryA"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C801D7B" address="&#x24;7C801000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="KERNEL32.dll.LoadLibraryA"/>
+<get_system_directory/>
+<open_file filetype="file" srcfile="C:\WINDOWS\system32\ntdll.dll" srcfile_hash="e753d19a2e3b98b2b3b8f02f276092096d10f22d" creationdistribution="OPEN_EXISTING" desiredaccess="FILE_ANY_ACCESS" shareaccess="FILE_SHARE_READ" flags="SECURITY_ANONYMOUS"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C9263C3" address="&#x24;7C926000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="ntdll.dll.LdrLoadDll"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C9263C3" address="&#x24;7C926000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="ntdll.dll.LdrLoadDll"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C91D1AE" address="&#x24;7C91D000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="ntdll.dll.ZwCreateThread"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C91D1AE" address="&#x24;7C91D000" wantedsize="12" size="4096" protect="PAGE_EXECUTE_READ" behavior="Normal" target="ntdll.dll.ZwCreateThread"/>
+<vm_protect targetpid="1252" wantedaddress="&#x24;7C91D6EE" address="&#x24;7C91D000" wantedsize="12" size="4096" protect="PAGE_READWRITE" behavior="Normal" target="ntdll.dll.ZwProtectVirtualMemory"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components"/>
+<enum_keys key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x3C;&#x7B;12d0ed0d-0ee0-4f90-8827-78cefb8f4988&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x3C;&#x7B;12d0ed0d-0ee0-4f90-8827-78cefb8f4988&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x3E;&#x7B;22d6f312-b0f6-11d0-94ab-0080c74c7e95&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x3E;&#x7B;22d6f312-b0f6-11d0-94ab-0080c74c7e95&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x3E;&#x7B;26923b43-4d38-484f-9b9e-de460746276c&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x3E;&#x7B;26923b43-4d38-484f-9b9e-de460746276c&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x3E;&#x7B;60B49E34-C7CC-11D0-8953-00A0C90347FF&#x7D;MICROS"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x3E;&#x7B;60B49E34-C7CC-11D0-8953-00A0C90347FF&#x7D;MICROS" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;10072CEC-8CC1-11D1-986E-00A0C955B42F&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;10072CEC-8CC1-11D1-986E-00A0C955B42F&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;2179C5D3-EBFF-11CF-B6FD-00AA00B4E220&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;2179C5D3-EBFF-11CF-B6FD-00AA00B4E220&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;22d6f312-b0f6-11d0-94ab-0080c74c7e95&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;22d6f312-b0f6-11d0-94ab-0080c74c7e95&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;283807B5-2C60-11D0-A31D-00AA00B92C03&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;283807B5-2C60-11D0-A31D-00AA00B92C03&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;2C7339CF-2B09-4501-B3F3-F3508C9228ED&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;2C7339CF-2B09-4501-B3F3-F3508C9228ED&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;36f8ec70-c29a-11d1-b5c7-0000f8051515&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;36f8ec70-c29a-11d1-b5c7-0000f8051515&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;3af36230-a269-11d1-b5bf-0000f8051515&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;3af36230-a269-11d1-b5bf-0000f8051515&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;3bf42070-b3b1-11d1-b5c5-0000f8051515&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;3bf42070-b3b1-11d1-b5c5-0000f8051515&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;4278c270-a269-11d1-b5bf-0000f8051515&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;4278c270-a269-11d1-b5bf-0000f8051515&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;44BBA840-CC51-11CF-AAFA-00AA00B6015C&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;44BBA840-CC51-11CF-AAFA-00AA00B6015C&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;44BBA842-CC51-11CF-AAFA-00AA00B6015B&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;44BBA842-CC51-11CF-AAFA-00AA00B6015B&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;44BBA848-CC51-11CF-AAFA-00AA00B6015C&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;44BBA848-CC51-11CF-AAFA-00AA00B6015C&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;44BBA855-CC51-11CF-AAFA-00AA00B6015F&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;44BBA855-CC51-11CF-AAFA-00AA00B6015F&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;45ea75a0-a269-11d1-b5bf-0000f8051515&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;45ea75a0-a269-11d1-b5bf-0000f8051515&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;4f216970-c90c-11d1-b5c7-0000f8051515&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;4f216970-c90c-11d1-b5c7-0000f8051515&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;4f645220-306d-11d2-995d-00c04f98bbc9&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;4f645220-306d-11d2-995d-00c04f98bbc9&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;5056b317-8d4c-43ee-8543-b9d1e234b8f4&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;5056b317-8d4c-43ee-8543-b9d1e234b8f4&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;5945c046-1e7d-11d1-bc44-00c04fd912be&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;5945c046-1e7d-11d1-bc44-00c04fd912be&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;5A8D6EE0-3E18-11D0-821E-444553540000&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;5A8D6EE0-3E18-11D0-821E-444553540000&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;5fd399c0-a70a-11d1-9948-00c04f98bbc9&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;5fd399c0-a70a-11d1-9948-00c04f98bbc9&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;630b1da0-b465-11d1-9948-00c04f98bbc9&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;630b1da0-b465-11d1-9948-00c04f98bbc9&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;6BF52A52-394A-11d3-B153-00C04F79FAA6&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;6BF52A52-394A-11d3-B153-00C04F79FAA6&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;6fab99d0-bab8-11d1-994a-00c04f98bbc9&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;6fab99d0-bab8-11d1-994a-00c04f98bbc9&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;7131646D-CD3C-40F4-97B9-CD9E4E6262EF&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;7131646D-CD3C-40F4-97B9-CD9E4E6262EF&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;7790769C-0471-11d2-AF11-00C04FA35D02&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;7790769C-0471-11d2-AF11-00C04FA35D02&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;8937FCB2-2FC6-4FC3-9FB5-DE2C92DB9C38&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;8937FCB2-2FC6-4FC3-9FB5-DE2C92DB9C38&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;89820200-ECBD-11cf-8B85-00AA005B4340&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;89820200-ECBD-11cf-8B85-00AA005B4340&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;89820200-ECBD-11cf-8B85-00AA005B4383&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;89820200-ECBD-11cf-8B85-00AA005B4383&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;89B4C1CD-B018-4511-B0A1-5476DBF70820&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;89B4C1CD-B018-4511-B0A1-5476DBF70820&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;9381D8F2-0288-11D0-9501-00AA00B911A5&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;9381D8F2-0288-11D0-9501-00AA00B911A5&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;ACC563BC-4266-43f0-B6ED-9D38C4202C7E&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;ACC563BC-4266-43f0-B6ED-9D38C4202C7E&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;C9E9A340-D1F1-11D0-821E-444553540600&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;C9E9A340-D1F1-11D0-821E-444553540600&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;CC2A9BA0-3BDD-11D0-821E-444553540000&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;CC2A9BA0-3BDD-11D0-821E-444553540000&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;CDD7975E-60F8-41d5-8149-19E51D6F71D0&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;CDD7975E-60F8-41d5-8149-19E51D6F71D0&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;D27CDB6E-AE6D-11cf-96B8-444553540000&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;D27CDB6E-AE6D-11cf-96B8-444553540000&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;de5aed00-a4bf-11d1-9948-00c04f98bbc9&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;de5aed00-a4bf-11d1-9948-00c04f98bbc9&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;E92B03AB-B707-11d2-9CBD-0000F87A369E&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;E92B03AB-B707-11d2-9CBD-0000F87A369E&#x7D;" value="stubpath"/>
+<open_key key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;EF289A85-8E57-408d-BE47-73B55609861A&#x7D;"/>
+<query_value key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\&#x7B;EF289A85-8E57-408d-BE47-73B55609861A&#x7D;" value="stubpath"/>
+<enum_processes apifunction="Process32First"/>
+<open_process targetpid="1668" desiredaccess="PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION" apifunction="NtOpenProcess" successful="1"/>
+<vm_allocate targetpid="1668" wantedaddress="&#x24;00000000" address="&#x24;7FFA0000" wantedsize="26112" size="28672" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_TOP_DOWN"/>
+<sleep milliseconds="50"/>
+<vm_allocate targetpid="1668" wantedaddress="&#x24;00000000" address="&#x24;7FF90000" wantedsize="863" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_TOP_DOWN"/>
+<sleep milliseconds="50"/>
+<vm_allocate targetpid="1668" wantedaddress="&#x24;00000000" address="&#x24;7FF80000" wantedsize="3944" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_TOP_DOWN"/>
+<sleep milliseconds="50"/>
+<vm_allocate targetpid="1668" wantedaddress="&#x24;00000000" address="&#x24;7FF70000" wantedsize="28" size="4096" protect="PAGE_EXECUTE_READWRITE" allocationtype="MEM_COMMIT MEM_TOP_DOWN"/>
+<sleep milliseconds="50"/>
+<vm_allocate targetpid="1668" wantedaddress="&#x24;00000000" address="&#x24;02A30000" wantedsize="1048576" size="1048576" protect="PAGE_READWRITE" allocationtype="MEM_RESERVE"/>
+<vm_allocate targetpid="1668" wantedaddress="&#x24;02B1F000" address="&#x24;02B1F000" wantedsize="69632" size="69632" protect="PAGE_READWRITE" allocationtype="MEM_COMMIT"/>
+<kill_process targetpid="1252" apifunction="NtTerminateProcess"/>
+</all_section>
+</thread>
+</process>
+</processes>
