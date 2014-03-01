@@ -1,0 +1,26 @@
+Overall Code layout:
+
+Repeat
+  part a: vectorize. Add one feature at a time
+
+  for each classifier:
+	for each fold in CV set (use 5 to 10):
+		run classify
+	measure and log total error rate
+Until we get good scores
+
+Select winning combination of feature vector and classifier. Run against test data. Check for overfitting.
+If possibly overfit, submit two different algorithms.
+
+
+Data layout:
+
+Current XML hierarchy:
++Process
+	- bunch of attributes (index, username, executionStatus...)
+	+ Thread
+	  +all_section
+	    API calls w/attributes (e.g. load_dll, open_key)
+
+Flatten to single table consisting of:
+API Call, API seq, pid, process-attr, thread-id, thread-attrs, API call attributes

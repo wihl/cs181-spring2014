@@ -15,19 +15,6 @@ TODO:
 
 . Does the dataset distribution frequency match the provided numbers?
 
-Overall Code layout:
-
-Repeat
-  part a: vectorize. Add one feature at a time
-
-  for each classifier:
-	for each fold in CV set (use 5 to 10):
-		run classify
-	measure and log total error rate
-Until we get good scores
-
-Select winning combination of feature vector and classifier. Run against test data. Check for overfitting.
-If possibly overfit, submit two different algorithms.
 
 Classification Alternatives:
 
@@ -42,9 +29,6 @@ Classification Alternatives:
 Challenges / Open Questions:
 . how to determine confidence when classifier's output is binary? 
 . use just accuracy for overall measurement, but might use confusion matrix for analysis
-. how to to model the *sequence* of system calls? How important is it?
-. how to flatten the hierarchical nature of the data?
-   . sparse arrays?
 . should classification rates be normalized? See [1]
 . vectorized output should be in YAML format for rapid reading and potential use by Theano
 . maybe use AWS to do the vectorize runs (which will be slow on my machine)
