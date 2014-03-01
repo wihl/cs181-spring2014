@@ -1,0 +1,56 @@
+Problem statement:
+skewed (aka unbalanced) multi class classification
+
+only measured on accuracy, not F1 score. As baseline, mark all as None and get 52% accurate.
+Would be a very corrupt machine if 48% of EXEs has viruses!
+
+The higher the accuracy, the better the score, up to 100%. Basically assume it is None unless one
+of the single item classifiers reports a reasonable score.
+
+Output is an integer 0-14 following a specific order (see Problem Description).
+
+TODO:
+
+. Preliminary data analsys: number of different system calls and arguments, and their call frequency.
+
+. Does the dataset distribution frequency match the provided numbers?
+
+Overall Code layout:
+
+Repeat
+  part a: vectorize. Add one feature at a time
+
+  for each classifier:
+	for each fold in CV set (use 5 to 10):
+		run classify
+	measure and log total error rate
+Until we get good scores
+
+Select winning combination of feature vector and classifier. Run against test data. Check for overfitting.
+If possibly overfit, submit two different algorithms.
+
+Classification Alternatives:
+
+1: basic multi-class logistic regression (see warmup)
+
+2: one class SVM
+
+3: Exemplar SVM
+
+4: Deep Learning / neural net / pylearn2
+
+Challenges / Open Questions:
+. how to determine confidence when classifier's output is binary? 
+. use just accuracy for overall measurement, but might use confusion matrix for analysis
+. how to to model the *sequence* of system calls? How important is it?
+. how to flatten the hierarchical nature of the data?
+   . sparse arrays?
+. should classification rates be normalized? See [1]
+. vectorized output should be in YAML format for rapid reading and potential use by Theano
+. maybe use AWS to do the vectorize runs (which will be slow on my machine)
+. is this like outlier detection?
+. spend a little time figuring out how others have applied ML to virus detection
+
+Background reading:
+
+
