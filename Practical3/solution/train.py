@@ -1,10 +1,3 @@
-'''
-  vectorize
-  Take one or more source XML files, extract features and write to a YAML file
-'''
-
-
-
 
 import os
 from collections import Counter
@@ -15,7 +8,6 @@ except ImportError:
 import numpy as np
 from scipy import sparse
 import yaml
-
 
 import util
 
@@ -60,26 +52,7 @@ def extract_feats(ffs, direc="train", global_feat_dict=None):
         [rowfd.update(ff(tree)) for ff in ffs]
         fds.append(rowfd)
         
-
     X,feat_dict = make_design_mat(fds,global_feat_dict)
-
-
-    # write out vectorized result
-    # see http://stackoverflow.com/questions/8955448/save-load-scipy-sparse-csr-matrix-in-portable-data-format
-    with open('data.npy', 'w') as outfile:
-        np.save(outfile, X)
-
-    with open('features.npy','w') as outfile:
-        np.save(outfile, np.array(classes))
-
-    with open('features.yaml', 'w') as outfile:
-        outfile.write( yaml.dump(feat_dict, default_flow_style=True) )
-
-    with open('ids.yaml', 'w') as outfile:
-        outfile.write( yaml.dump(ids, default_flow_style=True) )
-
-
-
     return X, feat_dict, np.array(classes), ids
 
 
@@ -192,18 +165,48 @@ def system_call_count_feats(tree):
 def main():
     train_dir = "train"
     test_dir = "test"
-    outputfile = "mypredictions.csv"  # feel free to change this or take it as an argument
-    
+    outputfile = "mypredictions-vec.csv"  # feel free to change this or take it as an argument
+
     # TODO put the names of the feature functions you've defined above in this list
     ffs = [first_last_system_call_feats, system_call_count_feats]
     
-    # extract features
-    print "extracting training features..."
-    X_train,global_feat_dict,t_train,train_ids = extract_feats(ffs, train_dir)
-    print "done extracting training features"
+
+    
+    # load vectorized data
+    X_train = np.load('data.npy')
+
+    with open('features.yaml', 'r') as f:
+        global_feat_dict = yaml.load(f)
+
+    t_train = np.load('features.npy')
+
+    with open('ids.yaml','r') as f:
+        train_ids = yaml.load(f)
+    
+    # TODO train here, and learn your classification parameters
+    print "learning..."
+    learned_W = np.random.random((len(global_feat_dict),len(util.malware_classes)))
+    print "done learning"
     print
-
-
+    
+    # get rid of training data and load test data
+    del X_train
+    del t_train
+    del train_ids
+    print "extracting test features..."
+    X_test,_,t_ignore,test_ids = extract_feats(ffs, test_dir, global_feat_dict=global_feat_dict)
+    print "done extracting test features"
+    print
+    
+    # TODO make predictions on text data and write them out
+    print "making predictions..."
+    preds = np.argmax(X_test.dot(learned_W),axis=1)
+    print "done making predictions"
+    print
+    
+    print "writing predictions..."
+    util.write_predictions(preds, test_ids, outputfile)
+    print "done!"
 
 if __name__ == "__main__":
     main()
