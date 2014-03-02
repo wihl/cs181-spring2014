@@ -5,17 +5,23 @@ open questions:
 
 Overall Code layout:
 
-Repeat
-  part a: vectorize. Add one feature at a time
+1. vectorize
+2. train
+  a) choose subset of feature vector
+  b) train classifier(s)
+3. validate
+  a) try multiple folds (3,5,10)
+  b) time permitting, try Leave One Out
+4. compare and score
+  a) select combination of features and algorithms
+  b) perhaps do ensemble or multi votes
+5. test and submit. Run against test set and produce result.
 
-  for each classifier:
-	for each fold in CV set (use 5 to 10):
-		run classify
-	measure and log total error rate
-Until we get good scores
-
-Select winning combination of feature vector and classifier. Run against test data. Check for overfitting.
 If possibly overfit, submit two different algorithms.
+
+What Cannot be Done:
+1. Permutations of all features (O(n!) problem)
+
 
 
 Data layout:
