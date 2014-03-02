@@ -1,0 +1,14 @@
+The course supplied classification_starter.py has been refactored to break into multiple pieces:
+
+vectorize.py - take the huge XML files and turn them into a serialized numpy sparse vector, which takes approx 6500x times less space!
+
+featurefunc.py - a place to put all the feature functions
+
+train.py - takes the serialized output from vectorize and writes out the resulting test file
+
+To run:
+
+   python vectorize.py
+   python train.py
+
+and the result (barring random value changes) will be identical to classification_starter.py
