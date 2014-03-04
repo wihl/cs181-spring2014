@@ -17,7 +17,10 @@ from random import randrange
 import datetime
 
 import featurefunc
+import classifiers as cl
 import util
+
+
 
 def extract_feats(ffs, fds, direc, datafile):
     rowfd = {}
@@ -75,7 +78,8 @@ def calcAccuracy(preds, classes, ids):
     return accuracy
 
 
-def validate(num_folds, direc = 'mintrain'):
+def validate(num_folds, clf, direc = 'mintrain'):
+    assert clf != None
     ffs = featurefunc.getFeatures()
     fds = [] # list of feature dicts
     classes = {}
@@ -108,19 +112,16 @@ def validate(num_folds, direc = 'mintrain'):
             del fds[random_index]
 
         # train and predict
-        preds = train_pred(fds, test_ids)
+        X,feat_dict = featurefunc.make_design_mat(fds,None)
+
+        preds = clf(X,feat_dict)
         a = calcAccuracy(preds, classes, ids)
         print "fold: ", i, "accuracy: ",a
         accuracy.append(a)
 
     return accuracy
 
-def main():
-    #TODO: note this isn't quite precise yet, as it trains on all the data, rather than part
-    num_folds = 10
-
-    accuracy = validate(num_folds)
-
+def accuracyMetrics(accuracy):
     avgAcc = 0.0
     bestAcc = 0.0
     worstAcc = float("inf")
@@ -131,15 +132,24 @@ def main():
         if accuracy[i] > bestAcc:  bestAcc  = accuracy[i]
         
     avgAcc /= len(accuracy)
+    return avgAcc, bestAcc, worstAcc
 
-    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+def main():
+    num_folds = 10
 
-
+    classifier_names = cl.getClassiferNames()
+    classifiers      = cl.getClassifiers()
     with open('error_log.txt', 'a') as errfile:
         wr = csv.writer(errfile, dialect = 'excel')
-        wr.writerow([timestamp, num_folds, avgAcc, bestAcc, worstAcc])
+    
+        for name, clf in zip(classifier_names, classifiers):
+            accuracy = validate(num_folds, clf)
+            timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            avgAcc, bestAcc, worstAcc = accuracyMetrics(accuracy)
 
-    print "score is ", avgAcc * 100.0, "%"
+            wr.writerow([timestamp, num_folds, name, avgAcc, bestAcc, worstAcc])
+
+            print name, "score is ", avgAcc * 100.0, "%"
         
 if __name__ == "__main__":
     main()

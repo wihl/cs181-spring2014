@@ -5,9 +5,9 @@ Finish last bit of validate
 
 Validate Future Command Line Args:
 	 . num folds (def 10)
-	 . LOO - leave one out on/off
-	 . location of error logs
-	 . algorithm to use
+	 . LOO - leave one out on/off (def: off)
+	 . location of error logs (def: ".")
+	 . algorithm to use (def: all)
 
 Basic Features
       . aggregate features producing one training row per sample
@@ -66,4 +66,7 @@ Exemplar SVM on github (octave / matlab)
 One against all or One against All
   http://hal.archives-ouvertes.fr/docs/00/10/39/55/PDF/cr102875872670.pdf
 
+
+Classifier comparison:
+  http://scikit-learn.org/stable/auto_examples/plot_classifier_comparison.html
 
