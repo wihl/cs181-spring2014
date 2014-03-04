@@ -31,7 +31,7 @@ def main():
     test_dir = "test"
     outputfile = "mypredictions-vec.csv"  # feel free to change this or take it as an argument
 
-    lr = cl.LogisticRegression()
+    lr = cl.SVM()
 
     # TODO put the names of the feature functions you've defined above in this list
     ffs = featurefunc.getFeatures()

@@ -12,6 +12,7 @@ import numpy as np
 from scipy import sparse
 from scipy import io
 from sklearn.cross_validation import train_test_split
+from sklearn.cross_validation import cross_val_score
 import yaml
 import csv
 from random import randrange
@@ -80,7 +81,7 @@ def calcAccuracy(preds, classes, ids):
     return accuracy
 
 
-def validate(num_folds, clf, direc = 'train'):
+def validate(num_folds, clf, direc = 'mintrain'):
     assert clf != None
     ffs = featurefunc.getFeatures()
     fds = [] # list of feature dicts
@@ -102,11 +103,14 @@ def validate(num_folds, clf, direc = 'train'):
     X,feat_dict = featurefunc.make_design_mat(fds,None)
 
     y = [classes[item] for item in ids]
-
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.4)
+    
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.3)
     clf.fit(X_train,y_train,feat_dict)
     preds = clf.predict(X_test)
     accuracy = clf.score(preds,y_test)
+    
+    #scores = cross_val_score(clf, X, y, cv=5)
+    #print("Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
     return [accuracy]
 

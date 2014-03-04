@@ -1,5 +1,7 @@
 import numpy as np
 from sklearn import linear_model
+from sklearn import svm
+from sklearn import cross_validation
 
 import util
 
@@ -58,10 +60,25 @@ class LogisticRegression(Classifier):
     def predict(self, X):
         return self.logreg.predict(X)
 
+class SVM(Classifier):
+    def __init__(self):
+        self.svm = svm.SVC(kernel='linear', C=1.0)
+
+    def get_params(self, deep=False, *args):
+        return self.svm.get_params(*args)
+
+    def name(self):
+        return 'SVM'
+
+    def fit(self, X, y, feat_dict):
+        self.svm.fit(X, y)
+
+    def predict(self, X):
+        return self.svm.predict(X)
+
 def getClassifiers():
     return [
-            RandomClassifier,
-            MostFrequent,
+            SVM, 
             LogisticRegression
            ]
 
