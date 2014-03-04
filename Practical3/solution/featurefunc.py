@@ -161,6 +161,16 @@ def system_call_count_feats(tree):
             c['num_system_calls'] += 1
     return c
 
+def process_metrics(tree):
+    c = Counter()
+    for el in tree.iter():
+        if el.tag == "process":
+            # process attributes of interest
+            for r in ['startreason', 'terminationreason', 'username', 'executionstatus', 'applicationtype']:
+                if el.get(r) != None:
+                    c[r+'-'+el.attrib[r]] = c.get(r+'-'+el.attrib[r],0) + 1
+    return c
+
 def getFeatures():
-    return [first_last_system_call_feats, system_call_count_feats]
+    return [first_last_system_call_feats, system_call_count_feats, process_metrics]
 

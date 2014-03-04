@@ -11,9 +11,14 @@ def expectNothing(X, feat_dict):
     preds = np.ones(X.shape[0], np.int64) * 8 # hardcoded value for No virus
     return preds
 
+def logisticRegression(X, feat_dict):
+    preds = np.ones(X.shape[0], np.int64) * 8 # hardcoded value for No virus
+    return preds
+
 classifier_names = [
     'random', 
-    'baseline'
+    'baseline',
+    'logreg',
 ]
 
 classifiers = [

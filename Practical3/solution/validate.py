@@ -118,6 +118,7 @@ def validate(num_folds, clf, direc = 'mintrain'):
         a = calcAccuracy(preds, classes, ids)
         accuracy.append(a)
 
+    print "feat dict:", feat_dict
     return accuracy
 
 def accuracyMetrics(accuracy):
