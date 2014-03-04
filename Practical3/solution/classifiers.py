@@ -58,9 +58,6 @@ class LogisticRegression(Classifier):
     def predict(self, X):
         return self.logreg.predict(X)
 
-#    def score(self, X, Y):
-#        return self.logreg.score(X,Y)
-
 def getClassifiers():
     return [
             RandomClassifier,

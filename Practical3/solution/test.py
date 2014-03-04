@@ -11,6 +11,18 @@ import yaml
 
 import featurefunc
 import util
+import classifiers as cl
+
+def extract_feats(ffs, fds, direc, datafile):
+    rowfd = {}
+    # parse file as an xml document
+    tree = ET.parse(os.path.join(direc,datafile))
+    # accumulate features
+    [rowfd.update(ff(tree)) for ff in ffs]
+    fds.append(rowfd)        
+
+    return fds
+
 
 
 ## The following function does the feature extraction, learning, and prediction
@@ -19,40 +31,60 @@ def main():
     test_dir = "test"
     outputfile = "mypredictions-vec.csv"  # feel free to change this or take it as an argument
 
+    lr = cl.LogisticRegression()
+
     # TODO put the names of the feature functions you've defined above in this list
     ffs = featurefunc.getFeatures()
-    
-    # load vectorized data
-    X_train = np.load('data.npy')
+    classes = {}
+    ids = []
+    fds = []
 
-    with open('features.yaml', 'r') as f:
-        global_feat_dict = yaml.load(f)
+    for datafile in os.listdir(train_dir):
+        # extract id and true class (if available) from filename
+        id_str,clazz = datafile.split('.')[:2]
+        ids.append(id_str)
+        # add target class if this is training data
+        if clazz != "X":
+            classes[id_str] = util.malware_classes.index(clazz)
 
-    t_train = np.load('features.npy')
+        extract_feats(ffs, fds, 'train', datafile)
 
-    with open('ids.yaml','r') as f:
-        train_ids = yaml.load(f)
+    X,feat_dict = featurefunc.make_design_mat(fds,None)
+    y = [classes[item] for item in ids]
 
-    learned_W = np.load('learned_w.npy')
+    lr.fit(X,y,feat_dict)
+
+    for i in feat_dict:
+        print i
     
     # get rid of training data and load test data
-    del X_train
-    del t_train
-    del train_ids
-    print "extracting test features..."
-    X_test,_,t_ignore,test_ids = featurefunc.extract_feats(ffs, test_dir,
-                                                           global_feat_dict=global_feat_dict)
-    print "done extracting test features"
-    print
+    del X
+    del y
+    ids = []
+    fds = []
     
-    # TODO make predictions on text data and write them out
-    print "making predictions..."
-    preds = np.argmax(X_test.dot(learned_W),axis=1)
-    print "done making predictions"
-    print
+
+    print "training complete. Now preparing for submit"
+
+    for datafile in os.listdir(test_dir):
+        # extract id and true class (if available) from filename
+        id_str,clazz = datafile.split('.')[:2]
+        ids.append(id_str)
+        # add target class if this is training data
+        if clazz != "X":
+            classes[id_str] = util.malware_classes.index(clazz)
+
+        extract_feats(ffs, fds, 'test', datafile)
+
+    X,feat_dict = featurefunc.make_design_mat(fds,None)
+    for i in feat_dict:
+        print i
+    
+
+    preds = lr.predict(X)
     
     print "writing predictions..."
-    util.write_predictions(preds, test_ids, outputfile)
+    util.write_predictions(preds, ids, outputfile)
     print "done!"
 
 if __name__ == "__main__":

@@ -1,8 +1,12 @@
 TODO:
-
-Basic Features
-      . aggregate features producing one training row per sample
-      . basic logistic regression
+Run CV on multiple folds
+Experiment with different LR parameters
+Feature engineering
+	. new per file metrics
+Add another classifier
+Refactor test.py
+Add per thread parameters
+Check weighting score
 
 Validate Future Command Line Args:
 	 . num folds (def 10)
@@ -11,13 +15,6 @@ Validate Future Command Line Args:
 	 . algorithm to use (def: all)
        	 . store to detailed error log: fold, F1 score per class
 
-Other:
-. Preliminary data analysis: number of different system calls and arguments, and their call frequency.
-. get baseline test output to work (update test.py)
-
-Detailed features:
-. fix the most obvious features, like putting each last call as a separate feature instead of an enum
-Validation code
 
 
 Problem statement:

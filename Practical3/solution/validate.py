@@ -101,43 +101,13 @@ def validate(num_folds, clf, direc = 'train'):
     accuracy = []
     X,feat_dict = featurefunc.make_design_mat(fds,None)
 
-    '''
-    for i in range(num_folds):
-        test_ids = []
-        test_fds = []
-
-        # slice the data in folds
-        sliceSize = len(ids) / num_folds
-        for j in range(sliceSize):
-            # find a random entry
-            random_index = randrange(0,len(ids))
-            test_ids.append(ids[random_index])
-            del ids[random_index]
-            test_fds.append(fds[random_index])
-            del fds[random_index]
-
-        y = [classes[item] for item in ids]
-
-        # train and predict
-        X,feat_dict = featurefunc.make_design_mat(fds,None)
-        clf.fit(X,y,feat_dict)
-        X_test,feat_dict = featurefunc.make_design_mat(test_fds, None)
-        preds = clf.predict(X_test)
-        a = calcAccuracy(preds, classes, ids)
-        accuracy.append(a)
-    '''
-
     y = [classes[item] for item in ids]
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.4)
     clf.fit(X_train,y_train,feat_dict)
     preds = clf.predict(X_test)
     accuracy = clf.score(preds,y_test)
-    #a = calcAccuracy(preds, classes, ids)
 
-
-
-    #print "feat dict:", feat_dict
     return [accuracy]
 
 def accuracyMetrics(accuracy):

@@ -135,10 +135,10 @@ def first_last_system_call_feats(tree):
             if first:
                 c["first_call-"+el.tag] = 1
                 first = False
-            last_call = el.tag  # update last call seen
+            #last_call = el.tag  # update last call seen
             
     # finally, mark last call seen
-    c["last_call-"+last_call] = 1
+    #c["last_call-"+last_call] = 1
     return c
 
 def system_call_count_feats(tree):
