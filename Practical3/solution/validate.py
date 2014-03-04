@@ -11,7 +11,6 @@ except ImportError:
 import numpy as np
 from scipy import sparse
 from scipy import io
-from sklearn.cross_validation import train_test_split
 import yaml
 import csv
 from random import randrange
@@ -114,13 +113,9 @@ def validate(num_folds, clf, direc = 'mintrain'):
 
         # train and predict
         X,feat_dict = featurefunc.make_design_mat(fds,None)
-        #print "lengths:", X.shape, len(classes)
-        #X_train, X_test, y_train, y_test = train_test_split(X, classes, test_size=.4)
-        #print "train_test_split", type(X_train), type(X_test), type(y_train), type(y_test)
 
         preds = clf(X,feat_dict)
         a = calcAccuracy(preds, classes, ids)
-        print "fold: ", i, "accuracy: ",a
         accuracy.append(a)
 
     return accuracy

@@ -7,9 +7,18 @@ def randomClassify(X = None,feat_dict = None):
     preds = np.argmax(X.dot(learned_W),axis=1)
     return preds
 
-classifier_names = ['random']
+def expectNothing(X, feat_dict):
+    preds = np.ones(X.shape[0], np.int64) * 8 # hardcoded value for No virus
+    return preds
+
+classifier_names = [
+    'random', 
+    'baseline'
+]
+
 classifiers = [
-    randomClassify
+    randomClassify,
+    expectNothing
 ]
 
 def getClassiferNames():
