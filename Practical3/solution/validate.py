@@ -113,12 +113,12 @@ def validate(num_folds, clf, direc = 'mintrain'):
 
         # train and predict
         X,feat_dict = featurefunc.make_design_mat(fds,None)
-
-        preds = clf(X,feat_dict)
+        clf.fit(X,ids,feat_dict)
+        preds = clf.predict(X)
         a = calcAccuracy(preds, classes, ids)
         accuracy.append(a)
 
-    print "feat dict:", feat_dict
+    #print "feat dict:", feat_dict
     return accuracy
 
 def accuracyMetrics(accuracy):
@@ -137,19 +137,18 @@ def accuracyMetrics(accuracy):
 def main():
     num_folds = 10
 
-    classifier_names = cl.getClassiferNames()
-    classifiers      = cl.getClassifiers()
     with open('error_log.txt', 'a') as errfile:
         wr = csv.writer(errfile, dialect = 'excel')
     
-        for name, clf in zip(classifier_names, classifiers):
-            accuracy = validate(num_folds, clf)
+        for clf in cl.getClassifiers():
+            c = clf()
+            accuracy = validate(num_folds, c)
             timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             avgAcc, bestAcc, worstAcc = accuracyMetrics(accuracy)
 
-            wr.writerow([timestamp, num_folds, name, avgAcc, bestAcc, worstAcc])
+            wr.writerow([timestamp, num_folds, c.name(), avgAcc, bestAcc, worstAcc])
 
-            print name, "score is ", avgAcc * 100.0, "%"
+            print c.name(),"score is ", avgAcc * 100.0, "%"
         
 if __name__ == "__main__":
     main()

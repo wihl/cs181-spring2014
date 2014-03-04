@@ -1,33 +1,52 @@
 import numpy as np
+from sklearn import linear_model
 
 import util
 
-def randomClassify(X = None,feat_dict = None):
-    learned_W = np.random.random((len(feat_dict),len(util.malware_classes)))
-    preds = np.argmax(X.dot(learned_W),axis=1)
-    return preds
+class Classifier(object):
+    def name(self):
+        return 'unknown'
 
-def expectNothing(X, feat_dict):
-    preds = np.ones(X.shape[0], np.int64) * 8 # hardcoded value for No virus
-    return preds
+    def save(self, file):
+        pass
 
-def logisticRegression(X, feat_dict):
-    preds = np.ones(X.shape[0], np.int64) * 8 # hardcoded value for No virus
-    return preds
+    def load(self, file):
+        pass
 
-classifier_names = [
-    'random', 
-    'baseline',
-    'logreg',
-]
+    def fit(self, X, y, feat_dict):
+        raise NotImplementedError("base class")
 
-classifiers = [
-    randomClassify,
-    expectNothing
-]
+    def predict(self, X):
+        raise NotImplementedError("base class")
 
-def getClassiferNames():
-    return classifier_names
+class RandomClassifier(Classifier):
+    def __init__(self):
+        self.learned_W = None
+
+    def name(self):
+        return 'random'
+
+    def fit(self, X, y, feat_dict):
+        self.learned_W = np.random.random((len(feat_dict),len(util.malware_classes)))
+        return self.learned_W
+
+    def predict(self, X):
+        return np.argmax(X.dot(self.learned_W),axis=1)
+
+class MostFrequent(Classifier):
+    def name(self):
+        return 'baseline'
+
+    def fit(self, X, y, feat_dict):
+        pass
+
+    def predict(self, X):
+        return np.ones(X.shape[0], np.int64) * 8 # hardcoded value for No virus
+
 
 def getClassifiers():
-    return classifiers
+    return [
+            RandomClassifier,
+            MostFrequent
+           ]
+
