@@ -1,15 +1,30 @@
 TODO:
-get dump to work - very frustrating!
-Preliminary data analysis: number of different system calls and arguments, and their call frequency.
-fix the most obvious features, like putting each last call as a separate feature instead of an enum
-Validation code
+Finish last bit of validate
+       . store to detailed error log: fold, F1 score per class
+       
 
+Validate Future Command Line Args:
+	 . num folds (def 10)
+	 . LOO - leave one out on/off
+	 . location of error logs
+	 . algorithm to use
+
+Basic Features
+      . aggregate features producing one training row per sample
+      . basic logistic regression
+
+Other:
+. Preliminary data analysis: number of different system calls and arguments, and their call frequency.
+
+Detailed features:
+. fix the most obvious features, like putting each last call as a separate feature instead of an enum
+Validation code
 
 
 Problem statement:
 skewed (aka unbalanced) multi class classification
 
-only measured on accuracy, not F1 score. As baseline, mark all as None and get 52% accurate.
+only measured on accuracy (TP / total), not F1 score. As baseline, mark all as None and get 52% accurate.
 Would be a very corrupt machine if 48% of EXEs has viruses!
 
 The higher the accuracy, the better the score, up to 100%. Basically assume it is None unless one
@@ -29,7 +44,6 @@ Classification Alternatives:
 
 Challenges / Open Questions:
 . how to determine confidence when classifier's output is binary? 
-. use just accuracy for overall measurement, but might use confusion matrix for analysis
 . should classification rates be normalized? See [1]
 . vectorized output should be in YAML format for rapid reading and potential use by Theano
 . maybe use AWS to do the vectorize runs (which will be slow on my machine)

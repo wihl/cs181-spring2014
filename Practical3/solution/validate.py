@@ -29,7 +29,7 @@ def extract_feats(ffs, fds, direc, datafile):
 
     return fds
 
-def train_pred(fds):
+def train_pred(fds, test_fds):
     X,feat_dict = featurefunc.make_design_mat(fds,None)
     learned_W = np.random.random((len(feat_dict),len(util.malware_classes)))
     preds = np.argmax(X.dot(learned_W),axis=1)
@@ -108,7 +108,7 @@ def validate(num_folds, direc = 'mintrain'):
             del fds[random_index]
 
         # train and predict
-        preds = train_pred(fds)
+        preds = train_pred(fds, test_ids)
         a = calcAccuracy(preds, classes, ids)
         print "fold: ", i, "accuracy: ",a
         accuracy.append(a)
@@ -121,13 +121,25 @@ def main():
 
     accuracy = validate(num_folds)
 
+    avgAcc = 0.0
+    bestAcc = 0.0
+    worstAcc = float("inf")
+
+    for i in range(len(accuracy)):
+        avgAcc += accuracy[i]
+        if accuracy[i] < worstAcc: worstAcc = accuracy[i]
+        if accuracy[i] > bestAcc:  bestAcc  = accuracy[i]
+        
+    avgAcc /= len(accuracy)
+
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
 
     with open('error_log.txt', 'a') as errfile:
         wr = csv.writer(errfile, dialect = 'excel')
-        wr.writerow([timestamp, num_folds] +accuracy)
+        wr.writerow([timestamp, num_folds, avgAcc, bestAcc, worstAcc])
 
-    print "score is ", accuracy[0] * 100.0, "%"
+    print "score is ", avgAcc * 100.0, "%"
         
 if __name__ == "__main__":
     main()
