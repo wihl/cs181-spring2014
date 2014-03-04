@@ -1,5 +1,5 @@
 '''
-dump.py - utility functions to dump different sparse matrices
+validate.py - testing harness
 '''
 import os
 from collections import Counter
@@ -11,6 +11,7 @@ except ImportError:
 import numpy as np
 from scipy import sparse
 from scipy import io
+from sklearn.cross_validation import train_test_split
 import yaml
 import csv
 from random import randrange
@@ -18,6 +19,7 @@ import datetime
 
 import featurefunc
 import classifiers as cl
+import csrutil
 import util
 
 
@@ -78,7 +80,7 @@ def calcAccuracy(preds, classes, ids):
     return accuracy
 
 
-def validate(num_folds, clf, direc = 'mintrain'):
+def validate(num_folds, clf, direc = 'train'):
     assert clf != None
     ffs = featurefunc.getFeatures()
     fds = [] # list of feature dicts
@@ -97,6 +99,9 @@ def validate(num_folds, clf, direc = 'mintrain'):
 
     assert num_folds < len(ids)
     accuracy = []
+    X,feat_dict = featurefunc.make_design_mat(fds,None)
+
+    '''
     for i in range(num_folds):
         test_ids = []
         test_fds = []
@@ -111,15 +116,29 @@ def validate(num_folds, clf, direc = 'mintrain'):
             test_fds.append(fds[random_index])
             del fds[random_index]
 
+        y = [classes[item] for item in ids]
+
         # train and predict
         X,feat_dict = featurefunc.make_design_mat(fds,None)
-        clf.fit(X,ids,feat_dict)
-        preds = clf.predict(X)
+        clf.fit(X,y,feat_dict)
+        X_test,feat_dict = featurefunc.make_design_mat(test_fds, None)
+        preds = clf.predict(X_test)
         a = calcAccuracy(preds, classes, ids)
         accuracy.append(a)
+    '''
+
+    y = [classes[item] for item in ids]
+
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.4)
+    clf.fit(X_train,y_train,feat_dict)
+    preds = clf.predict(X_test)
+    accuracy = clf.score(preds,y_test)
+    #a = calcAccuracy(preds, classes, ids)
+
+
 
     #print "feat dict:", feat_dict
-    return accuracy
+    return [accuracy]
 
 def accuracyMetrics(accuracy):
     avgAcc = 0.0
