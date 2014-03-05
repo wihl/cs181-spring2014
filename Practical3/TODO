@@ -1,16 +1,12 @@
 TODO:
-Refactor scoring from validate to classifiers, and use sklearn scoring
+Use sklearn scoring
 Try sklearn grid to optimize parameters
 Implement optimize:
 	  for each classifier:
-	      for cv_test = 1:5
-	      	  score folds 3, 5, 10
-		  get mean and stddev
 	      optimize paramaters for that classifier
 	      if CV set score is decreasing:
 	      	 use previous parameters
 		 stop optimizing
-
 
 Feature engineering
 	. Repeat optimize for each feature added

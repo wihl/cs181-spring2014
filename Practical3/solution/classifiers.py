@@ -88,10 +88,11 @@ class MostFrequent(Classifier):
 
 class LogisticRegression(Classifier):
     def __init__(self):
-        self.logreg = linear_model.LogisticRegression(C=1e5)
+        self.C = 100
+        self.logreg = linear_model.LogisticRegression(C=self.C)
 
     def name(self):
-        return 'LogisticRegression'
+        return 'LogisticRegression-'+str(self.C)
 
     def fit(self, X, y, feat_dict):
         self.logreg.fit(X, y)
@@ -117,7 +118,6 @@ class SVM(Classifier):
 
 def getClassifiers():
     return [
-            SVM, 
             LogisticRegression
            ]
 
