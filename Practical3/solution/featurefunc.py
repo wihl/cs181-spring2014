@@ -170,6 +170,7 @@ def system_call_count_feats(tree):
             in_all_section = False
         elif in_all_section:
             c['num_system_calls'] += 1
+            c['num_'+el.tag] += 1
     return c
 
 def process_metrics(tree):

@@ -230,8 +230,8 @@ def system_call_count_feats(tree):
 
 ## The following function does the feature extraction, learning, and prediction
 def main():
-    train_dir = "train"
-    test_dir = "test"
+    train_dir = "mintrain"
+    test_dir = "mintest"
     outputfile = "mypredictions.csv"  # feel free to change this or take it as an argument
     
     # TODO put the names of the feature functions you've defined above in this list

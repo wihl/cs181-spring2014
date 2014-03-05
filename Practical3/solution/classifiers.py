@@ -88,7 +88,7 @@ class MostFrequent(Classifier):
 
 class LogisticRegression(Classifier):
     def __init__(self):
-        self.C = 100
+        self.C = 1000
         self.logreg = linear_model.LogisticRegression(C=self.C)
 
     def name(self):
@@ -102,7 +102,7 @@ class LogisticRegression(Classifier):
 
 class SVM(Classifier):
     def __init__(self):
-        self.svm = svm.SVC(kernel='linear', C=1.0)
+        self.svm = svm.SVC(kernel='linear', max_iter=100000, C=1.0)
 
     def get_params(self, deep=False, *args):
         return self.svm.get_params(*args)
