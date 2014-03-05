@@ -1,21 +1,22 @@
 TODO:
 Run CV on multiple folds
-Experiment with different LR parameters
 Feature engineering
 	. new per file metrics
-Add another classifier
+Experiment with different classifier parameters from command line options
 Refactor test.py
 Add per thread parameters
 Check weighting score
 
 Validate Future Command Line Args:
 	 . num folds (def 10)
+	 . classifier parameters
 	 . LOO - leave one out on/off (def: off)
 	 . location of error logs (def: ".")
 	 . algorithm to use (def: all)
        	 . store to detailed error log: fold, F1 score per class
 
 
+Move this onto StarCluster
 
 Problem statement:
 skewed (aka unbalanced) multi class classification

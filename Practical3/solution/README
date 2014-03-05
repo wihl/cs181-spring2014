@@ -1,14 +1,25 @@
 The course supplied classification_starter.py has been refactored to break into multiple pieces:
 
-vectorize.py - take the huge XML files and turn them into a serialized numpy sparse vector, which takes approx 6500x times less space!
+Common Files:
+
+classifiers.py - set of classifiers
 
 featurefunc.py - a place to put all the feature functions
 
-train.py - takes the serialized output from vectorize and writes out the resulting test file
+util.py - course supplied
 
-To run:
+csrutil.py - small utilities for Sparse CSR matrices.
 
-   python vectorize.py
-   python train.py
+Main Files:
 
-and the result (barring random value changes) will be identical to classification_starter.py
+vectorize.py - take the huge XML files and turn them into a serialized numpy sparse vector, which takes approx 6500x times less space!
+
+submit.py - takes the serialized output from vectorize and writes out the resulting test file for submission to Kaggle
+
+validate.py - validate accuracy of different models. The Lab.
+
+Scores are kept in error_log.txt
+
+
+classification_starter.py - course supplied, not used
+
