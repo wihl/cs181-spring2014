@@ -1,13 +1,6 @@
 TODO:
 Fix messed up global_feat_dict
-Use sklearn scoring
-Try sklearn grid to optimize parameters
-Implement optimize:
-	  for each classifier:
-	      optimize paramaters for that classifier
-	      if CV set score is decreasing:
-	      	 use previous parameters
-		 stop optimizing
+Refactor test.py
 
 Feature engineering
 	. Repeat optimize for each feature added
@@ -15,9 +8,16 @@ Feature engineering
 	. Add per thread parameters
 
 Classifiers
-	. add kNN classifier
+	. figure out how to make sense of kNN classifier results (returns distance to all points?)
 
-Refactor test.py
+Use sklearn scoring
+Implement optimize:
+	  Try sklearn grid to optimize parameters
+	  for each classifier:
+	      optimize paramaters for that classifier
+	      if CV set score is decreasing:
+	      	 use previous parameters
+		 stop optimizing
 
 Validate Future Command Line Args:
 	 . num folds (def 10)

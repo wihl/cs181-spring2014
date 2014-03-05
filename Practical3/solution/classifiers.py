@@ -2,6 +2,7 @@ import numpy as np
 from sklearn import linear_model
 from sklearn import svm
 from sklearn import cross_validation
+from sklearn.neighbors import NearestNeighbors
 
 import util
 
@@ -115,6 +116,23 @@ class SVM(Classifier):
 
     def predict(self, X):
         return self.svm.predict(X)
+
+class kNN(Classifier):
+    def __init__(self):
+        self.knn = NearestNeighbors(n_neighbors=len(util.malware_classes), algorithm='brute')
+
+    def name(self):
+        return 'kNN'
+
+    def fit(self, X, y, feat_dict):
+        self.knn.fit(X, y)
+
+    def predict(self, X):
+        dist, ind = self.knn.kneighbors(X)
+        print "dist:", dist
+        print "ind:", ind
+        return np.ones(X.shape[0], np.int64) * 8 # hardcoded value for No virus
+
 
 def getClassifiers():
     return [
