@@ -1,11 +1,26 @@
 TODO:
-Run CV on multiple folds
+Refactor scoring from validate to classifiers, and use sklearn scoring
+Try sklearn grid to optimize parameters
+Implement optimize:
+	  for each classifier:
+	      for cv_test = 1:5
+	      	  score folds 3, 5, 10
+		  get mean and stddev
+	      optimize paramaters for that classifier
+	      if CV set score is decreasing:
+	      	 use previous parameters
+		 stop optimizing
+
+
 Feature engineering
+	. Repeat optimize for each feature added
 	. new per file metrics
-Experiment with different classifier parameters from command line options
+	. Add per thread parameters
+
+Classifiers
+	. add kNN classifier
+
 Refactor test.py
-Add per thread parameters
-Check weighting score
 
 Validate Future Command Line Args:
 	 . num folds (def 10)
@@ -40,20 +55,15 @@ Classification Alternatives:
 4: Deep Learning / neural net / pylearn2
 
 Challenges / Open Questions:
-. how to prevent overfitting of test data?
 . how to determine confidence when classifier's output is binary? 
 . should classification rates be normalized? See [1]
 . vectorized output should be in YAML format for rapid reading and potential use by Theano
 . maybe use AWS to do the vectorize runs (which will be slow on my machine)
-. is this like outlier detection?
 . spend a little time figuring out how others have applied ML to virus detection
 
 Background reading:
 
 Exemplar SVM: http://www.cs.cmu.edu/~tmalisie/projects/iccv11/
-
-Example of single class implementation of libSVM
-  http://stackoverflow.com/questions/4214868/an-example-using-python-bindings-for-svm-library-libsvm
 
 Multiclass SVM classification:
   http://svmlight.joachims.org/svm_multiclass.html

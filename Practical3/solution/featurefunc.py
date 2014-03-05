@@ -56,6 +56,17 @@ def extract_feats(ffs, direc="train", global_feat_dict=None):
     return X, feat_dict, np.array(classes), ids
 
 
+def extract_feats_by_file(ffs, fds, direc, datafile):
+    rowfd = {}
+    # parse file as an xml document
+    tree = ET.parse(os.path.join(direc,datafile))
+    # accumulate features
+    [rowfd.update(ff(tree)) for ff in ffs]
+    fds.append(rowfd)        
+
+    return fds
+
+
 def make_design_mat(fds, global_feat_dict=None):
     """
     arguments:

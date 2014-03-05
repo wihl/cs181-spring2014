@@ -24,6 +24,45 @@ class Classifier(object):
         for i, j in zip(X,y):
             if i == j: c += 1
         return float(c) / float(total)
+        '''
+        # calculate accuracies
+        item_count = 0
+        accuracyByClass = []
+
+        for i in range(len(util.malware_classes)):
+            accuracyByClass.append({'true_pos':0, 'cond_pos':0, 'outcome_pos': 0, 'false_pos':0, 'false_neg':0})
+
+        for i, fileid in enumerate(ids):
+            if preds[i] == np.int64(classes[fileid]):
+                item_count += 1
+                accuracyByClass[classes[fileid]]['true_pos'] += 1
+            else:
+                accuracyByClass[int(preds[i])]['false_pos'] += 1
+                accuracyByClass[classes[fileid]]['false_neg'] += 1
+            accuracyByClass[classes[fileid]]['cond_pos'] += 1
+            accuracyByClass[int(preds[i])]['outcome_pos'] += 1
+    
+        accuracy = float(item_count) / float(len(ids)) 
+        j = 0
+        for i in accuracyByClass:
+            tp = float(i['true_pos'])
+            fp = float(i['false_pos'])
+            ocp = float(i['outcome_pos'])
+            try:
+                precision = tp/(tp+fp)
+            except:
+                precision = 0.0
+            cp = float(i['cond_pos'])
+            try:
+                sensitivity = tp/cp
+            except:
+                sensitivity = 0.0
+        #print i
+        #print j, "Precision:", precision, "Sensitivity:",sensitivity
+            j += 1
+
+        return accuracy
+        '''
 
     def predict(self, X):
         return np.ones(X.shape[0], np.int64) * 8 # hardcoded value for No virus
