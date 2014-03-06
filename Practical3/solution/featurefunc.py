@@ -91,7 +91,6 @@ class Dataset(object):
         X = sparse.csr_matrix((np.array(data),
                            (np.array(rows), np.array(cols))),
                               shape=(len(self.fds), len(self.featureDict)))
-        print X.shape
         return X
 
 

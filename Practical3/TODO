@@ -1,6 +1,4 @@
 TODO:
-WTF just happened with our kaggle submission? went from 0.76 to 0.27??
-
 Feature engineering
 	. Repeat optimize for each feature added
 	. new per file metrics
@@ -20,10 +18,8 @@ Implement optimize:
 		 stop optimizing
 
 Validate Future Command Line Args:
-	 . num folds (def 10)
 	 . classifier parameters
 	 . LOO - leave one out on/off (def: off)
-	 . location of error logs (def: ".")
 	 . algorithm to use (def: all)
        	 . store to detailed error log: fold, F1 score per class
 

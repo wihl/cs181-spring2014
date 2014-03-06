@@ -108,7 +108,7 @@ class LogisticRegression(Classifier):
 
 class SVM(Classifier):
     def __init__(self):
-        self.svm = svm.SVC(kernel='linear', max_iter=100000, C=1.0)
+        self.svm = svm.SVC(kernel='linear', max_iter=100000, C=1000)
 
     def get_params(self, deep=False, *args):
         return self.svm.get_params(*args)
@@ -121,6 +121,10 @@ class SVM(Classifier):
 
     def predict(self, X):
         return self.svm.predict(X)
+
+    def weights(self):
+        return self.svm.coef_
+
 
 class kNN(Classifier):
     def __init__(self):
@@ -140,7 +144,7 @@ class kNN(Classifier):
 
 
 def getClassifiers():
-    return [
+    return [ SVM,
             LogisticRegression
            ]
 

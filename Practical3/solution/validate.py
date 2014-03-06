@@ -41,6 +41,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--iterations',help='Number of cross validation iterations to run', type=int)
     parser.add_argument('-f', '--full',help='full or minimal training run (default minimal)',action='store_true')
+    parser.add_argument('classifier',nargs='?', default = 'LogisticRegression', 
+                        help='Which classifer to use (default all)')
     args = parser.parse_args()
 
     if args.full:
@@ -55,6 +57,11 @@ def main():
     else:
         num_iter = 5
 
+    if args.classifier:
+        classifier = args.classifier
+    else:
+        classifier = None
+
     ds = ff.Dataset()
 
     with open('error_log.txt', 'a') as errfile:
@@ -62,6 +69,9 @@ def main():
     
         for clf in cl.getClassifiers():
             c = clf()
+            if classifier is not None:
+                # let only a specific classifier run
+                if c.name() != classifier: continue
             accuracy, weights = validate(num_iter, c, direc, ds)
             timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             avgAcc = accuracy.mean()
@@ -70,14 +80,17 @@ def main():
             wr.writerow([timestamp, num_iter, direc, c.name(), avgAcc, stdAcc, 
                          np.max(accuracy), np.min(accuracy)])
 
-            with open('weight_'+c.name()+'.txt', 'w') as weightfile:
-                wcsv = csv.writer(weightfile, dialect='excel')
-                wcsv.writerow(["Key","mean","std"])
-                w_mean = np.abs(weights.mean(0))
-                w_std  = weights.std(0) * 2
+            try:
+                with open('weight_'+c.name()+'.txt', 'w') as weightfile:
+                    wcsv = csv.writer(weightfile, dialect='excel')
+                    wcsv.writerow(["Key","mean","std"])
+                    w_mean = np.abs(weights.mean(0))
+                    w_std  = weights.std(0) * 2
 
-                for i, key in enumerate(ds.getFeatureDict()):
-                    wcsv.writerow([key, w_mean[i], w_std[i]])
+                    for i, key in enumerate(ds.getFeatureDict()):
+                        wcsv.writerow([key, w_mean[i], w_std[i]])
+            except:
+                print "no weights found"
 
 
             print("%s accuracy: %0.2f (+/- %0.2f)" % (c.name(), avgAcc, stdAcc))
