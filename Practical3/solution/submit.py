@@ -24,6 +24,7 @@ def main():
     print "training complete. Now preparing for submit"
 
     X, y, ids = ds.getDataset(test_dir)
+    
     preds = lr.predict(X)
     
     print "writing predictions..."

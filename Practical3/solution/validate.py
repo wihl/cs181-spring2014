@@ -39,7 +39,7 @@ def validate(num_iterations, clf, direc, ds):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-i', '--iterations',help='Number of cross validation iterations to run')
+    parser.add_argument('-i', '--iterations',help='Number of cross validation iterations to run', type=int)
     parser.add_argument('-f', '--full',help='full or minimal training run (default minimal)',action='store_true')
     args = parser.parse_args()
 
@@ -67,7 +67,7 @@ def main():
             avgAcc = accuracy.mean()
             stdAcc = accuracy.std() * 2
 
-            wr.writerow([timestamp, num_iter, c.name(), avgAcc, stdAcc, 
+            wr.writerow([timestamp, num_iter, direc, c.name(), avgAcc, stdAcc, 
                          np.max(accuracy), np.min(accuracy)])
 
             with open('weight_'+c.name()+'.txt', 'w') as weightfile:

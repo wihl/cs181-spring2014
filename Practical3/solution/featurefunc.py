@@ -14,7 +14,6 @@ class Dataset(object):
     Create and manage datasets
     '''
     def __init__(self):
-        self.fds = []
         self.featureDict = None
         self.ffs = self.getFeatures()
 
@@ -27,6 +26,7 @@ class Dataset(object):
     def getDataset(self,directory):
         self.ids = []
         self.directory = directory
+        self.fds = []
         y = []
         for datafile in os.listdir(self.directory):
             # extract id and true class (if available) from filename
@@ -91,6 +91,7 @@ class Dataset(object):
         X = sparse.csr_matrix((np.array(data),
                            (np.array(rows), np.array(cols))),
                               shape=(len(self.fds), len(self.featureDict)))
+        print X.shape
         return X
 
 
