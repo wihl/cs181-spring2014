@@ -41,8 +41,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--iterations',help='Number of cross validation iterations to run', type=int)
     parser.add_argument('-f', '--full',help='full or minimal training run (default minimal)',action='store_true')
-    parser.add_argument('classifier',nargs='?', default = 'LogisticRegression', 
-                        help='Which classifer to use (default all)')
+    parser.add_argument('classifier',nargs='?', help='Which classifer to use (default all)')
     args = parser.parse_args()
 
     if args.full:
