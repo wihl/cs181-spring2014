@@ -8,15 +8,15 @@ featurefunc.py - a place to put all the feature functions
 
 util.py - course supplied
 
-csrutil.py - small utilities for Sparse CSR matrices.
-
 Main Files:
 
-vectorize.py - take the huge XML files and turn them into a serialized numpy sparse vector, which takes approx 6500x times less space!
+vectorize.py - DEPRECATED take the huge XML files and turn them into a serialized numpy sparse vector, which takes approx 6500x times less space!
 
 submit.py - takes the serialized output from vectorize and writes out the resulting test file for submission to Kaggle
 
 validate.py - validate accuracy of different models. The Lab.
+
+sanity.py - make a sanity pass on submission file prior to Kaggle submission
 
 Scores are kept in error_log.txt
 
