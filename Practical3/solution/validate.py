@@ -9,14 +9,10 @@ except ImportError:
     import xml.etree.ElementTree as ET
 
 import numpy as np
-from scipy import sparse
-from scipy import io
 from sklearn.cross_validation import train_test_split
-from sklearn.cross_validation import cross_val_score
-import yaml
 import csv
-from random import randrange
 import datetime
+import argparse
 
 import featurefunc as ff
 import classifiers as cl
@@ -42,7 +38,22 @@ def validate(num_iterations, clf, direc, ds):
     return np.array(accuracy), weights
 
 def main():
-    num_folds = 5
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-i', '--iterations',help='Number of cross validation iterations to run')
+    parser.add_argument('-f', '--full',help='full or minimal training run (default minimal)',action='store_true')
+    args = parser.parse_args()
+
+    if args.full:
+        direc = 'train'
+    else:
+        direc = 'mintrain'
+
+    if args.iterations:
+        num_iter = int(args.iterations)
+        assert num_iter > 0
+        assert num_iter < 1001
+    else:
+        num_iter = 5
 
     ds = ff.Dataset()
 
@@ -51,12 +62,12 @@ def main():
     
         for clf in cl.getClassifiers():
             c = clf()
-            accuracy, weights = validate(num_folds, c,'train', ds)
+            accuracy, weights = validate(num_iter, c, direc, ds)
             timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             avgAcc = accuracy.mean()
             stdAcc = accuracy.std() * 2
 
-            wr.writerow([timestamp, num_folds, c.name(), avgAcc, stdAcc, 
+            wr.writerow([timestamp, num_iter, c.name(), avgAcc, stdAcc, 
                          np.max(accuracy), np.min(accuracy)])
 
             with open('weight_'+c.name()+'.txt', 'w') as weightfile:
