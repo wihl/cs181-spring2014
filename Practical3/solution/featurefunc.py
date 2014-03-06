@@ -9,8 +9,27 @@ from scipy import sparse
 
 import util
 
+def extract_feats_by_dir(fds, direc):
+    ffs = getFeatures()
+    classes = {}
+    ids = []
+    for datafile in os.listdir(direc):
+        # extract id and true class (if available) from filename
+        id_str,clazz = datafile.split('.')[:2]
+        ids.append(id_str)
+        # add target class if this is training data
+        if clazz != "X":
+            classes[id_str] = util.malware_classes.index(clazz)
 
-def extract_feats(ffs, direc="train", global_feat_dict=None):
+        extract_feats_by_file(ffs, fds, direc, datafile)
+    X,feat_dict = featurefunc.make_design_mat(fds,None)
+    y = [classes[item] for item in ids]
+
+    return X, feat_dict, y
+
+
+
+def extract_feats_orig(ffs, direc="train", global_feat_dict=None):
     """
     arguments:
       ffs are a list of feature-functions.

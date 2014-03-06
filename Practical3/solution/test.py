@@ -23,6 +23,7 @@ def main():
     lr = cl.LogisticRegression()
 
     # TODO put the names of the feature functions you've defined above in this list
+    '''
     ffs = featurefunc.getFeatures()
     classes = {}
     ids = []
@@ -40,6 +41,8 @@ def main():
 
     X,feat_dict = featurefunc.make_design_mat(fds,None)
     y = [classes[item] for item in ids]
+    '''
+    X, feat_dict, y = featurefunc.extract_feats_by_dir(fds, train_dir)
 
     lr.fit(X,y,feat_dict)
 
@@ -62,7 +65,7 @@ def main():
 
         featurefunc.extract_feats_by_file(ffs, fds, test_dir, datafile)
 
-    X,feat_dict = featurefunc.make_design_mat(fds,None)
+    X,feat_dict = featurefunc.make_design_mat(fds,feat_dict)
 
     preds = lr.predict(X)
     
