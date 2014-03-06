@@ -9,26 +9,6 @@ from scipy import sparse
 
 import util
 
-def extract_feats_by_dir(fds, direc):
-    ffs = getFeatures()
-    classes = {}
-    ids = []
-    for datafile in os.listdir(direc):
-        # extract id and true class (if available) from filename
-        id_str,clazz = datafile.split('.')[:2]
-        ids.append(id_str)
-        # add target class if this is training data
-        if clazz != "X":
-            classes[id_str] = util.malware_classes.index(clazz)
-
-        extract_feats_by_file(ffs, fds, direc, datafile)
-    X,feat_dict = featurefunc.make_design_mat(fds,None)
-    y = [classes[item] for item in ids]
-
-    return X, feat_dict, y
-
-
-
 def extract_feats_orig(ffs, direc="train", global_feat_dict=None):
     """
     arguments:
@@ -75,15 +55,47 @@ def extract_feats_orig(ffs, direc="train", global_feat_dict=None):
     return X, feat_dict, np.array(classes), ids
 
 
-def extract_feats_by_file(ffs, fds, direc, datafile):
+
+
+
+class ExtractorFds(object):
+    fds = []  # class (static) variable
+
+    def append(row):
+        fds.append(row)
+
+    def getFds():
+        return fds
+
+def extract_feats_by_dir(direc):
+    fds = ExtractorFds()
+    ffs = getFeatures()
+    classes = {}
+    ids = []
+    for datafile in os.listdir(direc):
+        # extract id and true class (if available) from filename
+        id_str,clazz = datafile.split('.')[:2]
+        ids.append(id_str)
+        # add target class if this is training data
+        if clazz != "X":
+            classes[id_str] = util.malware_classes.index(clazz)
+
+        extract_feats_by_file(ffs, fds, direc, datafile)
+    X,feat_dict = make_design_mat(fds,None)
+    y = [classes[item] for item in ids]
+
+    return X, y, ids
+
+
+def extract_feats_by_file(ffs, direc, datafile):
+    fds = ExtractorFds()
     rowfd = {}
     # parse file as an xml document
     tree = ET.parse(os.path.join(direc,datafile))
     # accumulate features
     [rowfd.update(ff(tree)) for ff in ffs]
-    fds.append(rowfd)        
-
-    return fds
+    fds.append(rowfd)
+    return
 
 
 def make_design_mat(fds, global_feat_dict=None):

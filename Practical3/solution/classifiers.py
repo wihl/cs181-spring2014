@@ -16,7 +16,7 @@ class Classifier(object):
     def load(self, file):
         pass
 
-    def fit(self, X, y, feat_dict):
+    def fit(self, X, y):
         pass
 
     def score(self, X, y):
@@ -76,8 +76,8 @@ class RandomClassifier(Classifier):
     def name(self):
         return 'random'
 
-    def fit(self, X, y, feat_dict):
-        self.learned_W = np.random.random((len(feat_dict),len(util.malware_classes)))
+    def fit(self, X, y):
+        self.learned_W = np.random.random((X.shape[1],len(util.malware_classes)))
         return self.learned_W
 
     def predict(self, X):
@@ -95,7 +95,7 @@ class LogisticRegression(Classifier):
     def name(self):
         return 'LogisticRegression-'+str(self.C)
 
-    def fit(self, X, y, feat_dict):
+    def fit(self, X, y):
         self.logreg.fit(X, y)
 
     def predict(self, X):
@@ -111,7 +111,7 @@ class SVM(Classifier):
     def name(self):
         return 'SVM'
 
-    def fit(self, X, y, feat_dict):
+    def fit(self, X, y):
         self.svm.fit(X, y)
 
     def predict(self, X):
@@ -124,7 +124,7 @@ class kNN(Classifier):
     def name(self):
         return 'kNN'
 
-    def fit(self, X, y, feat_dict):
+    def fit(self, X, y):
         self.knn.fit(X, y)
 
     def predict(self, X):
