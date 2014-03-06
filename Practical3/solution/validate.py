@@ -46,6 +46,9 @@ def main():
 
     if args.full:
         direc = 'train'
+        timestamp = datetime.datetime.now().strftime("%H:%M:%S")
+        print("%s Start of full run" % (timestamp))
+
     else:
         direc = 'mintrain'
 
@@ -91,8 +94,9 @@ def main():
             except:
                 print "no weights found"
 
+            timestamp = datetime.datetime.now().strftime("%H:%M:%S")
 
-            print("%s accuracy: %0.2f (+/- %0.2f)" % (c.name(), avgAcc, stdAcc))
+            print("%s %s accuracy: %0.2f (+/- %0.2f)" % (timestamp, c.name(), avgAcc, stdAcc))
         
 if __name__ == "__main__":
     main()
