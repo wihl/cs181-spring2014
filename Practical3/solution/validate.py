@@ -18,36 +18,20 @@ import csv
 from random import randrange
 import datetime
 
-import featurefunc
+import featurefunc as ff
 import classifiers as cl
 import util
 
 def validate(num_iterations, clf, direc = 'mintrain'):
     assert clf != None
-    ffs = featurefunc.getFeatures()
-    fds = [] # list of feature dicts
-    classes = {}
-    ids = []
-
-    for datafile in os.listdir(direc):
-        # extract id and true class (if available) from filename
-        id_str,clazz = datafile.split('.')[:2]
-        ids.append(id_str)
-        # add target class if this is training data
-        if clazz != "X":
-            classes[id_str] = util.malware_classes.index(clazz)
-
-        featurefunc.extract_feats_by_file(ffs, fds, direc, datafile)
-
     accuracy = []
-    X,feat_dict = featurefunc.make_design_mat(fds,None)
-
-    y = [classes[item] for item in ids]
+    ds = ff.Dataset()
+    X, y, ids = ds.getDataset(direc)
     
     for size in [0.3, 0.2, 0.1]: # try 3 fold, 5 fold and 10 fold
         for i in range(num_iterations):
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=size)
-            clf.fit(X_train,y_train,feat_dict)
+            clf.fit(X_train,y_train)
             preds = clf.predict(X_test)
             accuracy.append(clf.score(preds,y_test))
 
