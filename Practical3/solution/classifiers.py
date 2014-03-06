@@ -68,6 +68,8 @@ class Classifier(object):
     def predict(self, X):
         return np.ones(X.shape[0], np.int64) * 8 # hardcoded value for No virus
 
+    def weights(self):
+        return []
 
 class RandomClassifier(Classifier):
     def __init__(self):
@@ -100,6 +102,9 @@ class LogisticRegression(Classifier):
 
     def predict(self, X):
         return self.logreg.predict(X)
+
+    def weights(self):
+        return self.logreg.coef_
 
 class SVM(Classifier):
     def __init__(self):

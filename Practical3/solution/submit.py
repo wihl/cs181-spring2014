@@ -9,9 +9,9 @@ import util
 
 ## The following function does the feature extraction, learning, and prediction
 def main():
-    train_dir = "mintrain"
-    test_dir = "mintest"
-    outputfile = "mypredictions-min2.csv"  # feel free to change this or take it as an argument
+    train_dir = "train"
+    test_dir = "test"
+    outputfile = "mypredictions.csv"  # feel free to change this or take it as an argument
 
     lr = cl.LogisticRegression()
     

@@ -22,11 +22,11 @@ import featurefunc as ff
 import classifiers as cl
 import util
 
-def validate(num_iterations, clf, direc = 'mintrain'):
+def validate(num_iterations, clf, direc, ds):
     assert clf != None
     accuracy = []
-    ds = ff.Dataset()
     X, y, ids = ds.getDataset(direc)
+    weights = None
     
     for size in [0.3, 0.2, 0.1]: # try 3 fold, 5 fold and 10 fold
         for i in range(num_iterations):
@@ -34,18 +34,24 @@ def validate(num_iterations, clf, direc = 'mintrain'):
             clf.fit(X_train,y_train)
             preds = clf.predict(X_test)
             accuracy.append(clf.score(preds,y_test))
+            if weights is None:
+                weights = np.array(clf.weights())
+            else:
+                weights = np.vstack([weights,clf.weights()])
 
-    return np.array(accuracy)
+    return np.array(accuracy), weights
 
 def main():
     num_folds = 5
+
+    ds = ff.Dataset()
 
     with open('error_log.txt', 'a') as errfile:
         wr = csv.writer(errfile, dialect = 'excel')
     
         for clf in cl.getClassifiers():
             c = clf()
-            accuracy = validate(num_folds, c)
+            accuracy, weights = validate(num_folds, c,'train', ds)
             timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             avgAcc = accuracy.mean()
             stdAcc = accuracy.std() * 2
@@ -53,8 +59,16 @@ def main():
             wr.writerow([timestamp, num_folds, c.name(), avgAcc, stdAcc, 
                          np.max(accuracy), np.min(accuracy)])
 
-            #print c.name(),"score is ", avgAcc * 100.0, "%"
-    
+            with open('weight_'+c.name()+'.txt', 'w') as weightfile:
+                wcsv = csv.writer(weightfile, dialect='excel')
+                wcsv.writerow(["Key","mean","std"])
+                w_mean = np.abs(weights.mean(0))
+                w_std  = weights.std(0) * 2
+
+                for i, key in enumerate(ds.getFeatureDict()):
+                    wcsv.writerow([key, w_mean[i], w_std[i]])
+
+
             print("%s accuracy: %0.2f (+/- %0.2f)" % (c.name(), avgAcc, stdAcc))
         
 if __name__ == "__main__":

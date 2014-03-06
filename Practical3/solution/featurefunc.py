@@ -18,6 +18,9 @@ class Dataset(object):
         self.featureDict = None
         self.ffs = self.getFeatures()
 
+    def getFeatureDict(self):
+        return self.featureDict
+
     def getFeatures(self):
         return [first_last_system_call_feats, system_call_count_feats, process_metrics]
 
@@ -139,7 +142,9 @@ def system_call_count_feats(tree):
             in_all_section = False
         elif in_all_section:
             c['num_system_calls'] += 1
-            c['num_'+el.tag] += 1
+            # prune off noisy features
+            if el.tag not in ['create_process','query_value', 'get_host_by_name']:
+                c['num_'+el.tag] += 1
     return c
 
 def process_metrics(tree):

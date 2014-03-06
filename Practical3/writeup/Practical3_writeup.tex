@@ -40,9 +40,19 @@ NOTES:
 
 \subsection*{Using Cross-validation}
 
+Ran 5 CV sets of train / CV data 70/30, 80/20 and 90/10 for each classifier.
+
 \section*{Approaches considered}
 
 \subsection*{Feature Engineering}
+
+
+Aggregate Features per training file:
+ selected all process features  (e.g. 'startreason', 'terminationreason', 'username', 'executionstatus', 'applicationtype') and summary thread features (num of each type of system call).
+
+used CV to generate Logistic Regression weights. Took mean and std of resulting matrix, then eliminated any features where abs(mean) $<$ 0.001 and std $< $0.01.
+
+
 
 \subsection*{Selection of fitting technique}
 
