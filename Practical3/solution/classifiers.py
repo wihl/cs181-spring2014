@@ -5,6 +5,7 @@ from sklearn import cross_validation
 from sklearn.neighbors import NearestNeighbors
 import theano
 import theano.tensor as T
+from theano import sparse as sp
 
 import util
 
@@ -133,32 +134,39 @@ class TheanoLR(Classifier):
          http://deeplearning.net/software/theano/tutorial/examples.html#a-real-example-logistic-regression
     '''
     def __init__(self):
-        # TODO - get "feats"
-        self.training_steps = 1000
-        self.w = theano.shared(np.random.randn(feats), name="w")
+        theano.config.compute_test_value = 'warn'
+        # TODO - size of feature vector hardcoded for now
+        self.training_steps = 10000
+        self.x = T.matrix("x")
+        self.y = T.vector("y")
+        self.w = theano.shared(np.random.randn(89), name="w")
         self.b = theano.shared(0., name="b")
+        # Construct Theano expression graph
+        self.p_1 = 1 / (1 + T.exp(-T.dot(self.x, self.w) - self.b))   # Probability that target = 1
+        self.prediction = self.p_1 > 0.5                         # The prediction thresholded
+        self.xent = -self.y * T.log(self.p_1) - (1-self.y) * T.log(1-self.p_1)       # Cross-entropy loss function
+        self.cost = self.xent.mean() + 0.01 * (self.w ** 2).sum()     # The cost to minimize
+        self.gw, self.gb = T.grad(self.cost, [self.w, self.b])             # Compute the gradient of the cost
+        # Compile
+        self.train = theano.function(
+            inputs=[self.x,self.y],
+            outputs=[self.prediction, self.xent],
+            updates=((self.w, self.w - 0.1 * self.gw), (self.b, self.b - 0.1 * self.gb)))
+        self.predict = theano.function(inputs=[self.x], outputs=self.prediction)
 
-    def get_params(self, deep=False, *args):
-        return self.svm.get_params(*args)
 
     def name(self):
         return 'TheanoLR'
 
     def fit(self, X, y):
-        # Construct Theano expression graph
-        p_1 = 1 / (1 + T.exp(-T.dot(X, self.w) - self.b))   # Probability that target = 1
-        self.prediction = p_1 > 0.5                              # The prediction thresholded
-        xent = -y * T.log(p_1) - (1-y) * T.log(1-p_1)       # Cross-entropy loss function
-        cost = xent.mean() + 0.01 * (self.w ** 2).sum()     # The cost to minimize
-        gw, gb = T.grad(cost, [self.w, self.b])             # Compute the gradient of the cost
-        # Compile
-        train = theano.function(
-            inputs=[x,y],
-            outputs=[prediction, xent],
-            updates=((w, w - 0.1 * gw), (b, b - 0.1 * gb)))
+        print X.shape
+        X_dense = np.asarray(X.todense())
+        print type(X_dense), len(X_dense), len(X_dense[0]), type(y)
+        for i in range(self.training_steps):
+            self.pred, self.err = self.train(X_dense, y)
 
     def predict(self, X):
-        return theano.function(inputs=[X], outputs=self.prediction)
+        return self.predict(X)
 
     def weights(self):
         return self.w.get_value()
@@ -183,6 +191,7 @@ class kNN(Classifier):
 
 def getClassifiers():
     return [ SVM,
-            LogisticRegression
+            LogisticRegression,
+             TheanoLR
            ]
 
