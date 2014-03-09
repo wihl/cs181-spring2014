@@ -108,7 +108,7 @@ class LogisticRegression(Classifier):
 
 class SVM(Classifier):
     def __init__(self):
-        self.svm = svm.SVC(kernel='linear', max_iter=100000, C=1000)
+        self.svm = svm.SVC(kernel='linear', max_iter=100000, C=0.03)
 
     def get_params(self, deep=False, *args):
         return self.svm.get_params(*args)
