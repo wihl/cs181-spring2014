@@ -208,7 +208,10 @@ def basic_thread_features(tree):
             #if el.get('filename'): c['filename'] = hash(el.get('filename'))
             #if el.get('protect'): c['protect'] = hash(el.get('protect')) # + 
             #if el.get('behavior'): c['behavior'] = hash(el.get('behavior')) 
-            for r in ['filename', 'protect', 'behavior', 'allocationtype', 'creationflags']:
+            for r in ['filename', 'user', 'protect', 'target', 
+                      'servicename', 'behavior','creationflag',
+                      'srcfile', 'apifunction', 'flags', 
+                      'desiredaccess', 'allocationtype' ]:
                 if el.get(r) != None:
                     c[r] = hash(el.get(r))
 
