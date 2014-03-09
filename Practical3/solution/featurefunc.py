@@ -188,6 +188,10 @@ def process_metrics(tree):
                     c[r+'-'+el.attrib[r]] = c.get(r+'-'+el.attrib[r],0) + 1
     return c
 
+def hexStrToInt(str):
+    # convert hex string in the form "$123ABC" to integer value
+    return int('0x'+str[1:], 16)
+
 def basic_thread_features(tree):
     c = {} #Counter()
     in_all_section = False
@@ -199,6 +203,14 @@ def basic_thread_features(tree):
             in_all_section = False
         elif in_all_section:
             c['action'] = hash(el.tag)
-            if el.get('filename'): c['filename'] = hash(el.get('filename'))
+            if el.get('wantedaddress'): c['wantedaddress'] = hexStrToInt(el.get('wantedaddress')) # 0
+            if el.get('successful'): c['successful'] = int(el.get('successful')) # 0
+            #if el.get('filename'): c['filename'] = hash(el.get('filename'))
+            #if el.get('protect'): c['protect'] = hash(el.get('protect')) # + 
+            #if el.get('behavior'): c['behavior'] = hash(el.get('behavior')) 
+            for r in ['filename', 'protect', 'behavior', 'allocationtype', 'creationflags']:
+                if el.get(r) != None:
+                    c[r] = hash(el.get(r))
+
             yield c
     
