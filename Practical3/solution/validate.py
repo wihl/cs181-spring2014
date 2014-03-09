@@ -42,6 +42,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--iterations',help='Number of cross validation iterations to run', type=int)
     parser.add_argument('-f', '--full',help='full or minimal training run (default minimal)',action='store_true')
+    parser.add_argument('-t', '--thread',help='use thread metrics (default process)', action='store_true')
     parser.add_argument('classifier',nargs='?', help='Which classifer to use (default all)')
     args = parser.parse_args()
 
@@ -65,7 +66,10 @@ def main():
     else:
         classifier = None
 
-    ds = ff.Dataset()
+    if args.thread:
+        ds = ff.Dataset(ff.MetricType().thread)
+    else:
+        ds = ff.Dataset()
 
     with open('error_log.txt', 'a') as errfile:
         wr = csv.writer(errfile, dialect = 'excel')

@@ -74,6 +74,14 @@ class Dataset(object):
 
     def extractThreadFeatures(self, datafile, actualValue):
         numRows = 0
+        tree = ET.parse(os.path.join(self.directory,datafile))
+        # accumulate features
+        for ff in self.ffs:
+            for row in ff(tree):
+                rowfd = {}
+                rowfd.update(row)
+                self.fds.append(rowfd)
+                numRows += 1
         return numRows
 
     def makeDesignMat(self):
@@ -181,7 +189,7 @@ def process_metrics(tree):
     return c
 
 def basic_thread_features(tree):
-    c = Counter()
+    c = {} #Counter()
     in_all_section = False
     for el in tree.iter():
         # ignore everything outside the "all_section" element
@@ -191,8 +199,6 @@ def basic_thread_features(tree):
             in_all_section = False
         elif in_all_section:
             c['action'] = hash(el.tag)
-            # prune off noisy features
-            if el.tag not in ['create_process','query_value', 'get_host_by_name']:
-                c['num_'+el.tag] += 1
-    return c
+            if el.get('filename'): c['filename'] = hash(el.get('filename'))
+            yield c
     
