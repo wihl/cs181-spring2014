@@ -3,6 +3,8 @@ from sklearn import linear_model
 from sklearn import svm
 from sklearn import cross_validation
 from sklearn.neighbors import NearestNeighbors
+import theano
+import theano.tensor as T
 
 import util
 
@@ -124,6 +126,42 @@ class SVM(Classifier):
 
     def weights(self):
         return self.svm.coef_
+
+class TheanoLR(Classifier):
+    '''
+    Theano / DeepLearning Experiment. Adopted from 
+         http://deeplearning.net/software/theano/tutorial/examples.html#a-real-example-logistic-regression
+    '''
+    def __init__(self):
+        # TODO - get "feats"
+        self.training_steps = 1000
+        self.w = theano.shared(np.random.randn(feats), name="w")
+        self.b = theano.shared(0., name="b")
+
+    def get_params(self, deep=False, *args):
+        return self.svm.get_params(*args)
+
+    def name(self):
+        return 'TheanoLR'
+
+    def fit(self, X, y):
+        # Construct Theano expression graph
+        p_1 = 1 / (1 + T.exp(-T.dot(X, self.w) - self.b))   # Probability that target = 1
+        self.prediction = p_1 > 0.5                              # The prediction thresholded
+        xent = -y * T.log(p_1) - (1-y) * T.log(1-p_1)       # Cross-entropy loss function
+        cost = xent.mean() + 0.01 * (self.w ** 2).sum()     # The cost to minimize
+        gw, gb = T.grad(cost, [self.w, self.b])             # Compute the gradient of the cost
+        # Compile
+        train = theano.function(
+            inputs=[x,y],
+            outputs=[prediction, xent],
+            updates=((w, w - 0.1 * gw), (b, b - 0.1 * gb)))
+
+    def predict(self, X):
+        return theano.function(inputs=[X], outputs=self.prediction)
+
+    def weights(self):
+        return self.w.get_value()
 
 
 class kNN(Classifier):

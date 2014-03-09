@@ -73,7 +73,10 @@ def main():
             c = clf()
             if classifier is not None:
                 # let only a specific classifier run
-                if c.name() != classifier: continue
+                if c.name() != classifier: 
+                    continue
+                else:
+                    print "Using classifer",c.name(), "only"
             accuracy, weights = validate(num_iter, c, direc, ds)
             timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             avgAcc = accuracy.mean()
