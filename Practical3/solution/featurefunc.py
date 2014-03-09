@@ -9,19 +9,31 @@ from scipy import sparse
 
 import util
 
+class MetricType:
+    process = 1
+    thread = 2
+
 class Dataset(object):
     '''
     Create and manage datasets
     '''
-    def __init__(self):
+    def __init__(self, metricType = MetricType.process):
         self.featureDict = None
+        self.metricType = metricType
+        if self.metricType == MetricType.process:
+            print "using process metrics"
+        else:
+            print "using thread metrics"
         self.ffs = self.getFeatures()
 
     def getFeatureDict(self):
         return self.featureDict
 
     def getFeatures(self):
-        return [first_last_system_call_feats, system_call_count_feats, process_metrics]
+        if self.metricType == MetricType.process:
+            return [first_last_system_call_feats, system_call_count_feats, process_metrics]
+        else:
+            return [basic_thread_features]
 
     def getDataset(self,directory):
         self.ids = []
@@ -32,11 +44,19 @@ class Dataset(object):
             # extract id and true class (if available) from filename
             id_str,clazz = datafile.split('.')[:2]
             self.ids.append(id_str)
-            # add target class if this is training data
             if clazz != "X":
-                y.append(util.malware_classes.index(clazz))
+                actualValue = util.malware_classes.index(clazz) 
+            else:
+                actualValue = None
 
-            self.extractFeaturesByFile(datafile)
+            if self.metricType == MetricType.process:
+                # add target class if this is training data
+                if actualValue is not None: y.append(actualValue)
+                self.extractFeaturesByFile(datafile)
+            else:
+                # we will have one row per system call, rather than per process
+                numRows = self.extractThreadFeatures(datafile,actualValue)
+                if actualValue is not None: y.extend([actualValue] * numRows)
 
         X = self.makeDesignMat()
 
@@ -52,6 +72,9 @@ class Dataset(object):
         self.fds.append(rowfd)
         return
 
+    def extractThreadFeatures(self, datafile, actualValue):
+        numRows = 0
+        return numRows
 
     def makeDesignMat(self):
         if self.featureDict is None:
@@ -157,3 +180,19 @@ def process_metrics(tree):
                     c[r+'-'+el.attrib[r]] = c.get(r+'-'+el.attrib[r],0) + 1
     return c
 
+def basic_thread_features(tree):
+    c = Counter()
+    in_all_section = False
+    for el in tree.iter():
+        # ignore everything outside the "all_section" element
+        if el.tag == "all_section" and not in_all_section:
+            in_all_section = True
+        elif el.tag == "all_section" and in_all_section:
+            in_all_section = False
+        elif in_all_section:
+            c['action'] = hash(el.tag)
+            # prune off noisy features
+            if el.tag not in ['create_process','query_value', 'get_host_by_name']:
+                c['num_'+el.tag] += 1
+    return c
+    

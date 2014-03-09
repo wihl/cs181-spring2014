@@ -22,6 +22,7 @@ def validate(num_iterations, clf, direc, ds):
     assert clf != None
     accuracy = []
     X, y, ids = ds.getDataset(direc)
+    print "X len=",X.shape, "Y len=", len(y)
     weights = None
     
     for size in [0.3, 0.2, 0.1]: # try 3 fold, 5 fold and 10 fold
