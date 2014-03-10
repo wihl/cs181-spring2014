@@ -19,6 +19,9 @@ class Classifier(object):
     def fit(self, X, y):
         pass
 
+    def decision_function(self, X):
+        return None
+
     def score(self, X, y):
         total = len(y)
         c = 0
@@ -105,6 +108,12 @@ class LogisticRegression(Classifier):
 
     def weights(self):
         return self.logreg.coef_
+
+    def decision_function(self, X):
+        return self.logreg.decision_function(X)
+
+    def classifier_(self):
+        return self.logreg
 
 class SVM(Classifier):
     def __init__(self):

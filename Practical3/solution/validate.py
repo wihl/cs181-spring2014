@@ -26,10 +26,16 @@ def validate(num_iterations, clf, direc, ds):
     weights = None
     
     for size in [0.3, 0.2, 0.1]: # try 3 fold, 5 fold and 10 fold
+        print "size ",size
+        print "Item\tProb\tPred\tActual"
         for i in range(num_iterations):
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=size)
             clf.fit(X_train,y_train)
+            clf2 = clf.classifier_()
+            df = clf2.predict_proba(X_test)
             preds = clf.predict(X_test)
+            for i in range(len(df)):
+                print("%d\t%0.3f\t%d\t%d" % (i, np.max(df[i]), preds[i], y_test[i]))
             accuracy.append(clf.score(preds,y_test))
             if weights is None:
                 weights = np.array(clf.weights())
