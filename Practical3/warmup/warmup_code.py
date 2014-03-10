@@ -13,14 +13,14 @@ import pylab as pl
 from numpy import genfromtxt
 my_data = genfromtxt('fruit.csv', delimiter=',')
 
-#print my_data[:,0]
-#print my_data[:,1]
+
+
 #print my_data[:,1]
 
 
 #plot basic data
 #pl.figure(1)
-#pl.scatter(my_data[:,1], my_data[:,2], c=my_data[:,0])
+#pl.scatter(my_data[:,1], my_data[:,2],_data = genfromtxt('fruit.csv', delimiter=',') c=my_data[:,0])
 #pl.show()
 
 #three class generalization of logistic regression 
@@ -31,69 +31,84 @@ tmatrix=np.zeros( (len(my_data[:,1]), 3))
 for i in xrange(1,len(my_data)):
 	tmatrix[i,my_data[i,0]-1]=1
 
+tmatrix=np.delete(tmatrix, (0),0)
+#print tmatrix
+#print my_data
+
 #intialize weights matrix
-weights=np.matrix([[1,1,1],[1,1,1], [1,1,1]])
+#weights=np.matrix([[1,1,1],[1,1,1], [1,1,1]])
 #print weights
 
 def f(weights):
 	weights=np.reshape(weights,(3,3))
-	sumval=0
-	for n in xrange(1,len(tmatrix[:,0])):
+#	print weights
+	sumval=0.
+	for n in xrange(1,len(tmatrix[:,0]+1)):
 		for k in xrange(0, 3):
-			a=np.exp(weights[k,0]+my_data[n,1]*weights[k,1]+my_data[n,2]*weights[k,2])
-			a_sum=0
-			#print a
+			#print "w0   ",weights[k,0], "\t     w1",weights[k,1], "\t w2",weights[k,2]
+			#print "MD0   ",my_data[n,1], "\t     w1",my_data[n,2]
+
+			a=(weights[k,0]+my_data[n,1]*weights[k,1]+my_data[n,2]*weights[k,2])
+			a_sum=0.
+			#print "a=", a
 			for j in xrange(0,3):
 				a_sum+=np.exp(weights[j,0]+my_data[n,1]*weights[j,1]+my_data[n,2]*weights[j,2])
-			#	print a_sum
-			sumval+= tmatrix[n,k]*np.log( np.exp(a/a_sum))
+				#print a_sum
+			sumval+= tmatrix[n,k]*(a -np.log(a_sum))
 			#print sumval
 
 	return -sumval
 
-initweight=np.asarray([0,0,0, 0,0,0, 0,0,0])
-#print initweight
-res= optimize.minimize(f, initweight)
-print res.x
-weights=np.reshape(res.x, (3,3))
+initweight=np.asarray([1.,0.,0., 1.,0.,0., 1.,0.,0.])
+#print np.reshape(initweight, (3,3))
+res= optimize.fmin_bfgs(f, initweight, full_output=1)
+res= res[0]
 
-for n in xrange(1,len(tmatrix[:,0])):
+weights=np.reshape(np.ravel(res), (3,3))
+print res
+
+
+ASSIGNED_VALUES=[]
+#assign points to a cluster
+for n in xrange(0,len(tmatrix[:,0]+1)):
 	checker=[]
-	
 	for k in xrange(0, 3):
-		a=np.exp(weights[k,0]+my_data[n,1]*weights[k,1]+my_data[n,2]*weights[k,2])
-		a_sum=0
+		a=(weights[k,0]+my_data[n,1]*weights[k,1]+my_data[n,2]*weights[k,2])
+		a_sum=0.
 		for j in xrange(0,3):
 			a_sum+=np.exp(weights[j,0]+my_data[n,1]*weights[j,1]+my_data[n,2]*weights[j,2])
 		#	print a_sum
-		checker.append(np.exp(a/a_sum))
-		print checker
-	print checker.index(max(checker))
+		checker.append(a -np.log(a_sum))
+#		print checker
+	ASSIGNED_VALUES.append(checker.index(max(checker)))
 
+print ASSIGNED_VALUES
 
+#Graphing parameters
+Y=my_data[1:,0]
+X=my_data[1:,1:3]
+h=.02
 
-#def gradf(x, *args):
-	# u, v = x
- # 	a, b, c, d, e, f = args
- # 	w1 = 2*a*u + b*v + d     # u-component of the gradient
- # 	w2 = b*u + 2*c*v + e     # v-component of the gradient
- # 	w3 = 
- # 	return np.asarray((w1, w2, w3))
+# Plot the decision boundary. For that, we will assign a color to each
+# point in the mesh [x_min, m_max]x[y_min, y_max].
+x_min, x_max = X[:, 0].min() - .5, X[:, 0].max() + .5
+y_min, y_max = X[:, 1].min() - .5, X[:, 1].max() + .5
+xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
 
-#print f(weights)
-#res1 = optimize.fmin_cg(f, weights)#, fprime=gradf, args=args)
-#print 'res1 = ', res1
+#print xx
+#print len(ASSIGNED_VALUES)
+newvar=np.array(ASSIGNED_VALUES)
 
+#Z=newvar.reshape(xx.shape)
+#print newvar
 
+pl.figure(1, figsize=(4, 3))
+#pl.pcolormesh(xx, yy, Z, cmap=pl.cm.Paired)
+pl.scatter(X[:, 0], X[:, 1], c=Y, edgecolors='k', cmap=pl.cm.Paired)
 
+pl.xlim(xx.min(), xx.max())
+pl.ylim(yy.min(), yy.max())
+pl.xticks(())
+pl.yticks(())
 
-def sigmoid(input):
-	return 1.0/(1+ numpy.exp(-input))
-
-# def f(x, weights)
-
-# 	return 
-
-
-
-#scipy.optimize.fmin_bfgs(f, x0, fprime=None, args=(), gtol=1e-05, norm=inf, epsilon=1.4901161193847656e-08, maxiter=None, full_output=0, disp=1, retall=0, callback=None)[source]
+pl.show()
