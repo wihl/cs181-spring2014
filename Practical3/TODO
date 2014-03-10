@@ -1,17 +1,21 @@
 TODO:
-Feature engineering
-	. create second set of features using per thread info
-	. Repeat optimize for each feature added
-	. new per file metrics
-	. Add per thread parameters
+use a better hashing function that doesn't as wide fluctuations in values, ideally an enum
 
-Figure out what to do with send_socket / dump_line and recv_socket / dump_line
+can we cluster with kMeans or use PCA?
+
+how to determine which thread metrics are yielding the best results?
+
+how to combine model A and model B?
 
 Classifiers
 	. figure out how to make sense of kNN classifier results (returns distance to all points?)
 	. try random forests
+	. get Theano to work
 
-Use sklearn scoring
+Look into per-class error rates
+
+Figure out what to do with send_socket / dump_line and recv_socket / dump_line
+
 Implement optimize:
 	  Try sklearn grid to optimize parameters
 	  for each classifier:
@@ -23,9 +27,7 @@ Implement optimize:
 Validate Future Command Line Args:
 	 . classifier parameters
 	 . LOO - leave one out on/off (def: off)
-	 . algorithm to use (def: all)
        	 . store to detailed error log: fold, F1 score per class
-
 
 Move this onto StarCluster
 
