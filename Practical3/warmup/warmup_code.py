@@ -56,7 +56,7 @@ res= optimize.fmin_bfgs(f, initweight, full_output=1)
 res= res[0]
 
 weights=np.reshape(np.ravel(res), (3,3))
-print res
+#print res
 
 
 ASSIGNED_VALUES=[]
@@ -73,7 +73,7 @@ for n in xrange(0,len(tmatrix[:,0]+1)):
 #		print checker
 	ASSIGNED_VALUES.append(checker.index(max(checker)))
 
-print ASSIGNED_VALUES
+#print ASSIGNED_VALUES
 
 #Graphing parameters
 Y=my_data[1:,0]
@@ -109,7 +109,7 @@ pl.plot(new_x, line2)
 
 line3=np.asarray(weights[2,0]/weights[0,2] +new_x*weights[2,1]+ new_y*weights[2,2])
 pl.plot(new_x, line3)
-print line3
+#print line3
 
 
 pl.xlim(xx.min(), xx.max())
@@ -153,10 +153,13 @@ d2m_y=np.mean(d2y)
 d3m_x=np.mean(d3x)
 d3m_y=np.mean(d3y)
 
-d1=numpy.array(d1x,d1y)
-d2=numpy.array(d2x,d2y)
-d3=numpy.array(d3x,d3y)
+#create arrays for each class
+d1=np.asarray([d1x,d1y])
+d2=np.asarray([d2x,d2y])
+d3=np.asarray([d3x,d3y])
 
-print d1 d2 d3
+print np.cov(d1)
+print np.cov(d2)
+print np.cov(d3)
 
 
