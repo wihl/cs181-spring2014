@@ -13,18 +13,9 @@ import pylab as pl
 from numpy import genfromtxt
 my_data = genfromtxt('fruit.csv', delimiter=',')
 
-
-
-#print my_data[:,1]
-
-
-#plot basic data
-#pl.figure(1)
-#pl.scatter(my_data[:,1], my_data[:,2],_data = genfromtxt('fruit.csv', delimiter=',') c=my_data[:,0])
-#pl.show()
-
+####################################################
 #three class generalization of logistic regression 
-
+####################################################
 
 #tmatrix represents the 'ideal assigment of points and is a n*k column vector'
 tmatrix=np.zeros( (len(my_data[:,1]), 3))
@@ -106,23 +97,59 @@ pl.figure(1, figsize=(8, 6))
 #pl.pcolormesh(xx, yy, Z, cmap=pl.cm.Paired)
 pl.scatter(X[:, 0], X[:, 1], c=Y, edgecolors='k', cmap=pl.cm.Paired)
 
-new_x=np.arange(0, 20, 1);
-new_y=np.arange(0, 20, 1);
-line1=weights[0,0]/weights[0,2] +new_x*weights[0,1]/weights[0,2]
-pl.plot(line1)
+#PLOTTING NEEDS TO BE FIXED TO SHOW THREE LINES
+new_x=np.arange(-20, 20, 1);
+new_y=np.arange(-20, 20, 1);
+line1=np.asarray(weights[0,0]/weights[0,2] +new_x*weights[0,1]+ new_y*weights[0,2])
+pl.plot(new_x,line1)
+
+line2=np.asarray(weights[1,0]/weights[0,2] +new_x*weights[1,1]+new_y*weights[1,2])
+pl.plot(new_x, line2)
 
 
-line2=weights[1,0]+new_x*weights[1,2]/weights[1,1]
-pl.plot(line2)
-
-
-line3=weights[2,0]+new_x*weights[2,2]/weights[2,1]
-pl.plot(line3)
+line3=np.asarray(weights[2,0]/weights[0,2] +new_x*weights[2,1]+ new_y*weights[2,2])
+pl.plot(new_x, line3)
+print line3
 
 
 pl.xlim(xx.min(), xx.max())
 pl.ylim(yy.min(), yy.max())
+
+#pl.xlim(0, 40)
+#pl.ylim(0, 40)
+
 pl.xticks(())
 pl.yticks(())
+#pl.show()
 
-pl.show()
+####################################################
+#Generative model
+####################################################
+
+d1x=[]
+d2x=[]
+d3x=[]
+d1y=[]
+d2y=[]
+d3y=[]
+
+#create seperate sub-datasets for each group
+for datum in my_data:
+	if datum[0]==1:
+		d1x.append(datum[1])
+		d1y.append(datum[2])
+	if datum[0]==2:
+		d2x.append(datum[1])
+		d2y.append(datum[2])
+	if datum[0]==3:
+		d3x.append(datum[1])
+		d3y.append(datum[2])
+
+#compute means
+d1x_m=np.mean(d1x)
+d1y_m=np.mean(d1y)
+d2x_m=np.mean(d2x)
+d2m_y=np.mean(d2y)
+d3m_x=np.mean(d3x)
+d3m_y=np.mean(d3y)
+
