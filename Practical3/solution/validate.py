@@ -18,10 +18,12 @@ import featurefunc as ff
 import classifiers as cl
 import util
 
-def validate(num_iterations, clf, direc, ds):
+def validate(num_iterations, clf, direc, ds, ds2 = None):
     assert clf != None
     accuracy = []
     X, y, ids = ds.getDataset(direc)
+    if ds2 is not None:
+        X2, y2, ids2 = ds2.getDataset(direc)
     print "X len=",X.shape, "Y len=", len(y)
     weights = None
     
@@ -30,12 +32,24 @@ def validate(num_iterations, clf, direc, ds):
         print "Item\tProb\tPred\tActual"
         for i in range(num_iterations):
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=size)
-            clf.fit(X_train,y_train)
-            clf2 = clf.classifier_()
-            df = clf2.predict_proba(X_test)
-            preds = clf.predict(X_test)
-            for i in range(len(df)):
-                print("%d\t%0.3f\t%d\t%d" % (i, np.max(df[i]), preds[i], y_test[i]))
+            if ds2 is not None:
+                X2_train, X2_test, y2_train, y2_test = train_test_split(X2, y2, test_size=size)
+                clf.fit(X_train,y_train,X2_train,y2_train)
+                df =  clf.predict_proba(X_test, X2_test)
+                preds = clf.predict(X_test, X2_test)
+                print df
+                #for i in range(len(df)):
+                #    print("%d\t%0.3f %0.3f\t%d\t%d" % (i, np.max(df[i][0]),
+                #                                       np.max(df[i][1]),
+                #                                       preds[i], y_test[i]))
+
+            else:
+                clf.fit(X_train,y_train)
+                clf2 = clf.classifier_()
+                df = clf2.predict_proba(X_test)
+                preds = clf.predict(X_test)
+                for i in range(len(df)):
+                    print("%d\t%0.3f\t%d\t%d" % (i, np.max(df[i]), preds[i], y_test[i]))
             accuracy.append(clf.score(preds,y_test))
             if weights is None:
                 weights = np.array(clf.weights())
@@ -77,6 +91,8 @@ def main():
     else:
         ds = ff.Dataset()
 
+    ds2 = None
+
     with open('error_log.txt', 'a') as errfile:
         wr = csv.writer(errfile, dialect = 'excel')
     
@@ -85,7 +101,12 @@ def main():
             if classifier is not None:
                 # let only a specific classifier run
                 if c.name() != classifier: continue
-            accuracy, weights = validate(num_iter, c, direc, ds)
+                # special case for combined
+                if c.name() == 'Combined':
+                    # create two datasets and ignore the -t parameter
+                    ds = ff.Dataset(ff.MetricType().process)
+                    ds2 = ff.Dataset(ff.MetricType().thread)
+            accuracy, weights = validate(num_iter, c, direc, ds, ds2)
             timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             avgAcc = accuracy.mean()
             stdAcc = accuracy.std() * 2

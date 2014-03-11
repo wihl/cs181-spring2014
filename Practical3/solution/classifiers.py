@@ -4,6 +4,7 @@ from sklearn import svm
 from sklearn import cross_validation
 from sklearn.neighbors import NearestNeighbors
 
+import featurefunc as ff
 import util
 
 class Classifier(object):
@@ -152,8 +153,44 @@ class kNN(Classifier):
         return np.ones(X.shape[0], np.int64) * 8 # hardcoded value for No virus
 
 
+class Combined(Classifier):
+    def __init__(self):
+        self.lrProcess = LogisticRegression()
+        self.lrThread  = LogisticRegression()
+
+    def name(self):
+        return 'Combined'
+
+    def fit(self, X, y, X2=None, y2=None):
+        self.lrProcess.fit(X, y)
+        if X2 is not None:
+            self.lrThread.fit(X2,y2)
+
+    def predict(self, X, X2=None):
+        predProcess = self.lrProcess.predict(X)
+        if X2 is not None:
+            predThread  = self.lrThread.predict(X2)
+        # TODO combine the two
+        
+        return predProcess
+
+    def weights(self):
+        return None
+        #return [self.lrProcess.coef_, self.lrThread.coef_]
+
+    def classifier_(self):
+        return None
+
+    def predict_proba(self,X, X2 = None):
+        # see http://stackoverflow.com/questions/10104245/python-numpy-combine-array
+        return np.vstack((self.lrProcess.classifier_().predict_proba(X),
+                   self.lrThread.classifier_().predict_proba(X2))).T
+
+
+
 def getClassifiers():
     return [ SVM,
-            LogisticRegression
+            LogisticRegression,
+             Combined
            ]
 
