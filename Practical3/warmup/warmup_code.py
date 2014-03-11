@@ -102,9 +102,23 @@ newvar=np.array(ASSIGNED_VALUES)
 #Z=newvar.reshape(xx.shape)
 #print newvar
 
-pl.figure(1, figsize=(4, 3))
+pl.figure(1, figsize=(8, 6))
 #pl.pcolormesh(xx, yy, Z, cmap=pl.cm.Paired)
 pl.scatter(X[:, 0], X[:, 1], c=Y, edgecolors='k', cmap=pl.cm.Paired)
+
+new_x=np.arange(0, 20, 1);
+new_y=np.arange(0, 20, 1);
+line1=weights[0,0]/weights[0,2] +new_x*weights[0,1]/weights[0,2]
+pl.plot(line1)
+
+
+line2=weights[1,0]+new_x*weights[1,2]/weights[1,1]
+pl.plot(line2)
+
+
+line3=weights[2,0]+new_x*weights[2,2]/weights[2,1]
+pl.plot(line3)
+
 
 pl.xlim(xx.min(), xx.max())
 pl.ylim(yy.min(), yy.max())
