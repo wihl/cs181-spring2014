@@ -153,3 +153,10 @@ d2m_y=np.mean(d2y)
 d3m_x=np.mean(d3x)
 d3m_y=np.mean(d3y)
 
+d1=numpy.array(d1x,d1y)
+d2=numpy.array(d2x,d2y)
+d3=numpy.array(d3x,d3y)
+
+print d1 d2 d3
+
+
