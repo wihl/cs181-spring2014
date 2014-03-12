@@ -3,7 +3,7 @@ from scipy import stats
 from sklearn import linear_model
 from sklearn import svm
 from sklearn import cross_validation
-from sklearn.neighbors import NearestNeighbors
+from sklearn.neighbors import KNeighborsClassifier
 
 import featurefunc as ff
 import util
@@ -146,7 +146,7 @@ class SVM(Classifier):
 
 class kNN(Classifier):
     def __init__(self):
-        self.knn = NearestNeighbors(n_neighbors=len(util.malware_classes), algorithm='brute')
+        self.knn = KNeighborsClassifier(n_neighbors=len(util.malware_classes), algorithm='brute')
 
     def name(self):
         return 'kNN'
@@ -155,10 +155,11 @@ class kNN(Classifier):
         self.knn.fit(X, y)
 
     def predict(self, X):
-        dist, ind = self.knn.kneighbors(X)
-        print "dist:", dist
-        print "ind:", ind
-        return np.ones(X.shape[0], np.int64) * 8 # hardcoded value for No virus
+        return self.knn.predict(X)
+
+    def classifier_(self):
+        return self.knn
+
 
 
 class Combined(Classifier):
@@ -197,9 +198,8 @@ class Combined(Classifier):
 
 
 def getClassifiers():
-    return [ SVM,
-            LogisticRegression,
-             Combined,
-             RandomClassifier
+    return [ 
+            LogisticRegression, kNN
+
            ]
 

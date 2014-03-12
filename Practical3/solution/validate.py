@@ -45,11 +45,11 @@ def validate(num_iterations, clf, direc, ds, ds2 = None):
 
             else:
                 clf.fit(X_train,y_train)
-                #clf2 = clf.classifier_()
-                #df = clf2.predict_proba(X_test)
+                clf2 = clf.classifier_()
+                df = clf2.predict_proba(X_test)
                 preds = clf.predict(X_test)
-                #for i in range(len(df)):
-                #    print("%d\t%0.3f\t%d\t%d" % (i, np.max(df[i]), preds[i], y_test[i]))
+                for i in range(len(df)):
+                    print("%d\t%0.3f\t%d\t%d" % (i, np.max(df[i]), preds[i], y_test[i]))
 
 
             s = clf.score(preds,y_test)
