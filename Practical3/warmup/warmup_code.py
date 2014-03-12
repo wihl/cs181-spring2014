@@ -1,6 +1,5 @@
 #CS 181 PRACTICAL 3 WARM-UP
 #Zachary Hendlin and David Wihl
-#fmin_bfgs(f, x0[, fprime, args, gtol, norm, ...]) 	Minimize a function using the BFGS algorithm.
 
 #Import relevant libraries
 import scipy
@@ -24,10 +23,6 @@ for i in xrange(1,len(my_data)):
 tmatrix=np.delete(tmatrix, (0),0)
 #print tmatrix
 #print my_data
-
-#intialize weights matrix
-#weights=np.matrix([[1,1,1],[1,1,1], [1,1,1]])
-#print weights
 
 def f(weights):
 	weights=np.reshape(weights,(3,3))
@@ -57,9 +52,8 @@ res= res[0]
 weights=np.reshape(np.ravel(res), (3,3))
 #print res
 
-
+#assign points to a cluster to check assignments
 ASSIGNED_VALUES=[]
-#assign points to a cluster
 for n in xrange(0,len(tmatrix[:,0]+1)):
 	checker=[]
 	for k in xrange(0, 3):
@@ -103,45 +97,16 @@ for n in xrange(0,len(xx_ravel)):
 	Z_vals.append(checker.index(max(checker)))
 
 
-#print xx
-#print len(ASSIGNED_VALUES)
-#print len(Z_vals)
-#print xx.shape 
 Z=np.array(Z_vals).reshape(xx.shape)
 
-#Z=np.argmax(np.c_[xx.ravel(), yy.ravel(), np.ones(xx.size)].dot(W, T) axis=1))
-
-#Z=newvar.reshape(xx.shape)
-#print newvar
-
+##make first contour plot for logistic classifer
 pl.figure(1, figsize=(8, 6))
 pl.pcolormesh(xx, yy, Z, cmap=pl.cm.Paired)
 pl.scatter(X[:, 0], X[:, 1], c=Y, edgecolors='k', cmap=pl.cm.Paired)
 
-#PLOTTING NEEDS TO BE FIXED TO SHOW THREE LINES
-#new_x=np.arange(-20, 20, 1);
-#new_y=np.arange(-20, 20, 1);
-#line1=np.asarray(weights[0,0]/weights[0,2] +new_x*weights[0,1]+ new_y*weights[0,2])
-#pl.plot(new_x,line1)
-
-#line2=np.asarray(weights[1,0]/weights[0,2] +new_x*weights[1,1]+new_y*weights[1,2])
-#pl.plot(new_x, line2)
-
-
-#line3=np.asarray(weights[2,0]/weights[0,2] +new_x*weights[2,1]+ new_y*weights[2,2])
-#pl.plot(new_x, line3)
-#print line3
-
-
 pl.xlim(xx.min(), xx.max())
 pl.ylim(yy.min(), yy.max())
-
-#pl.xlim(0, 40)
-#pl.ylim(0, 40)
-
-pl.xticks(())
-pl.yticks(())
-#pl.show()
+pl.show()
 
 ####################################################
 #Generative model
@@ -171,9 +136,9 @@ for datum in my_data:
 d1x_m=np.mean(d1x)
 d1y_m=np.mean(d1y)
 d2x_m=np.mean(d2x)
-d2m_y=np.mean(d2y)
-d3m_x=np.mean(d3x)
-d3m_y=np.mean(d3y)
+d2y_m=np.mean(d2y)
+d3x_m=np.mean(d3x)
+d3y_m=np.mean(d3y)
 
 #create arrays for each class to calculate Gaussians
 d1=np.transpose(np.asarray([d1x,d1y]))
@@ -184,15 +149,48 @@ d1cov=np.cov(d1, rowvar=0)
 d2cov=np.cov(d2, rowvar=0)
 d3cov=np.cov(d3, rowvar=0)
 
+#calc prior probabilities P(C=k)
+c1_prior=1.0*len(d1x)/len(my_data)
+c2_prior=1.0*len(d2x)/len(my_data)
+c3_prior=1.0*len(d3x)/len(my_data)
 
-#calc sample percentage
+print c1_prior
+print c2_prior
+print c3_prior
 
 def multivar_norm(value, means, covariance):
 	k=len(value)
-	print k
+	#print k
 	return (1/np.sqrt(np.power((2*np.pi),k)*np.linalg.det(covariance)) )* np.exp(-.5*np.dot(np.dot(np.transpose(value - means),np.linalg.inv(covariance)), value - means))
 
-print multivar_norm(np.array([5,5]), np.array([d1x_m, d1y_m]), d1cov)
+#print multivar_norm(np.array([5,5]), np.array([d1x_m, d1y_m]), d1cov)
 
+generative_z=[]
+for n in xrange(0,len(xx_ravel)):
+	probs=[
+	multivar_norm(np.array([xx_ravel[n], yy_ravel[n]]), np.array([d1x_m, d1y_m]), d1cov)*c1_prior,
+	multivar_norm(np.array([xx_ravel[n], yy_ravel[n]]), np.array([d2x_m, d2y_m]), d2cov)*c2_prior,
+	multivar_norm(np.array([xx_ravel[n], yy_ravel[n]]), np.array([d3x_m, d3y_m]), d3cov)*c3_prior
+	]
+	generative_z.append(probs.index(max(probs)))
 
+generative_z=np.array(generative_z).reshape(xx.shape)
 # apply softmax to assign point to most likely class, ignoring denominator since it is the same for all classes
+
+#make 2nd plot
+pl.figure(2, figsize=(8, 6))
+pl.pcolormesh(xx, yy, generative_z, cmap=pl.cm.Paired)
+pl.scatter(X[:, 0], X[:, 1], c=Y, edgecolors='k', cmap=pl.cm.Paired)
+
+pl.xlim(xx.min(), xx.max())
+pl.ylim(yy.min(), yy.max())
+pl.show()
+
+
+#make basic plot 
+pl.figure(3, figsize=(8, 6))
+pl.scatter(X[:, 0], X[:, 1], c=Y, edgecolors='k', cmap=pl.cm.Paired)
+
+pl.xlim(xx.min(), xx.max())
+pl.ylim(yy.min(), yy.max())
+pl.show()
