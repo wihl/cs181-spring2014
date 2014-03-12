@@ -36,11 +36,11 @@
 \subsection*{Preliminary Data Analysis}
 
 NOTES:
-4GB of XML to parse and process, first step was to split the training and the testing. broke into vectorize, train and test steps, persisting appropriate intermediate data at each step. This also enabled parallelization of test runs over a cluster of machines.
+4GB of XML to parse and process, first step was to split the training and the testing.  Refactored sample code to separate feature extraction and classification steps.
 
 \subsection*{Using Cross-validation}
 
-Ran 5 CV sets of train / CV data 70/30, 80/20 and 90/10 for each classifier.
+Ran 5-10 CV sets of train / CV data 70/30, 80/20 and 90/10 for each classifier. Enabled us to experiment with many permutations of features, classification algorithms, and hyper parameters.
 
 \section*{Approaches considered}
 
@@ -52,11 +52,17 @@ Aggregate Features per training file:
 
 used CV to generate Logistic Regression weights. Took mean and std of resulting matrix, then eliminated any features where abs(mean) $<$ 0.001 and std $< $0.01.
 
+Further examined $R^2$ score to eliminate features that were not adding any value.
 
+Created separate model of thread metrics. NOTE: still unknown how to pull in thread metrics to file level.
 
 \subsection*{Selection of fitting technique}
 
 Tried LogisticRegression and SVM with a number of different C values, none of which made a significant difference.
+
+Attempted kNN and Theano but ran into technical difficulties.
+
+Had ``sanity check'' of resulting submission file to check for aberrant distributions. (See plot).
 
 \subsection*{Exploratory Data Analysis}
 
