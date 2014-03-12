@@ -24,6 +24,7 @@ def main():
     lr.fit(X,y)
     knn.fit(X,y)
     print "training complete. Now preparing for submit"
+    # TODO - add in thread classification
 
     X, y, ids = ds.getDataset(test_dir)
     
@@ -35,7 +36,11 @@ def main():
 
     finalpred = []
     for i in xrange(len(predsLR)):
-        if np.max(pbkNN[i]) - np.max(pbLR[i]) > 0.4:
+        if np.max(pbkNN[i]) > 0.8:
+            # if kNN is more .8 sure, it is very accurate
+            choice = predskNN[i]
+        elif np.max(pbkNN[i]) - np.max(pbLR[i]) > 0.4:
+            # if kNN is 0.4 more sure than LR, use that
             choice = predskNN[i]
         else:
             choice = predsLR[i]
