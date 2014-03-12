@@ -15,7 +15,7 @@ def main():
 
     lr = cl.LogisticRegression()
     
-    ds = ff.Dataset(ff.MetricType().thread)
+    ds = ff.Dataset()
 
     print "training..."
 
