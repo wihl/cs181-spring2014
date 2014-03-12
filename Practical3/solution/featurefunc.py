@@ -19,6 +19,7 @@ class Dataset(object):
     '''
     def __init__(self, metricType = MetricType.process):
         self.featureDict = None
+        self.threadMapping = {}
         self.metricType = metricType
         if self.metricType == MetricType.process:
             print "using process metrics"
@@ -40,6 +41,7 @@ class Dataset(object):
         self.directory = directory
         self.fds = []
         y = []
+        currentRow = 0
         for datafile in os.listdir(self.directory):
             # extract id and true class (if available) from filename
             id_str,clazz = datafile.split('.')[:2]
@@ -56,7 +58,10 @@ class Dataset(object):
             else:
                 # we will have one row per system call, rather than per process
                 numRows = self.extractThreadFeatures(datafile,actualValue)
-                if actualValue is not None: y.extend([actualValue] * numRows)
+                if actualValue is not None: 
+                    y.extend([actualValue] * numRows)
+                    self.threadMapping[currentRow] = id_str
+                    currentRow += numRows
 
         X = self.makeDesignMat()
 
