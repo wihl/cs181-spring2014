@@ -8,9 +8,8 @@ from scipy import optimize
 import numpy as np
 import matplotlib as plot
 import pylab as pl
-
-
 from numpy import genfromtxt
+
 my_data = genfromtxt('fruit.csv', delimiter=',')
 
 ####################################################
@@ -126,6 +125,7 @@ pl.yticks(())
 #Generative model
 ####################################################
 
+#set up variables for the three classes
 d1x=[]
 d2x=[]
 d3x=[]
@@ -133,7 +133,7 @@ d1y=[]
 d2y=[]
 d3y=[]
 
-#create seperate sub-datasets for each group
+#create seperate datasets for each group
 for datum in my_data:
 	if datum[0]==1:
 		d1x.append(datum[1])
@@ -153,13 +153,27 @@ d2m_y=np.mean(d2y)
 d3m_x=np.mean(d3x)
 d3m_y=np.mean(d3y)
 
-#create arrays for each class
+#create arrays for each class to calculate Gaussians
 d1=np.asarray([d1x,d1y])
 d2=np.asarray([d2x,d2y])
 d3=np.asarray([d3x,d3y])
 
-print np.cov(d1)
-print np.cov(d2)
-print np.cov(d3)
+d1cov=np.cov(d1)
+d2cov=np.cov(d2)
+d3cov=np.cov(d3)
 
 
+
+def multivar_norm(value, means, covariance):
+	k=2
+	return (1/np.sqrt(np.power((2*np.pi),k)*np.linalg.det(covariance)) )*np.exp(-.5*np.multiply(np.multiply(np.transpose(value-means),np.linalg.inv(covariance)),(value-means)))
+
+print multivar_norm(np.array([2,3]), np.array([d1x_m, d1y_m]), d1cov)
+
+# dist1 = multivariate_normal(1, mean=[d1x_m,d1y_m], cov=[d1cov])
+# dist2 = multivariate_normal(1, mean=[d2x_m,d2y_m], cov=[d2cov])
+# dist3 = multivariate_normal(1, mean=[d3x_m,d3y_m], cov=[d3cov])
+# print dist1
+
+
+# apply softmax to assign point to most likely class
