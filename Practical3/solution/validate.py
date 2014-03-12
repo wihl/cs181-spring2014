@@ -43,9 +43,9 @@ def validate(num_iterations, clf, direc, ds, ds2 = None):
         
             gbProbMean = 0.0
             gbAcc = 0.0
-            lrconfidentButWrong = 0
-            knnconfidentButWrong = 0
-            gbconfidentButWrong  = 0
+            lrconfidentButWrong = 0.0
+            knnconfidentButWrong = 0.0
+            gbconfidentButWrong  = 0.0
             if ds2 is not None:
                 X2_train, X2_test, y2_train, y2_test = train_test_split(X2, y2, test_size=size)
                 clf.fit(X_train,y_train,X2_train,y2_train)
@@ -66,8 +66,8 @@ def validate(num_iterations, clf, direc, ds, ds2 = None):
                 gbrt2 = gbrt.classifier_()
 
                 df = clf2.predict_proba(X_test)
-                dfknn = [0] * len(df) #knn2.predict_proba(X_test)
-                dfgbrt = dfknn #gbrt2.predict_proba(X_test.toarray())
+                dfknn = knn2.predict_proba(X_test)
+                dfgbrt = gbrt2.predict_proba(X_test.toarray())
 
                 preds = clf.predict(X_test)
                 preds2 = [0] * len(df)
@@ -90,14 +90,14 @@ def validate(num_iterations, clf, direc, ds, ds2 = None):
                     if preds2[i] == y_test[i]:
                         knnAcc += 1.0
                     else:
-                        if np.max(dfknn[i]) > 0.95:
+                        if np.max(dfknn[i]) > 0.80:
                             knnconfidentButWrong += 1
 
                     gbProbMean += np.max(dfgbrt[i])
                     if preds3[i] == y_test[i]: 
                         gbAcc += 1.0
                     else:
-                        if np.max(dfgbrt[i]) > 0.95:
+                        if np.max(dfgbrt[i]) > 0.80:
                             gbconfidentButWrong += 1
 
 
@@ -127,9 +127,9 @@ def validate(num_iterations, clf, direc, ds, ds2 = None):
             s = clf.score(finalpred,y_test)
             accuracy.append(s)
             l = float(len(preds))
-            print "lrConfident (0.7) but wrong:", lrconfidentButWrong / l
-            print "knConfident (0.9) but wrong:", knnconfidentButWrong / l
-            print "gbConfident (0.9) but wrong:", gbconfidentButWrong / l
+            print "lrConfident (0.6) but wrong:", float(lrconfidentButWrong) / l
+            print "knConfident (0.8) but wrong:", float(knnconfidentButWrong) / l
+            print "gbConfident (0.8) but wrong:", float(gbconfidentButWrong) / l
 
             print "LR mean prob:", lrProbMean/l, lrAcc/l
             print "kNN mean prob:", knnProbMean/l, knnAcc/l
