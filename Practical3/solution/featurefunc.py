@@ -31,7 +31,7 @@ class Dataset(object):
 
     def getFeatures(self):
         if self.metricType == MetricType.process:
-            return [first_last_system_call_feats, system_call_count_feats, process_metrics]
+            return [system_call_count_feats, process_metrics]
         else:
             return [basic_thread_features]
 
@@ -174,7 +174,30 @@ def system_call_count_feats(tree):
         elif in_all_section:
             c['num_system_calls'] += 1
             # prune off noisy features
-            if el.tag not in ['create_process','query_value', 'get_host_by_name']:
+            if el.tag not in [
+                              'accept_socket',
+                              'check_for_debugger',
+                              'com_createole_object',
+                              'connect',
+                              'create_process',
+                              'create_directory',
+                              'create_interface',
+                              'create_key',
+                              'create_process_nt',
+                              'create_service',
+                              'delete_key',
+                              'download_file_to_cache',
+                              'dump_line',
+                              'enum_handles',
+                              'enum_modules',
+                              'enum_processes',
+                              'enum_services',
+                              'enum_share',
+                              'enum_subtypes',
+                              'enum_values',
+                              'get_host_by_name',
+                              'query_value'
+                             ]:
                 c['num_'+el.tag] += 1
     return c
 
@@ -183,7 +206,7 @@ def process_metrics(tree):
     for el in tree.iter():
         if el.tag == "process":
             # process attributes of interest
-            for r in ['startreason', 'terminationreason', 'username', 'executionstatus', 'applicationtype']:
+            for r in ['startreason', 'terminationreason', 'executionstatus', 'applicationtype']:
                 if el.get(r) != None:
                     c[r+'-'+el.attrib[r]] = c.get(r+'-'+el.attrib[r],0) + 1
     return c

@@ -1,4 +1,5 @@
 import numpy as np
+from scipy import stats
 from sklearn import linear_model
 from sklearn import svm
 from sklearn import cross_validation
@@ -77,7 +78,10 @@ class Classifier(object):
 
 class RandomClassifier(Classifier):
     def __init__(self):
-        self.learned_W = None
+        self.dist = [0.0369, 0.0162, 0.012, 0.0103, 0.0133, 0.0126, 0.0172, 0.0133, 0.5214, 0.0068, 0.1756, 0.0104, 0.1218, 0.0191, 0.0130] 
+        self.xk = np.arange(len(self.dist))
+        self.custm = stats.rv_discrete(name="custm", values=(self.xk,self.dist))
+        #self.learned_W = None
 
     def name(self):
         return 'random'
@@ -86,8 +90,12 @@ class RandomClassifier(Classifier):
         self.learned_W = np.random.random((X.shape[1],len(util.malware_classes)))
         return self.learned_W
 
+    def predictOne(self):
+        return self.custm.rvs()
+
     def predict(self, X):
-        return np.argmax(X.dot(self.learned_W),axis=1)
+        y = [self.custm.rvs() for x in xrange(X.shape[0])]
+        return y #np.argmax(X.dot(self.learned_W),axis=1)
 
 class MostFrequent(Classifier):
     def name(self):
@@ -191,6 +199,7 @@ class Combined(Classifier):
 def getClassifiers():
     return [ SVM,
             LogisticRegression,
-             Combined
+             Combined,
+             RandomClassifier
            ]
 
