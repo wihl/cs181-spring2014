@@ -85,29 +85,51 @@ x_min, x_max = X[:, 0].min() - .5, X[:, 0].max() + .5
 y_min, y_max = X[:, 1].min() - .5, X[:, 1].max() + .5
 xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
 
+
+xx_ravel=xx.ravel()
+yy_ravel=yy.ravel()
+
+Z_vals=[]
+for n in xrange(0,len(xx_ravel)):
+	checker=[]
+	for k in xrange(0, 3):
+		a=(weights[k,0]+xx_ravel[n]*weights[k,1]+yy_ravel[n]*weights[k,2])
+		a_sum=0.
+		for j in xrange(0,3):
+			a_sum+=np.exp(weights[j,0]+xx_ravel[n]*weights[j,1]+yy_ravel[n]*weights[j,2])
+		#	print a_sum
+		checker.append(a -np.log(a_sum))
+#		print checker
+	Z_vals.append(checker.index(max(checker)))
+
+
 #print xx
 #print len(ASSIGNED_VALUES)
-newvar=np.array(ASSIGNED_VALUES)
+#print len(Z_vals)
+#print xx.shape 
+Z=np.array(Z_vals).reshape(xx.shape)
+
+#Z=np.argmax(np.c_[xx.ravel(), yy.ravel(), np.ones(xx.size)].dot(W, T) axis=1))
 
 #Z=newvar.reshape(xx.shape)
 #print newvar
 
 pl.figure(1, figsize=(8, 6))
-#pl.pcolormesh(xx, yy, Z, cmap=pl.cm.Paired)
+pl.pcolormesh(xx, yy, Z, cmap=pl.cm.Paired)
 pl.scatter(X[:, 0], X[:, 1], c=Y, edgecolors='k', cmap=pl.cm.Paired)
 
 #PLOTTING NEEDS TO BE FIXED TO SHOW THREE LINES
-new_x=np.arange(-20, 20, 1);
-new_y=np.arange(-20, 20, 1);
-line1=np.asarray(weights[0,0]/weights[0,2] +new_x*weights[0,1]+ new_y*weights[0,2])
-pl.plot(new_x,line1)
+#new_x=np.arange(-20, 20, 1);
+#new_y=np.arange(-20, 20, 1);
+#line1=np.asarray(weights[0,0]/weights[0,2] +new_x*weights[0,1]+ new_y*weights[0,2])
+#pl.plot(new_x,line1)
 
-line2=np.asarray(weights[1,0]/weights[0,2] +new_x*weights[1,1]+new_y*weights[1,2])
-pl.plot(new_x, line2)
+#line2=np.asarray(weights[1,0]/weights[0,2] +new_x*weights[1,1]+new_y*weights[1,2])
+#pl.plot(new_x, line2)
 
 
-line3=np.asarray(weights[2,0]/weights[0,2] +new_x*weights[2,1]+ new_y*weights[2,2])
-pl.plot(new_x, line3)
+#line3=np.asarray(weights[2,0]/weights[0,2] +new_x*weights[2,1]+ new_y*weights[2,2])
+#pl.plot(new_x, line3)
 #print line3
 
 
@@ -154,26 +176,23 @@ d3m_x=np.mean(d3x)
 d3m_y=np.mean(d3y)
 
 #create arrays for each class to calculate Gaussians
-d1=np.asarray([d1x,d1y])
-d2=np.asarray([d2x,d2y])
-d3=np.asarray([d3x,d3y])
+d1=np.transpose(np.asarray([d1x,d1y]))
+d2=np.transpose(np.asarray([d2x,d2y]))
+d3=np.transpose(np.asarray([d3x,d3y]))
 
-d1cov=np.cov(d1)
-d2cov=np.cov(d2)
-d3cov=np.cov(d3)
+d1cov=np.cov(d1, rowvar=0)
+d2cov=np.cov(d2, rowvar=0)
+d3cov=np.cov(d3, rowvar=0)
 
 
+#calc sample percentage
 
 def multivar_norm(value, means, covariance):
-	k=2
-	return (1/np.sqrt(np.power((2*np.pi),k)*np.linalg.det(covariance)) )*np.exp(-.5*np.multiply(np.multiply(np.transpose(value-means),np.linalg.inv(covariance)),(value-means)))
+	k=len(value)
+	print k
+	return (1/np.sqrt(np.power((2*np.pi),k)*np.linalg.det(covariance)) )* np.exp(-.5*np.dot(np.dot(np.transpose(value - means),np.linalg.inv(covariance)), value - means))
 
-print multivar_norm(np.array([2,3]), np.array([d1x_m, d1y_m]), d1cov)
-
-# dist1 = multivariate_normal(1, mean=[d1x_m,d1y_m], cov=[d1cov])
-# dist2 = multivariate_normal(1, mean=[d2x_m,d2y_m], cov=[d2cov])
-# dist3 = multivariate_normal(1, mean=[d3x_m,d3y_m], cov=[d3cov])
-# print dist1
+print multivar_norm(np.array([5,5]), np.array([d1x_m, d1y_m]), d1cov)
 
 
-# apply softmax to assign point to most likely class
+# apply softmax to assign point to most likely class, ignoring denominator since it is the same for all classes
