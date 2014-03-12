@@ -1,0 +1,69 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\usepackage{textcomp}
+\usepackage{hyperref}  % TODO: see page 94 of latex book
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{relsize}
+
+\title{CSCI 181 / E-181 Spring 2014 Practical 3 \\ 
+{\large Kaggle Team "Capt. Jinglehiemer"}
+}
+\author{
+  David Wihl\\
+  \texttt{davidwihl@gmail.com}
+  \and
+  Zack Hendlin\\
+  \texttt{zgh@mit.edu} 
+}
+%\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\section*{Warm-Up}
+
+We consider two approaches for clustering fruits (with length and width measurements provided) into a categories.
+
+[Plot]
+
+\subsection*{Logistic Regression}
+
+\subsection*{Generative Models}
+
+\subsection*{Warmup Summary}
+
+\section*{Classifying Malicious Software}
+
+\subsection*{Preliminary Data Analysis}
+
+NOTES:
+4GB of XML to parse and process, first step was to split the training and the testing. broke into vectorize, train and test steps, persisting appropriate intermediate data at each step. This also enabled parallelization of test runs over a cluster of machines.
+
+\subsection*{Using Cross-validation}
+
+Ran 5 CV sets of train / CV data 70/30, 80/20 and 90/10 for each classifier.
+
+\section*{Approaches considered}
+
+\subsection*{Feature Engineering}
+
+
+Aggregate Features per training file:
+ selected all process features  (e.g. 'startreason', 'terminationreason', 'username', 'executionstatus', 'applicationtype') and summary thread features (num of each type of system call).
+
+used CV to generate Logistic Regression weights. Took mean and std of resulting matrix, then eliminated any features where abs(mean) $<$ 0.001 and std $< $0.01.
+
+
+
+\subsection*{Selection of fitting technique}
+
+Tried LogisticRegression and SVM with a number of different C values, none of which made a significant difference.
+
+\subsection*{Exploratory Data Analysis}
+
+\section*{Conclusion}
+
+\end{document}  

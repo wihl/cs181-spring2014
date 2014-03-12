@@ -50,7 +50,7 @@ res= optimize.fmin_bfgs(f, initweight, full_output=1)
 res= res[0]
 
 weights=np.reshape(np.ravel(res), (3,3))
-#print res
+print res
 
 #assign points to a cluster to check assignments
 ASSIGNED_VALUES=[]
