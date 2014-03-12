@@ -57,10 +57,14 @@ Further examined $R^2$ score to eliminate features that were not adding any valu
 Created separate model of thread metrics. NOTE: still unknown how to pull in thread metrics to file level.
 
 \subsection*{Selection of fitting technique}
+had a bunch of classifiers: LogisticRegression, SVM, kNN,...
+
 
 Tried LogisticRegression and SVM with a number of different C values, none of which made a significant difference.
 
-Attempted kNN and Theano but ran into technical difficulties.
+Combined LR and kNN. Chose kNN only when it's confidence was 0.4 greater than LR's.
+
+Attempted Theano but ran into technical difficulties.
 
 Had ``sanity check'' of resulting submission file to check for aberrant distributions. (See plot).
 

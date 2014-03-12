@@ -4,6 +4,7 @@ from sklearn import linear_model
 from sklearn import svm
 from sklearn import cross_validation
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import GradientBoostingClassifier
 
 import featurefunc as ff
 import util
@@ -160,6 +161,23 @@ class kNN(Classifier):
     def classifier_(self):
         return self.knn
 
+class GBRT(Classifier):
+    def __init__(self):
+        self.gbrt = GradientBoostingClassifier(n_estimators=100, 
+                                               learning_rate=1.0, max_depth=1, random_state=0)
+
+    def name(self):
+        return 'gbrt'
+
+    def fit(self, X, y):
+        self.gbrt.fit(X, y)
+
+    def predict(self, X):
+        return self.gbrt.predict(X)
+
+    def classifier_(self):
+        return self.gbrt
+
 
 
 class Combined(Classifier):
@@ -199,7 +217,7 @@ class Combined(Classifier):
 
 def getClassifiers():
     return [ 
-            LogisticRegression, kNN
+            LogisticRegression, kNN, GBRT
 
            ]
 
