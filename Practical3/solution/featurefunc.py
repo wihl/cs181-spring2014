@@ -221,7 +221,7 @@ def md5_hashes(tree):
     c = Counter()
     for el in tree.iter():
         if el.tag == "process":
-            if 'iexplore' in el.attrib['filename']:
+            if 'iexplore' in el.get('filename'):
                 if el.get('md5') == 'a251068640ddb69fd7805b57d89d7ff7':
                     c['Swizzor_found'] = 100
     return c
