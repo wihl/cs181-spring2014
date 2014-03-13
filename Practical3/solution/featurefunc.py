@@ -13,11 +13,21 @@ class MetricType:
     process = 1
     thread = 2
 
+md5Hash = []
+
+def myHash(d,str):
+    if str not in d:
+        d.append(str)
+    print d
+    return d.index(str)
+
+
 class Dataset(object):
     '''
     Create and manage datasets
     '''
     def __init__(self, metricType = MetricType.process):
+        global md5Hash
         self.featureDict = None
         self.threadMapping = {}
         self.metricType = metricType
@@ -225,16 +235,16 @@ def process_metrics(tree):
     return c
 
 def md5_hashes(tree):
+    global md5Hash
     c = Counter()
     for el in tree.iter():
         if el.tag == "process":
             if el.get('md5') != None and el.get('index') != None:
-                c['md5-'+el.get('index')] = hash(el.get('md5'))
+                c['md5-'+el.get('index')] = myHash(md5Hash, el.get('md5'))
             if el.get('filename') != None and 'iexplore' in el.get('filename'):
                 if el.get('md5') == 'a251068640ddb69fd7805b57d89d7ff7':
                     c['Swizzor_found'] = 100
     return c
-
 
 def hexStrToInt(str):
     # convert hex string in the form "$123ABC" to integer value
