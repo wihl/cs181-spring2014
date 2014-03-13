@@ -181,7 +181,7 @@ def system_call_count_feats(tree):
             c['num_system_calls'] += 1
             # prune off noisy features
             if el.tag not in [
-                              'accept_socket',
+                              'accept_socket','open_scmanager',
                               'check_for_debugger',
                               'com_createole_object',
                               'connect',
@@ -228,6 +228,8 @@ def md5_hashes(tree):
     c = Counter()
     for el in tree.iter():
         if el.tag == "process":
+            if el.get('md5') != None and el.get('index') != None:
+                c['md5-'+el.get('index')] = hash(el.get('md5'))
             if el.get('filename') != None and 'iexplore' in el.get('filename'):
                 if el.get('md5') == 'a251068640ddb69fd7805b57d89d7ff7':
                     c['Swizzor_found'] = 100
