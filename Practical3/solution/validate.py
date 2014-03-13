@@ -145,39 +145,31 @@ def main():
     with open('error_log.txt', 'a') as errfile:
         wr = csv.writer(errfile, dialect = 'excel')
     
-        for clf in cl.getClassifiers():
-            c = clf()
-            if classifier is not None:
-                # let only a specific classifier run
-                if c.name() != classifier: continue
-                # special case for combined
-                if c.name() == 'Combined':
-                    # create two datasets and ignore the -t parameter
-                    ds = ff.Dataset(ff.MetricType().process)
-                    ds2 = ff.Dataset(ff.MetricType().thread)
-            accuracy, weights = validate(num_iter, c, direc, ds)
-            timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            avgAcc = accuracy.mean()
-            stdAcc = accuracy.std() * 2
+        #for clf in cl.getClassifiers():
+        c = cl.LogisticRegression()
+        accuracy, weights = validate(num_iter, c, direc, ds)
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        avgAcc = accuracy.mean()
+        stdAcc = accuracy.std() * 2
 
-            wr.writerow([timestamp, num_iter, direc, c.name(), avgAcc, stdAcc, 
-                         np.max(accuracy), np.min(accuracy)])
+        wr.writerow([timestamp, num_iter, direc, c.name(), avgAcc, stdAcc, 
+                     np.max(accuracy), np.min(accuracy)])
 
-            try:
-                with open('weight_'+c.name()+'.txt', 'w') as weightfile:
-                    wcsv = csv.writer(weightfile, dialect='excel')
-                    wcsv.writerow(["Key","mean","std"])
-                    w_mean = np.abs(weights.mean(0))
-                    w_std  = weights.std(0) * 2
+        try:
+            with open('weight_'+c.name()+'.txt', 'w') as weightfile:
+                wcsv = csv.writer(weightfile, dialect='excel')
+                wcsv.writerow(["Key","mean","std"])
+                w_mean = np.abs(weights.mean(0))
+                w_std  = weights.std(0) * 2
 
-                    for i, key in enumerate(ds.getFeatureDict()):
-                        wcsv.writerow([key, w_mean[i], w_std[i]])
-            except:
-                print "no weights found"
+                for i, key in enumerate(ds.getFeatureDict()):
+                    wcsv.writerow([key, w_mean[i], w_std[i]])
+        except:
+            print "no weights found"
 
-            timestamp = datetime.datetime.now().strftime("%H:%M:%S")
+        timestamp = datetime.datetime.now().strftime("%H:%M:%S")
 
-            print("%s %s accuracy: %0.2f (+/- %0.2f)" % (timestamp, c.name(), avgAcc, stdAcc))
+        print("%s %s accuracy: %0.2f (+/- %0.2f)" % (timestamp, c.name(), avgAcc, stdAcc))
         
 if __name__ == "__main__":
     main()

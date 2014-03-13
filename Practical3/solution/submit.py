@@ -11,8 +11,8 @@ import util
 ## The following function does the feature extraction, learning, and prediction
 def main():
     train_dir = "train"
-    test_dir = "mintest"
-    outputfile = "mypredictions-min.csv"  # feel free to change this or take it as an argument
+    test_dir = "test"
+    outputfile = "mypredictions.csv"  # feel free to change this or take it as an argument
 
     lr = cl.LogisticRegression()
     knn = cl.kNN()
@@ -35,9 +35,15 @@ def main():
     predskNN = knn.predict(X)
     pbkNN = knn.classifier_().predict_proba(X)
 
+    featDict = ds.getFeatureDict()
+    #print "feature", featDict['Swizzor_found']
+    X_arr = X.toarray()
+
     finalpred = []
     for i in xrange(len(predsLR)):
-        if np.max(pbkNN[i]) > 0.8:
+        if X_arr[i][featDict['Swizzor_found']] > 0:
+            choice = 10
+        elif np.max(pbkNN[i]) > 0.8:
             # if kNN is more .8 sure, it is very accurate
             choice = predskNN[i]
         elif np.max(pbkNN[i]) - np.max(pbLR[i]) > 0.4:
@@ -48,7 +54,7 @@ def main():
         finalpred.append(choice)
     
     print "writing predictions..."
-    #util.write_predictions(finalpred, ids, outputfile)
+    util.write_predictions(finalpred, ids, outputfile)
     print "done!"
 
 if __name__ == "__main__":

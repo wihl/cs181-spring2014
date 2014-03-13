@@ -14,7 +14,7 @@ virusNames = ['Agent','AutoRun','FraudLoad','FraudPack','Hupigon','Krap','Lipler
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('file',nargs='?',default = "mypredictions.csv",
-                        help='Number of cross validation iterations to run')
+                        help='Name of prediction file')
     args = parser.parse_args()
 
     counts = [0] * 15
