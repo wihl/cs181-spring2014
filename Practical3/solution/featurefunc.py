@@ -202,7 +202,14 @@ def system_call_count_feats(tree):
                               'enum_subtypes',
                               'enum_values',
                               'get_host_by_name',
-                              'query_value'
+                              'query_value',
+                              'impersonate_user',
+                              'change_service_config',
+                              'delete_value',
+                              'open_mutex',
+                              'create_file',
+                              'show_window',
+                              'send_socket','vm_write','num_sleep'
                              ]:
                 c['num_'+el.tag] += 1
     return c
