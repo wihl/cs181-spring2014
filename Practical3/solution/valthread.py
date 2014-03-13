@@ -38,51 +38,38 @@ def validate(num_iterations, clf, direc, ds, ds2 = None):
             lrAcc = 0.0
 
             lrconfidentButWrong = 0.0
-            if ds2 is not None:
-                X2_train, X2_test, y2_train, y2_test = train_test_split(X2, y2, test_size=size)
-                clf.fit(X_train,y_train,X2_train,y2_train)
-                df =  clf.predict_proba(X_test, X2_test)
-                preds = clf.predict(X_test, X2_test)
-                #for i in range(len(df)):
-                #    print("%d\t%0.3f %0.3f\t%d\t%d" % (i, np.max(df[i][0]),
-                #                                       np.max(df[i][1]),
-                #                                       preds[i], y_test[i]))
+            clf.fit(X_train,y_train)
 
-            else:
-                clf.fit(X_train,y_train)
+            clf2 = clf.classifier_()
 
-                clf2 = clf.classifier_()
+            df = clf2.predict_proba(X_test)
 
-                syscallMap = sorted(ds.threadMapping)
+            preds = clf.predict(X_test)
 
-                df = clf2.predict_proba(X_test)
+            for i in range(len(df)):
 
-                preds = clf.predict(X_test)
+                # choose the best prediction for LR / syscalls:
+                # a2 = sorted(dict of rows)
+                # i = 0 (next slice of rows) - iterate on each test example
+                # beg = a2[i]
+                # end = a2[i+1]
+                # best prediction = max confidence of (preds[beg:end])
 
-                for i in range(len(df)):
+                #syscallMap = sorted(ds.threadMapping)
 
-                    # choose the best prediction for LR / syscalls:
-                    # a2 = sorted(dict of rows)
-                    # i = 0 (next slice of rows) - iterate on each test example
-                    # beg = a2[i]
-                    # end = a2[i+1]
-                    # best prediction = max confidence of (preds[beg:end])
+                lrProbMean += np.max(df[i])
+                if preds[i] == y_test[i]: 
+                    lrAcc += 1.0
+                else:
+                    if np.max(df[i]) > 0.50:
+                        lrconfidentButWrong += 1
 
-                    #syscallMap = sorted(ds.threadMapping)
-
-                    lrProbMean += np.max(df[i])
-                    if preds[i] == y_test[i]: 
-                        lrAcc += 1.0
-                    else:
-                        if np.max(df[i]) > 0.50:
-                            lrconfidentButWrong += 1
-
-                    #if np.max(dfknn[i]) - np.max(df[i]) > 0.4:
-                    #    choice = preds2[i]
-                    #else:
-                    #    choice = preds[i]
-                    #finalpred.append(choice)
-                    '''
+                #if np.max(dfknn[i]) - np.max(df[i]) > 0.4:
+                #    choice = preds2[i]
+                #else:
+                #    choice = preds[i]
+                #finalpred.append(choice)
+                '''
 
                     print("%d\t%0.3f\t%d\t%d" % (i,
                                                  np.max(df[i]), 
@@ -99,7 +86,7 @@ def validate(num_iterations, clf, direc, ds, ds2 = None):
                                                  choice,
                                                  y_test[i]))
 
-                    '''
+                '''
             s = clf.score(preds,y_test)
             accuracy.append(s)
             l = float(len(preds))

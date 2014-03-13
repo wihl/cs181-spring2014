@@ -19,94 +19,63 @@ import featurefunc as ff
 import classifiers as cl
 import util
 
-def validate(num_iterations, clf, direc, ds, ds2 = None):
+def validate(num_iterations, clf, direc, ds):
     assert clf != None
     accuracy = []
     X, y, ids = ds.getDataset(direc)
-    if ds2 is not None:
-        X2, y2, ids2 = ds2.getDataset(direc)
     print "X len=",X.shape, "Y len=", len(y)
+    X = np.log(X.toarray())
     weights = None
     knn = cl.kNN()
-    gbrt = cl.GBRT()
     for size in [0.3, 0.2, 0.1]: # try 3 fold, 5 fold and 10 fold
         print "size ",size
-        #print "Item\tProbLR\tProbknn\tProbGb\tPredLR\tPredkNN\tPredGb\tChoice\tActual"
+        #print "Item\tProbLR\tProbknn\tPredLR\tPredkNN\tChoice\tActual"
         for i in range(num_iterations):
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=size)
             finalpred = []
             lrProbMean = 0.0
             lrAcc = 0.0
+            lrconfidentButWrong = 0.0
+            clf.fit(X_train,y_train)
+            clf2 = clf.classifier_()
+            df = clf2.predict_proba(X_test)
+            preds = clf.predict(X_test)
 
             knnProbMean = 0.0
             knnAcc = 0.0
-        
-            gbProbMean = 0.0
-            gbAcc = 0.0
-            lrconfidentButWrong = 0.0
             knnconfidentButWrong = 0.0
-            gbconfidentButWrong  = 0.0
-            if ds2 is not None:
-                X2_train, X2_test, y2_train, y2_test = train_test_split(X2, y2, test_size=size)
-                clf.fit(X_train,y_train,X2_train,y2_train)
-                df =  clf.predict_proba(X_test, X2_test)
-                preds = clf.predict(X_test, X2_test)
-                #for i in range(len(df)):
-                #    print("%d\t%0.3f %0.3f\t%d\t%d" % (i, np.max(df[i][0]),
-                #                                       np.max(df[i][1]),
-                #                                       preds[i], y_test[i]))
+            knn.fit(X_train,y_train)
+            knn2 = knn.classifier_()
+            dfknn = knn2.predict_proba(X_test)
+            preds2 = knn.predict(X_test)
 
-            else:
-                clf.fit(X_train,y_train)
-                knn.fit(X_train,y_train)
-                gbrt.fit(X_train.toarray(),y_train)
-
-                clf2 = clf.classifier_()
-                knn2 = knn.classifier_()
-                gbrt2 = gbrt.classifier_()
-
-                df = clf2.predict_proba(X_test)
-                dfknn = knn2.predict_proba(X_test)
-                dfgbrt = gbrt2.predict_proba(X_test.toarray())
-
-                preds = clf.predict(X_test)
-                preds2 = [0] * len(df)
-                preds3 = preds2
-                preds2 = knn.predict(X_test)
-                preds3 = gbrt.predict(X_test.toarray())
-
-                for i in range(len(df)):
-
-                    lrProbMean += np.max(df[i])
-                    if preds[i] == y_test[i]: 
-                        lrAcc += 1.0
-                    else:
-                        if np.max(df[i]) > 0.60:
-                            lrconfidentButWrong += 1
-
+            for i in range(len(df)):
                     
+                lrProbMean += np.max(df[i])
+                if preds[i] == y_test[i]: 
+                    lrAcc += 1.0
+                else:
+                    if np.max(df[i]) > 0.60:
+                        lrconfidentButWrong += 1
 
-                    knnProbMean += np.max(dfknn[i])
-                    if preds2[i] == y_test[i]:
-                        knnAcc += 1.0
-                    else:
-                        if np.max(dfknn[i]) > 0.80:
-                            knnconfidentButWrong += 1
+                knnProbMean += np.max(dfknn[i])
+                if preds2[i] == y_test[i]:
+                    knnAcc += 1.0
+                else:
+                    if np.max(dfknn[i]) > 0.80:
+                        knnconfidentButWrong += 1
 
-                    gbProbMean += np.max(dfgbrt[i])
-                    if preds3[i] == y_test[i]: 
-                        gbAcc += 1.0
-                    else:
-                        if np.max(dfgbrt[i]) > 0.80:
-                            gbconfidentButWrong += 1
+                if np.max(pbkNN[i]) > 0.8:
+                    # if kNN is more .8 sure, it is very accurate
+                    choice = predskNN[i]
+                elif np.max(pbkNN[i]) - np.max(pbLR[i]) > 0.4:
+                    # if kNN is 0.4 more sure than LR, use that
+                    choice = predskNN[i]
+                else:
+                    choice = predsLR[i]
+                finalpred.append(choice)
 
-
-                    if np.max(dfknn[i]) - np.max(df[i]) > 0.4:
-                        choice = preds2[i]
-                    else:
-                        choice = preds[i]
-                    finalpred.append(choice)
-                    '''
+                '''
 
                     print("%d\t%0.3f\t%d\t%d" % (i,
                                                  np.max(df[i]), 
@@ -123,17 +92,15 @@ def validate(num_iterations, clf, direc, ds, ds2 = None):
                                                  choice,
                                                  y_test[i]))
 
-                    '''
+                '''
             s = clf.score(finalpred,y_test)
             accuracy.append(s)
             l = float(len(preds))
             print "lrConfident (0.6) but wrong:", float(lrconfidentButWrong) / l
             print "knConfident (0.8) but wrong:", float(knnconfidentButWrong) / l
-            print "gbConfident (0.8) but wrong:", float(gbconfidentButWrong) / l
 
             print "LR mean prob:", lrProbMean/l, lrAcc/l
             print "kNN mean prob:", knnProbMean/l, knnAcc/l
-            print "GBRT mean prob:", gbProbMean/l, gbAcc/l
             print size, i, s
             if weights is None:
                 weights = np.array(clf.weights())

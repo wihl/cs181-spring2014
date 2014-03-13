@@ -85,8 +85,9 @@ class Dataset(object):
             for row in ff(tree):
                 rowfd = {}
                 rowfd.update(row)
-                self.fds.append(rowfd)
                 numRows += 1
+            self.fds.append(rowfd)
+
         return numRows
 
     def makeDesignMat(self):

@@ -11,8 +11,8 @@ import util
 ## The following function does the feature extraction, learning, and prediction
 def main():
     train_dir = "train"
-    test_dir = "test"
-    outputfile = "mypredictions.csv"  # feel free to change this or take it as an argument
+    test_dir = "mintest"
+    outputfile = "mypredictions-min.csv"  # feel free to change this or take it as an argument
 
     lr = cl.LogisticRegression()
     knn = cl.kNN()
@@ -23,15 +23,13 @@ def main():
 
     X, y, ids = ds.getDataset(train_dir)
     lr.fit(X,y)
+    del X
+    del y
     #knn.fit(X,y)
     print "training complete. Now preparing for submit"
     # TODO - add in thread classification
 
     X, y, ids = ds.getDataset(test_dir)
-    print "threadmapping:", ds.threadMapping
-    syscallMap = sorted(ds.threadMapping)
-    mapPos = 0
-    
     predsLR = lr.predict(X)
     #pbLR    = lr.classifier_().predict_proba(X)
 
