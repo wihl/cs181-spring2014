@@ -32,7 +32,7 @@ class Dataset(object):
 
     def getFeatures(self):
         if self.metricType == MetricType.process:
-            return [system_call_count_feats, process_metrics]
+            return [system_call_count_feats, process_metrics, md5_hashes]
         else:
             return [basic_thread_features]
 
@@ -217,12 +217,24 @@ def process_metrics(tree):
                     c[r+'-'+el.attrib[r]] = c.get(r+'-'+el.attrib[r],0) + 1
     return c
 
+def md5_hashes(tree):
+    c = Counter()
+    for el in tree.iter():
+        if el.tag == "process":
+            if 'iexplore' in el.attrib['filename']:
+                if el.get('md5') == 'a251068640ddb69fd7805b57d89d7ff7':
+                    c['Swizzor_found'] = 100
+    return c
+
+
 def hexStrToInt(str):
     # convert hex string in the form "$123ABC" to integer value
     return int('0x'+str[1:], 16)
 
 def basic_thread_features(tree):
     c = {} #Counter()
+    # TODO: this loops through the file and overwrites c values as it goes, so it is pretty useless.
+
     in_all_section = False
     for el in tree.iter():
         # ignore everything outside the "all_section" element
@@ -234,9 +246,6 @@ def basic_thread_features(tree):
             c['action'] = hash(el.tag)
             if el.get('wantedaddress'): c['wantedaddress'] = hexStrToInt(el.get('wantedaddress')) # 0
             if el.get('successful'): c['successful'] = int(el.get('successful')) # 0
-            #if el.get('filename'): c['filename'] = hash(el.get('filename'))
-            #if el.get('protect'): c['protect'] = hash(el.get('protect')) # + 
-            #if el.get('behavior'): c['behavior'] = hash(el.get('behavior')) 
             for r in ['filename', 'user', 'protect', 'target', 
                       'servicename', 'behavior','creationflag',
                       'srcfile', 'apifunction', 'flags', 

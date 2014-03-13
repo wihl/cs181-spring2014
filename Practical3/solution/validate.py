@@ -24,7 +24,7 @@ def validate(num_iterations, clf, direc, ds):
     accuracy = []
     X, y, ids = ds.getDataset(direc)
     print "X len=",X.shape, "Y len=", len(y)
-    X = np.log(X.toarray())
+    #X = np.log(X.toarray())
     weights = None
     knn = cl.kNN()
     for size in [0.3, 0.2, 0.1]: # try 3 fold, 5 fold and 10 fold
@@ -38,41 +38,41 @@ def validate(num_iterations, clf, direc, ds):
             lrconfidentButWrong = 0.0
             clf.fit(X_train,y_train)
             clf2 = clf.classifier_()
-            df = clf2.predict_proba(X_test)
-            preds = clf.predict(X_test)
+            lrDf = clf2.predict_proba(X_test)
+            predLr = clf.predict(X_test)
 
             knnProbMean = 0.0
             knnAcc = 0.0
             knnconfidentButWrong = 0.0
             knn.fit(X_train,y_train)
             knn2 = knn.classifier_()
-            dfknn = knn2.predict_proba(X_test)
-            preds2 = knn.predict(X_test)
+            knnDf = knn2.predict_proba(X_test)
+            knnPreds = knn.predict(X_test)
 
-            for i in range(len(df)):
+            for i in range(len(lrDf)):
                     
-                lrProbMean += np.max(df[i])
-                if preds[i] == y_test[i]: 
+                lrProbMean += np.max(lrDf[i])
+                if predLr[i] == y_test[i]: 
                     lrAcc += 1.0
                 else:
-                    if np.max(df[i]) > 0.60:
+                    if np.max(lrDf[i]) > 0.60:
                         lrconfidentButWrong += 1
 
-                knnProbMean += np.max(dfknn[i])
-                if preds2[i] == y_test[i]:
+                knnProbMean += np.max(knnDf[i])
+                if knnPreds[i] == y_test[i]:
                     knnAcc += 1.0
                 else:
-                    if np.max(dfknn[i]) > 0.80:
+                    if np.max(knnDf[i]) > 0.80:
                         knnconfidentButWrong += 1
 
-                if np.max(pbkNN[i]) > 0.8:
+                if np.max(knnDf[i]) > 0.8:
                     # if kNN is more .8 sure, it is very accurate
-                    choice = predskNN[i]
-                elif np.max(pbkNN[i]) - np.max(pbLR[i]) > 0.4:
+                    choice = knnPreds[i]
+                elif np.max(knnDf[i]) - np.max(lrDf[i]) > 0.4:
                     # if kNN is 0.4 more sure than LR, use that
-                    choice = predskNN[i]
+                    choice = knnPreds[i]
                 else:
-                    choice = predsLR[i]
+                    choice = predLr[i]
                 finalpred.append(choice)
 
                 '''
@@ -95,7 +95,7 @@ def validate(num_iterations, clf, direc, ds):
                 '''
             s = clf.score(finalpred,y_test)
             accuracy.append(s)
-            l = float(len(preds))
+            l = float(len(predLr))
             print "lrConfident (0.6) but wrong:", float(lrconfidentButWrong) / l
             print "knConfident (0.8) but wrong:", float(knnconfidentButWrong) / l
 
@@ -142,8 +142,6 @@ def main():
     else:
         ds = ff.Dataset()
 
-    ds2 = None
-
     with open('error_log.txt', 'a') as errfile:
         wr = csv.writer(errfile, dialect = 'excel')
     
@@ -157,7 +155,7 @@ def main():
                     # create two datasets and ignore the -t parameter
                     ds = ff.Dataset(ff.MetricType().process)
                     ds2 = ff.Dataset(ff.MetricType().thread)
-            accuracy, weights = validate(num_iter, c, direc, ds, ds2)
+            accuracy, weights = validate(num_iter, c, direc, ds)
             timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             avgAcc = accuracy.mean()
             stdAcc = accuracy.std() * 2
