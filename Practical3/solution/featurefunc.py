@@ -18,7 +18,6 @@ md5Hash = []
 def myHash(d,str):
     if str not in d:
         d.append(str)
-    print d
     return d.index(str)
 
 
@@ -198,7 +197,7 @@ def system_call_count_feats(tree):
                               'create_process',
                               'create_directory',
                               'create_interface',
-                              'create_key',
+                              'create_key', 'create_mutex',
                               'create_process_nt',
                               'create_service',
                               'delete_key',

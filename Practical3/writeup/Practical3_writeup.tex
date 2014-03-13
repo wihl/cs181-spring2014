@@ -117,9 +117,11 @@ Significant experimentation was required to iterate over feature engineering, cl
 The first step was a significant refactoring of the sample code in order to separate vectorization, classification, validation and submission.
 
 \subsection*{Using Cross-validation}
-Five-fold cross validation was used on the training data, with runs with train / CV data pairings of 70/30, 80/20 and 90/10 for each classifier.
 
 Very early we created a test harness that enabled testing of $n$ iterations (default 5) over cross-validation sets consisting of 30\%, 20\% and 10\% of the data. This proved very valuable as we experimented. In total, we ran over 200 cross-validation tests each consisting of 15 different passes.
+
+\includegraphics[scale=.6]{cv_error}
+
 
 \subsection*{Per File Feature Engineering}
 
@@ -127,21 +129,31 @@ The first vectorizer took simple counts of each different type of system call as
 
 \subsection*{Comparing Classifiers and Tuning Hyperparameters}
 
-We then attempted a number of different classifiers (SVM, kNN, Gradient Boosting). Results are summarized in TODO.
-
-By making multiple cross-validation runs, we tuned each classifiers hyper parameters.
+We attempted a number of different classifiers (Logistic Regression, SVM, kNearest Neighbor, Gradient Boosting). Logistic Regression provided the most consistently accurate predictions. kNearest Neighbor provided very accurate results only when the prediction probability was high. This combination proved useful when combining classifiers later on.
 
 \subsection*{Pruning the Dimensions}
 
 We took two complementary approaches to prune the dimensions.
-1. We examined the weights of each of the classifiers to see which dimensions were not producing a signal. Using the mean and standard deviation of the resulting matrix, we noted any features where abs(mean) $<$ 0.001 and std $< $0.01.
-2. We exported our Design Matrix to a CSV and then used tools in R to run a linear regression and see the predicted values of the coefficients. 
+\begin{enumerate}
+  \item We examined the weights of each of the classifiers to see which dimensions were not producing a signal. Using the mean and standard deviation of the resulting matrix, we noted any features where abs(mean) $<$ 0.001 and std $< $0.01.
+  \item We exported our Design Matrix to a CSV and then used tools in R to run a linear regression and see the predicted values of the coefficients. 
+\end{enumerate}
 
-We then pared back approximately 20 features that provided no value (and ran cross validation again to recheck of course).
+We then pruned back approximately 35 features that provided no value (and ran cross validation again to recheck of course).
+
+In doing this, we found that the process file's MD5 hash directly correlated to at least one virus definition. This is unsurprising given that MD5 is a quick and effective means to determine if a file has been tampered with.
+
+\subsection*{Per Thread Feature Engineering}
+
+We created second, separate model of per system-call metrics, consisting of items such as `successful' attributes. Attributes of type string that had potential value were hashed into a numeric form. This resulted in a design matrix of over 
+3000000 rows $\times$ 14 features.
 
 \subsection*{Combining Classifiers}
 
-We examined and experimented with several options for combining the classifiers (AdaBoost, Random Forests). We wanted to attempt a novel approach to combining classifiers (using predict\_proba to find what level is $>$98\% is appropriate for a given classifier. Then if the classifier, such kNN, had a high confidence level, it was given the vote. If one classifier had a significantly higher confidence level (determined empirically to be 0.4), it was given the vote. If no classifier had a high confidence, it was given to Logistic Regression as it generally had the lowest error rate.
+We examined and experimented with several options for combining the classifiers (AdaBoost, Random Forests). We wanted to attempt a novel approach to combining classifiers.
+
+ (using predict\_proba to find what level is $>$98\% is appropriate for a given classifier. Then if the classifier, such kNN, had a high confidence level, it was given the vote. If one classifier had a significantly higher confidence level (determined empirically to be 0.4), it was given the vote. If no classifier had a high confidence, it was given to Logistic Regression as it generally had the lowest error rate.
+TODO
 
 We actually found that combining two different sets of classifers worked under different situations. For instance, we found that the summary features had the most overall explanatory power (XX percent), but that more specific information on each process was useful in specifically identifying certain cases.
 \
@@ -149,28 +161,18 @@ We actually found that combining two different sets of classifers worked under d
 Interestingly, we found that the hyper-detailed information on each process feature was actually less useful on average than more aggregated features. This points to the importance of feature engineering and trying to capture key elements of the underlying data rather than simply adding features without as much thought to why they might make sense and if they are the best representation of key attributes.
 \
 \\
-While we initially had them as seperate models, we instead developed a 'meta classifier' which we trained to simply discriminate which of the two models was likely to perform well on that type of potential malware. We used this model to then select between the two model prediction
+While we initially had them as separate models, we instead developed a 'meta classifier' which we trained to simply discriminate which of the two models was likely to perform well on that type of potential malware. We used this model to then select between the two model prediction
 
-
-
-\subsection*{Feature Engineering}
-
-NOTE
-Aggregate Features per training file:
- selected all process features  (e.g. 'startreason', 'terminationreason', 'username', 'executionstatus', 'applicationtype') and summary thread features (num of each type of system call).
-
-We created second, separate model of per system-call metrics, consisting of items such as `successful' attributes. Attributes of type string that had potential value were hashed into a numeric form. This resulted in a design matrix of over 
-3000000 rows $\times$ 14 features.
-
-We then applied Logistic Regression to this new design matrix and rechecked, as always with multiple cross-validation passes and again pared back any features that did not have a significant signal.
 
 \subsection*{Quality Check prior to Submission}
 
-After a couple of poor submissions due to bugs in our algorithms, we implemented a sanity checked for submissions. This would useful in real world scenarios to ensure that the predictions are within a reasonable tolerance prior to putting new models into production. The sanity check ensured that all test data had a predictions within the possible values, and then displayed a distribution of distribution to ensure that no unusual skews were occurring.
+After a couple of poor submissions due to bugs in our implementation, we created a sanity check for submissions. This would be useful in real world scenarios to ensure that the predictions are within a reasonable tolerance prior to putting new models into production. The sanity check displayed a distribution of classes to ensure that no unusual skews were occurring. We did not presume that a subsequent day would have the same distribution of viruses as the training set. However once Kaggle informed us that we were 75\% accurate on the public leader board, we wanted to at least ensure that we weren't wasting any further Kaggle submissions. 
+
+\includegraphics[scale=.65]{predictVactual}
 
 \subsection*{Exotic Classifiers}
 
-We examined and did preliminary experiments with two different approaches: Exemplar SVM and Theano / Deep Learning. While the reading was interesting, in both cases, the quality of the code and library precluded us from pursuing it further in the time available. We hit a bug in Theano when using the Scipy CSR array. We intend to continue exploring Theano outside the scope of this exercise in the future.
+We examined and did preliminary experiments with two different approaches: Exemplar SVM \cite{exemplar}  and Theano / Deep Learning \cite{deep}. While the reading was interesting, in both cases, the quality of the code and library precluded us from pursuing these options in the time available. We hit a bug in Theano when using the Scipy Sparse array. We intend to continue exploring Theano outside the scope of this exercise.
 
 
 \section*{Conclusion}
@@ -179,24 +181,18 @@ We conclude from this practical that considering what classifiers work well over
 
 This idea -- which is also true in decision trees and random forests -- effectively allows the function mapping the data to be more specific to the variability observed in the data and points to an important idea for us to consider in future machine learning projects.
 
-This was a valuable exercise in understanding the state of the art in multi-class classification with real-world, sparse hierarchical data. Clearly, \emph{there is no free lunch.}\footnote{Wolpert, Macready, \emph{No Free Lunch Theorems for Optimization} http://ti.arc.nasa.gov/m/profile/dhw/papers/78.pdf}
+This was a valuable exercise in understanding the state of the art in multi-class classification with real-world, sparse hierarchical data. Given the preponderance of business data that exists in relational master-detail schemas, it was enlightening to see how much room there is for exploration in this area.
 
 A more general approach to attacking this type of problem requires more research and investigation. The permutations of features, classifiers and hyper parameters grow geometrically without many significant tools to provide automated means of attacking the problem. This is an area we would be interested in pursuing further research.
 \clearpage
-We were surprised how little guidance there was in the literature for this type of problem. We scanned through several books, journals, articles and web sites, but found little external guidance that was applicable in this set of circumstances. Clearly many people have attempted to find more general means of automated multi class classification.
-
+We were surprised how little guidance there was in the literature for this type of problem. We scanned through several books, journals, articles and web sites, but found little external guidance that was applicable, especially given the hierarchical nature of the data.
 
 \renewcommand{\refname}{Background Reading}
 
 \begin{thebibliography}{1}
+ \bibitem{exemplar} Tomasz Malisiewicz and Abhinav Gupta and Alexei A. Efros, \emph{Ensemble of Exemplar-SVMs for Object Detection and Beyond} ICCV 2011 http://www.cs.cmu.edu/~tmalisie/projects/iccv11/
 
- \bibitem{msvm} Multiclass SVM classification http://svmlight.joachims.org/svm\_multiclass.html
-
- \bibitem{exemplar} Exemplar SVM on github (octave / matlab)
-  https://github.com/quantombone/exemplarsvm
-
- \bibitem{ones} One against all or One against All
-  http://hal.archives-ouvertes.fr/docs/00/10/39/55/PDF/cr102875872670.pdf
+ \bibitem{deep} Bengio, Yoshua, \emph{Learning deep architectures for $\{AI\}$}, Now Publishers, 2009
 
  \bibitem{sklearn} Classifier comparison:
   http://scikit-learn.org/stable/auto\_examples/plot\_classifier\_comparison.html
