@@ -29,9 +29,9 @@
 We consider two approaches for classifying fruits (with length and width measurements provided) into one of three categories.
 
 It is important to note that the data here is not perfectly linearly separable, as can be seen in the plot below:
-
+\begin{center}
 \includegraphics[scale=.6]{figure_3}
-
+\end{center}
 So the challenge becomes how we can best define mutually exclusive regions of the graph.
 
 \subsection*{Logistic Classification}
@@ -86,8 +86,7 @@ Generative models attempt to determine, for each class $k$, a likelihood that a 
 The multivariate normal is given by:
 \
 \\
-\includegraphics[scale=.5]{formula}
-\
+ \includegraphics[scale=.5]{formula}
 \\
 where k=2 in our case because we have (1) height and (2) width.
 \
@@ -100,13 +99,13 @@ and note that we can ignore the denominator since it is the same for all classes
 
 We then have an assignment for each point to the highest likelihood class as shown in plot below.
 
-
+\begin{center}
 \includegraphics[scale=.6]{generative_classifier}
-
+\end{center}
 
 \subsection*{Warmup Summary}
 
-As we can see from the graphs in the previos sections, allowing a non-linear decision boundry (as we did when we used the generative classifier) allowed more flexibility to capture clusters of points and indeed was more accurate at capturing the variation observed in the data.
+As we can see from the graphs in the previous sections, allowing a non-linear decision boundary (as we did when we used the generative classifier) allowed more flexibility to capture clusters of points and indeed was more accurate at capturing the variation observed in the data.
 
 \section*{Classifying Malicious Software}
 
@@ -121,9 +120,9 @@ The first step was a significant refactoring of the sample code in order to sepa
 \subsection*{Using Cross-validation}
 
 Very early we created a test harness that enabled testing of $n$ iterations (default 5) over cross-validation sets consisting of 30\%, 20\% and 10\% of the data. This proved very valuable as we experimented. In total, we ran over 200 cross-validation tests each consisting of 15 different passes.
-
+\begin{center}
 \includegraphics[scale=.6]{cv_error}
-
+\end{center}
 
 \subsection*{Per File Feature Engineering}
 
@@ -145,7 +144,7 @@ We then pruned back approximately 35 features that provided no value (and ran cr
 
 In doing this, we found that the process file's MD5 hash directly correlated to at least one virus definition. This is unsurprising given that MD5 is a quick and effective means to determine if a file has been tampered with.
 
-We actually found that combining two different sets of classifers worked under different situations. For instance, we found that the summary features had the most overall explanatory power, but that more specific information on each process was useful in specifically identifying certain cases.
+We actually found that combining two different sets of classifiers worked under different situations. For instance, we found that the summary features had the most overall explanatory power, but that more specific information on each process was useful in specifically identifying certain cases.
 
 Interestingly, we found that the hyper-detailed information on each process feature was actually less useful on average than more aggregated features. This points to the importance of feature engineering and trying to capture key elements of the underlying data rather than simply adding features without as much thought to why they might make sense and if they are the best representation of key attributes.
 
@@ -178,9 +177,9 @@ During our cross-validation runs, this technique increased our accuracy by appro
 \subsection*{Quality Check prior to Submission}
 
 After a couple of poor submissions due to bugs in our implementation, we created a sanity check for submissions. This would be useful in real world scenarios to ensure that the predictions are within a reasonable tolerance prior to putting new models into production. The sanity check displayed a distribution of classes to ensure that no unusual skews were occurring. We did not presume that a subsequent day would have the same distribution of viruses as the training set. However once Kaggle informed us that we were 75\% accurate on the public leader board, we wanted to at least ensure that we weren't wasting any further Kaggle submissions. 
-
+\begin{center}
 \includegraphics[scale=.65]{predictVactual}
-
+\end{center}
 \subsection*{Exotic Classifiers}
 
 We examined and did preliminary experiments with two different approaches: Exemplar SVM \cite{exemplar}  and Theano / Deep Learning \cite{deep}. While the reading was interesting, in both cases, the quality of the code and library precluded us from pursuing these options in the time available. We hit a bug in Theano when using the Scipy Sparse array. We intend to continue exploring Theano outside the scope of this exercise.
@@ -188,7 +187,7 @@ We examined and did preliminary experiments with two different approaches: Exemp
 
 \section*{Conclusion}
 
-We conclude from this practical that considering what classifiers work well over what ranges is extremely important. That is, when we combined models to allow them to effectively apply over different 'ranges' of the data, we were able to capture more nuanced effects than if we had simply attempted a single set of classifers that was applied to all data across the range. 
+We conclude from this practical that considering what classifiers work well over what ranges is extremely important. That is, when we combined models to allow them to effectively apply over different 'ranges' of the data, we were able to capture more nuanced effects than if we had simply attempted a single set of classifiers that was applied to all data across the range. 
 
 This idea -- which is also true in decision trees and random forests -- effectively allows the function mapping the data to be more specific to the variability observed in the data and points to an important idea for us to consider in future machine learning projects.
 
