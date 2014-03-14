@@ -110,7 +110,7 @@ As we can see from the graphs in the previos sections, allowing a non-linear dec
 
 \subsection*{Preliminary Data Analysis}
 
-This problem was significantly more complex than the previous practicals due to a number of factors: unbalanced distribution of the targets, sparsity of the data, conversion of hierarchical XML data into rectangular matrices, and unclear value of certain attributes in the data. 
+This problem was significantly more complex than the previous practicals due to a number of factors: unbalanced distribution of the targets, sparsity of the data, conversion of hierarchical XML data into rectangular matrices, hashing of non-numeric values and unclear value of certain attributes in the data. 
 
 Significant experimentation was required to iterate over feature engineering, classifier choice, permutations of ensembles of classifiers and hyper parameter optimization.
 
@@ -125,11 +125,11 @@ Very early we created a test harness that enabled testing of $n$ iterations (def
 
 \subsection*{Per File Feature Engineering}
 
-The first vectorizer took simple counts of each different type of system call as well as per-process (e.g. `startreason', `terminationreason', `username', `executionstatus', `applicationtype') and per-file metrics coupled with an unoptimized logistic regression. This enabled us to achieve a 75\% accuracy on the Kaggle submission within just a day or two.
+The first vectorizer took simple counts of each different type of system call as well as per-process (e.g. `startreason', `terminationreason', `username', `executionstatus', `applicationtype') and per-file metrics coupled with an unoptimized logistic regression. This enabled us to achieve a 75\% accuracy on our second Kaggle submission.
 
 \subsection*{Comparing Classifiers and Tuning Hyperparameters}
 
-We attempted a number of different classifiers (Logistic Regression, SVM, kNearest Neighbor, Gradient Boosting). Logistic Regression provided the most consistently accurate predictions. kNearest Neighbor provided very accurate results only when the prediction probability was high. This combination proved useful when combining classifiers later on.
+We attempted a number of different classifiers (Logistic Regression, SVM, kNearest Neighbor, Gradient Boosting). Logistic Regression provided the most consistently accurate predictions. kNearest Neighbor provided very accurate results only when the prediction probability estimate was high. This combination proved useful when combining classifiers later on.
 
 \subsection*{Pruning the Dimensions}
 
@@ -139,29 +139,32 @@ We took two complementary approaches to prune the dimensions.
   \item We exported our Design Matrix to a CSV and then used tools in R to run a linear regression and see the predicted values of the coefficients. 
 \end{enumerate}
 
-We then pruned back approximately 35 features that provided no value (and ran cross validation again to recheck of course).
+We then pruned back approximately 35 features that provided no value (and ran cross validation to recheck).
 
 In doing this, we found that the process file's MD5 hash directly correlated to at least one virus definition. This is unsurprising given that MD5 is a quick and effective means to determine if a file has been tampered with.
 
-\subsection*{Per Thread Feature Engineering}
-
-We created second, separate model of per system-call metrics, consisting of items such as `successful' attributes. Attributes of type string that had potential value were hashed into a numeric form. This resulted in a design matrix of over 
-3000000 rows $\times$ 14 features.
-
-\subsection*{Combining Classifiers}
-
-We examined and experimented with several options for combining the classifiers (AdaBoost, Random Forests). We wanted to attempt a novel approach to combining classifiers.
-
- (using predict\_proba to find what level is $>$98\% is appropriate for a given classifier. Then if the classifier, such kNN, had a high confidence level, it was given the vote. If one classifier had a significantly higher confidence level (determined empirically to be 0.4), it was given the vote. If no classifier had a high confidence, it was given to Logistic Regression as it generally had the lowest error rate.
-TODO
-
-We actually found that combining two different sets of classifers worked under different situations. For instance, we found that the summary features had the most overall explanatory power (XX percent), but that more specific information on each process was useful in specifically identifying certain cases.
+We actually found that combining two different sets of classifers worked under different situations. For instance, we found that the summary features had the most overall explanatory power, but that more specific information on each process was useful in specifically identifying certain cases.
 \
 \\
 Interestingly, we found that the hyper-detailed information on each process feature was actually less useful on average than more aggregated features. This points to the importance of feature engineering and trying to capture key elements of the underlying data rather than simply adding features without as much thought to why they might make sense and if they are the best representation of key attributes.
 \
-\\
+
+\subsection*{Per Thread Feature Engineering}
+
+We created second, separate model of per system-call metrics, consisting of items such as `successful' attributes. Attributes of type string that had potential value were hashed into a numeric form. This resulted in a design matrix of over 
+3000000 rows $\times$ 14 features. TODO
+
 While we initially had them as separate models, we instead developed a 'meta classifier' which we trained to simply discriminate which of the two models was likely to perform well on that type of potential malware. We used this model to then select between the two model prediction
+
+\subsection*{Combining Classifiers}
+
+We examined several options for combining the classifiers, including bagging, boosting and Committees. As Bishop points out ``these simple mixtures extend the flexibility of linear models to include more complex predictive distributions, they are still very limited." (pg 672).
+
+We attempted a novel approach to combining classifiers. Each of the linear multi-class classifiers we used provided for each prediction a probability of the sample in each of the classes.\cite{sklearn}. Through several test runs, we measured each classifier's $max(class\_probability)$ to accuracy. We found the threshold value for $>$98\% accurate for each classifier across the cross validation sets. 
+
+During prediction, if the classifier's probability was higher than this threshold, it was given the vote. If one classifier had a significantly higher confidence level (determined empirically to be 0.4), it was given the vote. If no classifier had a high confidence, it was given to Logistic Regression as it had the lowest overall error rate. After implementation, we found that Alpaydin refers to this technique as \emph{Dynamic Classifier Selection}.\cite{alpaydin}
+
+During our cross-validation runs, this technique increased our accuracy by approximately 3\%. However, our Kaggle score did not change commensurately, likely due to overfitting in spite of our cross validation. 
 
 
 \subsection*{Quality Check prior to Submission}
@@ -181,21 +184,20 @@ We conclude from this practical that considering what classifiers work well over
 
 This idea -- which is also true in decision trees and random forests -- effectively allows the function mapping the data to be more specific to the variability observed in the data and points to an important idea for us to consider in future machine learning projects.
 
-This was a valuable exercise in understanding the state of the art in multi-class classification with real-world, sparse hierarchical data. Given the preponderance of business data that exists in relational master-detail schemas, it was enlightening to see how much room there is for exploration in this area.
+This was a valuable exercise in understanding the state of the art in multi-class classification with real-world, sparse hierarchical data. Given the preponderance of business data that exists in relational schemas including master-detail, it was enlightening to see how much room there is for exploration in this area.
 
-A more general approach to attacking this type of problem requires more research and investigation. The permutations of features, classifiers and hyper parameters grow geometrically without many significant tools to provide automated means of attacking the problem. This is an area we would be interested in pursuing further research.
-\clearpage
-We were surprised how little guidance there was in the literature for this type of problem. We scanned through several books, journals, articles and web sites, but found little external guidance that was applicable, especially given the hierarchical nature of the data.
-
-\renewcommand{\refname}{Background Reading}
+The permutations of features, classifiers and hyper parameters grow geometrically without many significant tools to provide automated means of attacking the problem. This is an area we would be interested in pursuing further research.
 
 \begin{thebibliography}{1}
- \bibitem{exemplar} Tomasz Malisiewicz and Abhinav Gupta and Alexei A. Efros, \emph{Ensemble of Exemplar-SVMs for Object Detection and Beyond} ICCV 2011 http://www.cs.cmu.edu/~tmalisie/projects/iccv11/
-
- \bibitem{deep} Bengio, Yoshua, \emph{Learning deep architectures for $\{AI\}$}, Now Publishers, 2009
 
  \bibitem{sklearn} Classifier comparison:
   http://scikit-learn.org/stable/auto\_examples/plot\_classifier\_comparison.html
+  
+  \bibitem{alpaydin} Alpaydin, Ethem, \emph{Introduction to Machine Learning}, ISBN 978-026201243-0
+
+ \bibitem{exemplar} Tomasz Malisiewicz and Abhinav Gupta and Alexei A. Efros, \emph{Ensemble of Exemplar-SVMs for Object Detection and Beyond} ICCV 2011 http://www.cs.cmu.edu/~tmalisie/projects/iccv11/
+
+ \bibitem{deep} Bengio, Yoshua, \emph{Learning deep architectures for $\{AI\}$}, Now Publishers, 2009
 
   \end{thebibliography}
 
