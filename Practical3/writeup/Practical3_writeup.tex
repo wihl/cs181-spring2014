@@ -160,9 +160,18 @@ While we initially had them as separate models, we instead developed a 'meta cla
 
 We examined several options for combining the classifiers, including bagging, boosting and Committees. As Bishop points out ``these simple mixtures extend the flexibility of linear models to include more complex predictive distributions, they are still very limited." (pg 672).
 
-We attempted a novel approach to combining classifiers. Each of the linear multi-class classifiers we used provided for each prediction a probability of the sample in each of the classes.\cite{sklearn}. Through several test runs, we measured each classifier's $max(class\_probability)$ to accuracy. We found the threshold value for $>$98\% accurate for each classifier across the cross validation sets. 
+We attempted a novel approach to combining classifiers. Each of the linear multi-class classifiers we used provided for each prediction a probability of the sample in each of the classes.\cite{sklearn}. Through several test runs, we measured each classifier's $max(class\_probability)$ to accuracy. We found the threshold value for $<$1\% error rate for each classifier across the cross validation sets. 
+
+\begin{figure}[h!] 
+  \centering
+  \includegraphics[scale=0.5]{accuracy}
+  \caption{Predicted Probability Threshold vs. Error Rate}
+\end{figure}
+
 
 During prediction, if the classifier's probability was higher than this threshold, it was given the vote. If one classifier had a significantly higher confidence level (determined empirically to be 0.4), it was given the vote. If no classifier had a high confidence, it was given to Logistic Regression as it had the lowest overall error rate. After implementation, we found that Alpaydin refers to this technique as \emph{Dynamic Classifier Selection}.\cite{alpaydin}
+
+
 
 During our cross-validation runs, this technique increased our accuracy by approximately 3\%. However, our Kaggle score did not change commensurately, likely due to overfitting in spite of our cross validation. 
 
@@ -195,7 +204,7 @@ The permutations of features, classifiers and hyper parameters grow geometricall
   
   \bibitem{alpaydin} Alpaydin, Ethem, \emph{Introduction to Machine Learning}, ISBN 978-026201243-0
 
- \bibitem{exemplar} Tomasz Malisiewicz and Abhinav Gupta and Alexei A. Efros, \emph{Ensemble of Exemplar-SVMs for Object Detection and Beyond} ICCV 2011 http://www.cs.cmu.edu/~tmalisie/projects/iccv11/
+ \bibitem{exemplar} Tomasz Malisiewicz and Abhinav Gupta and Alexei A. Efros, \emph{Ensemble of Exemplar-SVMs for Object Detection and Beyond} ICCV 2011
 
  \bibitem{deep} Bengio, Yoshua, \emph{Learning deep architectures for $\{AI\}$}, Now Publishers, 2009
 
