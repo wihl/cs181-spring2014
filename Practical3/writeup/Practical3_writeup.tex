@@ -10,7 +10,7 @@
 \usepackage{amsmath}
 \usepackage{relsize}
 
-\title{CSCI 181 / E-181 Spring 2014 Practical 3 \\ 
+\title{CS181 / CSCI E-181 Spring 2014 Practical 3 \\ 
 {\large Kaggle Team "Capt. Jinglehiemer"}
 }
 \author{
@@ -70,8 +70,10 @@ $y_k(\phi) = exp(a_k)/\sum\limits_{j=1}^K exp(a_j)$
 where $a$ is simply the dot product of $x$ and $w$,to evaluate which class has the highest likelihood for a particular data point. The point is then assigned to the class which has the highest class-conditional density.
 \\
 We get the resulting classification.
+\begin{center}
+  \includegraphics[scale=.55]{logistic_classifer}
+\end{center}
 
-\includegraphics[scale=.6]{logistic_classifer}
 
 \subsection*{Generative Model Classification}
 
@@ -144,17 +146,14 @@ We then pruned back approximately 35 features that provided no value (and ran cr
 In doing this, we found that the process file's MD5 hash directly correlated to at least one virus definition. This is unsurprising given that MD5 is a quick and effective means to determine if a file has been tampered with.
 
 We actually found that combining two different sets of classifers worked under different situations. For instance, we found that the summary features had the most overall explanatory power, but that more specific information on each process was useful in specifically identifying certain cases.
-\
-\\
+
 Interestingly, we found that the hyper-detailed information on each process feature was actually less useful on average than more aggregated features. This points to the importance of feature engineering and trying to capture key elements of the underlying data rather than simply adding features without as much thought to why they might make sense and if they are the best representation of key attributes.
-\
 
 \subsection*{Per Thread Feature Engineering}
 
-We created second, separate model of per system-call metrics, consisting of items such as `successful' attributes. Attributes of type string that had potential value were hashed into a numeric form. This resulted in a design matrix of over 
-3000000 rows $\times$ 14 features. TODO
+We attempted a second, separate model of per system-call metrics, consisting of features such as `successful', `protect', `user', `target' attributes. Attributes of type string that had potential value were hashed into a numeric form. This resulted in a design matrix of over 13000000 rows $\times$ 14 features.
 
-While we initially had them as separate models, we instead developed a 'meta classifier' which we trained to simply discriminate which of the two models was likely to perform well on that type of potential malware. We used this model to then select between the two model prediction
+While the initial results were promising on a subset of the training data, this resulted in exhausting capacity on 16 Gb machines even when using sparse matrices.
 
 \subsection*{Combining Classifiers}
 
@@ -195,14 +194,14 @@ This idea -- which is also true in decision trees and random forests -- effectiv
 
 This was a valuable exercise in understanding the state of the art in multi-class classification with real-world, sparse hierarchical data. Given the preponderance of business data that exists in relational schemas including master-detail, it was enlightening to see how much room there is for exploration in this area.
 
-The permutations of features, classifiers and hyper parameters grow geometrically without many significant tools to provide automated means of attacking the problem. This is an area we would be interested in pursuing further research.
+The permutations of features, classifiers and hyper parameters grow geometrically without many significant tools to provide automated means of attacking the problem. This is an area we would be interested in pursuing with further research.
 
 \begin{thebibliography}{1}
 
  \bibitem{sklearn} Classifier comparison:
   http://scikit-learn.org/stable/auto\_examples/plot\_classifier\_comparison.html
   
-  \bibitem{alpaydin} Alpaydin, Ethem, \emph{Introduction to Machine Learning}, ISBN 978-026201243-0
+  \bibitem{alpaydin} Alpaydin, Ethem, \emph{Machine Learning}, ISBN 978-026201243-0
 
  \bibitem{exemplar} Tomasz Malisiewicz and Abhinav Gupta and Alexei A. Efros, \emph{Ensemble of Exemplar-SVMs for Object Detection and Beyond} ICCV 2011
 
