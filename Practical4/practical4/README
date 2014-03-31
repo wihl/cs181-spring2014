@@ -1,0 +1,53 @@
+CS181 Practical 4: Swingy Monkey
+
+This is the code for the practical on planning and reinforcement
+learning.  There are several files included in this directory.
+
+SwingyMonkey.py -- This is the Python code that implements the game
+and renders it on screen.  It has a main function, so you can run it
+and play the game by hand if you want.  This will also help make sure
+that you have the dependencies installed.  You can play by typing:
+
+bash$ python SwingyMonkey.py
+
+This will bring up a game window and you can make the monkey jump to a
+new vine by pushing any key.
+
+
+stub.py -- This is a simple example of how you can control the Swingy
+Monkey game programmatically.  It is a very simple class and script
+that makes it jump randomly and has examples of the callbacks and how
+to use them.  It turns off the sound and makes the game run super fast
+for learning.  You can run it via:
+
+bash$ python stub.py
+
+
+res/blop.wav, monkey.png, tree-pixel.png, jungle-pixel.png,
+screech.wav -- These are media resource files for the game.  There is
+no need to modify them.
+
+
+You'll need to install the pygame module to make this run:
+http://pygame.org/ This module seems to depend on SDL
+(http://www.libsdl.org/) and you may need to make sure you have a
+couple of other libraries installed for loading the PNG files.  I
+achieved this using Homebrew with:
+
+bash$ brew install sdl sdl_image sdl_mixer sdl_ttf portmidi
+
+If you have problems and have already Googled for your error message,
+post on Piazza for help.  When I installed pygame, I ended up doing it
+using pip via Mercurial:
+
+bash$ pip install hg+http://bitbucket.org/pygame/pygame
+
+For that to work, you'll need pip and Mercurial, but these are both
+pretty standard things.  On my Mac laptop, I also grabbed these with
+Homebrew.  On my desktop, I needed to update a few different things,
+such as XQuartz in order to get smpeg and make pygame happy.  Again,
+if you have issues with pygame, post on Piazza.
+
+
+
+
