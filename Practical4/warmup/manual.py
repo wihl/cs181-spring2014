@@ -4,7 +4,7 @@ def playgame():
     grid = g.Grid()
     x = 0
     score = 0
-    while x != 'x' and grid.reward(score) == 0:
+    while grid.reward(score) == 0:
         grid.printGrid()
         x, y = raw_input("Enter row, column: ").split()
         if x == 'x': break
@@ -19,7 +19,6 @@ def playgame():
         round = grid.noisyThrow(x, y)
         score += round
         print "You got ",round," Current score:", score
-    if x == 'x': return
     if grid.reward(score) == -1:
         print "You lose."
         return
