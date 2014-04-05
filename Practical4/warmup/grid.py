@@ -2,6 +2,8 @@
 grid.py - the main game grid
 '''
 
+import random 
+
 class Grid(object):
     def __init__(self):
         self.pointGrid = [
@@ -14,13 +16,20 @@ class Grid(object):
         self.numRows = len(self.pointGrid)
         self.numCols = len(self.pointGrid[0])
         self.targetScore = 101
+        '''
+        introduce randomness to the throw, such that:
+            60% of throws are on target
+            10% are are one of north, south, east or west
+        '''
+        self.noisePattern = [(0,0)] * 6 +    \
+                       [(-1,0)] + [(1,0)] +  \
+                       [(0,1)]  + [(0,-1)]
 
     def getNumRows(self):
         return self.numRows
 
     def getNumCols(self):
         return self.numCols
-
 
     def reward(self,points):
         if points < self.targetScore: return 0
@@ -38,6 +47,11 @@ class Grid(object):
         assert y >= 0
         assert y < self.numCols
         return self.pointGrid[x][y]
+
+    def noisyThrow(self,x,y):
+        noise = random.choice(self.noisePattern)
+        return self.throw(x+noise[0], y + noise[1])
+        
 
     def printGrid(self):
         for i in range(1, self.numRows - 1):

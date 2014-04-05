@@ -16,7 +16,7 @@ def playgame():
         if y < 0 or y >= grid.getNumCols():
             print "Invalid column entry"
             continue
-        round = grid.throw(x, y)
+        round = grid.noisyThrow(x, y)
         score += round
         print "You got ",round," Current score:", score
     if x == 'x': return
