@@ -11,8 +11,8 @@ seq_tree_max={'bot': 140, 'top': 340, 'dist': 310}
 seq_monkey_min={'vel': -47, 'bot': -44, 'top': 12}
 seq_monkey_max={'vel': 18, 'bot': 364, 'top': 420}
 
-learning_rate=0.1
-discount_factor=0.8
+learning_rate=0.2
+discount_factor=0.5
 state_space_dict={}
 nbins=10
 
@@ -67,28 +67,28 @@ class Learner:
             new_action=npr.rand() < 0.1
 
         elif state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), self.last_action]))==None:
-            print "RAN1"
-            qval= self.last_reward + learning_rate*(max(state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 0]), 0), state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 1]), 0)) - 0)
-            print qval
+            #print "RAN1"
+            qval= self.last_reward + discount_factor*(max(state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 0]), -10000), state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 1]), -10000)) - 0)
+            #print qval
             state_space_dict[tuple([learner.gen_bins(self.last_state, nbins), self.last_action])]=qval
-            two_states=(state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 0]), 0), state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 1]), 0))
+            two_states=(state_space_dict.get(tuple([learner.gen_bins(state, nbins), 0]), 0), state_space_dict.get(tuple([learner.gen_bins(state, nbins), 1]), 0))
             new_action = two_states.index(max(two_states))
 
 
         else:
-            print "RAN2"
+#            print "RAN2"
             #implement Q learning
-            qval= state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), self.last_action]),0) +  learning_rate*(self.last_reward + discount_factor*max(state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 0]), 0), state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 1]), 0)) - state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), self.last_action])))
+            qval= state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), self.last_action]),0) +  learning_rate*(self.last_reward + discount_factor*max(state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 0]), -10000), state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 1]), -10000)) - state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), self.last_action])))
             #print [learner.gen_bins(self.last_state, 10), self.last_action]
             state_space_dict[tuple([learner.gen_bins(self.last_state, nbins), self.last_action])]=qval
-            print qval
+            #print qval
     #        print state
 
             # You might do some learning here based on the current state and the last state.
 
             # You'll need to take an action, too, and return it.
             # Return 0 to swing and 1 to jump.
-            two_states=(state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 0]), 0), state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 1]), 0))
+            two_states=(state_space_dict.get(tuple([learner.gen_bins(state, nbins), 0]), 0), state_space_dict.get(tuple([learner.gen_bins(state, nbins), 1]), 0))
             new_action = two_states.index(max(two_states))
         
         new_state  = state
@@ -151,3 +151,4 @@ print numpy.average(scorelist)
 
 #    return seq_tree_min, seq_tree_max, seq_monkey_min, seq_monkey_max
 
+print state_space_dict
