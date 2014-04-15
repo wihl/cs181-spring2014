@@ -1,7 +1,15 @@
 import numpy.random as npr
 import sys
+import numpy
 
 from SwingyMonkey import SwingyMonkey
+
+
+#calculated mins and maxes values for 5000 iterations. will be used to define bins
+seq_tree_min={'bot': 11, 'top': 211, 'dist': -115}
+seq_tree_max={'bot': 140, 'top': 340, 'dist': 310}
+seq_monkey_min={'vel': -47, 'bot': -44, 'top': 12}
+seq_monkey_max={'vel': 18, 'bot': 364, 'top': 420}
 
 class Learner:
 
@@ -15,9 +23,33 @@ class Learner:
         self.last_action = None
         self.last_reward = None
 
+
+
+    def assign_bin(numbins):
+
+         
+         tree_bot=numpy.linspace(seq_tree_min['bot'], seq_tree_max['bot'], numbins)
+         tree_top=numpy.linspace(seq_tree_min['top'], seq_tree_max['top'],numbins)
+         tree_dist=numpy.linspace(seq_tree_min['dist'], seq_tree_max['dist'], numbins)
+         mon_vel=numpy.linspace(seq_monkey_min['vel'], seq_monkey_max['vel'], numbins)
+         mon_bot=numpy.linspace(seq_monkey_min['bot'], seq_monkey_max['bot'], numbins)
+         mon_top=numpy.linspace(seq_monkey_min['top'], seq_monkey_max['top'], numbins)
+
+         return tree_bot,tree_top,tree_dist, mon_vel, mon_bot,mon_top
+    
+    print assign_bin(20)
+
+
+
     def action_callback(self, state):
         '''Implement this function to learn things and take actions.
         Return 0 if you don't want to jump and 1 if you do.'''
+
+        #implement Q learning
+
+
+
+        #print state
 
         # You might do some learning here based on the current state and the last state.
 
@@ -37,10 +69,10 @@ class Learner:
 
         self.last_reward = reward
 
-iters = 100
-learner = Learner()
-scorelist={}
 
+iters = 10
+learner = Learner()
+scorelist=[]
 
 for ii in xrange(iters):
 
@@ -55,12 +87,33 @@ for ii in xrange(iters):
     while swing.game_loop():
         pass
 
-    scorelist.append(swing.get_state()['score'])
+    #store all values for mins and max  calcs -- only need to run once to get values for the find_state_bounds function which saves these values    
+    # scorelist.append(swing.get_state())
 
     # Reset the state of the learner.
     learner.reset()
 
 #calculate avg score for this approach
-print numpy.average(scorelist)
+#print numpy.average(scorelist)
 
+
+
+
+#def find_state_bounds():
+
+    # print scorelist
+    # seq_tree = [x['tree'] for x in scorelist]
+    # seq_tree_min= min(seq_tree)
+    # seq_tree_max= max(seq_tree)
+
+    # seq_monkey = [x['monkey'] for x in scorelist]
+    # seq_monkey_min= min(seq_monkey)
+    # seq_monkey_max= max(seq_monkey)
+
+    # print seq_tree_min
+    # print seq_tree_max
+    # print seq_monkey_min
+    # print seq_monkey_max
+
+#    return seq_tree_min, seq_tree_max, seq_monkey_min, seq_monkey_max
 
