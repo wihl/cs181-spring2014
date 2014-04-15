@@ -77,7 +77,7 @@ class Learner:
         else:
 #            print "RAN2"
             #implement Q learning
-            qval= state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), self.last_action]),0) +  learning_rate*(self.last_reward + discount_factor*max(state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 0]), 0), state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 1]), 0)) - state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), self.last_action])))
+            qval= state_space_dict[tuple([learner.gen_bins(self.last_state, nbins), self.last_action])] +  learning_rate*(self.last_reward + discount_factor*max(state_space_dict.get(tuple([learner.gen_bins(state, nbins), 0]), 0), state_space_dict.get(tuple([learner.gen_bins(state, nbins), 1]), 0)) - state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), self.last_action])))
             #print [learner.gen_bins(self.last_state, 10), self.last_action]
             state_space_dict[tuple([learner.gen_bins(self.last_state, nbins), self.last_action])]=qval
             #print qval
@@ -102,7 +102,7 @@ class Learner:
         self.last_reward = reward
 
 
-iters = 5000
+iters = 10000
 learner = Learner()
 scorelist=[]
 
@@ -150,4 +150,4 @@ print numpy.average(scorelist)
 
 #    return seq_tree_min, seq_tree_max, seq_monkey_min, seq_monkey_max
 
-#print state_space_dict
+print len(state_space_dict)
