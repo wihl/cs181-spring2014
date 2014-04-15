@@ -11,6 +11,11 @@ seq_tree_max={'bot': 140, 'top': 340, 'dist': 310}
 seq_monkey_min={'vel': -47, 'bot': -44, 'top': 12}
 seq_monkey_max={'vel': 18, 'bot': 364, 'top': 420}
 
+learning_rate=0.1
+discount_factor=0.2
+state_space_dict={}
+nbins=10
+
 class Learner:
 
     def __init__(self):
@@ -25,9 +30,7 @@ class Learner:
 
 
 
-    def assign_bin(numbins):
-
-         
+    def gen_bins(self, state, numbins):
          tree_bot=numpy.linspace(seq_tree_min['bot'], seq_tree_max['bot'], numbins)
          tree_top=numpy.linspace(seq_tree_min['top'], seq_tree_max['top'],numbins)
          tree_dist=numpy.linspace(seq_tree_min['dist'], seq_tree_max['dist'], numbins)
@@ -35,28 +38,48 @@ class Learner:
          mon_bot=numpy.linspace(seq_monkey_min['bot'], seq_monkey_max['bot'], numbins)
          mon_top=numpy.linspace(seq_monkey_min['top'], seq_monkey_max['top'], numbins)
 
-         return tree_bot,tree_top,tree_dist, mon_vel, mon_bot,mon_top
+
+        #find indices for each variable for a given state
+         tree_bot_bin=numpy.digitize([state['tree']['bot']], tree_bot)
+         tree_top_bin=numpy.digitize([state['tree']['top']], tree_top)
+         tree_dist_bin=numpy.digitize([state['tree']['dist']], tree_dist)
+
+         mon_vel_bin=numpy.digitize([state['monkey']['vel']], mon_vel)
+         mon_bot_bin=numpy.digitize([state['monkey']['bot']], mon_bot)
+         mon_top_bin=numpy.digitize([state['monkey']['top']], mon_top)
+
+         return tuple([int(tree_bot_bin), int(tree_top_bin), int(tree_dist_bin), int(mon_vel_bin), int(mon_bot_bin), int(mon_top_bin)])
     
-    print assign_bin(20)
-
-
 
     def action_callback(self, state):
         '''Implement this function to learn things and take actions.
         Return 0 if you don't want to jump and 1 if you do.'''
 
-        #implement Q learning
+        #keep track of all visited states and resultant outcomes
 
+        #if this is the first run
+        if self.last_state== None:
+        # print state
+        # print self.last_action
+        # print tuple([learner.gen_bins(self.last_state, nbins), self.last_action])
+            qval=0
+            # qval= state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), self.last_action]),0) +  self.last_reward + learning_rate*( discount_factor*max(state_space_dict.get(tuple([gen_bins(self.last_state, nbins), 0]), 0), state_space_dict.get(tuple([gen_bins(self.last_state, nbins), 1]), 0)) - state_space_dict[[gen_bins(self.last_state, nbins), self.last_action]])
+            new_action=npr.rand() < 0.1
 
+        else:
+            #implement Q learning
+            qval= state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), self.last_action]),0) +  self.last_reward + learning_rate*( discount_factor*max(state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 0]), 0), state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 1]), 0)) - state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), self.last_action])))
+            #print [learner.gen_bins(self.last_state, 10), self.last_action]
+            state_space_dict[tuple([learner.gen_bins(self.last_state, nbins), self.last_action])]=qval
 
-        #print state
+    #        print state
 
-        # You might do some learning here based on the current state and the last state.
+            # You might do some learning here based on the current state and the last state.
 
-        # You'll need to take an action, too, and return it.
-        # Return 0 to swing and 1 to jump.
-
-        new_action = npr.rand() < 0.1
+            # You'll need to take an action, too, and return it.
+            # Return 0 to swing and 1 to jump.
+            two_states=(state_space_dict.get(tuple([gen_bins(self.last_state, nbins), 0]), 0), state_space_dict.get(tuple([gen_bins(self.last_state, nbins), 1]), 0))
+            new_action = states.index(max(two_states))
         new_state  = state
 
         self.last_action = new_action
@@ -70,7 +93,7 @@ class Learner:
         self.last_reward = reward
 
 
-iters = 10
+iters = 100
 learner = Learner()
 scorelist=[]
 
@@ -90,6 +113,7 @@ for ii in xrange(iters):
     #store all values for mins and max  calcs -- only need to run once to get values for the find_state_bounds function which saves these values    
     # scorelist.append(swing.get_state())
 
+    #print swing.get_state()
     # Reset the state of the learner.
     learner.reset()
 
