@@ -2,17 +2,42 @@ import grid as g
 import random
 
 class Learner(object):
-    def __init__(self,rows,cols,maxscore):
+    def __init__(self,rows,cols,grid,targetScore,maxscore):
         self.reward = 0
         self.states = range(maxscore + 1)
         self.rows = rows
         self.cols = cols
         self.currentState = 0
         self.reward = 0
+        self.targetScore = targetScore
+        self.grid = grid
+        self.maxthrow = max(max(grid))
 
-    def action(self):
-        x = int(random.random()) * self.rows + 1
-        y = int(random.random()) * self.cols + 1
+    def findLocation(self,desiredScore):
+        print "desired",desiredScore
+        for x in range(1,self.rows+1):
+            for y in range(1,self.cols+1):
+                if self.grid[x][y] == desiredScore:
+                    print "trying ",x,y
+                    return x, y
+        print "did not find it"
+        return 1,1
+
+    def getPolicy(self):
+        # based on the current state, find the best throw
+        desiredScore = self.targetScore - self.currentState
+        x = random.randint(1,self.rows)
+        y = random.randint(1,self.cols)
+        if desiredScore < self.maxthrow:
+            # we're close - aim for the closest
+            print "getting close..."
+            x, y = self.findLocation(desiredScore)
+        return x, y
+
+    def action(self, grid):
+        self.grid = grid
+        x, y = self.getPolicy()
+        print x, y
         return x, y
 
     def setState(self,newState):
@@ -27,11 +52,13 @@ def playgame():
     score = 0
     learner = Learner(grid.getNumRows(),
                       grid.getNumCols(),
+                      grid.getGrid(),
+                      grid.getTargetScore(),
                       grid.getMaxScore())
     while grid.reward(score) == 0:
         grid.printGrid()
 
-        x, y = learner.action()
+        x, y = learner.action(grid.getGrid())
         round = grid.noisyThrow(x, y)
         score += round
         learner.setState(score)

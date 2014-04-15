@@ -13,8 +13,8 @@ class Grid(object):
             [0,16, 3,10, 5, 0],
             [0, 9, 6,15, 4, 0],
             [0, 0, 0, 0, 0, 0]]
-        self.numRows = len(self.pointGrid)
-        self.numCols = len(self.pointGrid[0])
+        self.numRows = len(self.pointGrid) - 2
+        self.numCols = len(self.pointGrid[0]) - 2
         self.maxscore = 117
         self.targetScore = 101
         '''
@@ -26,6 +26,12 @@ class Grid(object):
         self.noisePattern = [(0,0)] * 6 +    \
                        [(-1,0)] + [(1,0)] +  \
                        [(0,1)]  + [(0,-1)]
+
+    def getTargetScore(self):
+        return self.targetScore
+
+    def getGrid(self):
+        return self.pointGrid
 
     def getMaxScore(self):
         return self.maxscore
@@ -47,10 +53,10 @@ class Grid(object):
         ''' 
         given a row x, and a column y, return the points at that location
         '''
-        assert x >= 0
-        assert x < self.numRows
-        assert y >= 0
-        assert y < self.numCols
+        #assert x >= 0
+        #assert x < self.numRows
+        #assert y >= 0
+        #assert y < self.numCols
         return self.pointGrid[x][y]
 
     def noisyThrow(self,x,y):
@@ -59,8 +65,8 @@ class Grid(object):
         
 
     def printGrid(self):
-        for i in range(1, self.numRows - 1):
-            for j in range(1, self.numCols - 1):
+        for i in range(1, self.numRows + 1):
+            for j in range(1, self.numCols + 1):
                 print '\t{0} '.format(self.pointGrid[i][j]),
             print
 
