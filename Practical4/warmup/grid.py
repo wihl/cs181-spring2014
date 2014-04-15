@@ -15,6 +15,7 @@ class Grid(object):
             [0, 0, 0, 0, 0, 0]]
         self.numRows = len(self.pointGrid)
         self.numCols = len(self.pointGrid[0])
+        self.maxscore = 117
         self.targetScore = 101
         '''
         introduce randomness to the throw, such that:
@@ -25,6 +26,9 @@ class Grid(object):
         self.noisePattern = [(0,0)] * 6 +    \
                        [(-1,0)] + [(1,0)] +  \
                        [(0,1)]  + [(0,-1)]
+
+    def getMaxScore(self):
+        return self.maxscore
 
     def getNumRows(self):
         return self.numRows
