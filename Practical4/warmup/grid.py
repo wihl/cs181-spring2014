@@ -13,18 +13,28 @@ class Grid(object):
             [0,16, 3,10, 5, 0],
             [0, 9, 6,15, 4, 0],
             [0, 0, 0, 0, 0, 0]]
-        self.numRows = len(self.pointGrid)
-        self.numCols = len(self.pointGrid[0])
+        self.numRows = len(self.pointGrid) - 2
+        self.numCols = len(self.pointGrid[0]) - 2
+        self.maxscore = 117
         self.targetScore = 101
         '''
         introduce randomness to the throw, such that:
             60% of throws are on target
-            10% are are one of north(-1,0), south(1,0), 
+            10% are one of north(-1,0), south(1,0), 
                 east (0,1) or west (-1,0)
         '''
         self.noisePattern = [(0,0)] * 6 +    \
                        [(-1,0)] + [(1,0)] +  \
                        [(0,1)]  + [(0,-1)]
+
+    def getTargetScore(self):
+        return self.targetScore
+
+    def getGrid(self):
+        return self.pointGrid
+
+    def getMaxScore(self):
+        return self.maxscore
 
     def getNumRows(self):
         return self.numRows
@@ -40,23 +50,17 @@ class Grid(object):
 
 
     def throw(self,x,y):
-        ''' 
-        given a row x, and a column y, return the points at that location
-        '''
-        assert x >= 0
-        assert x < self.numRows
-        assert y >= 0
-        assert y < self.numCols
+        # given a row x, and a column y, 
+        # return the points at that location
         return self.pointGrid[x][y]
 
     def noisyThrow(self,x,y):
         noise = random.choice(self.noisePattern)
-        return self.throw(x + noise[0], y + noise[1])
-        
+        return self.throw(x + noise[0], y + noise[1])        
 
     def printGrid(self):
-        for i in range(1, self.numRows - 1):
-            for j in range(1, self.numCols - 1):
+        for i in range(1, self.numRows + 1):
+            for j in range(1, self.numCols + 1):
                 print '\t{0} '.format(self.pointGrid[i][j]),
             print
 
