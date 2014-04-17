@@ -12,6 +12,26 @@ class Learner(object):
         self.targetScore = targetScore
         self.grid = grid
         self.maxthrow = max(max(grid))
+        self.valueMatrix = self.buildValueMatrix(grid, self.states)
+
+    def buildValueMatrix(self,grid,states):
+        # for each state, create the best throw
+        x, y = self.findLocation(self.maxthrow)
+        valueMatrix = []
+        for state in self.states:
+            # when we aren't close, aim for the largest number
+            if state < (self.targetScore - self.maxthrow):
+                valueMatrix.append((x,y))
+            elif state < self.targetScore:
+            # as we get closer, aim for the desired number
+                x, y = self.findLocation(self.targetScore - state)
+                valueMatrix.append((x,y))
+            else:
+            # we're over - fill in the rest with zeroes
+                valueMatrix.append((0,0))
+        print valueMatrix
+        return valueMatrix
+            
 
     def findLocation(self,desiredScore):
         print "desired",desiredScore
