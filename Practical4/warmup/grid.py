@@ -20,7 +20,7 @@ class Grid(object):
         '''
         introduce randomness to the throw, such that:
             60% of throws are on target
-            10% are are one of north(-1,0), south(1,0), 
+            10% are one of north(-1,0), south(1,0), 
                 east (0,1) or west (-1,0)
         '''
         self.noisePattern = [(0,0)] * 6 +    \
@@ -50,7 +50,8 @@ class Grid(object):
 
 
     def throw(self,x,y):
-        # given a row x, and a column y, return the points at that location
+        # given a row x, and a column y, 
+        # return the points at that location
         return self.pointGrid[x][y]
 
     def noisyThrow(self,x,y):
