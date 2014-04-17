@@ -27,14 +27,84 @@
 
 
 \section*{Swingy Monkey}
+In building a reinforcement learning system to play \textit{swingy money}, our aim was to write an \textit{action callback} function that would, for given a state as an input, provide an action (either jump or don't jump) for that period. The actions should improve as we learn more about state space and resultant rewards, making it a perfect candidate for the application of reinforcement learning.
+\newline 
 
-\subsection*{Subsection 1}
+To learn the dynamics of the system, we selected model-free reinforcement learning was selected as the method of choice. While we considered the possiblities of trying to explicitly model the system (e.g. consider velocity, change in positions to determine angle, etc.), that approach seemed too 'engineered' in comparision to having the reinforcement learning system learn the dynamics of the system.
+\newline 
 
-\subsection*{Subsection 2}
+Our state space is given by:
+
+\begin{itemize}
+
+  \item Pixel of tree's bottom coordinate
+  \item Pixel of tree's top coordinate
+  \item Pixel distance from tree
+  \item Velocity of the monkey
+  \item Pixel of the bottom of the monkey
+  \item Pixel of the top of the monkey \ldots
+
+\end{itemize}
+
+We note, however that since these pixel and velocity states are integers taking on a wide range of values:
+\newline
+treemin={'bot': 11, 'top': 211, 'dist': -115}
+\newline
+treemax={'bot': 140, 'top': 340, 'dist': 310}
+\newline
+monkeymin={'vel': -47, 'bot': -44, 'top': 12}
+\newline
+monkeymax={'vel': 18, 'bot': 364, 'top': 420}
+
+\newline 
+
+To deal with this 'continuous' set of values, we decided to bucket values (we explored various bucket sizes, from 2 to 100), in order to be able to visit enough of the states and learn the dynamics of the system.
+
+\subsection*{Q Learning}
+
+In Q learning, the agent aims to learn the set of rewards associated with each (state, action) pair, both for the immediate next step, as well as the discounted value of future rewards to taking a particular action.
+
+\newline 
+The advantage of this approach is the flexibility it provides in being able to learn sets of optimal actions, however --as we found in this practical -- it can take many iterations to explore enough states to perform well.
+
+We define our Q function:
+\newline
+
+\begin{equation}\label{reio}
+Q(s,a) = R(s,a) +  \gamma (\sum_{s \prime} P(s\prime | s, a) \max_{a\prime \epsilon A} Q(s \prime, a \prime)
+\end{equation}
+\newline
+The update of the Q fuction at each time set for a (state, action) pair is:
+
+\begin{equation}\label{reio}
+Q(s,a)_new = Q(s,a) +  \alpha (r + \gamma \max_{a\prime \epsilon A} Q(s \prime, a \prime) - Q(s,a))
+\end{equation}
 
 
-\section*{Conclusion}
+\newline
+where:
 
+\newline
+\gamma = discount factor, between 0 and 1 (inclusive)
+\newline
+\alpha = learning rate, between 0 and 1 (inclusive)
+\newline
+
+\subsection*{Approach}
+
+For our first time step, we don't know anything about the Q function value and so take a random action.
+\newline
+For all subsequent time steps, we compute the Q value as given above for the previous state's action and reward. We then determine, for the state the agent is, which action (jump or no jump) has a higher Q-value in the dictionary of Q-values that we have updated at each step.
+\newline
+Since the Q-values are not populated for state-action pairs we have not visited, we set all unvisited state-action Q-value pairs to zero at initialization.
+
+\newline
+In order to caputure the fact that there is some stochastic element to the outcome (as we know that the game engine, for instance, randomizes state-reward mappings), we choose the opposite of the optimal action a very small fraction or the time (.01 percent of the time).
+
+\section*{Results}
+With only minor parameter tuning, and training on 2000 game epochs, we were able to achieve a maximum score of 193 and an average score of 16.986.
+\newline
+Watching the game performance through time shows the value of Q-learning in better capturing the rewards associated with the the full set of states.
 
 \begin{thebibliography}{1}
 
