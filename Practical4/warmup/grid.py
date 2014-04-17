@@ -50,19 +50,12 @@ class Grid(object):
 
 
     def throw(self,x,y):
-        ''' 
-        given a row x, and a column y, return the points at that location
-        '''
-        #assert x >= 0
-        #assert x < self.numRows
-        #assert y >= 0
-        #assert y < self.numCols
+        # given a row x, and a column y, return the points at that location
         return self.pointGrid[x][y]
 
     def noisyThrow(self,x,y):
         noise = random.choice(self.noisePattern)
-        return self.throw(x + noise[0], y + noise[1])
-        
+        return self.throw(x + noise[0], y + noise[1])        
 
     def printGrid(self):
         for i in range(1, self.numRows + 1):
