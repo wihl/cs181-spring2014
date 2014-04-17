@@ -6,7 +6,6 @@ class Learner(object):
         self.states = range(maxscore + 1)
         self.rows = rows
         self.cols = cols
-        self.currentState = 0
         self.targetScore = targetScore
         self.grid = grid
         self.maxthrow = max(max(grid))
@@ -37,23 +36,11 @@ class Learner(object):
                     return x, y
         return 1,1 # defensive
 
-    def getPolicy(self):
-        # based on the current state, find the best throw
-        x = self.valueMatrix[self.currentState][0]
-        y = self.valueMatrix[self.currentState][1]
-        return x, y
-
-    def action(self, grid):
-        self.grid = grid
-        x, y = self.getPolicy()
-        return x, y
-
-    def setState(self,newState):
-        self.currentState = newState
+    def action(self, state):
+        return self.valueMatrix[state]
 
 def playgame():
     grid = g.Grid()
-    x = 0
     score = 0
     learner = Learner(grid.getNumRows(),
                       grid.getNumCols(),
@@ -63,11 +50,10 @@ def playgame():
     while grid.reward(score) == 0:
         grid.printGrid()
 
-        x, y = learner.action(grid.getGrid())
+        x, y = learner.action(score)
         print "aiming for", x, y
         round = grid.noisyThrow(x, y)
         score += round
-        learner.setState(score)
         print "You got ",round," Current score:", score
     if grid.reward(score) == -1:
         print "You lose."
