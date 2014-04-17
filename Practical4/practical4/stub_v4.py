@@ -1,7 +1,7 @@
 import numpy.random as npr
 import sys
 import numpy
-
+from collections import defaultdict
 from SwingyMonkey import SwingyMonkey
 
 
@@ -11,10 +11,11 @@ seq_tree_max={'bot': 140, 'top': 340, 'dist': 310}
 seq_monkey_min={'vel': -47, 'bot': -44, 'top': 12}
 seq_monkey_max={'vel': 18, 'bot': 364, 'top': 420}
 
-learning_rate=0.2
-discount_factor=0.5
-state_space_dict={}
-nbins=10
+learning_rate=0.3
+discount_factor=0.9
+state_space_dict=defaultdict(float)
+nbins=5
+prob_tryrandom=.001
 
 class Learner:
 
@@ -66,12 +67,12 @@ class Learner:
             # qval= state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), self.last_action]),0) +  self.last_reward + learning_rate*( discount_factor*max(state_space_dict.get(tuple([gen_bins(self.last_state, nbins), 0]), 0), state_space_dict.get(tuple([gen_bins(self.last_state, nbins), 1]), 0)) - state_space_dict[[gen_bins(self.last_state, nbins), self.last_action]])
             new_action=npr.rand() < 0.5
 
-        elif state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), self.last_action]))==None or state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 1-self.last_action])) == None:
-            #print "RAN1"
-            qval= self.last_reward
-            #print qval
-            state_space_dict[tuple([learner.gen_bins(self.last_state, nbins), self.last_action])]=qval
-            new_action=npr.rand() < 0.5
+        # elif state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), self.last_action]))==None or state_space_dict.get(tuple([learner.gen_bins(self.last_state, nbins), 1-self.last_action])) == None:
+        #     #print "RAN1"
+        #     qval= self.last_reward
+        #     #print qval
+        #     state_space_dict[tuple([learner.gen_bins(self.last_state, nbins), self.last_action])]=qval
+        #     new_action=npr.rand() < 0.5
 
 
         else:
@@ -87,8 +88,10 @@ class Learner:
 
             # You'll need to take an action, too, and return it.
             # Return 0 to swing and 1 to jump.
-            two_states=(state_space_dict.get(tuple([learner.gen_bins(state, nbins), 0]), 0), state_space_dict.get(tuple([learner.gen_bins(state, nbins), 1]), 0))
+            two_states=(state_space_dict.get(tuple([learner.gen_bins(state, nbins), 0]), 0), state_space_dict.get(tuple([learner.gen_bins(state, nbins), 1]), 0)) 
             new_action = two_states.index(max(two_states))
+            if (npr.rand()<prob_tryrandom):
+                new_action= not new_action
         
         new_state  = state
         self.last_action = new_action
