@@ -37,7 +37,6 @@ class Grid(object):
         sum += 0.1 * self.reward(self.throw(x-1, y) + state)
         sum += 0.1 * self.reward(self.throw(x, y+1) + state)
         sum += 0.1 * self.reward(self.throw(x, y-1) + state)
-        print "state", state, "action", action, "sum",sum
         return sum
 
     def getTargetScore(self):

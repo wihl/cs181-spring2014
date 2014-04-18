@@ -1,5 +1,6 @@
 import grid as g
 import random
+import pylab
 
 class Learner(object):
     def __init__(self,rows,cols,maxscore):
@@ -19,49 +20,39 @@ class Learner(object):
             diff += abs(v1 - v2)
         return diff
 
-    def pbSum(self, startState):
-        if startState > 101: 
-            return 0.0
-        if self.grid.reward(startState) != 0:
-            return 0.0
-        bestValue = float("-inf")
-        for action in self.actions:
-            vTemp = self.grid.pbDist(action, startState)
-            if vTemp > bestValue:
-                bestValue = vTemp
-        return bestValue
-
-
-
     def valueIteration(self, gamma):
         vOld = [random.random()*1000] * len(self.values)
         epsilon = 0.01
         count = 0
+        # find action with highest value in case Q is 0.0
+        bestScore = 0
+        for action in xrange(len(self.actions)):
+            x = self.actions[action][0]
+            y = self.actions[action][1]
+            if self.grid.throw(x,y) > bestScore:
+                bestScore = self.grid.throw(x,y)
+                bestAction = action
+
         while self.vDistance(vOld, self.values) >= epsilon:
-            print "count",count
             count += 1
             vOld = self.values[:]
 
-            for state in self.states: # TODO - make this for all items
+            for state in xrange(len(self.states)-1,-1,-1):
                 Q = [0.0] * len(self.actions)
                 for action in xrange(len(self.actions)):
                     Q[action] = self.grid.reward(state) + gamma * self.grid.pbDist(self.actions[action], state)
-                print "state", state, "Q:",Q
-                self.policies[state] = Q.index(max(Q)) #equivalent of argmax
+                if max(Q) != 0.0:
+                    self.policies[state] = Q.index(max(Q)) #equivalent of argmax
+                else:
+                    self.policies[state] = bestAction
                 self.values[state] = max(Q)
 
 
     def learn(self, grid):
-        # TODO: 
-        # value iteration + graph
-        # policy iteration
-        # use total discounted award utility (sum over inifinity of discounted reward multiplied by gamma-t)
         self.grid = grid
         self.valueIteration(0.9)
-        print "values:", self.values
-        for x in self.states:
-            print "state",x, "action", self.actions[self.policies[x]]
-        return
+        return self.values
+        ''' NOT USED 
         for state in self.states:
             bestValue = grid.throw(self.actions[0][0], self.actions[0][1])
             self.valueMatrix[state] = self.actions[0]
@@ -80,9 +71,12 @@ class Learner(object):
                         self.valueMatrix[state] = action
                 else : #reward == -1:
                     self.valueMatrix[state] = (0,0)
+        END NOT USED
+        '''
 
     def action(self, state):
-        return self.valueMatrix[state]
+        #return self.valueMatrix[state]
+        return self.actions[self.policies[state]]
 
 def playgame():
     grid = g.Grid()
@@ -90,8 +84,7 @@ def playgame():
     learner = Learner(grid.getNumRows(),
                       grid.getNumCols(),
                       grid.getMaxScore())
-    learner.learn(grid)
-    return
+    values = learner.learn(grid)
     while grid.reward(score) == 0:
         grid.printGrid()
 
@@ -100,6 +93,10 @@ def playgame():
         round = grid.noisyThrow(x, y)
         score += round
         print "You got ",round," Current score:", score
+
+    pylab.plot(values)
+    pylab.show()
+
     if grid.reward(score) == -1:
         print "You lose."
         return
