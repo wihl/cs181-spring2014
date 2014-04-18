@@ -85,6 +85,7 @@ def playgame():
                       grid.getNumCols(),
                       grid.getMaxScore())
     values = learner.learn(grid)
+    print "Values:", values
     while grid.reward(score) == 0:
         grid.printGrid()
 
@@ -95,7 +96,12 @@ def playgame():
         print "You got ",round," Current score:", score
 
     pylab.plot(values)
-    pylab.show()
+    pylab.axhline(y=0.54, xmin=0, xmax=grid.getMaxScore(), color="r")
+    pylab.title("Value by State")
+    pylab.xlabel("State")
+    pylab.ylabel("Value")
+    pylab.savefig('values.pdf', format='PDF')
+    #pylab.show()
 
     if grid.reward(score) == -1:
         print "You lose."

@@ -27,6 +27,16 @@
 \maketitle
 \section*{Warm-Up}
 
+The warm-up consisted of the lawn darts game using a grid of values. We used a finite horizon value iteration as the game would be certain of eventually ending if it was possible to take many throws that would hit off board yielding a zero score.
+
+We chose to do value iteration over policy iteration because of the number of steps to execute the game were reasonable and would provide a contrast to the main problem.
+
+The peak values occurred when it was possible to win the game with a low probability of losing (as shown in the red horizontal line in the plot). 
+
+\begin{figure}[h!]
+  \centering
+  \scalebox{0.6}{\includegraphics{values}}
+ \end{figure}
 
 \section*{Swingy Monkey}
 In building a reinforcement learning system to play \textit{swingy money}, our aim was to write an \textit{action callback} function that would, for given a state as an input, provide an action (either jump or don't jump) for that period. The actions should improve as we learn more about state space and resultant rewards, making it a perfect candidate for the application of reinforcement learning.
