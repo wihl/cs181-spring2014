@@ -27,21 +27,31 @@
 \maketitle
 \section*{Warm-Up}
 
-The warm-up consisted of the lawn darts game using a grid of values. We used a finite horizon value iteration as the game would be certain of eventually ending if it was possible to take many throws that would hit off board yielding a zero score.
+The warm-up consisted of the lawn darts game using a grid of values. We used a finite horizon value iteration as the game would be certain of eventually ending even if the number of throws was indeterminate. 
 
-We chose to do value iteration over policy iteration because of the number of steps to execute the game were reasonable and would provide a contrast to the main problem.
+We chose to use Value Iteration over Policy Iteration because of the number of steps to execute the game were reasonable and would provide a contrast to the main problem which used Policy Iteration.  The utility was defined by the Total Reward as in this case, there was only one way possible to have a positive reward ($score=101$). There was no reason to use discounted rewards as there was no reward for intermediate scores or using less dart throws. We chose a $\gamma$ of 0.9.
 
-The peak values occurred when it was possible to win the game with a low probability of losing (as shown in the red horizontal line in the plot). 
+We set up the problem so the game could be played three ways: manually by a user, automatically via predetermined coded logic, and automatically via Reinforcement Learning.
+
+If the $max (Q_k(s,a))$ yielded zero as in the early states, we explicitly chose to attempt a throw at the square with the largest score (in the premise of minimizing lawn throws even though was that not an explicit goal of the exercise).
 
 \begin{figure}[h!]
   \centering
   \scalebox{0.6}{\includegraphics{values}}
+  \caption{Finite Horizon Values vs States}
+  \label{values}
  \end{figure}
+
+The peak values occurred when it was possible to win the game with a low probability of losing (as shown in the red horizontal line in the plot - See Figure~\ref{values}). This started occurring when the score $= 85$, as this was the lowest state where winning the game was possible (positive reward) and losing (negative reward) was not yet possible.
+
+Reinforcement Learning was more complicated to implement than via pre-determined logic, but provided significantly more flexibility should the parameters of the game change.
 
 \section*{Swingy Monkey}
 In building a reinforcement learning system to play \textit{swingy money}, our aim was to write an \textit{action callback} function that would, for given a state as an input, provide an action (either jump or don't jump) for that period. The actions should improve as we learn more about state space and resultant rewards, making it a perfect candidate for the application of reinforcement learning.
 
-To learn the dynamics of the system, model-free reinforcement learning was selected as the method of choice. While we considered the possiblities of trying to explicitly model the system (e.g. consider velocity, change in positions to determine angle, etc.), that approach seemed too 'engineered' in comparision to having the reinforcement learning system learn the dynamics of the system.
+Reinforcement Learning was more complicated to implement than pre-determined logic, but was significantly more flexible should the parameters of the game change or evolve. 
+
+To learn the dynamics of the system, model-free reinforcement learning was selected as the method of choice. While we considered the possibilities of trying to explicitly model the system (e.g. consider velocity, change in positions to determine angle, etc.), that approach seemed too 'engineered' in comparison to having the reinforcement learning system learn the dynamics of the system.
 
 Our state space is given by:
 
@@ -123,7 +133,7 @@ Having a sufficiently large number of visits to each state and action is key to 
 
 \begin{thebibliography}{1}
 
- \bibitem{item1}bibitem1 
+ \bibitem{item1}\emph{Reinforcement Learning}, Sutton \& Barto, 1998, ISBN-10: 0-262-19398-1
  
   \end{thebibliography}
 
