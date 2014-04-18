@@ -20,23 +20,16 @@ class Learner(object):
         return diff
 
     def pbSum(self, startState):
-        if startState > 100: 
+        if startState > 101: 
             return 0.0
         if self.grid.reward(startState) != 0:
             return 0.0
-        sum = 0.0
-        bestReward = float("-inf")
+        bestValue = float("-inf")
         for action in self.actions:
-            value = self.grid.throw(action[0], action[1])
-            print "startstate",startState, "value:", value, "reward", self.grid.reward(startState + value)
-            if self.grid.reward(startState + value) != 0:
-                return 0.0
-            reward = self.grid.reward(startState + value) + self.pbSum(startState + value)
-            print reward
-            if reward > bestReward:
-                bestReward = reward
-        if bestReward != 0.0: print "reward found", bestReward
-        return 0.6 * bestReward
+            vTemp = self.grid.pbDist(action, startState)
+            if vTemp > bestValue:
+                bestValue = vTemp
+        return bestValue
 
 
 
@@ -49,10 +42,10 @@ class Learner(object):
             count += 1
             vOld = self.values[:]
 
-            for state in self.states[80:]:
+            for state in self.states: # TODO - make this for all items
                 Q = [0.0] * len(self.actions)
                 for action in xrange(len(self.actions)):
-                    Q[action] = self.grid.reward(state) + gamma * self.pbSum(state)
+                    Q[action] = self.grid.reward(state) + gamma * self.grid.pbDist(self.actions[action], state)
                 print "state", state, "Q:",Q
                 self.policies[state] = Q.index(max(Q)) #equivalent of argmax
                 self.values[state] = max(Q)
@@ -64,9 +57,10 @@ class Learner(object):
         # policy iteration
         # use total discounted award utility (sum over inifinity of discounted reward multiplied by gamma-t)
         self.grid = grid
-        self.valueIteration(0.1)
+        self.valueIteration(0.9)
         print "values:", self.values
-        print "policies:",self.policies
+        for x in self.states:
+            print "state",x, "action", self.actions[self.policies[x]]
         return
         for state in self.states:
             bestValue = grid.throw(self.actions[0][0], self.actions[0][1])

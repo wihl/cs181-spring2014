@@ -27,6 +27,19 @@ class Grid(object):
                        [(-1,0)] + [(1,0)] +  \
                        [(0,1)]  + [(0,-1)]
 
+    def pbDist(self, action, state):
+        # returns the reward distribution for taking a given action at a specific state
+        x = action[0]
+        y = action[1]
+        sum = 0.0
+        sum += 0.6 * self.reward(self.throw(x, y) + state)
+        sum += 0.1 * self.reward(self.throw(x+1, y) + state)
+        sum += 0.1 * self.reward(self.throw(x-1, y) + state)
+        sum += 0.1 * self.reward(self.throw(x, y+1) + state)
+        sum += 0.1 * self.reward(self.throw(x, y-1) + state)
+        print "state", state, "action", action, "sum",sum
+        return sum
+
     def getTargetScore(self):
         return self.targetScore
 
