@@ -65,22 +65,21 @@ class ObservedState(object):
         """
             input: ghostState (game.AgentState object)
 
-            returns quadrant 0, 1, 2, 3
+            returns quadrant 1, 2, 3, 4
             i.e.:
-                0 2
+                2 4
                 1 3
         """
-
         x, y = ghostState.getPosition()
 
         if x <= self.midpoint[0] and y <= self.midpoint[1]:
-            return 0
-        elif x <= self.midpoint[0] and y > self.midpoint[1]:
             return 1
-        elif x > self.midpoint[0] and y <= self.midpoint[1]:
+        elif x <= self.midpoint[0] and y > self.midpoint[1]:
             return 2
-        else:
+        elif x > self.midpoint[0] and y <= self.midpoint[1]:
             return 3
+        else:
+            return 4
 
     def getLegalPacmanActions( self ):
         """
