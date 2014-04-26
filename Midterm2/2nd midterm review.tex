@@ -21,16 +21,58 @@
 
 \begin{document}
 \maketitle
-\section{Max-Margin Classification}
-Lecture 14
-
-Bishop 6.0-6.2 
-
-Course notes - maxmargin
-
-Section 7
 
 \section{Support Vector Machines}
+
+\subsection{Max-Margin Classification}
+SVMs are based on three "big ideas":
+\begin{itemize}
+	\item \emph{margin}. Maximizes distance between the closest points
+	\item \emph{duality}. Take a hard problem and transform it into an easier problem to solve.
+	\item \emph{kernel trick}. Map input vectors to higher dimensional, more expressive features.
+\end{itemize}
+
+Characteristics of SVMs:
+\begin{itemize}
+	\item \emph{linearly separable}. assumes that linear separation is possible
+	\item \emph{convex optimization}. SVM originated as a backlash against neural nets due to non-convexity. In Neural Nets, results were often non-reproducible as different researchers found different results.
+	\item \emph{global optimum} SVMs will find the global optimum.
+\end{itemize}
+
+
+DATA: $\{x_n,t_n\}_{n=1}^N, t_n \in \{-1, +1\}$
+
+J Basis functions: $\phi_j(x)\rightarrow\Re$
+
+Vector function: $\Phi X \rightarrow \Re^J$ (column vector)
+
+Assume linear separability
+
+Objective function: $f(\vec{x},\vec{w},b) = \phi(\vec{x})^\intercal \vec{w} + b$
+where b is the bias or offset.
+The sign of $f(\dot)$ will determine classification $(-1,+1)$
+
+SVM is used as a classifier, such that:
+\begin{eqnarray*}
+y(\vec{x},\vec{w},b) &=&
+  \left\{\begin{array}{ll}
+  	+1, &\mbox{if  }  \vec{\Phi}(\vec{x})^\intercal \vec{w} + b > 0 \\
+	-1, &\mbox{otherwise}
+  \end{array}\right. \\
+\end{eqnarray*}
+
+Decision boundary is the hyperplane where $\vec{\phi}(\vec{x})^\intercal\vec{w}+b = 0$
+
+Sources:
+\begin{enumerate}
+	\item Lecture 14
+	\item Bishop 6.0-6.2 
+	\item Course notes - maxmargin
+	\item Section 7 review
+\end{enumerate}
+
+
+\subsection{SVM}
 Lecture 15
 
 Bishop 7.0-7.1
