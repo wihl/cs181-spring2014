@@ -24,60 +24,70 @@
 
 \section{Support Vector Machines}
 
-\subsection{Max-Margin Classification}
-SVMs are based on three "big ideas":
-\begin{itemize}
-	\item \emph{margin}. Maximizes distance between the closest points
-	\item \emph{duality}. Take a hard problem and transform it into an easier problem to solve.
-	\item \emph{kernel trick}. Map input vectors to higher dimensional, more expressive features.
-\end{itemize}
-
+\subsection{Background}
 Characteristics of SVMs:
 \begin{itemize}
-	\item \emph{linearly separable}. assumes that linear separation is possible
-	\item \emph{convex optimization}. SVM originated as a backlash against neural nets due to non-convexity. In Neural Nets, results were often non-reproducible as different researchers found different results.
-	\item \emph{global optimum} SVMs will find the global optimum.
+	\item \emph{stock} -- SVMs are "off the shelf" and ready to use. No special modification is necessary.
+	\item \emph{linearly separable} -- assumes that linear separation is possible. Used natively as a binary classifier.
+	\item \emph{convex optimization}. SVM originated as a backlash against neural nets due to nets' non-convexity. In Neural Nets, results were often non-reproducible as different researchers found different results due to different initializations.
+	\item \emph{global optimum} -- SVMs will find the global optimum.
 \end{itemize}
 
+SVMs are based on three "big ideas":
+\begin{itemize}
+	\item \emph{margin} Maximizes distance between the closest points
+	\item \emph{duality} Take a hard problem and transform it into an easier problem to solve.
+	\item \emph{kernel trick} Map input vectors to higher dimensional, more expressive features.
+\end{itemize}
 
-DATA: $\{x_n,t_n\}_{n=1}^N, t_n \in \{-1, +1\}$
+\subsection{Setup}
 
-J Basis functions: $\phi_j(x)\rightarrow\Re$
+\begin{description}
+	\item[Data:] $\{x_n,t_n\}_{n=1}^N, t_n \in \{-1, +1\}$
+	\item[J Basis functions:] $\phi_j(x)\rightarrow\Re$, therefore
+	\begin{description}
+		\item[Vector function:] $\Phi X \rightarrow \Re^J$ produces a column vector.
+	\end{description}
+	\item[Objective function:]
+$f(\textbf{x},\textbf{w},b) = \textbf{w}^\intercal \mathbf{\phi}(\textbf{x})  + b$
+where b is the bias.
+\end{description}
 
-Vector function: $\Phi X \rightarrow \Re^J$ (column vector)
+The sign of $f(\cdot)$ will determine classification $(-1,+1)$
 
-Assume linear separability
-
-Objective function: $f(\vec{x},\vec{w},b) = \phi(\vec{x})^\intercal \vec{w} + b$
-where b is the bias or offset.
-The sign of $f(\dot)$ will determine classification $(-1,+1)$
-
-SVM is used as a classifier, such that:
+So the actual classifier will be:
 \begin{eqnarray*}
-y(\vec{x},\vec{w},b) &=&
+y(\textbf{x},\textbf{w},b) &=&
   \left\{\begin{array}{ll}
-  	+1, &\mbox{if  }  \vec{\Phi}(\vec{x})^\intercal \vec{w} + b > 0 \\
+  	+1, &\mbox{if  }  \textbf{w}^\intercal \mathbf{\phi}(\textbf{x}) + b > 0 \\
 	-1, &\mbox{otherwise}
   \end{array}\right. \\
 \end{eqnarray*}
 
-Decision boundary is the hyperplane where $\vec{\phi}(\vec{x})^\intercal\vec{w}+b = 0$
+Decision boundary is the hyperplane where $\textbf{w}^\intercal \phi(\textbf{x}) +b = 0$ . We want to find the decision boundary that creates the most separation between the two different classes by maximizing the distance between the two closest points. The points closest to the separating hyperplane are known as the \emph{support vectors}.
 
-Sources:
+The distance from the decision boundary to the closest point is determined by: 
+\begin{equation}
+\frac{|\textbf{w}^\intercal \textbf{x} + b|}{||\textbf{w}||}
+\end{equation}
+
+\subsection {Duality}
+
+\subsection {other stuff}
+Mercer function, infinite dimensions (justification for duality)
+
+\subsection{Sources}
+
 \begin{enumerate}
-	\item Lecture 14
+	\item Lecture 14, March 24, 2014
+	\item Lecture 15
 	\item Bishop 6.0-6.2 
+	\item Bishop 7.0-7.1
 	\item Course notes - maxmargin
 	\item Section 7 review
+	\item Section 8 review
+	\item Machine Learning in Action, Chapter 6
 \end{enumerate}
-
-
-\subsection{SVM}
-Lecture 15
-
-Bishop 7.0-7.1
-
-Section 8
 
 \section{Markov Decision Processes}
 Lecture 16
