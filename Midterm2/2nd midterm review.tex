@@ -1,7 +1,7 @@
 \documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
 \usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
 \usepackage{textcomp}
-\usepackage{hyperref}  % TODO: see page 94 of latex book
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}  % TODO: see page 94 of latex book
 \geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
 \usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
@@ -99,6 +99,48 @@ $\mathbf{w}$ is orthogonal to vectors in the Decision Boundary. Here's how: pick
 
 Since $\mathbf{w}$ is orthogonal, we want to maximize it. It is not unit length, but could be, by scaling with a factor of $r$.
 
+See \href{http://cs229.stanford.edu/notes/cs229-notes3.pdf}{Stanford CS229 SVM Notes} re: Functional vs. Geometric Margins
+
+The support vector is defined as $r\frac{\mathbf{w}}{||\mathbf{w}||_2}$, where $r$ is multiplied by the unit vector orthogonal to the Decision Boundary hyperplane. 
+
+Define the point where the vector meets the plane as $\phi_\perp (\mathbf{x})$, so
+\begin{equation}
+\phi(\mathbf{x}) = \phi_\perp(\mathbf{x}) + r\frac{\mathbf{w}}{||\mathbf{w}||_2}
+\end{equation}
+
+Solving for $r$, multiple both sides by $\mathbf{w}^\intercal$.
+
+(Recall: $\mathbf{w}^\intercal\mathbf{w} = ||\mathbf{w}||^2$)
+
+\begin{align}
+\mathbf{w}^\intercal\phi(\mathbf{x}) = &\mathbf{w}^\intercal  \phi_\perp(\mathbf{x})  +
+			 r\frac{\mathbf{w}^\intercal\mathbf{w}}{||\mathbf{w}||} \\
+			 = & (-b) + r||\mathbf{w}|| \\
+\end{align}
+The margin for a point $\mathbf{x}$.
+\begin{align}
+r = &\frac{\phi(\mathbf{x})^\intercal\mathbf{w}+b}{||w||} \\
+  = & \frac{f(\mathbf{x},\mathbf{w},b)}{||w||}
+\end{align}
+This makes it easy to calculate how far away a point is from the Decision Boundary. $r$ is strictly not a length because it could be negative. However, we only care about the actual distance to the boundary.
+
+Margin for a datum $n$:
+\begin{equation}
+margin = t_n\frac{\phi(\mathbf{x})^\intercal\mathbf{w}+b}{||\mathbf{w}||}
+\end{equation}
+
+This is getting close to a loss function as we can now figure out the worst of these. The Margin for all the training data will be the point closest to the Decision Boundary:
+\begin{equation}
+min_n\left\{ t_n\frac{\phi(\mathbf{x})^\intercal\mathbf{w}+b}{||\mathbf{w}||} \right\}
+\end{equation}
+
+As mentioned at the beginning of this section, the Objective Function is 
+\begin{equation}
+\mathbf{w}^*,b^*=
+\argmax_{w,b} \left\{\min_n(t_n\cdot(\mathbf{w}^\intercal\mathbf{x}+b))\cdot\frac{1}{||w||} \right\}
+\end{equation}
+
+but now we can simplify some things. $\mathbf{w}$ are $b$ are scale free (if we multiply by some $\beta$, the max and min will still be the same.)
 
 \subsection {Duality}
 
@@ -117,6 +159,7 @@ Slack variables to break the linear separability.
 	\item Course notes - maxmargin
 	\item Section 7 review
 	\item Section 8 review
+	\item Stanford CS229 SVM notes
 	\item Machine Learning in Action, Chapter 6
 \end{enumerate}
 
