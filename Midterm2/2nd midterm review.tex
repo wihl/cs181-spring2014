@@ -50,9 +50,9 @@ SVMs are based on three ``big ideas":
 
 \begin{description}
 	\item[Data:] $\{x_n,t_n\}_{n=1}^N, t_n \in \{-1, +1\}$. $t_n$ is the target or the expected result of the classification.
-	\item[J Basis functions:] $\phi_j(x)\rightarrow\Re$, therefore
+	\item[J Basis functions:] $\phi_j(x)\rightarrow\mathbb{R}$, therefore
 	\begin{description}
-		\item[Vector function:] $\Phi X \rightarrow \Re^J$ produces a column vector.
+		\item[Vector function:] $\Phi X \rightarrow \mathbb{R}^J$ produces a column vector.
 	\end{description}
 	\item[Objective function:]
 $f(\textbf{x},\textbf{w},b) = \textbf{w}^\intercal \mathbf{\phi}(\textbf{x})  + b$
@@ -282,43 +282,93 @@ CS229 goes into a lot more depth about this: Gaussian kernels in depth, plus SMO
 	\item Course notes - maxmargin
 	\item Section 7 review
 	\item Section 8 review
-	\item Stanford CS229 SVM notes
+	\item \href{http://cs229.stanford.edu/notes/cs229-notes3.pdf}{Stanford CS229 SVM notes}
 	\item Machine Learning in Action, Chapter 6
 \end{enumerate}
 
-\section{Markov Decision Processes}
-Lecture 16
+\section{Reinforcement Learning}
 
-Course notes - MDP
+Online, related to planning. 
 
-Section 9
+\subsection{Markov Decision Processes}
+
+States: $\mathcal{S} = \{1,2,3,...N\}$
+
+Actions: $\mathcal{A} = \{1,2,3,...M\}$ which move us from state to state over a probability distribution. (You don't always land where you expected to go.). This noisy movement is defined by:
+
+Transition Model $p(s'\mid s,a) \leftarrow$  PMF, indexed by state, action
+
+Reward Function: $\mathcal{R}: \mathcal{S} \times \mathcal{A} \rightarrow \mathbb{R}$
+
+Policy: $\pi_t: \mathcal{S} \rightarrow \mathcal{A}$. Finding the right policy is the objective here.
+
+Assumptions (for now):\\
+These assumptions will be relaxed later.
+\begin{enumerate}
+	\item \emph{fully observable} You know what state you are in.
+	\item \emph{known model}
+	\item \emph{Markov Property} meaning the way the world works in the future is completely summarized by the current state. The past is not relevant. ``The future is independent of the past given the present."
+	\item \emph{Finite actions and states}
+	\item \emph{Bounded Rewards} - there is a maximum reward that dominates all rewards over all states.
+\end{enumerate}
+
+Agent could live forever (so it tries to maximize average reward) or lives a finite time (so it tries to maximize short term reward). Trade off of exploration vs. exploitation
+
+Different types of utility ($u$) function:
+\begin{description} \itemsep5pt
+	\item[Finite Horizon*]	$u = \sum_{t=0}^{T-1}\mathcal{R}(s_t, a_t)$
+	\item[Total Reward]$u = \sum_{t=0}^\infty\mathcal{R}(s_t,a_t)$ (may not converge)
+	\item[Total Discounted Reward*]$u = \sum_{t=0}^\infty\gamma^t\mathcal{R}(s_t,a_t)$ where the discount factor $\gamma = [0,1)$
+	\item[Long-run Average Reward]$u= \lim_{T\rightarrow\infty}\frac{1}{T}\sum_{t=0}^{T-1}\mathcal{R}(s_t,a_t)$
+\end{description}
+
+* Most common and tractable utility functions
+
+Value means ``make a good move" in the anticipation of getting a reward.
+
+\subsection{Expectimax}
+
+Take an action to maximize utility. Nature responds randomly. For now, we know everything about everything except what nature will do.
+
+
+\subsection{Value Iteration}
+
+\subsection{Policy Iteration}
+
+\subsection{Reinforcement Learning}
 
 \subsection{Partially Observable MDP}
-Course notes - POMDP
-
-Section 10
-
-\subsection{Hidden Markov Models}
-Bishop 13.0-13.2
 
 \subsection{Mixture Models}
-Bishop 9.0-9.2
 
-\section{Reinforcement Learning}
-Course notes - RL
+\subsection{Sources}
 
-Section 9
-
-\subsection{Value and Policy Iteration}
-Lecture 17
-
-Course notes - policyiter
+\begin{enumerate}
+	\item Lecture 16, April 2, 2014
+	\item Lecture 17
+	\item Lecture 18
+	\item Course notes - MDP
+	\item Course notes - policyiter
+	\item Course notes - RL
+	\item Course notes - POMDP
+	\item Bishop 9.0-9.2
+	\item Section 9 review
+	\item Section 10 review
+	\item \href{http://cs229.stanford.edu/notes/cs229-notes12.pdf}{CS229 Reinforcement Learning and Control}
+\end{enumerate}
 
 \section{Expectation Maximization}
 
-Bishop 9.3
+\subsection{Hidden Markov Models}
 
-Section 11
+\subsection{Sources}
 
+\begin{enumerate}
+	\item Bishop 9.3
+	\item Bishop 13.0-13.2
+	\item Section 11
+	\item \href{http://cs229.stanford.edu/notes/cs229-notes7b.pdf}{CS229 Mixture of Gaussians}
+	\item \href{http://cs229.stanford.edu/notes/cs229-notes8.pdf}{CS229 EM Notes}
+\end{enumerate}
 
 \end{document}  
