@@ -92,10 +92,12 @@ $\mathbf{w}$ is orthogonal to vectors in the Decision Boundary. Here's how: pick
 \begin{align}
 \mathbf{w}&^\intercal\left(\phi(x_2) - \phi(x_1)\right) = 0 \text{ for orthogonal dot product}\nonumber \\
 \mathbf{w}&^\intercal\phi(x_2) - \mathbf{w}^\intercal\phi(x_1) = 0 \nonumber \\
-\text{Note: } \phi&(x_n) = (-b) \nonumber \\
+\text{Note: } \mathbf{w}&^\intercal\phi(x_n) = (-b) \text{, so} \nonumber \\
 =&(-b) - (-b) \nonumber \\
 =& 0 \nonumber
 \end{align}
+
+Since $\mathbf{w}$ is orthogonal, we want to maximize it. It is not unit length, but could be, by scaling with a factor of $r$.
 
 
 \subsection {Duality}
