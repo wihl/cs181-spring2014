@@ -3,12 +3,17 @@
 \usepackage{textcomp}
 \usepackage{hyperref}  % TODO: see page 94 of latex book
 \geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
-%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
 								% TeX will automatically convert eps --> pdf in pdflatex		
 \usepackage{amssymb}
+\usepackage{amsmath}
 \usepackage{relsize}
-\usepackage{parskip}
+
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+
+
 
 \title{CSCI 181 / E-181 Spring 2014 \\ 
 {\large 2nd midterm review}
@@ -40,10 +45,10 @@ SVMs are based on three "big ideas":
 	\item \emph{kernel trick} Map input vectors to higher dimensional, more expressive features.
 \end{itemize}
 
-\subsection{Setup}
+\subsection{Definitions}
 
 \begin{description}
-	\item[Data:] $\{x_n,t_n\}_{n=1}^N, t_n \in \{-1, +1\}$
+	\item[Data:] $\{x_n,t_n\}_{n=1}^N, t_n \in \{-1, +1\}$. $t_n$ is the target or the expected result of the classification.
 	\item[J Basis functions:] $\phi_j(x)\rightarrow\Re$, therefore
 	\begin{description}
 		\item[Vector function:] $\Phi X \rightarrow \Re^J$ produces a column vector.
@@ -56,25 +61,49 @@ where b is the bias.
 The sign of $f(\cdot)$ will determine classification $(-1,+1)$
 
 So the actual classifier will be:
-\begin{eqnarray*}
-y(\textbf{x},\textbf{w},b) &=&
-  \left\{\begin{array}{ll}
-  	+1, &\mbox{if  }  \textbf{w}^\intercal \mathbf{\phi}(\textbf{x}) + b > 0 \\
-	-1, &\mbox{otherwise}
-  \end{array}\right. \\
-\end{eqnarray*}
+\[
+y(\textbf{x},\textbf{w},b) =
+	\begin{cases}
+	  	+1, &\text{if  }\textbf{w}^\intercal \mathbf{\phi}(\textbf{x}) + b > 0 \\
+		-1, &\text{otherwise}
+	\end{cases}
+\]
 
-Decision boundary is the hyperplane where $\textbf{w}^\intercal \phi(\textbf{x}) +b = 0$ . We want to find the decision boundary that creates the most separation between the two different classes by maximizing the distance between the two closest points. The points closest to the separating hyperplane are known as the \emph{support vectors}.
+Unlike Logistic Regression (which uses $\{0, 1\}$), it is preferable to use $\{-1, +1\}$ as the classification result. If $t_n * y$ is positive, then the produced classification is correct (positive $\times$ positive is positive, negative $\times$ negative is also positive).
 
-The distance from the decision boundary to the closest point is determined by: 
+\emph{Decision Boundary} is the hyperplane where $\textbf{w}^\intercal \phi(\textbf{x}) +b = 0$ . We want to find the Decision Boundary that creates the most separation between the two different classes by maximizing the distance between the two closest points. The distance between the Decision Boundary and the closest point is called the \emph{margin}. The points closest to the Decision Boundary are called the \emph{support vectors}.
+
+\subsection {Max Marginalization}
+
+The margin is determined by the orthogonal distance from the closest point to the Decision Boundary: 
 \begin{equation}
 \frac{|\textbf{w}^\intercal \textbf{x} + b|}{||\textbf{w}||}
 \end{equation}
 
+
+Maximizing the margin can be written as:
+\begin{equation}
+\argmax_{w,b} \left\{\min_n(t_n\cdot(\mathbf{w}^\intercal\mathbf{x}+b))\cdot\frac{1}{||w||} \right\}
+\end{equation}
+
+Maximizing the margin helps ensure that points which are close to margin will not be pushed over the boundary by noise.
+
+$\mathbf{w}$ is orthogonal to vectors in the Decision Boundary. Here's how: pick two points on the Decision Boundary $\phi(x_1) \text{ and } \phi(x_2)$. So
+\begin{align}
+\mathbf{w}&^\intercal\left(\phi(x_2) - \phi(x_1)\right) = 0 \text{ for orthogonal dot product}\nonumber \\
+\mathbf{w}&^\intercal\phi(x_2) - \mathbf{w}^\intercal\phi(x_1) = 0 \nonumber \\
+\text{Note: } \phi&(x_n) = (-b) \nonumber \\
+=&(-b) - (-b) \nonumber \\
+=& 0 \nonumber
+\end{align}
+
+
 \subsection {Duality}
 
-\subsection {other stuff}
+\subsection {Kernel Tricks}
 Mercer function, infinite dimensions (justification for duality)
+
+Slack variables to break the linear separability.
 
 \subsection{Sources}
 
