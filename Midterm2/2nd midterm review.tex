@@ -9,6 +9,7 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{relsize}
+\usepackage{framed}
 
 \DeclareMathOperator*{\argmin}{\arg\!\min}
 \DeclareMathOperator*{\argmax}{\arg\!\max}
@@ -32,17 +33,17 @@
 \subsection{Background}
 Characteristics of SVMs:
 \begin{itemize}
-	\item \emph{stock} -- SVMs are "off the shelf" and ready to use. No special modification is necessary.
+	\item \emph{stock} -- SVMs are ``off the shelf" and ready to use. No special modification is necessary.
 	\item \emph{linearly separable} -- assumes that linear separation is possible. Used natively as a binary classifier.
 	\item \emph{convex optimization}. SVM originated as a backlash against neural nets due to nets' non-convexity. In Neural Nets, results were often non-reproducible as different researchers found different results due to different initializations.
 	\item \emph{global optimum} -- SVMs will find the global optimum.
 \end{itemize}
 
-SVMs are based on three "big ideas":
+SVMs are based on three ``big ideas":
 \begin{itemize}
 	\item \emph{margin} Maximizes distance between the closest points
 	\item \emph{duality} Take a hard problem and transform it into an easier problem to solve.
-	\item \emph{kernel trick} Map input vectors to higher dimensional, more expressive features.
+	\item \emph{kernel functions} map input vectors into higher dimensional, more expressive features to avoid costly computations.
 \end{itemize}
 
 \subsection{Definitions}
@@ -98,6 +99,13 @@ $\mathbf{w}$ is orthogonal to vectors in the Decision Boundary. Here's how: pick
 \end{align}
 
 Since $\mathbf{w}$ is orthogonal, we want to maximize it. It is not unit length, but could be, by scaling with a factor of $r$.
+
+The margin is defined where
+\begin{equation}
+\mathbf{w}^\intercal\phi(x)+b = \pm 1
+\end{equation}
+
+The origin can be found at $\frac{b}{||w||}$.
 
 See \href{http://cs229.stanford.edu/notes/cs229-notes3.pdf}{Stanford CS229 SVM Notes} re: Functional vs. Geometric Margins
 
@@ -185,17 +193,90 @@ c=\frac{1}{\nu N} \text{, where } 0 < \nu \le 1
 where $\nu$ is the tolerance for percentage willing to get wrong.
 
 \subsection {Duality}
+\begin{framed}
+First a recap of Lagrange Multipliers.
+
+Lagrange multipliers solve for $f(x,y,z)$ subject to $g(x,y,z) = k$ where $g(\cdot)$ is the \emph{constraint}.
+
+Form:
+\begin{equation}
+F(x,y,z,\lambda) = f(x,y,z) - \lambda(g(x,y,z)-k)
+\end{equation}
+then solve for
+$F_x = 0, F_y=0, F_z = 0, F_\lambda = 0$ using partial derivatives which will provide a max or min.
+\end{framed}
+
+Maximizing the margin:
+\begin{align}
+\mathbf{w}^*,b^*= &
+\argmax_{w,b} \left\{\min_n(t_n\cdot(\mathbf{w}^\intercal\phi(\mathbf{x})+b))\cdot\frac{1}{||w||} \right\}\\
+= &\argmax_{w,b} \frac{1}{||w||}\min_n(t_n\cdot(\mathbf{w}^\intercal\phi(\mathbf{x})+b))
+\end{align}
+This is still hard to differentiate. This is scalable by $\beta$.
+
+We want to try a lot of basis functions. Duality allows us to try weights on \emph{data}, rather than basis functions. This allows an infinite number of dimensions. 
+
+Solution: use duality. Associate a scalar with each constraint $\mathbf{\alpha} = [\alpha_1,\alpha_2,...,\alpha_N]$, each of which must be non-negative. Each constraint has it's own $\alpha$  which serves as the Lagrange multiplier for each constraint.
+\begin{equation}
+\mathcal{L}(\mathbf{w},b,\mathbf{\alpha}) = \frac{1}{2}||w||^2-\sum_{n=1}^N \alpha_n(t_n(\mathbf{w}^\intercal\phi(\mathbf{x})+b ) -1)
+\end{equation}
+The summation term will be negative if the constraint is violated. By throwing a minus sign in front and then maximizing $\alpha$ will make the term really large (maybe $\infty$). This will make $\min()$ unhappy - causing a huge value in the loss function. It is a math trick to show a constraint has been violated.
+\begin{equation}
+\mathbf{w}^*,b^*= \argmin_{\mathbf{w},b} \max_{\alpha \ge 0} \mathcal{L}(\mathbf{w},b,\mathbf{\alpha})
+\end{equation}
+The problem is now restated as a function of $\alpha$, not a $\mathbf{w},b$ problem. This is duality.
+
+\emph{Weak duality}: the solution to an $\alpha$ problem makes the lower bounds of the w,b problem. Max $\alpha$ = min w,b. See formula 20 in maxmargin notes.
+
+Strong duality: min and max can be switched without changing the answer. See formula 21 in maxmargin notes.
+\begin{equation}
+\frac{\partial L}{\partial \mathbf{w}} = 0 
+\end{equation}
+
+\begin{equation}
+\frac{\partial L}{\partial b} = 0 
+\end{equation}
+
+$\alpha$'s are sparse so a lot of these terms will disappear. The remaining terms will provide the values as support vectors. Rewriting the Lagrangian just in terms of alpha can be found in formula 28 in maxmargin notes.
+
+See formulas 28, 29 in maxmargin notes. This is a relatively easier problem to solve as it involves just the alphas.
+
+Either alpha = 0, or $t_n(w^*\phi(x_n)+b^*) = 0$ These latter terms will be closest to the margin (they will be ``tightest"). A small subset of the data determine the boundary. Train on all of data and throw away most of the data in order to have the classifier.
+
+The only time we need to compute something J dimensional is on the inner product. See $\phi$ term.
 
 \subsection {Kernel Tricks}
-Mercer function, infinite dimensions (justification for duality)
 
-Slack variables to break the linear separability.
+
+``A kernel function is a scalar product on two vectors mapped by basis functions into a feature space. In general, we use kernels to map into higher dimensional feature spaces, using them to circumvent costly computations in high dimension spaces."
+
+\begin{equation}
+K(\mathbf{x},\mathbf{x}') = \phi^\intercal(\mathbf{x})\phi(\mathbf{x}')
+\end{equation}
+
+Kernel functions can be generalized to any distance measure. The larger K means the distance is closer. This can be applied to text, proteins, etc. (see Alpaydin example).
+
+Exponentiate the negative squared distance of two dissimilar things, e.g.
+\begin{equation}
+K(x,z) = exp\left\{ -\frac{1}{2} ||x - z||^2 \right\}
+\end{equation}
+
+Don't engineer features - engineer distances. Feature space can be infinite. Don't worry about features - worry about distance between things. Then create a kernel and use distance to discriminate.
+
+Bayesian linear regression where all features interact as inner product so it can be turned into a kernel function. This can be a Gaussian kernel. Non-parametric infinite dimensional models using finite computers. Can also be used with PCA.
+
+Mercer function, infinite dimensions (justification for duality). See also QR decomposition for large datasets.
+
+Be cautious of pathological distance functions (as opposed to feature functions).
+
+CS229 goes into a lot more depth about this: Gaussian kernels in depth, plus SMO and Karush-Kuhn-Tucker (KKT) conditions.
+
 
 \subsection{Sources}
 
 \begin{enumerate}
 	\item Lecture 14, March 24, 2014
-	\item Lecture 15
+	\item Lecture 15, March 31, 2014
 	\item Bishop 6.0-6.2 
 	\item Bishop 7.0-7.1
 	\item Course notes - maxmargin
