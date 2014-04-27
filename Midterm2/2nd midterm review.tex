@@ -113,11 +113,10 @@ Solving for $r$, multiple both sides by $\mathbf{w}^\intercal$.
 (Recall: $\mathbf{w}^\intercal\mathbf{w} = ||\mathbf{w}||^2$)
 
 \begin{align}
-\mathbf{w}^\intercal\phi(\mathbf{x}) = &\mathbf{w}^\intercal  \phi_\perp(\mathbf{x})  +
-			 r\frac{\mathbf{w}^\intercal\mathbf{w}}{||\mathbf{w}||} \\
-			 = & (-b) + r||\mathbf{w}|| \\
+\mathbf{w}^\intercal\phi(\mathbf{x}) = &\mathbf{w}^\intercal  \phi_\perp(\mathbf{x})  +	 r\frac{\mathbf{w}^\intercal\mathbf{w}}{||\mathbf{w}||} \\
+			 = & (-b) + r||\mathbf{w}||
 \end{align}
-The margin for a point $\mathbf{x}$.
+Therefore, the margin for a point $\mathbf{x}$.
 \begin{align}
 r = &\frac{\phi(\mathbf{x})^\intercal\mathbf{w}+b}{||w||} \\
   = & \frac{f(\mathbf{x},\mathbf{w},b)}{||w||}
@@ -137,10 +136,53 @@ min_n\left\{ t_n\frac{\phi(\mathbf{x})^\intercal\mathbf{w}+b}{||\mathbf{w}||} \r
 As mentioned at the beginning of this section, the Objective Function is 
 \begin{equation}
 \mathbf{w}^*,b^*=
-\argmax_{w,b} \left\{\min_n(t_n\cdot(\mathbf{w}^\intercal\mathbf{x}+b))\cdot\frac{1}{||w||} \right\}
+\argmax_{w,b} \left\{\min_n(t_n\cdot(\phi(\mathbf{x})^\intercal\mathbf{w}+b))\cdot\frac{1}{||w||} \right\}
 \end{equation}
 
 but now we can simplify some things. $\mathbf{w}$ are $b$ are scale free (if we multiply by some $\beta$, the max and min will still be the same.)
+
+Let's define a set of linear constraints such that the margin is always $\ge 1$ to make this easier to solve.
+\begin{align}
+\mathbf{w}^*,b^*= \argmax_{\mathbf{w},b}\frac{1}{||w||}
+\end{align}
+subject to 
+\begin{align}
+t_n\cdot(\phi(x_n)^\intercal\mathbf{w}+b) \ge 1 \:\forall\: n
+\end{align}
+This can be made even easier. Finding the max of $\frac{1}{||w||}$ is like finding the min of $||w||^2$, so
+\begin{align}
+\mathbf{w}^*,b^*=& \argmin_{\mathbf{w},b}||w||^2 \\
+\text{s.t.} \:& t_n(\phi(x_n)^\intercal\mathbf{w} + b) \ge 1
+\end{align}
+so this reduces to just a quadratic program (QP) with linear constraints that could be solved by any number of commercial packages and produces a global minimum.
+
+\subsection{Slack Variables}
+If the data is not strictly linearly separable, it can mitigated by slack variables.
+
+$\xi_n \leftarrow$ one for each datum. 
+\begin{description}
+ \item[$\xi_n = 0$] then the datum is correctly classified and outside the margin.
+ \item[$0 < \xi_n <= 1$] the datum is correctly classified and within the margin
+ \item[$\xi_n > 1$] the datum is misclassified
+\end{description}
+
+We will now add $\xi$ as a constraint to minimize.
+\begin{equation}
+t_n\cdot(\phi(x_n)^\intercal\mathbf{w}+b) \ge 1 - \xi_n
+\end{equation}
+New objective function:
+\begin{align}
+\mathbf{w}^*,b^*,\xi^*=& \argmin_{\mathbf{w},b,\mathbf{\xi}}\left\{||w||^2+ c \sum_{n=1}^{N}\xi_n\right\}\\
+\text{s.t.} \:& t_n(\phi(x_n)^\intercal\mathbf{w} + b) \ge 1 -\xi_n\\
+& \xi \ge 0\\
+\forall \:n
+\end{align}
+where $c>0$ is the regularization parameter. A small $C$ means that you don't care much about errors. The sum of $\xi$ is the upper bound on how many can be wrong. If $c = 0$, it becomes the original function.
+Typically,
+\begin{equation}
+c=\frac{1}{\nu N} \text{, where } 0 < \nu \le 1
+\end{equation}
+where $\nu$ is the tolerance for percentage willing to get wrong.
 
 \subsection {Duality}
 
