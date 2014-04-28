@@ -295,17 +295,22 @@ Online, related to planning, as opposed to the rigid data sets we've seen so far
 
 \subsection{Markov Decision Processes}
 
+All of the following states, actions, transitions, rewards and policies look like functions, but in practice they are implemented as matrices in memory, given a finite set of actions and states.
+
 States: $\mathcal{S} = \{1,2,3,...N\}$
 
 Actions: $\mathcal{A} = \{1,2,3,...M\}$ which move us from state to state over a probability distribution. (You don't always land where you expected to go.). This noisy movement is defined by:
 
-Transition Model $p(s'\mid s,a) \leftarrow$  PMF, indexed by state, action
+Transition Model $p(s'\mid s,a) \leftarrow$  PMF, indexed by state, action. These are a collection of $M$ stochastic matrices. Each matrix is $N \times N$, non-negative and all rows sum to 1. So each matrix $\mathbf{P}_{s,s'}^{(a)}$ where 
+\begin{equation}
+	P_{s,s'}^{(a)} \ge 0, \sum_{s'}P_{s,s'}^{(a)} = 1
+\end{equation}
 
-Reward Function: $\mathcal{R}: \mathcal{S} \times \mathcal{A} \rightarrow \mathbb{R}$
+Reward Function: $\mathcal{R}: \mathcal{S} \times \mathcal{A} \rightarrow \mathbb{R}$ Could be expressed as a $N \times M$ matrix, $\mathbf{\mathcal{R}}$
 
-Policy: $\pi_t: \mathcal{S} \rightarrow \mathcal{A}$. Finding the right policy is the objective here.
+Policy: $\pi_t: \mathcal{S} \rightarrow \mathcal{A}$. \textbf{Finding the right policy is the objective here.} Array of length of $N$ containing integers between 1 and $M$. $\pi_s \in \{1,2,3,...M\}$
 
-All of these states, actions, transitions, rewards and policies look like functions, but in practice they are implemented as matrices in memory.
+Similarly, the Value function $V(s)$ (see below) could be expressed as a vector $\mathbf{\mathcal{V}}_{(s)} \in \mathbb{R}^N$.
 
 Assumptions (for now -- these assumptions will be relaxed later):
 \begin{enumerate}
@@ -390,6 +395,8 @@ See policyiter class notes, algorithm 1.
 
 \subsection{Policy Iteration}
 
+
+
 \subsection{Reinforcement Learning}
 
 \subsection{Partially Observable MDP}
@@ -400,8 +407,8 @@ See policyiter class notes, algorithm 1.
 
 \begin{enumerate}
 	\item Lecture 16, April 2, 2014 MDP
-	\item Lecture 17, April 7, 2014 Value and Policy Iteration
-	\item Lecture 18  Reinforcement Learning
+	\item Lecture 17, April 7, 2014 Value Iteration
+	\item Lecture 18, April 9, 2014 Policy Iteration
 	\item Lecture 19 POMDP
 	\item Course notes - MDP
 	\item Course notes - policyiter
