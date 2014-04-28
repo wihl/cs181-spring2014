@@ -17,7 +17,7 @@
 
 
 \title{CSCI 181 / E-181 Spring 2014 \\ 
-{\large 2nd midterm review}
+{\large Midterm 2 Review Notes}
 }
 \author{
   David Wihl\\
@@ -78,13 +78,13 @@ Unlike Logistic Regression (which uses $\{0, 1\}$), it is preferable to use $\{-
 
 The margin is determined by the orthogonal distance from the closest point to the Decision Boundary: 
 \begin{equation}
-\frac{|\textbf{w}^\intercal \textbf{x} + b|}{||\textbf{w}||}
+\frac{|\textbf{w}^\intercal \phi(\textbf{x}) + b|}{||\textbf{w}||}
 \end{equation}
 
 
 Maximizing the margin can be written as:
 \begin{equation}
-\argmax_{w,b} \left\{\min_n(t_n\cdot(\mathbf{w}^\intercal\mathbf{x}+b))\cdot\frac{1}{||w||} \right\}
+\argmax_{w,b} \left\{\min_n(t_n\cdot(\mathbf{w}^\intercal\phi(\mathbf{x})+b))\cdot\frac{1}{||w||} \right\}
 \end{equation}
 
 Maximizing the margin helps ensure that points which are close to margin will not be pushed over the boundary by noise.
@@ -170,7 +170,7 @@ If the data is not strictly linearly separable, it can mitigated by slack variab
 $\xi_n \leftarrow$ one for each datum. 
 \begin{description}
  \item[$\xi_n = 0$] then the datum is correctly classified and outside the margin.
- \item[$0 < \xi_n <= 1$] the datum is correctly classified and within the margin
+ \item[$0 < \xi_n \le 1$] the datum is correctly classified and within the margin
  \item[$\xi_n > 1$] the datum is misclassified
 \end{description}
 
@@ -330,14 +330,37 @@ Value means ``make a good move" in the anticipation of getting a reward.
 
 Take an action to maximize utility. Nature responds randomly. For now, we know everything about everything except what nature will do.
 
-We build the whole tree, work back the probabilities and then choose the path with the highest reward. The complexity is exponential -- such as $O(2^n)$ -- as it involves transversing a tree completely, depth-first. 
+We build the whole tree, work back the probabilities and then choose the path with the highest reward. The complexity is exponential -- such as $O(2^n)$ -- as it involves traversing a tree completely, depth-first. 
 
 \subsection{Value Iteration}
 Reward function: \emph{finite} - fixed set of rewards or \emph{infinite} - get as many rewards as possible with future rewards discounted compared to current rewards.
 
 The Objective is to search the space of possible policies that maximizes rewards.
 
+``Last gasp" policy - one action left to take - pick the one that will maximize the reward.
+\begin{align}
+\pi_1(s) = &\argmax_a R(s,a)\\
+V_1(s) = & \max_a R(s,a)
+\end{align}
+where 1 represents the number of steps left to take before the agent dies.
 
+``Second to last gasp" - two actions left to take. 
+\begin{align}
+\pi_2(s) = & \argmax_a \left\{ R(s,a) + \sum_{s'} P(s'\mid s,a) \max_{a'} R(s',a') \right\}\\
+V_2(s) = & \max_a \left\{ R(s,a) + \sum_{s'}p(s'\mid s,a) V_1(s')  \right\}
+\end{align}
+So generalizing with $K$ steps to go:
+\begin{align}
+V_k(s) =  &\max_a \left\{ R(s,a) + \sum_{s'} P(s'\mid s,a)V_{k-1}(s')  \right\}
+\end{align}
+$Q$-function = value of the (state, action) pair. Just like $V$ though it includes the action. If I know $Q$, then I know what action to take. Fix s, maximize over Q, and then choose the appropriate action to take.
+\begin{align}
+Q_k(s,a) = &R(s,a) + \sum_{s'} P(s'\mid s,a) V_{k-1}(s') \text{, where}\\
+V_k(s) = & \max_a Q_k(s,a) = Q_k(s,\pi_k^*(s))\\
+\pi_k^*(s) = & \argmax_a Q_k(s,a)
+\end{align}
+
+So now we can build a recursive implementation to find the best action for a given state. To make the recursion well defined, make sure that $V_0(s) = 0$. See Algorithm 2 pseudocode in mdp course notes.
 
 \subsection{Policy Iteration}
 
