@@ -1,0 +1,1352 @@
+%%%%%%%%%%%%%%%%%%%%%
+%   AMS packages    %
+%%%%%%%%%%%%%%%%%%%%%
+\documentclass{amsart}
+\usepackage{amsmath}
+\usepackage{amsxtra}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{eucal}
+\usepackage[all]{xy}
+\usepackage{graphicx}
+\usepackage{comment}
+
+\newtheorem{cor}[subsubsection]{Corollary}
+\newtheorem{lem}[subsubsection]{Lemma}
+\newtheorem{prop}[subsubsection]{Proposition}
+\newtheorem{propconstr}{Proposition-Construction}
+\newtheorem{ax}{Axiom}
+\newtheorem{conj}{Conjecture}
+\newtheorem{comp}[subsubsection]{Computation}
+\newtheorem{thm}[subsubsection]{Theorem}
+\newtheorem{defn}[subsubsection]{Definition}
+\newtheorem{rem}[subsubsection]{Remark}
+\newtheorem{eg}[subsection]{Example}
+\newtheorem{ex}[subsection]{Exercise}
+
+\newcommand\nc{\newcommand}
+\nc\on{\operatorname}
+\nc\renc{\renewcommand}
+\newcommand\ssec{\subsection}
+\newcommand\sssec{\subsubsection}
+\newcommand\bO{{\mathbf O}}
+\newcommand\CC{{\mathcal C}}
+\newcommand\BN{{\mathbb N}}
+\newcommand\BC{{\mathbb C}}
+\newcommand\BF{{\mathbb F}}
+\newcommand\BR{{\mathbb R}}
+\newcommand\BQ{{\mathbb Q}}
+\newcommand\BBZ{{\mathbb Z}}
+\newcommand\uR{\underline{R}}
+\newcommand\uZ{\underline{\BBZ}}
+\newcommand\CF{{\mathcal F}}
+\newcommand\uCF{\underline{{\mathcal F}}}
+\newcommand\BZ{{\mathbb Z}}
+\newcommand\BA{{\mathbb A}}
+\newcommand\fa{{\mathfrak a}}
+\newcommand\fp{{\mathfrak p}}
+\newcommand\fq{{\mathfrak q}}
+\newcommand\fm{{\mathfrak m}}
+\newcommand\pt{\mathrm{pt}}
+\nc{\bd}{\mathbf{d}}
+\nc{\Hom}{\on{Hom}}
+\nc{\End}{\on{End}}
+\nc{\Spec}{\on{Spec}}
+\nc{\Reg}{\on{Reg}}
+\nc{\Specm}{\on{Specm}}
+\nc\ol{\overline}
+\nc\wt{\widetilde}
+\nc{\one}{{\mathbf{1}}}
+\renc{\mod}{\on{-mod}}
+\newcommand{\id}{\mathrm{id}}
+\nc{\ul}{\underline}
+\nc{\uHom}{\ul\Hom}
+\nc{\tHom}{\ul\uHom}
+\nc{\wh}{\widehat}
+\nc{\Vect}{\on{Vect}}
+\nc{\Res}{\on{Res}}
+\nc{\Ind}{\on{Ind}}
+
+\title{CS 181 Lecture Notes}
+\author{Aaron Landesman}
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Class 1/29/14}
+
+\subsection{K-means clustering}
+
+\begin{enumerate}
+\item Where are the cluster centers? $\{\underline{\mu_k}\}_{k=1}^K, \underline{\mu}_k \in \mathbb R^D.$ with $D$ the same as for the date.
+
+\item Which data belong to which cluster? 
+\begin{defn} A {\bfseries one-hot coding} is a map $s\mapsto {e^i}^T$, the transpose of a basis vector \end{defn}
+Assign responsibility vectors $\underline r_n$ given by one-hot codings. If the data belongs to cluster k, then define
+$$r_{n,j} = \begin{cases} 1 &\mbox{if } k=j \\ 0 &\mbox{otherwise} \end{cases}$$
+\end{enumerate}
+To measure distances, might typically use euclidean norm
+$$||\underline x - \underline \mu||^2 = \sum_{i=1}^n (x_i - \mu_i)^2.$$
+
+\subsubsection{Loss Function}
+\begin{rem}
+A loss functions is a way of formalizing badness.
+
+Distortion for data might be $J_n(\underline r_n, \{\underline \mu_k \}_{k=1}^K) = \sum_{k=1}^K r_{n,k} ||\underline x_k - \underline \mu_k ||_2^2.$
+\end{rem}
+
+\subsubsection{Empircal Loss Minimization}
+By summing our loss function over all the x's, we get a function
+$$J(\{\underline r_n\}_{n=1}^N, \{\underline \mu_k\}_{k=1}^K) = \sum_{n=1}^N \sum_{k=1}^K r_{n,k} || \underline x_n - \underline \mu_k||_2^2.$$
+
+Minimizing this is in general difficult because it is nonconvex, and finding a global minimum is NP-hard.
+\begin{defn} The problem of minimizing a given empirical loss function is called the K-Means Problem. \end{defn}
+
+\ssec{Lloyd's algorithm}
+\begin{enumerate}
+\item First minimize J in terms of each $\underline r_n$, only K options. Define $z_n = \text{argmin}_k ||\underline x_n - \underline \mu_k||_2^2$. Set $\underline r_k = e_{z_k}^T$
+\item Minimize J in terms of $\underline \mu_k$.
+$$|| \underline x_n = \underline \mu_k || ^2 = (\underline x_n - \underline \mu_k)^T \cdot (\underline x_n - \underline \mu_k)$$
+\end{enumerate}
+
+\begin{align*}
+\nabla_{\mu_k} J &= \nabla_{\mu_k} \sum_{n=1}^N r_{n,k}(\underline x_n - \underline \mu_k)^T(\underline x_n - \underline \mu_k) 
+\\
+&= -2\cdot \sum_{n=1}^N r_{n,k}(\underline x_n - \underline \mu_k)
+\\
+&= -2\cdot\sum_{n=1}^N r_{n,k}\underline x_n - N_k \underline\mu_k
+\end{align*}
+
+with $N_k=\sum_{n=1}^N r_{n,k}, \underline \mu_k = \frac 1 {N_k} \sum_{n=1}^N r_{n,k} \underline x_n$
+
+\begin{rem}
+Setting the gradient to zero tells us
+
+$$\vec \mu_k = \frac{\sum_{n=1}^N r_{n,k} \vec x_n}{\sum_{n=1}^N r_{n,k}}$$
+
+To improve this, can use many random initializations. However, we should always use k-Means++, instead of k-Means, which picks one of the data at random, then make a probability distribution, weighted to data that are farthest away from any cluster thus far.
+Typically, we should standardize the data along each dimension, so that one dimension doesn't everwhelm the others.
+\end{rem}
+
+\begin{defn} K-meniods is basically the same as K-means, but the means have to be data points, which make sense in the context where distances arent well defined.\end{defn}
+
+\section{Class 2/3/13}
+\subsection{Section times}
+\begin{enumerate}
+\item Thursday 1600, MD 223
+\item Friday 1200 MD 123
+\item Friday 1400 NW B150
+\end {enumerate}
+
+\subsection{Office Hours}
+\begin{enumerate}
+\item Ryan 2:30 - 4 Mon MD 233
+\item Diana 10-11 Mon MD 334
+\item Sam 3-4 Wed MD 2nd floor lobby
+\item Rest 7-11 Wed Quincy
+\end {enumerate}
+
+\subsection{Gradient Descent}
+
+\begin{rem}
+Idea: to minimize, take steps in the direction of the negative gradient. Suppose we had two parameters, $\theta_1, \theta_2.$ This might give regions by contour curves . Initialize our algorithm, and try to modify parameters so we reach the global minimum. Let's say our loss function is $L(\theta_1,\theta_2).$ Some methods to minimize L are pertubation, coordinate descent (trying to minimize coordinate one dimension at a time while holding the other dimensions fixed). Kmeans is an example of coordinate descent, but with several blocks at a time. Another type of minimization is gradient descent. The gradient points in most ``upward'' direction. So, to descent, we would try to go opposite the gradient. Sometimes we can just solve a system to find where the gradient is 0, which is some sort of stationary point. If a convex function has a minimum, it is unique. Much of machine learning is to frame problems to be convex. Simulated annealing is one way to try to solve nonconvex problems.
+
+Recall kmeans. We have data $\{\vec x_n\}_{n=1}^N$, responsibilty vectors $r_{n,k} \in \{0,1\}$ such that $\sum_k r_{n,k}=1$, mean vectors $\vec \mu_k \in \mathbb R^D.$ There is a loss function $J(\{\vec \mu_k\},\{ \{r_{n,k}\}\})=\sum_{n=1}^N \sum_{k=1}^K r_{n,k} ||\vec x_n - \vec \mu_k||_2^2.$ To get $r_{n,k}$ take those that minimize $J$ by taking the mean closest to each point.
+\end{rem}
+
+\subsection{Kmeans++}
+
+\begin{rem}
+The algorithm is as follows. This is just the initialization. After this we can apply Lloyd's algorithm.
+\end{rem}
+
+\begin{enumerate}
+\item Assign a random $\vec x_n$ to $\vec \mu_1$.
+\item For i from 1 to $K$, Draw the mean $\mu_i$ distribution of distances to the closest $\vec \mu_j$ for $j < k$.
+\end{enumerate}
+
+\subsection{Hierarchical Agglomerative Clustering (HAC)}
+
+The two main problems with kmeans are
+\begin{enumerate}
+\item Picking K correctly
+\item Nondeterministic
+\item Data are not disjoint clusters typically
+\end{enumerate}
+
+\begin{rem}
+HAC is deterministic. Every datum starts in its own group, and you decide how to merge groups. The ``action'' is the decision of criterion to merge groups. We always merge two objects at once, thus making a binary tree over the data. We can make a dendrogram, which is a visualization in which we draw a sequence of brackets showing merging of data into groups (like a tournament bracket.) The y axis represents points, and x axis represents the distance between two groups before we merge them. Choose K by determining a point after which there is large spacing.
+\end{rem}
+
+\subsubsection{Linkage Function}
+What this does is determined by the ``linkage function.'' There are four linkage functions from the course notes:
+
+\begin{enumerate}
+\item Single: Distance between two groups is the inf over pairs of points. I.e. if $G_1 = \{x_n\},G_2=\{y_m\}, 
+D(G_1,G_2)=\min_{m,n}||x_n - y_m||$
+
+\item Complete: Minimizing the maximum over pairs of points. $G_1 = \{x_n\},G_2=\{y_m\}, D(G_1,G_2)=\max_{m,n}||x_n - y_m||$
+
+\item Average:  $G_1 = \{x_n\},G_2=\{y_m\}, D(G_1,G_2)=\frac 1 {M \cdot N} \sum_{m,n}||x_n - y_m||$ 
+\item Centriod: $G_1 = \{x_n\},G_2=\{y_m\}, D(G_1,G_2)=||\frac 1 {N} \sum_n x_n -\frac 1 {M}\sum_m y_m||$ 
+\end{enumerate}
+
+\begin{rem}
+
+If used the single, complete, and average would yield a valid dendrogram, but if we use centroid, might find groups which become more similar, so migth result in ``nonvalid'' dendrogram. Complete gives compact clusters, single linkage can give ``stringy'' clusters with long chains.
+\end{rem}
+\section{Class 2/5/14}
+
+\subsection {Principal Component Analysis}
+\begin{rem}
+Suppose we have some data in $\mathbb R ^D$ and a limear map $T:\mathbb R^D \rightarrow \mathbb R^K$ with $K<D.$
+Note that it generally takes $O(n^3)$ time to compute the eigenspecturm.
+
+There is something called snap-shot method for computing eigenvalues of huge matrices.
+
+One interpretation of PCA is to maximize the variance of the distance from the central point. A second interpretation is to minimize reconstruction error. This is lossy compression, png is lossless, and the image can be reconstructed. png on the other hand loses a lot of information, but the image is quite small, doesn't take much space. PCA is choosing a good lossy compression.
+\end{rem}
+\begin{defn}
+An {\bf orthonormal basis for $\mathbb R^D$} is a set of $D$ vectors $\{\vec u_d\}_{d=1}^D$ such that $\vec u_d^T \vec u_e = \delta_{de}.$
+\end{defn}
+\begin{comp}
+Assume we have a set of data $\{\vec x_n \}_{n=1}^N$ and define $\bar x = \frac 1 N \sum_{n=1}^N \vec x_n.$ Then, 
+$$x_n = \bar x + \sum_{n=1}^N \alpha_d^{(n)}\vec \mu_d$$
+with $\alpha_d^{(n)} = (\vec x_n - \vec {\bar x})^T \vec \mu_d.$
+Then we perform a reconstruction with only K basis vectors:
+$$\hat x_n =\bar x + \sum_{d=1}^K \alpha_d ^{(n)} \vec u_d$$
+The squared error is
+$$J = \sum_{n=1}^N (\vec x_n - \hat {x_n})^2 $$
+\end{comp}
+
+\subsection{Computation for PCA}
+\begin{comp}
+Try to either preserve variance or minimize reconstruction error.
+DATA: $\{\vec x_n\}_{n=1}^N, \vec x_n \in \mathbb R^D $
+
+Game : Find a set of K orthonormal basis vectors such that we minimize reconstruction error.
+
+Basis: $\{\vec \mu_d \}_{d=1}^K$ that is orthonormal.
+
+The mean of the data is $\bar x = \frac 1 N \sum_{N=1}^N \vec x_n.$
+
+Write any datum as $\vec x_n = \vec {\bar x}+ \sum_{d=1}^D \alpha_d^{(n)} \vec u_d.$
+
+Take as our weights $\alpha_d^{(n)} = (\vec x_n - \vec{\bar x})^T \vec u_d$
+
+A compression into $K<D$ is $\hat{\vec x_n} = \bar x + \sum_{d=1}^K \alpha_d^{(n)} \vec u_d$
+
+Reconstruction loss is $J_n(\{\vec u_d\}_{d=1}^K) = (\vec x_n - \hat{\vec x_n})^2.$
+
+The Total loss is 
+\begin{align*}
+J_n &= (\vec x_n - \hat{x_n})^2 = \left(\left({\bar x}+\sum_{d=1}^D \alpha_d^{(n)} \vec u_d\right) - \left(\vec {\bar x} + \sum_{d=1}^K \alpha_d^{(n)} \vec u_d \right)\right)^2 
+\\
+&= \left(\sum_{d=k+1}^D \alpha_d^{(n)}\vec {u_d}\right)^2 
+\\
+&= \sum_{d=k+1}^D (\alpha_d^{(n)})^2
+\\
+&= \sum_{d=k+1}^D ((\vec x_n - \vec{\bar x})^T \vec u_d)^2
+\\
+&= \sum_{d=k+1}^D \vec u_d^T (\vec x_n - \bar{\vec x})(\vec x_n - \bar{\vec x})^T \vec u_d
+\end{align*}
+\end{comp}
+
+\begin{defn}
+The sample covariance is a D by D positive definite matrix $\frac 1 N \sum_{n=1}^N\left(\vec x_n - \bar{\vec x})(\vec x_n - \bar{\vec x})^T\right)$
+\end{defn}
+
+So, summing over all the data, we have 
+\begin{align*}
+J & = \sum_{n=1}^N\sum_{d=k+1}^D \vec u_d^T (\vec x_n - \bar{\vec x})(\vec x_n - \bar{\vec x})^T \vec u_d
+\\
+&= \sum_{n=1}^N\sum_{d=k+1}^D \vec u_d^T \left(\sum_{n=1}^N(\vec x_n - \bar{\vec x})(\vec x_n - \bar{\vec x})^T\right) \vec u_d
+\\
+&= N \sum_{d=k+1}^D \vec u_d^T \vec{\vec{\Sigma}} \vec u_d
+\end{align*}
+\begin{comp}
+We want to minimize this subject to $\vec u_d^T\vec u_d = 1.$ Using lagrange multipliers, we want to minimize
+
+$ N \sum_{d=k+1}^D \vec u_d^T \vec{\vec{\Sigma}} \vec u_d + \lambda_d(1 - \vec u_d^T \vec u_d)$
+
+Taking the gradient, we get $0=2 \vec{\vec{\Sigma}} \vec u_d - 2 \lambda_d \vec u_d$.
+
+So, $\vec{\vec {\Sigma}} \vec u_d = \lambda_d \vec u_d.$
+
+Then, we want to minimize $\sum_{d=k+1}^D \vec u_d^T \vec{\vec{\Sigma}}\vec u_d = \sum_{d=k+1}^D \vec u_d^T \vec u_d \lambda_d = \sum_{d=k+1}^D \lambda_d $
+which corresponds to choosing the largest eigenvectors.
+\end{comp}
+\section{Class 2/10/14}
+\subsection{Unsupervised learning}
+\begin{rem}
+In supervised learning we have both inputs and outputs, say $\{x_n,t_n\}_{n=1}^N.$ The $x$s are called inputs, features, covariance. The $t$s are called label, outputs, targets, response, etc. To study this, we will look at 
+\end{rem}
+\begin{enumerate}
+\item Regression: with $t_n \in \mathbb R.$ There is also vector regression with $t_n \in \mathbb R^m$.
+\item Classification: with $t_n \in S$ for $S$ a set.
+\item Ordinal Regression: with $t_n \in \mathbb N$
+\item Structured Prediction: Predicting structured objects, rather than just real numbers
+\end{enumerate}
+\begin{rem}
+Note, the next problem set will probably involve regression. One thing to note about the curse of dimensionality is that in high dimensions, random data tends to all be about the same distance apart. K nearest neighbors predicts elements by their close nieghbors. Three problems with it is noncanonically picking the k, having too many dimensions, and too much data to store.
+\end{rem}
+\section{Class 2/12/14}
+
+\begin{enumerate}
+\item Your gradient is wrong. To correct this use finite differences. Say
+$$\nabla_x f(x) = (\frac{d}{dx_i}f(x))_{i=1}^N$$
+Pick some point $x_0$. Pick $g(x)=\frac d {dx}f(x)$. Note that 
+$$f(x_0 + \frac \epsilon 2)-f(x_0 - \frac \epsilon 2) \sim \epsilon g(x_0)$$ so you can check this dimensionwise using the gradient. Generally, take $\epsilon \sim 10^{-4}.$ Might make a function called CHECKGRAD, and search this on google to find examples.
+\item For trying to solve machine learning problems, try the simplest thing first. Make sure you underfit before overfit.
+\item To debug stuff, generate fake data, and make sure you learn what you're supposed to. 
+\item Vectorize and profile your code.
+\end{enumerate}
+
+\subsection{Frequentist Regression}
+
+\begin{rem}Have inputs $x \in \mathbb R^D$ and outputs $t \in \mathbb R,$ we will have some function $y(x,w)= w_0 + \sum_{i=1}^D w_i x_i.$ A basis function regression is when we have $J-1$ basis functions $\phi_j:X\rightarrow \mathbb R.$ We might have basis vectors being polynomials, sinusoids, radial basis functions, etc.
+\end{rem}
+\begin{defn}
+A radial basis funtion is a basis function such that $\phi(x)=\phi(y)$ if $||x||=||y||$ In other words, we can write $\phi(x)=\phi(||x||)$ 
+\end{defn}
+\begin{comp}
+To deal with text documents, we might take a basis function that counts the number of times a words appears. Or, we could ask how similar one document is to some ``canonical document.''
+
+Let's say we have data $\{x_n, t_n\}_{n=1}^N$ and 
+$\phi(x) =\begin{pmatrix}
+1 \\
+\phi_1(x)\\
+\phi_2(x)\\
+\vdots\\
+\phi_{J-1}
+\end{pmatrix}$
+Let $y(x,w) = w^T\phi(x).$ Then, $\phi:X\rightarrow \mathbb R^J$ and $w \in \mathbb R^J$. Then, define a loss function $$E_D(w) = \frac 1 2 \sum_{n=1}^N(t_n -y(x,w))^2=\frac 1 2 \sum_{n=1}^N (t_n-w^T\phi(x_n))^2.$$
+To minimize this find the gradient
+$0=\nabla_w E_D(w) = \sum_{n-1}^N(t_n-w^T\phi(x_n))\phi(x_n) = \sum_{n=1}^N t_n\phi(x_n) - \sum_{n=1}^N \phi(x_n)\phi(x_n)^T w$
+\end{comp}
+\begin{defn} The design matrix $\Phi =
+\begin{pmatrix}
+\phi_1(x_1) & \phi_2(x_1) & \cdots & \phi_J(x_1) \\
+\phi_1(x_2) & \phi_2(x_2) & \cdots & \phi_J(x_2) \\
+\vdots & \vdots & \ddots & \vdots \\
+\phi_1(x_N) & \phi_2(x_N) & \cdots & \phi_J(x_N) \\
+\end{pmatrix}$
+\end{defn}
+\begin{comp}
+Then,
+$0= \nabla_w E_D(w) = \Phi^T t - \Phi^T\Phi w$
+So, we get $\Phi^T t = \Phi^T \Phi w$, so $(\Phi^T \Phi)^{-1} \Phi t = w$ is our condition.
+\end{comp}
+\begin{defn}
+$(\Phi^T \Phi)^{-1} \Phi$ is called the Moore-Penrose pseudoinverse of $\Phi$
+\end{defn}
+\begin{comp}
+Let $t_n = y(x_n w) + \epsilon_n$ for $\epsilon_n \sim N(0,\beta^{-1}$ where $\beta$ is the precision, which is the inverse variance. Now,
+$P(t_n|x_n,w,\beta) = N(t_n|y(x_n,w),\beta^{-1})$
+$P(t|\Phi,w,\beta) = \prod_{n=1}^N N(t|w^T\phi(x_n),\beta^{-1})=N(t|\Phi w,\beta^{-1} \mathbb I_N)$ with $\mathbb I_N$ an $N \times N$ identity matrix.
+\end{comp}
+\section{Class 2/19/14}
+
+\begin{rem}
+Use star cluster free software from MIT, which is much easier than the raw amazon tools.
+\end{rem}
+
+\begin{rem}
+Suppose we have Data: $\{x_n, t_n\}_{n=1}^N, t_n \in \mathbb R$ and basis functions $\phi_j(x):X\rightarrow \mathbb R.$ In the practical, much of the challenenge has to do with choosing basis functions. We could, for instance, come up with a list of positive words, and count the number of times these words occur. Suppose we had $x$'s on the left and right and $o$'s in the middle. We could then have functions $\phi_1(x) = x, \phi_2(x) = x^2.$ 
+\end{rem}
+
+\begin{defn}
+Suppose we have $N$ data points and $J$ feature functions. Then, the design matrix $\Phi$ is an $N \times J$ matrix with $\Phi_{i,j} = \phi_i(x_j)$
+\end{defn}
+
+\begin{defn}
+Let $y(w,x) = \phi(x)^Tw.$ Regression is the process of finding a ``good'' $w,$ which so far has been determined by minimizing a loss function.
+\end{defn}
+
+\begin{comp}
+The method of least squares says
+\begin{align*}
+E_D(w) &= \frac 1 2 \sum_{n=1}^N (t_n - y(x_n,w))^2
+\\
+&= \frac 1 2 \sum_{n=1}^N (t_n - \phi(x_n)^Tw)^2
+\\
+& = E_D(w) = \frac 1 2 (t-\Phi w )^T (t -\Phi w)
+\end{align*}
+
+Differentiating and solving for $w$ gives $w_{LS} = (\Phi^T\Phi)^{-1}\Phi^T t$
+\end{comp}
+
+\begin{comp}
+Now, let's suppose $t_n = y(w,x_n) + \epsilon_n$ with $\epsilon_n \sim^{i.i.d.} N(0,\beta^{-1}).$ Now, let $f$ be the PDF of $t_n.$ Then,
+\begin{align*}
+f(t_n|w,\phi(x_n),\beta) &= N(t_n|\phi(x_n)^Tw, \beta^{-1}) 
+\\
+&= \prod_{n=1}^N p(t_n|\phi(x_n)^Tw, \beta^{-1})
+\end{align*}
+
+Then,
+\begin{align*}
+L(w) & = \log{p(t|\Phi,w,\beta)} 
+\\
+&= \sum_{n=1}^N \log{N(t_n|\phi(x_n)^Tw,\beta^{-1})}
+\\
+&= \sum_{n=1}^N \left(-\frac 1 2 \log{2\pi} + \frac 1 2 \log{\beta} - \frac \beta 2 (t_n - \phi(x_n)^T w \right)^2
+\\
+&= \frac N 2 \log{2\pi} + \frac N 2 \log \beta - \frac \beta 2 (t-\Phi w)^T(t-\Phi w)
+\end{align*}
+Then, $$W_{MLE} = (\Phi^T \Phi)^{-1} \Phi^T t$$
+\end{comp}
+
+\begin{rem}
+Adapting $\phi$ by applying the chain rule is called {\bf back propagation.} This is what is behind neural networks and deep learning, which is really just using the chain rule.
+\end{rem}
+
+\begin{comp}
+Now, to solve for $\beta,$ write
+$$L(\beta) = \frac N 2 \log \beta - \frac \beta 2 (t-\Phi w)^T(t - \Phi w)+C$$
+Differentiating, setting to 0, and solving for $\beta,$
+
+$$\frac 1 \beta = \frac {(t-\Phi w)^T(t-\Phi w)} N = \frac 1 N \sum_{n=1}^N(t_n - \phi(x_n)^T w)^2,$$  
+with $w$ the $w_{MLE}.$
+\end{comp}
+
+\section{Class 2/24/14}
+
+\begin{rem}
+The two estimates given by frequentist methods are point estimates - they predict a single best answer. In Bayesian analysis, we obtain a distribution for our prediction.
+\end{rem}
+\subsection{Bayesian Regression}
+
+\begin{rem}
+Let $w$ be a vector of weights, $t$ be outpus, $\Phi$ be our matrix of basis functions applied to the inputs, and $\beta$ be some precision.  We'd like to understand $p(w|t,\Phi,\beta).$
+\end{rem}
+
+\begin{thm}
+Let $\theta$ be unknown,s and $D$ be data. Then,
+$p(D|\theta)$ is the likelihood as a function of $\theta$, $p(\theta)$ is ths prior and $p(D)$ is the marginal likelihood. Note that $P(D) = \int P(D|\theta')p(\theta'd\theta'.$ Bayes theorem says
+
+$$P(\theta|D) = \frac{P(D|\theta) P(\theta)}{P(D)}$$
+\end{thm}
+
+\begin{defn}
+We say $P(\theta)$ and $P(\theta | D)$ are {\bf conjugate distributions} if they are from the same family of distributions. We say $P(\theta)$ is a {\bf conjugate prior} to the likelihood function $P(D|\theta)$ if $P(\theta)$ and $P(\theta|D)$ are conjugate distributions.
+\end{defn}
+
+\begin{comp}
+vNow, we can use Bayes Theorem to understand $P(w|t,\Phi,\beta)$
+$$P(w|t,\Phi,\beta) = \frac{P(t|w,\Phi,\beta)P(w)}{P(t|\Phi,\beta)}$$
+
+Let's assume we have likelihood $$P(t|w,\Phi, \beta) = N(t|\Phi w, \frac 1 \beta \mathbb I_N)$$
+and the prior is of the form
+$$p(w) = N(w|m_0,S_0)$$
+Then, taking logs, we have
+$$\log P(w|t,\Phi,\beta) = \log P(t|\Phi,w,\beta)+\log P(w) - \log P(t|\Phi,\beta).$$
+
+Differentiating with respect to $w,$ and equating to 0, we obtain,
+$$0=\frac {-\beta} 2 (t - \Phi w)^T(t - \Phi w) - \frac 1 2 (w - m_0)^T S_0^{-1} (w-w_0)$$
+
+After completing the square and exponentiating again, we obtain the posterior distribution satisfies
+\begin{align*}
+\log P(w|t,\Phi,\beta) &= C - \frac 1 2 \left( \beta t^T t - 2 \beta t^T\Phi w + \beta w^T\Phi^T \Phi w + w^T S_0^{-1}w - 2 w^T S_0^{-1}m_0 + m_0^TS_0^{-1}m_0\right)
+\\
+&= D - \frac 1 2 (w-m_N)^T S_N^{-1}(w - m_N)
+\end{align*}
+where $C$ and $D$ are constants in $w$ and
+$$m_N = S_N(S_0^{-1}m_0 + \beta \Phi^T t)$$
+$$S_N = (S_0^{-1} + \beta \Phi^T\Phi)^{-1}$$
+\end{comp}
+
+\begin{defn}
+The {\bf Maximimum A Posteriori (MAP) estimation} is the mode of the posterior distribution.
+\end{defn}
+
+\begin{rem}
+Using the MAP loses uncertainty, since it represents distributions solely by their peaks.
+\end{rem}
+
+\begin{comp}
+Say we use the simple prior $P(w) = N(w|0,\alpha^{-1} \mathbb I)$
+Then, let $C$ be a constant in $W.$ We have
+$$\log P(w|t,\Phi,\beta) = C - \frac \beta 2 \sum_{n=1}^N (t_n - \phi(x_n)^T w)^2 - \frac \alpha 2 w^T w.$$
+
+With,
+$$S_N = \left( \alpha \mathbb I + \beta \Phi^T\Phi\right)^{-1}$$
+$$m_N = S_N (\beta \Phi^T t)$$
+In this case, our map estimate is $m_N$ since the mode of a gaussian is its mean. The above form is a term for the liklihood, together with a term penalizing large $w$'s, which is a form of regularization.
+\end{comp}
+
+\subsection{Cross Validation}
+\begin{defn}
+The idea of {\bf cross validation} is to split the training data into $N$ parts. Then, for $1 \leq i, leq N,$ you choose a  part $i$ of the data for validation, and the remaining $N-1$ parts other than part $i$ are used to train for that problem. You then typically take some average of measures of goodness over the $N$ parts to determine the best values of a parameter to use.
+\end{defn}
+
+\begin{rem}
+Cross validation is very easily parralelizable.
+\end{rem}
+
+\section{Class 2/26/14}
+
+\begin{defn}
+A {\bf hyperparameter} is a parameter of a prior distribution
+\end{defn}
+
+\begin{eg}
+In Bayesian linear regression, we can take
+$$P(t|\Phi,w,\beta) = N(t|\Phi w, \frac 1 \beta \mathbb I)$$
+$$P(w) = N(w|0,\frac 1 \alpha \mathbb I).$$
+Here, $\beta, w$ are parameters and $\alpha$ is a hyperparameter.
+\end{eg}
+
+\begin{defn}
+The maximum likelihood value of $\theta$ is given by $\theta_{MLE} = argmax_{\theta} P(D|\theta)$ Then, the {\bf marginal likelihood} 
+$$P(D|\alpha)= \int P(D|\theta)P(\theta|\alpha) d\theta.$$
+The maximum likelihood estimate for the marginal likelihood is 
+$\alpha_{MLE} = argmax_{\alpha} P(D|\alpha)$
+\end{defn}
+
+\begin{rem}
+Then, using Bayes theorem we can write $$P(\theta|D,\alpha) = \frac{P(D|\theta)P(\theta|\alpha)}{\int P(D|\theta')P(\theta'|\alpha)d\theta'}$$ Note that the denominator here is related to the the marginal liklihood, 
+\end{rem}
+
+\begin{rem}
+  The MAP estimate is mode of the posterior distribution. We can vaguely model our prior as a uniform distribution with some support $\Delta_{Prior}.$ Defining $\theta_{MAP} = argmax_\theta P(D|\theta)P(\theta).$ We then define $\Delta_{Post}$ to be the mode of our posterior distribution. We then assume approximately $P(D) = P(D|\theta_{MAP} ) P(\theta_{MAP}).$ We then approximate $$P(D) = \int P(D|\theta)P(\theta) d \theta \sim \int P(D|\theta_{MAP})P(\theta)d\theta \sim \int P(D|\theta_{MAP}) \frac 1 {\Delta_{Prior}} d\theta \sim P(D|\theta_{MAP}) \cdot \frac {\Delta_{Post}}{\Delta_{Prior}}.$$
+
+Where we have $P(\theta) \sim \frac 1 {\Delta_{Prior}}$ because we are assuming the prior is approximately uniform, with probability $P(\theta)$ on its support.
+\end{rem}
+
+\begin{comp}
+\begin{align*}
+P(t|\Phi,\beta,\alpha) &= \int P(t|\Phi,w,\beta)P(w|\alpha)dw 
+\\
+&= \int N(t|\Phi w, \frac 1 \beta \mathbb I)N(w|0,\frac 1 \alpha \mathbb I) dw
+\\
+&= N(t|0,\frac 1 \alpha \Phi \Phi^T + \frac 1 \beta \Phi)
+\end{align*}
+\end{comp}
+
+\begin{rem}
+Gaussians are nice, so if $u \sim N(u|\mu, \Sigma)$
+Then,
+$$Au = v \sim N(v|Au, A\Sigma A^T)$$
+If $\epsilon \sim(0, \Lambda)$
+Then, 
+$$u+\epsilon \sim N(u+\epsilon|\mu, \Sigma+\Lambda)$$
+\end{rem}
+
+\begin{rem}
+If we have some $w_{MLE}$ and $\beta_{MLE}$ for our most likely coefficients and precision, then $t \sim N(t|\phi(x)^T w_{MLE} , \beta_{MLE}^{-1}).$
+\end{rem}
+
+\begin{comp}
+\begin{align*}
+P(t|\phi(x),t,\Phi,\beta,\alpha) &= \int P(t|\phi,w,\beta)P(w|t,\Phi,\beta,\alpha)dw
+\\
+&= \int N(t|\phi^T w, \frac 1 \beta)N(w|m_N,S_N)
+\\
+&= N(t|\phi^Tm_N,\phi^TS_N\phi + \frac 1 \beta)
+\end{align*}
+\end{comp}
+
+\subsection{Classification}
+\begin{defn}
+In machine learning, {\bf classification} is assigning to each data element a class in the set $\{C_1, \ldots, C_K\}.$
+\end{defn}
+
+\begin{defn}
+Data are {\bf linearly separable} into 2 classes if there exists an affine space perfectly dividing the data into the correct classifications
+\end{defn}
+
+\section{Class 3/3/14}
+
+\begin{defn}
+Take a feature space $X = \mathbb R^D$ and labels $t \in \{0,1\}.$ Write $y(x,w,w_0) = w^Tx + w_0.$ A {\bf decision boundary } is a codimension one affineplane defined by $w^Tx + w_0 = 0,$ and separates our points into those labeled by $t=1$ and those labeled by $t=0.$
+\end{defn}
+
+\begin{comp}
+If $x_1, x_2$ are in the plane defined by $w^Tx+w_0 = 0,$ then $w^Tx_i = -w_0$ and so 
+$$w^T(x_1 - x_2) = w^Tx_1 - w^Tx_2 = (-w_0)-(-w_0) = 0$$
+Intuitively, this tells us that $x_1 - x_2$ is in the plane perpendicular to $w.$
+\end{comp}
+\begin{comp}
+The aim of this computation is to find a vector perpendicular to the plane that intersects it. We know only vectors of the form $c \cdot w$ are perpendicular, where $c \in \mathbb R.$ Then, in order for the vector to intesect the plane, we need 
+$w^T \left(c \frac {w}{||w||} \right) = c \cdot ||w|| + w_0 = 0.$
+Solving for $c$ we get
+$c = \frac {-w_0}{||w||}.$ So this is the distnace from the origin to the decision boundary.
+\end{comp}
+
+\begin{defn}
+A {\bf one versus all classifier} is a classifier that tells you whether a certain object is in class $k,$ and it typically used for $k>2$ classes.
+\end{defn}
+
+\begin{rem}
+There is ambiguity if we use one versus all classifiers. For instance, if we use decision boundaries, there might be points in the space that wouldn't belong to any of the ``correct'' sides of our decision boundaries.
+\end{rem}
+
+\begin{defn}
+A {\bf one versus one classifier} for $k$ classes is a set of $\binom k 2$ binary decision classifiers, one for each pair of classes. 
+\end{defn}
+
+\begin{rem}
+Note, this can run into similar problems as the one versus all classifier.
+\end{rem}
+
+\begin{defn}
+A {\bf Non-ambiguous Multi-class classifier} is a set of $k$ functions $y_k(x,w_k,w_{k0}) = w_k^Tx + w_{k0},$ and $x$ is in class $k$ if $k = argmax_k y_k(x,w_k,w_{k0}).$
+\end{defn}
+
+\begin{rem}
+This is ill defined where two of the functions both have the maximum value, but this is typically a set of measure 0.
+\end{rem}
+
+\begin{defn}
+{\bf Fisher's linear discriminant} is a function of the form $y(x,w,w_0) = w^Tx + w_0,$ so that $w$ minimizes the function 
+$$J(w) = \frac{-(m_1 - m_2)^2}{v_1+v_2}$$
+where $m_i$ is the mean of the projected data $w^TX_i$ and $v_i$ is the variance of the porjected data $w^TX_i.$
+\end{defn}
+
+\begin{comp}
+Suppose we have data distributed according to $X_1 \sim N(x_1|m_1,S_1),$ $X_2 \sim N(x_2|m_2,S_2).$ Then, after projecting, we have $w^TX_i \sim N(w^Tx_i|w^Tm_1,w^T S_1 w).$
+\end{comp}
+
+\begin{comp}
+$$J(w) = \frac{-(w^Tm_1 - w^Tm_2)^2}{w^TS_1w+w^TS_2w} = \frac{-w^T(m_1 - m_w)(m_1 - m_w)^Tw}{w^T(S_1+S_2)w}.$$
+
+In order to minimize $J,$ we differentiate, set equal to 0, and then solve for $w.$
+Define $S_w = S_1 + S_2, S_b = (m_1 - m_2)(m_1 - m_2)^T.$
+Then, $J(w) = \frac{-w^T S_b w}{w^T S_w w}$
+$$0= J'(w) = -\frac{(2S_b w)(w^TS_w w) - (2S_w w)(w^T S_bw)}{(w^TS_ww)^2}$$
+Solving, since $w^TS_ww, w^TS_bw$ are scalars, we need
+$S_b w \propto S_w w.$
+That is, we need $(m_1 - m_2)(m_1 - m_2)^Tw \propto S_w w,$
+so $(m_1 - m_2) \propto S_w w,$ since again $(m_1 - m_2)^Tw$ is a scalar.
+Hence, we want 
+$$w \propto S_w^{-1}(m_1-m_2).$$
+\end{comp}
+
+\subsection{Perceptrons}
+
+\begin{rem}
+A general theme in machine learning is as followsGiven some features $\{x_1, \ldots, x_d\},$ we compute a weighted sum $S_w(x) = \sum_{d=1} w_ix_i,$ apply some nonlinear function $f(S_w(x))$ and obtain some result.
+\end{rem}
+
+\begin{defn}
+Define the function $f(a) = \begin{cases} 1 \mbox { if } a \geq 0 \\ -1 \mbox { if } a < 0 \end{cases}$
+A {\bf perceptron} is the function $f(w^Tx_n).$
+\end{defn}
+\begin{defn}
+A {\bf perceptron error function,} for the perceptron defined above is $E_P(w) = -\sum_{n=1}^N f(w^T x_n) t_n.$
+\end{defn}
+
+\begin{rem}
+Suppose we have data $\{x_n,t_n\}_{n=1}^N$ and error function $E_w(x)= -\sum_{n=1}^N t_nf(w^Tx_n).$ Typically we would perform gradient descent on this error function. That doesn't work here because $f$ is not differentiable.
+\end{rem}
+
+\begin{defn}
+The {\bf Perceptron Learning Algorithm} is an algorithm for classifying data using perceptrons. Explicitly,
+For every piece of data, write $a = w^Tx_n + w_0$ and if $at_n \leq 0,$ then set $w = w+t_nx_n, w_0 = w_0 + 1.$ 
+\end{defn}
+
+\begin{rem}
+It's easy to show this converges if the data is linearly separable. Obviously if it is not linearly separable, it will never converge.
+\end{rem}
+
+\begin{rem}
+Perceptrons can't recognize the exor function, because it is not linearly separable. To rectify this, we introduce multi-layer perceptrons, or neural networks.
+\end{rem}
+
+\begin{defn}
+A {\bf class conditional.} which is the conditional probability distribution of $x$ given $c$ is in class $k,$ which we shall notate $P(x|c=k).$ 
+\end{defn}
+
+\begin{comp}
+Say we have a prior probability that an element $c$ is in class $k,$ which we shall notate $P(c=k).$ 
+Suppose we also have class conditionals $P(x|c=k).$
+Then, using Bayes theorem,
+$$P(c = k|x) = \frac {P(c=k)P(x|c=k)}{\sum_{j=1}^K P(c=j)P(x|c=j)}$$
+\end{comp}
+
+\begin{defn}
+The method of {\bf Generative Classification} is given by the process in the previous computation, by which we start with priors and class conditionals, and use them to predict the probability an element is in a certain class.
+\end{defn}
+
+\begin{defn}
+A {\bf Naive Bayes classifier} is a classifier for $x$ assuming all of its components $x_d$ are independent. That is, we take 
+$$P(x|c=k) = \prod_{d=1}^D P(x_d|c=k),$$
+and then use generative classifiers for predicting each of the $P(x_d|c=k)$ separately.
+\end{defn}
+
+\begin{rem}
+Generative models try to compute the distribution for the $x$'s. It might waste effort if we just want to be able to classify them.
+\end{rem}
+
+\begin{defn}
+A {\bf Sigmoid function} is heuristically an S shaped function. 
+\end{defn}
+
+\begin{defn}
+The {\bf logistic sigmoid function} is $\sigma(x) = \frac 1 {1+e^{-x}}.$
+\end{defn}
+
+\begin{comp}
+Define $a = \log \frac{P(c=1)P(x|c=1)}{P(c=0)P(x|c=0)}.$ Then,
+\begin{align*}
+P(c=1|x) &= \frac{P(c=1)P(x|c=1)}{P(c=1)P(x|c=1)+P(c=0)P(x|c=0)}
+\\
+&= \frac{\frac{P(c=1)P(x|c=1)}{P(c=0)P(x|c=0)}}{\frac{P(c=1)P(x|c=1)+P(c=0)P(x|c=0)}{P(c=0)P(x|c=0)}}
+\\
+&= \frac{\frac{P(c=1)P(x|c=1)}{P(c=0)P(x|c=0)}}{1+\frac{P(c=1)P(x|c=1)}{P(c=0)P(x|c=0)}}
+\\
+& = \frac{e^a}{1+e^a}
+\\
+& = \frac 1 {1+e^{-a}}
+\end{align*}
+
+\end{comp}
+
+\section{Class 3/10/14}
+
+\subsection{Logistic Regression}
+\begin{rem}
+Let $\rho$ be the probability that t is class 1. Then, as we saw last time,
+$$P(t=1|x,\Sigma,\mu_1,\mu_2,\rho) = \frac 1 {1+e^{-a}}$$
+where $a = w^tw+w_0,w = \Sigma^{-1} (\mu_1 - \mu_2),w_0 = \frac {- 1} 2 \mu_1^T \Sigma^{-1}\mu_1 + \frac 1 2 \mu_2^T\Sigma^{-1}\mu_2 + \log {\frac {\rho} {1-\rho}}$
+In the case $\mu_1 = \mu_2,$ we see that the decision is completely determined by the prior, as we expect.
+\end{rem}
+\begin{rem}
+The generative model computes $O(D^2)$ entries of the covarinance matrix, which may be expensive. The benefit we gain from this is that we can generate data. Logistic regression just tries to optimize $w,w_0,$ but it loses the ability to generate data. The aim is to find the $w$ that optimize the labels given the parameters $w.$
+\end{rem}
+
+\begin{comp}
+Say we have data $\{x_n,t_n\}, t_n \in \{0,1\}$ Then,
+\begin{align*}
+P(\{t_n\}|\{x_n\},w) &= \prod_{n=1}^N P(t_n|x_n,w)
+\\
+&= \prod_{n=1}^N \sigma(x_n^T w)^t_n (1-\sigma(x_n^Tw))^{1-t_n}
+v\end{align*}
+Then,
+$$\log P(t_n|\{x_n\},w) = \sum_{n=1}^N t_n \log \sigma(x_nw) + (1-t_n) \log (1 - \sigma(x_n^Tw)).$$
+Using $1-\sigma(z) = \sigma(-z)$, we can see
+$$\frac d {dz} \sigma(z) = \sigma(z) \cdot (1-\sigma(z))$$
+Differentiating to use gradient ascent, we have
+
+\begin{align*}
+  \nabla_w\log{P(D|w)} &= \sum_{n=1}^N t_n \frac 1 {\sigma (x_n^Tw)} \sigma(x_n^Tw)(1-\sigma(x_n^Tw) - (1-t_n) \frac 1 {1-\sigma(x_n^Tw)} \sigma(x_n^Tw)(1-\sigma(x_n^Tw))x_n
+\\
+&= \sum_{n=1}^N (t_n- \sigma(x_n^Tw))x_n
+\end{align*}
+
+We then update using $w_{new} = w_{old} +\alpha \nabla_w \log {P(\{t_n\}|\{x_n\},w)}.$
+\end{comp}
+
+\subsection{Neural Networks}
+\begin{comp}
+The idea of Neural Networks is that instead of just taking normal basis functions, we allow the basis functions to depend on additional parameters $\theta_j.$ So suppose we have basis functions with $\phi_j(x,\theta_j),$ and predicting function $y(x,w,\theta) = \sum_{j=1}^J \phi_j(x)w_j.$ Then, define $E_n(w) = \frac 1 2 \left(t_n - \sum_{j=1}^J\phi_j(x)w_j \right)^2,$ and $a_n = \sum_{j=1}^J \phi_j(x_n)w_j$
+Observe that
+$$\frac {\partial}{\partial w_j} E_n = \frac {\partial E_n}{\partial a_n} \frac {\partial a_n}{\partial w_j}.$$
+To do gradient descient, we have
+$$w_j^{new} = w_j^{old} - \alpha \frac {\partial}{\partial w_j} \sum_{n=1}^NE_n.$$
+Similarly, we can use gradient descent for the $\theta_j$ parameters:
+$$\theta_j^{new} = \theta_j^{old} - \alpha \frac {\partial}{\partial \theta_j} \sum_{n=1}^NE_n.$$
+Note then that
+$$\frac {\partial}{\partial \theta_j} E_n = \frac {\partial E_n}{\partial a_n} \frac {\partial a_n}{\partial \phi_{jn}}\frac {\partial \phi_{jn}}{\partial \theta_j}.$$
+Observe that $\frac {\partial{a_n}}{\partial \phi_{jn}} = w_j$
+\end{comp}
+
+\begin{defn}
+A {\bf hidden layer} is a set of
+Given some inputs $x_1, \ldots, x_D$, and weight vectors $h_1,(w^1,x), \ldots, h_J(w^J,x),$ together with a function $\sum_{j=1}^J v^j \sigma(h_j(w^j,x)$ where $\sigma$ is some sigmoid function, and and the $w^j,v^j$ are fixed vectors, and the $h_j$ are various basis functions.
+\end{defn}
+
+\begin{defn}
+A {\bf Neural Network} is a collection of hidden layers, togeter with maps taking the output of one hidden layer as the inputs for the next hidden layer.
+\end{defn}
+
+\section{Class 3/12/14}
+
+\subsection{Decision Trees}
+
+\begin{defn}
+First, let me give a formal definition:
+A {\bf decision tree} is a classification function $f$ represented by a collection of decision functions $g_i,i \in I$ and end nodes $h_j,j \in J$, where each $h_j$ is a classification. Then $f(x)$ is defined as follows: define $i_1 = g_1(x),$ and recursively define $i_n = g_{i_{n-1}}(x)$, so long as $i_n \in I.$ If $i_n \notin I,$ then we require $i_n \in J.$ Let $j = i_n,$ where n is the least integer for which $i_n \notin I$. Then define $f(x) = h_{i_n}$.
+\end{defn}
+
+\begin{rem}
+The definition above is highly formal and fairly opaque. The idea is that we have a tree, where we put in our input at the top, and follow the arrows from one level to the next which describes the input x. Satisfying the following properties:
+\begin{enumerate}
+\item Every internal note has one attribute
+\item Branches occur on different attribute values
+\item Each attribute appears at most once in a path
+\item At a leaf node, return a label
+\end{enumerate}
+\end{rem}
+
+\begin{rem}
+In theory we could enumerate every possible decision tree and pick the ones closest to our data. However, if we have $d$ attributes, there are $2^d$ possible classifications for each elements of our data based on these attributes, and hence at least $2^{2^d}$ total possible labelings for for all the data (since each data can be classified in at least two different values.) This is far too big, so we'll need to use information theory to determine which attributes are important. 
+\end{rem}
+
+\begin{defn}
+Let $X$ be a discrete random variables. The {\bf information content} denoted $$I(X=j) = \log_2 \frac{1}{P(X=j)}.$$
+\end{defn}
+
+\begin{defn}
+The {\bf Shannon Entropy} of a discrete random variable $X$ is
+$$H(X) = E[I(X=j)] = -\sum_{j=1}^J P(X=j) \log \frac 1 {P(X=j)}.$$
+\end{defn}
+
+\begin{eg}
+In the case $X \sim Bern(p)$ we obatin $H(X) = -(p\log p + (1-p) \log (1-p)).$ Observe that this is maximized at $p=.5,$ with $H(X) = 1,$ but as $p$ approaches 0 or 1, the entropy approaches 0.
+\end{eg}
+
+\begin{defn}
+Let $X,Y$ be two random variables. The {\bf specific conditional entropy} of $X$ given $Y=k$ is $H(X|Y=k)=-\sum_{j=1}^J P(X=j|Y=k)\log P(X=j|Y=k),$
+\end{defn}
+
+\begin{defn}
+For $X,Y$ two random variable, the {\bf conditional entropy} of $X$ given $Y$ is $$H(X|Y) = \sum_{k=1}^KP(Y=k)H(X|Y=k)= -\sum_{k=1}^K p(Y=k) \sum_{j=1}^JP(X=j|Y=k) \log P(X=j|Y=k).$$
+\end{defn}
+
+\begin{defn}
+The {\bf mutual information} of $X$ and $Y$ is
+$$I(X;Y) = \sum_{j=1}^J\sum_{j=1}^K P(X=j,Y=k)\log \frac {P(X=j,Y=k)}{P(X=j)P(Y=k)}.$$
+\end{defn}
+
+\begin{ex}
+Show $I(X;Y) = I(Y;X)$ and $I(X;Y) = H(X)+H(Y) - H(X,Y), I(X;Y) = H(X)-H(X|Y)$
+\end{ex}
+
+\begin{rem}
+Once you are able to calculate entropies, you want to pick attributes to minimize entropy, and you might stop after some given depth.
+\end{rem}
+
+\section{Class 3/24/14}
+\subsection{Support Vector Machines}
+
+\subsubsection{Simple Margin Classifiers}
+\begin{rem}
+Today, we will search for linear basis function classifiers for data $\{x_n,t_n\},t_n \in \{\pm 1\}.$ Let $\phi_j:\chi \rightarrow \mathbb R,$ and $\Phi:\chi \rightarrow \mathbb R^J$. Define 
+$$f:\chi \times  \mathbb R^J \times \mathbb R \rightarrow \mathbb R, (x,w,b)\mapsto \phi(x)^Tw+b.$$ To $f,$ we associate a classifier
+
+$$y(x,w,b) = \begin{cases} 1 & \phi(x)^Tw +b >0 \\ -1 & \text{otherwise} \end{cases}$$
+\end{rem}
+
+\begin{defn}
+The {\bf Decision Boundary} associated to the classifier $y$ above is the hyperplane $H=\{z|z^Tw +b =0\}.$
+\end{defn}
+
+\begin{lem}
+The vector $w$ is orthogonal to all vectors in the decision boundary (where by vectors in the decision boundary, we really mean differences of vectors in $H$ as defined above so that it forms a linear subspace.
+\end{lem}
+\begin{proof}
+Say $z_1, z_2$ lie in the decision boundary. Then $z_1 -z_2$ is a vector in the decision boundary. Observe that $w^T(z_1 - z_2)= (-b)-(-b) = 0,$ so $w$ is perpendicular to $z_1-z_2.$
+\end{proof}
+
+\begin{comp}
+Let $x \in \chi,$ then we have $\phi(x) \in \mathbb R^J.$ Define $\phi_1(x)$ to be the point on $H$ closest to $\phi(x)$. It follows that $\phi(x) - \phi_1(x)$ is perpendicular to the plane of the decision boundary and so $\phi(x) - \phi_1(x) = r \frac w {|w|},$ for some real number $r.$
+As in the definition, writing $\phi(x) = \phi_1(x) + r \frac  w {|w|},$ applying $w^T$ to both sides, we get
+$$ w^T \phi(x) = w^T\phi_1(x) + r \frac {w^Tw}{|w|} = -b + r |w|.$$
+By this computation, we may note that $r = \frac {\phi(x)^Tw+b}{|w|} = \frac {f(x,w,b)}{|w|}.$
+\end{comp}
+
+\begin{defn}
+Using the notation of the previous computation, the {\bf Margin} of datum $n$ is $t_n \cdot r = t_n \cdot \frac {\phi(x_n)^Tw+b}{|x|}.$
+\end{defn}
+
+\begin{rem}
+If the data is linearly seperable, we can choose $w$ so that all margins are positive.
+\end{rem}
+
+\begin{defn}
+The {\bf Margin for the training data} is $\min_n\{ t_n \frac {\phi(x_n)^T w + b}{|w|}\}\}$
+\end{defn}
+
+\begin{rem}
+The aim is to find $(w^*,b^*) = argmax_{w,b} \frac 1 {|w|} \min_n \{t_n(\phi(x_n)^T w +b \}.$ Note that if we rescaled $w$ and $b,$ the margin remains the same. By this invariance, we may rescale to assume the margin for the training data to satisfy $t_n(\phi(x_n)^Tw+b) \geq 1.$ 
+\end{rem}
+
+
+\begin{rem}
+
+Given the new contraints from the previous problem, we want to optimize 
+
+$(w^*,b^*) = argmax_{w,b} \frac 1 {|w|} \min_n \{t_n(\phi(x_n)^T w +b \}= argmax_{w,b} \frac 1 {|w|}$ subject to 
+$t_n (\phi(x_n)^Tw+b) \geq 1.$ Equivalently, $(w^*,b) = argmin_{w,b} |w|^2$ satisfying $t_n(\phi(x_n)^Tw+b)\geq 1,$ which is a quadratic program.
+
+\end{rem}
+
+\begin{defn}
+For each data point $x_n$ we associate a {\bf Slack Variable} $\xi_n$ satisfying the following properties.
+\begin{enumerate}
+\item If $\xi_n =0,$ then $x_n$ is correctly classified and outside the margin.
+\item If $0 <\xi_n \leq 1$ then $x_n$ is correct but within the margin.
+\item If $\xi_n > 1$ then $x_n$ is incorrectly classified.
+\end{enumerate}
+\end{defn}
+
+\begin{rem}
+Let $\xi = (\xi_1,\ldots,\xi_N).$ We make the new constraints $t_n(\phi(x_n)^Tw+b) \geq 1 - \xi_n,$ and create a new objective function to find the $w^*,b,\xi = argmin_{w,b,\xi}\{ \frac 1 2 |w|^2 + c \sum_{n=1}^N\xi_n\},$ subject to the new constraints $\xi_n \geq 0, t_n(\phi(x_n)^Tw+b)\geq 1,$ where $c>0$ is a regularization paramater that we choose.
+\end{rem}
+
+\begin{rem}
+Obsesrve that $\sum_{n=1}^N \xi_n$ is an upper bound of the number of incorrect $\xi_n.$ People often parametrize $c = \frac 1 {\nu N},$ with $0<\nu\leq 1$ representing tolarance as fraction allowed incorrect.
+\end{rem}
+
+\section{Class 3/31/14}
+
+\begin{rem}
+Suppose we have data $\{x_n,t_n\},t \in \{\pm 1\},$ and $J$ basis functions $\phi_j(x),$ which are the components of the vector $\phi(x).$
+
+We are looking to maximize the margin. Since we have scaling invariance from the previous lecture, we may assume 
+
+$\min_n t_n (w^T \phi(x_n +b))=1.$
+We find
+$$(w^*,b) = argmax_{w,b} \min_n \frac {t_n(w^T \phi(x_n)+b)}{|w|}= argmax_{w,b} \frac 1 {|w|}= argmin_{w,b} \frac 1 2 |w|^2$$ subject to $t_n (w^T \phi (x_n +b) \geq 1.$
+\end{rem}
+
+\begin{comp}
+Denote $\alpha = (\alpha_1, \ldots, \alpha_n).$ Define the lagrangian 
+$$L(w,b,\alpha) = \frac 1 2 |w|^2 - \sum_{n=1}^N \alpha_n(t_n (w^T\phi(x_n)+b)-1).$$ and
+$(w^*,b) = argmin_{w,b} \max_{\alpha_i \geq 0} L(w,b,\alpha)$
+
+By strong duality, we have 
+$$\min_{w,b} \max_{\alpha_i \geq 0} L(w,b,\alpha) = \max_{\alpha_i \geq 0} \min_{w,b} L(w,b,\alpha).$$
+
+We need to have $\frac \partial {\partial w} L = 0,\frac {\partial}{\partial b} L = 0.$ We get $0=\frac \partial {\partial w} L = w - \sum_{n=1}^N \alpha_n t_n \phi(x_n).$ Then, $w = \sum_{n=1}^N \alpha_n t_n \phi(x_n).$
+Also, $0= \frac {\partial}{\partial b} L = - \sum_{n=1}^N \alpha_n t_n.$ Hence,plugging in these two conditions, we have we see 
+\begin{align*}
+M(\alpha) &= \frac 1 2 |w|^2 - \sum_{n=1}^N \alpha_n t_n(w^T \phi(x_n)+b) + \sum_{n=1}^N \alpha_n 
+\\
+&= \frac 1 2 |\sum_{n=1}^N \alpha_nt_n \phi(x_n)|^2 - \sum_{n=1}^N \alpha_n t_n(\sum_{n=1}^N \phi(x_n))^T \phi(x_n)) + \sum_{n=1}^N \alpha_n 
+\\
+&= \sum_{n=1}^N \alpha_n - \frac 1 2 \sum_{n=1}^N \sum_{m=1}^N \alpha_n \alpha_m t_n t_m \phi(x_n)^T \phi(x_m),
+\end{align*} 
+
+With $\alpha^* = argmax_{\alpha} M(\alpha),w = \sum_{n=1}^N \alpha_n^* t_n \phi(x_n)$ At the optimal solution we will have $\alpha_n^*(t_n\sum_{n=1}^N\alpha^*_n t_n \phi(x_n)^T\phi(x_n)+b^*-1)=0,$ and so either $\alpha_n^* = 0$ or $\alpha_n^* >0,t_n(\sum_{n=1}^N \alpha^*_n t_n \phi(x_n)^T \phi(x_n) + b^* =  1$.
+\end{comp}
+
+\begin{defn}
+A (mercer) {\bf kernel function} is a function $K(x,y) = \phi(x)^T\phi(y)$ for some function $\phi:\chi \rightarrow \mathbb R^J.$
+\end{defn}
+
+\begin{rem}
+Kernels are good because they allow you to compute things faster. In particular, they let you compute the Lagrangian above faster.
+\end{rem}
+
+\begin{eg}
+Take $\phi(x)_{jk,j< k} =x_ix_j.$ Then, 
+\begin{align*}
+K(x,z)& = (x^Tz)^2=(\sum_d x_d z_d)^2
+\\
+&= (\sum_d x_d z_d)(\sum_c x_c z_c)
+\\
+&= \sum_{c,d} x_d x_c z_d z_c
+\end{align*}
+
+Other examples include $K(x,z) = (x^Tz+c)^M, K(x,z) = e^{-\frac 1 2 |x-z|^2}.$
+\end{eg}
+
+\begin{eg}
+Note $\phi(x)^Tw^* + b^* = b^* + \phi(x)^T \sum_n \alpha_n^* t_n \phi(x_n) = b^*+\sum_n \alpha_n^* t_n K(x,x_n).$
+\end{eg}
+
+\section{Class 4/2/14}
+
+\ssec{Markov Decision process (MDP)}
+
+\begin{defn}
+A {\bf fully observable world} is a 4-tuple $(S,A,P,R)$ with
+$$S = \{1, \ldots, N\}$$ the set of states
+$$A = \{1,\ldots, M\}$$ the set of actions
+$$P:S\times S\times A \rightarrow (0,1), P(s',s,a) = P(s'|s,a), \sum_{s' \in S} P(s'|s,a) = 1, P(s'|s,a) \geq 0.$$ a probability mass function, indexed by state and action
+and a reward function
+$$R:S \times A \rightarrow \mathbb R.$$
+\end{defn}
+
+\begin{defn}
+A {\bf Policy} with respect to a world $(S,A,P,R)$ is a function $\pi: \mathbb N \times S \rightarrow A$ or equivalently a sequence of functions $\pi_t:S \rightarrow A,$ for each $t \in \mathbb N.$
+\end{defn}
+
+\begin{defn}
+A {\bf Markov Decision Model} is for each $t \in \mathbb N$ a fully observable world $W_t=(S,A,P_t,R_t)$ with $S$ and $A$ independent of $t$ and a policy $\pi_t$ with respect to that world $W_t$ that satisfies the markov property with bounded rewards. By the markov property, we mean $P(s'|s_t,a_t,s_{t-1},a_{t-1},\ldots, s_1,a_1) = P(s'|s_t,a_t).$ By bounded rewards, we mean that we requre $R_t:S_t\times A_t \rightarrow (-N,N) \subset \mathbb R$ where $N$ is independent of $t.$
+\end{defn}
+
+\begin{defn}
+A {\bf Finite Horizon Model} is a markov decision model aiming to maximize the function $U = \sum_{t = 0}^{T-1} R(s_t,a_t)$ for $T$ a stopping time.
+\end{defn}
+
+\begin{defn}
+A {\bf Total Discounted Reward Model} is a markov decision model aiming to maximize the function $U = \sum_{t = 0}^{\infty} \gamma^t R(s_t,a_t), \gamma \in (0,1)$.
+\end{defn}
+
+\begin{defn}
+A {\bf Total Reward Model} is a markov decision model aiming to maximize the function $U = \sum_{t = 0}^{\infty} R(s_t,a_t)$.
+\end{defn}
+
+\begin{defn}
+A {\bf Long Run Average Reward Model} is a markov decision model aiming to maximize the function $U = \lim_{T \rightarrow \infty} \frac 1 T \sum_{t = 0}^{T-1} R(s_t,a_t)$.
+\end{defn}
+
+\begin{rem}
+The latter two models are typically less tractable than the former two models.
+\end{rem}
+
+\begin{eg}
+Suppose we are in an auction in which you value an item at $150.$ The bidding starts at 0. You can bid at 100 and 200. The auction closes if no one bids $200$. The transition model is given by if you don't bid, then nature bids with probability $\frac 1 2,$ if you attempt to bid, you make that bid with probability $.7.$
+\end{eg}
+
+\begin{defn}
+The {\bf Expectimax Algorithm} is an algorithm for computing the policy function. We draw a decision tree of all possible states and recursively compute the expected value of each state, starting at the end state and working backwards. There are two types of nodes, those in which you choose where to move (to maximize your utility) and those where nature moves with prescribed probabilities. Explicitly, we compute expectimax of a particular start state $s.$ If we start on terminal nodes, we return 0. Otherwise, for each action $a$ we compute $Q(s,a) = R(s,a) + \sum_{s'\in S} P(s'|s,a) Expectimax(s')$ and set $\pi^*(s) = argmax_{a \in A} Q(s,a)$ 
+\end{defn}
+
+\begin{defn}
+A {\bf Value function} is a function $V:S \rightarrow \mathbb R$ 
+\end{defn}
+
+\begin{defn}
+A {\bf Q Function} is a function $Q:S \times A \rightarrow \mathbb R.$
+\end{defn}
+
+\begin{eg}
+Let us now look at several examples of value functions.
+\begin{enumerate}
+\item
+The ``last gasp'' policy would be $$\pi_1(s)= argmax_a R(s,a).$$ It would have value function $$V_1(s) = \max_a R(s,a).$$
+\item
+The ``second to last gasp'' policy would be $$\pi_2(s) = argmax_a \left\{R(s,a)+\sum_{s' \in S} P(s'|s,a) \max_{a' \in A} R(s',a')\right\}$$
+$$V_2(s) = max_a \left\{R(s,a)+\sum_{s' \in S} P(s'|s,a) V_1(s')\right\}$$
+\item In general, the ``$k$ steps to go'' value function $$V_k(s) = \max_{a \in A} \left\{ R(s,a)+ \sum_{s' \in S} P(s'|s,a)V_{k-1}(s')\right\}$$
+\item Define $Q_k(s,a) = R(s,a) + \sum_{s'\in S} P(s'|s,a) V_{k-1} (s')$ and then we can simplify $$\pi^*_k(s)= argmax_{a \in A} Q_k(s,a)$$ and $$V_k(s) = \max_{a \in A} Q_k(s,a)=Q_k(s,\pi_k^*(s),$$ with the special case $V_0(s) = 0.$
+\end{enumerate}
+\end{eg}
+
+\begin{eg}
+Define $P(s'|s,a_1) =$
+\begin{table}[h]
+\begin{tabular}{l|l|l}
+     & $s_1$ & $s_2$ \\ \hline
+$s_1$ & .6   & .4   \\ \hline
+$s_2$ & .6   & .4   
+\end{tabular}
+\end{table}
+
+and define $P(s'|s,a_2) = $
+\begin{table}[h]
+\begin{tabular}{l|l|l}
+     & $s_1$ & $s_2$ \\ \hline
+$s_1$ & 1   & 0   \\ \hline
+$s_2$ & 0   &  1   
+\end{tabular}
+\end{table}
+
+Then, define $R(s,a)=$
+\begin{table}[h]
+\begin{tabular}{l|l|l}
+     & $a_1$ & $a_2$ \\ \hline
+$s_1$ & 1   & 0   \\ \hline
+$s_2$ & -1   &  0   
+\end{tabular}
+\end{table}
+
+Now, we compute the optimal policies for various steps
+\begin{table}[h]
+\begin{tabular}{l|l|l|l|l|l|l|l|l}
+\text{Steps to go} & 
+$Q_k(s,a_1)$ & $Q_k(s_1,a_2)$ & $Q_k(s_2,a_1)$ & 
+$Q_k(s_2,a_2)$ & $\pi_k^*(s_1)$ 
+& $\pi_k^*(s_2)$ 
+& $V_k(s_1)$ & $V_k(s_2)$ \\ \hline
+0 & - & - & - & - & -&-&0&0 \\ \hline
+1 & 1 & 0 & -1&0&$a_1$&$a_2$&1&0 \\ \hline
+2 & 1.6 & 1 & -.4 & $a_1$ & $a_2$ & 1.6 & 0 \\ \hline
+3 & 1.96 & 1.6 & -.04 & 0 & $a_1$ & $a_2$ & 1.96 & 0 \\ \hline
+4 & 2.176 & 1.96 & .176 & 0 & $a_1$ & $a_1$ & 2.176 & .176
+\end{tabular}
+\end{table}
+
+This shows that you want to take action 1 in state 1 always, and if there isn't much time left you want to take action 2 in state 2, but if there is enough time left, you should take action 1 in state 2.
+\end{eg}
+
+\begin{defn}
+The {\bf Discounted Infinite Horizon} is the process of finding a policy corresponding to the utility function $U = \sum_{t = 0}^ \infty \gamma^t R(s_t,a_t),$ with $\gamma \in (0,1).$ So, we now take the function Q-function $Q(s,a) = R(s,a)+ \gamma \sum_{s' \in S} P(s'|s,a)V(s')$ with $V = \max_{a \in A} Q(s,a) = Q(s,\pi^*(s)),$ with $\pi^*(s) = argmax_a Q(s,a).$
+\end{defn}
+
+\begin{comp}
+Let us now define an algorithm for infinite horizon value iteration, to find the optimal value and policy functions.
+\begin{verbatim}
+Initialize V(s) = 0
+Repeat:
+   V_old(s) = V(s)
+   For each s in S:
+      For each a in A:
+         Q(s,a) = R(s,a) + \gamma*\sum_{s' \in S}P(s'|s,a)V_old(s')
+      \pi^*(s) = argmax_a Q(s,a)
+      V(s) = Q(s,\pi^*(s))
+Until |V(s) - V_old(s)| < \epsilon
+\end{verbatim}
+
+By the contraction lemma, these equations have a fixed point, which will be reached in the limit.
+
+\end{comp}
+\section{Class 4/9/14}
+\begin{comp}
+
+We now define a similar algorithm to find the best policy. This time, instead of trying to optimize the value function, we try to optimize the policy. Denote $r^\pi_s = R_{s,\pi_s},$ and $r^\pi \in \mathbb R^n,$ the vector of $r^\pi_s.$
+
+Denote the matrix 
+$P^\pi = 
+\begin{pmatrix}
+P_{1,1}^{\pi_1} & P_{1,2}^{\pi_1} & \cdots &P_{1,N}^{\pi_1} \\
+P_{2,1}^{\pi_2} & P_{2,2}^{\pi_2} & \cdots & P_{2,N}^{\pi_2} \\
+\vdots & \vdots & \ddots & \vdots \\
+P_{N,1}^{\pi_2} & P_{N,2}^{\pi_2} & \cdots & P_{N,N}^{\pi_2}
+\end{pmatrix}$
+with $P_{i,j}^{\pi_i} = P(j|i,\pi(i)).$
+
+Note that setting $ V = r^\pi + \gamma P^\pi v,$ we have $(I - \gamma P^\pi) v = r^\pi$ so $(I- \gamma P^\pi)v = r^\pi$ and $v = (I-P^\pi)^{-1}r^\pi.$
+This is a cubic cost in the number of states in order to compute the inverse, which is why it may be slow. In practice this is the best.
+\begin{verbatim}
+Initialize \pi = \pi_0
+Repeat:
+   \pi^old = \pi
+   V = (I - \gamma P^\pi)^{-1} r^\pi
+   For s in S:
+      For a in A:
+         Q_{s,a} = R_{s,a} + \gamma \sum_{s' in S'} P_{s,s'}^a V_{s'}
+      \pi_s = argmax_a Q_{s,a}
+\end{verbatim}
+
+\end{comp}
+
+\ssec{Reinforcement Learning}
+\begin{rem}
+{\bf Reinforcement Learning} assumes an unknown model $P(s'|s,a)$ and unknown rewards $R(s,a),$ which we are trying to estimate. There are two types of Reinforcement learning: Model-based Reinforcement Learning and Model-free Reinforcement Learning 
+\end{rem}
+
+
+\begin{defn}
+In {\bf Model Based Learning} we keep track of $N_{s,a},$ the number of times we performed action $a$ in state $s,$ $R^{total}_{s,a},$ the total reward from doing a in state s, and $N_{s,a,s'},$ the number of times we went directly from state $s$ to $s'$ after taking action $a.$ Define $\hat{R_{s,a}} = \frac {R^{total}_{s,a}}{N_{s,a}}$ and $\hat{P^a_{s,s'}} = \frac {N_{s,a,s'}}{N_{s,a}}.$
+\end{defn}
+
+\begin{defn}
+In {\bf Model Free Learning} we are not trying to find a model, but just trying to find what action we should take in a particular situation.
+\end{defn}
+\begin{defn}
+{\bf Q Learning} is a model free learning technique which tries to approximate the Q function. We have 
+$$Q_{s,a} = R_{s,a} + \gamma \sum_{s' \in S} P(s'|s,a) \max_{a' \in A} Q_{s',a'} = R_{s,a} + \gamma E_{s' \in S}\max_{a' \in A} Q_{s',a'} = E_{s' \in S} (R_{s,a} + \gamma \max_{a' \in A} Q_{s',a'}).$$ 
+We then use the update rule 
+$$Q_{s,a} = Q_{s,a} + \alpha((r+\gamma \max_{a' \in A}Q_{s',a'})- Q_{s,a})$$
+We can write down an approximate $Q$ function for a state $S \in \mathbb R$ write $\hat{Q}(s,a) = w_0 + \phi(s)^Tw^a.$ and use gradient descent. 
+\end{defn}
+\section{Class 4/8/14}
+\ssec{Partially Observable Markov Decision Process (POMDP)}
+\begin{defn}
+A {\bf Partially Observable Markov Decision Process} is a process in which we don't know which state we are inl instead we are given observations $\mathcal O=\{1,2,\ldots,J\}.$ and an observations model $P(O_||s_n).$
+\end{defn}
+\begin{defn}
+A {\bf Belief State MDP} is an MDP with each state being a distribution over the environment states, and a belief state $B$, which may be continuous in this case.
+\end{defn}
+
+\begin{eg}
+We could have a binary environmental state $B \in [0,1]$ corresponding to the parameter on a Bernoulli distributions.
+\end{eg}
+
+\begin{eg}
+  There are two states, good and bad. Good has a +10 reward, Bad has -20, and we can observe for a cost of -1. We know $P(0=Good|S=Good) = .8,P(0=Bad|S=Bad) = .8$. Using Bayes Rule, $P(S=G|O=G) = \frac{P(S=G)P(O=G|S=G)}{P(O=G)} = \frac{.5*.8}{.5*.8+.5*.2} = .8$
+\end{eg}
+
+\begin{rem}
+Note that we no longer require a finite state space.
+\end{rem}
+
+\begin{defn}
+A {\bf Finite Memory Policy} is a new state space keeping track of there last $K$ observations whose state space is $S' = {\mathcal O}^K$.
+\end{defn}
+
+\begin{defn}
+The mechanism of {\bf Stigmergy} is the process of an agent modifying the environment to leave behind information for future agents.
+\end{defn}
+
+\section{Class 4/16/14}
+
+\begin{rem}
+Recall K-means clustering. We had data $x_n$ clusters $\mu_k$ responsibilities $r_n$ a distrotion measure $J(\mu,r) = \sum_{n,k} r_{nk}|x_n - \mu_k|^2$. We could then use Lloyd's algorithm to update the $r_{nk}$ to be 1 for $k=argmin_k|x_n-\mu_k|^2$ and update $\mu_k = \frac{\sum_n r_{nk} x_n}{\sum_n r_{nk}}$
+\end{rem}
+
+\begin{defn}
+An algorithm we shall call {\bf soft K-means} is descirbed as follows. We will have {\bf Soft Responsibilities} defined by $r_{nk} \geq 0, \sum_k r_{nk}=1$. We define $r_{nk} = \frac{\exp{\frac{-\beta}{2}|x_n-\mu_k|^2}}{\sum_{k'}\exp {\frac{-\beta}{2}|x_n-\mu_{k'}|^2}}$.
+\end{defn}
+
+\begin{defn}
+A {\bf Mixture Model} is a linear combination of distributions from a single parametric family of distributions, I.e. each misture model has {\bf component distributions} $P(x|\theta)$, {\bf K Mixture components} $\theta_k$ and {\bf K Mixture weights} $\pi_k \geq 0,\sum_k \pi_k = 1$ and a mixture model $P(X|\{\theta_k,\pi_k\}) = \sum_k \pi_k P(x|\theta_k)$.
+\end{defn}
+
+\begin{rem}
+To generate a value of a mixture distribution first draw k from $\pi$ ad then draw x fromt he kth component of the distribution $x \sim P(x|\theta_k)$.
+\end{rem}
+
+\begin{eg}
+A generative model for a document could be as follows
+\begin{enumerate}
+\item Draw topics for the document
+\item For each word in the document, first pick the word's topic, and second pick the word from the topic's distribution
+\item Repeat until you've finished the document
+\end{enumerate}
+\end{eg}
+
+\begin{comp}
+Suppose we have Gaussian mixtures with K means, covariances $\mu_k,\Sigma_k$ and mixture weights $\pi_k$. Then, define
+$$P(x|\pi,\mu,\Sigma) = \sum_k \pi_k N(x|\mu_k,\Sigma_k).$$
+
+Then, we can learn by setting the data $x_n$ and noting
+$$\log P(x|\pi,\mu,\Sigma) = \sum_n \log \sum_k \pi_k N(x_n|\mu_k,\Sigma_k).$$
+Now, let us look at a simple gaussian mixture model in which we know $\pi_k = \frac{1}{k}$ and $\Sigma_k = \frac{1}{\beta}I$. Let the $\mu_k$ be unknowns. Then, 
+$$\log P(x|\mu) = \sum_n \log \sum_k \frac{1}{k} N(x_n|\mu_k, \frac{1}{\beta}I).$$
+
+Differentiating with respect to $\mu_k$ we obtain
+
+\begin{align*}
+	\frac{\partial}{\partial \mu_k}\log P(x|\mu) &= \sum_n \frac{\partial}{\partial \mu_k}\sum_{k'}\frac{\frac{1}{k'}N(x_n|\mu_{k'},\frac{1}{\beta}I}{\sum_{s'} \frac{1}{s'}N(x_n|\mu_{s'}\frac{1}{\beta}I}
+	\\
+	&= \sum_n \frac{N(x_n|\mu_k,\frac{1}{\beta}I)}{\sum_{k'} N(x_n|\mu_{k'},\frac{1}{\beta}I)}\cdot \beta(x_n-\mu_k)
+	\\
+	&= \sum_n r_{nk} \cdot \beta(x_n-\mu_k)
+\end{align*}
+
+To get the $r_{nk}$ note that
+\begin{align*}
+	r_{nk} &= \frac{N(x_n|\mu_k,\frac{1}{\beta}I)}{\sum_{k'}N(x_n|\mu_k,\frac{1}{\beta}I)}
+	\\
+	&=	\frac{\frac{\beta}{2\pi}^{\frac{-D}{2}}\exp{\frac{-\beta}{2}(x_n-\mu_k)^T(x_n-\mu_k)}}{\sum_{k'} \frac{\beta}{2\pi}^{\frac{-D}{2}}\exp{\frac{-\beta}{2}(x_n-\mu_{k'})^T(x_n-\mu_{k'})}}
+	\\
+	&= \frac{\exp{\frac{-\beta}{2}|x_n-\mu_k|^2}}{\sum_{k'}\exp{\frac{-\beta}{2}|x_n-\mu_{k'}|^2}}
+\end{align*}
+
+Now,setting $\frac{\partial}{\partial\mu_k}=0$ we obtain $\sum_n r_{nk}x_n = \sum_n r_{nk}\mu_k$ and so $$\mu_k = \frac{\sum_n r_{nk}x_n}{\sum_n r_{nk}}$$ is our maximum likelihood solution
+\end{comp}
+
+
+\section{Class 4/21/14}
+
+\begin{rem}
+We will now examine latent variable models, with $z_n$ latent variables and $x_n$ observables. Our goals are \begin{enumerate}
+	\item Infer the $z_n$ for each $x_n$
+	\item Learn the model parameters $\pi,\{\mu_k,\Sigma_k\}$ Note that $$P(z_{nk} =1|x_n,\Theta) = \frac{P(z_{nk} = 1)P(x_n|z_{nk=1},\Theta)}{\sum_{k'}P(z_{nk'} =1)P(x_n|z_{nk'}=1,\Theta)}$$
+\end{enumerate}
+\end{rem}
+
+\begin{comp}
+Let $P(x| \{\pi_k,\mu_k,\Sigma_k\}) = \sum_{k=1}^K \pi_k N(x|\mu_k,\Sigma_k)$ and $\log P(\{x_n\}| \{\pi_k,\mu_k,\Sigma_k\}) = \sum_{n=1}^N \log \sum_{k=1}^K \pi_k N(x|\mu_k,\Sigma_k)$
+We then introduce explicit {\bf latent variables} $z_n$ with $z_{nk} \in \{0,1\}$ and $\sum_{k=1}^K z_{nk} = 1$. We then define $$P(z|\pi) = \prod_{k=1}^K \pi_k^{z_k},$$ and $$P(x|z,\{\mu_k,\Sigma_k\}) = \prod_{k=1}^K (N(x|\mu_k,\Sigma_k))^{z_k}.$$
+
+Now, 
+$$P(x,z|\{\pi_k,\mu_k,\Sigma_k\}) = P(z|\pi) P(x|z,\{\mu_k,\Sigma_k\})= \prod_k (\pi_k N(x|\mu_k,\Sigma_k))^{z_k}$$
+
+Then, the complete data log likelihood is
+
+$$\log P(\{x_n,z_n\}|\{\pi_k,\mu_k,\Sigma_k\}) = \sum_{n=1}^N\sum_{k=1}^K z_{nk}\log \pi_k+z_{nk}\log N(x_n|\mu_k,\Sigma_k)$$
+with $N_k = \sum_n z_{nk},\pi_k = \frac {N_k}N,\mu_k = \frac{1}{N_k}\sum_{n=1}^N z_{nk} x_n,\Sigma_k = \frac{1}{N_k}\sum_{n=1}^N z_{nk} (x_n-\mu_k)(x_n-\mu_k)^T.$
+
+Now, suppose we have extimates $\gamma_n$ of $z_n$ with $\gamma_{nk} \geq 0$ and $\sum_n \gamma_{nk} = 1$ (Note, bishop write $\gamma_{nk} = \gamma(z_{nk}).$
+\end{comp}
+
+\begin{defn}
+Then, the {\bf expected complete data log likelihood (ECDLL)} is
+
+$$E_{\gamma_n} \left[\log P(\{x_n,z_n\}|\{\pi_k,\mu_k,\Sigma_k\})\right]$$
+\end{defn}
+\begin{defn}
+The {\bf Expectations Maximization Algorithm (EM)} is given by an initialization of the $\gamma_k$ and then there are then two steps for each iteration: \begin{enumerate}
+	\item M-step: Given $\{\gamma_n\}$, maximize ECDLL in terms of $\{\mu_k,\Sigma_k,\pi_k\}$
+	\item E-step: Improve the estimate $\{\gamma_n\}$ given parameters $\{\pi_k,\mu_k,\Sigma_k\}$
+\end{enumerate}
+\end{defn}
+
+\begin{comp}
+\begin{enumerate}
+	\item The M step is: Take the ECDLL, and as we saw before, in the case of Gaussian mixtures, we can write it as $$\sum_k \sum_n \gamma_{nk}\left[\sum_{k'} \delta_{k',k} \log 
+\pi_{k'} + \delta_{k,k'} \log N(x_n|\mu_{k'},\Sigma_{k'}) \right]
+= \sum_n \sum_k \gamma_{nk} \log \pi_k + \gamma_{nk} \log (x_n|\mu_k,\Sigma_k)$$ Then, taking the partial with respect to $\pi_k$ and usng Lagrange multipliers we want $$ 0 = \sum_n \sum_k \gamma_{nk} \log \pi_k + \lambda(\sum_k \pi_k - 1)$$, which forces $\sum_n \gamma_{nk} \frac{1}{\pi_k}+\lambda = 0 \implies \sum_n \gamma_{nk} + \pi_k \lambda = 0$. Hence, $\sum_k \sum_n \gamma_{nk} + \lambda \sum_k \pi_k = 0,$ which implies $\lambda = -N,$ with $\pi_k = \frac{\sum_n \gamma_{nk}}{N}$
+	\item The E-step is:
+	\begin{align*}
+	\gamma_{nk} &= P(z_{nk}=1|x_n,\{\pi_{k'},\mu_{k'},\Sigma_{k'})
+	\\
+	&= \frac{P(z_{nk}=1)P(x_n|z_{nk}=1,\{\mu_k,\Sigma_k\})}{P(x_n|\{\pi_k,\mu_k,\Sigma_k\})}
+	\\
+	&= \frac{\pi_kN(x_n|\mu_k,\Sigma_k)}{\sum_{k'} \pi_{k'}N(x_m|\mu_{k'},\Sigma_{k'})}
+\end{align*}
+	
+\end{enumerate}
+\end{comp}
+
+\begin{rem}
+Recall we had the sum $\sum_n \log \sum_k \pi_k 
+N(x_n|\mu_k,\Sigma_k),$ we can use Jensen's inequality we have
+$E_q(f(x)) \leq f (E_q(x))$, which gives a lower bound on the quantities we are looking for.
+\end{rem}
+
+\section{Class 4/23/14}
+
+
+\begin{rem}
+Let $x_1,\ldots,x_T$ be data, and suppose we have a model $P(x_1,\ldots,x_T)$. Suppose the $x_i$ are one hot coded with $k$ possible outcomes. If the model is fully joint, the number of possibilities to model is $O(K^T)$ which is far too big. If it is fully independent, then it takes $O(KT)$ states to model, but this assumption might not be strong enough to produce a successful model. This motivates the Markov assumption.
+\end{rem}
+
+\begin{defn}
+A model $P(x_1,\ldots,x_T)$ is a {\bf Markov Model} if $x_{t+1}$ is independent of $x_{t-1}|x_t$. Equivalently, $P(x_{t+1}|x_t,x_{t-1},\ldots) = P(x_{t+1}|x_t)$.
+\end{defn}
+
+\begin{rem}
+There is a sort of yoga of diagrams describing these models, with arrows describing relations between states
+
+\begin{itemize}
+	\item Markov Chains \xymatrix{ A \ar[r] & B \ar[r] & C \ar[r] & D}
+	\item Independent Objects \xymatrix {A & B & C & D}
+	\item Full dependence \xymatrix {A \ar[r] \ar[dr]& B \ar[d] \\ & C}
+\end{itemize}
+\end{rem}
+
+
+\begin{defn}
+Let $Z_t$ be discrete variables with $M$ outcomes, which we think of as hidden, and $X_t$ be discrete random variables with $K$ outcomes, which we think of as visible. A {\bf Hidden Markov Model}. Then, we define 
+$$P(z_1,\ldots,z_T,x_1,\ldots, x_T) = P(z_1)P(x_1|z_1)\prod_{t=2}^{T}P(x_t|z_{t-1}P(x_t|z_t)$$
+with $P(z_1)$ the {\bf initial distribution} $\pi$, $P(z_t|z_{t-1})$ {\bf transition probabilities} given by $A$ and $M \times M$ matrix, and $P(x_t|z_t)$ called the {\bf emmistions} given by $\Phi$ an $M \times K$ matrix.
+\end{defn}
+
+\begin{rem}
+A hidden markov model would have the arrow diagram of the form
+\xymatrix 
+{Z_1 \ar[d] 
+\ar[r] & Z_2 \ar[d] \ar[r] & Z_3 \ar[d] \ar[r] & Z_4 \ar[r] \ar[d]&\cdots\\ X_1 & X_2 & X_3&X_4}
+\end{rem}
+
+\begin{rem}
+There are several thing we might want to use hidden markov models to
+\begin{itemize}
+	\item Predict: we may want to know $P(x_{t+1}|x_1,\ldots, x_t)$ 
+	\item Filtering: $P(z_T|x_1,\ldots, x_T)$.
+	\item Smoothing: $P(z_t|x_1,\ldots,x_t)$
+	\item Explanation: $z_1^*,\ldots,z_t^* = argmax_{z} P(z_1,\ldots,z_t|x_1,\ldots, x_t)$.
+	\item Learning: How to find $\pi^*,A^*,\Phi^* = argmax_{\pi,A,\Phi} P(x_1,\ldots, x_t|\pi,A,\Phi)$.
+\end{itemize}
+\end{rem}
+
+\begin{rem}
+We can solve prediction, filtering, and smoothing by the forward backward algorithm, explanation can be solved with the viterbi algorithm, and learning can be solved with expectation maximization, using the forward backward algoirthm in the inner loop, which is called Balm - Welch.
+\end{rem}
+
+\begin{rem}
+Imagine we have a markov chain 
+\\
+\xymatrix 
+{Z_1 \ar[d] 
+\ar[r] & Z_2 \ar[d] \ar[r] & Z_3 \ar[d] \ar[r] & Z_4 \ar[r] \ar[d]& Z_5 \ar[r]\ar[d] &\cdots\\ X_1 & X_2 & X_3&X_4&X_5}
+\\
+We may want to know $P(z_3|x_1,\ldots,x_5)\propto P(z_3,x_1,\ldots,x_5)$.
+to comute this, we need to find $\sum_{z_1}^{}\sum_{z_2}^{}\sum_{z_4}^{}\sum_{z_5}^{}P(z_1,\ldots,z_5,x_1,\ldots,x_5.$ We then get a large product. You can use the forward algorithm to sum over increasing $i$ for $z_i,$ which says what is the most likely explanation for $z_3$ given its history, and the backward part summing over decreasing $i,$ and then we multiply the forward and backward parts. The reason we can take this product is because the parts after $z_3$ and before $z_3$ are independent given $z_3$. You can use dynamic programming to simultaneously ask this about all the $z_i$ (just doing it for substrings).
+\end{rem}
+
+
+\end{document}
