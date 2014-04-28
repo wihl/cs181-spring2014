@@ -271,6 +271,9 @@ Be cautious of pathological distance functions (as opposed to feature functions)
 
 CS229 goes into a lot more depth about this: Gaussian kernels in depth, plus SMO and Karush-Kuhn-Tucker (KKT) conditions.
 
+\subsection{Extensions to SVM}
+
+SVM can be used for other purposes as well, such as regression. It can also be used for multi-class classification using \emph{one vs many}.
 
 \subsection{Sources}
 
@@ -288,7 +291,7 @@ CS229 goes into a lot more depth about this: Gaussian kernels in depth, plus SMO
 
 \section{Reinforcement Learning}
 
-Online, related to planning. 
+Online, related to planning, as opposed to the rigid data sets we've seen so far in regression and classification.
 
 \subsection{Markov Decision Processes}
 
@@ -302,8 +305,9 @@ Reward Function: $\mathcal{R}: \mathcal{S} \times \mathcal{A} \rightarrow \mathb
 
 Policy: $\pi_t: \mathcal{S} \rightarrow \mathcal{A}$. Finding the right policy is the objective here.
 
-Assumptions (for now):\\
-These assumptions will be relaxed later.
+All of these states, actions, transitions, rewards and policies look like functions, but in practice they are implemented as matrices in memory.
+
+Assumptions (for now -- these assumptions will be relaxed later):
 \begin{enumerate}
 	\item \emph{fully observable} You know what state you are in.
 	\item \emph{known model}
@@ -330,21 +334,25 @@ Value means ``make a good move" in the anticipation of getting a reward.
 
 Take an action to maximize utility. Nature responds randomly. For now, we know everything about everything except what nature will do.
 
-We build the whole tree, work back the probabilities and then choose the path with the highest reward. The complexity is exponential -- such as $O(2^n)$ -- as it involves traversing a tree completely, depth-first. 
+We build the whole tree, work back the probabilities and then choose the path with the highest reward. The complexity is exponential -- such as $O(2^n)$ -- as it involves traversing a tree completely, depth-first. See Algorithm 1 in mdp Course Notes.
 
 \subsection{Value Iteration}
 Reward function: \emph{finite} - fixed set of rewards or \emph{infinite} - get as many rewards as possible with future rewards discounted compared to current rewards.
 
 The Objective is to search the space of possible policies that maximizes rewards.
 
-``Last gasp" policy - one action left to take - pick the one that will maximize the reward.
+\subsubsection{Finite Horizon}
+
+In the case of a finite horizon value iteration, start at the final state and work backwards.
+
+Imagine the ``last gasp" policy, with one action left to take - pick the one that will maximize the reward.
 \begin{align}
 \pi_1(s) = &\argmax_a R(s,a)\\
 V_1(s) = & \max_a R(s,a)
 \end{align}
 where 1 represents the number of steps left to take before the agent dies.
 
-``Second to last gasp" - two actions left to take. 
+Working backwards one more step ``second to last gasp" - two actions left to take. In this case take into account the current reward and the next reward in the following step. 
 \begin{align}
 \pi_2(s) = & \argmax_a \left\{ R(s,a) + \sum_{s'} P(s'\mid s,a) \max_{a'} R(s',a') \right\}\\
 V_2(s) = & \max_a \left\{ R(s,a) + \sum_{s'}p(s'\mid s,a) V_1(s')  \right\}
@@ -360,7 +368,25 @@ V_k(s) = & \max_a Q_k(s,a) = Q_k(s,\pi_k^*(s))\\
 \pi_k^*(s) = & \argmax_a Q_k(s,a)
 \end{align}
 
-So now we can build a recursive implementation to find the best action for a given state. To make the recursion well defined, make sure that $V_0(s) = 0$. See Algorithm 2 pseudocode in mdp course notes.
+So now we can build a recursive implementation to find the best action for a given state. To make the recursion well defined, make sure that $V_0(s) = 0$. See Algorithm 2 pseudocode in mdp course notes. No need for a huge decision tree like in the Expectimax. Instead this is a simple table that is cheap and quick to populate.
+
+\subsubsection{Infinite Horizon}
+
+Here, we discount rewards for increasingly distant horizons. $\gamma$ is given as a parameter.
+\begin{align}
+u = & \sum_{t=0}^\infty\gamma^t R(s_t,a_t)\text{, where}\\
+\gamma \in & (0,1)
+\end{align}
+Unlike finite horizon, in this case we move forward in time.
+So the immediate reward (not $Q_k$, just $Q$ and just $\pi$):
+\begin{align}
+Q(s,a) = & R(s,a) + \gamma \sum_{s'} p(s' | s,a)V(s')\\
+V(s) = & \max_a Q(s,a) = Q(s,\pi^*(s))\\
+\pi^*(s) = &\argmax_a Q(s,a)
+\end{align}
+See CS229 Notes12 on Reinforcement Learning for a good discussion about this.
+
+See policyiter class notes, algorithm 1.
 
 \subsection{Policy Iteration}
 
@@ -373,9 +399,10 @@ So now we can build a recursive implementation to find the best action for a giv
 \subsection{Sources}
 
 \begin{enumerate}
-	\item Lecture 16, April 2, 2014
-	\item Lecture 17
-	\item Lecture 18
+	\item Lecture 16, April 2, 2014 MDP
+	\item Lecture 17, April 7, 2014 Value and Policy Iteration
+	\item Lecture 18  Reinforcement Learning
+	\item Lecture 19 POMDP
 	\item Course notes - MDP
 	\item Course notes - policyiter
 	\item Course notes - RL
@@ -393,6 +420,8 @@ So now we can build a recursive implementation to find the best action for a giv
 \subsection{Sources}
 
 \begin{enumerate}
+	\item Lecture 20 Mixture Models
+	\item Lecture 21 Hidden Markov Models
 	\item Bishop 9.3
 	\item Bishop 13.0-13.2
 	\item Section 11
