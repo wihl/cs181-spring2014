@@ -395,6 +395,37 @@ See policyiter class notes, algorithm 1.
 
 \subsection{Policy Iteration}
 
+Policy Iteration takes advantage of Linear Algebra to propagate information. Unlike Value Iteration, it does not need to wait until value convergence. ``You don't really care about the value function - you care about what to do next."
+
+See algorithm 2 in policyiter Class Notes.
+
+Use $\pi$ as an index into the reward matrix to determine the next appropriate action.
+\begin{align}
+r_s^\pi = & R_{s,\pi_s}  \text{or as a vector:  } \\
+\mathbf{r}^\pi \in & \mathbb{R}^N
+\end{align}
+Likewise, the policy could applied as an index into the transition matrix:
+\begin{equation}
+\mathbf{P}^\pi = \begin{bmatrix}
+P_{1,1}^{(\pi_1)}  & P_{1,2}^{(\pi_1)} & \ldots & P_{1,N}^{(\pi_1)}\\[0.3em]
+P_{2,1}^{(\pi_2)}  & P_{2,2}^{(\pi_2)} & \ldots & P_{2,N}^{(\pi_2)}\\[0.3em]
+\vdots                   &                            & \ddots \\
+P_{N,1}^{(\pi_N)}  & P_{N,2}^{(\pi_N)} & \ldots & P_{N,N}^{(\pi_N)}\\[0.3em]
+\end{bmatrix}
+\end{equation}
+
+To compute a new value iteration:
+\begin{align}
+\mathbf{V} \leftarrow & \mathbf{r}^\pi + \gamma \mathbf{P}^\pi \mathbf{V}\\
+V(s) \leftarrow  & R(s,\pi(s)) + \gamma \sum_{s'} P(s' \mid s, \pi(s)) \times V(s')
+\end{align}
+This recursion is how the value propagates downs the chain, and allows us how to solve for $V$ in a fast and efficient way.
+(This corresponds to policyiter class notes, algorithm 2, line 5, ``Solve system $V(s)$")
+\begin{align}
+&\mathbb{I} \mathbf{v} - \gamma \mathbf{P}^\pi\mathbf{v} = \mathbf{r}^\pi \\
+&(\mathbb{I} - \gamma \mathbf{P}^\pi)\mathbf{v} = \mathbf{r}^\pi \\
+&\mathbf{v} =  (\mathbb{I} - \gamma \mathbf{P}^\pi)^{-1}\mathbf{r}^\pi
+\end{align}
 
 
 \subsection{Reinforcement Learning}
