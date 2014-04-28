@@ -516,7 +516,7 @@ We're just doing gradient descent on the $Q$'s so we can find the weights to pro
 
 POMDP relaxes a different set of assumptions than Reinforcement Learning. (Recall: RL assumes you do not know the model, transition, reward function and dynamics). In POMDP, the current state is unknown (hence the term \emph{Partially Observable}). In POMDP, the transition and reward functions are known. Only noisy observations are provided.
 
-This table sums up the differences:
+This table summarizes the differences:
 \begin{center}
 	\begin{tabular}{| l | l | l | l |}
 	\hline
@@ -530,11 +530,49 @@ This table sums up the differences:
 	\end{tabular}
 \end{center}
 
-Not knowing the state is much harder than not knowing Transition Model and Policy. Knowing the full history may be 
+Not knowing the state is much harder than not knowing Transition Model and Reward. Knowing the full history may be 
 necessary so the amount needed to store might grow without bound.
 
-This is the most realistic case compared to MDP and RL. Observations are always noisy in the real world.
+This is the most realistic case compared to MDP and RL. Observations are always noisy in the real world. ``You don't have a perfect model of your chess opponent. The odometry on a robot isn't perfect. You check the weather before leaving the house -- this is a real life information gathering action."
 
+So starting like MDP:
+
+States: $\mathcal{S} = \{1,2,3,...N\}$
+
+Actions: $\mathcal{A} = \{1,2,3,...M\}$ 
+
+Transition Model $P(s'\mid s,a)$
+
+Reward Function: $R(s,a)$
+
+POMDP has a discrete set of \emph{observations} and an \emph{observation model}:
+
+Observations : $O = \{1, 2, 3, ... , J\}$
+
+Observation model: $p(O_j \mid S_n)$.
+
+``We are going to take some action and get some observation. We're going to use that observation and the history of observations and actions to come up with a distribution of what state we are actually in." As observations (and actions) accumulate, we determine the probability of the current state. For now, we assume we know the Observation Model. (In practice, we'll never be given the Observation Model in the real world. Real observations are likely not discrete).
+
+\subsubsection{Belief State}
+
+Bayes Rule will provide the means to go from observation distribution to the possible state. \emph{Belief state} is an estimate -- a Bernoulli distribution -- over a set of possible states.
+
+Belief State: $B \in [0, 1]$ ; $b(s_t) = P(s_t \mid o_1, \hdots , o_t,a_1, \hdots , a_{t-1})$
+
+Three approaches used to solve POMDPs (using the assumption that this is a discrete belief state). 
+\begin{enumerate}
+	\item \emph{piecewise linearly convex} different regions of the $[0,1]$ state space are ``owned" by different linear functions.  Over time, some of these functions can be pruned out. FMI, see lecture 19 video, 42:00. 
+	\item \emph{point approximation} Some observations may be very informative (and not noisy) so simply use this observation rather than the distribution.
+	\item \emph{function approximation}. Use regression or a neural net as a different mechanism to determine state in lieu of distribution.
+\end{enumerate}
+
+\subsubsection{Policy Iteration Methods}
+
+Finding optimal policy is too hard so approximate the policy. 
+
+\emph{Finite Memory Policy} keep only the last $K$ observations to avoid overloading memory. $\mathcal{S} = O \times O \times O \hdots K$ times.
+
+\emph{Finite state controller} use a finite state machine to model the states of the agent based on the observations. Nodes represent the state, with edges as actions.
 
 \subsection{Mixture Models}
 
