@@ -330,8 +330,14 @@ Value means ``make a good move" in the anticipation of getting a reward.
 
 Take an action to maximize utility. Nature responds randomly. For now, we know everything about everything except what nature will do.
 
+We build the whole tree, work back the probabilities and then choose the path with the highest reward. The complexity is exponential -- such as $O(2^n)$ -- as it involves transversing a tree completely, depth-first. 
 
 \subsection{Value Iteration}
+Reward function: \emph{finite} - fixed set of rewards or \emph{infinite} - get as many rewards as possible with future rewards discounted compared to current rewards.
+
+The Objective is to search the space of possible policies that maximizes rewards.
+
+
 
 \subsection{Policy Iteration}
 
