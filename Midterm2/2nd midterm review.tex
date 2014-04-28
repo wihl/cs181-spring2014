@@ -474,7 +474,37 @@ Building the policies and doing planning is not free (recall $O(N^3)$). So a new
 
 \subsubsection{Model Free RL}
 
+Typically based on \emph{Q-learning}, which tells you optimal action to take in any given state. Provides policy without understanding dynamics or rewards.
+
+``Why store a model, when we can just keep asking `The World' for a noisy estimate? Kind of like a stochastic gradient descent."
+
+From Bellman, we have a recursion.
+\begin{align}
+Q_{s,a} = &R_{s,a} + \gamma \sum_{s'} p(s' \mid s,a) \max_{a'} Q_{s',a'}\\
+	      = & R_{s,a} + \gamma \mathbb{E}_{s'} \left[ \max_{a'} Q_{s',a'}\right]\\
+	      = & \mathbb{E}_{s'} \left[ R_{s,a} + \gamma \max_{a'} Q_{s',a'}\right]
+\end{align}
+
+As the world gives us updated sample rewards and actions, they are used to update $Q$.
+\begin{equation}
+	Q_{s,a} \leftarrow Q_{s,a} + \alpha \left[ (r - \gamma \max_{a'} Q_{s',a'}) - Q_{s,a}\right]
+\end{equation}
+where:
+\begin{description}
+	\item[$r$] is the reward we actually got
+	\item[$\alpha$] is a weight learning rate placed on the new values ($\in [0,1)$).
+\end{description}
+
+When dealing with very large state spaces, we can use a function approximator from functions of the state to get $Q$ values.  The approximator can be a linear regressor or any other function we've already seen
+
+Assuming a huge state space: e.g. $s \in \mathbb{R}$, approximate $Q$:
+\begin{equation}
+\hat{Q}(s,a) = w_0^{(a)} + \phi(s)^\intercal \mathbf{w}^{(a)}
+\end{equation}
+We're just doing gradient descent on the $Q$'s so we can find the weights to provide a ``good enough" $Q$ function.
 \subsection{Partially Observable MDP}
+
+(Deepmind basically used Deep Learning + Model Free RL to solve their Atari game player).
 
 \subsection{Mixture Models}
 
