@@ -531,7 +531,7 @@ This table summarizes the differences:
 \end{center}
 
 Not knowing the state is much harder than not knowing Transition Model and Reward. Knowing the full history may be 
-necessary so the amount needed to store might grow without bound.
+necessary so the amount needed to store might grow without bound. POMDPs may never converge, unlike RL where the world will eventually be understood.
 
 This is the most realistic case compared to MDP and RL. Observations are always noisy in the real world. ``You don't have a perfect model of your chess opponent. The odometry on a robot isn't perfect. You check the weather before leaving the house -- this is a real life information gathering action."
 
@@ -572,7 +572,9 @@ Finding optimal policy is too hard so approximate the policy.
 
 \emph{Finite Memory Policy} keep only the last $K$ observations to avoid overloading memory. $\mathcal{S} = O \times O \times O \hdots K$ times.
 
-\emph{Finite state controller} use a finite state machine to model the states of the agent based on the observations. Nodes represent the state, with edges as actions.
+\emph{Finite state controller} use a finite state machine to model the states of the agent based on the observations. Nodes represent the state, with edges as actions. A small set of actions can represent the policy. If finite state machine is in a long line (as opposed to a spread out graph), then moving to one end of the line representing being more certain of the state. Being in the middle means the current state is more ambiguous.
+
+Modifying the environment to store gathered information is an example of \href{http://en.wikipedia.org/wiki/Stigmergy}{\emph{stigmergy}}. Natural examples of this include ants leaving pheromones along a path, or even a person leaving ``to-do notes" around. Future observations are modified by the agent's impact on the environment. Intelligent agents working together need to learn how store and share information.
 
 \subsection{Mixture Models}
 
