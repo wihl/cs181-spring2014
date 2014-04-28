@@ -508,9 +508,33 @@ Assuming a huge state space: e.g. $s \in \mathbb{R}$, approximate $Q$:
 \end{equation}
 We're just doing gradient descent on the $Q$'s so we can find the weights to provide a ``good enough" $Q$ function.
 
-(Deepmind basically used Deep Learning + Model Free RL to solve their Atari game player).
+(DeepMind basically used Deep Learning + Model Free RL to solve their Atari game player).
 
 \subsection{Partially Observable MDP}
+
+(See pomdp Class Notes)
+
+POMDP relaxes a different set of assumptions than Reinforcement Learning. (Recall: RL assumes you do not know the model, transition, reward function and dynamics). In POMDP, the current state is unknown (hence the term \emph{Partially Observable}). In POMDP, the transition and reward functions are known. Only noisy observations are provided.
+
+This table sums up the differences:
+\begin{center}
+	\begin{tabular}{| l | l | l | l |}
+	\hline
+	\bf{Item}  			& \bf{MDP} & \bf{RL} & \bf{POMDP} \\ \hline
+	\bf{State}	  		& Known & Known & Unknown \\ \hline
+	\bf{Actions} 			& Known & Known   & Known     \\ \hline
+	\bf{Transition Model} 	& Known & Unknown & Known   \\ \hline
+	\bf{Reward}			& Known & Unknown & Known 	 \\ \hline
+	\bf{Policy}			& Unknown & Unknown & Unknown \\ 
+	\hline
+	\end{tabular}
+\end{center}
+
+Not knowing the state is much harder than not knowing Transition Model and Policy. Knowing the full history may be 
+necessary so the amount needed to store might grow without bound.
+
+This is the most realistic case compared to MDP and RL. Observations are always noisy in the real world.
+
 
 \subsection{Mixture Models}
 
@@ -520,7 +544,7 @@ We're just doing gradient descent on the $Q$'s so we can find the weights to pro
 	\item Lecture 16, April 2, 2014 MDP
 	\item Lecture 17, April 7, 2014 Value Iteration
 	\item Lecture 18, April 9, 2014 Policy Iteration
-	\item Lecture 19 POMDP
+	\item Lecture 19, April 14, 2014 POMDP
 	\item Course notes - MDP
 	\item Course notes - policyiter
 	\item Course notes - RL
