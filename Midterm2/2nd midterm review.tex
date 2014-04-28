@@ -449,7 +449,28 @@ Two types of RL:
 
 \subsubsection{Model Based RL}
 
+$N_{s,a}$: Track how often we took action $a$ in state $s$.
 
+$R_{s,a}^{total}$ : total reward from doing $a$ in state $s$.
+
+$N_{s,a,s'}$: transition model - how often did we ``land" in state $s'$ after taking action $a$ in state $s$.
+
+Build up the model by taking these ratios:
+\begin{align}
+\hat{R}_{s,a} = & \frac{R_{s,a}^{total}} {N_{s,a}} \\
+\hat{P}_{s,s'}^{(a)} = & \frac{N_{s,a,s'}} {N_{s,a}}
+\end{align}
+so we can now plan using Value or Policy Iteration.
+
+To start, a prior could be seeded rather than 0 for the initial counts. That prior would be down weighted as evidence is collected.
+
+Assumes that the reward is always coming from the same \emph{distribution} but not necessarily the same reward every time.
+
+If we didn't explore, then these counts would stay small. Balance greed vs learning.
+
+The most common method of balancing is $\varepsilon$ greedy. Most of the time, the optimal thing is done, but a certain $\varepsilon$ percentage of time exploration is performed. There should be a schedule for $\varepsilon$ so it decreases as everything has been explored.
+
+Building the policies and doing planning is not free (recall $O(N^3)$). So a new policy or value iteration should not necessarily be done every action. Memoize the policy to save recalculating time.
 
 \subsubsection{Model Free RL}
 
