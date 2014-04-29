@@ -21,7 +21,6 @@
 }
 \author{
   David Wihl\\
-  \texttt{davidwihl@gmail.com}
 }
 %\date{}							% Activate to display a given date or no date
 
@@ -106,9 +105,9 @@ $\mathbf{w}$ is orthogonal to vectors in the Decision Boundary. Here's how: pick
 Since $\mathbf{w}$ is orthogonal, we want to maximize it. It is not unit length, but could be, by scaling with a factor of $r$.
 
 The margin is defined where
-\begin{equation}
+\[
 \mathbf{w}^\intercal\phi(x)+b = \pm 1
-\end{equation}
+\]
 
 The origin can be found at $\frac{b}{||w||}$.
 
@@ -137,20 +136,20 @@ r = &\frac{\phi(\mathbf{x})^\intercal\mathbf{w}+b}{||w||} \\
 This makes it easy to calculate how far away a point is from the Decision Boundary. $r$ is strictly not a length because it could be negative. However, we only care about the actual distance to the boundary.
 
 Margin for a datum $n$:
-\begin{equation}
+\[
 margin = t_n\frac{\phi(\mathbf{x})^\intercal\mathbf{w}+b}{||\mathbf{w}||}
-\end{equation}
+\]
 
 This is getting close to a loss function as we can now figure out the worst of these. The Margin for all the training data will be the point closest to the Decision Boundary:
-\begin{equation}
+\[
 min_n\left\{ t_n\frac{\phi(\mathbf{x})^\intercal\mathbf{w}+b}{||\mathbf{w}||} \right\}
-\end{equation}
+\]
 
 As mentioned at the beginning of this section, the Objective Function is 
-\begin{equation}
+\[
 \mathbf{w}^*,b^*=
 \argmax_{w,b} \left\{\min_n(t_n\cdot(\phi(\mathbf{x})^\intercal\mathbf{w}+b))\cdot\frac{1}{||w||} \right\}
-\end{equation}
+\]
 
 but now we can simplify some things. $\mathbf{w}$ are $b$ are scale free (if we multiply by some $\beta$, the max and min will still be the same.)
 
@@ -180,21 +179,20 @@ $\xi_n \leftarrow$ one for each datum.
 \end{description}
 
 We will now add $\xi$ as a constraint to minimize.
-\begin{equation}
+\[
 t_n\cdot(\phi(x_n)^\intercal\mathbf{w}+b) \ge 1 - \xi_n
-\end{equation}
+\]
 New objective function:
 \begin{align}
 \mathbf{w}^*,b^*,\xi^*=& \argmin_{\mathbf{w},b,\mathbf{\xi}}\left\{||w||^2+ c \sum_{n=1}^{N}\xi_n\right\}\\
 \text{s.t.} \:& t_n(\phi(x_n)^\intercal\mathbf{w} + b) \ge 1 -\xi_n\\
-& \xi \ge 0\\
-\forall \:n
+& \xi \ge 0 \quad \forall \:n
 \end{align}
 where $c>0$ is the regularization parameter. A small $C$ means that you don't care much about errors. The sum of $\xi$ is the upper bound on how many can be wrong. If $c = 0$, it becomes the original function.
 Typically,
-\begin{equation}
+\[
 c=\frac{1}{\nu N} \text{, where } 0 < \nu \le 1
-\end{equation}
+\]
 where $\nu$ is the tolerance for percentage willing to get wrong.
 
 \subsection {Duality}
@@ -204,9 +202,9 @@ First a recap of Lagrange Multipliers.
 Lagrange multipliers solve for $f(x,y,z)$ subject to $g(x,y,z) = k$ where $g(\cdot)$ is the \emph{constraint}.
 
 Form:
-\begin{equation}
+\[
 F(x,y,z,\lambda) = f(x,y,z) - \lambda(g(x,y,z)-k)
-\end{equation}
+\]
 then solve for
 $F_x = 0, F_y=0, F_z = 0, F_\lambda = 0$ using partial derivatives which will provide a max or min.
 \end{framed}
@@ -222,25 +220,25 @@ This is still hard to differentiate. This is scalable by $\beta$.
 We want to try a lot of basis functions. Duality allows us to try weights on \emph{data}, rather than basis functions. This allows an infinite number of dimensions. 
 
 Solution: use duality. Associate a scalar with each constraint $\mathbf{\alpha} = [\alpha_1,\alpha_2,...,\alpha_N]$, each of which must be non-negative. Each constraint has it's own $\alpha$  which serves as the Lagrange multiplier for each constraint.
-\begin{equation}
+\[
 \mathcal{L}(\mathbf{w},b,\mathbf{\alpha}) = \frac{1}{2}||w||^2-\sum_{n=1}^N \alpha_n(t_n(\mathbf{w}^\intercal\phi(\mathbf{x})+b ) -1)
-\end{equation}
+\]
 The summation term will be negative if the constraint is violated. By throwing a minus sign in front and then maximizing $\alpha$ will make the term really large (maybe $\infty$). This will make $\min()$ unhappy - causing a huge value in the loss function. It is a math trick to show a constraint has been violated.
-\begin{equation}
+\[
 \mathbf{w}^*,b^*= \argmin_{\mathbf{w},b} \max_{\alpha \ge 0} \mathcal{L}(\mathbf{w},b,\mathbf{\alpha})
-\end{equation}
+\]
 The problem is now restated as a function of $\alpha$, not a $\mathbf{w},b$ problem. This is duality.
 
 \emph{Weak duality}: the solution to an $\alpha$ problem makes the lower bounds of the w,b problem. Max $\alpha$ = min w,b. See formula 20 in maxmargin notes.
 
 Strong duality: min and max can be switched without changing the answer. See formula 21 in maxmargin notes.
-\begin{equation}
+\[
 \frac{\partial L}{\partial \mathbf{w}} = 0 
-\end{equation}
+\]
 
-\begin{equation}
+\[
 \frac{\partial L}{\partial b} = 0 
-\end{equation}
+\]
 
 $\alpha$'s are sparse so a lot of these terms will disappear. The remaining terms will provide the values as support vectors. Rewriting the Lagrangian just in terms of alpha can be found in formula 28 in maxmargin notes.
 
@@ -255,16 +253,16 @@ The only time we need to compute something J dimensional is on the inner product
 
 ``A kernel function is a scalar product on two vectors mapped by basis functions into a feature space. In general, we use kernels to map into higher dimensional feature spaces, using them to circumvent costly computations in high dimension spaces."
 
-\begin{equation}
+\[
 K(\mathbf{x},\mathbf{x}') = \phi^\intercal(\mathbf{x})\phi(\mathbf{x}')
-\end{equation}
+\]
 
 Kernel functions can be generalized to any distance measure. The larger K means the distance is closer. This can be applied to text, proteins, etc. (see Alpaydin example).
 
 Exponentiate the negative squared distance of two dissimilar things, e.g.
-\begin{equation}
-K(x,z) = exp\left\{ -\frac{1}{2} ||x - z||^2 \right\}
-\end{equation}
+\[
+K(x,z) = \text{exp}\left\{ -\frac{1}{2} ||x - z||^2 \right\}
+\]
 
 Don't engineer features - engineer distances. Feature space can be infinite (another way of saying this is that distances can be continuous as in a Gaussian distribution). Don't worry about features - worry about distance between things. Then create a kernel and use distance to discriminate.
 
@@ -307,15 +305,15 @@ States: $\mathcal{S} = \{1,2,3,...N\}$
 Actions: $\mathcal{A} = \{1,2,3,...M\}$ which move us from state to state over a probability distribution. (You don't always land where you expected to go.). This noisy movement is defined by:
 
 Transition Model $p(s'\mid s,a) \leftarrow$  PMF, indexed by state, action. These are a collection of $M$ stochastic matrices. Each matrix is $N \times N$, non-negative and all rows sum to 1. So each matrix $\mathbf{P}_{s,s'}^{(a)}$ where 
-\begin{equation}
-	P_{s,s'}^{(a)} \ge 0, \sum_{s'}P_{s,s'}^{(a)} = 1
-\end{equation}
+\[
+	P_{s,s'}^{(a)} \ge 0, \: \sum_{s'}P_{s,s'}^{(a)} = 1
+\]
 
 Reward Function: $\mathcal{R}: \mathcal{S} \times \mathcal{A} \rightarrow \mathbb{R}$ Could be expressed as a $N \times M$ matrix, $\mathbf{\mathcal{R}}$
 
 Policy: $\pi_t: \mathcal{S} \rightarrow \mathcal{A}$. \textbf{Finding the right policy is the objective here.} Array of length of $N$ containing integers between 1 and $M$. $\pi_s \in \{1,2,3,...M\}$.  (Visualize as a deck of cards, where each card is an action containing a matrix. Each row of the matrix is ``where you are" and each column is ``where you are going", which sends you off to the next action / card).
 
-Similarly, the Value function $V(s)$ (see below) could be expressed as a vector $\mathbf{\mathcal{V}}_{(s)} \in \mathbb{R}^N$. In big state spaces (like a chess game), the value function has to be approximated. The approximation could be generated by something like a neural net to compress the current information about the state and next steps. (A chess game is not a fully observable Markov model).
+Similarly, the Value function $V(s)$ (see below) could be expressed as a vector $V_{(s)} \in \mathbb{R}^N$. In big state spaces (like a chess game), the value function has to be approximated. The approximation could be generated by something like a neural net to compress the current information about the state and next steps. (A chess game is not a fully observable Markov model).
 
 Assumptions (for now -- these assumptions will be relaxed later):
 \begin{enumerate}
@@ -410,14 +408,14 @@ r_s^\pi = & R_{s,\pi_s}  \text{or as a vector:  } \\
 \mathbf{r}^\pi \in & \mathbb{R}^N
 \end{align}
 Likewise, the policy could applied as an index into the transition matrix:
-\begin{equation}
+\[
 \mathbf{P}^\pi = \begin{bmatrix}
 P_{1,1}^{(\pi_1)}  & P_{1,2}^{(\pi_1)} & \ldots & P_{1,N}^{(\pi_1)}\\[0.3em]
 P_{2,1}^{(\pi_2)}  & P_{2,2}^{(\pi_2)} & \ldots & P_{2,N}^{(\pi_2)}\\[0.3em]
 \vdots                   &                            & \ddots \\
 P_{N,1}^{(\pi_N)}  & P_{N,2}^{(\pi_N)} & \ldots & P_{N,N}^{(\pi_N)}\\[0.3em]
 \end{bmatrix}
-\end{equation}
+\]
 
 To compute a new value iteration:
 \begin{align}
@@ -491,9 +489,9 @@ Q_{s,a} = &R_{s,a} + \gamma \sum_{s'} p(s' \mid s,a) \max_{a'} Q_{s',a'}\\
 \end{align}
 
 As the world gives us updated sample rewards and actions, they are used to update $Q$.
-\begin{equation}
+\[
 	Q_{s,a} \leftarrow Q_{s,a} + \alpha \left[ (r - \gamma \max_{a'} Q_{s',a'}) - Q_{s,a}\right]
-\end{equation}
+\]
 where:
 \begin{description}
 	\item[$r$] is the reward we actually got
@@ -503,9 +501,9 @@ where:
 When dealing with very large state spaces, we can use a function approximator from functions of the state to get $Q$ values.  The approximator can be a linear regressor or any other function we've already seen
 
 Assuming a huge state space: e.g. $s \in \mathbb{R}$, approximate $Q$:
-\begin{equation}
+\[
 \hat{Q}(s,a) = w_0^{(a)} + \phi(s)^\intercal \mathbf{w}^{(a)}
-\end{equation}
+\]
 We're just doing gradient descent on the $Q$'s so we can find the weights to provide a ``good enough" $Q$ function.
 
 (DeepMind basically used Deep Learning + Model Free RL to solve their Atari game player).
@@ -607,9 +605,9 @@ Responsibility vectors, one hot coded, all zeros except for the cluster it belon
 $\{\mathbf{r}_n\}_{n=1}^N\text{,where }  r_n = [ 0\: 0\: 0\: 0\: 0\: 1 \hdots 0]^\intercal$ 
 
 Loss function, or distortion measure: (how good are each of the cluster centers at reconstructing the data they belong to) 
-\begin{equation}
+\[
 \mathbf{J}(\{\mu_k\},\{ \mathbf{r}_n\}) = \sum_{n=1}^N \sum_{k=1}^K r_{nk} ||\mathbf{x}_n - \mu_k||_2^2 
-\end{equation}
+\]
 use $r_nk$ to select the slice we care about and penalize the data that is far from the cluster center.
 
 Recall: Lloyd's algorithm is a coordinate descent in the $r_{nk}$'s and the $\mu$'s.
@@ -632,14 +630,14 @@ A datum belongs to only one cluster even if ambiguous. It can be made more preci
 \subsubsection{Soft K-means}
 
 Instead of one-hot coding, make the responsibility vector ``soft" $r$ sum to 1. Each element will be a proportion of belonging to that cluster.
-\begin{equation}
+\[
 r_{nk} \ge 0, \sum_{k=1}^K r_{nk} = 1
-\end{equation}
+\]
 Need an update to Lloyd's algorithm to set $r_{nk}$. If distance is close, $r_{nk}$ will be close to 1. As distance is bigger, $r_{nk}$ will be smaller:
-\begin{equation}
+\[
 r_{nk} = \frac{\text{exp} \left\{ -\frac{\beta}{2} ||\mathbf{x}_n - \mu_k||_2^2 \right\}}
 			 {\sum_{k'=1}^K\text{exp} \left\{ -\frac{\beta}{2} ||\mathbf{x}_n - \mu_k||_2^2 \right\} }
-\end{equation}
+\]
 The updates of $\mu_k$ stay the same.
 
 \subsubsection{Mixture of Gaussians}
@@ -660,13 +658,13 @@ K mixture components: $\{ \theta_k \}_{k=1}^K$
 K mixture weights: $\{ \pi_k \}_{k=1}^K, \pi_k \ge 0, \sum_{k=1}^K \pi_k = 1$
 
 Resulting distribution:
-\begin{equation}
-p(x \mid \{\theta_k, \pi_k\}_{k=1}^K) = \sum{k=1}^K \pi_k p(x \mid \theta_k)
-\end{equation}
+\[
+p(x \mid \{\theta_k, \pi_k\}_{k=1}^K) = \sum_{k=1}^K \pi_k p(x \mid \theta_k)
+\]
 
 Any continuous density could be modeled like this to an arbitrarily complex level.
 
-\subsubsection{Generative Latent Variable Model}
+\subsubsection{Generative Latent Variable Models}
 
 To generate an $x$ from a mixture model
 \begin{enumerate}
@@ -676,7 +674,7 @@ To generate an $x$ from a mixture model
 
 Can used to discover a \emph{latent variable}  or hidden structure in data. Unsupervised learning could considered like supervised learning without the labels. A lot of models, like PCA and Factor Analysis, could be based on a generative underlying dynamic. 
 
-Start with low dimensional data, and then find the underlying higher dimensional data, e.g. topic modeling, NLP (where a topic is a distribution over words).  Recommender systems like Probabilistic Matrix Factorization, is also related. Applicable to Social and Network Analysis. ``Map what you can see to a model of what you can't see in order to understand the dynamics."
+Start with low dimensional data, and then find the underlying higher dimensional data, e.g. topic modeling, NLP (where a topic is a distribution over words).  Recommender systems like Probabilistic Matrix Factorization, is also related. Applicable to Social and Network Analysis or digital humanities. ``Map what you can see to a model of what you can't see in order to understand the dynamics."
 
 \href{http://en.wikipedia.org/wiki/Latent_Dirichlet_allocation}{Latent Dirichlet Allocation} (LDA) helps find structure in corpora, images, etc.
 
