@@ -750,6 +750,13 @@ So use Expectation Maximization instead of differentiation.
 
 \subsubsection{Introducing Latent Variables}
 
+Goals:
+\begin{enumerate}
+	\item Be able to cluster the data, ie. infer $z_n$ for each $x_n$
+	\item Learn the model parameters $\pi, \{\mu_k, \Sigma_k\}$
+\end{enumerate}
+
+
 Introduce a latent variable belonging to the n\textsuperscript{th} data point that is one-hot coded, drawn from the $\pi$ distribution. This is effectively the outcome of a discrete distribution.
 \[
 \mathbf{z}_n = [ 0\: 0\: 0\: 0\: 0\: 1 \hdots 0]^\intercal 
@@ -776,6 +783,24 @@ p(\mathbf{x}, \mathbf{z} \mid \{ \pi_k, \mu_k, \Sigma_k \}) & =
 
 \subsubsection{Complete Data Log Likelihood}
 
+Let's assume we know the $z$'s. Using Bayes Rule, 
+\[
+p(z_{nk} = 1 \mid x_n, \theta) = 
+\frac{p(z_{nk} = 1) p(x_n \mid z_{nk} = 1, \Theta)}
+{ \displaystyle{ \sum_{k'} p(z_{nk} = 1) p(x_n \mid z_{nk} = 1, \Theta)}}
+\]
+which yields the ratio of which PMF most likely explains $x$.
+
+Steps for any EM:
+\begin{enumerate}
+	\item Start with a random $\Theta^0$
+	\item E-Step $p(z \mid x, \Theta^{\text{old}})$ ``If we had $z$, find the likelihood
+	\item M-Step
+\end{enumerate}
+\[
+	\Theta^{\text{new}} = \argmax_{\Theta^{\text{old}}} \sum p(z \mid x, \Theta^{\text{old}}) \ln p(x,z \mid \Theta^{\text{old}})
+\]
+Take derivative, set $=0$, then solve.
 
 \subsection{Hidden Markov Models}
 
@@ -788,6 +813,7 @@ p(\mathbf{x}, \mathbf{z} \mid \{ \pi_k, \mu_k, \Sigma_k \}) & =
 	\item Bishop 9.3
 	\item Bishop 13.0-13.2
 	\item Section 11
+	\item Midterm 2 Review
 	\item \href{http://cs229.stanford.edu/notes/cs229-notes7b.pdf}{CS229 Mixture of Gaussians}
 	\item \href{http://cs229.stanford.edu/notes/cs229-notes8.pdf}{CS229 EM Notes}
 \end{enumerate}
