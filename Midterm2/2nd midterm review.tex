@@ -638,7 +638,7 @@ Need an update to Lloyd's algorithm to set $r_{nk}$. If distance is close, $r_{n
 r_{nk} = \frac{\text{exp} \left\{ -\frac{\beta}{2} ||\mathbf{x}_n - \mu_k||_2^2 \right\}}
 			 {\sum_{k'=1}^K\text{exp} \left\{ -\frac{\beta}{2} ||\mathbf{x}_n - \mu_k||_2^2 \right\} }
 \]
-The updates of $\mu_k$ stay the same.
+The updates of $\mu_k$ stay the same. $\beta$ is a parameter to define the ``softness" or ``hardness". If $\beta$ is large, a single term will dominate. If $\beta$ is small, the distribution will be flatter.
 
 \subsubsection{Mixture of Gaussians}
 
@@ -678,13 +678,58 @@ Start with low dimensional data, and then find the underlying higher dimensional
 
 \href{http://en.wikipedia.org/wiki/Latent_Dirichlet_allocation}{Latent Dirichlet Allocation} (LDA) helps find structure in corpora, images, etc.
 
+\subsubsection{Expectation Maximization Intro}
+
+We'll use $\theta$ as above consisting of $K$ means and covariances: $\{\boldsymbol{\mu}_k,\mathbf{\Sigma}_k\}_{k=1}^K$
+
+Mixture Weights: $\pi_k$
+
+The density will be a weighted sum of these Gaussian models, known as a \emph{Gaussian Mixture Model}:
+\[
+p(\mathbf{x} \mid \pi, \{\mu_k, \Sigma_k\}) = \sum_{k=1}^K \pi_k\mathcal{N}(\mathbf{x} \mid \mu_k, \Sigma_k)
+\]
+
+Maximum Likelihood is the best general way of fitting data and finding $\mu$ and $\Sigma$.
+
+\[
+\ln p(\{\mathbf{x}_n\} \mid \pi, \{ \mu_k, \Sigma_k\} = \sum_{n=1}^N \ln \sum_{k=1}^K \pi_k \mathcal{N}(\mathbf{x}_n\mid \mu_k, \Sigma_k)
+\]
+which is a mess... due to $\ln \sum$. Taking the gradient descent would be a problem because the $\pi$'s are constrained (summed to 1) and $\Sigma$ must be symmetric positive definite. Instead use \emph{Expectation Maximization}.
+
+Expectation Maximization (EM) is a two step process that creates and revises estimates of 1) latent variables explicitly (``E-step") then  2) improves parameters (``M-step").
+
+\subsubsection{Simplest Possible Gaussian Mixture Model}
+
+Assumptions:
+\begin{description}
+	\item[Known $\pi_k$] = $\frac{1}{k}$ which is uniform \\
+	\item[Known $\mathbf{\Sigma}$] = $\frac{1}{\beta} \mathbb{I}_D$ (also uniform)
+	\item[Unknown] $\{ \mu_k \}_{k=1}^K$
+\end{description}
+
+Log likelihood:
+\[
+\ln p(\{\mathbf{x}_n\} \mid \{ \mu_k \}_{k=1}^K) = \sum_{n=1}^N \ln \sum_{k=1}^K \frac{1}{k} \mathcal{N}(\mathbf{x}_n\mid \mu_k, \frac{1}{\beta}\mathbb{I}_D)
+\]
+Same variance, isotropic (spherical) Gaussian. 
+
+(For the derivation, see lecture 20, 1:12)
+
+After gradient descent, the resulting softened Lloyd's Algorithm is:
+\[
+\mu_k = \frac{\displaystyle{\sum_n r_{nk}\mathbf{x}_n}} {\displaystyle{\sum_n r_{nk}}}
+\]
+
+
+
 \subsection{Hidden Markov Models}
 
 \subsection{Sources}
 
 \begin{enumerate}
 	\item Lecture 20 Mixture Models
-	\item Lecture 21 Hidden Markov Models
+	\item Lecture 21 Expectation Maximization
+	\item Lecture 22 Hidden Markov Models
 	\item Bishop 9.3
 	\item Bishop 13.0-13.2
 	\item Section 11
