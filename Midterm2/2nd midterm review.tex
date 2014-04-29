@@ -664,6 +664,22 @@ Resulting distribution:
 p(x \mid \{\theta_k, \pi_k\}_{k=1}^K) = \sum{k=1}^K \pi_k p(x \mid \theta_k)
 \end{equation}
 
+Any continuous density could be modeled like this to an arbitrarily complex level.
+
+\subsubsection{Generative Latent Variable Model}
+
+To generate an $x$ from a mixture model
+\begin{enumerate}
+	\item Pick a $k$ from $\pi$ (decide what member we will belong to)
+	\item Pick one $x$ from the k\textsuperscript{th} component density, $x \sim p(x' \mid \theta_k)$
+\end{enumerate}
+
+Can used to discover a \emph{latent variable}  or hidden structure in data. Unsupervised learning could considered like supervised learning without the labels. A lot of models, like PCA and Factor Analysis, could be based on a generative underlying dynamic. 
+
+Start with low dimensional data, and then find the underlying higher dimensional data, e.g. topic modeling, NLP (where a topic is a distribution over words).  Recommender systems like Probabilistic Matrix Factorization, is also related. Applicable to Social and Network Analysis. ``Map what you can see to a model of what you can't see in order to understand the dynamics."
+
+\href{http://en.wikipedia.org/wiki/Latent_Dirichlet_allocation}{Latent Dirichlet Allocation} (LDA) helps find structure in corpora, images, etc.
+
 \subsection{Hidden Markov Models}
 
 \subsection{Sources}
