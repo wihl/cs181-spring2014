@@ -724,7 +724,7 @@ After gradient descent, the resulting softened Lloyd's Algorithm will use:
 
 ``EM is a core algorithm of probabilistic modeling. Perform maximum likelihood learning in probabilistic models that have latent variables. [Effectively EM is] coordinate ascent of the likelihood while introducing an approximation that makes things tractable and easy."
 
-Recall: Most EM uses Gaussian Mixture Models, which consist of
+Recall: Most EM uses Gaussian Mixture Models (GMM), which consist of
 
 K mixture components: $\{ \theta_k \}_{k=1}^K$
 
@@ -732,8 +732,49 @@ K mixture weights: $\{ \pi_k \}_{k=1}^K, \pi_k \ge 0, \sum_{k=1}^K \pi_k = 1$
 
 (See Lecture 21, 8:00 for a diagram)
 
+Model-based clustering using GMM results in different weights and shapes that can overlap. Unlike simple K-means, GMM deals with ambiguity.
 
+It is possible to take PMF and differentiate.
 
+(Recall
+Resulting distribution:
+$
+p(x \mid \{\pi_k, \mu_k, \Sigma_k\}) = \sum_{k=1}^K \pi_k \mathcal{N}(\mathbf{x}  \mid \mu_k, \Sigma_k), \mathbf{x} \in \mathbb{R}^D \:\:
+$)
+
+If $D$ is big, densities will be small, which may cause underflow during calculation. Using logs is preferable. (Recall constraints on $\pi$ and $\Sigma$).
+
+So use Expectation Maximization instead of differentiation.
+
+``One interpretation of GMM is effectively extracting a latent class identity from a discrete distribution valued by $\pi$. Conditioned on that value, we are going to take one of the $K$ distributions, and generate the data $x$ from that class specific identity. This is a two-step procedure." (Ref: Lecture 21, 16:00)
+
+\subsubsection{Introducing Latent Variables}
+
+Introduce a latent variable belonging to the n\textsuperscript{th} data point that is one-hot coded, drawn from the $\pi$ distribution. This is effectively the outcome of a discrete distribution.
+\[
+\mathbf{z}_n = [ 0\: 0\: 0\: 0\: 0\: 1 \hdots 0]^\intercal 
+\]
+
+Now, adding $\mathbf{z}$ to the joint distribution and factorize using the product rule of probability:
+\[
+p(\mathbf{x}, \mathbf{z} \mid \{ \pi_k, \mu_k, \Sigma_k \}) = 
+	\underbrace{p(\mathbf{z} \mid \boldsymbol{\pi})}_\text{discrete dist.} p(\mathbf{x} \mid \mathbf{z}, \{\mu_k, \Sigma_k\})
+\]
+So use an indexing trick,
+\begin{align}
+p(\mathbf{z} \mid \boldsymbol{\pi}) & = \prod_{k=1}^K \pi_k^{\mathbf{z}_k}\\
+& =\prod_{k=1}^K(\mathcal{N}(\mathbf{x}\mid \mu_k,\Sigma_k))^{\mathbf{z}_k}
+\end{align}
+to select the one-hot coded term. Then apply it to select the Gaussian.
+\begin{align}
+p(\mathbf{x}, \mathbf{z} \mid \{ \pi_k, \mu_k, \Sigma_k \}) & = 
+	p(\mathbf{z} \mid \boldsymbol{\pi}) \:p(\mathbf{x} \mid \mathbf{z}, \{\mu_k, \Sigma_k\}) \\
+	&= \prod_{k=1}^K \left[ \pi_k  \mathcal{N}(\mathbf{x}\mid \mu_k,\Sigma_k) \right]^{\mathbf{z}_k} 
+\end{align}
+
+(all of the Gaussians don't matter except 1).
+
+\subsubsection{Complete Data Log Likelihood}
 
 
 \subsection{Hidden Markov Models}
@@ -742,7 +783,7 @@ K mixture weights: $\{ \pi_k \}_{k=1}^K, \pi_k \ge 0, \sum_{k=1}^K \pi_k = 1$
 
 \begin{enumerate}
 	\item Lecture 20 April 16, 2014 Mixture Models
-	\item Lecture 21 Expectation Maximization
+	\item Lecture 21 April 21, 2014 Expectation Maximization
 	\item Lecture 22 Hidden Markov Models
 	\item Bishop 9.3
 	\item Bishop 13.0-13.2
