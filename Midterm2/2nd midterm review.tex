@@ -576,8 +576,6 @@ Finding optimal policy is too hard so approximate the policy.
 
 Modifying the environment to store gathered information is an example of \href{http://en.wikipedia.org/wiki/Stigmergy}{\emph{stigmergy}}. Natural examples of this include ants leaving pheromones along a path, or even a person leaving ``to-do notes" around. Future observations are modified by the agent's impact on the environment. Intelligent agents working together need to learn how store and share information.
 
-\subsection{Mixture Models}
-
 \subsection{Sources}
 
 \begin{enumerate}
@@ -596,6 +594,75 @@ Modifying the environment to store gathered information is an example of \href{h
 \end{enumerate}
 
 \section{Expectation Maximization}
+
+\subsection{Mixture Models}
+
+Mixture models is a latent variable model. This is revisiting clustering. Recall K-means clustering. Lloyd's algorithm is a special case of max likelihood learning in a Gaussian mixture model.
+
+Data: $\{x_n\}_{n=1}^N$ no labels, just features $x_n \in \mathbb{R}^D$
+
+$K$ Clusters: a set of mean vectors $\{\mathbf{\mu}_k\}_{k=1}^K \text{, where } \mathbf{\mu}_k \in \mathbb{R}^D$. Cluster centers so they need to look like the data.
+
+Responsibility vectors, one hot coded, all zeros except for the cluster it belongs to.\\
+$\{\mathbf{r}_n\}_{n=1}^N\text{,where }  r_n = [ 0\: 0\: 0\: 0\: 0\: 1 \hdots 0]^\intercal$ 
+
+Loss function, or distortion measure: (how good are each of the cluster centers at reconstructing the data they belong to) 
+\begin{equation}
+\mathbf{J}(\{\mu_k\},\{ \mathbf{r}_n\}) = \sum_{n=1}^N \sum_{k=1}^K r_{nk} ||\mathbf{x}_n - \mu_k||_2^2 
+\end{equation}
+use $r_nk$ to select the slice we care about and penalize the data that is far from the cluster center.
+
+Recall: Lloyd's algorithm is a coordinate descent in the $r_{nk}$'s and the $\mu$'s.
+
+Update $r_{nk}$:
+\[
+r_{nk} =
+	\begin{cases}
+	  	1, &\text{if  }k = \argmin_{k'} ||\mathbf{x}_n - \mu_k||_2^2 \\
+		0, &\text{otherwise}
+	\end{cases}
+\]
+Update $\mu_k$:
+\[
+\mu_k = \frac{\sum_{n=1}^N r_{nk}\mathbf{x}_n}{\sum_{n=1}^N r_{nk}}
+\]
+
+A datum belongs to only one cluster even if ambiguous. It can be made more precise by a \emph{soft K-means} clustering.
+
+\subsubsection{Soft K-means}
+
+Instead of one-hot coding, make the responsibility vector ``soft" $r$ sum to 1. Each element will be a proportion of belonging to that cluster.
+\begin{equation}
+r_{nk} \ge 0, \sum_{k=1}^K r_{nk} = 1
+\end{equation}
+Need an update to Lloyd's algorithm to set $r_{nk}$. If distance is close, $r_{nk}$ will be close to 1. As distance is bigger, $r_{nk}$ will be smaller:
+\begin{equation}
+r_{nk} = \frac{\text{exp} \left\{ -\frac{\beta}{2} ||\mathbf{x}_n - \mu_k||_2^2 \right\}}
+			 {\sum_{k'=1}^K\text{exp} \left\{ -\frac{\beta}{2} ||\mathbf{x}_n - \mu_k||_2^2 \right\} }
+\end{equation}
+The updates of $\mu_k$ stay the same.
+
+\subsubsection{Mixture of Gaussians}
+
+(See Bishop 9.2)
+
+The underlying objective function for soft K-means. It permits a ``fancier" distribution from a set of simpler distributions. Created a weighted sum of Gaussians.
+\begin{align}
+&\pi_1 + \pi_2 + \pi_3 = 1\\
+&p(x) = \pi_1 \mathcal{N}(\mu_1,\sigma_1^2) + \pi_2 \mathcal{N}(\mu_2,\sigma_2^2) + \pi_3 \mathcal{N}(\mu_3,\sigma_3^2)
+\end{align}
+Could be more complicated than Gaussians, like dice rolls, text, Poisson distribution...provides modularity.
+
+More generally, there is a set of component distributions (or densities or PMF's),  \mbox{$p(x \mid \theta)$}
+
+K mixture components: $\{ \theta_k \}_{k=1}^K$
+
+K mixture weights: $\{ \pi_k \}_{k=1}^K, \pi_k \ge 0, \sum_{k=1}^K \pi_k = 1$
+
+Resulting distribution:
+\begin{equation}
+p(x \mid \{\theta_k, \pi_k\}_{k=1}^K) = \sum{k=1}^K \pi_k p(x \mid \theta_k)
+\end{equation}
 
 \subsection{Hidden Markov Models}
 
