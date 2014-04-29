@@ -137,18 +137,18 @@ This makes it easy to calculate how far away a point is from the Decision Bounda
 
 Margin for a datum $n$:
 \[
-margin = t_n\frac{\phi(\mathbf{x})^\intercal\mathbf{w}+b}{||\mathbf{w}||}
+margin = t_n\frac{w^\intercal\boldsymbol{\phi}(x_n)+b}{||w||}
 \]
 
 This is getting close to a loss function as we can now figure out the worst of these. The Margin for all the training data will be the point closest to the Decision Boundary:
 \[
-min_n\left\{ t_n\frac{\phi(\mathbf{x})^\intercal\mathbf{w}+b}{||\mathbf{w}||} \right\}
+min_n\left\{   t_n\frac{w^\intercal\boldsymbol{\phi}(x_n)+b}{||w||} \right\}
 \]
 
 As mentioned at the beginning of this section, the Objective Function is 
 \[
 \mathbf{w}^*,b^*=
-\argmax_{w,b} \left\{\min_n(t_n\cdot(\phi(\mathbf{x})^\intercal\mathbf{w}+b))\cdot\frac{1}{||w||} \right\}
+\argmax_{w,b} \left\{\frac{1}{||w||} \cdot \min_n \left[t_n (\mathbf{w}^\intercal \boldsymbol{\phi}(\mathbf{x_n})+b)\right] \right\}
 \]
 
 but now we can simplify some things. $\mathbf{w}$ are $b$ are scale free (if we multiply by some $\beta$, the max and min will still be the same.)
@@ -161,12 +161,12 @@ subject to
 \begin{align}
 t_n\cdot(\phi(x_n)^\intercal\mathbf{w}+b) \ge 1 \:\forall\: n
 \end{align}
-This can be made even easier. Finding the max of $\frac{1}{||w||}$ is like finding the min of $||w||^2$, so
+This can be made even easier. Finding the max of $\frac{1}{||w||}$ is like finding the min of $||w||^2$ because $||\mathbf{w}|| \ge 0$, so
 \begin{align}
-\mathbf{w}^*,b^*=& \argmin_{\mathbf{w},b}||w||^2 \\
-\text{s.t.} \:& t_n(\phi(x_n)^\intercal\mathbf{w} + b) \ge 1
+\mathbf{w}^*,b^*=& \argmin_{\mathbf{w},b} \left\{\frac{1}{2}||w||_2^2 \right\}\\
+\text{s.t.} \:& t_n(\mathbf{w}^\intercal \boldsymbol{\phi}(\mathbf{x}_n) + b) \ge 1
 \end{align}
-so this reduces to just a quadratic program (QP) with linear constraints that could be solved by any number of commercial packages and produces a global minimum.
+so this reduces to just a quadratic program (QP) with linear constraints that could be solved by any number of commercial packages and produces a global minimum. Note that the closest point to the margin will have a scaled distance = $\pm 1$ (``the tightest").
 
 \subsection{Slack Variables}
 If the data is not strictly linearly separable, it can mitigated by slack variables.
@@ -412,7 +412,7 @@ Likewise, the policy could applied as an index into the transition matrix:
 \mathbf{P}^\pi = \begin{bmatrix}
 P_{1,1}^{(\pi_1)}  & P_{1,2}^{(\pi_1)} & \ldots & P_{1,N}^{(\pi_1)}\\[0.3em]
 P_{2,1}^{(\pi_2)}  & P_{2,2}^{(\pi_2)} & \ldots & P_{2,N}^{(\pi_2)}\\[0.3em]
-\vdots                   &                            & \ddots \\
+\vdots                   &          \vdots        & \ddots & \vdots \\
 P_{N,1}^{(\pi_N)}  & P_{N,2}^{(\pi_N)} & \ldots & P_{N,N}^{(\pi_N)}\\[0.3em]
 \end{bmatrix}
 \]
@@ -715,10 +715,24 @@ Same variance, isotropic (spherical) Gaussian.
 
 (For the derivation, see lecture 20, 1:12)
 
-After gradient descent, the resulting softened Lloyd's Algorithm is:
+After gradient descent, the resulting softened Lloyd's Algorithm will use:
 \[
 \mu_k = \frac{\displaystyle{\sum_n r_{nk}\mathbf{x}_n}} {\displaystyle{\sum_n r_{nk}}}
 \]
+
+\subsection{Expectation Maximization in Depth}
+
+``EM is a core algorithm of probabilistic modeling. Perform maximum likelihood learning in probabilistic models that have latent variables. [Effectively EM is] coordinate ascent of the likelihood while introducing an approximation that makes things tractable and easy."
+
+Recall: Most EM uses Gaussian Mixture Models, which consist of
+
+K mixture components: $\{ \theta_k \}_{k=1}^K$
+
+K mixture weights: $\{ \pi_k \}_{k=1}^K, \pi_k \ge 0, \sum_{k=1}^K \pi_k = 1$
+
+(See Lecture 21, 8:00 for a diagram)
+
+
 
 
 
@@ -727,7 +741,7 @@ After gradient descent, the resulting softened Lloyd's Algorithm is:
 \subsection{Sources}
 
 \begin{enumerate}
-	\item Lecture 20 Mixture Models
+	\item Lecture 20 April 16, 2014 Mixture Models
 	\item Lecture 21 Expectation Maximization
 	\item Lecture 22 Hidden Markov Models
 	\item Bishop 9.3
