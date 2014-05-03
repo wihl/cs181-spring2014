@@ -7,6 +7,7 @@ import csv
 #import pickle object storing the classificaton model for ghosts
 import pickle
 clf = pickle.load( open( "ghostpredict.p", "rb" ) )
+kmeans = pickle.load( open( "capsulepredict.p", "rb" ) )
 
 class BaseStudentAgent(object):
     """Superclass of agents students will write"""
@@ -69,12 +70,20 @@ class RLatedAgent(BaseStudentAgent):
         ghost_dists = np.array([self.distancer.getDistance(pacmanPosition,gs.getPosition()) 
                               for gs in ghost_states])
 
-	print ghost_states
+    	#fine the best capsule based on the highest score (e.g. maximum of loss function, using kmeans)
+        capsuledata=observedState.getCapsuleData()
+        bestcapsule=capsuledata[0][0]
+        capsulescores=[]
+        for element in capsuledata:
+            #print element[1]
+            capsulescores.append(kmeans.score(element[1]))
+        bestcapsule=capsulescores.index(max(capsulescores))
+        #this is the coordinates of the best capsule (e.g. most likely to be good)
+        bestcapsulecoords= capsuledata[bestcapsule][0]
+
         # find the closest ghost by sorting the distances
         closest_idx = sorted(zip(range(len(ghost_states)),ghost_dists), key=lambda t: t[1])[0][0]
 
-
-	# store the ghost states AND previous score to the ghost_list
 
         # take the action that minimizes distance to the current closest ghost
         best_action = Directions.STOP
