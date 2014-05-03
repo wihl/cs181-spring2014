@@ -42,7 +42,14 @@ We also used logistic regression classification, and achieved somewhat better re
 
 We elected to use the logistic regression classification results to predict which class each ghost is in during runtime.
 
-\section*{Classification of Placebos}
+\section*{Classification of Capsules and Placebos}
+We want to determine which of the pills are helpful capsules and which are placebos. To do this, we first plotted the helpful capsules which we collected using the '-d' data collection function.
+
+Here we determined that pill feature values were very much clustered into three distinct clusters as shown below.
+<show graph>
+
+This suggested that we could either fit Gaussians to these points as part of a generative approach, or apply something like K-means to find the clusters.
+
 \section*{Reinforcement Learning}
 \section*{Conclusion}
 
