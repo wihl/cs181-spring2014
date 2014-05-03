@@ -45,10 +45,16 @@ We elected to use the logistic regression classification results to predict whic
 \section*{Classification of Capsules and Placebos}
 We want to determine which of the pills are helpful capsules and which are placebos. To do this, we first plotted the helpful capsules which we collected using the '-d' data collection function.
 
-Here we determined that pill feature values were very much clustered into three distinct clusters as shown below.
+Here we determined that capsule feature values were very much clustered into three distinct clusters as shown below.
 <show graph>
 
-This suggested that we could either fit Gaussians to these points as part of a generative approach, or apply something like K-means to find the clusters.
+This suggested that we could either fit Gaussians to these points as part of a generative approach, or apply something like K-means to find the clusters. Because the data were in three dimensions, we opted to use k-means for clustering, and intiated the model with kmeans++.
+
+Because the threee clusters were all positively identified, simply assigning a new value at run-time (for a capsule which may be a 'good' or 'placebo'), we instead used the 'score' attribute to evaluate the distance from the centroid the data point would have been assigned to. We are agnostic to which centroid the capsule would be assigned to but we are very sensitive to the score assigned (e.g. the distance from the centroid assignment), with larger distances being worse.
+
+From our positive training data, we found values of 0 to -118 as the 'good' range of objective function values. Any value <-118 would likely be a placebo capsule.
+
+So at runtime we score each capsule based on its 3x1 feature vector and we consider the 'best' capsule the one with the maximum objective function value when scored.
 
 \section*{Reinforcement Learning}
 \section*{Conclusion}
