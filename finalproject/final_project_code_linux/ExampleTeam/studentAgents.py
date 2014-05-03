@@ -30,7 +30,7 @@ class BaseStudentAgent(object):
 
 ## Below is the class students need to rename and modify
 
-class ExampleTeamAgent(BaseStudentAgent):
+class RLatedAgent(BaseStudentAgent):
     """
     An example TeamAgent. After renaming this agent so it is called <YourTeamName>Agent,
     (and also renaming it in registerInitialState() below), modify the behavior
@@ -48,7 +48,7 @@ class ExampleTeamAgent(BaseStudentAgent):
         Do any necessary initialization
         """
         # Here, you must replace "ExampleTeamAgent" with "<YourTeamName>Agent"
-        super(ExampleTeamAgent, self).registerInitialState(gameState)
+        super(RLatedAgent, self).registerInitialState(gameState)
         
         # Here, you may do any necessary initialization, e.g., import some
         # parameters you've learned, as in the following commented out lines
@@ -56,6 +56,7 @@ class ExampleTeamAgent(BaseStudentAgent):
         # learned_params = np.load("myparams.npy")        
     
     def chooseAction(self, observedState):
+	print observedState
         """
         Here, choose pacman's next action based on the current state of the game.
         This is where all the action happens.
