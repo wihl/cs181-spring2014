@@ -1,0 +1,56 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\usepackage{textcomp}
+\usepackage{hyperref}  % TODO: see page 94 of latex book
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{relsize}
+\usepackage{parskip}
+
+
+\title{CS181 / CSCI E-181 Spring 2014 Final Project}
+\author{
+  David Wihl\\
+  \texttt{davidwihl@gmail.com}
+  \and
+  Zachary Hendlin\\
+  \texttt{zgh@mit.edu} 
+}
+%\date{}							% Activate to display a given date or no date
+
+
+\begin{document}
+\maketitle
+\section*{Introduction}
+To gather sufficient data, we allowed the SampleAgent (provided intially in the code) to play ~30 megabytes of ghost training data of games, to get data on feature vectors and associated point values of each.
+
+\section*{Classification of Ghosts}
+We sought to classify ghosts as [0, 1, 2, 3, 5], where all ghosts in category 5 are dangerous (e.g. induce a reward of -1000 points unless a helpful capsule is consumed first).
+
+We explored two methods for classifying the ghosts on the basis of their features.
+
+First, we explored linear support vector machines using SK-Learn's Stochastic Gradient Descent classifier.
+For classifying the category 5 ghosts, this approach was accurate 90.62 percent of the time. Our analysis found that while differences in the rewards associated with eating ghosts not from class 5 did differ by class, the most important thing for us to measure our performance on is the correct classification of dangerous (class 5 ghosts).
+
+<graph here>
+
+We also used logistic regression classification, and achieved somewhat better results, with correct classification of class 5 ghosts 93.25 percent of the time.
+
+We elected to use the logistic regression classification results to predict which class each ghost is in during runtime.
+
+\section*{Classification of Placebos}
+\section*{Reinforcement Learning}
+\section*{Conclusion}
+
+
+\begin{thebibliography}{1}
+
+ \bibitem{item1}\emph{Reinforcement Learning}, Sutton \& Barto, 1998, ISBN-10: 0-262-19398-1
+ 
+  \end{thebibliography}
+
+\end{document}  

@@ -1,0 +1,76 @@
+External Module Requirements:
+ - numpy
+
+There are two tarballs, one for Linux and one for Mac.  These have
+architecture-specific shared object files which implement the
+unobserved dynamics of the game.
+
+To run the Pac-Man game by hand do:
+
+ $ python pacman.py
+
+By default, this loads the game without an agent, which allows you to
+control Pac-Man with your arrow keys. Give the keyboard inference a
+try first to get a feel for the game world. 
+
+The contents of the tarballs are:
+
+final_project_code_ARCH/
+    __init__.py
+    pacman.py
+    observedState.py
+    ...
+    data/
+        (training data will go here, but don't submit this)
+    ExampleTeam/ (submit this folder)
+        README.txt
+        __init__.py
+        studentAgents.py
+        config.py
+        (include any pickle files, etc.
+            DO NOT include your training data)
+
+You will implement your agent in studentAgents.py. We have written a
+sample agent for you called ExampleTeamAgent in the file
+studentAgents.py. To load the agent, type: 
+
+ $ python pacman.py -T ExampleTeam
+
+The -T option specifies your team name and by default loads the agent
+<TeamName>Agent. Here ExampleTeamAgent is the name of the agent
+class. This will be the agent we will grade for your final
+submission. Your team name needs to be a valid Python module name
+(e.g. no dashes).  You may also wish to test other agents (that won’t
+be graded). For instance, if you have a class named RandomAgent in
+studentAgents.py, you can load it using the -p option:
+
+ $ python pacman.py -T ExampleTeam -p RandomAgent
+
+Note: to run other agents, you must also specify your team name using
+the -T option. Sometimes (e.g., data collection or while reinforcement
+learning) you will want to run the game without graphics. To do so,
+use the option -q to turn on quiet graphics:
+
+ $ python pacman.py -q
+
+There are various other options for running the pacman, which you can
+see via:
+
+ $ python pacman.py -h
+
+Of particular interest may be "data collection mode" which with gather
+information about the ghost features and the capsules:
+
+ $ python pacman.py -d
+
+This will collect data and put it into two files:
+
+ data/ghost_train.csv -- information about the ghosts
+ data/capsule_train.csv -- information about the capsules
+
+See writeup for details about the format of these files.
+
+Make sure to update config.py.
+
+
+
