@@ -159,6 +159,9 @@ def runGames( layout, pacman, display, numGames, dataCollectionMode, maxMoves):
         scores = [game.state.getScore() for game in games]
         print 'Average Score:', sum(scores) / float(len(scores))
         print 'Scores:       ', ', '.join([str(score) for score in scores])
+        #import pylab
+        #pylab.plot(scores)
+        #pylab.show()
     else:
         # just print the score
         print "Score:", game.state.getScore()
