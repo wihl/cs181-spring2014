@@ -6,7 +6,6 @@ import numpy as np
 import csv
 import random
 import pickle
-from qlearningAgents import PacmanQAgent
 
 class BaseStudentAgent(object):
     """Superclass of agents students will write"""
@@ -99,8 +98,8 @@ class HardCodedAgent(BaseStudentAgent):
     def __init__(self, *args, **kwargs):
         self.prevTarget = None
         self.bigDistance = 1000
-        self.monsterScaredTimeBuffer = 10
-        self.minCapsuleThreshold = -150
+        self.monsterScaredTimeBuffer = 9
+        self.minCapsuleThreshold = -175
 
     def registerInitialState(self, gameState):
         super(HardCodedAgent, self).registerInitialState(gameState)
