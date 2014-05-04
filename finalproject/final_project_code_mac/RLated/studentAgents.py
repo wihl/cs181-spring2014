@@ -33,68 +33,6 @@ class BaseStudentAgent(object):
 ## Below is the class students need to rename and modify
 
 class RLatedAgent(BaseStudentAgent):
-    
-    def __init__(self, *args, **kwargs):
-        """
-        arguments given with the -a command line option will be passed here
-        """
-        pass
-
-
-    def registerInitialState(self, gameState):
-        """
-        Do any necessary initialization
-        """
-        # Here, you must replace "ExampleTeamAgent" with "<YourTeamName>Agent"
-        super(RLatedAgent, self).registerInitialState(gameState)
-        
-        # Here, you may do any necessary initialization, e.g., import some
-        # parameters you've learned, as in the following commented out lines
-        # learned_params = cPickle.load("myparams.pkl")
-        # learned_params = np.load("myparams.npy")        
-        
-        self.clf = pickle.load( open( "ghostpredict.p", "rb" ) )
-
-    
-    def chooseAction(self, observedState):
-	#print observedState
-        """
-        This  pacman agent will towards the ghost that it is closest to.
-        """
-        pacmanPosition = observedState.getPacmanPosition()
-        ghost_states = observedState.getGhostStates() # states have getPosition() and getFeatures() methods
-        legalActs = [a for a in observedState.getLegalPacmanActions()]
-        ghost_dists = np.array([self.distancer.getDistance(pacmanPosition,gs.getPosition()) 
-                              for gs in ghost_states])
-
-        # find the closest ghost by sorting the distances
-        closest_idx = sorted(zip(range(len(ghost_states)),ghost_dists), key=lambda t: t[1])[0][0]
-
-
-	# store the ghost states AND previous score to the ghost_list
-
-        # take the action that minimizes distance to the current closest ghost
-        best_action = Directions.STOP
-        best_dist = -np.inf
-        for la in legalActs:
-            if la == Directions.STOP:
-                continue
-            successor_pos = Actions.getSuccessor(pacmanPosition,la)
-            new_dist = self.distancer.getDistance(successor_pos,ghost_states[closest_idx].getPosition())
-
-	    closestGhostClass = self.clf.predict(ghost_states[closest_idx].getFeatures())
-		
-            if new_dist > best_dist and closestGhostClass == 5:
-                best_action = la
-                best_dist = new_dist
-	    else:
-                best_action = la
-                best_dist = new_dist
-	   		
-        return best_action
-
-
-class HardCodedAgent(BaseStudentAgent):
     def __init__(self, *args, **kwargs):
         self.prevTarget = None
         self.bigDistance = 1000
@@ -102,7 +40,7 @@ class HardCodedAgent(BaseStudentAgent):
         self.minCapsuleThreshold = -175
 
     def registerInitialState(self, gameState):
-        super(HardCodedAgent, self).registerInitialState(gameState)
+        super(RLatedAgent, self).registerInitialState(gameState)
         # TODO fix the paths so they are taken from the directory where this code resides.
         self.ghostPredictor = pickle.load( open( "ghostpredict.p", "rb" ) )
         self.capsulePredictor = pickle.load( open( "capsulepredict.p", "rb" ) )
@@ -110,7 +48,6 @@ class HardCodedAgent(BaseStudentAgent):
     def updatedTarget(self):
         # update the target based on where it was previously and whether we
         # want to towards (attract) or away (repel) from it
-        # TODO take into account probability of target moving
         if self.prevTarget is None:
             self.prevTarget = self.target
             return
@@ -191,7 +128,6 @@ class HardCodedAgent(BaseStudentAgent):
         self.attract = +1
 
         # choose our target
-        # TODO improve target selection so we don't wander so much
         self.target = ghost_states[closest_idx].getPosition() # default
         if isScared:
             # can we get to the monster before it reverts? 
@@ -213,47 +149,4 @@ class HardCodedAgent(BaseStudentAgent):
         #raw_input("Press enter to continue:")
         return bestAction
 
-
-class QAgent(BaseStudentAgent):
-    def __init__(self, *args, **kwargs):
-        self.q = PacmanQAgent()
-
-    def registerInitialState(self, gameState):
-        super(QAgent, self).registerInitialState(gameState)
-        self.clf = pickle.load( open( "ghostpredict.p", "rb" ) )
-        self.legal_actions = gameState.getLegalActions(0)
-        print self.legal_actions
-    
-    def chooseAction(self, observedState):
-
-        return self.q.getAction(observedState)
-        pacmanPosition = observedState.getPacmanPosition()
-        ghost_states = observedState.getGhostStates() # states have getPosition() and getFeatures() methods
-        legalActs = [a for a in observedState.getLegalPacmanActions()]
-        ghost_dists = np.array([self.distancer.getDistance(pacmanPosition,gs.getPosition()) 
-                              for gs in ghost_states])
-
-        # find the closest ghost by sorting the distances
-        closest_idx = sorted(zip(range(len(ghost_states)),ghost_dists), key=lambda t: t[1])[0][0]
-
-
-        # take the action that minimizes distance to the current closest ghost
-        best_action = Directions.STOP
-        best_dist = -np.inf
-        for la in legalActs:
-            if la == Directions.STOP:
-                continue
-            successor_pos = Actions.getSuccessor(pacmanPosition,la)
-            new_dist = self.distancer.getDistance(successor_pos,ghost_states[closest_idx].getPosition())
-
-	    closestGhostClass = self.clf.predict(ghost_states[closest_idx].getFeatures())
-		
-            if new_dist > best_dist and closestGhostClass == 5:
-                best_action = la
-                best_dist = new_dist
-	    else:
-                best_action = la
-                best_dist = new_dist
-	   		
-        return best_action
 

@@ -19,7 +19,11 @@ They are not needed for execution:
 	capsulelearner.py 
 	ghostjuciness.py
 
-Please contact us for more information:
+One additional file is studentAgent_qlearning.py which our
+attempt to model the agent using Q-Learning. See our
+writeup for details. It is not necessary for the tournament.
+
+Please contact us for more information. Thanks!!!
 
 Zachary Hendlin zgh@mit.edu
 David Wihl davidwihl@gmail.com
