@@ -100,7 +100,7 @@ class HardCodedAgent(BaseStudentAgent):
         self.prevTarget = None
         self.bigDistance = 1000
         self.monsterScaredTimeBuffer = 10
-        self.minCapsuleThreshold = -50
+        self.minCapsuleThreshold = -100
 
     def registerInitialState(self, gameState):
         super(HardCodedAgent, self).registerInitialState(gameState)
