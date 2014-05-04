@@ -26,10 +26,10 @@ kmeans.fit(capsulearray)
 scorelist=[]
 for i in xrange(1, len(capsulearray)):
 	scorelist.append(kmeans.score(capsulearray[i,:]))
-print max(scorelist)
-print min(scorelist)
+#print max(scorelist)
+#print min(scorelist)
 
-print kmeans.score(np.array([30,-10, 35]))
+#print kmeans.score(np.array([30,-10, 35]))
 
 #resulting score range on training data was from 0 to -110.15. so anything outside this is probably not a 'good' capsule
 
@@ -37,8 +37,8 @@ print kmeans.score(np.array([30,-10, 35]))
 pickle.dump( kmeans, open( "capsulepredict.p", "wb" ) )
 
 
-
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
-ax.scatter(capsulearray[:,0], capsulearray[:,1], capsulearray[:,2])
-plt.show()
+#plot all the positive capsule training points
+#fig = plt.figure()
+#ax = fig.add_subplot(111, projection='3d')
+#ax.scatter(capsulearray[:,0], capsulearray[:,1], capsulearray[:,2])
+#plt.show()
