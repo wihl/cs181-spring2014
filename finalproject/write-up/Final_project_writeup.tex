@@ -57,8 +57,27 @@ From our positive training data, we found values of 0 to -118 as the 'good' rang
 So at runtime we score each capsule based on its 3x1 feature vector and we consider the 'best' capsule the one with the maximum objective function value when scored.
 
 \section*{Reinforcement Learning}
-\section*{Conclusion}
 
+\section*{Rules Engine}
+<state diagram>
+
+\section*{Parameter Tuning}
+
+\section*{Other Methods}
+\subsection*{Expectimax}
+tree would not be deep to merit this. 
+
+\subsection*{Alpha-Beta Search}
+Russell \& Norvig, pg 166
+
+\subsection*{Hidden Markov Model}
+ Roland Memisevic
+ http://www.iro.umontreal.ca/~memisevr/code/hmm.py
+
+Needed to find a HMM implementation that respected the dependencies of the game cluster. (For example could not use GHMM www.ghmm.org due to a C library dependency)
+
+\section*{Conclusion}
+A combination of ML and traditional techniques is more powerful than using one set of techniques alone.
 
 \begin{thebibliography}{1}
 
