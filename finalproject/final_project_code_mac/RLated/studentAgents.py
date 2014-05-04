@@ -36,7 +36,7 @@ class RLatedAgent(BaseStudentAgent):
     def __init__(self, *args, **kwargs):
         self.prevTarget = None
         self.bigDistance = 1000
-        self.monsterScaredTimeBuffer = 9
+        self.monsterScaredTimeBuffer = 10
         self.minCapsuleThreshold = -175
 
     def registerInitialState(self, gameState):
