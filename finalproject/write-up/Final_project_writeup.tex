@@ -92,8 +92,8 @@ We iterated through more than 10 different heuristics. Taken over 10 different s
 	\node[initial,state,accepting] (S1)      
 			{
 				\begin{tabular}{l}
-				Finding capsule closer\\
-				than bad ghost
+				Finding good capsule\\
+				closer than bad ghost
 				\end{tabular}
 			};
 	\node[state]         (S2) [below of=S1]  {Running away from bad ghost};
@@ -134,7 +134,7 @@ The Rules Engine provided the following advantages:
 	\item[Key Factors]We could distill key factors that would be difficult if not impossible to discover by exploration, such as the equivalence between clock ticks and Manhattan distance between objects.
 	\item[Latent Factors]One of the key pieces of information was the time remaining before scared bad ghost reverted to normal. We found this by careful examination of the game code. It would have been difficult if not impossible to discover this feature by exploration.
 	\item[No history]With our ghost and capsule classifiers, we could immediately evaluate the best option from the current board.
-	\item[Flexibility]Since only the current state is necessary our rules engine would be flexible enough to handle more dynamics than in the current game. \bf{The entire board could resize,  walls could move, capsules could be in motion and the bad ghost could change between time clicks and the Rules Engine would still find the best action.}
+	\item[Flexibility]Since only the current state is necessary our rules engine would be flexible enough to handle more dynamics than in the current game. \bf{The entire board could resize,  walls could move, capsules could be in motion and the bad ghost could change between time clicks and the Rules Engine would still find  a reasonably good action.}
 \end{description}
 
 
@@ -145,12 +145,12 @@ We defined two configuration settings:
 	\item[Capsule Threshold]As mentioned in the Classification of Capsules, we determined a capsule score. We had to evaluate whether it was worth risking targeting a capsule that might turn out to be a placebo. Interesting, if we played too conservative and tried to reach only certainly good capsules, our average score decreased. It paid to aggressively chase capsules even with a lower certainty. See figure~\ref{fig:threshold}.
 	\item[Time Buffer]We knew how many ticks before a scared ghost reverted to a bad ghost, but did not know where precisely the scared ghost would move. So we had to determine the appropriate margin to give the scared bad ghost lest it turn on us. See figure~\ref{fig:buffer}.
 \end{description}
-While both of these parameters could have been found via a regression, it would have required extensive modifications to the provided game execution code to get the appropriate harness in place. We simply opted to manually iterate on these parameters. This involved 21 tuning runs (200 moves, 50 games, 20 different seeds) for over 4M moves used for tuning.
+While both of these parameters could have been found via regression, it would have required extensive modifications to the provided game execution code to get the appropriate harness in place. We simply opted to manually iterate on these parameters. This involved 21 tuning runs (200 moves, 50 games, 20 different seeds) for over 4M moves used for tuning.
 \begin{figure}[h!]
-  \label{fig:threshold}
   \centering
   \scalebox{0.7}{\includegraphics{threshold_tune}}
   \caption{Capsule Threshold Tuning}
+  \label{fig:threshold}
  \end{figure}
 
 \begin{figure}[h!]
