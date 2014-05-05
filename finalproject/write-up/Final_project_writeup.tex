@@ -3,13 +3,12 @@
 \usepackage{textcomp}
 \usepackage{hyperref}  % TODO: see page 94 of latex book
 \geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
-%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
 								% TeX will automatically convert eps --> pdf in pdflatex		
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{relsize}
-\usepackage{parskip}
 
 
 \title{CS181 / CSCI E-181 Spring 2014 Final Project}
@@ -29,7 +28,7 @@
 To gather sufficient data, we allowed the SampleAgent (provided intially in the code) to play ~30 megabytes of ghost training data of games, to get data on feature vectors and associated point values of each.
 
 \section*{Classification of Ghosts}
-We sought to classify ghosts as [0, 1, 2, 3, 5], where all ghosts in category 5 are dangerous (e.g. induce a reward of -1000 points unless a helpful capsule is consumed first).
+We sought to classify ghosts as \{0, 1, 2, 3, 5\}, where all ghosts in category 5 are dangerous (e.g. induce a reward of -1000 points unless a helpful capsule is consumed first).
 
 We explored two methods for classifying the ghosts on the basis of their features.
 
@@ -50,16 +49,30 @@ Here we determined that capsule feature values were very much clustered into thr
 
 This suggested that we could either fit Gaussians to these points as part of a generative approach, or apply something like K-means to find the clusters. Because the data were in three dimensions, we opted to use k-means for clustering, and intiated the model with kmeans++.
 
-Because the threee clusters were all positively identified, simply assigning a new value at run-time (for a capsule which may be a 'good' or 'placebo'), we instead used the 'score' attribute to evaluate the distance from the centroid the data point would have been assigned to. We are agnostic to which centroid the capsule would be assigned to but we are very sensitive to the score assigned (e.g. the distance from the centroid assignment), with larger distances being worse.
+Because the threee clusters were all positively identified, simply assigning a new value at run-time (for a capsule which may be a `good' or `placebo'), we instead used the `score' attribute to evaluate the distance from the centroid the data point would have been assigned to. We are agnostic to which centroid the capsule would be assigned to but we are very sensitive to the score assigned (e.g. the distance from the centroid assignment), with larger distances being worse.
 
-From our positive training data, we found values of 0 to -118 as the 'good' range of objective function values. Any value <-118 would likely be a placebo capsule.
+From our positive training data, we found values of 0 to -118 as the `good' range of objective function values. Any value <-118 would likely be a placebo capsule.
 
-So at runtime we score each capsule based on its 3x1 feature vector and we consider the 'best' capsule the one with the maximum objective function value when scored.
+So at runtime we score each capsule based on its 3x1 feature vector and we consider the `best' capsule the one with the maximum objective function value when scored.
 
 \section*{Reinforcement Learning}
 
 \section*{Rules Engine}
+Our next approach was to build a procedural rules engine inspired by a Markov process. In other words, the rules engine did not require any historical data and would simply decide the next action based on the current state of the game.
+
+The other reason for building a rules engine was to better grapple with the game dynamics to see if the model could be significantly simplified. We believe we were successful as the game came down to a straightforward finite state machine. 
+
+We iterated through more than 10 different heuristics. Our average score over 50 games went from a dismal $-7390$ to a reasonable $933$.
+
 <state diagram>
+
+The Rules engine provided the following advantages:
+\begin{description}
+	\item[Key Factors]We could distill key factors that would be difficult if not impossible to discover by exploration.
+	\item[Latent Factors]One of the key pieces of information was the time remaining before scared bad ghost reverted to normal. We found this by careful examination of the game code. It would have been difficult if not impossible to discover this feature by exploration.
+	\item[No history]Since the game changes significantly from one time click to another, a probabilistic model may take time to re-learn the new board. With our ghost and capsule classifiers, we could immediately evaluate the best option from the current board.
+	\item[Flexibility]Since only the current state is necessary our rules engine would be flexible enough to handle more dynamics than in the current game. The entire board could resize,  walls could move, capsules could be in motion and the bad ghost could change between time clicks and the rules engine would still find the best course of action.
+\end{description}
 
 \section*{Parameter Tuning}
 
