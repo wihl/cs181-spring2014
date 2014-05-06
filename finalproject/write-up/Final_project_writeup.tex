@@ -45,14 +45,21 @@
 \endgroup
 
 \section{Introduction}
-To gather sufficient data, we allowed the SampleAgent (provided intially in the code) to play ~30 megabytes of ghost training data of games, to get data on feature vectors and associated point values of each.
+Creating an agent to play Pacman required us considering a number of steps:
+(1) Determining the latent class that each ghost belongs to based on its features (classification)
+(2) Analyzing / visualizing the juciness of ghost by class (simple data analysis)
+(3) Classification of capsule class (e.g. placebo or immunity to eating bad ghosts)
+(4) A decision rule for the Pacman, either 'harded coded' or 'learned' (e.g. q-learning, policy interation, hidden markov models)
 
 \section{Classification of Ghosts}
-We sought to classify ghosts as \{0, 1, 2, 3, 5\}, where all ghosts in category 5 are dangerous (e.g. induce a reward of -1000 points unless a helpful capsule is consumed first).
+To gather sufficient data, we allowed the SampleAgent (provided intially in the code) to play until ~30 megabytes of ghost training data was captured on, to get data on feature vectors and associated 'juciness' point values of each.
+
+We sought to classify ghosts as \{0, 1, 2, 3, 5\}, where all ghosts in category 5 are dangerous (e.g. induce a reward of -1000 points unless a helpful capsule is consumed first). Because of the huge payoff in eating a helpful capsule and then eating a 'bad' ghost, this is extremeley important.
 
 We explored two methods for classifying the ghosts on the basis of their features.
 
-First, we explored linear support vector machines using SK-Learn's Stochastic Gradient Descent classifier.
+First, we explored linear support vector machines (SVMs) using SK-Learn's Stochastic Gradient Descent classifier.
+
 For classifying the category 5 ghosts, this approach was accurate 90.62 percent of the time. Our analysis found that while differences in the rewards associated with eating ghosts not from class 5 did differ by class, the most important thing for us to measure our performance on is the correct classification of dangerous (class 5 ghosts).
 
 <graph here>
@@ -61,8 +68,16 @@ We also used logistic regression classification, and achieved somewhat better re
 
 We elected to use the logistic regression classification results to predict which class each ghost is in during runtime.
 
+One additional way to tell if a ghost is category 5 (and hence dangerous) is it's change in distances from the Pacman. 'Bad ghosts' generally move closer and closer to the Pacman, whereas good ghosts do not demonstrate this behavior.
+
+\section{Estimating the Juciness of Ghosts}
+
+We had first thought about trying to pursue the highest point value ghosts and then follow them. But it turned out that the behavior of the aggressive 'bad ghost' dominated trying to eat regular ghosts.
+
+As such, the data bore out that eating protective capsules and then pursuing the bad ghost was the most important thing for our Pacman to go pursue.
+
 \section{Classification of Capsules and Placebos}
-We want to determine which of the pills are helpful capsules and which are placebos. To do this, we first plotted the helpful capsules which we collected using the '-d' data collection function.
+We wanted to determine which of the pills are helpful capsules and which are placebos. To do this, we first plotted the helpful capsules which we collected using the '-d' data collection function.
 
 Here we determined that capsule feature values were very much clustered into three distinct clusters as shown below.
 <show graph>
@@ -75,9 +90,18 @@ From our positive training data, we found values of $0$ to $-118$ as the `good' 
 
 So at runtime we score each capsule based on its $3\times1$ feature vector and we consider the `best' capsule the one with the maximum objective function value when scored.
 
-\section{Reinforcement Learning}
+\section{Decision Rules}
 
-\section{Rules Engine}
+\subsection{Reinforcement Learning}
+We first attempted to implement a Q-learning based approach, but very quickly found this to be infeasible due to the extremely large state space.
+
+For a 20x20 matrix five ghosts (each with a class of 1 to 5), five capsules (each with a 1/0 classification), and our Pacman's ability to make four moves, our (state, action) space is (20^2)^5 ^5 * (20^2)^5 ^2 * (20^2) *4.
+
+It is clear that we get to such a large state space that we can't reasonably visit every single state. We tried to reduce the state space by only keeping track of the 'good' capsules and the 'bad' ghosts but we still found this state space to be too large to fit. 
+
+Although we coded up Q-learning, ran it for a while, and tried to reduce the dimensionality of the state space, we still found this state space to be too large.
+
+\subsection{Rules Engine}
 Our next approach was to build a procedural rules engine inspired by a Markov process. In other words, the rules engine did not require any historical data and would simply decide the next action based on the current state of the game.
 
 The other reason for building a rules engine was to better grapple with the game dynamics to see if the model could be significantly simplified. We believe we were successful as the game came down to a straightforward finite state machine. 
