@@ -95,7 +95,7 @@ So at runtime we score each capsule based on its $3\times1$ feature vector and w
 \subsection{Reinforcement Learning}
 We first attempted to implement a Q-learning based approach, but very quickly found this to be infeasible due to the extremely large state space.
 
-For a 20x20 matrix five ghosts (each with a class of 1 to 5), five capsules (each with a 1/0 classification), and our Pacman's ability to make four moves, our (state, action) space is (20^2)^5 ^5 * (20^2)^5 ^2 * (20^2) *4.
+For a 20x20 matrix five ghosts (each with a class of 1 to 5), five capsules (each with a 1/0 classification), and our Pacman's ability to make four moves, our (state, action) space is $(20^2)^{5^5} \times (20^2)^{5^2} \times (20^2) \times 4$.
 
 It is clear that we get to such a large state space that we can't reasonably visit every single state. We tried to reduce the state space by only keeping track of the 'good' capsules and the 'bad' ghosts but we still found this state space to be too large to fit. 
 
