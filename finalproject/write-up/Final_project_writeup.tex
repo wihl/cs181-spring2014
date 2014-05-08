@@ -77,7 +77,7 @@ We had first thought about trying to pursue the highest point value ghosts and t
 As such, the data bore out that eating protective capsules and then pursuing the bad ghost was the most important thing for our Pacman to go pursue.
 
 \section{Classification of Capsules and Placebos}
-We wanted to determine which of the pills are helpful capsules and which are placebos. To do this, we first plotted the helpful capsules which we collected using the '-d' data collection function.
+We wanted to determine which of the pills are helpful capsules and which are placebos. To do this, we first plotted the helpful capsules which we collected using the `-d' data collection function.
 
 Here we determined that capsule feature values were very much clustered into three distinct clusters as shown below.
 <show graph>
@@ -106,7 +106,7 @@ Our next approach was to build a procedural rules engine inspired by a Markov pr
 
 The other reason for building a rules engine was to better grapple with the game dynamics to see if the model could be significantly simplified. We believe we were successful as the game came down to a straightforward finite state machine. 
 
-We iterated through more than 10 different heuristics. Taken over 10 different seeds, our average score over 50 games went from a dismal $-7390$ to a reasonable $933$.
+We iterated through more than 10 different heuristics. Taken over 10 different seeds, our average score over 50 games of 200 moves went from a dismal $-7390$ to a reasonable $933$.
 
 \subsection{Finite State Machine}
 
@@ -166,7 +166,7 @@ The Rules Engine provided the following advantages:
 \subsection{Parameter Tuning}
 We defined two configuration settings:
 \begin{description}
-	\item[Capsule Threshold]As mentioned in the Classification of Capsules, we determined a capsule score. We had to evaluate whether it was worth risking targeting a capsule that might turn out to be a placebo. Interesting, if we played too conservative and tried to reach only certainly good capsules, our average score decreased. It paid to aggressively chase capsules even with a lower certainty. See figure~\ref{fig:threshold}.
+	\item[Capsule Threshold]As mentioned in the Classification of Capsules, we determined a capsule score. We had to evaluate whether it was worth risking targeting a capsule that might turn out to be a placebo. Interestingly, if we played too conservative and tried to reach only certainly good capsules, our average score decreased. It paid to aggressively chase capsules even with a lower certainty. See figure~\ref{fig:threshold}.
 	\item[Time Buffer]We knew how many ticks before a scared ghost reverted to a bad ghost, but did not know where precisely the scared ghost would move. So we had to determine the appropriate margin to give the scared bad ghost lest it turn on us. See figure~\ref{fig:buffer}.
 \end{description}
 While both of these parameters could have been found via regression, it would have required extensive modifications to the provided game execution code to get the appropriate harness in place. We simply opted to manually iterate on these parameters. This involved 21 tuning runs (200 moves, 50 games, 20 different seeds) for over 4M moves used for tuning.
@@ -187,7 +187,7 @@ While both of these parameters could have been found via regression, it would ha
 
 \subsection{Scores Across Different Seeds}
 
-To ensure the reliability of the Rules Engine, we tested against 20 different seed values $s = \{1..20\}$. While the min and max scores for a given seed could vary significantly, the overall average across multiple seeds was quite consistent once we tuned the parameters. Interestingly, the Capsule Threshold improved the minimum score, while the Time Buffer increased the maximum score. See figure~\ref{fig:seeds}. Across all seeds we tested, the average score was always positive, giving us confidence in the flexibility of the Rules Engine.
+To ensure the reliability of the Rules Engine, we tested against 20 different seed values $s = \{1..20\}$. While the min and max scores for a given seed could vary significantly, the overall average across multiple seeds was quite consistent once we tuned the parameters. Interestingly, the Capsule Threshold improved the minimum score, while the Time Buffer increased the maximum score. See figure~\ref{fig:seeds}. Across all seeds we tested, the average score was always positive, giving us confidence in the flexibility of the Rules Engine. To visualize distribution of losing vs winning scores, see figure~\ref{fig:3dscore}.
 
 \begin{figure}[h!]
   \centering
@@ -196,7 +196,12 @@ To ensure the reliability of the Rules Engine, we tested against 20 different se
   \label{fig:seeds}
  \end{figure}
 
-TODO: add 3d plot to show distribution of scores vs seeds
+\begin{figure}[h!]
+  \centering
+  \scalebox{0.7}{\includegraphics{3dscore}}
+  \caption{Winning more than losing}
+  \label{fig:3dscore}
+ \end{figure}
 
 \section{Other Methods}
 
