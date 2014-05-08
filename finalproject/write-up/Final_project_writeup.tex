@@ -196,7 +196,7 @@ To ensure the reliability of the Rules Engine, we tested against 20 different se
   \label{fig:seeds}
  \end{figure}
 
-
+TODO: add 3d plot to show distribution of scores vs seeds
 
 \section{Other Methods}
 
@@ -209,14 +209,13 @@ tree would not be deep to merit this.
 Russell \& Norvig, pg 166
 
 \subsection{Hidden Markov Model}
- Roland Memisevic
- http://www.iro.umontreal.ca/~memisevr/code/hmm.py
+The main challenge to implementing a HMM for this problem was that the state transitions were not in the form of a acyclic digraph. It would be possible to model sequential transitions using the observed data but given the dimensionality, we were not confidential a good result would emerge in a reasonable time.
 
-Needed to find a HMM implementation that respected the dependencies of the game cluster. (For example could not use GHMM www.ghmm.org due to a C library dependency)
+One other complication was finding a suitable HMM library given the cluster execution environment. (For example, we could not use \href{www.ghmm.org}{GHMM} due to a C library dependency.) Ultimately, we did find Roland Memisevic's \href{http://www.iro.umontreal.ca/~memisevr/code/hmm.py}{implementation} and did some initial experimentation.
 
 \subsection{Probabilistic Graphical Model}
 
-ref Koller book.
+The most interesting potential Machine Learning technique given the Finite State Machine would be a Probabilistic Graph
 
 \section{Conclusion}
 A combination of ML and traditional techniques is more powerful than using one set of techniques alone.
