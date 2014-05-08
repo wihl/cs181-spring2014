@@ -93,7 +93,7 @@ So at runtime we score each capsule based on its $3\times1$ feature vector and w
 \section{Decision Rules}
 
 \subsection{Reinforcement Learning}
-We first attempted to implement a Q-learning based approach, but very quickly found this to be infeasible due to the extremely large state space.
+We first attempted to implement a Q-learning based approach\cite{sutton}, but very quickly found this to be infeasible due to the extremely large state space.
 
 For a 20x20 matrix five ghosts (each with a class of 1 to 5), five capsules (each with a 1/0 classification), and our Pacman's ability to make four moves, our (state, action) space is $(20^2)^{5^5} \times (20^2)^{5^2} \times (20^2) \times 4$.
 
@@ -203,15 +203,17 @@ To ensure the reliability of the Rules Engine, we tested against 20 different se
   \label{fig:3dscore}
  \end{figure}
 
-\section{Other Methods}
+\section{Other Methods Considered}
 
 Not satisfied with our Rules Engine, we continued to evaluate and experiment with other Machine Learning techniques to find a potentially better solution.
 
 \subsection{Expectimax}
-tree would not be deep to merit this. 
+
+Given the simplified state machine, Expectimax would not have yielded an improvement. The game dynamics were so highly contingent upon the eating or being eaten by the bad ghost that doing a deep tree of probabilities would not have been beneficial especially when we found the deterministic relationship between Manhattan distance and clock ticks before the scared ghost would revert.
 
 \subsection{Alpha-Beta Search}
-Russell \& Norvig, pg 166
+
+An older, commonly used game playing strategy is Alpha-Beta Pruning.\cite{russell} Had we needed to look further into the future, this technique would have likely been significantly more efficient than Expectimax. We could have built a value tree and pruned off the courses of action that did not yield valuable results. Once again, given our simplified model, pursuing this rather simple implementation became unnecessary.
 
 \subsection{Hidden Markov Model}
 The main challenge to implementing a HMM for this problem was that the state transitions were not in the form of a acyclic digraph. It would be possible to model sequential transitions using the observed data but given the dimensionality, we were not confidential a good result would emerge in a reasonable time.
@@ -223,11 +225,15 @@ One other complication was finding a suitable HMM library given the cluster exec
 The most interesting potential Machine Learning technique given the Finite State Machine would be a Probabilistic Graph
 
 \section{Conclusion}
-A combination of ML and traditional techniques is more powerful than using one set of techniques alone.
+A combination of Machine Learning and traditional techniques is more powerful than using one set of techniques alone. This exercise was a useful reminder of \href{http://en.wikipedia.org/wiki/Law_of_the_instrument}{Maslow's Hammer} that  ``if all you have is a hammer, everything looks like a nail." Machine Learning provides a valuable set of additional tools to add to the proverbial utility belt. The most effective solution in this case was a combination of human derived rules coupled with Machine Learning techniques. 
+
+Thank you for a stimulating and instructive class.
 
 \begin{thebibliography}{1}
 
- \bibitem{item1}\emph{Reinforcement Learning}, Sutton \& Barto, 1998, ISBN-10: 0-262-19398-1
+ \bibitem{sutton}\emph{Reinforcement Learning}, Sutton \& Barto, 1998, ISBN-10: 0-262-19398-1
+ 
+ \bibitem{russell}\emph{Artificial Intelligence: A Modern Approach}, Russell and Norvig, Third Edition, 2010, ISBN 978-0-13-604259-4, pg 167
  
   \end{thebibliography}
 
