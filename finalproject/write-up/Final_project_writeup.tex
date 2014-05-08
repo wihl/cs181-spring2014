@@ -213,16 +213,16 @@ Given the simplified state machine, Expectimax would not have yielded an improve
 
 \subsection{Alpha-Beta Search}
 
-An older, commonly used game playing strategy is Alpha-Beta Pruning.\cite{russell} Had we needed to look further into the future, this technique would have likely been significantly more efficient than Expectimax. We could have built a value tree and pruned off the courses of action that did not yield valuable results. Once again, given our simplified model, pursuing this rather simple implementation became unnecessary.
+An older, commonly used game playing strategy is Alpha-Beta Pruning.\cite{russell} Had we needed to look further into the future, this technique would have likely been significantly more efficient than Expectimax. We could have built a value tree and pruned off the courses of action that did not yield valuable results. Once again, given our simplified model, pursuing even this rather simple implementation became unnecessary.
 
 \subsection{Hidden Markov Model}
-The main challenge to implementing a HMM for this problem was that the state transitions were not in the form of a acyclic digraph. It would be possible to model sequential transitions using the observed data but given the dimensionality, we were not confidential a good result would emerge in a reasonable time.
+The main challenge to implementing a HMM for this problem was that the state transitions were not in the form of an acyclic digraph. It would be possible to model sequential transitions using the observed data but given the dimensionality, we were not confidential a good result would emerge in a reasonable time.
 
 One other complication was finding a suitable HMM library given the cluster execution environment. (For example, we could not use \href{www.ghmm.org}{GHMM} due to a C library dependency.) Ultimately, we did find Roland Memisevic's \href{http://www.iro.umontreal.ca/~memisevr/code/hmm.py}{implementation} and did some initial experimentation.
 
 \subsection{Probabilistic Graphical Model}
 
-The most interesting potential Machine Learning technique given the Finite State Machine would be a Probabilistic Graph
+The most interesting potential Machine Learning technique given the Finite State Machine would be a Probabilistic Graph Model.\cite{koller} A PGM would likely circumvent the acyclic digraph limitations of HMM. It would not replace the rules engine in cases where the scared ghost was within range. However, it may have discovered a better escape strategy by modeling the bad ghost's behavior. It also may have discovered a better means of hunting good ghosts and trading off capsule score vs distance. Unfortunately, we did not have time to implement this in a quality form. We were not able to find any readily available ``off-the-shelf" libraries that would have help our implementation. This is a further area of research for us.
 
 \section{Conclusion}
 A combination of Machine Learning and traditional techniques is more powerful than using one set of techniques alone. This exercise was a useful reminder of \href{http://en.wikipedia.org/wiki/Law_of_the_instrument}{Maslow's Hammer} that  ``if all you have is a hammer, everything looks like a nail." Machine Learning provides a valuable set of additional tools to add to the proverbial utility belt. The most effective solution in this case was a combination of human derived rules coupled with Machine Learning techniques. 
@@ -234,6 +234,8 @@ Thank you for a stimulating and instructive class.
  \bibitem{sutton}\emph{Reinforcement Learning}, Sutton \& Barto, 1998, ISBN-10: 0-262-19398-1
  
  \bibitem{russell}\emph{Artificial Intelligence: A Modern Approach}, Russell and Norvig, Third Edition, 2010, ISBN 978-0-13-604259-4, pg 167
+ 
+ \bibitem{koller}\emph{Probabilistic Graphical Models}, Koller and Friedman, 2009, ISBN 978-0-262-1319-2
  
   \end{thebibliography}
 
