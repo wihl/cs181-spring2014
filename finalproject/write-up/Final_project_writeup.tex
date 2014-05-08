@@ -60,9 +60,15 @@ We explored two methods for classifying the ghosts on the basis of their feature
 
 First, we explored linear support vector machines (SVMs) using SK-Learn's Stochastic Gradient Descent classifier.
 
-For classifying the category 5 ghosts, this approach was accurate 90.62 percent of the time. Our analysis found that while differences in the rewards associated with eating ghosts not from class 5 did differ by class, the most important thing for us to measure our performance on is the correct classification of dangerous (class 5 ghosts).
+For classifying the category 5 ghosts, this approach was accurate 90.62 percent of the time. Our analysis found that while differences in the rewards associated with eating ghosts not from class 5 did differ by class, the most important thing for us to measure our performance on is the correct classification of dangerous (class 5 ghosts). See figure~\ref{fig:ghosts}.
 
-<graph here>
+\begin{figure}[h!]
+  \centering
+  \scalebox{0.7}{\includegraphics{scorebyclass}}
+  \caption{Ghost Score by Class}
+  \label{fig:ghosts}
+ \end{figure}
+
 
 We also used logistic regression classification, and achieved somewhat better results, with correct classification of class 5 ghosts 93.25 percent of the time.
 
@@ -79,8 +85,14 @@ As such, the data bore out that eating protective capsules and then pursuing the
 \section{Classification of Capsules and Placebos}
 We wanted to determine which of the pills are helpful capsules and which are placebos. To do this, we first plotted the helpful capsules which we collected using the `-d' data collection function.
 
-Here we determined that capsule feature values were very much clustered into three distinct clusters as shown below.
-<show graph>
+Here we determined that capsule feature values were very much clustered into three distinct clusters as shown in figure~\ref{fig:capsules}.
+\begin{figure}[h!]
+  \centering
+  \scalebox{0.7}{\includegraphics{good_capsule_plot}}
+  \caption{Good Capsule Clusters}
+  \label{fig:capsules}
+ \end{figure}
+
 
 This suggested that we could either fit Gaussians to these points as part of a generative approach, or apply something like K-means to find the clusters. Because the data were in three dimensions, we opted to use k-means for clustering, and initiated the model with kmeans++.
 
